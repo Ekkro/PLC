@@ -1,0 +1,205 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kpat\n"
+"POT-Creation-Date: 2002-02-21 02:47+0100\n"
+"PO-Revision-Date: 2001-02-04 19:12-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Elvis Pfützenreuter"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "Elvis Pfützenreuter"
+
+#: cardmaps.cpp:99
+msgid "please wait, loading cards..."
+msgstr "por favor aguarde, lendo as cartas..."
+
+#: cardmaps.cpp:103
+msgid "KPatience - a Solitaire game"
+msgstr "KPatience - um jogo Solitário"
+
+#: clock.cpp:84
+#, fuzzy
+msgid "G&randfather's Clock"
+msgstr "&Relógio do avô"
+
+#: computation.cpp:113
+msgid "&Calculation"
+msgstr "&Cálculo"
+
+#: dealer.cpp:65
+msgid "&Hint"
+msgstr "&Dica"
+
+#: dealer.cpp:73
+msgid "&Demo"
+msgstr "&Demo"
+
+#: dealer.cpp:81
+msgid "&Redeal"
+msgstr "&Dar novamente as Cartas"
+
+#: fortyeight.cpp:125
+msgid "F&orty and Eight"
+msgstr "&Quarenta e oito"
+
+#: freecell.cpp:174
+msgid "%1 tries - depth %2"
+msgstr "%1 tentativas - profundidade %2"
+
+#: freecell.cpp:180
+msgid "solved after %1 tries"
+msgstr "resolvidos após %1 movimentos"
+
+#: freecell.cpp:190
+msgid "unsolved after %1 moves"
+msgstr "não resolvidos após %1 movimentos"
+
+#: freecell.cpp:318
+msgid "%1 moves before finish"
+msgstr "%1 movimentos antes de finalizar"
+
+#: freecell.cpp:598
+msgid "&Freecell"
+msgstr "&Espaço Livre"
+
+#: golf.cpp:155
+msgid "G&olf"
+msgstr ""
+
+#: grandf.cpp:163
+msgid "&Grandfather"
+msgstr "&Avô"
+
+#: gypsy.cpp:58
+#, fuzzy
+msgid "Gy&psy"
+msgstr "C&igano"
+
+#: idiot.cpp:182
+msgid "&Aces Up"
+msgstr "&Aces Up"
+
+#: kings.cpp:48
+msgid "&The Kings"
+msgstr "&Os reis"
+
+#: klondike.cpp:247
+msgid "&Klondike"
+msgstr "&Klondike"
+
+#: main.cpp:28
+msgid "KDE Patience Game"
+msgstr "Jogo de Paciência do KDE"
+
+#: main.cpp:32
+msgid "KPatience"
+msgstr "Paciência"
+
+#: main.cpp:39
+msgid "Some Game Types"
+msgstr "Alguns tipos de jogo"
+
+#: main.cpp:41
+msgid "Bug fixes"
+msgstr "Consertos"
+
+#: main.cpp:42
+msgid "Shuffle algorithm for game numbers"
+msgstr "Algoritmo de embaralhamento para números de jogo"
+
+#: main.cpp:44
+msgid "Freecell Solver"
+msgstr "Resolvedor do FreeCell"
+
+#: main.cpp:45
+msgid "Rewrite and current maintainer"
+msgstr "Reescrita e mantenedor corrente"
+
+#: mod3.cpp:151
+msgid "M&od3"
+msgstr "M&od3"
+
+#: napoleon.cpp:193
+msgid "&Napoleon's Tomb"
+msgstr "Tumba de &Napoleão"
+
+#: pwidget.cpp:72
+#, fuzzy
+msgid "&Choose Game..."
+msgstr "&Escolher novo jogo..."
+
+#: pwidget.cpp:74
+#, fuzzy
+msgid "&Restart Game"
+msgstr "&Reiniciar jogo"
+
+#: pwidget.cpp:79
+msgid "&Game Type"
+msgstr "&Tipo de jogo"
+
+#: pwidget.cpp:102
+msgid "&Change Background"
+msgstr "&Mudar fundo"
+
+#: pwidget.cpp:116
+msgid "&Switch Cards..."
+msgstr "&Trocar cartas..."
+
+#: pwidget.cpp:120
+#, fuzzy
+msgid "&Animation on Startup"
+msgstr "&Animação na inicialização"
+
+#: pwidget.cpp:322
+msgid "Could not load background image!"
+msgstr "Não foi possível carregar a imagem do fundo"
+
+#: pwidget.cpp:333
+msgid "Game Number"
+msgstr "Número do jogo"
+
+#: pwidget.cpp:334
+msgid "Enter a game number (1 to 32000 are the same as in the FreeCell FAQ)"
+msgstr ""
+"Digite um número de jogo (1 e 32000 são os mesmos, tal como dito no "
+"FreeCell FAQ)"
+
+#: pwidget.cpp:351
+msgid "Congratulations! We've won!"
+msgstr "Parabéns! Nós vencemos!"
+
+#: pwidget.cpp:353
+msgid "Congratulations! You've won!"
+msgstr "Parabéns! Você venceu !"
+
+#: pwidget.cpp:355
+msgid "Congratulations!"
+msgstr "Parabéns!"
+
+#: pwidget.cpp:367
+msgid "Game Lost."
+msgstr ""
+
+#: pwidget.cpp:390
+msgid "The saved game is of unknown type!"
+msgstr "O jogo salvo é de tipo desconhecido!"
+
+#: simon.cpp:112
+msgid "&Simple Simon"
+msgstr "&Simon Simples"
+
+#: yukon.cpp:57
+msgid "&Yukon"
+msgstr "&Yukon"

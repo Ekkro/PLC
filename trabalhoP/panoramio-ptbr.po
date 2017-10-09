@@ -1,0 +1,3895 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-23 16:19+0200\n"
+"PO-Revision-Date: 2007-08-06 19:10-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Features and examples of use"
+msgstr "Características e exemplos de utilização"
+
+msgid "<span>About</span> Panoramio"
+msgstr "<span>Acerca do</span> Panoramio"
+
+msgid ""
+"Panoramio allows you to locate photos exactly over the place they were taken."
+msgstr ""
+"Panoramio permite localizar as fotografias exactamente no local onde foram "
+"tiradas."
+
+msgid ""
+"Every photo is linked with the place where it was taken both physically and "
+"in your memory. Panoramio helps to link photos and places."
+msgstr ""
+"Todas as fotos estão associadas ao lugar onde foram tiradas tanto "
+"fisicamente como na sua memória. Panoramio ajuda a ligar as fotografias aos "
+"lugares"
+
+msgid "Storage for ALL your photos:"
+msgstr "Espaço para TODAS as suas fotografias:"
+
+msgid ""
+"You can store up to 2 Gb, approximately 2000 photos with 4 Mega Pixels "
+"camera. Your photos are stored at your personal area (e.g. <a href='http://"
+"www.panoramio.com/user/7'>Eduardo's photos</a>) in their original size and "
+"quality."
+msgstr ""
+"Pode armazenar até 2 Gb, aproximadamente 2000 fotografias de 4 Mega pixéis. "
+"As fotografias são guardadas na sua área pessoal (ex: <a href='http://www."
+"panoramio.com/user/7'>As fotografias do Eduardo</a>) com o formato e a "
+"qualidade originais."
+
+msgid ""
+"Optionally you can locate your photos in the place they were taken. You will "
+"never forget the name and location of the places you visited. There is no "
+"need anymore to explain to your friends your travel route or where you took "
+"your photos."
+msgstr ""
+"Opcionalmente pode associar às suas fotografias o local onde estas foram "
+"tiradas. Nunca mais se vai esquecer da localização dos sítios que visitou. "
+"Nunca mais terá de explicar aos seus amigos onde tirou as fotografias nem "
+"por onde viajou."
+
+msgid "Explore the World:"
+msgstr "Explore o Mundo:"
+
+msgid "See the Eiffel Tower from many perspectives from different people."
+msgstr ""
+"Veja a Torre Eiffel a partir das muitas perspectivas de pessoas diferentes."
+
+msgid ""
+"<a href='http://www.panoramio.com/map/#lt=48.858133&amp;ln=2.294882&amp;z=-"
+"1&amp;k=2&amp;a=1'>Eiffel Tower</a>"
+msgstr ""
+"<a href='http://www.panoramio.com/map/#lt=48.858133&amp;ln=2.294882&amp;z=-"
+"1&amp;k=2&amp;a=1'>Torre Eiffel</a>"
+
+msgid "Eiffel Tower"
+msgstr "Torre Eiffel"
+
+msgid ""
+"You can use Panoramio's search engine to find easily any place, <a "
+"href='http://www.panoramio.com/map/#lt=40.711223&amp;ln=-74.011459&amp;"
+"z=4&amp;k=2&amp;a=1'>New York</a>, <a href='http://www.panoramio.com/map/"
+"#lt=27.983333&amp;ln=86.933333&amp;z=5&amp;k=2&amp;a=1'>Mount Everest</a> or "
+"<a href='http://www.panoramio.com/map/#lt=29.977911&amp;ln=31.133387&amp;"
+"z=2&amp;k=2&amp;a=1'>Pyramids in Egypt</a>."
+msgstr ""
+"Pode utilizar o motor de busca do Panoramio para encontrar facilmente "
+"qualquer lugar, <a href='http://www.panoramio.com/map/#lt=40.711223&amp;ln=-"
+"74.011459&amp;z=4&amp;k=2&amp;a=1'>Nova Iorque</a>, <a href='http://www."
+"panoramio.com/map/#lt=27.983333&amp;ln=86.933333&amp;z=5&amp;k=2&amp;"
+"a=1'>Monte Everest</a> or <a href='http://www.panoramio.com/map/"
+"#lt=29.977911&amp;ln=31.133387&amp;z=2&amp;k=2&amp;a=1'>Pirâmides do Egipto</"
+"a>."
+
+msgid ""
+"See the look of the place you are interested in. Is the beach really so "
+"close to the hotel? is the city center so exotic?"
+msgstr ""
+"Verifice o aspecto do local em que está interessado. Será a praia assim tão "
+"perto do hotel? Será o centro da cidade assim tão exótico?"
+
+msgid "Track routes or trails"
+msgstr "Percorra rotas ou trilhos."
+
+msgid ""
+"Until now you needed a map to show your route. Not anymore, in Panoramio you "
+"can see the photos and the map at the same time."
+msgstr ""
+"Até agora necessitava de um mapa para mostrar o seu percurso. Com o "
+"Panoramio pode mostrar o percurso e as fotografias ao mesmo tempo."
+
+msgid ""
+"<a href='http://www.panoramio.com/map/#lt=-13.313458&amp;ln=-72.509766&amp;"
+"z=7&amp;k=2&amp;a=1'>Inca Trail to Macchu Pichu</a> in Los Andes, Peru"
+msgstr ""
+"<a href='http://www.panoramio.com/map/#lt=-13.313458&amp;ln=-72.509766&amp;"
+"z=7&amp;k=2&amp;a=1'>Trilho Inca até Macchu Pichu</a> nos Andes, Peru"
+
+msgid "Inca Trail"
+msgstr "Trilho Inca"
+
+msgid ""
+"Some people tracked <a href='http://www.panoramio.com/map/?"
+"user=600#lt=55.677584&amp;ln=90.175781&amp;z=14&amp;k=2&amp;"
+"a=1'>Transiberian Train</a> or the <a href='http://www.panoramio.com/map/?"
+"user=1806#lt=55.776573&amp;ln=13.886719&amp;z=9&amp;k=2&amp;a=1'>sights from "
+"Sweden</a> from an amateur airplane pilot."
+msgstr ""
+"Há quem tenha feito o <a href='http://www.panoramio.com/map/?"
+"user=600#lt=55.677584&amp;ln=90.175781&amp;z=14&amp;k=2&amp;"
+"a=1'>Transiberiano</a> ou <a href='http://www.panoramio.com/map/?"
+"user=1806#lt=55.776573&amp;ln=13.886719&amp;z=9&amp;k=2&amp;a=1'>sobrevoado "
+"a  Suécia</a> como piloto amador."
+
+msgid "Show your place"
+msgstr "Mostre o seu local"
+
+#, fuzzy
+msgid "Travellers can discover your place through your photos."
+msgstr ""
+"Torne mais fácil para um viajante descobrir a sua loja, envie as suas fotos."
+
+msgid ""
+"<a href='http://www.panoramio.com/map/#lt=51.504789&amp;ln=10.795784&amp;"
+"z=2&amp;k=2&amp;a=1'>City of Nordhausen</a> in Thüringen, the Green Heart of "
+"Germany"
+msgstr ""
+"<a href='http://www.panoramio.com/map/#lt=51.504789&amp;ln=10.795784&amp;"
+"z=2&amp;k=2&amp;a=1'>Cidade de Nordhausen</a> em Thüringen, o Coração Verde "
+"da Alemanha"
+
+msgid "Nordhausen"
+msgstr "Nordhausen"
+
+msgid "Professional Photographers"
+msgstr "Para fotógrafos profissionais"
+
+msgid ""
+"2 Gb of photo storage. Access to the original file and photo details "
+"(Exposure, Focal Length, ISO...). Locate your photos optionally like another "
+"way to classify them and showing them to the public."
+msgstr ""
+"2 Gb de capacidade de armazenamento. Acesso ao ficheiro original e aos "
+"detalhes da fotografia (Exposição, Distância Focal, ISO...). Possibilidade "
+"de associar uma localização geográfica a cada fotografia criando assim outra "
+"forma de classificação e de as mostrar ao público."
+
+msgid "photos by professional"
+msgstr "fotografias de profissional"
+
+msgid "Organize photos"
+msgstr "Organize Fotografias"
+
+#, fuzzy
+msgid ""
+"You can tag your photos in order to organize them or make them easy to find "
+"by other people. See photos tagged with <a href='http://www.panoramio.com/"
+"user/7/tags/havana'>Havana</a>, <a href='http://www.panoramio.com/user/7/"
+"tags/capes'>capes</a> or <a href='http://www.panoramio.com/user/1489/tags/"
+"Bridges'>bridges</a>."
+msgstr ""
+"É possivel associar temas às fotografias de forma a tornar mais fácil a "
+"pesquisa pelo público. Veja fotografias sobre <a href='http://www.panoramio."
+"com/user/7/tags/havana'>Havana</a>, <a href='http://www.panoramio.com/user/7/"
+"tags/capes'>cabos</a> ou <a href='http://www.panoramio.com/user/1489/tags/"
+"Bridges'>pontes</a>."
+
+msgid "cathedrals in Panoramio"
+msgstr "Catedrais no Panoramio"
+
+#, fuzzy
+msgid "API. Display photos from Panoramio on your own website"
+msgstr "Panoramio - API. Coloque fotos do Panoramio no seu próprio website"
+
+msgid "Panoramio API - Display photos from Panoramio on your own website"
+msgstr "Panoramio API - Coloque fotos do Panoramio no seu próprio website"
+
+msgid ""
+"Using Panoramio API you can display the photos from Panoramio on your own "
+"web site. Geolocated photos from Panoramio are great to enrich your maps or "
+"illustrate information where location is a important factor (real estate "
+"sites, hotels and vacation sites, routes & trails...)."
+msgstr ""
+"Utilizando o Panoramio API poderá colocar fotos do Panoramio no seu próprio "
+"website. Fotos geolocalizadas são uma forma excelente de enriquecer os seus "
+"mapas ou de ilustrar informação em que o local é um factor importante (sites "
+"de imobiliária, hóteis e locais de férias, rotas e caminhos pedestres...)."
+
+msgid "Example 1: Photos enriching a map"
+msgstr "Exemplo 1: Fotos a enriquecer um mapa"
+
+msgid "Example 2: Photos illustrating an area"
+msgstr "Exemplo 2: Fotos a enriquecer uma área"
+
+msgid "How it works?"
+msgstr "Como funciona?"
+
+msgid "If you have any doubt about the code, don't hesitate to contact us at"
+msgstr ""
+"Caso tenha alguma dúvida acerca do código, não hesite em nos contactar em"
+
+msgid "Requirements"
+msgstr "Necessidades"
+
+#, fuzzy
+msgid ""
+"Every photo displayed in your site should include Panoramio's name or our "
+"logo. A link to the photo page (ex. http://www.panoramio.com/photo/532693) "
+"at <a href='http://www.panoramio.com/'>Panoramio.com</a> is also a "
+"requirement. Under the photo should be displayed the name of the author "
+"linked to his area at Panoramio (e.g. <a href='http://www.bigfots.com/"
+"user/7'>Eduardo Manchon</a>). Also somewhere in your site you need to "
+"include the text \"Photos provided by <a href='http://www.panoramio."
+"com/'>Panoramio</a> are under the copyright of their owners.\""
+msgstr ""
+"Cada foto colocada no seu website deverá incluir o nome ou o logotipo da "
+"Panoramio. Uma hiperligação "
+
+msgid "Terms of Use"
+msgstr "Termos de Utilização"
+
+msgid ""
+"If your purpose of your application is non-commercial you can use the API "
+"directly. If the primary purpose of your application is to derive revenue, "
+"it is considered a commercial application and then you need to get our "
+"explicit approval for using the Panoramio API. Please contact us at <a "
+"class='m'></a>. More information at <a href='/api_terms/'>Panoramio API - "
+"Terms of Use</a>."
+msgstr ""
+"Se não for para uso comercial pode utilizar a o API directamente. Caso a "
+"principal utilidade da sua aplicação for para derivar rendimentos, esta será "
+"considerada uma aplicação comercial e necessitará de uma autorização "
+"explicita para utilizar a API Panoramio. Por favor contacte-nos em <a "
+"class='m'></a>. Encontrará mais informação em a href='/api_terms/'>Panoramio "
+"API - Termos de Utilização</a>."
+
+#, fuzzy
+msgid "Questions"
+msgstr "Fomos notícia"
+
+msgid "If you have any doubt of suggestions, feel free to contact us at"
+msgstr "Se tiver alguma dúvida ou sugestão por favor contacte-nos em"
+
+msgid "List of sites that use Panoramio API"
+msgstr "List de sites que utilizão a Panoramio API"
+
+msgid "check \"Pictures of Panoramio\" on the right-bar"
+msgstr "verifique \"Fotos da Panoramio\" na barra do lado direito"
+
+msgid "API Terms of use"
+msgstr "Termos de Utilização API"
+
+#, fuzzy
+msgid "Panoramio API - Terms of Use"
+msgstr "- Termos de Utilização API"
+
+msgid ""
+"We are happy to know that you are planning to use Panoramio API, ¡Muchas "
+"gracias! By using the Panoramio API you agree to <a href='http://www.google."
+"com/accounts/TOS?loc=US'>the Google Terms of Service</a>, as well as the "
+"terms below."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Every photo displayed at your site should include a link to the original "
+"photo at <a href=\"http://www.panoramio.com\">Panoramio.com</a>. The name of "
+"the owner should be displayed below the photo and linked to the user area (e."
+"g. <a href=\"/user/7\">Eduardo Manchon</a>). Panoramio's logo or name should "
+"be included too."
+msgstr ""
+"Cada foto colocada no seu website deverá incluir o nome ou o logotipo da "
+"Panoramio. Uma hiperligação "
+
+msgid ""
+"It is also a requirement to include a link with the text \"Photos provided "
+"by <a href=\"http://www.panoramio.com\">Panoramio</a>. Photos are under the "
+"copyright of their owners.\" somewhere in your site."
+msgstr ""
+
+msgid ""
+"See <a href=\"/api#api-examples\">examples of use</a> for more information."
+msgstr ""
+
+msgid ""
+"Remember that Panoramio doesn't own the images, but the owners of the photos "
+"do. You shall not use Panoramio API to override the requirements and "
+"restrictions of photo owners'."
+msgstr ""
+
+msgid ""
+"You shall not use an unreasonable amount of bandwidth with the Panoramio "
+"API, neither use the API in a way that impacts negatively the stability of "
+"Panoramio.com."
+msgstr ""
+
+msgid ""
+"You shall not use Panoramio API as hosting service for image advertisements, "
+"graphics, etc."
+msgstr ""
+
+msgid "Commercial Use and Fees"
+msgstr ""
+
+
+#, fuzzy
+msgid ""
+"Panoramio API is free for both commercial and non-commercial purposes. We "
+"are exploring other business models than charging a fee, however providing "
+"the API does have a cost. In the future these models might not be enough to "
+"pay bills, thus Panoramio reserves the right to charge fees for the use of "
+"Panoramio API for some kind of commercial applications and over certain "
+"bandwidth limits."
+msgstr ""
+"O Panoramio é grátis e nós desejamos por todos os meios mantê-lo assim. "
+"Estamos a explorar novos modelos de negócio que permitam não cobrar nada aos "
+"utilizadores. Contudo, no futuro pode acontecer que tal não seja suficiente "
+"para pagar as contas. Se um dia for necessário optar por um modelo em que se "
+"tenha de pagar para armazenar as fotografias, será sempre possivel retirá-"
+"las dos nossos servidores no caso de querer descontinuar a utilização do "
+"Panoramio."
+
+msgid "Warranty"
+msgstr ""
+
+msgid ""
+"There is not any warranty that the Panoramio API is free of errors or bugs. "
+"The Panoramio API is provided \"as is\" with no warranty. Your use of "
+"Panoramio API is at your own discretion and risk, you will be solely "
+"responsible for any damage that results from the use of the Panoramio API."
+msgstr ""
+
+msgid ""
+"Panoramio may terminate the API at any time for any reason. Your right to "
+"use Panoramio API finish if you violate any of these terms or Panoramio "
+"writes a public notice of termination."
+msgstr ""
+
+msgid "You must be logged to change your settings."
+msgstr ""
+"É necessário entrar no Panoramio para poder alterar as suas configurações."
+
+msgid "Photo-sharing community. Discover the world through satellite photos."
+msgstr ""
+"Comunidade de partilha de fotografias. Descubra o mundo através de "
+"fotografias de satélite."
+
+msgid "Change your <span>personal photo</span>"
+msgstr "Altere a sua <span>foto pessoal</span>"
+
+msgid "Next"
+msgstr "Seg"
+
+msgid "or"
+msgstr "ou"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Change license"
+msgstr "Mudar licença"
+
+msgid "Favourites"
+msgstr "Favoritos"
+
+msgid "Your favourite photos"
+msgstr "As suas fotografias favoritas"
+
+msgid "Photos"
+msgstr "Fotografias"
+
+msgid "Add users or photos starring them"
+msgstr "Adicione outros utilizadores ou fotografias destes"
+
+#, php-format
+msgid "%s's tags"
+msgstr "Os temas de %s"
+
+msgid "Organize with tags"
+msgstr "Organizar com temas"
+
+msgid "[Edit]"
+msgstr "[Alterar]"
+
+msgid "modify"
+msgstr "modificar"
+
+msgid "I'm done"
+msgstr "Concluído"
+
+msgid "Delete this tag"
+msgstr "Apagar este tema"
+
+msgid "Apply"
+msgstr "Concluir"
+
+msgid "Create tag"
+msgstr "Criar tema"
+
+# In portuguese there are at least 3 replacements fom "in".
+# They are "em", "no", "na" and are used in different situations
+# It's better not to put any word
+#, php-format
+msgid "in %s, %s (%s)"
+msgstr "%s, %s (%s)"
+
+# In portuguese there are at least 3 replacements fom "in".
+# They are "em", "no", "na" and are used in different situations
+# It's better not to put any word
+#, php-format
+msgid "in %s (%s)"
+msgstr "%s (%s)"
+
+#, php-format
+msgid "near %s, %s (%s)"
+msgstr "perto de %s, %s (%s)"
+
+#, php-format
+msgid "near %s (%s)"
+msgstr "perto de %s (%s)"
+
+#, php-format
+msgid "%.0f Km from %s, %s (%s)"
+msgstr "%.0f Km até %s, %s (%s)"
+
+#, php-format
+msgid "%.0f Km from %s (%s)"
+msgstr "%.0f Km até %s (%s)"
+
+msgid "« Prev"
+msgstr "« Ant"
+
+msgid "Next »"
+msgstr "Seg »"
+
+msgid "Posted yesterday"
+msgstr "Colocadas ontem"
+
+
+#, php-format
+msgid "Posted %s"
+msgstr "Colocada %s"
+
+msgid "Change password"
+msgstr "Alterar palavra-passe"
+
+msgid "Change your <span>password</span>"
+msgstr "Altere a sua <span>palavra-passe</span>"
+
+msgid ""
+"Write your new password and press the <b>Continue</b> button to save it."
+msgstr ""
+"Digite a sua palavra passe e prima o botão <b>Continuar</b> para a guardar."
+
+msgid "Passwords don't match"
+msgstr "As palavras-passe são diferentes"
+
+msgid "Enter new password:"
+msgstr "Introduza a nova palavra-passe:"
+
+msgid "Repeat password:"
+msgstr "Introduza novamente a palavra-passe"
+
+msgid "Continue »"
+msgstr "Continuar »"
+
+msgid "This comment has already been deleted."
+msgstr "Este comentário já tinha sido apagado."
+
+msgid "You don't have the right to delete this comment."
+msgstr "Permissões insuficientes para apagar este comentário."
+
+msgid "Forgot your password in Panoramio"
+msgstr "Esqueceu-se da sua palavra-passe do Panoramio"
+
+#, php-format
+msgid ""
+"Hi,\n"
+"\n"
+"If you forgot your password, you need to choose a new one by clicking here:\n"
+"%s\n"
+"\n"
+"If you didn't forget your Panoramio's password, just ignore this e-mail."
+msgstr ""
+"Olá,\n"
+"\n"
+"Se se esqueceu da sua palavra-passe, terá de escolher outra \"clicando\" "
+"aqui:\n"
+"%s\n"
+"\n"
+"Se não é esse o caso, ignore este correio electrónico."
+
+#, fuzzy
+msgid "Favourite photos"
+msgstr "- Fotografias favoritas"
+
+msgid "Your Favourite Photos"
+msgstr "As suas Fotografias Favoritas"
+
+#, php-format
+msgid "%s's Favourite Photos"
+msgstr "As Fotografias Favoritas de %s"
+
+#, php-format
+msgid "No photos by this user in <a href='%s'>Panoramio</a>"
+msgstr "Não existem fotografias deste utilizador no <a href='%s'>Panoramio</a>"
+
+msgid "More photos »"
+msgstr "Mais fotografias »"
+
+msgid "Hi"
+msgstr "Olá"
+
+msgid "[Settings]"
+msgstr "[Configurações]"
+
+msgid "Upload your photos »"
+msgstr "Envie as suas fotografias »"
+
+#, fuzzy
+msgid "Upload finished"
+msgstr "- Upload terminado"
+
+#, fuzzy, php-format
+msgid ""
+"<span>Notice:</span> Your photos will show up in Google Earth as a blue "
+"compass %s in <strong>a few weeks</strong>. <a href='/help/#GE_1'>see why</a>"
+msgstr ""
+"<span>Nota:</span> As suas fotos aparecerão no Google Earth como uma bússola "
+"azul %s dentro de <strong>algumas semanas</strong>. <a href='/help/"
+"#see_GE'>veja porquê</a>"
+
+msgid "Upload more photos"
+msgstr "Enviar mais fotografias"
+
+msgid "Your photos in Google Earth"
+msgstr "As suas fotografias no Google Earth"
+
+msgid "Panoramio's World Map"
+msgstr "Mapa-múndi do Panoramio"
+
+msgid "Your personal area"
+msgstr "A sua área pessoal"
+
+msgid "Back to the previous photo"
+msgstr "Voltar à fotografia anterior"
+
+msgid "Error flagging the photo"
+msgstr "Erro ao marcar a foto"
+
+msgid "You can't flag your own photos."
+msgstr "Não pode marcar as suas próprias fotos."
+
+msgid "Thank you for nominating this photo for \"Best of Panoramio\"."
+msgstr "Obrigado por nomear esta foto para o \"Melhor do Panoramio\"."
+
+msgid "We have removed this photo from the map. Thanks!"
+msgstr "Esta foto foi retirada do mapa. Obrigado!"
+
+msgid ""
+"If enough people also flag this photo, it will be removed from the tab "
+"\"popular\". Thanks!"
+msgstr ""
+"Se um número suficiente de pessoas também marcar esta foto, ela será "
+"retirada da marca \"popular\". Obrigado!"
+
+#, fuzzy
+msgid ""
+"We will review this photo and delete it if its content is considered "
+"inappropriate or offensive. Thanks!"
+msgstr ""
+"Observaremos em breve esta foto, que será apagada no caso de ser considerada "
+"obscena. Obrigado!"
+
+msgid "Suggestion registered"
+msgstr "Sugestão registada."
+
+msgid "Got it!"
+msgstr "Ja está!"
+
+msgid "Forgot password"
+msgstr "Esqueceu-se da sua palavra-passe?"
+
+msgid "Did you <span>forget your password</span>?"
+msgstr "Esqueceu-se da sua <span>palavra-passe</span>?"
+
+msgid "Enter the e-mail you used to register in Panoramio."
+msgstr ""
+"Introduza o endereço de correio electrónico que usou para criar uma conta no "
+"Panoramio"
+
+msgid "Continue"
+msgstr "Continuar"
+
+msgid "Google Earth"
+msgstr "Google Earth"
+
+msgid "<span>Google Earth:</span> 3-D view of the Earth"
+msgstr "<span>Google Earth:</span> Observar a Terra em 3- D"
+
+msgid "See in Google Earth:"
+msgstr "Visualização no Google Earth"
+
+msgid "Only your photos »"
+msgstr "Apenas as suas fotografias »"
+
+msgid "Popular photos »"
+msgstr "Fotografias populares »"
+
+msgid "All photos »"
+msgstr "Todas as fotografias »"
+
+msgid ""
+"The photos are updated in real time and they will be represented by "
+"thumbnails of themselves."
+msgstr ""
+"As fotos são colocadas em tempo real e serão representadas por miniaturas."
+
+msgid "You still don’t have Google Earth?"
+msgstr "Não tem o Google Earth?"
+
+msgid "Download it with Google Pack"
+msgstr "Descarregue o Google Earth"
+
+msgid "Panoramio's photos in Google Earth"
+msgstr "As fotografias do Panoramio no Google Earth"
+
+msgid "Help"
+msgstr "Ajuda"
+
+msgid "Frequent Asked <span>Questions</span>"
+msgstr "<span>Perguntas</span> Frequentes"
+
+
+msgid "How can I report inappropriate or offensive photos?"
+msgstr "Como posso denunciar fotos obscenas ou ilegais?"
+
+msgid "How to correct the location of a photo"
+msgstr "Como corrigir a localização de uma fotografia"
+
+msgid "I can't sign-in, how can I fix this problem?"
+msgstr "Não consigo fazer login, como resolvo o problema?"
+
+msgid "How to change your user name, e-mail or password?"
+msgstr ""
+"Como alterar a sua identificação de utilizador, e-mail ou palavra-chave?"
+
+#, fuzzy
+msgid "Did you forget your password or e-mail?"
+msgstr "Esqueceu-se da sua <span>palavra-passe</span>?"
+
+msgid "How to contact a user from Panoramio?"
+msgstr "Como contactar um utilizador do Panoramio?"
+
+msgid "Can I help translating Panoramio to another language?"
+msgstr "Posso ajudar a traduzir o Panoramio para outra língua?"
+
+msgid "How to insert a mini-panoramio in your site?"
+msgstr "Como inserir um mini-panoramio numa sua página?"
+
+msgid "Full list of questions:"
+msgstr "Lista completa de perguntas:"
+
+msgid "How to upload a photo?"
+msgstr "Como enviar uma fotografia?"
+
+msgid "How to place a photo in the map?"
+msgstr "Como colocar uma foto no mapa?"
+
+msgid "How many photos can I upload?"
+msgstr "Quantas fotografias posso enviar?"
+
+msgid "Questions about photos in Google Earth"
+msgstr "Perguntas sobre fotografias no Google Earth"
+
+msgid "How to hide Panoramio's photos in Google Earth?"
+msgstr ""
+"Como faço para não mostrar as fotografias do Panoramio no Google Earth?"
+
+msgid "What is the copyright status of posted photos?"
+msgstr "Qual é o tipo de copyright das fotografias enviadas?"
+
+msgid "How to change a photo's title"
+msgstr "Como alterar o título de uma fotografia"
+
+msgid "How to delete a photo"
+msgstr "Como apagar uma fotografia"
+
+msgid "I can't sign-up, what can I do?"
+msgstr "Não consigo registar-me, o que posso fazer?"
+
+msgid "How to find a place"
+msgstr "Como encontrar um lugar no mapa"
+
+msgid ""
+"How can I report some incorrect information in the map (street, name, "
+"town..)?"
+msgstr ""
+"Como poderei indicar informação incorrecta num mapa (ruas, nomes, sítios..)?"
+
+msgid "How can I claim a photo like mine?"
+msgstr "Como posso reclamar uma fotografia que é minha?"
+
+msgid ""
+"Do I place the photo in the place where it was taken or over the place it "
+"represents?"
+msgstr "Coloco a foto onde foi tirada ou sobre o que representa?"
+
+msgid "Panoramio e-mail alerts"
+msgstr "Alertas por correio electrónico do Panoramio"
+
+msgid "Can I use, copy, print or download a photo from Panoramio.com?"
+msgstr ""
+"Posso utilizar, copiar, imprimir ou fazer download de uma foto do Panoramio."
+"com?"
+
+#, php-format
+msgid "Adding and removing favorites %s"
+msgstr "Adicionar à lista de favoritos %s"
+
+msgid "Questions about tags"
+msgstr "Perguntas sobre os temas"
+
+msgid "What are tags?"
+msgstr "O que são temas?"
+
+msgid "How to create, apply, edit and delete tags?"
+msgstr "Como criar, usar, alterar e alterar temas?"
+
+msgid "Is it safe to keep the photos in Panoramio?"
+msgstr "É seguro guardar fotografias no Panoramio?"
+
+msgid "Photo acceptance policy"
+msgstr "Política de aceitação de fotografias"
+
+msgid "Contact information"
+msgstr "Informação de contacto"
+
+msgid "Use the link “Upload”."
+msgstr "Use o link “Enviar”."
+
+msgid ""
+"If you are already registered, just select the photos from your hard disk. "
+"If not, you will need to sign-up before."
+msgstr ""
+"Se já criou uma conta, basta selecionar fotografias do seu disco rigido, "
+"Caso contrário tem de criar uma conta primeiro."
+
+msgid ""
+"Optionally you can use the option “map this photo” and then locate the photo."
+msgstr ""
+"Também pode usar a opção “localizar fotografia” para associar um local à "
+"fotografia."
+
+msgid "When you have finished uploading photos, just click on “Finish”."
+msgstr "Quando o envio estiver concluido, basta clicar em “Terminar”."
+
+msgid "Notice:"
+msgstr "Aviso:"
+
+msgid ""
+"If you want to upload more photos, please, don't press the \"finish\" "
+"button, but select more photos without waiting for the full upload."
+msgstr ""
+"Se quiser adicionar mais fotos, por favor não carregue no botão  \"finalizar"
+"\", selecione mais fotos sem esperar pelo upload completo."
+
+msgid ""
+"When photos are from the same place you don't need to find the location in "
+"the map for each photo. The mapping system remembers the position of the "
+"previous mapped photo."
+msgstr ""
+"Quando as fotos forem dos mesmos locais não necessita de procurar a "
+"localização para cada uma. O sistema de mapeamento lembra-se da posição da "
+"foto anteriormente mapeada."
+
+msgid ""
+"Photos with coordinates in EXIF are mapped automatically. Please, don't use "
+"the option \"map this photo\"."
+msgstr ""
+"Fotos com coordenadas EXIF são mapeadas automaticamente. Por favor não "
+"utilizae a opção \"mapear esta foto\"."
+
+msgid ""
+"The photo is resized automatically, you can upload the photo in original "
+"size (max. 5 MB)"
+msgstr ""
+"O tamanho da foto é ajustado automaticamente, pode fazer upload no tamanho "
+"original (max. 5 MB)"
+
+msgid "top"
+msgstr "topo"
+
+msgid "How to place a photo on the map?"
+msgstr "Como colocar uma foto no mapa?"
+
+msgid ""
+"<strong>During uploads:</strong> You can place a photo on the map while it "
+"is uploading. After using the 'upload' link, use the button 'map this photo' "
+"and follow the steps below."
+msgstr ""
+"<strong>Durante o envio:</strong> Pode-se localizar uma fotografia no mapa "
+"enquanto esta está a ser enviada. Depor de usar o link de 'enviar', use o "
+"botão 'localizar fotografia' e siga os passos indicados."
+
+msgid ""
+"<strong>After uploading:</strong> To locate a photo you have previously "
+"uploaded, go to the photo page and then use the link “map this photo” on the "
+"right and follow the steps below."
+msgstr ""
+"<strong>Após o envio:</strong> Vá para a página da fotografia, use o botão "
+"'localizar fotografia' e siga os passos indicados."
+
+msgid "There are four ways to place a photo on the map:"
+msgstr "Existem quatro maneiras de colocar uma fotografia no mapa:"
+
+msgid "a) Searching for the name of a place, if you know it."
+msgstr "a) Procurar pelo nome do local, se souber qual é"
+
+msgid "b) Browsing the map, if you don't know the name of the place."
+msgstr "b) Navegar no mapa, se não souber o nome do local"
+
+msgid "c) Giving the coordinates (latitude and longitude) of the place"
+msgstr "c) Indicar as coordenadas do local"
+
+msgid "d) Using coordinated coded in EXIF data"
+msgstr "d) Incluir as coordenadas na informação EXIF"
+
+msgid "<strong>a) Searching for the name of the place</strong>"
+msgstr "<strong>a) Procurar pelo nome do local</strong>"
+
+msgid ""
+"Write the name of the city or place where you want to place the photo and "
+"press “next”. Write down the name in ENGLISH, and don't include then name of "
+"the state or region"
+msgstr ""
+"Escreva o nome da cidade ou do local onde pretende colocar as fotografia e "
+"clique em “seguinte”. O nome deve ser escrito em INGLÊS, não inclua o nome "
+"do estado ou região"
+
+msgid ""
+"If there is more than one place with the same name you will be offered a "
+"choice of countries/regions to chose from. Finally, you will see the map of "
+"the place."
+msgstr ""
+"Se existir mais de um local com o mesmo nome terá de escolher qual o país/"
+"região a que corresponde o local pretendido. Finalmente verá o mapa do local."
+
+msgid "Use the map controls to find the right place."
+msgstr "Utilize os controlos do mapa para procurar o local pretendido."
+
+msgid "Press “Save position” to finish."
+msgstr "Prima  “Guardar localização” para concluir."
+
+msgid "<strong>b) Browsing the map to find the place</strong>"
+msgstr "<strong>b) Navegar no mapa à procura do local desejado</strong>"
+
+msgid ""
+"If you don't know the name of the place you can enter the name of a place "
+"nearby, and then follow the steps above."
+msgstr ""
+"Se desconhecer o nome do local, pode tentar utilizar o nome de um local "
+"próximo, seguindo depois os passos 1 a 3 acima indicados."
+
+msgid ""
+"If you don't know the name of anywhere nearby, leave the field blank and "
+"press “next”. The map of the world will appear. Use the map controls to find "
+"the right place and press “save position” to finish."
+msgstr ""
+"Se não souber nenhum nome, deixe o campo em branco e pressione “seguinte”. O "
+"mapa do mundo irá aparecer. Utilize os controlos do mapa para procurar o "
+"local pretendido e prima  “guardar localização” para concluir."
+
+msgid "<strong>c) Giving the coordinates</strong>"
+msgstr "<strong>c) Indicar as coordenadas do local</strong>"
+
+msgid ""
+"You can supply latitude and longitude information in both decimal and "
+"sexagesimal formats."
+msgstr "Pode fazê-lo em ambos os formatos, decimal ou sexagesimal."
+
+msgid ""
+"Write the latitude and longitude coordinates in decimal format separated by "
+"“,” or by spaces. For instance: “40.56345, -3.45678”"
+msgstr ""
+"Pode escrever as coordenadas em formato decimal separadas por “,” ou por "
+"espaços. Por exemplo: “40.56345, -3.45678”"
+
+msgid ""
+"Alternatively, you can type them in sexagesimal format (degrees, minutes and "
+"seconds). Just put a space instead of each sexagesimal symbol (°, \" or '), "
+"and separate the latitude and the longitude with a “,”. For instance “23 45 "
+"21.24, -3 20 34.21” means latitude = 23 degrees, 45 minutes, 21.24 seconds "
+"north and longitude = 3 degrees, 20 minutes and 34.21 seconds west."
+msgstr ""
+"Também pode utilizar o formato sexagesimal. Basta utilizar um espaço em vez "
+"dos símbolos (podem ser °, \" ou ') da notação sexagesimal e separar a "
+"latitude da longitude com “,”. Por exemplo  “23 45 21.24, -3 20 34.21” "
+"significa: latitude = 23 graus, 45 minutos e 21.24 segundos Norte e "
+"longitude = 3 graus, 20 minutos e 34.21 segundos oeste."
+
+msgid ""
+"The exact place will be shown in the map. Press “Save position” to finish."
+msgstr ""
+"O local exacto será mostrado no mapa. Prima  “Guardar localização” para "
+"concluir."
+
+msgid "<strong>d) Including coordinates in EXIF</strong>"
+msgstr "<strong>d) Incluir as coordenadas na informação EXIF</strong>"
+
+msgid ""
+"If a photo already has coordinates in EXIF (internal information), it will "
+"automatically be placed on the map. You don't need to do anything, just "
+"upload the photo, but don't press “map this photo”."
+msgstr ""
+"Se uma fotografia já incluir coordenadas na informação EXIF (informação "
+"interna), esta será automaticamente colocada no mapa. Não será necessário "
+"fazer mais nada, basta enviar a fotografia e não premir o botão “localizar "
+"fotografia”."
+
+msgid ""
+"As many as you want, up to 2 Gigabytes. That is approximately 3.000 photos "
+"taken with 4 megapixels camera."
+msgstr ""
+"Tantas quantas quiser, até um limite de 2 Gigabytes. Ou seja, "
+"aproximadamente 2000 fotografias de 4 megapixéis."
+
+msgid ""
+"You can upload an unlimited number of photos simultaneously, just select "
+"more photos without waiting for the full upload. Don't press the \"finish\" "
+"button. The mapping system remembers the position of the last mapped photo, "
+"so you don't need to find the same place more than once."
+msgstr ""
+"Pode fazer upload de um número ilimitado de fotos simultaneamente, só tem "
+"que selecionar mais fotos sem esperar pelo upload completo. Não carregue no "
+"botão \"finalizar\". O sustema de mapeamento lembra-se da posição da ultima "
+"foto mapeada por isso não necessita de procurar um local mais de uma vez. "
+
+msgid "Right after uploading your photos to Panoramio you can:"
+msgstr "Logo após fazer upload das suas fotos para a Panoramio poderá:"
+
+msgid ""
+"Open <a href='/kml/?all'>this file</a> with Google Earth to see all your "
+"photos."
+msgstr ""
+"Abra <a href='/kml/?all'>este ficheiro</a> com o Google Earth para ver todas "
+"as suas fotos."
+
+msgid ""
+"Wait until your photos are automatically added to Google Earth. For more "
+"information see <a href='#GE_3'>'When will my photo appear in Google "
+"Earth?'</a> and read the <a href='#GE_2'>'Acceptance policy for Google "
+"Earth'</a>."
+msgstr ""
+"Espere até as suas fotos serem automáticamente adicionadas ao Google Earth. "
+"Para mais informação veja <a href='#GE_3'> Quando é que a minha foto vai "
+"aparecer no Google Earth?'</a> e leia o <a href='#GE_2'>Política de "
+"Aceitação do Google Earth'</a>."
+
+msgid ""
+"Go to <a href=\"/map/#lt=0.000000&ln=0.000000&z=16&k=2&a=1&tab=2"
+"\">Panoramio's map</a>, you will find your photos under the \"all\" and "
+"\"your photos\" tab."
+msgstr ""
+"Vá para o <a href=\"/map/#lt=0.000000&ln=0.000000&z=16&k=2&a=1&tab=2\">mapa "
+"Panoramio</a>, encontrará as suas fotos em  \"todas\" e \"a suas fotos\"."
+
+msgid "Car, plane or any machine as the main subject. Same exception as above."
+msgstr ""
+
+msgid ""
+"Pet or animal as the main subject. Exception: animals in their natural "
+"environment showing the background."
+msgstr ""
+
+msgid ""
+"Flowers and details of plants. Exception: forests, big trees and photos that "
+"show the background."
+msgstr ""
+
+msgid "Close-ups: details, inscriptions, signals..."
+msgstr ""
+
+msgid ""
+"Underwater or aerial photos similar to the satellite images from Google Maps"
+msgstr ""
+
+msgid "Events: exhibitions, concerts, parades..."
+msgstr ""
+
+msgid ""
+"Interiors: everything under a roof is usually not accepted. Exception: "
+"photos with a wide perspective inside churches, mosques, train stations..."
+msgstr ""
+
+msgid "Frames: only very thin and simple frames are accepted."
+msgstr ""
+
+msgid ""
+"Under 500 pixels in height and width (550x300 is ok, but 450x400 is not)"
+msgstr ""
+
+msgid "Low quality photos; extremely blurred, under 100 Kb size, too dark..."
+msgstr ""
+"Não tem qualidade suficiente: demasiado borrada, tamanho inferior a 100Kb, "
+"demasiado escura.."
+
+#, fuzzy
+msgid "Not real photos: paintings, logos, digital images, collages..."
+msgstr "Não é uma foto real: quadro, logotipo, imagem digital..."
+
+msgid ""
+"Not selected photos for Google Earth are still visibile in the tab \"all\" "
+"in <a href=\"/map/\">Panoramio's map</a> and in Google Earth by opening <a "
+"href=\"/kml/?all\">this file</a>"
+msgstr ""
+
+msgid "Check the status below the photo:"
+msgstr "Verifique o status por baixo da foto:"
+
+msgid ""
+"a) Your photo have been selected for Google Earth. This photo is already in "
+"Google Earth or it will appear in the next update around %s"
+msgstr ""
+"a) A sua foto foi selecionada para o Google Earth. Esta foto pode já estar "
+"inserida no Google Earth ou aparecerá em %s"
+
+#, php-format
+msgid ""
+"There is a new update each month, so this date will change every month. This "
+"status is indicated in your personal area with the icon %s"
+msgstr ""
+
+msgid ""
+"b) Has not yet been reviewed. Your photo is in the waiting list for Google "
+"Earth. In the next days/weeks this photo will be reviewed and selected or "
+"rejected. The waiting list is right now at ID: %d and moves on almost daily."
+msgstr ""
+"b) A sua foto ainda não foi revista. Nos próximos dias/semanas esta foto "
+"será revista e selecionada ou rejeitada. A lista de espera está de momento "
+"em ID: %d e é actualizada a um ritmo quase diário."
+
+msgid ""
+"c) Not included in Google Earth. Please, check the <a "
+"href='#GE_2'>acceptance policy for Google Earth</a>."
+msgstr ""
+
+msgid ""
+"For alternative ways to see your photos read <a href='#GE_1'>'How can you "
+"see your photos in Google Earth?'</a>."
+msgstr ""
+"Para formas alternativas de ver as suas fotos leia <a href='#GE_1'>'Como ver "
+"as suas fotos no Google Earth?'</a>."
+
+msgid ""
+"Uncheck the \"Geographic web\" layer at the left sidebar in Google Earth."
+msgstr ""
+"Desmarque a camada \"Web Geográfica\" no barra lateral esquerda no Google "
+"Earth."
+
+msgid ""
+"You can contact the <a href='http://earth.google.com/support/bin/answer.py?"
+"answer=65161'>Google Earth Help Center</a>:"
+msgstr ""
+"Pode contactar o <a href='http://earth.google.com/support/bin/answer.py?"
+"answer=65161'>Centro de Ajuda Google Earth</a>:"
+
+msgid "Bug or problem"
+msgstr "Erro ou problema"
+
+msgid "Example: I can't see the Earth imagery."
+msgstr "Exemplo: Não consigo ver as imagens do Planeta."
+
+msgid "Reporting mapping/satellite imagery data errors"
+msgstr "Reportando erros de dados de imagens de mapeamento/satelite"
+
+msgid "Example: The city I live in is mislabeled."
+msgstr "Exemplo: A cidade em que moro está mal etiquetada."
+
+msgid "Example: I love the Geographic Web layer!"
+msgstr "Exemplo: Eu adoro a camada Web Geográfica!"
+
+msgid ""
+"Posting pictures in Panoramio doesn't mean any change in copyright status. "
+"Photos are under the copyright their owners decided previously: standard "
+"copyright, copyleft, Creative Commons license, etc. When you post photos in "
+"Panoramio, you just are granting Panoramio the right to use them (we need "
+"that right in order to host and display your photos)."
+msgstr ""
+"A publicação de fotografias no Panoramio, não introduz nenhuma alteração nos "
+"direitos de autor das mesmas. As fotografias são publicadas com os direitos "
+"decididos previamente pelos autores: Copyright geral, licensa Creative "
+"Commons, copyleft, etc. Ao publicar uma fotografia no Panoramio está "
+"simplesmente a ceder o direito a que esta possa ser usada no dominio (Nós "
+"necessitamos desse direito de forma a podermos guardar e mostrar as suas "
+"fotografias)."
+
+msgid ""
+"<strong>Your photos</strong>: If you want to correct the location of a photo "
+"you previously uploaded, sign in with your username and password. On your "
+"photo page(s) you have two options:"
+msgstr ""
+"<strong>As suas fotografias</strong>: Se desejar corrigir a localização de "
+"uma fotografia enviada anteriormente, entre no Panoramio com o seu nome de "
+"utilizador e palavra-passe. Na página das fotografias terá duas opções:"
+
+msgid "Use the “change position” button located under the two maps."
+msgstr "Prima o botão “alterar localização” localizado debaixo dos dois mapas."
+
+msgid ""
+"Photos can receive only one suggestion for relocation. If the position of "
+"the photo has been already corrected, but you still believe the\n"
+"position to be incorrect, please send us the photo-ID number located below "
+"the photo and the coordinates of the correct position at <a class='m'></a>"
+msgstr ""
+
+#, php-format
+msgid ""
+"<strong>Notice:</strong> Before reporting a mistake, check the position of "
+"the photo in Panoramio.com. If the position is already correct in Panoramio, "
+"but incorrect in Google Earth, it means that it has been already corrected. "
+"Please, wait until next update around %s to see the position corrected in "
+"Google Earth."
+msgstr ""
+"<strong>Nota:</strong> Antes de roprtar um erro, verifique a posição da foto "
+"no Panoramio.com. Se a posição já tiver correcta no Panoramio, mas "
+"incorrecta no Google Earth, quererá dizer que o problema já foi rectificado. "
+"Por favor aguarde pela próxima actualização aproximadamente em %s para ver a "
+"posição correcta no Google Earth."
+
+msgid "Sign-in with the same user name you used to upload the photo."
+msgstr ""
+"Entrar com o mesmo nome de utilizador com que fez o envio da fotografia."
+
+msgid ""
+"Click on the photo's title and then you can edit the text. To save the "
+"changes just press enter, tab or click somewhere else. Press Esc to undo any "
+"changes to the text."
+msgstr ""
+"Clique no título da fotografia de forma a poder editar o texto. Para gravar "
+"as alterações, bastará premir a tecla ENTER, TAB ou clicar em qualquer outro "
+"lugar da página. Prima a tecla ESC para desfazer quaisquer alterações ao "
+"texto."
+
+msgid ""
+"If the photo belongs to someone else, you can add a comment to that photo "
+"explaining why you suggest the change. The author will get an e-mail with "
+"your comment."
+msgstr ""
+"Se a foto é de um outro utilizador, poderá adicionar um comentário "
+"explicando porque sugere uma alteração. O autor receberá um e-mail com o seu "
+"comentário."
+
+msgid ""
+"Click on the photo to open the photo page. Under the photo you will find the "
+"link “Delete”."
+msgstr "Por baixo da fotografia encontrará o caminho para “Apagar”."
+
+msgid ""
+"Usually when your browser doesn't accept cookies from Panoramio, you have "
+"problems to sign-in. In order to fix this problem you have two options. "
+"First, set your browser settings (Privacy) to accept cookies from Panoramio "
+"and try to sign-in. If that doesn't help, check your antivirus settings and "
+"add Panoramio.com to your list of trusted sites and try to sign-in again."
+msgstr ""
+"Normalmente quando o seu navegador de internet não aceita cookies do "
+"Panoramio, terá problemas a fazer login. Para resover o problema tem duas "
+"opções. Primeiro, altere as definições do seu navegador (Privacidade) para "
+"aceitar cookies do Panoramio e tente fazer login. Se isso não funcionar, "
+"verifique as definições do seu anti-virus e adicione o Panoramio.com à lista "
+"de sites autorizados e tente novamente fazer login."
+
+msgid ""
+"The most common problem in the sign-up process happens with the username you "
+"try is already used by someone else. Most of common names and family names "
+"are already in use, please, try to find a less common username and try again."
+msgstr ""
+"O problema mais comum no processo de registo é de o nome de utilizador que "
+"pretende já estar a ser utilizado por outra pessoa. A maioria dos nomes "
+"próprios ou nomes de familia já estão a ser utiliados, por favor tente um "
+"nome menos comum e tente de novo."
+
+msgid ""
+"In other cases the sign-up problems happen because your browser doesn't "
+"accept cookies from Panoramio. In order to fix this problem you have two "
+"options. First, set your browser settings (Privacy) to accept cookies from "
+"Panoramio.com and try to sign-up again. If that doesn't help, check your "
+"antivirus settings and add Panoramio.com to your list of trusted sites and "
+"try to sign-up again."
+msgstr ""
+"Noutros casos, os problemas de registo verificam-se porque o seu navegador "
+"não aceita cookies do Panoramio. Para resover o problema tem duas opções. "
+"Primeiro, altere as definições do seu navegador (Privacidade) para aceitar "
+"cookies do Panoramio e tente fazer login. Se isso não funcionar, verifique "
+"as definições do seu anti-virus e adicione o Panoramio.com à lista de sites "
+"autorizados e tente novamente fazer login."
+
+msgid ""
+"In the right-upper side of your personal area you will find the link "
+"\"Settings\". Under this link you can change your user name, your e-mail or "
+"your password. If you can't see this link, please, <a href='/signin'>sign-"
+"in</a>."
+msgstr ""
+"No lado superior direito da sua área pessoal encontrará o link \"Definições"
+"\". Abaixo deste link pode alterar o seu nome de utilizador, o seu e-mail ou "
+"password. Caso não consiga ver este link por favor faça <a href='/"
+"signin'>login</a>."
+
+msgid ""
+"Forgot password: Go to <a href='/forgot_password/'>this page</a> to receive "
+"instructions to get a new password."
+msgstr ""
+
+msgid ""
+"Forgot e-mail: Please, send us an e-mail including the username you "
+"registered to"
+msgstr ""
+
+msgid "There are three different ways:"
+msgstr "Há três maneiras diferentes de o fazer:"
+
+msgid ""
+"Search engine: Write the name of the place (e.g. Paris, Mount Everest, "
+"Sardinia) in the search engine and click the “Find Location” button. Often "
+"there are several places with the same name. You will be asked to choose the "
+"correct one."
+msgstr ""
+"Motor de pesquisa: Escreva o nome do lugar (ex: Paris, Mount Everest, "
+"Sardinia) no motor de busca e prima o botão “Procurar Local”. Por regra "
+"existem vários locais com o mesmo nome, escolha o que se aplica ao seu caso."
+
+msgid ""
+"Drag and drop with your mouse to move around in the map. Use the mouse wheel "
+"to zoom in and out."
+msgstr ""
+"Use o rato para arrastar o mapa até o local desejado. Pode utilizar a roda "
+"do rato para aumentar ou diminuir a escala."
+
+msgid ""
+"Map buttons: Use the arrows on the upper-left side of the map to pan left, "
+"right, up and down. The plus (+) lets you zoom in and the minus (-) is for "
+"zooming out."
+msgstr ""
+"Botões do Mapa: Utilize as setas no canto superior esquerdo do mapa para  se "
+"deslocar para a esquerda, para a direita, para cima ou para baixo. Utilize "
+"os botões de + e - para aumentar ou diminuir a escala, respectivamente."
+
+msgid ""
+"At Panoramio.com we use the maps from Google Maps and TeleAtlas. These maps "
+"are continually updated, but they may occasionally display incorrect "
+"locations or directions. You can report the mistakes you found at <a "
+"href='http://www.teleatlas.com/MapInsight/index.htm'>TeleAtlas website</a>."
+msgstr ""
+"No Panoramio.com usamos mapas de Google Maps e TeleAtlas. Estes mapas são "
+"continuamente actualizados, mas podem ocasionalmente mostrar localizações "
+"incorrectas ou outros erros. Poderá relatar erros que encontre no <a "
+"href='http://www.teleatlas.com/MapInsight/index.htm'>website da TeleAtlas</"
+"a>."
+
+msgid ""
+"If your request is related with Google Earth satellite images and maps, you "
+"can contact the\n"
+"the <a href='http://earth.google.com/support/bin/answer.py?"
+"answer=65161'>Google Earth Help Center</a>."
+msgstr ""
+"Se o seu pedidofor relacionado com imagens de satélite e mapas do Google "
+"Earth, pode contactar o \n"
+"o <a href='http://earth.google.com/support/bin/answer.py?"
+"answer=65161'>Centro de Ajuda do Google Earth</a>."
+
+msgid "Do I place the photo where it was taken or over the subject?"
+msgstr "Coloco a foto onde foi tirada ou sobre o que retrata?"
+
+msgid ""
+"Most of the time it makes more sense to place the photo where it was taken, "
+"as that gives others the possibility of going back to that point and see the "
+"same landscape. There may be exceptions, however, and we trust you as the "
+"best judge to know where should a photo be placed."
+msgstr ""
+"A maior parte das vezes faz mais sentido colocar a foto onde foi tirada, uma "
+"vez que isso indica a outras pessoas a possibilidade de lá ir e ver a mesma "
+"paisagem. Claro que há excepções, todavia, e acreditamos em si para dizer "
+"onde deve ser colocada a foto."
+
+msgid ""
+"Once you are registered in Panoramio, you will receive alerts in two cases:"
+msgstr ""
+"Depois de criar uma conta no Panoramio, irá receber alertas em dois casos:"
+
+msgid "If someone comments on any of your photos"
+msgstr "No caso de alguém comentar uma das suas fotografias"
+
+msgid "If any of your \"favorite users\" upload new photos"
+msgstr ""
+"No caso de algum dos seus autores favoritos adicionar novas fotos ao "
+"Panoramio."
+
+msgid ""
+"You will receive one e-mail alert per day with the new comments on your "
+"photos and with new photos from your favorite users."
+msgstr ""
+"Receberá uma mensagem de alerta por dia com os novos comentários às suas "
+"fotografias, assim como as fotografias adicionadas pelos seus autores "
+"favoritos."
+
+msgid ""
+"If you don't want to receive any e-mail alerts, just click on the link at "
+"the end of the e-mail alert or uncheck the \"e-mail alerts\" in your "
+"\"Settings\" (on your personal area when signed in)."
+msgstr ""
+"Se não desejar receber mais alertas por correio electrónico, basta clicar no "
+"endereço no final de uma mensagem de alerta ou alterar o estado das suas "
+"“Configurações” (Na sua área pessoal após entrar no Panoramio)."
+
+msgid ""
+"Can I use, copy, print or download a photo from <a href='/'>Panoramio.com</"
+"a>?"
+msgstr ""
+"Posso utilizar, copiar ou imprimir uma foto do <a href='/'>Panoramio.com</a>?"
+
+msgid ""
+"You can do it only if you get explicit permission by the author of the photo."
+msgstr "Pode, desde que obtenha autorização explicita do/a autor/a da foto."
+
+#, php-format
+msgid "Adding and removing \"Favorites\" %s"
+msgstr "Adicionar/remover \"Favoritos\" %s"
+
+msgid ""
+"Favourites is a list of users or single photos you like and you want to find "
+"easily again. You can use favorites to track your friends or a good "
+"photographer."
+msgstr ""
+"Os Favoritos, são uma lista de autores e/ou fotografias de que gosta e que "
+"quer encontrar facilmente. Pode utilizar os “favoritos” para se manter "
+"actualizado sobre o que fazem os seus amigos ou um bom fotografo."
+
+msgid ""
+"You can add any photo or any user to favorites by clicking on the gray star "
+"beside the photo's title or the user's name. The star will change to yellow. "
+"You can find your list of favourites in your personal area."
+msgstr ""
+"Pode adicionar qualquer fotografia ou qualquer utilizador à sua lista de "
+"favoritos \"clicando\" na estrela cinzenta ao lado do título da fotografia "
+"ou do nome do utilizador. A estrela passará a ter a cor amarela. A sua lista "
+"de favoritos encontra-se na sua área pessoal."
+
+msgid ""
+"You will receive an e-mail alert when any of your favorites upload a new "
+"picture, unless you uncheck the option in your personal area."
+msgstr ""
+"Receberá um alerta por correio electrónico sempre que um dos seus autores "
+"favoritos enviar uma nova fotografia para o Panoramio, excepto se desactivar "
+"essa opção na sua área pessoal."
+
+msgid ""
+"If you want to remove anything from your favorites, just go to the page of "
+"the user or photo that you want to remove and click on the yellow star (it's "
+"at the left of the user's name or the photo's title)."
+msgstr ""
+"Se quiser retirar algo dos seus favoritos, basta ir à página do utilizador "
+"ou foto que quer remover e clicar na estrela amarela (está do lado esquerdo)."
+
+msgid ""
+"Tags are labels you apply to your photos in order to organize them. You can "
+"apply several tags to the same photo. For example, a photo from <a "
+"href='http://www.panoramio.com/photo/23712'>Eduardo at Golden Gate in San "
+"Francisco</a> can be tagged with <a href='http://www.panoramio.com/user/7/"
+"tags/eduardo'>Eduardo</a>, <a href='http://www.panoramio.com/user/7/tags/"
+"bridge'>Bridge</a>, <a href='http://www.panoramio.com/user/7/tags/golden%"
+"20gate'>Golden Gate</a> and <a href='http://www.panoramio.com/user/7/tags/san"
+"%20francisco'>San Francisco</a>."
+msgstr ""
+"Pode classificar as suas fotografias por temas de forma a organizá-las "
+"melhor. Pode associar mais do que um tema a cada fotografia. Por exemplo, "
+"uma fotografia do <a href='http://www.panoramio.com/photo/23712'>Eduardo na "
+"Golden Gate em São Francisco</a> pode ser classificada simultaneamente como "
+"<a href='http://www.panoramio.com/user/7/tags/eduardo'>Eduardo</a>, <a "
+"href='http://www.panoramio.com/user/7/tags/bridge'>Bridge [Ponte]</a>, <a "
+"href='http://www.panoramio.com/user/7/tags/golden%20gate'>Golden Gate</a> "
+"and <a href='http://www.panoramio.com/user/7/tags/san%20francisco'>San "
+"Francisco</a>."
+
+msgid ""
+"Tags are handy. You can easily select only your photos tagged with <a "
+"href='http://www.panoramio.com/user/7/tags/bridge'>Bridge</a> by clicking on "
+"that tag. All tags from one user are visible in their personal area."
+msgstr ""
+"Os temas são úteis. Permitem selecionar facilmente todas as fotografias "
+"associadas a <a href='http://www.panoramio.com/user/7/tags/bridge'>Bridge "
+"[Ponte]</a> escolhendo apenas esse tema. Todos os temas de um utilizador são "
+"visiveis na sua área pessoal"
+
+msgid ""
+"Other people can also find your photos more easily when you tag them. At <a "
+"href='http://www.panoramio.com/tags/'>Panoramio's tags</a> page you can see "
+"tags from all Panoramio users together. For example, you can see all photos "
+"tagged with <a href='http://www.panoramio.com/tags/bridge/'>Bridge</a>."
+msgstr ""
+"Simultaneamente, os temas também permitem a outras pessoas encontrar as suas "
+"fotografias mais facilmente. Em <a href='http://www.panoramio.com/tags/'>os "
+"temas do Panoramio</a>, uma página onde se podem encontrar temas definidos "
+"por todos os utilizadores do Panoramio, é possivel encontrar por exemplo o "
+"tema <a href='http://www.panoramio.com/tags/bridge/'>Bridge [Ponte]</a>."
+
+msgid ""
+"<strong>Create</strong>: Go to your personal area. Under \"Organize with tags"
+"\" you will see an empty field. Type the new tag in the field and press "
+"\"create tag\". The new tag will appear. Write only one tag at a time."
+msgstr ""
+"<strong>Criar</strong>: Vá para a sua área pessoal. Sob \"Organizar por temas"
+"\" vê-se um campo vazio. Nesse campo escreva o nome do nove tema que "
+"pretende criar e prima \"Criar Tema\". O novo tema irá aparecer. Escreva "
+"apenas o nome de um tema de cada vez."
+
+msgid ""
+"<strong>Apply</strong>: Click the \"apply\" button beside the tag. Then "
+"click on each photo you want to apply the tag to. The tag will appear under "
+"the photo. You can \"apply\" several tags at the same time. To take away the "
+"tag, do exactly the same and tags will disappear. Press \"Done\" to finish."
+msgstr ""
+"<strong>Activar</strong>: Prima o botão \"Activar\" em frente a um tema e "
+"clique de seguida nas fotografias a que o pretende associar. O novo tema vai "
+"aparecer por debaixo de cada fotografia escolhida.  Pode associar vários "
+"temas ao mesmo tempo a cada fotografia. Para eliminar a associação de um "
+"tema a uma fotografia basta repetir exactamente o processo acima descrito. "
+"Prima \"Concluir\", para terminar."
+
+msgid ""
+"<strong>Edit</strong>: Use the \"Edit\" button beside \"Organize with tags"
+"\". Tags will become editable, make changes and press \"Done\" to finish."
+msgstr ""
+"<strong>Alterar</strong>: Prima o botão \"Alterar\" ao lado de \"Organizar "
+"por temas\". Os temas passam a poder ser alterados, faça as alterações que "
+"pretende e prima \"Concluir\" para terminar."
+
+msgid ""
+"<strong>Delete</strong>: Use the \"edit\" button beside \"Organize with tags"
+"\". Use the trash can to delete tags. Press \"Done\" to finish."
+msgstr ""
+"<strong>Apagar</strong>: Prima o botão \"alterar\" ao lado de \"Organizar "
+"por temas\". Utilize o caixote do lixo para apagar os temas. Prima \"Concluir"
+"\" para terminar."
+
+msgid ""
+"You can click on the \"inappropriate or offensive\" link on the right "
+"sidebar of the photo."
+msgstr ""
+
+msgid "Example of mini-panoramio"
+msgstr "Exemplo do mini-panoramio"
+
+msgid ""
+"This is what you need to write in your site to insert a mini-panoramio frame:"
+msgstr ""
+"É isto que necessita de colocar no seu dominio para poder inserir um mini-"
+"panoramio:"
+
+msgid "Follow these steps to substitute all the “XXX” with the right value."
+msgstr ""
+"Siga os passo seguintes e substitua todos os “XXX” pelos valores correctos."
+
+msgid ""
+"Find, in Panoramio World Map, the area of the map you want to show. In the "
+"url of the browser you will find the values you should use for latitude "
+"<strong>lt</strong>, longitude <strong>ln</strong>, zoom level <strong>z</"
+"strong> and kind of map <strong>k</strong>"
+msgstr ""
+"No mapa do Panoramio navegue até à área que pretende mostrar. No endereço "
+"[URL]  do navegador de internet irá encontrar os parâmetros que deve usar "
+"para <strong>lt</strong>, <strong>ln</strong>, <strong>z</strong> e "
+"<strong>k</strong> (respectivamente: latitude, longitude, nivel de detalhe e "
+"tipo de mapa)"
+
+msgid ""
+"If you want to show only the photos from any single user, you need to "
+"include their user number. You can find their user number in the url of "
+"their personal page. For instance if you want to show the photos of user <a "
+"href='http://www.panoramio.com/user/7'>http://www.panoramio.com/user/7</a>, "
+"you should add <strong>user=7</strong>."
+msgstr ""
+"Se pretender mostrar apenas as fotografias de um só utilizador do Panoramio, "
+"terá de incluir o seu número de utilizador. O número de utilizador encontra-"
+"se no endereço [URL] da página pessoal de cada utilizador. Por exemplo se "
+"quiser mostrar as fotografias do utilizador <a href='http://www.panoramio."
+"com/user/7'>http://www.panoramio.com/user/7</a>, terá de escrever  "
+"<strong>user=7</strong>."
+
+#, no-php-format
+msgid ""
+"The width and height attributes are used to specify the size of the frame in "
+"pixels (or % of total available size)."
+msgstr ""
+"As propriedades largura [width] e altura [height] usam-se para definir o "
+"tamanho do mapa em \"pixéis\" (ou em % do tamanho total disponivel)."
+
+msgid "For example, to show the world in a mini-panoramio you can use:"
+msgstr ""
+"Por exemplo: para mostrar o mundo inteiro num mini-panoramio pode-se usar:"
+
+msgid ""
+"<strong>Blogger users</strong>: Write the code above in the “Edit HTML” tab."
+msgstr ""
+"<strong>Para utilizadores do Blogger</strong>: O código mostrado acima deve "
+"ser escrito na pasta “Edit HTML”."
+
+msgid ""
+"We are serious about keeping your pictures safe. There are multiple backups "
+"on different hard disks, so you don't have to worry about your photos, we "
+"take care of them."
+msgstr ""
+"Preocupamos-nos seriamente com a segurança das suas fotografias. São feitas "
+"várias cópias para diferentes discos rígidos de forma a que não se tenha de "
+"preocupar. Nós tomamos conta delas."
+
+msgid ""
+"Logos, mini-images and copyrighted photos copied from some web page are not "
+"acceptable because of legal issues."
+msgstr ""
+"Logotipos, fotografias protegidas por direitos de autor ou imagens copiadas "
+"de outras páginas não podem ser aceites por questões legais."
+
+msgid ""
+"Sexual explicit pictures are not allowed until we can develop a filter for "
+"this kind of content. Discriminative, xenophobic or racist photos will be "
+"deleted. Picture of children are especially sensitive, if we have the shadow "
+"of a doubt about the intention of the photo it will be immediately deleted."
+msgstr ""
+"Imagens de carácter sexualmente explicito não serão permitidas até nós "
+"desenvolvermos um filtro para este tipo de conteúdo. Fotografias "
+"descriminatórias e de índole racista ou xenófoba serão apagadas. Fotografias "
+"com crianças são extremamente delicadas, se existirem quaisquer tipos de "
+"dúvidas sobre as intenções da fotografia, esta será imediatamente apagada."
+
+msgid "Sure, it will be great!! Just follow these steps:"
+msgstr "Claro! Será óptimo!! Basta seguir estes passos:"
+
+msgid ""
+"Contact us at <a class='m'></a> and we will send you by e-mail the most "
+"updated translation file."
+msgstr ""
+"Contacte-nos em <a class='m'></a>  e enviaremos por e-mail o ficheiro  de "
+"tradução mais completo."
+
+#, php-format
+msgid "Download one translation editor, for instance %s."
+msgstr "Descarregue um editor para traduções, por exemplo %s."
+
+msgid "Open the translation file with Poedit."
+msgstr "Abra o ficheiro de tradução com o Poedit."
+
+msgid "Translate the file. Write the translation in the down-left window."
+msgstr "Traduza o ficheiro. Escreva a tradução na janela inferior esquerda."
+
+#, php-format
+msgid "Send to us the translated file to %s"
+msgstr "Envie-nos o ficheiro traduzido para %s"
+
+msgid ""
+"Visit the <a href='http://www.panoramio.com/forum/viewforum.php?"
+"f=11'>translator forum</a> for help and updates"
+msgstr ""
+
+msgid ""
+"You will be mentioned in the site credits and will gain unlimited bragging "
+"rights!"
+msgstr ""
+"Será mencionado na ficha técnica do Panoramio e ganhará o direito a gabar-se "
+"disso perpetuamente."
+
+msgid "Poedit's tips:"
+msgstr "Dicas do Poedit:"
+
+msgid ""
+"Translations status for each sentence is indicated by color. Blue means not "
+"translated, white means translated, yellow means \"fuzzy\" translation, i.e. "
+"there was a translation for that entry, but the original English has changed "
+"since then. If the fuzzy translation doesn't need to be changed, just click "
+"on the \"rain\" icon in the toolbar."
+msgstr ""
+"O estado da tradução de cada frase é indicado por cor. Azul é não traduzido, "
+"branco é traduzido, amarelo significa tradução \"estranha\", i.e. havia uma "
+"tradução já feita, mas o original em inglês mudou entretanto. Se a tradução "
+"estranha não precisa de ser alterada, basta clicar no ícone \"rain\" na "
+"barra de ferramentas."
+
+#, php-format
+msgid "Don't translate the placeholders (%d, %s, %.0f, ...)."
+msgstr "Não traduza os códigos (%d, %s, %.0f, ...)."
+
+msgid ""
+"If you get an error message when you save, read the details and check the "
+"variables at the indicated lines."
+msgstr ""
+"Se obtiver uma mensagem de erro ao gravar, leia os pormenores e verifique as "
+"variáveis nas linhas indicadas."
+
+msgid ""
+"It's important to use the latest version of the language file when you want "
+"to update a language."
+msgstr ""
+"É importante que se use a última versão do ficheiro de tradução de uma "
+"linguagem se se pretende fazer uma actualização."
+
+msgid "Format guide"
+msgstr "Guia de formatação"
+
+msgid "To get…"
+msgstr "Obter..."
+
+msgid "Write…"
+msgstr "Escrever..."
+
+msgid "Sentence in bold"
+msgstr "Frase em negrito"
+
+msgid "Sentence in italic"
+msgstr "Frase em itálico"
+
+msgid "Bullets"
+msgstr "Marcadores"
+
+msgid "Numbered list"
+msgstr "Lista numerada"
+
+msgid "Quoted block"
+msgstr "Citação"
+
+msgid "Please wait..."
+msgstr "Por favor aguarde..."
+
+msgid "sign up"
+msgstr "criar conta"
+
+msgid "sign in"
+msgstr "entrar"
+
+msgid "sign out"
+msgstr "sair"
+
+msgid "<span>Map</span> your photos"
+msgstr "<span>Localize</span> as suas fotografias"
+
+msgid "Show your favourite places."
+msgstr "Mostre os seu lugares favoritos."
+
+msgid "Upload your photos"
+msgstr "Envie as suas fotografias"
+
+msgid ""
+"Organize your <a href='/tags/'>photos with tags</a>: <a href='/tags/"
+"Art/'>Art</a>, <a href='/tags/Buildings/'>Buildings</a>, <a href='/tags/"
+"Reflections/'>Reflections</a>&#8230;"
+msgstr ""
+"Organize as suas <a href='/tags/'>fotografias com temas</a>: <a href='/tags/"
+"Art/'>Arte</a>, <a href='/tags/Buildings/'>Edifícios</a>, <a href='/tags/"
+"Reflections/'>Reflexos</a>, <a href='/tags/Castles/'>Castelos</a>..."
+
+msgid "Tip:"
+msgstr "Pergunta:"
+
+msgid "Next place"
+msgstr "Página seguinte"
+
+msgid "<span>Search</span> place"
+msgstr "<span>Procurar</span> local"
+
+msgid "Search"
+msgstr "Pesquisar"
+
+msgid "e.g. “New York”, “Beijing”, “Paris”..."
+msgstr "ex: “New York”, “Beijing”, “Paris”..."
+
+msgid "<span>Explore</span> the world"
+msgstr "<span>Explore</span> o mundo"
+
+msgid "World map"
+msgstr "Mapa-múndi"
+
+msgid "World Map"
+msgstr "Mapa-múndi"
+
+msgid "Google Earth preview"
+msgstr "Previsão no Google Earth"
+
+msgid "3-D View in Google Earth"
+msgstr "Visualização em 3-D no Google Earth"
+
+#, php-format
+msgid "by %s"
+msgstr "de %s"
+
+msgid "Comment it"
+msgstr "Comentários"
+
+msgid "Random Panoramio photos"
+msgstr "Fotografias aleatórias »"
+
+msgid "This user doesn't exist anymore."
+msgstr "Este utilizador já não existe"
+
+msgid "Popular Panoramio photos"
+msgstr "Fotografias populares"
+
+msgid "Photos from http://www.panoramio.com/"
+msgstr ""
+
+msgid "License <span>conditions</span>"
+msgstr "<span>Condições</span> de uso"
+
+msgid "Change position"
+msgstr "Mudar de local"
+
+msgid "Map this photo"
+msgstr "Localizar esta fotografia"
+
+msgid "Suggest new position"
+msgstr "Sugerir novo local"
+
+msgid "Saving..."
+msgstr "A guardar..."
+
+msgid "City or place:"
+msgstr "Cidade ou local:"
+
+msgid ""
+"<strong>Click</strong> on the map or <strong>drag</strong> the marker to "
+"place the photo over its position"
+msgstr ""
+"<strong>Clique</strong> no mapa ou <strong>arraste</strong> o marcador para "
+"colocar a fotografia na sua posição"
+
+msgid "Send suggestion"
+msgstr "Enviar sugestão"
+
+msgid "Save position"
+msgstr "Guardar posição"
+
+msgid "Coordinates"
+msgstr "Coordenadas"
+
+msgid "<h2>Invalid e-mail</h2>"
+msgstr "<h2>Endereço de correio electrónico inválido</h2>"
+
+msgid ""
+"<h2>Already someone registered with this e-mail</h2>\n"
+"<p>Check your spelling or use a different one</p>"
+msgstr ""
+"Já existe um utilizador registado com este e-mail</h2>\n"
+"<p>Verifique a ortografia ou utilize outra conta de e-mail</p>"
+
+msgid ""
+"<h2>Already someone registered with this user name</h2>\n"
+"<p>Please, choose a different or less common user name</p>"
+msgstr ""
+"<h2>Já existe um utilizador com este nome</h2>\n"
+"<p>Escolha um nome diferente.</p>"
+
+msgid "<h2>Please enter your e-mail and your password</h2>"
+msgstr "<h2>Por favor indique o seu e-mail e password</h2>"
+
+msgid "<h2>Incorrect e-mail / password</h2>"
+msgstr "<h2>E-mail ou palavra-passe inválidos</h2>"
+
+msgid "<h2>Please, choose a password</h2>"
+msgstr "<h2>Por favor, escolha uma password</h2>"
+
+msgid "<h2>Please, choose a user name</h2>"
+msgstr "<h2>Por favor, escolha um nome de utilizador</h2>"
+
+msgid "<h2>You should choose a valid e-mail address for your account</h2>"
+msgstr "<h2>Terá de ter um endereço de e-mail válido para a sua conta</h2>"
+
+msgid "<h2>You must be logged to change your settings</h2>"
+msgstr ""
+"<h2>É necessário entrar no Panoramio para poder alterar as suas "
+"configurações</h2>"
+
+msgid ""
+"<h2>Error sending e-mail</h2>\n"
+"<p>Please make sure you wrote correctly the e-mail address:</p>"
+msgstr ""
+"<h2>Erro a tentar enviar a mensagem</h2>\n"
+"<p>Por favor verifique se o endereço está correcto:</p>"
+
+msgid ""
+"<h2>Unknown e-mail</h2>\n"
+"<p>There are no users registered with this e-mail address. Please make sure "
+"you wrote the same e-mail address you used to sign up in Panoramio</p>"
+msgstr ""
+"<h2>Erro: Endereço desconhecido</h2>\n"
+"<p>Não existem utilizadores registados com este endereço de correio "
+"electrónico.</p>\n"
+"<p>Por favor verifique se está a usar o mesmo endereço com que criou a sua "
+"conta no Panoramio.</p>"
+
+msgid ""
+"<h2>Passwords don't match</h2>\n"
+"<p>Repeated password does not match new password</p>"
+msgstr ""
+"<h2>Palavras-passe diferentes</h2>\n"
+"<p>A palavra-passe repetida não é igual à nova palavra-passe.</p>"
+
+msgid ""
+"<h2>Incorrect password</h2>\n"
+"<p>Please make sure you wrote the right password</p>"
+msgstr ""
+"<h2>Palavra-passe incorrecta</h2>\n"
+"<p>Por favor verifique se escreveu a palavra-passe correcta.</p>"
+
+msgid ""
+"<h2>User name in use</h2>\n"
+"<p>The selected name is already in use. Please choose another one</p>"
+msgstr ""
+"<h2>Nome de utilizador já em uso</h2>\n"
+"<p>O nome escolhido já está em uso. Por favor escolha outro.</p>"
+
+msgid ""
+"<h2>E-mail in use</h2>\n"
+"<p>The new e-mail is already registered</p>"
+msgstr ""
+"<h2>Endereço de correio electrónico já em uso</h2>\n"
+"<p>O novo endereço de correio electrónico já está registado</p>"
+
+msgid ""
+"<h2>Your current password is empty</h2>\n"
+"<p>You must fill the current password field to make any change</p>"
+msgstr ""
+"<h2>É sua palavra-passe é vazia</h2>\n"
+"<p>Deverá preenchê-la para efectuar qualquer mudança</p>"
+
+msgid "<h2>The e-mail address is not correct</h2>"
+msgstr "<h2>Endereço de correio electrónico incorrecto</h2>"
+
+msgid "<h2>You must be logged to send an invitation</h2>"
+msgstr ""
+"<h2>É necessário entrar no Panoramio para poder enviar um convite.</h2>"
+
+msgid ""
+"<h2>The e-mail could not be sent</h2>\n"
+"<p>Double check the e-mail of your friend</p>"
+msgstr ""
+"<h2>A mensagem <b>não</b> pode ser enviada. </h2><p>Por favor verifique o "
+"endereço do seu amigo.</p>"
+
+msgid ""
+"<h2>The position of your photo has NOT been updated</h2>\n"
+"<p>Please, use the button 'search' before saving the position</p>"
+msgstr ""
+
+msgid ""
+"<h2>Password changed</h2>\n"
+"<p>Your password has been successfully changed</p>"
+msgstr ""
+"<h2>Palavra-passe alterada</h2>\n"
+"<p>A sua palavra-passe foi alterada com sucesso.</p>"
+
+msgid ""
+"<h2>E-mail sent. Please read your e-mail</h2>\n"
+"<p>We have sent you an e-mail with further instructions</p>"
+msgstr ""
+"<h2>Mensageml enviada. Por favor leia o seu correio electrónico</h2>\n"
+"<p>Enviamos-lhe uma mensagem com instruções adicionais</p>"
+
+msgid "<h2>Your settings have been updated</h2>"
+msgstr "<h2>As suas configurações foram actualizadas</h2>"
+
+msgid "<h2>Your message has been sent</h2>"
+msgstr "<h2>A sua mensagem foi enviada.</h2>"
+
+msgid "Home"
+msgstr "Início"
+
+msgid "Tags"
+msgstr "Temas"
+
+msgid "Your Photos"
+msgstr "As suas Fotografias"
+
+msgid "Upload"
+msgstr "Enviar"
+
+msgid "Sign out"
+msgstr "Sair"
+
+msgid "Sign up"
+msgstr "Criar Conta"
+
+msgid "Sign in"
+msgstr "Entrar"
+
+msgid "Forum"
+msgstr "Forum"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Team"
+msgstr "Equipa"
+
+msgid "Press"
+msgstr "Imprensa"
+
+msgid "Privacy Policy"
+msgstr "Politica de Privacidade"
+
+msgid "API"
+msgstr "API"
+
+msgid "Choose language"
+msgstr ""
+
+msgid "Photos of the World"
+msgstr "Fotografias do Mundo"
+
+msgid "Suggestions received"
+msgstr "Sugestão registrada."
+
+msgid "Original position"
+msgstr "Localização original"
+
+msgid "Suggested position"
+msgstr "Localização sugerida"
+
+#, php-format
+msgid "<strong>Comment by %s</strong>: %s"
+msgstr "<strong>Comentário de %s</strong>: %s"
+
+msgid "Keep the original position"
+msgstr "Manter a posição original"
+
+msgid "Flash fired"
+msgstr "Com flash"
+
+msgid "No flash"
+msgstr "Sem flash"
+
+msgid "Auto"
+msgstr "Auto"
+
+msgid "Compulsory"
+msgstr "Obrigatório"
+
+msgid "Strobe return light"
+msgstr "Luz de flash"
+
+msgid "Red-eye reduction"
+msgstr "Redução de olhos vermelhos"
+
+msgid "Taken on "
+msgstr "Tirada em"
+
+msgid "Exposure: "
+msgstr "Exposição:"
+
+msgid "Focal Length: "
+msgstr "Distância Focal:"
+
+msgid "F/Stop: "
+msgstr "F/Stop: "
+
+msgid "ISO Speed: "
+msgstr "ISO:"
+
+msgid "Exposure Bias: "
+msgstr "Correção de Exposição:"
+
+msgid "This photo does not exist anymore"
+msgstr "Esta fotografia já não existe"
+
+msgid "Go to <a href=\"/\">Panoramio's Homepage</a> to see more photos"
+msgstr ""
+"Vá à <a href=\"/\">Página Principal do Panoramio</a> para ver mais "
+"fotografias"
+
+msgid "[Untitled]"
+msgstr "[Sem Título]"
+
+#, php-format
+msgid "Photo of %s"
+msgstr "Fotografia de %s"
+
+msgid "Send comment"
+msgstr "Enviar comentário"
+
+msgid "You should write something before clicking on the 'Send comment' button"
+msgstr "Deveria escrever algo antes de  premir o botão 'Enviar Comentário'"
+
+msgid "Sending comment..."
+msgstr "A enviar o seu comentário..."
+
+msgid "A yellow star"
+msgstr "Estrela amarela"
+
+msgid "Remove from favourites"
+msgstr "Remover da lista de favoritos"
+
+msgid "A white star"
+msgstr "Estrela branca"
+
+msgid "Add to favourites"
+msgstr "Adicionar à lista de favoritos"
+
+#, php-format
+msgid "%s by %s"
+msgstr "%s de %s"
+
+#, php-format
+msgid "%s by an anonymous user %s"
+msgstr "%s de um utilizador anónimo %s"
+
+msgid "Is this photo yours?"
+msgstr "Esta fotografia é sua?"
+
+msgid "See in Google Earth now"
+msgstr "Visualização no Google Earth"
+
+msgid "Are your sure you want to delete this picture?"
+msgstr "Tem a certeza de querer apagar esta fotografia?"
+
+msgid "Delete"
+msgstr "Apagar"
+
+msgid "Original size"
+msgstr "Tamanho original"
+
+msgid "Send to a friend »"
+msgstr "Enviar a um amigo »"
+
+#, php-format
+msgid "This photo is selected for Google Earth %s - ID: %d"
+msgstr "Esta foto foi selecionada para o Google Earth %s - ID: %d"
+
+#, php-format
+msgid "This photo has not yet been reviewed %s - ID: %d"
+msgstr "Esta foto ainda não foi revista %s - ID: %d"
+
+msgid "Friend's email:"
+msgstr "Endereço de correio electrónico do amigo:"
+
+msgid "Message:"
+msgstr "Mensagem:"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Comments"
+msgstr "Comentários"
+
+#, php-format
+msgid "%s said:"
+msgstr "%s disse:"
+
+#, php-format
+msgid "Add a comment (as %s)"
+msgstr "Comentar (como %s)"
+
+msgid "Want to use bold, italic, links?"
+msgstr "Quer usar negrito, itálico ou endereços?"
+
+#, php-format
+msgid ""
+"<a href='%s'>Sign up</a> to comment. <a href='%s'>Sign in</a> if you already "
+"did it."
+msgstr ""
+"<a href='%s'>Crie uma conta</a>para poder comentar. <a href='%s'>Entre</a> "
+"se já o fez."
+
+#, php-format
+msgid "<strong>more by %s</strong><br />"
+msgstr "<strong>mais de %s</strong><br />"
+
+msgid "Photos nearby"
+msgstr "Fotografias próximas"
+
+#, php-format
+msgid "© %s"
+msgstr "© %s"
+
+#, php-format
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+#, php-format
+msgid "Viewed %d time"
+msgid_plural "Viewed %d times"
+msgstr[0] "visto %d vez"
+msgstr[1] "vista %d vezes"
+
+#, php-format
+msgid "Taken with a digital camera %s"
+msgstr "Tirada com uma máquina digital %s"
+
+msgid "Photo extra information"
+msgstr "Informação extra sobre a fotografia"
+
+msgid "Tags in this photo"
+msgstr "Temas/etiquetas nesta fotografia"
+
+#, php-format
+msgid "Photo location (<a href='%s'>see this area</a>):"
+msgstr "Localização da fotografia (<a href='%s'>ver envolvente</a>):"
+
+msgid "Drag marker to relocate"
+msgstr "Arraste o balão para mudar a localização"
+
+msgid "This position has been disputed."
+msgstr "Esta posição foi disputada."
+
+msgid ""
+"This position has already been corrected <a href='/help/#corrected'>[?]</a>"
+msgstr ""
+"Este posicionamento já foi corrigido <a href='/help/#corrected'>[?]</a>"
+
+msgid "Misplaced? Suggest new location"
+msgstr "Localização errada? Sugira uma nova localização"
+
+msgid "Relocating photo..."
+msgstr "A actualizar a localização..."
+
+msgid "inappropriate or offensive"
+msgstr "Inapropriado ou ofensivo"
+
+msgid "best of"
+msgstr "o melhor de"
+
+msgid "Flag photo:"
+msgstr "Marcar uma fotografia:"
+
+#, php-format
+msgid "Photos of %s"
+msgstr "Fotografias de %s"
+
+msgid "Sorry, we don't have any photos with this tag."
+msgstr "Lamentamos, mas não existem fotografias com este tema."
+
+msgid "<span>Press</span> room"
+msgstr "Sala de <span>imprensa</span>"
+
+msgid "Logo and screenshots"
+msgstr "Logotipo e imagens"
+
+msgid "Large version"
+msgstr "Tamanho grande"
+
+msgid "Vector version"
+msgstr "Versão vectorial"
+
+msgid "Screenshot"
+msgstr "Imagens"
+
+msgid "Press releases and news:"
+msgstr "Comunicados de imprensa e notícias:"
+
+msgid "Subscribe to news about Panoramio"
+msgstr "Inscreva-se para receber notícias sobre o Panoramio"
+
+msgid "Mentions"
+msgstr "Fomos notícia"
+
+msgid "More"
+msgstr "Mais"
+
+msgid "Error: The photo id is not valid."
+msgstr "Erro: O id da fotografia não é válido."
+
+msgid "Void comment"
+msgstr "Comentário vazio"
+
+msgid "You have signed out, please sign-in again to post your comment."
+msgstr "Saiu, por favor reentre para colocar um comentário."
+
+#, php-format
+msgid "%s sends you a photo of: \"%s\""
+msgstr "%s envia-lhe uma foto de: \"%s\""
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Your <span>settings</span> page"
+msgstr "A sua página de <span>configurações</span>"
+
+msgid "Current password:"
+msgstr "Palavra-passe actual:"
+
+msgid "Required for any change"
+msgstr "Necessário para qualquer alteração"
+
+msgid "Personal information"
+msgstr "Informação pessoal"
+
+msgid "User name:"
+msgstr "Nome de utilizador:"
+
+msgid "E-mail address:"
+msgstr "Endereço de correio electrónico:"
+
+msgid "Change your password"
+msgstr "Alterar palavra-passe"
+
+msgid "New password:"
+msgstr "Nova palavra-passe:"
+
+msgid "Let it blank to keep your password"
+msgstr "Deixar em branco para manter a palavra-passe"
+
+msgid "Repeat new password:"
+msgstr "Repetir a nova palavra-passe"
+
+msgid "E-mail alerts"
+msgstr "Mensagens de alerta"
+
+msgid "New comments"
+msgstr "Novos comentários"
+
+msgid "New photos from your favourite users"
+msgstr "Novas fotografias dos seus autores favoritos"
+
+msgid "About you"
+msgstr "Sobre si"
+
+msgid "Your website <span>(optional)</span>:"
+msgstr "A sua página <span>(facultativo)</span>:"
+
+msgid "Write something about you <span>(optional)</span>:"
+msgstr "Escreva algo sobre si <span>(facultativo)</span>:"
+
+msgid "Save changes"
+msgstr "Guardar alterações"
+
+msgid "Sightseeing"
+msgstr "Sightseeing"
+
+msgid "Panoramio <span>sightseeing</span>"
+msgstr "<span>Sightseeing<span> do Panoramio"
+
+msgid "Africa"
+msgstr "África"
+
+msgid "America"
+msgstr "América"
+
+msgid "Asia"
+msgstr "Ásia"
+
+msgid "Europe"
+msgstr "Europa"
+
+msgid "Oceania"
+msgstr "Oceânia"
+
+msgid ""
+"We are open to add more places to this list, please, send your suggestions to"
+msgstr ""
+"Estamos interessados em adicionar mais locais a esta lista, por favor envie "
+"as suas sugestões para"
+
+msgid "Store up to 2 Gb of photos for free"
+msgstr "Armazene até 2 Gb de fotografias gratuitamente"
+
+msgid "Keep photos quality in original size at your personal area"
+msgstr "Guarde na sua área pessoal fotografias no tamanho original"
+
+msgid "Create your own map of the World"
+msgstr "Crie o seu próprio mapa do mundo"
+
+msgid "Locate your photos where they were taken"
+msgstr "Associe às suas fotografias os sítios onde estas foram tiradas"
+
+msgid "Show photos and travel routes to your friends"
+msgstr "Mostre aos seus amigos fotografias e percursos de viagem"
+
+msgid "Easily track your trips and organize your photos with tags"
+msgstr ""
+"Mantenha facilmente organizadas as suas viagens e fotografias com a "
+"classificação por temas"
+
+msgid "Already registered"
+msgstr "Conta já criada"
+
+msgid "Email"
+msgstr "Endereço de correio electrónico"
+
+msgid "Password"
+msgstr "Palavra-passe"
+
+msgid "forgot your password?"
+msgstr "esqueceu-se da sua palavra-passe?"
+
+msgid "You have closed your Panoramio session"
+msgstr "Terminou a sua sessão no Panoramio"
+
+msgid "Thank you for your visit!"
+msgstr "Obrigado pela sua visita!"
+
+msgid "Do you want to sign in again?"
+msgstr "Quer voltar a entrar?"
+
+msgid "User name"
+msgstr "Nome de utilizador"
+
+msgid ""
+"Your e-mail and password are necessary to identify your photos and your "
+"access to your “personal area” where you can upload, delete or edit your "
+"photos."
+msgstr ""
+"O seu endereço de correio electrónico e palavra-passe são necessários para "
+"que nos seja possível dar-lhe acesso à sua área pessoal, onde pode enviar, "
+"apagar ou alterar as suas fotografias."
+
+msgid "<a href='/help/'>Frequently Asked Questions</a>"
+msgstr "<a href='/help/'>Perguntas frequentes</a>"
+
+msgid "We will send your suggestion to the author of the photo. Thanks!!"
+msgstr "Enviaremos as suas sugestões ao autor da foto. Obrigado!!"
+
+msgid "Panoramio’s <span>Team</span>"
+msgstr "A <span>Equipa<span> do Panoramio"
+
+msgid ""
+"Panoramio's creators are Joaquín Cuenca Abela and Eduardo Manchón Aguilar. "
+"We are friends since secondary school and we come from two small towns in <a "
+"href='http://www.panoramio.com/map/#lt=38.131248&amp;ln=-0.884314&amp;"
+"z=3&amp;k=2&amp;a=1'>the South East of Spain</a>."
+msgstr ""
+"Os criadores do Panoramio são Joaquín Cuenca Abela e Eduardo Manchón "
+"Aguilar. Somos amigos desde a escola secundária e somos de duas pequenas "
+"vilas no <a href='http://www.panoramio.com/map/#lt=38.131248&ln=-"
+"0.884314&z=3&k=2&a=1'>Sudeste de Espanha</a>."
+
+msgid "Panoramio was acquired by Google on July 2007"
+msgstr "A Panoramio foi adquirida pelo Google em Julho de 2007"
+
+msgid "co-founder"
+msgstr "co-fundador"
+
+msgid ""
+"I started playing with computers at 8 (1984) at first copying little BASIC "
+"programs and wondering what could possibly mean “ready>” in english... I "
+"eventually moved to more complex problems and switched to C much later "
+"(1992)."
+msgstr ""
+"Comecei a brincar com computadores aos 8 anos (1984) primeiro copiando "
+"pequenos programas em  BASIC e interrogando-me sobre o significado de "
+"“ready>” em inglês... Passei para problemas mais complexos e mudei para a "
+"linguagem C bem depois (1992)."
+
+msgid ""
+"I have a MS in Fundamental Physics from the University of Valencia and MS in "
+"Computer Science from both University of Valencia and Paris Sud XI "
+"University."
+msgstr ""
+"Tenho um Mestrado em Fundamentos da Física da Universidade de Valência e um "
+"em Ciência da Computação da Universidade de Valência e de Paris Sud XI."
+
+msgid ""
+"I have been a active member of the GNOME community. I ported Abiword (a "
+"cross platform word processor) to the GNOME framework and I maintained Glade "
+"3 among other things."
+msgstr ""
+"Tenho sido um membro activo da comunidade GNOME. 'Portei' o Abiword "
+"(processador de texto multi-plataforma) para o framework GNOME e manti o "
+"Glade 3, entre outras coisas."
+
+msgid ""
+"I worked in two companies in Paris, Celium in 2000-02 and <a href='http://"
+"www.wizart.com/'>Wizart</a> 2002-05 working mainly with C on Windows, some "
+"assembler and a little bit of Java. On my free time I worked on <a "
+"href='http://www.loquo.com/'>Loquo</a>, a Spanish clone of Craigslist, from "
+"the end of 2004 until Loquo was successfully sold to <a href='http://www."
+"ebay.com/'>eBay</a> in 2005."
+msgstr ""
+"Trabalhei em duas empresas em Paris, Celium em 2000-02 e <a href='http://www."
+"wizart.com/'>Wizart</a> 2002-05, principalmente em C para Windows, algum "
+"assembler e um pouco de Java. No meu tempo livre trabalhei no <a "
+"href='http://www.loquo.com/'>Loquo</a>, um clone espanhol do Craigslist, "
+"entre o fim de 2004 e o período em que o Loquo foi vendido ao <a "
+"href='http://www.ebay.com/'>eBay</a> em 2005."
+
+msgid ""
+"In summer 2005 I started to work on <a href='http://www.panoramio."
+"com/'>Panoramio</a> in my free time together with Eduardo Manchón. I work "
+"full time on Panoramio from 2006."
+msgstr ""
+"No Verão de 2005 comecei a trabalhar no <a href='http://www.panoramio."
+"com/'>Panoramio</a> no meu tempo livre, em colaboração com  Eduardo Manchón. "
+"Trabalho a tempo inteiro no Panoramio desde 2006."
+
+msgid ""
+"We have 2 more projects, <a href='http://www.cursoo.com/'>Cursoo</a> an e-"
+"learning platform and <a href='http://www.revoluz.com/'>Revoluz</a> a real "
+"estate mash-up with Google Maps."
+msgstr ""
+"Temos mais dois projectos, <a href='http://www.cursoo.com/'>Cursoo</a> "
+"plataforma para ensino à distância (e-learning), e <a href='http://www."
+"revoluz.com/'>Revoluz</a> um programa sobre Google Maps para o mercado "
+"imobiliário."
+
+msgid ""
+"Psychologist specialized in Human Computer Interaction, I have been working "
+"at the Usability field the last 7 years. I have a MS in Psychology from the "
+"University of Valencia and studied a couple of years at the University of "
+"Bergen (Norway)."
+msgstr ""
+"Sou psicólogo especializado em interacção pessoa-máquina. Trabalhei no campo "
+"da usabilidade / desenho de interfaces durante os últimos 6 anos. Sou "
+"licenciado em Psicologia pela Universidade de Valência e estudei dois anos "
+"na Universidade de Bergen (Noruega)."
+
+
+msgid ""
+"In the beginning of 2004 I started working in Loquo.com community (ranked "
+"1950 in Alexa) in usability, support, marketing and other issues. Loquo was "
+"successfully sold to eBay in May 2005."
+msgstr ""
+"No início de 2004 comecei a trabalhar no Loquo.com (ranking 1950 no Alexa) "
+"em usabilidade, apoio, marketing e outros assuntos. Entretanto, o Loquo foi "
+"vendido ao eBay em Maio de 2005."
+
+msgid ""
+"When on July 2005 my old friend Joaquín Cuenca told me his idea about "
+"geopositioning photos in Google Maps I loved it, so we quickly founded "
+"Panoramio and launched on October 3th."
+msgstr ""
+"Quando o Joaquín Cuenca me contou em Julho de 2005 a sua ideia de "
+"geoposicionar fotos no Google Maps, fiquei interessado, tanto que fundámos "
+"rapidamente o Panoramio e lançámo-lo ao público em 3 de Outubro de 2005."
+
+msgid ""
+"Since four years, I work professionally in design and development of web "
+"applications at <a href='http://www.avidos.net'>Ávidos</a>, a small company "
+"I co-founded. I frequently teach courses about web standards and "
+"accessibility in Madrid and Málaga."
+msgstr ""
+"Há quatro anos que trabalho em design e desenvolvimento de aplicações web na "
+"<a href='http://www.avidos.net'>Ávidos</a>, uma pequena empresa de que sou "
+"co-fundador. Também dou cursos sobre web standards e acessibilidade em "
+"Madrid e Málaga."
+
+msgid ""
+"I'm founder and administrator of <a href='http://ovillo.org/'>Ovillo.org</"
+"a>, a community about web standards in Spanish language with 1.800 members. "
+"Nowadays I finish my Business Administration studies at University of Málaga."
+msgstr ""
+"Sou fundador e administrador de <a href='http://ovillo.org/'>Ovillo.org</a>, "
+"uma comunidade sobre web standards em língua castelhana com 1.800 membros. "
+"Hoje finalizo o meu MBA na Universidade de Málaga."
+
+msgid ""
+"I met Eduardo and Joaquín when I was working at <a href='http://www.loquo."
+"com'>Loquo.com</a>. Since then we are in touch, so when they proposed me to "
+"join Panoramio's team at the end of the 2006 summer, I quickly accepted."
+msgstr ""
+"Conheci o Eduardo e o Joaquín quando trabalhei no <a href='http://www.loquo."
+"com'>Loquo.com</a>. Desde então estamos em contacto, de modo que quando "
+"propuseram que me juntasse à equipa do Panoramio no final do verão de 2006, "
+"logo aceitei."
+
+msgid "Translations"
+msgstr "Traduções"
+
+msgid "Catalan"
+msgstr "Catalão"
+
+msgid "German"
+msgstr "Alemão"
+
+msgid "Swedish"
+msgstr "Sueco"
+
+msgid "Hungarian"
+msgstr "Hungaro"
+
+msgid "French"
+msgstr "Françês"
+
+msgid "Korean"
+msgstr "Coreano"
+
+msgid "Russian"
+msgstr "Russo"
+
+msgid "Italian"
+msgstr "Italiano"
+
+msgid "Slovak"
+msgstr "Eslovaco"
+
+msgid "Polish"
+msgstr "Polaco"
+
+msgid "Dutch"
+msgstr "Holandês"
+
+msgid "Danish"
+msgstr "Dinamarquês"
+
+msgid "Portuguese</strong> (Portugal)"
+msgstr "Português</strong> (Portugal)"
+
+msgid "Lithuanian"
+msgstr "Lituano"
+
+msgid "Romanian"
+msgstr "Romeno"
+
+msgid "Japanese"
+msgstr "Japonês"
+
+msgid "Czech"
+msgstr "Checo"
+
+msgid "Ukrainian"
+msgstr "Ucraniano"
+
+msgid "Turkish"
+msgstr "Turco"
+
+msgid "Bosnian and Croatian"
+msgstr "Bósnio e Croata"
+
+msgid "Chinese</strong> (Simplified)"
+msgstr "Chinês</strong> (Simplificado)"
+
+msgid "Bulgarian"
+msgstr "Búlgaro"
+
+msgid "Norwegian"
+msgstr "Norueguês"
+
+msgid "Greek"
+msgstr "Grego"
+
+msgid "Finnish"
+msgstr "Finlandês"
+
+msgid "Slovenian"
+msgstr "Esloveno"
+
+msgid "Portuguese</strong> (Brazil)"
+msgstr "Português</strong> (Brasil)"
+
+msgid "Persian"
+msgstr "Persa"
+
+msgid "Chinese</strong> (traditional)"
+msgstr "Chinês</strong> (tradicional)"
+
+msgid "English"
+msgstr "Inglês"
+
+msgid "Arabic"
+msgstr "Arábico"
+
+msgid "Serbian"
+msgstr "Servo"
+
+msgid "Hebrew"
+msgstr "Hebreu"
+
+msgid ""
+"If you feel like helping translating Panoramio to your language, please <a "
+"href='/help/#translate'>read these instructions</a> and thanks in advance."
+msgstr ""
+"Se se sentir com vontade de traduzir o Panoramio para a sua língua, por "
+"favor <a href='/help/#translate'>leia estas instruções</a> e aceite desde já "
+"o nosso agradecimento."
+
+msgid "Friends of Panoramio"
+msgstr "Amigos do Panoramio"
+
+msgid "Personal page"
+msgstr "Página pessoal"
+
+msgid "This user does not exist anymore"
+msgstr "Este utilizador já não existe"
+
+#, php-format
+msgid "Photos by %s"
+msgstr "Fotografias de %s"
+
+msgid "User unknown"
+msgstr "Utilizador desconhecido"
+
+#, php-format
+msgid "Do you really want to delete the tag %s?"
+msgstr "Quer mesmo apagar os temas %s?"
+
+msgid "Done"
+msgstr "Concluido"
+
+msgid "You can't use the characters “,” “+” “/” in a tag."
+msgstr "Os caracteres “,” “+” “/” não podem ser usados no nome de um tema."
+
+msgid "[I'm done]"
+msgstr "[Acabei]"
+
+msgid "You can't use the characters “,” “+” “/” nor duplicate an existing tag."
+msgstr ""
+"Não pode usar os caracteres “,” “+” “/” nem usar o nome de um tema ja "
+"existente."
+
+msgid "in the map"
+msgstr "no mapa"
+
+msgid "in Google Earth <span>(KML)</span>"
+msgstr "no Google Earth <span>(KML)</span>"
+
+msgid "Your photos"
+msgstr "As suas fotografias"
+
+msgid "Click on the photos to apply/remove selected tags."
+msgstr "Clique nas fotografias para adicionar/remover temas associados."
+
+msgid "Nothing to see here. Move along."
+msgstr "Não existe aqui nada para ver."
+
+msgid "<p>You have a new empty account.</p>"
+msgstr "<p>Criou uma nova conta vazia</p>"
+
+msgid "<p>To fill it with your photos, click on the upload photos link.</p>"
+msgstr "<p>Para a encher de fotografias, clique em enviar fotografias.</p>"
+
+#, php-format
+msgid ""
+"<p>Want to show them to your friends? No problem, give them your personal "
+"URL at Panoramio (<a href='http://www.panoramio.com/user/%d' title=\"%s's "
+"photos\" alt=\"%s's photos\">http://www.panoramio.com/user/%d</a>) and "
+"you're done!</p>"
+msgstr ""
+"<p>Quer mostrá-las aos seus amigos? Não há problema, envie-lhes o seu "
+"endereço pessoal no  Panoramio (<a href='http://www.panoramio.com/user/%d' "
+"title='Fotografias de %s' alt='Fotografias de %s'>http://www.panoramio.com/"
+"user/%d</a>) e já está!</p>"
+
+msgid "<p>Keep rocking!</p>"
+msgstr "<p>Toca a fotografar!</p>"
+
+#, php-format
+msgid "%s's conversations"
+msgstr "Mensagens de %s"
+
+msgid "more »"
+msgstr "mais »"
+
+msgid "A trashcan"
+msgstr "Um caixote do lixo"
+
+msgid "on the map"
+msgstr "no mapa"
+
+#, php-format
+msgid ""
+"%s didn't upload any photo. See more photos at <a href='/map'>Panoramio's "
+"map</a>"
+msgstr ""
+"%s não transferiu nenhuma foto. Veja mais fotos em <a href='/map'>Mapa da "
+"Panoramio</a>"
+
+#, php-format
+msgid "There are not photos tagged as %s"
+msgstr "Não existem fotos marcada como %s"
+
+#, php-format
+msgid ""
+"<p>Do you want to show your photos to your friends? No problem, give them "
+"your personal URL at Panoramio (<a href='http://www.panoramio.com/user/%d' "
+"title=\"%s's photos\" alt=\"%s's photos\">http://www.panoramio.com/user/%d</"
+"a>) and you're done!</p>"
+msgstr ""
+"<p>Quer mostrar as suas fotos aos seus amigos? Não há problema, envie-lhes a "
+"sua página pessoal no Panoramio (<a href='http://www.panoramio.com/user/%d' "
+"title='Fotografias de %s' alt='Fotografias de %s'>http://www.panoramio.com/"
+"user/%d</a>) e já está!</p>"
+
+#, php-format
+msgid "Hi, <b>%s</b>"
+msgstr "Olá, <b>%s</b>"
+
+#, php-format
+msgid "Suggestions received (%d)"
+msgstr "Sugestões recebidas (%d)"
+
+msgid "Current position"
+msgstr "Posição actual"
+
+msgid "Error: This page does not exist anymore"
+msgstr "Erro: Esta página já não existe"
+
+msgid ""
+"The page your have requested does not exist in our server. You may have used "
+"an outdated link or may have typed the address (<acronym title=\"Uniform "
+"Resource Locator\" lanf=\"en\" xml_lang=\"en\">URL</acronym>) incorrectly."
+msgstr ""
+"A página que pediu já não existe no nosso servidor. Poderá ter usado um "
+"endereço desactualizado ou ter escrito um endereço (<acronym title=\"Uniform "
+"Resource Locator\" lanf=\"en\" xml_lang=\"en\">URL</acronym>) "
+"incorrectamente."
+
+msgid "Popular photos in Google Earth"
+msgstr "As fotografias populares no Google Earth"
+
+msgid "All photos in Google Earth"
+msgstr "Todas as fotografias no Google Earth"
+
+msgid "Random photos in Google Earth"
+msgstr "Fotografias aleatórias no Google Earth"
+
+#, php-format
+msgid "%s's photos in Google Earth"
+msgstr "As fotografias de %s no Google Earth"
+
+msgid "Popular"
+msgstr "Popular"
+
+msgid "All"
+msgstr "Todas"
+
+msgid "Previous"
+msgstr "Ant"
+
+msgid "« Previous"
+msgstr "« Ant"
+
+msgid "Zoom with the mouse wheel"
+msgstr "Altere a escala com a roda do rato"
+
+msgid "Drag the map"
+msgstr "Arraste o mapa"
+
+msgid "Search place"
+msgstr "Procurar local"
+
+msgid ""
+"You <strong>don't</strong> have Javascript activated. Google Maps and "
+"Panoramio depend strongly on having Javascript activated to show you photos "
+"of the world coupled with satellite imagery of the place they were took."
+msgstr ""
+"Javacript <strong>não</strong> está activado no seu navegador. Google Maps e "
+"o Panoramio dependem fortemente da activação de Javascript no seu navegador, "
+"de forma a poderem mostrar as suas fotografias, assim como as imagens de "
+"satélite dos locais onde estas foram tiradas."
+
+msgid "by an anonymous user"
+msgstr "de um utilizador anónimo"
+
+msgid "Previous page"
+msgstr "Página anterior"
+
+msgid "Next page"
+msgstr "Página seguinte"
+
+msgid "All rights reserved."
+msgstr "Todos os direitos reservados."
+
+msgid "Photos are under the copyright of their owners."
+msgstr ""
+"As fotografias estão protegidas pelos direitos de autor dos seus donos."
+
+msgid "Feedback and Help desk"
+msgstr ""
+
+msgid "You have signed out. Please sign in again to keep uploading photos."
+msgstr "Saiu da sua conta. Por favor reentre para continuar o upload de fotos."
+
+msgid "The size of the photo should be less than 5MB."
+msgstr "O tamanho da imagem não pode exceder os 5MB."
+
+msgid "Sorry, we only accept jpeg images."
+msgstr "Apenas se aceitam imagens em formato jpeg."
+
+msgid "Sorry, we were unable to upload your picture. Please try again later."
+msgstr ""
+"Lamentamos, mas foi-nos impossivel receber a sua fotografia. Por favor tente "
+"mais tarde."
+
+#, php-format
+msgid ""
+"Sorry, we were unable to upload your picture: %s. Please try again later."
+msgstr ""
+"Lamentamos, mas foi-nos impossivel receber a sua fotografia: %s. Por favor "
+"tente mais tarde."
+
+msgid "[Error resizing photo]"
+msgstr "[Erro a dimensionar a foto]"
+
+msgid "Uploaded successfully!"
+msgstr "Envio bem sucedido!"
+
+msgid "Find tag"
+msgstr "Procurar tema"
+
+#, php-format
+msgid "Photos tagged with “%s”"
+msgstr "Fotografias classificadas como %s"
+
+msgid "From"
+msgstr "De"
+
+msgid "Popular tags"
+msgstr "Temas populares"
+
+msgid ""
+"Your photos have not yet being fully uploaded. Do you want to continue "
+"uploading your photos?"
+msgstr ""
+"O envio das suas fotografias ainda não foi concluido. Quer concluir o envio "
+"das suas fotografias?"
+
+msgid "Queued"
+msgstr "Em espera"
+
+msgid "Starting upload"
+msgstr "A iniciar o envio"
+
+msgid "Resizing photo..."
+msgstr "A redimensionar a fotografia"
+
+msgid "Only JPEG files accepted"
+msgstr "Só se aceitam imagens no formato JPEG"
+
+msgid "Select photo to upload"
+msgstr "Selecione fotografia a enviar"
+
+msgid "Select more photos without waiting for the full upload"
+msgstr ""
+
+msgid "Title:"
+msgstr "Título:"
+
+msgid "[Cancel]"
+msgstr "[Cancelar]"
+
+msgid "of"
+msgstr "de"
+
+msgid "at"
+msgstr "em"
+
+msgid "Location"
+msgstr "Localização"
+
+msgid "Relocate"
+msgstr "Alterar localização"
+
+msgid "Finish"
+msgstr "Concluir"
+
+msgid "[change it]"
+msgstr "[alterar]"
+
+msgid "<b>Click</b> on the map or <b>drag</b> the marker"
+msgstr "<b>Clique</b> no mapa ou <b>arraste</b> o balão"
+
+msgid "Cancel mapping"
+msgstr "Cancelar localização"
+
+msgid "(it can be done later)"
+msgstr "(pode ser feito posteriormente)"
+
+msgid ""
+"Photos with coordinates in EXIF are mapped automatically, you don't need to "
+"map them manually."
+msgstr ""
+"Fotos com coordenadas EXIF serão mapeadas automaticamente, não é necessário "
+"mapea-las manualmente."
+
+msgid ""
+"Photos are resized automatically, you can upload the photo in original size "
+"(max. 5 MB)"
+msgstr ""
+"O tamanho das fotos é ajustado automáticamente, pode transferir a foto no "
+"seu tamanho original (max. 5MB)"
+
+msgid "[Close]"
+msgstr "[Fechar]"
+
+msgid "Somewhere"
+msgstr "Algures"
+
+#, php-format
+msgid ""
+"We can't find <em>%s</em>. Write in ENGLISH the name of the city or place "
+"(without country or state). You can also write coordinates in decimal format "
+"separated by \",\" ( e.g. 40.56345, -3.45678) or in sexagesimal format using "
+"a space instead of °, ' and \" (e.g. 43 45 21.24, -3 20 34.21)."
+msgstr ""
+"Não foi encontrada <em>%s</em>. Escreva em INGLÊS o nome do local, sem país "
+"ou estado. Também pode escrever as coordenadas em formato decimal separadas "
+"por \",\" (p. ex. 40.56345, -3.45678) ou sexagesimal usando um espaço em vez "
+"do símbolo °  (p.ex. 43 45 21.24, -3 20 34.21)."
+
+#, php-format
+msgid "%d places called %s. Choose country:"
+msgstr "%d locais chamados %s.Escolha o país:"
+
+#, php-format
+msgid "(%d places)"
+msgstr "(%d locais)"
+
+#, php-format
+msgid "%d places"
+msgstr "%d locais"
+
+msgid "There was an error uploading this file. Please try again later."
+msgstr "Houve um erro ao enviar o ficheiro. Por favor tente mais tarde."
+
+msgid "Please choose a photo to upload."
+msgstr "Por favor escolha uma fotografia para enviar."
+
+msgid "Please, indicate the photos that should be reviewed:"
+msgstr ""
+
+msgid "(separate ID by commas \",\" if more than one)"
+msgstr ""
+
+msgid ""
+"We will review your photo(s) and you will receive an e-mail if they are "
+"selected. Thanks!!"
+msgstr ""
+
+
+msgid "Is Panoramio free?"
+msgstr "O Panoramio é grátis?"
+
+msgid " - Change position"
+msgstr "- Mudar de local"
+
+msgid "Suggest new position"
+msgstr "Sugerir novo local"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid "Suggestions received"
+msgstr "Sugestão registada"
+
+msgid " - Press"
+msgstr " - Carregue"
+
+msgid " - Settings"
+msgstr " - Definições"
+
+msgid " - Sign in"
+msgstr " - Entrar"
+
+msgid " - Sign up"
+msgstr " - Registar"
+
+msgid " - Suggestion registered"
+msgstr " - Sugestão registada."
+
+msgid " - Team"
+msgstr " - Equipa"
+
+msgid " - Terms and privacy"
+msgstr " - Termos e privacidade"
+
+msgid " - This user does not exist anymore"
+msgstr " - Este utilizador já não existe"
+
+msgid " - User unknown"
+msgstr " - Utilizador desconhecido"
+
+msgid "Contact us"
+msgstr "Contacte-nos"
+
+msgid " - Upload your photos"
+msgstr " - Envie as suas fotografias"
+
+msgid "E-mail"
+msgstr "Correio electrónico"
+
+msgid "Telephone"
+msgstr "Telefone"
+
+msgid "Eiffel Tower in Paris"
+msgstr "Torre Eiffel em Paris"
+
+msgid "Mecca in Saudi Arabia"
+msgstr "Meca na Arábia Saudita"
+
+msgid "Ayers Rock in Australia"
+msgstr "Ayers Rock na Austrália"
+
+msgid "Lofoten Islands in Norway"
+msgstr "Ilhas Lofoten na Noruega"
+
+msgid "Manhattan in USA"
+msgstr "Manhattan nos EUA"
+
+msgid "Pyramids of Egypt"
+msgstr "Pirâmides do Egipto"
+
+msgid "Svalbard in Norway"
+msgstr "Svalbard na Noruega"
+
+msgid "Erg Chebbi in Morocco"
+msgstr "Erg Chebbi em Marrocos"
+
+msgid "Acropolis in Athens"
+msgstr "Acrópole em Atenas"
+
+msgid "Forbidden City in Beijing"
+msgstr "Cidade Proibida em Pequim"
+
+msgid "Arizona in USA"
+msgstr "Arizona nos EUA"
+
+msgid "Sail hotel in Dubai"
+msgstr "Hotel Burj al-Arab no Dubai"
+
+msgid "Teotihuacan in Mexico"
+msgstr "Teotihuacan no México"
+
+msgid "Alhambra in Spain"
+msgstr "Alhambra em Espanha"
+
+msgid "Cape of Good Hope in South Africa"
+msgstr "Cabo da Boa Esperança na África do Sul"
+
+msgid "Coast of Iceland"
+msgstr "Costa da Islândia"
+
+msgid "Red Square in Moscow"
+msgstr "Praça Vermelha em Moscovo"
+
+msgid "Le Mont Saint Michel in France"
+msgstr "O Monte Saint Michel em França"
+
+msgid "Venice in Italy"
+msgstr "Veneza em Itália"
+
+msgid "Pisa Tower in Italy"
+msgstr "Torre de Pisa em Itália"
+
+msgid "Golden Temple India"
+msgstr "Templo Dourado na Índia"
+
+msgid "Stonehenge in UK"
+msgstr "Stonehenge no Reino Unido"
+
+msgid "Nazca Lines in Peru"
+msgstr "Linhas de Nasca no Peru"
+
+msgid "Colosseum in Italy"
+msgstr "Coliseu em Itália"
+
+msgid "Citta del Vaticano"
+msgstr "Cidade do Vaticano"
+
+msgid "Atomium in Belgium"
+msgstr "Atomium na Bélgica"
+
+msgid "Hagia Sophia in Istanbul"
+msgstr "Igreja de Santa Sofia em Istambul"
+
+msgid "Shanghai in China"
+msgstr "Shanghai na China"
+
+msgid "North Cape in Norway"
+msgstr "Cabo Norte na Noruega"
+
+msgid "Mageroya Island in Norway"
+msgstr "Ilha Mageroya na Noruega"
+
+msgid "Golden Gate in USA"
+msgstr "Golden Gate nos EUA"
+
+msgid "Las Vegas in USA"
+msgstr "Las Vegas nos EUA"
+
+msgid "US Capitol in USA"
+msgstr "Capitólio nos EUA"
+
+msgid "Colorado Canyon in USA"
+msgstr "Colorado Canyon nos EUA"
+
+msgid "Sydney Opera House in Australia"
+msgstr "A ópera de Sidney na Austrália"
+
+msgid "London in UK"
+msgstr "Londres no Reino Unido"
+
+msgid "Sagrada Familia in Spain"
+msgstr "Sagrada Família em Espanha"
+
+msgid "Reichstag in Germany"
+msgstr "Reichstag na Alemanha"
+
+msgid "Statue of Liberty in USA"
+msgstr "Estátua da Liberdade nos EUA"
+
+msgid "Petronas Towers in Malaysia"
+msgstr "As Torres Petronas na Malásia"
+
+msgid "Sears Tower in Chicago"
+msgstr "A Torre Sears em Chicago"
+
+msgid "Hawaii in USA"
+msgstr "Havai nos EUA"
+
+msgid "Salar Uyuni in Bolivia"
+msgstr "Salar Uyuni na Bolívia"
+
+msgid "Niagara Falls in USA"
+msgstr "Cataratas do Niagara nos EUA"
+
+msgid "Machu Picchu in Peru"
+msgstr "Ruínas de Machu Picchu no Peru"
+
+msgid "Buckingham Palace in UK"
+msgstr "Palácio de Buckingham no Reino Unido"
+
+msgid "Guggenheim Museum in Spain"
+msgstr "Museu Guggenheim em Espanha"
+
+msgid "Mount St. Helens in USA"
+msgstr "Monte de Santa Helena nos EUA"
+
+msgid "Victoria Falls in Zimbabwe"
+msgstr "Cataratas de Victória no Zimbabué"
+
+msgid "Versailles Palace in France"
+msgstr "Palácio de Versailles em França"
+
+msgid "Rio de Janeiro in Brazil"
+msgstr "Rio de Janeiro no Brasil"
+
+msgid "Titicaca Lake in Bolivia"
+msgstr "Lago Titicaca na Bolívia"
+
+msgid "Perito Moreno Glacier in Argentina"
+msgstr "Glaciar Perito Moreno na Argentina"
+
+msgid "Island of the Sun in Bolivia"
+msgstr "Ilha do Sol na Bolívia"
+
+msgid "Tierra del Fuego in Chile - Argentina"
+msgstr "Terra do Fogo no Chile - Argentina"
+
+msgid "Mount Cotopaxi in Ecuador"
+msgstr "Monte Cotopaxi no Ecuador"
+
+msgid "Jerusalem"
+msgstr "Jerusalém"
+
+msgid "Fuerteventura in Spain"
+msgstr "Fuerteventura em Espanha"
+
+msgid "Petra in Jordan"
+msgstr "Petra na Jordânia"
+
+msgid "Great Wall in China"
+msgstr "A Grande Muralha da China"
+
+msgid "start now!"
+msgstr "comece agora!"
+
+msgid ""
+"Why can't I see in Google Earth the photos I uploaded represented as %s?"
+msgstr ""
+"Porque não posso ver as fotografias que enviei no Google Earth, como %s?"
+
+msgid "How can I see my photos in Google Earth as a blue compass?"
+msgstr ""
+"Porque vejo as fotografias que enviei no Google Earth como uma bússula "
+"azul?"
+
+msgid "How can I see my photos immediately after upload?"
+msgstr "Como posso ver as minhas fotos depois de as enviar?"
+
+msgid ""
+"Why some photos appear as blue compasses and other as photo thumbnails? "
+msgstr ""
+"Why some photos appear as blue compasses and other as photo thumbnails?"
+
+msgid "What's the relationship between Panoramio and Google Earth?"
+msgstr "Que relação existe entre o Panoramio e o Google Earth?"
+
+msgid ""
+"Photos are uploaded to Google Earth monthly, not in real time. You will "
+"not see your photos on Google Earth until the next update, which is "
+"typically a few weeks later. If you want to see your photos in Google "
+"Earth right away, see <a href=\"#GE_3\">How can I see my photos "
+"immediately after upload?</a>. We will inform about Google Earth's "
+"updates in <a href=\"/forum/\">Panoramio's forum</a> and at the <a href="
+"\"/blog/\">blog</a>."
+msgstr ""
+"As fotos são colocadas mensalmente no Google Earth, não em tempo real. "
+"Não as verá no Google Earth até à próxima actualização, que poderá ter um "
+"intervalo de várias semanas. Se as quiser ver já no Google Earth, veja <a "
+"href=\"#GE_3\">Como poderei ver imediatamente as minhas fotos?</a>. "
+"Informá-lo-emos sobre as actualizações do Google Earth's no <a href=\"/"
+"forum/\">Forum Panoramio</a> e no <a href=\"/blog/\">blog</a>."
+
+msgid ""
+"There are thousands of photos uploaded daily to Panoramio, and we don't "
+"send all of them to Google. If your photo is of bad quality (extremely "
+"blurred, very small size, ...), or has an obtrusive copyright notice "
+"(copyright notice in small letters is OK), or doesn't tell anything about "
+"that place (a photo of yourself, your pet, your car, ...) the photo will "
+"be discarded for the Google Earth set."
+msgstr ""
+"Existem milhares de fotos colocadas diaramente no Panoramio, e não as "
+"enviamos todas para o Google. Se a foto é de fraca qualidade (muito "
+"desfocada, muito pequena, ...), se tem uma grande marca de direitos "
+"reservados (uma marca pequena é aceite), ou nada diz sobre o local (uma "
+"foto pessoal, do seu cão, do seu carro, etc., ...) não será colocada no "
+"Google."
+
+msgid ""
+"You can see at any time the current set of photos that will be sent to "
+"Google on the Popular tab of our map."
+msgstr ""
+"Pode ver em qualquer altura o conjunto actual de fotos que serão enviadas "
+"para o Google na tab Popular."
+
+msgid ""
+"Google may also filter out some photos from the set we send them. If you "
+"see your photo in the Popular tab but not in Google Earth, either the "
+"Google Earth set of photos has not yet been updated since you sent your "
+"photo, either it has been rejected by Google Earth."
+msgstr ""
+"A Google poderá filtrar algumas fotos do conjunto que lhe enviamos. Se "
+"uma sua foto estiver na categoria Popular mas não no Google Earth, ou o "
+"conjunto de fotos do Google Earth não foi ainda actualizado desde o seu "
+"último envio, ou a foto foi rejeitada pela Google."
+
+msgid ""
+"Just sign up in Panoramio, and upload them. They will not be available "
+"right away in Google Earth, <a href=\"#GE_1\">see previous question</a>."
+msgstr ""
+"Entre no site do Panoramio, e faça o upload das fotos. Não ficarão, no "
+"entanto, imediatamente disponíveis no Google Earth; <a href=\"#GE_1"
+"\">veja a pergunta anterior</a>."
+
+fuzzy
+msgid ""
+"Good quality photos are more likely to become popular and therefore being "
+"included in Google Earth. On the other hand bad quality photos (extremely "
+"blurred, very small size...), photos with obtrusive copyright notice or "
+"the ones that don't tell anything about that place (a photo of yourself, "
+"your pet, your car, ...) will be discarded for Google Earth."
+msgstr ""
+"Existem milhares de fotos colocadas diaramente no Panoramio, e não as "
+"enviamos todas para o Google. Se a foto é de fraca qualidade (muito "
+"desfocada, muito pequena, ...), se tem uma grande marca de direitos "
+"reservados (uma marca pequena é aceite), ou nada diz sobre o local (uma "
+"foto pessoal, do seu cão, do seu carro, etc., ...) não será colocada no "
+"Google."
+
+msgid "You have several options:"
+msgstr "Dispõe de várias opções:"
+
+msgid "<a href=\"/map/\">Panoramio's map</a>"
+msgstr "<a href=\"/map/\">Mapa do Panoramio</a>"
+
+msgid "<a href=\"/user/%s\">Your user page</a>"
+msgstr "<a href=\"/user/%s\">A sua página pessoal</a>"
+
+msgid ""
+"In Google Earth, clicking on any <a href=\"/google-earth/\">Panoramio "
+"feed</a>."
+msgstr ""
+"No Google Earth, clicando em qualquer <a href=\"/google-earth/\">feed "
+"Panoramio</a>."
+
+msgid ""
+"If you tag your photos, they will also be found from the <a href=\"/tags/"
+"\">tag search page</a>."
+msgstr ""
+"Se etiquetar as suas fotos, elas serão pesquisáveis na <a href=\"/tags/"
+"\">página de pesquisa por marcas</a>."
+
+msgid ""
+"Why some photos appear as blue compasses and other as photo thumbnails?"
+msgstr ""
+"Porque é que algumas fotos surgem como bússolas azuis e outras em "
+"miniatura?"
+
+msgid "There are two different things:"
+msgstr "Há duas coisas diferentes:"
+
+msgid ""
+"Photos represented by thumbnails of themselves <img src=\"/img/ge-"
+"thunbnail.gif\" alt=\"Photo thumbnail\" style=\"margin: 0;vertical-align:"
+"bottom;\" /> are updated in real time and include the latest photos "
+"uploaded to Panoramio. They show up only after clicking on any <a href=\"/"
+"google-earth/\">Panoramio feed</a> (KML)."
+msgstr ""
+"As fotos representadas por miniaturas <img src=\"/img/ge-thunbnail.gif\" "
+"alt=\"Miniatura de fotol\" style=\"margin: 0;vertical-align:bottom;\" /> "
+"são actualizadas em tempo real e incluem as últimas enviadas para o "
+"Panoramio. Apenas surgirão após clicar em qualquer <a href=\"/google-"
+"earth/\">feed do Panoramio</a> (KML)."
+
+msgid ""
+"Photos represented by a blue compass %s on Google Earth are part of a "
+"different, <a href=\"/help/#GE_1\">smaller and more restricted</a> set of "
+"photos that is updated monthly. They show up in every computer with "
+"Google Earth by default."
+msgstr ""
+"Fotos representadas por uma bússola azul %s no Google Earth são parte de "
+"um <a href=\"/help/#GE_1\">mais pequeno ou restrito</a> conjunto de fotos "
+"actualizado mensalmente. Surgem sempre no Google Earth."
+
+msgid ""
+"Panoramio depends on your collaboration to fix misplaced photos. Go to "
+"the photo page, and use the “Misplaced photo” link in the right sidebar "
+"to suggest a new position for that photo. When the suggestion will be "
+"reviewed it will be corrected in Panoramio. To see the corrected position "
+"in Google Earth you must <a href=\"/help/#GE_1\">wait a few weeks</a>."
+msgstr ""
+"Panoramio depende da sua colaboração para corrigir fotos mal localizadas. "
+"Vá à página da foto, e use o link “Foto mal localizada” à direita para "
+"sugerir uma nova posição para essa foto. Quando a sugestão for analisada "
+"poderá ser corrigida no Panoramio. Para ver a posição correcta no Google "
+"Earth terá de esperar <a href=\"/help/#GE_1\">algumas semanas</a>."
+
+msgid ""
+"Panoramio is an independent community of users that share their photos "
+"from all around the world. We provide Google regularly with a selection "
+"of the photos of our users for them to be used in Google Earth. You can "
+"take a look at our <a href=\"/team\">team page</a> if you want to know "
+"more about us."
+msgstr ""
+"Panoramio é uma comunidade independente de utilizadores que partilham as "
+"suas fotos de todo o mundo. Enviamos para a Google uma selecção de fotos "
+"dos nossos utilizadores, fotos essas que poderão surgir nuam layer do  "
+"Google Earth. Veja a nossa <a href=\"/team\">página de equipa</a> para "
+"nos conhecer melhor."
+
+msgid ""
+"At the left sidebar in Google Earth you will find the \"Geographic web\" "
+"layer where you can uncheck Panoramio's layer."
+msgstr ""
+"No lado esquerdo da aplicação Google Earth verá a layer \"Geographic web"
+"\" onde pode activar e desactivar a layer do Panoramio."
+
+msgid ""
+"<strong>Notice:</strong> Photos represented by a blue compass %s on "
+"Google Earth are part of a different, smaller and more restricted set of "
+"photos that is updated monthly."
+msgstr ""
+"<strong>Nota:</strong> Fotos representadas por bússola azul %s no Google "
+"Earth fazem parte de um diferente, mais pequeno ou mais restrito conjunto "
+"de fotos actualizado mensalmente."
+
+msgid "Accept"
+msgstr "Aceitar"
+
+msgid "Discard"
+msgstr "Cancelar"
+
+msgid "See your photos right now in:"
+msgstr "Veja já as suas fotos em:"
+
+msgid "Google Earth as little thumbnails"
+msgstr "Google Earth como miniaturas"
+
+msgid "<b>more by %s</b><br />"
+msgstr "<b>mais de %s</b><br />"
+
+msgid "offensive or illegal"
+msgstr "obscena ou ilegal"
+
+msgid "Iguazu Falls in Brazil - Argentina - Paraguay"
+msgstr "Cataratas do Iguaçú no Brasil - Argentina - Paraguai"
+
+msgid ""
+"Organize your <a href='/tags/'>photos with tags</a>: <a href='/tags/"
+"Art/'>Art</a>, <a href='/tags/Buildings/'>Buildings</a>, <a href='/tags/"
+"Reflections/'>Reflections</a>..."
+msgstr ""
+"Organize as suas <a href='/tags/'>fotografias com temas</a>: <a href='/"
+"tags/Art/'>Arte</a>, <a href='/tags/Buildings/'>Edifícios</a>, <a href='/"
+"tags/Reflections/'>Reflexos</a>, <a href='/tags/Castles/'>Castelos</a>..."
+
+msgid "Map"
+msgstr "Mapa"
+
+msgid "Download the translation file"
+msgstr "Descarregue o ficheiro de tradução para o seu computador"
+
+msgid ""
+"For a new language download the <a href='http://www.panoramio.com/"
+"panoramio.po'>original translation file</a>"
+msgstr ""
+"Para traduzir uma nova linguagem descarregue o <a href='http://www."
+"panoramio.com/panoramio.po'>ficheiro de tradução original</a>"
+
+msgid ""
+"Corrections or updates to existing languages. Download your language "
+"file: %s"
+msgstr ""
+"Correções ou actualizações de traduções existentes. Faça download do seu "
+"ficheiro de tradução: %s"
+
+msgid "<a href='/help/#GE_1'>More information</a></p>"
+msgstr "<a href='/help/#GE_1'>Mais informação</a></p>"
+
+msgid ""
+"Online-journalist and contact person for Panoramio in Germany, Austria "
+"and the german-speaking part of Switzerland. I have a MS in Journalism "
+"from the University of Leipzig and have been working for several "
+"newspapers in Germany since 1993."
+msgstr ""
+"Jornalista-online e contacto do Panoramio na Alemanha, Áustria e Suíça "
+"germanófona. Mestre em Jornalismo pela Universidade de Leipzig e "
+"jornalista em diveras publicações da Alemanha desde 1993."
+
+msgid ""
+"In the last years I was working as an online-editor for two of the "
+"biggest german websites <a href='http://web.de/'>Web.de</a> and <a "
+"href='http://www.t-online.de/'>T-Online.de</a>. Currently I'm the chief "
+"editor of the online-section of the \"<a href='http://www.fr-online."
+"de/'>Frankfurter Rundschau</a>\", a national newspaper."
+msgstr ""
+"Nos últimos anos trabalhei como editor online para dois dos maiores "
+"websites alemães: <a href='http://web.de/'>Web.de</a> e <a href='http://"
+"www.t-online.de/'>T-Online.de</a>. Hoje sou editor-chefe da secção online "
+"do jornal nacional \"<a href='http://www.fr-online.de/'>Frankfurter "
+"Rundschau</a>\"."
+
+msgid ""
+"In summer 2006 I was crossing the Alps by Mountainbike using a GPS and "
+"taking photos, so when Eduardo told me about the possibility to place my "
+"photos at the extact position, I was impressed and knew, this would be a "
+"desire for millions of people all over the world."
+msgstr ""
+"No Verão de 2006 estava nos Alpes numa bicicleta de montanha usando um "
+"GPS e tirando fotos, e o Eduardo avançou com a ideia de colocar as fotos "
+"na posição exacta; fiquei impressionado e soube que seria também o desejo "
+"de muitas pessoas de todo o mundo."
+
+msgid ""
+"<strong>Catalan</strong>: Ricardo Jaume, catalan translation, <a href='/"
+"user/3304'>César Lopez</a>, revision"
+msgstr ""
+"<strong>Catalão</strong>: Ricardo Jaume, tradução, <a href='/"
+"user/3304'>César Lopez</a>, revisão"
+
+msgid ""
+"<strong>German</strong>: <a href='/user/30'>Sebastian Holzapfel</a> (main "
+"translator), <a href='/user/16184'>Klexy</a> and <a href='/"
+"user/7370'>Andreas Hagen</a>"
+msgstr ""
+"<strong>Alemão</strong>: <a href='/user/30'>Sebastian Holzapfel</a> "
+"(trad. principal), <a href='/user/16184'>Klexy</a> e <a href='/"
+"user/7370'>Andreas Hagen</a>"
+
+msgid "<strong>Swedish</strong>: <a href='/user/5801'>Lars Karlsson</a>"
+msgstr "<strong>Sueco</strong>: <a href='/user/5801'>Lars Karlsson</a>"
+
+msgid ""
+"<strong>Hungarian</strong>: <a href='/user/10198'>Susanna Fábián</a> and "
+"<a href='/user/57869'>Albert Nagy</a>"
+msgstr ""
+"<strong>Húngaro</strong>: <a href='/user/10198'>Susanna Fábián</a> e <a "
+"href='/user/57869'>Albert Nagy</a>"
+
+msgid ""
+"<strong>French</strong>: <a href='/user/9869'>Raphaële Blondiau</a>, "
+"Christophe Fourey and <a href='/user/147793'>Sébastien</a>"
+msgstr ""
+"<strong>Francês</strong>: <a href='/user/9869'>Raphaële Blondiau</a>, "
+"Christophe Fourey e <a href='/user/147793'>Sébastien</a> "
+
+msgid "<strong>Korean</strong>: <a href='/user/11136'>Sungbong Cho</a>"
+msgstr "<strong>Koreano</strong>: <a href='/user/11136'>Sungbong Cho</a>"
+
+msgid ""
+"<strong>Russian</strong>: <a href='/user/3943'>Andrew “Banzaj” Fedorov</"
+"a> and <a href='/user/95971'>Artem Evstarov</a>"
+msgstr ""
+"<strong>Russo</strong>: <a href='/user/3943'>Andrew “Banzaj” Fedorov</a> "
+"e <a href='/user/95971'>Artem Evstarov</a>"
+
+msgid ""
+"<strong>Italian</strong>: <a href='/user/9469'>Claudio Pedrazzi</a> (main "
+"translator), <a href='/user/15519'>TeknoDMNK</a> and <a href='/"
+"user/136662'>Federico Spano</a>"
+msgstr ""
+"<strong>Italiano</strong>: <a href='/user/9469'>Claudio Pedrazzi</a> "
+"(tradutor principal) e<a href='/user/15519'>ATeknoDMNK</a> e <a href='/"
+"user/136662'>Federico Spano</a>"
+
+msgid "<strong>Slovac</strong>: <a href='/user/14514'>Tibor Bednár</a>"
+msgstr "<strong>Eslovaco</strong>: <a href='/user/14514'>Tibor Bednár</a>"
+
+msgid ""
+"<strong>Polish</strong>: Paulina Szolyga, <a href='/user/28715'>Kamil "
+"Macniak</a> and Adrian Bojczuk"
+msgstr ""
+"<strong>Polaco</strong>: Paulina Szolyga, <a href='/user/28715'>Kamil "
+"Macniak</a> e Adrian Bojczuk"
+
+msgid ""
+"<strong>Dutch</strong>: <a href='/user/19241'>Raoul Grasman</a> (main "
+"translator), <a href='/user/3613'>Emmanuel Begerem</a> and <a href='/"
+"user/86808'>Frank van Maastricht</a>"
+msgstr ""
+"<strong>Neerlandês</strong>: <a href='/user/19241'>Raoul Grasman</a> "
+"(trad. principal), <a href='/user/3613'>Emmanuel Begerem</a> e <a href='/"
+"user/86808'>Frank van Maastricht</a>"
+
+msgid ""
+"<strong>Danish</strong>: <a href='/user/26985'>Søren Hellerung</a> and <a "
+"href='/user/127011'>René Demuth</a>"
+msgstr ""
+"<strong>Dinamarquês</strong>: <a href='/user/26985'>Søren Hellerung</a> e "
+"<a href='/user/127011'>René Demuth</a>"
+
+msgid ""
+"<strong>Portuguese</strong> (Portugal): <a href='/user/25153'>Pedro Melo</"
+"a> and <a href='/user/50723'>Alexandre Gonçalves</a>"
+msgstr ""
+"<strong>Português</strong> (Portugal): <a href='/user/25153'>Pedro Melo</"
+"a> e <a href='/user/50723'>Alexandre Gonçalves</a>"
+
+msgid ""
+"<strong>Lithuanian</strong>: <a href='/user/43013'>Gediminas "
+"Vaitkevičius</a>"
+msgstr ""
+"<strong>Lituano</strong>: <a href='/user/43013'>Gediminas Vaitkevičius</a>"
+
+msgid ""
+"<strong>Romanian</strong>: <a href='/user/56425'>George-Alexandru "
+"Marinescu</a>"
+msgstr ""
+"<strong>Romeno</strong>: <a href='/user/56425'>George-Alexandru "
+"Marinescu</a>"
+
+msgid "<strong>Japanese</strong>: <a href='/user/45529'>Atsushi Ikeda</a>"
+msgstr "<strong>Japonês</strong>: <a href='/user/45529'>Atsushi Ikeda</a>"
+
+msgid ""
+"<strong>Czech</strong>: Jiri Bartos, <a href='/user/48169'>Holger Grebe</"
+"a> and <a href='/user/139329'>Tomáš Wogurka</a>"
+msgstr ""
+"<strong>Checo</strong>: Jiri Bartos, <a href='/user/48169'>Holger Grebe</"
+"a> e <a href='/user/139329'>Tomáš Wogurka</a>"
+
+msgid ""
+"<strong>Ukrainian</strong>: <a href='/user/70366'>Dmytro Marievsky</a>"
+msgstr ""
+"<strong>Ucraniano</strong>: <a href='/user/70366'>Dmytro Marievsky</a>"
+
+msgid "<strong>Turkish</strong>: Kenan Satir"
+msgstr "<strong>Turco</strong>: Kenan Satir"
+
+msgid ""
+"<strong>Bosnian and Croatian</strong>: <a href='/user/82742'>Miron "
+"Matijevic</a> and Ana Mazic"
+msgstr ""
+"<strong>Bósnio e Croata</strong>: <a href='/user/82742'>Miron Matijevic</"
+"a> e Ana Mazic"
+
+msgid ""
+"<strong>Chinese</strong> (Simplified): <a href='/user/124430'>Jing Zhou</"
+"a>, <a href='/user/93078'>Bin Li</a>, <a href='/user/238773'>Liu Mingda</"
+"a> and <a href='/user/261350'>Lirengui</a>"
+msgstr ""
+"<strong>Chinês</strong> (Simplificado): <a href='/user/124430'>Jing Zhou</"
+"a>, <a href='/user/93078'>Bin Li</a>, <a href='/user/238773'>Liu Mingda</"
+"a> e <a href='/user/261350'>Lirengui</a>"
+
+msgid ""
+"<strong>Bulgarian</strong>: <a href='/user/134344'>Andrey Kirkov</a> and "
+"Boyan Ivanov Bonev"
+msgstr ""
+"<strong>Búlgaro</strong>: <a href='/user/134344'>Andrey Kirkov</a> e "
+"Boyan Ivanov Bonev"
+
+msgid "<strong>Norwegian</strong>: Bo Eide"
+msgstr "<strong>Norueguês</strong>: Bo Eide"
+
+msgid ""
+"<strong>Greek</strong>: <a href='/user/79694'>Tasos & Kostas Koutsavlis</"
+"a>"
+msgstr ""
+"<strong>Grego</strong>: <a href='/user/79694'>Tasos & Kostas Koutsavlis</"
+"a>"
+
+msgid "<strong>Finnish</strong>: <a href='/user/151444'>Timo Rossi</a>"
+msgstr "<strong>Finlandês</strong>: <a href='/user/151444'>Timo Rossi</a>"
+
+msgid ""
+"<strong>Portuguese</strong> (Brazil): <a href='/user/27627'>Sergio de "
+"Castro</a> and <a href='/user/1908'>Cleber Lima</a>"
+msgstr ""
+"<strong>Português</strong> (grafia do Brasil): <a href='/"
+"user/27627'>Sergio de Castro</a> e <a href='/user/1908'>Cleber Lima</a>"
+
+msgid "<strong>Persian</strong>: <a href='/user/65562'>Hessam Moosavi</a>"
+msgstr "<strong>Persa</strong>: <a href='/user/65562'>Hessam Moosavi</a>"
+
+msgid ""
+"<strong>Chinese</strong> (traditional): <a href='/user/32227'>David Hing "
+"Cheong Hung</a>"
+msgstr ""
+"<strong>Chinês</strong> (tradicional): <a href='/user/32227'>David Hing "
+"Cheong Hung</a>"
+
+msgid "Search new position"
+msgstr "Procurar novo local"
+
+msgid ""
+"We will take a look at the position you suggested as soon as possible and "
+"fix it. Thank you!"
+msgstr ""
+"Iremos dar uma olhada à localização que sugeriu o mais brevemente "
+"possivel. Obrigado!"
+
+msgid "<h2>There is already an user with this e-mail</h2>"
+msgstr "<h2>Já existe um utilizador com este e-mail.</h2>"
+
+msgid "[Settings]</a>"
+msgstr "[Configurações]</a>"
+
+msgid "Let blank to keep your password"
+msgstr "Deixar em branco para manter a palavra-passe"
+
+msgid "Random"
+msgstr "Aleatórias"
+
+msgid "img/"
+msgstr "img/"
+
+msgid "Error uploading this photo. Please try again later."
+msgstr "Erro no envio desta fotografia. Por favor tente mais tarde."
+
+msgid "Select another photo. Upload as many as you want."
+msgstr "Selecione outra fotografia. Envie tantas quantas quiser."
+
+msgid "Upload a photo"
+msgstr "Enviar uma fotografia"
+
+msgid "Which kind of photos will be visible in Google Earth?"
+msgstr "Que tipo de fotografias serão visiveis no Google Earth?"
+
+msgid "What are the “Favourites” %s?"
+msgstr "O que são os “Favoritos” %s?"
+
+msgid ""
+"The photos of Panoramio's layer inside Google Earth (Geographic web) are "
+"not updated in real time. They are updated every month (approx.), so you "
+"have to wait a little bit to see your photos in Google Earth."
+msgstr ""
+"As fotografias da camada do Panoramio no Google Earth(Geographic web) não "
+"são actualizadas em tempo real. As actualizações ocorrem a cada cuatro "
+"semanas (aproximadamente). Terá de esperar algum tempo até ver as suas "
+"fotografias no Google Earth."
+
+msgid ""
+"If you want to see all photos uploaded to Panoramio at Google Earth in "
+"real time, you have to go to <a href=\"http://www.panoramio.com/google-"
+"earth/\">this page</a> or open this <a href=\"http://www.panoramio.com/"
+"panoramio.kml\">KML feed</a>."
+msgstr ""
+"Se desejar ver no Google Earth todas as fotos enviadas para o Panoramio "
+"em tempo real, terá de ir até <a href=\"http://www.panoramio.com/google-"
+"earth/\">esta página</a> ou abrir este <a href=\"http://www.panoramio.com/"
+"panoramio.kml\">KML feed</a>."
+
+msgid ""
+"Also you can watch only photos from one user inside Google Earth in real "
+"time. Go to the user's personal area at Panoramio (e.g. <a href=\"http://"
+"www.panoramio.com/user/7\">Eduardo's personal area</a>) and press the "
+"orange KML button there."
+msgstr ""
+"Também é possivel visualizar em tempo real no Google Earth fotografias de "
+"um só utilizador. Na área pessoal do utilizador no Panoramio (ex: <a href="
+"\"http://www.panoramio.com/user/7\">Área pessoal do Eduardo</a>) prima o "
+"botão cor-de-laranja KML"
+
+msgid ""
+"All photos are visible at <a href=\"http://www.panoramio.com/"
+"\">Panoramio's website</a>, but only descriptive photos about the place "
+"are included in Google Earth."
+msgstr ""
+"Todas as fotografias estão disponiveis no <a href=\"http://www.panoramio."
+"com/\"> Panoramio</a>, mas apenas fotografias descritivas do local a que "
+"estão associadas é que são incluidas no Google Earth."
+
+msgid ""
+"Usually most of photos of people, animals, interiors or small details are "
+"not enough descriptive or distinctive about the place, so they will not "
+"be visible in Google Earth. If you have doubts or you find any unsuitable "
+"photo tell us at: <a class='m' href='#'></a>."
+msgstr ""
+"Em regra a maioria das fotografias de pessoas, animais ou pequenos "
+"detalhes não são suficientemente descritivas de um local, logo não "
+"aparecerão no Google Earth. Em caso de dúvidas ou se encontrar uma foto "
+"inadequada contacte-nos em: <a class='m' href='#'></a>."
+
+msgid ""
+"If your photo is descriptive about the place, but you can't see it in "
+"Google Earth, remember that uploaded photos are not immediatly visible, "
+"please, read the <a href=\"#see_GE\" onclick=\"return go('see_GE')"
+"\">question above</a>"
+msgstr ""
+"Se apesar de ter uma fotografia representativa de um lugar, esta não "
+"aparecer no Google Earth, lembre-se que as votos enviadas não ficam "
+"imediatamente visiveis, por favor leia <a href=\"#see_GE\" onclick="
+"\"return go('see_GE')\">a questão acima</a>"
+
+msgid ""
+"Suggested new locations for misplaced photos are moderated at <a href="
+"\"http://www.panoramio.com/\">Panoramio's website</a> in the same day we "
+"receive the suggestion. If the suggested location is right you will see "
+"the photo in the new location in some hours."
+msgstr ""
+"Sugestões de novas localizações para fotografias que estejam erradamente "
+"colocadas serão moderadas no <a href=\"http://www.panoramio.com/"
+"\">Panoramio</a> no mesmo dia em que as sugestões forem recebidas. Se a "
+"nova localização sugerida for a correcta a alteração será efectuada no "
+"prazo de algumas horas."
+
+msgid "What are the  “Favourites” %s?"
+msgstr "O que são os “Favoritos” %s?"
+
+msgid "How to create, apply, edit and edit tags?"
+msgstr "Como criar, usar, alterar e alterar temas?"
+
+msgid ""
+"Hi,\n"
+"\n"
+"look at this photo:\n"
+"\n"
+msgstr ""
+"Olá,\n"
+"\n"
+"dá uma olhada a esta fotografia:\n"
+"\n"
+
+msgid "A message from %s"
+msgstr "Uma mensagem de %s"
+
+msgid "Pyramids of Egipt"
+msgstr "Pirâmides do Egipto"
+
+msgid ""
+"We can't find <em>%s</em>. Write in ENGLISH the name of the city or place "
+"(without country or state). Check spelling or try with a near place."
+msgstr ""
+"Não encontramos <em>%s</em>. Escreva em INGLÊS o nome da cidade ou local"
+"(sem referências a país ou estado). Verifique a ortografia ou tente um "
+"outro local próximo."
+
+msgid "Show and promote your place or business"
+msgstr "Mostre e promova a sua loja ou negócio"
+
+msgid ""
+"If you sell wine, why don't locate the wines exactly where they are "
+"produced?"
+msgstr ""
+"Se negoceia com vinhos, porque não mostrar exactamente onde é que estes "
+"são produzidos?"
+
+msgid "Wines from Vinissimus.com"
+msgstr "Vinhos de Vinissimus.com"
+
+msgid "Wines"
+msgstr "Vinhos"
+
+msgid "Find out where people have fun"
+msgstr "Descubra onde é que as pessoas se divertem."
+
+msgid ""
+"Want to know where people have fun at any place. Where to make friends "
+"close where you live. Try with Panoramio."
+msgstr ""
+"Quer saber onde é que as pessoas se divertem. Onde fazer amigos próximo "
+"de casa. Experimente o Panoramio."
+
+msgid "people"
+msgstr "pessoas"
+
+msgid ""
+"<a href=\"../panoramio.kml\" onClick='javascript:urchinTracker(\"/"
+"download/panoramio.kml\");'>Photos inside Google Earth</a>"
+msgstr ""
+"<a href=\"../panoramio.kml\" onClick='javascript:urchinTracker(\"/"
+"download/panoramio.kml\");'>Fotografias no Google Earth</a>"
+
+msgid ""
+"<a href=\"../panoramio.kml\" onClick='javascript:urchinTracker(\"/"
+"download/panoramio.kml\");'>View now!</a>"
+msgstr ""
+"<a href=\"../panoramio.kml\" onClick='javascript:urchinTracker(\"/"
+"download/panoramio.kml\");'>Veja agora!</a>"
+
+msgid "%d photos by %s"
+msgstr "%d fotografias de %s"
+
+msgid "Graphic resources"
+msgstr "Conteúdos gráficos"
+
+msgid "Bigger version"
+msgstr "Tamanho maior"
+
+msgid "Press releases"
+msgstr "Press releases"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Upload your <span>photos</span>"
+msgstr "Envie as suas <span>fotografias</span>"
+
+msgid "Cancel upload"
+msgstr "Cancelar envio"
+
+fuzzy
+msgid "<strong>Dutch</strong>: <a href='/user/19241'>Raoul Grasman</a>"
+msgstr "<strong>Sueco</strong>: <a href='/user/5801'>Lars Karlsson</a>"
+
+msgid ""
+"Corrections or updates to existing languages. Download your language "
+"file: <a href='/locale/de/LC_MESSAGES/messages.po'>German</a>, <a href='/"
+"locale/fr/LC_MESSAGES/messages.po'>French</a>, <a href='/locale/es/"
+"LC_MESSAGES/messages.po'>Spanish</a>, <a href='/locale/ko/LC_MESSAGES/"
+"messages.po'>Korean</a>, <a href='/locale/ca/LC_MESSAGES/messages."
+"po'>Catalan</a>, <a href='/locale/it/LC_MESSAGES/messages.po'>Italian</"
+"a>, <a href='/locale/ru/LC_MESSAGES/messages.po'>Russian</a>, <a href='/"
+"locale/sk/LC_MESSAGES/messages.po'>Hungarian</a> and <a href='/locale/sv/"
+"LC_MESSAGES/messages.po'>Swedish</a>."
+msgstr ""
+"Para correções ou actualizações de linguagens já existentes. Descarregue "
+"a linguagem pretendida: <a href='/locale/de/LC_MESSAGES/messages."
+"po'>Alemão</a>, <a href='/locale/fr/LC_MESSAGES/messages.po'>Francês</a>, "
+"<a href='/locale/es/LC_MESSAGES/messages.po'>Espanhol</a>, <a href='/"
+"locale/ko/LC_MESSAGES/messages.po'>Coreano</a>, <a href='/locale/ca/"
+"LC_MESSAGES/messages.po'>Catalão</a>, <a href='/locale/it/LC_MESSAGES/"
+"messages.po'>Italiano</a>, <a href='/locale/ru/LC_MESSAGES/messages."
+"po'>Russo</a>, <a href='/locale/sk/LC_MESSAGES/messages.po'>Húngaro</a> e "
+"<a href='/locale/sv/LC_MESSAGES/messages.po'>Sueco</a>."
+
+msgid "Add a mini-panoramio to your site"
+msgstr "Adicione um mini-panoramio ao seu dominio"
+
+msgid "Interesting places: %s and <a href='/blog/category/places/'>more</a>"
+msgstr ""
+"Locais Interessantess: %s e <a href='/blog/category/places/'>mais</a>"
+
+msgid ""
+"Soy fundador y administrador de la mayor comunidad de estandares web en "
+"castellano <a href='http://ovillo.org/'>Ovillo.org</a> con 1.800 "
+"miembros. Actualmente estoy terminando la licenciatura en Administración "
+"y Dirección de Empresas en la Universidad de Málaga. La historia del "
+"pensamiento económico es otra de mis pasiones. "
+msgstr ""
+"Sou fundador e administrador do <a href='http://ovillo.org/'>Ovillo.org</"
+"a>, uma comunidade sobre web standards em língua castelhana com 1.800 "
+"membros. Actualmente termino os meus estudos em Gestão na Universidade de "
+"Málaga."
+
+msgid ""
+"Conocí a Eduardo y Joaquín durante mi etapa como colaborador de <a "
+"href='http://malaga.loquo.com/'>Loquo Málaga</a> y <a href='http://"
+"granada.loquo.com/'>Loquo Granada</a>. Desde entonces estamos en contacto "
+"frecuentemente, así que cuando a finales del verano de 2006 Eduardo me "
+"propuso colaborar con él y Joaquín en Panoramio acepté encantado. "
+msgstr ""
+"Conheci o Eduardo e o Joaquín quando trabalhava no <a href='http://www."
+"loquo.com'>Loquo.com</a>. Desde então, temos estado em contacto, de modo "
+"que quando me propuseram juntar à equipa do Panoramio no fim do Verão de "
+"2006, aceitei logo."

@@ -1,0 +1,406 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-22 17:12CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:12
+#, no-c-format
+msgid "The &kjezz; Handbook"
+msgstr "Le manuel de &kjezz;"
+
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Aaron</firstname> <othername>J.</othername> "
+"<surname>Seigo</surname> <affiliation> "
+"<address><email>aseigo@olympusproject.org</email></address> </affiliation>"
+msgstr ""
+"<firstname>Aaron</firstname> <othername>J.</othername> "
+"<surname>Seigo</surname> <affiliation> "
+"<address><email>aseigo@olympusproject.org</email></address> </affiliation>"
+
+#: index.docbook:28
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecture"
+
+#: index.docbook:31
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Éric</firstname><surname>Bischoff</surname>"
+"<affiliation><address><email>e.bischoff@noos.fr</email></address>"
+"</affiliation><contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:43
+#, no-c-format
+msgid "&kjezz; is a ball game for &kde;."
+msgstr "&kjezz; est un jeu de balle pour &kde;."
+
+#: index.docbook:50
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:51
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:52
+#, no-c-format
+msgid "jezzball"
+msgstr "jezzball"
+
+#: index.docbook:58
+#, no-c-format
+msgid "How To Play"
+msgstr "Comment jouer"
+
+#: index.docbook:60
+#, no-c-format
+msgid ""
+"&kjezz; is played on a field, surrounded by a wall, with two or more balls "
+"that move about in the field bouncing off of the walls."
+msgstr ""
+"&kjezz; se joue dans un terrain entouré d'un mur, avec deux balles ou plus "
+"qui avancent dans le terrain en rebondissant sur les murs."
+
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"Walls are a darker color while the active areas of the field are a lighter "
+"color."
+msgstr ""
+"Les murs sont d'une couleur sombre tandis que les parties actives du terrain "
+"sont dans une couleur plus claire."
+
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"The size of the active area of the field is decreased by making new walls "
+"that enclose areas without balls in them. To complete a level, the player "
+"must decrease the size of the active field by at least 75&percnt; within the "
+"time allowed."
+msgstr ""
+"La taille de la partie active du terrain diminue lorsqu'on construit de "
+"nouveaux murs qui contiennent des zones sans balles. Pour passer au niveau "
+"suivant, vous devez diminuer la taille de la partie active d'au moins "
+"75&percnt; dans le temps imparti."
+
+#: index.docbook:72
+#, no-c-format
+msgid ""
+"With each new level, another ball is added to the field, and the player is "
+"given one more life than in the level before. The time allotted to complete "
+"the level is also increased."
+msgstr ""
+"À chaque nouveau niveau, une balle de plus est ajoutée dans le terrain, et "
+"le joueur dispose d'une vie de plus que dans le niveau précédent. Le temps "
+"imparti pour terminer le niveau est également augmenté."
+
+#: index.docbook:76
+#, no-c-format
+msgid "Scoring is based on how much of the field is cleared."
+msgstr "Le comptage des points se base sur la quantité de terrain libérée."
+
+#: index.docbook:78
+#, no-c-format
+msgid ""
+"New walls are built by clicking the <mousebutton>left</mousebutton> mouse "
+"button in an active area of the field, at which point two walls will begin "
+"to grow in opposite directions from the square the mouse was clicked in. "
+"Only two walls may be growing on the screen at any given time."
+msgstr ""
+"De nouveaux murs sont construits en cliquant avec le &BGS; sur la partie "
+"active du terrain, ce qui provoque la progression de deux murs à partir de "
+"la case où vous avez cliqué dans deux directions opposées. Deux murs "
+"seulement peuvent être en constructions à un moment donné."
+
+#: index.docbook:84
+#, no-c-format
+msgid "A new wall growing"
+msgstr "Un nouveau mur en train de progresser"
+
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"When the mouse is on the field, the cursor is shown as a pair of arrows "
+"pointing in opposite directions, either horizontally or vertically. The "
+"arrows point in the direction the walls will grow when the "
+"<mousebutton>left</mousebutton>"
+" is clicked. This direction can be changed by clicking the "
+"<mousebutton>right</mousebutton> mouse button."
+msgstr ""
+"Quand le curseur de la souris est sur le terrain, il prend la forme d'une "
+"paire de flèches pointant dans des directions opposées, horizontales ou "
+"verticales. Les flèches pointent dans les directions dans lesquelles les "
+"murs se construiront si vous cliquez avec le &BGS;. Ces directions peuvent "
+"être changées en cliquant avec le &BDS;."
+
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"A new wall has a <quote>head</quote> which moves away from the point where "
+"the mouse was clicked. A wall is not permanent until this "
+"<quote>head</quote>"
+" runs into another wall. If a ball collides with any part of the wall except "
+"the head, before the head has run into another wall, the new wall will "
+"disappear completely and one life will be lost. If a ball collides with the "
+"head in the direction of the wall's growth, the wall will stop growing "
+"there, and become permanent, with no loss of life. If a ball collides with "
+"the head from any other side, the ball will bounce off and the wall will "
+"continue to grow normally."
+msgstr ""
+"Un mur en cours de construction a une <quote>tête</quote>"
+" qui s'éloigne du point où vous avez cliqué. Un mur n'est pas permanent "
+"tant que sa <quote>tête</quote> n'a pas atteint le mur opposé. Si une "
+"balle entre en collision avec une partie du mur différente de sa tête, le "
+"mur en cours de construction disparaîtra complètement et une vie sera "
+"perdue. Si une balle entre en collision avec la tête dans la direction de "
+"la construction du mur, le mur s'arrêtera là et deviendra permanent, sans "
+"perte de vie. Si une balle entre en collision avec la tête du mur d'un "
+"autre côté, la balle rebondira et le mur continuera à avancer normalement."
+
+#: index.docbook:117
+#, no-c-format
+msgid "Strategy"
+msgstr "Stratégie"
+
+#: index.docbook:119
+#, no-c-format
+msgid ""
+"Many players find the game becomes quite difficult by only the third or "
+"fourth level, given the number of balls on the field at once."
+msgstr ""
+"La plupart des joueurs ne commencent à trouver le jeu difficile qu'à "
+"partir des troisième ou quatrième niveaux, à cause du nombre de balles "
+"simultanément en jeu."
+
+#: index.docbook:123
+#, no-c-format
+msgid ""
+"The trick to playing &kjezz; successfully is to build "
+"<quote>corridors</quote>"
+". To build a corridor, start a pair of walls growing close to another wall, "
+"and time it such that one of the walls will be hit by a ball and one of the "
+"walls will not, and thus become permanent."
+msgstr ""
+"L'astuce pour gagner en jouant à &kjezz; est de construire des "
+"<quote>corridors</quote>. Pour construire, un corridor, démarrez un mur "
+"près d'un autre mur, et arrangez-vous pour qu'un des murs soit touché par "
+"une balle et que l'autre ne le soit pas, et qu'il devienne donc permanent."
+
+#: index.docbook:129
+#, no-c-format
+msgid "Building a corridor"
+msgstr "Comment construire un corridor"
+
+#: index.docbook:141
+#, no-c-format
+msgid ""
+"This will leave a narrow corridor only a few squares high on the field, "
+"surrounded on three sides by walls. Wait for the balls to bounce into the "
+"open end of the corridor, and close the corridor behind the ball with a new "
+"wall. Although you will most likely lose a life for each corridor created, "
+"you can trap several balls in a single corridor."
+msgstr ""
+"On construit ainsi dans le terrain un corridor étroit haut de seulement "
+"quelques cases, entouré sur trois côtés par des murs. Attendez que les "
+"balles rebondissent vers l'extrêmité ouverte du corridor, et fermez le "
+"corridor derrière la balle avec un nouveau mur. Bien qu'il soit probable "
+"que vous perdiez une vie pour chaque corridor créé, l'avantage est que "
+"vous pouvez capturer plusieurs balles avec un seul corridor."
+
+#: index.docbook:148
+#, no-c-format
+msgid "Capturing balls in a corridor"
+msgstr "Capture de balles dans un corridor"
+
+#: index.docbook:160
+#, no-c-format
+msgid ""
+"A final tip &mdash; take your time! There is plenty of time, as shown in the "
+"<guilabel>Time</guilabel> display on the right hand side of the screen. "
+"Rushing will just get you in trouble!"
+msgstr ""
+"Un dernier conseil&nbsp;: prenez votre temps&nbsp;! Le temps imparti est "
+"long, comme vous le montre la zone <guilabel>Temps</guilabel> sur le côté "
+"droit de l'écran. Vous précipiter ne vous apporterait que des ennuis&nbsp;!"
+
+#: index.docbook:167
+#, no-c-format
+msgid "Menu Reference"
+msgstr "Description des menus"
+
+#: index.docbook:170
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:172
+#, no-c-format
+msgid "Start a new game."
+msgstr "Démarre une nouvelle partie."
+
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>End</keycap> </keycombo>"
+" </shortcut> <guimenu>Game</guimenu> <guimenuitem>End Game</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Fin</keycap> </keycombo>"
+" </shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Terminer la "
+"partie</guimenuitem>"
+
+#: index.docbook:172
+#, no-c-format
+msgid "End the current game."
+msgstr "Arrête la partie en cours."
+
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"<shortcut> <keycap>P</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Pause</guimenuitem>"
+msgstr ""
+"<shortcut> <keycap>P</keycap></shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Pause</guimenuitem>"
+
+#: index.docbook:172
+#, no-c-format
+msgid "Pause the game."
+msgstr "Interrompt la partie."
+
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Show "
+"Highscores</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Meilleurs "
+"scores</guimenuitem>"
+
+#: index.docbook:172
+#, no-c-format
+msgid "Show the high score table."
+msgstr "Affiche la liste des meilleurs scores."
+
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:172
+#, no-c-format
+msgid "<action>Quit</action> and close &kjezz;."
+msgstr "<action>Quitte</action> &kjezz;."
+
+#: index.docbook:240
+#, no-c-format
+msgid "The <guimenu>Background</guimenu> Menu"
+msgstr "Le menu <guimenu>Fond</guimenu>"
+
+#: index.docbook:242
+#, no-c-format
+msgid "<guimenu>Background</guimenu> <guimenuitem>Select Images...</guimenuitem>"
+msgstr ""
+"<guimenu>Fond</guimenu> <guimenuitem>Sélectionner des "
+"images...</guimenuitem>"
+
+#: index.docbook:242
+#, no-c-format
+msgid "Choose an image for the background."
+msgstr "Choisit une image de fond."
+
+#: index.docbook:242
+#, no-c-format
+msgid "<guimenu>Background</guimenu> <guimenuitem>Show Images</guimenuitem>"
+msgstr "<guimenu>Fond</guimenu> <guimenuitem>Afficher des images...</guimenuitem>"
+
+#: index.docbook:242
+#, no-c-format
+msgid "Enable the background image."
+msgstr "Valide l'image de fond."
+
+#: index.docbook:268
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "Le menu <guimenu>aide</guimenu>"
+
+#: index.docbook:277
+#, no-c-format
+msgid "Credits and Licenses"
+msgstr "Remerciements et licences"
+
+#: index.docbook:280
+#, no-c-format
+msgid "&kjezz;"
+msgstr "&kjezz;"
+
+#: index.docbook:282
+#, no-c-format
+msgid "Copyright 2000, Stefan Schimanski"
+msgstr "Copyright 2000, Stefan Schimanski"
+
+#: index.docbook:284
+#, no-c-format
+msgid "Developers"
+msgstr "Developpeurs"
+
+#: index.docbook:284
+#, no-c-format
+msgid "Stefan Schimanski <email>schimmi@kde.org</email>"
+msgstr "Stefan Schimanski <email>schimmi@kde.org</email>"
+
+#: index.docbook:284
+#, no-c-format
+msgid "Sandro Sigala <email>ssigala@globalnet.it</email> - Highscore"
+msgstr "Sandro Sigala <email>ssigala@globalnet.it</email> - Meilleurs scores"
+
+#: index.docbook:295
+#, no-c-format
+msgid ""
+"Documentation copyright 2002, Aaron J. Seigo "
+"<email>aseigo@olympusproject.org</email>"
+msgstr ""
+"Documentation copyright 2002, Aaron J. Seigo "
+"<email>aseigo@olympusproject.org</email>"
+
+#: index.docbook:298
+#, no-c-format
+msgid "This handbook is dedicated to Dennis E. Powell."
+msgstr "Ce manuel est dédicacé à Dennis E. Powell."
+
+#: index.docbook:300
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Éric Bischoff "
+"<email>e.bischoff@noos.fr</email></para>"
+
+#: index.docbook:309
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"

@@ -1,0 +1,704 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-19 13:48CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "The &kreversi; Handbook"
+msgstr "Le manuel de &kreversi;"
+
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Clay</firstname> <surname>Pradarits</surname> <affiliation> "
+"<address><email>gasky@winfire.com</email></address> </affiliation>"
+msgstr ""
+"<firstname>Clay</firstname> <surname>Pradarits</surname> <affiliation> "
+"<address><email>gasky@winfire.com</email></address> </affiliation>"
+
+#: index.docbook:28
+#, no-c-format
+msgid "Developer"
+msgstr "Développeur"
+
+#: index.docbook:34
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecture"
+
+#: index.docbook:40
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"><firstname>Éric</firstname> "
+"<surname>Bischoff</surname><affiliation><address><email>"
+"e.bischoff@noos.fr</email></address></affiliation><contrib>Traduction "
+"française</contrib></othercredit>"
+
+#: index.docbook:47
+#, no-c-format
+msgid "&kreversi; is a simple one player strategy game."
+msgstr "&kreversi; est un jeu de stratégie simple pour un joueur."
+
+#: index.docbook:51
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:52
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:53
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:54
+#, no-c-format
+msgid "KReversi"
+msgstr "Othello"
+
+#: index.docbook:59
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:62
+#, no-c-format
+msgid "What is &kreversi;?"
+msgstr "Qu'est-ce que &kreversi;&nbsp;?"
+
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"&kreversi; is a simple one player strategy game played against the computer. "
+"The playing field is an 8 by 8 square board divided into 64 squares. The "
+"game piece used is a colored stone - one side of it is red, the other blue. "
+"If a piece is captured by an opposing player, that piece is turned to reveal "
+"the color of that player. A winner is declared when one player has more "
+"pieces of his own color on the board and if there are no more possible moves."
+msgstr ""
+"&kreversi; est un jeu de stratégie simple qui se joue seul contre "
+"l'ordinateur. Le plateau de jeu se compose de 64 cases disposées en un "
+"carré de 8 cases sur 8. Les pions sont des pièces dont un côté est rouge "
+"et l'autre bleu. Si une pièce est capturée par l'adversaire, cette pièce "
+"est retournée de manière à montrer la couleur de cet adversaire. Est "
+"déclaré vainqueur celui qui a plus de pièces que son adversaire lorsque "
+"plus aucun coup ne peut être joué."
+
+#: index.docbook:75
+#, no-c-format
+msgid "Object of the game"
+msgstr "But du jeu"
+
+#: index.docbook:77
+#, no-c-format
+msgid "The object of the game is to control the majority of squares on the board."
+msgstr "Le but du jeu est de contrôler la plupart des cases du plateau de jeu."
+
+#: index.docbook:86
+#, no-c-format
+msgid "Playing"
+msgstr "Déroulement de la partie"
+
+#: index.docbook:89
+#, no-c-format
+msgid "Basics"
+msgstr "Notions élémentaires"
+
+#: index.docbook:91
+#, no-c-format
+msgid ""
+"A move consists of outflanking your opponents disc(s), then flipping the "
+"outflanked disc(s) to reveal your color. A move is performed by placing the "
+"mouse pointer over the desired square then &LMB; click."
+msgstr ""
+"Un coup consiste à encadrer un ou plusieurs pions de votre adversaire, puis "
+"de retourner ces pions pour qu'ils montrent votre couleur. Un coup se joue "
+"en plaçant le pointeur de la souris par-dessus la case désirée puis à "
+"cliquer avec le &BGS;."
+
+#: index.docbook:95
+#, no-c-format
+msgid ""
+"To outflank means to place a disc on the board so that your opponent's "
+"row(s) of disc(s) is bordered at each end by a disc of your color. A row may "
+"be made up of one or more discs."
+msgstr ""
+"Encadrer signifie placer un pion sur le plateau de manière à ce qu'un ou "
+"plusieurs alignements de pions de votre adversaire soit flanqué à chaque "
+"extrémité par un pion de votre couleur. Un tel alignement peut se composer "
+"d'un ou plusieurs pions."
+
+#: index.docbook:99
+#, no-c-format
+msgid ""
+"The game starts with each player having two discs automatically placed in "
+"the center four squares of the board in the following pattern:"
+msgstr ""
+"La partie démarre avec deux jetons pour chaque joueur placés sur le "
+"plateau de jeu dans le carré de 4 cases central comme suit&nbsp;:"
+
+#: index.docbook:102
+#, no-c-format
+msgid "&kreversi; opening position"
+msgstr "Position de départ de &kreversi;"
+
+#: index.docbook:102
+#, no-c-format
+msgid "Board Layout"
+msgstr "Composition du plateau de jeu"
+
+#: index.docbook:111
+#, no-c-format
+msgid "Menu Bar"
+msgstr "Barre de menus"
+
+#: index.docbook:111
+#, no-c-format
+msgid ""
+"The <interface>Menu Bar</interface> contains four choices of drop-down "
+"menus. These are <link linkend=\"file-menu\"><guimenu>File</guimenu></link>"
+", <link linkend=\"game-menu\"><guimenu>Game</guimenu></link>, <link "
+"linkend=\"settings-menu\"><guimenu>Settings</guimenu></link>, and <link "
+"linkend=\"help-menu\"><guimenu>Help</guimenu></link>. &LMB; click or "
+"<keycombo action=\"simul\">&Alt;<keycap>the underlined "
+"letter</keycap></keycombo> to show the drop-down menu."
+msgstr ""
+"La <interface>barre de menus</interface> donne accès à quatre menus "
+"déroulants. Il s'agit de <link "
+"linkend=\"file-menu\"><guimenu>Fichier</guimenu></link>, <link "
+"linkend=\"game-menu\"><guimenu>Jeu</guimenu></link>, <link "
+"linkend=\"settings-menu\"><guimenu>Configuration</guimenu></link>, et <link "
+"linkend=\"help-menu\"><guimenu>Aide</guimenu></link>. Cliquez avec le &BGS; "
+"ou appuyez sur <keycombo action=\"simul\">&Alt;<keycap>la lettre "
+"soulignée</keycap></keycombo> pour afficher le menu déroulant."
+
+#: index.docbook:127
+#, no-c-format
+msgid "The <interface>toolbar</interface>"
+msgstr "La <interface>barre d'outils</interface>"
+
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"Provides the player with icon shortcuts for commonly used actions. These are "
+"<guiicon>Stop Thinking</guiicon>, <guiicon>Undo Move</guiicon>, "
+"<guiicon>Shrink Board</guiicon>, <guiicon>Enlarge Board</guiicon>, "
+"<guiicon>Get Hint</guiicon>, and <guiicon>Get Help</guiicon>. Place the "
+"mouse pointer over any of these icons and &LMB; click to activate."
+msgstr ""
+"Donne accès au joueur aux actions les plus fréquentes. Il s'agit "
+"d'<guiicon>Arrêter la réflexion</guiicon>, <guiicon>Annuler le "
+"coup</guiicon>, <guiicon>Rétrécir</guiicon>, <guiicon>Agrandir</guiicon>, "
+"<guiicon>Conseil</guiicon>, et <guiicon>Aide</guiicon>. Placez le pointeur "
+"de la souris sur l'une de ces icônes et cliquez avec le &BGS; pour "
+"déclencher l'action."
+
+#: index.docbook:139
+#, no-c-format
+msgid "Game Board"
+msgstr "Le plateau de jeu"
+
+#: index.docbook:139
+#, no-c-format
+msgid "The game board consists of a 8 by 8 square board divided into 64 squares."
+msgstr ""
+"Le plateau de jeu consiste en une grille de 64 cases disposées pour former "
+"un carré de 8 cases sur 8."
+
+#: index.docbook:147
+#, no-c-format
+msgid "Status Bar"
+msgstr "La barre d'état"
+
+#: index.docbook:147
+#, no-c-format
+msgid ""
+"The status bar contains useful information such as whose turn it is, whicn "
+"color represents each player and the number of squares each player controls "
+"on the board."
+msgstr ""
+"La barre d'état renferme des informations utiles, comme le joueur dont "
+"c'est le tour, quelle couleur représente chaque joueur, et le nombre de "
+"cases contrôlées par chaque joueur sur le plateau de jeu."
+
+#: index.docbook:159
+#, no-c-format
+msgid "Rules"
+msgstr "Règles du jeu"
+
+#: index.docbook:161
+#, no-c-format
+msgid "Blue always moves first."
+msgstr "Le joueur bleu joue toujours en premier."
+
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"If on your turn you cannot outflank and flip at least one opposing disc, "
+"your turn is forfeited and your opponent moves again. However, if a move is "
+"available to you, you may not forfeit your turn."
+msgstr ""
+"Si, lorsque c'est votre tour, vous ne pouvez pas encadrer et retourner au "
+"moins un pion de votre adversaire, vous perdez votre tour et votre "
+"adversaire rejoue. Par contre, si vous pouvez jouer, alors vous ne pouvez "
+"pas sauter votre tour."
+
+#: index.docbook:168
+#, no-c-format
+msgid ""
+"A disc may outflank any number of discs in one or more rows in any number of "
+"directions at the same time - horizontally, vertically or diagonally. A row "
+"is defined as one or more discs in a continuous straight line."
+msgstr ""
+"Un pion peut encadrer en même temps n'importe quel nombre de pions alignés "
+"dans n'importe quel nombre de directions - horizontalement, verticalement ou "
+"en diagonale. Un alignement est défini comme un ou plusieurs pions en ligne "
+"droite sans interruption."
+
+#: index.docbook:173
+#, no-c-format
+msgid "You may not skip over your own color disc to outflank an opposing disc."
+msgstr ""
+"Vous ne pouvez pas passer par-dessus un pion de votre propre couleur pour "
+"encadrer un pion de l'adversaire."
+
+#: index.docbook:176
+#, no-c-format
+msgid ""
+"Discs may only be outflanked as a direct result of a move and must fall in "
+"the direct line of the disc placed down."
+msgstr ""
+"Les pions ne peuvent être encadrés que directement suite à un coup et "
+"doivent être alignés avec le pion déposé."
+
+#: index.docbook:179
+#, no-c-format
+msgid ""
+"All discs outflanked in any one move must be flipped, even if it is to the "
+"player's advantage not to flip them."
+msgstr ""
+"Tous les pions encadrés lorsqu'un coup est joué doivent être retournés, "
+"même si le joueur a intérêt à ce qu'ils ne le soient pas."
+
+#: index.docbook:182
+#, no-c-format
+msgid ""
+"Once a disc is placed on a square, it can never be moved to another square "
+"later in the game."
+msgstr ""
+"Une fois qu'un pion a été déposé sur une case, il ne peut pas être "
+"déplacé vers une autre case."
+
+#: index.docbook:185
+#, no-c-format
+msgid ""
+"When it is no longer possible for either player to move, the game is over. "
+"Discs are then counted and the player with the majority of his or her color "
+"discs on the board is declared the winner."
+msgstr ""
+"Quand plus aucun joueur ne peut jouer, la partie est finie. Les pions sont "
+"alors comptés et le joueur qui a le plus de pions de sa couleur sur le "
+"plateau de jeu est déclaré vainqueur."
+
+#: index.docbook:189
+#, no-c-format
+msgid "It is possible for a game to end before all 64 squares are filled."
+msgstr "Il se peut que le jeu s'arrête avant que les 64 cases ne soient remplies."
+
+#: index.docbook:195
+#, no-c-format
+msgid "Tips"
+msgstr "Conseils"
+
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"Try to place pieces on the edges whenever possible. Your opponent cannot "
+"outflank these pieces."
+msgstr ""
+"Essayez de placer des pions sur les coins quand c'est possible. Votre "
+"adversaire ne pourra pas encadrer ces pièces."
+
+#: index.docbook:200
+#, no-c-format
+msgid ""
+"Avoid placing pieces on one of the three neighbor fields of a corner unless "
+"you are absolutely sure that your opponent will not be able to put a piece "
+"on a corner."
+msgstr ""
+"Évitez de placer des pions sur l'une des trois cases bordant un coin à "
+"moins d'être absolument sûr que votre adversaire ne pourra pas placer un "
+"pion dans ce coin."
+
+#: index.docbook:204
+#, no-c-format
+msgid "Sometimes it is better to offer some pieces to your opponent"
+msgstr "Il vaut parfois mieux offrir des pions à votre adversaire."
+
+#: index.docbook:207
+#, no-c-format
+msgid "Try to put pieces on fields which prevent your opponent from moving."
+msgstr ""
+"Essayez de placer vos pièces sur des cases qui empêchent votre adversaire "
+"de jouer."
+
+#: index.docbook:210
+#, no-c-format
+msgid "Try to force your opponent to put a piece in a neighboring field of a corner."
+msgstr ""
+"Essayez de forcer votre adversaire à placer un pion dans une case "
+"avoisinant un coin."
+
+#: index.docbook:218
+#, no-c-format
+msgid "User Interface"
+msgstr "Interface utilisateur"
+
+#: index.docbook:221
+#, no-c-format
+msgid "<guimenu>File</guimenu> Menu"
+msgstr "Menu <guimenu>Fichier</guimenu>"
+
+#: index.docbook:223
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>File</guimenu><guimenuitem>New Game</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>Fichier</guimenu><guimenuitem>Nouvelle partie</guimenuitem>"
+
+#: index.docbook:223
+#, no-c-format
+msgid "Starts a new game."
+msgstr "Démarre une nouvelle partie."
+
+#: index.docbook:223
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>L</keycap></keycombo></shortcut> "
+"<guimenu>File</guimenu><guimenuitem>Load Game</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>L</keycap></keycombo></shortcut> "
+"<guimenu>Fichier</guimenu><guimenuitem>Charger une partie</guimenuitem>"
+
+#: index.docbook:223
+#, no-c-format
+msgid "Loads a saved game."
+msgstr "Charge une partie enregistrée au préalable."
+
+#: index.docbook:223
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></shortcut> "
+"<guimenu>File</guimenu><guimenuitem>Save Game</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></shortcut> "
+"<guimenu>Fichier</guimenu><guimenuitem>Enregistrer la partie</guimenuitem>"
+
+#: index.docbook:223
+#, no-c-format
+msgid "Saves the current game."
+msgstr "Enregistre la partie en cours."
+
+#: index.docbook:223
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo></shortcut> "
+"<guimenu>File</guimenu><guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo></shortcut> "
+"<guimenu>Fichier</guimenu><guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:223
+#, no-c-format
+msgid "<action>Quits</action> &kreversi;."
+msgstr "<action>Sort</action> de &kreversi;."
+
+#: index.docbook:258
+#, no-c-format
+msgid "<guimenu>Game</guimenu> menu"
+msgstr "Menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "<guimenu>Game</guimenu><guimenuitem>Get Hint</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu><guimenuitem>Demande de conseil</guimenuitem>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "The computer will provide a hint for your next move."
+msgstr "L'ordinateur vous conseillera quant à votre prochain coup."
+
+#: index.docbook:260
+#, no-c-format
+msgid ""
+"<shortcut>&Esc;</shortcut> <guimenu>Game</guimenu><guimenuitem>Stop "
+"thinking</guimenuitem>"
+msgstr ""
+"<shortcut>&Echap;</shortcut> <guimenu>Jeu</guimenu><guimenuitem>Arrêter la "
+"réflexion</guimenuitem>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "Stops the computer's depth search, then you choose the computer's next move."
+msgstr ""
+"Interrompt la recherche en profondeur de l'ordinateur, et vous offre de "
+"choisir le prochain coup de l'ordinateur."
+
+#: index.docbook:260
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Continue</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Continuer</guimenuitem>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "Continues play."
+msgstr "Reprend la partie."
+
+#: index.docbook:260
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>U</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Undo Move</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>U</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Annuler</guimenuitem>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "Removes your last move as well as the computer's last move from the board."
+msgstr "Défait votre dernier coup ainsi que celui de l'ordinateur."
+
+#: index.docbook:260
+#, no-c-format
+msgid "<guimenu>Game</guimenu><guimenuitem>Switch Sides</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu><guimenuitem>Échanger les couleurs</guimenuitem>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "Will make you the opposite color."
+msgstr "Vous attribue la couleur opposée."
+
+#: index.docbook:260
+#, no-c-format
+msgid "<guimenu>Game</guimenu><guimenuitem>Hall of Fame...</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu><guimenuitem>Panthéon...</guimenuitem>"
+
+#: index.docbook:260
+#, no-c-format
+msgid "A new window will appear with a list of the top ten scores."
+msgstr "Une nouvelle fenêtre avec la liste des dix meilleurs scores apparaît."
+
+#: index.docbook:312
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> Menu"
+msgstr "Menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>1-7</keycap></keycombo></shortcut> "
+"<guimenu>Settings</guimenu> <guisubmenu>Skill</guisubmenu>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>1-7</keycap></keycombo></shortcut> "
+"<guimenu>Configuration</guimenu> <guisubmenu>Difficulté</guisubmenu>"
+
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"<action>Sets the difficulty</action> from <guimenuitem>1</guimenuitem>, "
+"being the easiest, to <guimenuitem>7</guimenuitem>, being the most difficult."
+msgstr ""
+"<action>Règle la difficulté</action> de <guimenuitem>1</guimenuitem>, le "
+"plus facile, à <guimenuitem>7</guimenuitem>, le plus difficile."
+
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>-</keycap></keycombo></shortcut> "
+"<guimenu>Settings</guimenu><guimenuitem>Shrink Board</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>-</keycap></keycombo></shortcut> "
+"<guimenu>Configuration</guimenu><guimenuitem>Rétrécir le "
+"terrain</guimenuitem>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Reduces the game board by twenty percent."
+msgstr "Réduit le plateau de jeu de 20 pour cent."
+
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>+</keycap></keycombo></shortcut> "
+"<guimenu>Settings</guimenu><guimenuitem>Enlarge Board</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>+</keycap></keycombo></shortcut> "
+"<guimenu>Configuration</guimenu><guimenuitem>Agrandir le "
+"terrain</guimenuitem>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Enlarges the game board by twenty percent."
+msgstr "Agrandit le plateau de jeu de 20 pour cent."
+
+#: index.docbook:314
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Set Size</guisubmenu>"
+msgstr "<guimenu>Configuration</guimenu> <guisubmenu>Taille</guisubmenu>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Allows you to shrink or enlarge the game board."
+msgstr "Vous permet de rétrécir ou d'agrandir le plateau de jeu."
+
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Select Background "
+"Color...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Sélectionner la couleur de "
+"fond...</guimenuitem>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Allows you to change the background color."
+msgstr "Vous permet de changer la couleur de fond."
+
+#: index.docbook:314
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Select Background Image</guisubmenu>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guisubmenu>Définir une image de "
+"fond</guisubmenu>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Allows you to select a background image."
+msgstr "Vous permet de choisir une image de fond."
+
+#: index.docbook:314
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Grayscale</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Niveaux de gris</guimenuitem>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Sets the color settings to grayscale."
+msgstr "Convertit les réglages de couleur en niveaux de gris."
+
+#: index.docbook:314
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Animations</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Animations</guimenuitem>"
+
+#: index.docbook:314
+#, no-c-format
+msgid "Animates the discs as their being flipped."
+msgstr "Anime les pions lorsqu'ils sont retournés."
+
+#: index.docbook:314
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Animation Speed</guisubmenu>"
+msgstr "<guimenu>Configuration</guimenu> <guisubmenu>Vitesse d'animation</guisubmenu>"
+
+#: index.docbook:314
+#, no-c-format
+msgid ""
+"<action>Allows you to set the animation speed,</action> "
+"<guimenuitem>1</guimenuitem> being the fastest and "
+"<guimenuitem>10</guimenuitem> being the slowest."
+msgstr ""
+"<action>Vous permet de régler la vitesse d'animation,</action> de "
+"<guimenuitem>1</guimenuitem> la plus rapide à <guimenuitem>10</guimenuitem>"
+" la plus lente."
+
+#: index.docbook:392
+#, no-c-format
+msgid "<guimenu>Help</guimenu> Menu"
+msgstr "Menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:401
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:403
+#, no-c-format
+msgid "Program Copyright 1998-2000 Mario Weilguni"
+msgstr "Programme Copyright 1998-2000 Mario Weilguni"
+
+#: index.docbook:404
+#, no-c-format
+msgid "Mats Luthman - Designer of the move engine."
+msgstr "Mats Luthman - Concepteur du moteur de résolution de coups."
+
+#: index.docbook:406
+#, no-c-format
+msgid "Original documentation by Mario Weilguni"
+msgstr "Documentation originelle par Mario Weilguni"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Edited by Robert Williams"
+msgstr "Mise en forme par Robert Williams"
+
+#: index.docbook:409
+#, no-c-format
+msgid ""
+"Documentation re-written and updated for &kde; 2.0 by Clay Pradarits "
+"<email>gasky@winfire.com</email>"
+msgstr ""
+"Documentation réécrite et mise à jour pour &kde; 2.0 par Clay Pradarits "
+"<email>gasky@winfire.com</email>"
+
+#: index.docbook:412
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française de la documentation par Éric Bischoff "
+"<email>e.bischoff@noos.fr</email>.</para>"
+
+#: index.docbook:419
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:424
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

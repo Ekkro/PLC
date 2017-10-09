@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-20 12:28CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:5
+#, no-c-format
+msgid "<firstname>Eric</firstname> <surname>Bischoff</surname>"
+msgstr "<firstname>Eric</firstname> <surname>Bischoff</surname>"
+
+#: index.docbook:9
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"> <firstname>Benoit</firstname> "
+"<surname>Cosandier</surname> <affiliation> "
+"<address><email>cosandier.benoit@bluewin.ch</email></address> </affiliation>"
+" <contrib>Traduction</contrib> </othercredit>"
+
+#: index.docbook:16
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:17
+#, no-c-format
+msgid "KTuberling"
+msgstr "KTuberling"
+
+#: index.docbook:18
+#, no-c-format
+msgid "technical reference"
+msgstr "référence technique"
+
+#: index.docbook:22
+#, no-c-format
+msgid "Technical reference"
+msgstr "Référence technique"
+
+#: index.docbook:24
+#, no-c-format
+msgid ""
+"&ktuberling; offers a gentle and rewarding introduction to &kde; "
+"customization and programming. The application can be extended. For example, "
+"without any coding, new playgrounds can be added by changing the graphics "
+"files. By adding appropriate sound files, translators can change the sounds "
+"to their native tongue!"
+msgstr ""
+"&ktuberling; offre une agréable et gratifiante introduction à la "
+"personnalisation et à la programmation de &kde; Cette application peut "
+"être étendue. Par exemple vous pouvez ajouter un nouveau terrain de jeu, "
+"sans changer le code source, en changeant les fichiers graphiques. En "
+"ajoutant les fichiers de son adéquats, les traducteurs peuvent adapter les "
+"sons à leur langue d'origine."
+
+#: index.docbook:32
+#, no-c-format
+msgid ""
+"If you extend or add to the game please consider sending your additions to "
+"the developer <ulink url=\"mailto:e.bischoff@noos.fr\">Eric Bischoff</ulink>"
+" for inclusion in future releases."
+msgstr ""
+"Si vous étendez ou ajoutez des choses au jeu, pensez à envoyer vos "
+"modifications au développeur <ulink url=\"mailto:e.bischoff@noos.fr\">"
+"Éric Bischoff</ulink> (en anglais) pour qu'elles soient inclues lors de la "
+"future version."
+
+#: index.docbook:39
+#, no-c-format
+msgid "For artists"
+msgstr "Pour les graphistes"
+
+#: index.docbook:41
+#, no-c-format
+msgid ""
+"The size and shape of the playground and the number of objects can be "
+"changed. New playgrounds can be added. Only two image files need to be "
+"created for each playground: a gameboard and a mask. A maximum of 8 "
+"playgrounds is allowed, out of which only 2 are currently used."
+msgstr ""
+"Les dimensions et la forme du terrain de jeu et le nombre d'objets peuvent "
+"être changés. De nouveaux terrains de jeu peuvent être ajoutés. Deux "
+"fichiers d'image par terrain de jeu seulement doivent être crées&nbsp;: un "
+"tableau de jeu et un masque. Il y a un maximum autorisé de 8 terrains de "
+"jeu, dont seulement 2 sont utilisés pour le moment."
+
+#: index.docbook:48
+#, no-c-format
+msgid ""
+"Four images are used in &ktuberling;: <filename>potato-game.png</filename>, "
+"<filename>potato-mask.png</filename>, <filename>penguin-game.png</filename> "
+"and <filename>penguin-mask.png</filename>. The standard location for these "
+"files is the directory <filename "
+"class=\"directory\">$KDEDIR/share/apps/ktuberling/pics/</filename>."
+msgstr ""
+"Quatre images sont utilisées par &ktuberling;&nbsp;: "
+"<filename>potato-game.png</filename>, <filename>potato-mask.png</filename>, "
+"<filename>penguin-game.png</filename> et "
+".<filename>penguin-mask.png</filename>. L'emplacement standard de ces "
+"fichiers est le répertoire <filename "
+"class=\"directory\">$KDEDIR/share/apps/ktuberling/pics/</filename>."
+
+#: index.docbook:56
+#, no-c-format
+msgid ""
+"The first type of images, <filename>*-game.png</filename> holds the "
+"playground and the objects that the user selects. This is the graphic that "
+"the user sees when playing the game."
+msgstr ""
+"Le premier type d'images, <filename>*-game.png</filename> contient le "
+"terrain de jeu et les objets que l'utilisateur choisit. C'est le graphisme "
+"que voit l'utilisateur quand il joue au jeu."
+
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"The second type of images, <filename>*-mask.png</filename>, contains only "
+"masks of the objects. The masks are used to delimit the borders of the "
+"objects and, in some cases, give the object some transparancy (for example, "
+"the spectacles). It is mandatory to put the objects at the same position in "
+"the gameboard file as in the mask file."
+msgstr ""
+"Le second type d'images, <filename>*-mask.png</filename>"
+", contient seulement les masques des objets. Les masques sont utilisés pour "
+"délimiter les bords des objets et, dans certains cas, donner à l'objet une "
+"certaine transparence (par exemple, les lunettes). Il est obligatoire de "
+"placer les objets au même emplacement dans le terrain de jeu et dans le "
+"fichier de masques."
+
+#: index.docbook:70
+#, no-c-format
+msgid ""
+"In the same directory, a file named <filename>layout.xml</filename>. "
+"(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) tells "
+"which images to use and links them to menu entries. It also contains the "
+"position parameters of the playground and the objects in the gameboard and "
+"in the masks. It finally assigns the sounds to objects and places the "
+"objects in groups. It follows standard XML syntax (see details <link "
+"linkend=\"layout-details\">below</link>)."
+msgstr ""
+"Dans le même répertoire, un fichier nommé <filename>layout.xml</filename>"
+" (<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+"indique quelles images utiliser et les relie aux éléments de menu. Il "
+"contient également les paramètres de position du terrain de jeu ainsi que "
+"des objets et des masques. Il affecte finalement les sons aux objets et "
+"classe ces objets dans des groupes. Ce fichier suit la syntaxe standard XML "
+"(pour plus de détails, <link linkend=\"layout-details\">voir plus "
+"bas</link>)."
+
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"Still in the same directory, a file named <filename>layout.i18n</filename> "
+"(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+"recapitulates the strings in <filename>layout.xml</filename> that can be "
+"translated:"
+msgstr ""
+"Toujours dans ce répertoire, un fichier nommé "
+"<filename>layout.i18n</filename> "
+"(<filename>$KDEDIR/share/apps/ktuberling/pics/layout.xml</filename>) "
+"récapitule les chaînes de <filename>layout.xml</filename> qui peuvent "
+"être traduites."
+
+#: index.docbook:80
+#, no-c-format
+msgid "The menu entries that allow to choose the gameboards"
+msgstr "Les éléments de menu qui permettent de choisir les terrains de jeu."
+
+#: index.docbook:80
+#, no-c-format
+msgid "The names of the categories of objects"
+msgstr "Les noms des catégories d'objets"
+
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"The names of the sound files. This is a programming trick that permits that "
+"the translation teams record someone saying the names of objects in their "
+"own languages, and to reference the names of these sound files when they "
+"exist."
+msgstr ""
+"Les noms des fichiers sonores. Il s'agit d'une astuce de programmation qui "
+"permet aux équipes de traduction d'enregistrer quelqu'un qui prononce les "
+"noms des objets dans leurs propres langues, et de référencer les noms de "
+"ces fichiers sonores lorsqu'ils existent."
+
+#: index.docbook:95
+#, no-c-format
+msgid ""
+"One directory above, a file named <filename>ktuberlingui.rc</filename> "
+"(<filename>$KDEDIR/share/apps/ktuberling/ktuberlingui.rc</filename>) is a "
+"second XML file describing the menus of &ktuberling;. It should contain one "
+"<markup>&lt;action&gt;</markup>"
+" tag per playground. The symbolic name of the action in this file should be "
+"identical to the symbolic name of the action in "
+"<filename>layout.xml</filename>."
+msgstr ""
+"Dans le répertoire de niveau supérieur, un fichier nommé "
+"<filename>ktuberlingui.rc</filename> "
+"(<filename>$KDEDIR/share/apps/ktuberling/ktuberlingui.rc</filename>) est un "
+"second fichier XML décrivant les menus de &ktuberling;. Il devrait contenir "
+"une balise <markup>&lt;action&gt;</markup> par terrain de jeu. Le nom "
+"symbolique de cette action devrait être identique au nom symbolique de "
+"l'action dans <filename>layout.xml</filename>."
+
+#: index.docbook:107
+#, no-c-format
+msgid "Translation"
+msgstr "Traduction"
+
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"Besides the usual <literal role=\"extension\">.po</literal> files mechanism "
+"for translating program labels and prompts, the sounds can be localized too."
+msgstr ""
+"À coté de l'habituel mécanisme basé sur les fichiers <literal "
+"role=\"extension\">.po</literal> pour traduire les chaînes du programme, "
+"les sons peuvent être localisés également."
+
+#: index.docbook:114
+#, no-c-format
+msgid ""
+"If the various translators can record their voice to a <literal "
+"role=\"extension\">.ogg</literal> file, they can store that file to the "
+"language-specific subdirectory of the sounds directory. The name of the "
+"sound file is then translated in the <literal "
+"role=\"extension\">.po</literal> file. For example, if destination language "
+"is Italian, translators can record their voice in <literal "
+"role=\"extension\">.ogg</literal> files located in "
+"<filename>$KDEDIR/share/apps/ktuberling/sounds/it</filename>. Then they can "
+"translate file names like <filename>en/hat.ogg</filename> to names like "
+"<filename>it/cappello.ogg</filename>."
+msgstr ""
+"Si les différents traducteurs ont l'opportunité d'enregistrer leur voix "
+"dans un fichier <literal role=\"extension\">.ogg</literal>, ils peuvent "
+"placer ce fichier dans le sous-répertoire propre au langage dans le "
+"répertoire des sons. Le nom des fichiers son est alors traduit dans le "
+"fichier <literal role=\"extension\">.po</literal>. Par exemple, si le "
+"langage de destination est l'italien, les traducteurs peuvent enregistrer "
+"leur voix dans un fichier <literal role=\"extension\">.ogg</literal> situé "
+"dans <filename>$KDE/share/apps/ktuberling/sounds/it</filename>. Ils peuvent "
+"ensuite traduire les noms des fichiers comme <filename>en/hat.ogg</filename>"
+" en des noms comme <filename>it/cappello.ogg</filename>."
+
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"If the sound recording tools the translators use can produce only .WAV "
+"files, then these files can be converted to OGG Vorbis rc3 through the "
+"following command line:"
+msgstr ""
+"Si les outils d'enregistrement sonore utilisés par les traducteurs ne "
+"savent produire que des fichiers au format .WAV, alors ces fichiers peuvent "
+"être convertis en OGG Vorbis rc3 grâce à la ligne de commandes "
+"suivante&nbsp;:"
+
+#: index.docbook:127
+#, no-c-format
+msgid ""
+"<prompt>$</prompt> <userinput>oggenc_rc3 -o "
+"<replaceable>sound.ogg</replaceable> "
+"<replaceable>sound.wav</replaceable></userinput>"
+msgstr ""
+"<prompt>$</prompt> <userinput>oggenc_rc3 -o "
+"<replaceable>son.ogg</replaceable> "
+"<replaceable>son.wav</replaceable></userinput>"
+
+#: index.docbook:136
+#, no-c-format
+msgid ""
+"Information on how to work with the translation mechanisms in &kde; is "
+"available in <ulink "
+"url=\"http://i18n.kde.org/translation-howto/index.html\">"
+"The KDE Translation HOWTO</ulink>."
+msgstr ""
+"Des informations sur la façon dont fonctionnent les mécanismes de "
+"traduction dans &kde; sont disponible à l'adresse <ulink "
+"url=\"http://i18n.kde.org/translation-howto/index.html\">"
+"The KDE Translation HOWTO</ulink> ou en français dans <ulink "
+"url=\"http://fr.i18n.kde.org/docs/howto/index.html\">Le HOWTO de traduction "
+"de KDE</ulink>."
+
+#: index.docbook:146
+#, no-c-format
+msgid "For programmers"
+msgstr "Pour les programmeurs"
+
+#: index.docbook:147
+#, no-c-format
+msgid "&ktuberling; isn't really difficult to extend for programmers."
+msgstr ""
+"&ktuberling; n'est pas réellement difficile à améliorer pour les "
+"programmeurs."
+
+#: index.docbook:150
+#, no-c-format
+msgid "C++ classes"
+msgstr "Classes C++"
+
+#: index.docbook:152
+#, no-c-format
+msgid "TopLevel"
+msgstr "TopLevel"
+
+#: index.docbook:152
+#, no-c-format
+msgid "Top-level window and basic program management"
+msgstr "Gestion du programme principal et de la fenêtre principale"
+
+#: index.docbook:152
+#, no-c-format
+msgid "ToDraw"
+msgstr "ToDraw"
+
+#: index.docbook:152
+#, no-c-format
+msgid "Description of one of the graphical <quote>objects</quote> to be drawn"
+msgstr "Description d'un des <quote>objets</quote> graphiques à dessiner"
+
+#: index.docbook:170
+#, no-c-format
+msgid "<literal role=\"extension\">.tuberling</literal> files structure"
+msgstr "structure du fichier <literal role=\"extension\">.tuberling</literal> "
+
+#: index.docbook:172
+#, no-c-format
+msgid ""
+"A <literal role=\"extension\">.tuberling</literal> file holds all the "
+"necessary data to redraw a tuberling. It can be edited with an ordinary text "
+"editor."
+msgstr ""
+"Un fichier <literal role=\"extension\">.tuberling</literal> contient toutes "
+"les données nécessaire pour redessiner une patate. il peut être édité "
+"avec un éditeur de texte ordinaire."
+
+#: index.docbook:176
+#, no-c-format
+msgid "The first line holds the number of the playground."
+msgstr "La première ligne contient le numéro du terrain de jeu."
+
+#: index.docbook:178
+#, no-c-format
+msgid ""
+"On all other lines, there is one graphical object per line, in the order "
+"that is used to draw them. Each line contains 5 numbers: the identifier of "
+"the object, and the rectangle where it should be drawn (left, top, right, "
+"bottom). The numbers are separated by whitespaces."
+msgstr ""
+"Pour toutes les autres lignes, il y a un objet graphique par ligne, dans "
+"l'ordre dans lequel ils seront affichés. Chaque ligne contient 5 "
+"nombres&nbsp;: l'identifiant de l'objet, et le rectangle où il devra être "
+"dessiné (gauche, haut, droite, bas). Les nombres sont séparés par des "
+"espaces."
+
+#: index.docbook:187
+#, no-c-format
+msgid "Structure of the layout file (<filename>layout.xml</filename>)"
+msgstr "Structure du fichier de disposition (<filename>layout.xml</filename>)"
+
+#: index.docbook:189
+#, no-c-format
+msgid ""
+"The top-level tag is unique and is named "
+"<markup>&lt;ktuberling&gt;</markup>. It contains several "
+"<markup>&lt;playground&gt;</markup> tags, one per playground."
+msgstr ""
+"La balise de plus haut niveau est unique et est intitulée "
+"<markup>&lt;ktuberling&gt;</markup>. Elle contient plusieurs balises "
+"<markup>&lt;playground&gt;</markup>, une par terrain de jeu."
+
+#: index.docbook:195
+#, no-c-format
+msgid ""
+"The <markup>&lt;playground&gt;</markup> tag has two attributes: "
+"<markup>gameboard</markup> and <markup>masks</markup>"
+". These attributes give the name of the files holding the pictures. The "
+"<markup>&lt;playground&gt;</markup> tag also contains one "
+"<markup>&lt;menuitem&gt;</markup> tag, one "
+"<markup>&lt;editablearea&gt;</markup> tag, several "
+"<markup>&lt;category&gt;</markup> tags, and several "
+"<markup>&lt;object&gt;</markup> tags."
+msgstr ""
+"La balise <markup>&lt;playground&gt;</markup> a deux attributs&nbsp;: "
+"<markup>gameboard</markup> et <markup>masks</markup>. Ces attributs "
+"indiquent le nom des fichiers contenant les images. La balise "
+"<markup>&lt;playground&gt;</markup> contient également une balise "
+"<markup>&lt;menuitem&gt;</markup>, une balise "
+"<markup>&lt;editablearea&gt;</markup>, plusieurs balises "
+"<markup>&lt;category&gt;</markup> et plusieurs balises "
+"<markup>&lt;object&gt;</markup>."
+
+#: index.docbook:204
+#, no-c-format
+msgid ""
+"The <markup>&lt;menuitem&gt;</markup>"
+" tag describes the action identifier of the menu item allowing to select "
+"position of the area where you can drop objects, and the label of this menu "
+"item. This action identifier should be identical to the one in "
+"<filename>ktuberlingui.rc</filename>."
+msgstr ""
+"La balise <markup>&lt;menuitem&gt;</markup> décrit l'identificateur de "
+"l'action associée à l'élément de menu permettant de choisir la position "
+"de la zone où vous pouvez faire glisser des objets, ainsi que l'intitulé "
+"de cet élément de menu. Cet identificateur d'action doit être identique "
+"à celui dans <filename>ktuberlingui.rc</filename>."
+
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"The <markup>&lt;editablearea&gt;</markup> tag describes the position of the "
+"area where you can drop objects, and the sound associated with it."
+msgstr ""
+"La balise <markup>&lt;editablearea&gt;</markup> décrit la position de la "
+"zone où vous pouvez faire glisser les objets, ainsi que le son qui. lui est "
+"associé."
+
+#: index.docbook:217
+#, no-c-format
+msgid ""
+"The <markup>&lt;category&gt;</markup> tag describes the position and the "
+"label of a text describing a group of objects. For example, it can describe "
+"the position and the text of the group of <quote>goodies</quote>."
+msgstr ""
+"La balise <markup>&lt;category&gt;</markup> décrit la position et "
+"l'intitulé d'un groupe d'objets. Par exemple, il permet de décrire la "
+"position et l'intitulé du groupe d'<quote>accessoires</quote>."
+
+#: index.docbook:223
+#, no-c-format
+msgid ""
+"The <markup>&lt;object&gt;</markup> tag describes the position (in the "
+"gameboard and in the masks) of an object, as well as the English sound "
+"associated with it."
+msgstr ""
+"La balise <markup>&lt;object&gt;</markup> décrit la position (dans le "
+"plateau de jeu et dans les masques) d'un objet, ainsi que le son anglais qui "
+"lui est associé."
+
+#: index.docbook:229
+#, no-c-format
+msgid ""
+"The lower level tags are not explained here, since their meaning is quite "
+"straightforward. If you modify <filename>layout.xml</filename>"
+", don't forget to modify <filename>layout.i18n</filename> and "
+"<filename>ktuberlingui.rc</filename> accordingly."
+msgstr ""
+"Les balises de plus bas niveau ne sont pas expliquées ici, car leur "
+"signification est relativement évidente. Si vous modifiez "
+"<filename>layout.xml</filename>, n'oubliez pas de modifier "
+"<filename>layout.i18n</filename> ainsi que "
+"<filename>ktuberlingui.rc</filename> en conséquence."

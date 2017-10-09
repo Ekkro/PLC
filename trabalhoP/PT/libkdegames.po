@@ -1,0 +1,733 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-02-18 02:43+0100\n"
+"PO-Revision-Date: 2000-12-19 16:44-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: kcarddialog.cpp:277
+#, fuzzy
+msgid "Choose Backside"
+msgstr "Escolha costas"
+
+#: kcarddialog.cpp:297
+msgid "Backside"
+msgstr "Costas"
+
+#: kcarddialog.cpp:301 kcarddialog.cpp:351
+msgid "empty"
+msgstr "vazio"
+
+#: kcarddialog.cpp:309
+#, fuzzy
+msgid "Random Backside"
+msgstr "Costas aleatórias"
+
+#: kcarddialog.cpp:314
+#, fuzzy
+msgid "Use Global Backside"
+msgstr "Escolha costas"
+
+#: kcarddialog.cpp:317
+msgid "Make Backside Global"
+msgstr ""
+
+#: kcarddialog.cpp:329
+#, fuzzy
+msgid "Choose Frontside"
+msgstr "Escolha frente"
+
+#: kcarddialog.cpp:347
+msgid "Frontside"
+msgstr "frente"
+
+#: kcarddialog.cpp:359
+#, fuzzy
+msgid "Random Frontside"
+msgstr "Frente aleatória"
+
+#: kcarddialog.cpp:364
+#, fuzzy
+msgid "Use Global Frontside"
+msgstr "frente"
+
+#: kcarddialog.cpp:367
+#, fuzzy
+msgid "Make Frontside Global"
+msgstr "frente"
+
+#: kcarddialog.cpp:426
+msgid "Resize Cards"
+msgstr ""
+
+#: kcarddialog.cpp:439
+msgid "Default Size"
+msgstr ""
+
+#: kcarddialog.cpp:443
+msgid "Preview:"
+msgstr ""
+
+#: kcarddialog.cpp:476 kcarddialog.cpp:511
+msgid "unnamed"
+msgstr "sem nome"
+
+#: kcarddialog.cpp:532
+#, fuzzy
+msgid "Carddeck Selection"
+msgstr "Seleção de baralho"
+
+#: kstdgameaction.cpp:159
+msgid ""
+"_: new game\n"
+"&New"
+msgstr ""
+
+#: kstdgameaction.cpp:167
+msgid "&Load..."
+msgstr ""
+
+#: kstdgameaction.cpp:175
+msgid "Load &Recent"
+msgstr ""
+
+#: kstdgameaction.cpp:191
+msgid "Save &As..."
+msgstr ""
+
+#: kstdgameaction.cpp:198
+msgid "Pa&use"
+msgstr ""
+
+#: kstdgameaction.cpp:207
+msgid "Show Highscores"
+msgstr ""
+
+#: kstdgameaction.cpp:222
+msgid "&End Game"
+msgstr ""
+
+#: kstdgameaction.cpp:238
+msgid "Repeat"
+msgstr ""
+
+#: kstdgameaction.cpp:247
+msgid "Und&o"
+msgstr ""
+
+#: kstdgameaction.cpp:255
+msgid "Re&do"
+msgstr ""
+
+#: kstdgameaction.cpp:263
+msgid "Roll"
+msgstr ""
+
+#: kstdgameaction.cpp:271
+msgid "End Turn"
+msgstr ""
+
+#: kstdgameaction.cpp:280
+msgid "Configure &Carddecks..."
+msgstr ""
+
+#: kgamemisc.cpp:55
+msgid ""
+"_: A list of language typical names ( for games ), separated by spaces\n"
+"Adam Alex Andreas Andrew Bart Ben Bernd Bill Chris Chuck Daniel Don Duncan "
+"Ed Emily Eric Gary Greg Harry Ian Jean Jeff Jan Kai Keith Ken Kirk Marc Mike "
+"Neil Paul Rik Robert Sam Sean Thomas Tim Walter"
+msgstr ""
+
+#: kgame/dialogs/kgameconnectdialog.cpp:59
+msgid "Create a network game"
+msgstr ""
+
+#: kgame/dialogs/kgameconnectdialog.cpp:60
+msgid "Join a network game"
+msgstr ""
+
+#: kgame/dialogs/kgameconnectdialog.cpp:65
+msgid "Port to connect to"
+msgstr ""
+
+#: kgame/dialogs/kgameconnectdialog.cpp:67
+msgid "Host to connect to"
+msgstr ""
+
+#: kgame/dialogs/kgameconnectdialog.cpp:70
+msgid "&Start Network"
+msgstr ""
+
+#: kgame/dialogs/kgameconnectdialog.cpp:133
+msgid "Network Game"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:123
+msgid "KGame Debug Dialog"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:142
+msgid "Debug &KGame"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:147
+#: kgame/dialogs/kgamedebugdialog.cpp:192
+msgid "Data"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:148
+#: kgame/dialogs/kgamedebugdialog.cpp:153
+#: kgame/dialogs/kgamedebugdialog.cpp:193
+#: kgame/dialogs/kgamedebugdialog.cpp:197
+msgid "Value"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:152
+#: kgame/dialogs/kgamedebugdialog.cpp:196
+msgid "Property"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:154
+#: kgame/dialogs/kgamedebugdialog.cpp:198
+msgid "Policy"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:157
+#: kgame/dialogs/kgamedebugdialog.cpp:201
+msgid "Update"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:162
+msgid "KGame Pointer"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:163
+msgid "Game ID"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:164
+msgid "Game Cookie"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:165
+msgid "Is Master"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:166
+msgid "Is Admin"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:167
+msgid "Is Offering Connections"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:168
+msgid "Game Status"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:169
+msgid "Game is Running"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:170
+msgid "Maximal Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:171
+msgid "Minimal Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:172
+msgid "Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:177
+msgid "Debug &Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:183
+msgid "Available Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:205
+msgid "Player Pointer"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:206 kgame/kgamemessage.cpp:145
+msgid "Player ID"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:207
+msgid "Player Name"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:208
+msgid "Player Group"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:209
+msgid "Player User ID"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:210
+msgid "My Turn"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:211
+msgid "Async Input"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:212
+msgid "KGame Address"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:213
+msgid "Player is Virtual"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:214
+msgid "Player is Active"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:215
+msgid "RTTI"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:216
+msgid "Network Priority"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:221
+msgid "Debug &Messages"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:225
+msgid "Time"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:226
+msgid "ID"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:227
+msgid "Receiver"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:228
+msgid "Sender"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:229
+msgid "ID - Text"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:231
+msgid "&>>"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:235
+msgid "&<<"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:239
+msgid "Do not show IDs:"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:308 kgame/kgamepropertyhandler.cpp:358
+msgid "NULL pointer"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:319
+#: kgame/dialogs/kgamedebugdialog.cpp:320
+#: kgame/dialogs/kgamedebugdialog.cpp:321
+#: kgame/dialogs/kgamedebugdialog.cpp:323
+#: kgame/dialogs/kgamedebugdialog.cpp:380
+#: kgame/dialogs/kgamedebugdialog.cpp:381
+#: kgame/dialogs/kgamedebugdialog.cpp:384
+#: kgame/dialogs/kgamedebugdialog.cpp:385 kgame/kgamepropertyhandler.cpp:377
+msgid "True"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:319
+#: kgame/dialogs/kgamedebugdialog.cpp:320
+#: kgame/dialogs/kgamedebugdialog.cpp:321
+#: kgame/dialogs/kgamedebugdialog.cpp:323
+#: kgame/dialogs/kgamedebugdialog.cpp:380
+#: kgame/dialogs/kgamedebugdialog.cpp:381
+#: kgame/dialogs/kgamedebugdialog.cpp:384
+#: kgame/dialogs/kgamedebugdialog.cpp:385 kgame/kgamepropertyhandler.cpp:377
+msgid "False"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:336
+#: kgame/dialogs/kgamedebugdialog.cpp:398
+msgid "Clean"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:339
+#: kgame/dialogs/kgamedebugdialog.cpp:401
+msgid "Dirty"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:342
+#: kgame/dialogs/kgamedebugdialog.cpp:404
+msgid "Local"
+msgstr ""
+
+#: kgame/dialogs/kgamedebugdialog.cpp:346
+#: kgame/dialogs/kgamedebugdialog.cpp:408
+msgid "Undefined"
+msgstr ""
+
+#: kchat.cpp:85 kgame/dialogs/kgamedebugdialog.cpp:496 kgame/kgamechat.cpp:98
+#: kgame/kgamepropertyhandler.cpp:383
+msgid "Unknown"
+msgstr ""
+
+#: kgame/dialogs/kgamedialog.cpp:118
+msgid "&Chat"
+msgstr ""
+
+#: kgame/dialogs/kgamedialog.cpp:129
+msgid "C&onnections"
+msgstr ""
+
+#: kgame/dialogs/kgamedialog.cpp:157
+msgid "&Network"
+msgstr ""
+
+#: kgame/dialogs/kgamedialog.cpp:165
+msgid "&Message Server"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:132 kgame/kgamemessage.cpp:121
+msgid "Disconnect"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:136
+msgid "Network configuration"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:193
+msgid "Cannot connect to the network"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:199
+msgid "Network status: No Network"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:205
+msgid "Network status: You are MASTER"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:207
+msgid "Network status: You are connected"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:269
+msgid "Your Name:"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:429
+msgid "Maximal Number of Clients"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:433
+msgid "Maximal number of clients (-1 = infinite):"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:483
+msgid "Change Maximal Number of Clients"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:485
+msgid "Change Admin"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:487
+msgid "Remove a Client With All Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:505
+msgid "Only the admin can configure the message server!"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:516
+msgid "You don't own the message server"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:549
+msgid "Chat"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:602
+msgid "Connected Players"
+msgstr ""
+
+#: kgame/dialogs/kgamedialogconfig.cpp:739
+msgid "Do you want to ban player \"%1\" from the game?"
+msgstr ""
+
+#: kgame/dialogs/kgameerrordialog.cpp:80
+msgid "Connection to the server has been lost!"
+msgstr ""
+
+#: kgame/dialogs/kgameerrordialog.cpp:93
+msgid "Connection to client has been lost!"
+msgstr ""
+
+#: kgame/dialogs/kgameerrordialog.cpp:99
+msgid ""
+"Received a network error!\n"
+"Error number: %1\n"
+"Error message: %2"
+msgstr ""
+
+#: kgame/dialogs/kgameerrordialog.cpp:107
+msgid "No connection could be created."
+msgstr ""
+
+#: kgame/dialogs/kgameerrordialog.cpp:109
+#, c-format
+msgid ""
+"No connection could be created.\n"
+"The error message was:\n"
+"%1"
+msgstr ""
+
+#: kgame/kgame.cpp:92
+msgid "MaxPlayers"
+msgstr ""
+
+#: kgame/kgame.cpp:94
+msgid "MinPlayers"
+msgstr ""
+
+#: kgame/kgame.cpp:96
+msgid "GameStatus"
+msgstr ""
+
+#: kgame/kgamechat.cpp:90
+#, c-format
+msgid "Player %1"
+msgstr ""
+
+#: kchatbase.cpp:406 kgame/kgamechat.cpp:160
+#, c-format
+msgid "Send to %1"
+msgstr ""
+
+#: kgame/kgamechat.cpp:206
+msgid "Send to my group (\"%1\")"
+msgstr ""
+
+#: kgame/kgameerror.cpp:63
+msgid ""
+"Cookie mismatch!\n"
+"Expected Cookie: %1\n"
+"Received Cookie: %2"
+msgstr ""
+
+#: kgame/kgameerror.cpp:72
+msgid ""
+"KGame Version mismatch!\n"
+"Expected Version: %1\n"
+"Received Version: %2\n"
+msgstr ""
+
+#: kgame/kgameerror.cpp:76
+#, c-format
+msgid "Unknown error code %1"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:109
+msgid "Setup Game"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:111
+msgid "Setup Game Continue"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:113
+msgid "Load Game"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:115
+msgid "Client game connected"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:117
+msgid "Game setup done"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:119
+msgid "Synchronize Random"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:123
+msgid "Player Property"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:125
+msgid "Game Property"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:127
+msgid "Add Player"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:129
+msgid "Remove Player"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:131
+msgid "Activate Player"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:133
+msgid "Inactivate Player"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:135
+msgid "Id Turn"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:137
+msgid "Error Message"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:139
+msgid "Player Input"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:141
+msgid "An IO was added"
+msgstr ""
+
+#: kgame/kgamemessage.cpp:143
+msgid "Process Query"
+msgstr ""
+
+#: kgame/kgamepropertyhandler.cpp:178
+msgid "%1 (%2)"
+msgstr ""
+
+#: kgame/kgamepropertyhandler.cpp:180
+#, c-format
+msgid "Unnamed - ID: %1"
+msgstr ""
+
+#: kgame/kgamepropertyhandler.cpp:184
+msgid "%1 unregistered"
+msgstr ""
+
+#: kgame/kplayer.cpp:91
+msgid "UserId"
+msgstr ""
+
+#: kgame/kplayer.cpp:93
+msgid "Group"
+msgstr ""
+
+#: kgame/kplayer.cpp:94 kgame/kplayer.cpp:96
+msgid "default"
+msgstr ""
+
+#: kgame/kplayer.cpp:95 kscoredialog.cpp:79
+msgid "Name"
+msgstr ""
+
+#: kgame/kplayer.cpp:98
+msgid "AsyncInput"
+msgstr ""
+
+#: kgame/kplayer.cpp:100
+msgid "myTurn"
+msgstr ""
+
+#: kchatbase.cpp:232
+msgid "Send to all players"
+msgstr ""
+
+#: kchatbase.cpp:368
+msgid "%1 %2"
+msgstr ""
+
+#: kchatbase.cpp:384
+#, c-format
+msgid "--- %1"
+msgstr ""
+
+#: kchatdialog.cpp:60 kchatdialog.cpp:68
+msgid "Configure Chat"
+msgstr ""
+
+#: kchatdialog.cpp:86 kchatdialog.cpp:108
+msgid "Name Font..."
+msgstr ""
+
+#: kchatdialog.cpp:89 kchatdialog.cpp:111
+msgid "Text Font..."
+msgstr ""
+
+#: kchatdialog.cpp:98
+msgid "Player: "
+msgstr ""
+
+#: kchatdialog.cpp:100
+msgid "This is a player message"
+msgstr ""
+
+#: kchatdialog.cpp:106
+msgid "System Messages - Messages directly sent from the game"
+msgstr ""
+
+#: kchatdialog.cpp:120
+msgid "--- Game: "
+msgstr ""
+
+#: kchatdialog.cpp:122
+msgid "This is a system message"
+msgstr ""
+
+#: kchatdialog.cpp:126
+msgid "Maximal number of messages (-1 = unlimited):"
+msgstr ""
+
+#: kscoredialog.cpp:67
+msgid "%1 High Scores"
+msgstr ""
+
+#: kscoredialog.cpp:82
+msgid "Level"
+msgstr ""
+
+#: kscoredialog.cpp:85
+msgid "Score"
+msgstr ""
+
+#: kscoredialog.cpp:135
+msgid "Rank"
+msgstr ""
+
+#: kscoredialog.cpp:346
+msgid ""
+"Excellent!\n"
+"You have a new high score!"
+msgstr ""
+
+#: kscoredialog.cpp:348
+msgid ""
+"Well done!\n"
+"You made it to the high score list!"
+msgstr ""

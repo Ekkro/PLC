@@ -1,0 +1,998 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: konsole\n"
+"POT-Creation-Date: 2002-02-23 02:43+0100\n"
+"PO-Revision-Date: 2002-01-29 11:59GMT\n"
+"Last-Translator: Lisiane Sztoltz <lisiane@conectiva.com.br>\n"
+"Language-Team: Brazilian Portuguese <ldp-br@bazar.conectiva.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: TEWidget.cpp:521 TEWidget.cpp:523
+msgid "Size: XXX x XXX"
+msgstr "Tamanho: XXX x XXX"
+
+#: TEWidget.cpp:528
+msgid "Size: %1 x %2"
+msgstr "Tamanho: %1 x %2"
+
+#: TEWidget.cpp:1478
+msgid "cd"
+msgstr "cd"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Elvis Pfützenreuter"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "epx@conectiva.com.br"
+
+#: konsole.cpp:281
+#, fuzzy
+msgid "Session Toolbar"
+msgstr "Nome da sessão"
+
+#: konsole.cpp:368 konsole_part.cpp:284
+msgid "&Suspend Task"
+msgstr "&Suspender tarefa"
+
+#: konsole.cpp:369 konsole_part.cpp:285
+msgid "&Continue Task"
+msgstr "&Continuar tarefa"
+
+#: konsole.cpp:370 konsole_part.cpp:286
+msgid "&Hangup"
+msgstr "&Desligar"
+
+#: konsole.cpp:371 konsole_part.cpp:287
+msgid "&Interrupt Task"
+msgstr "&Interromper tarefa"
+
+#: konsole.cpp:372 konsole_part.cpp:288
+msgid "&Terminate Task"
+msgstr "&Terminar tarefa"
+
+#: konsole.cpp:373 konsole_part.cpp:289
+msgid "&Kill Task"
+msgstr "&Matar tarefa"
+
+#: konsole.cpp:382 konsole.cpp:564 konsole_part.cpp:405
+msgid "&Send Signal"
+msgstr "&Enviar sinal"
+
+#: konsole.cpp:385
+msgid "&Find in History..."
+msgstr "&Encontrar no Histórico..."
+
+#: konsole.cpp:390
+msgid "S&ave History As..."
+msgstr "S&alvar |Histórico como..."
+
+#: konsole.cpp:396
+msgid "Clear &History"
+msgstr "Limpar &Histórico"
+
+#: konsole.cpp:401
+msgid "Clear All H&istories"
+msgstr "Limpar &Todos os Históricos"
+
+#: konsole.cpp:406
+msgid "&Rename Session..."
+msgstr "&Renomear Sessão..."
+
+#: konsole.cpp:411
+msgid "Monitor for &Activity"
+msgstr "Monitor para &Atividades"
+
+#: konsole.cpp:415
+msgid "Monitor for &Silence"
+msgstr "Monitor para &Silêncio"
+
+#: konsole.cpp:419
+msgid "Send &Input to All Sessions"
+msgstr "Enviar &Entrada para Todas as Sessões"
+
+#: konsole.cpp:424
+msgid "&Move Session Left"
+msgstr "&Mover para Esquerda"
+
+#: konsole.cpp:429
+msgid "M&ove Session Right"
+msgstr "M&over para Direita"
+
+#: konsole.cpp:462 konsole_part.cpp:296
+msgid "Sc&rollbar"
+msgstr "&Barra de Rolagem"
+
+#: konsole.cpp:465 konsole_part.cpp:299
+msgid "&Hide"
+msgstr "&Ocultar"
+
+#: konsole.cpp:465 konsole_part.cpp:299
+msgid "&Left"
+msgstr "E&squerdo"
+
+#: konsole.cpp:465 konsole_part.cpp:299
+msgid "&Right"
+msgstr "&Direito"
+
+#: konsole.cpp:471
+msgid "F&ull-Screen"
+msgstr "&Tela cheia"
+
+#: konsole.cpp:476 konsole_part.cpp:305
+msgid "&Bell"
+msgstr "&Campainha"
+
+#: konsole.cpp:479 konsole_part.cpp:308
+msgid "&None"
+msgstr "&Nenhum"
+
+#: konsole.cpp:480 konsole_part.cpp:309
+msgid "&System Notification"
+msgstr "Notificação do &Sistema"
+
+#: konsole.cpp:481 konsole_part.cpp:310
+msgid "&Visible Bell"
+msgstr "Campainha &Visível"
+
+#: konsole.cpp:486 konsole_part.cpp:315
+msgid "&Font"
+msgstr "&Fonte"
+
+#: konsole.cpp:489 konsole_part.cpp:318
+msgid "&Normal"
+msgstr "&Normal"
+
+#: konsole.cpp:490 konsole_part.cpp:319
+msgid "&Tiny"
+msgstr "&Miúdo"
+
+#: konsole.cpp:491 konsole_part.cpp:320
+msgid "&Small"
+msgstr "&Pequeno"
+
+#: konsole.cpp:492 konsole_part.cpp:321
+msgid "&Medium"
+msgstr "&Médio"
+
+#: konsole.cpp:493 konsole_part.cpp:322
+msgid "&Large"
+msgstr "&Grande"
+
+#: konsole.cpp:494 konsole_part.cpp:323
+msgid "&Huge"
+msgstr "&Enorme"
+
+#: konsole.cpp:496
+msgid "L&inux"
+msgstr "&Linux"
+
+#: konsole.cpp:497 konsole_part.cpp:326
+msgid "&Unicode"
+msgstr "Unicode"
+
+#: konsole.cpp:499 konsole.cpp:518 konsole_part.cpp:328
+msgid "&Custom..."
+msgstr "&Personalizar..."
+
+#: konsole.cpp:503 konsole_part.cpp:336
+msgid "&Keyboard"
+msgstr "&Teclado"
+
+#: konsole.cpp:506 konsole_part.cpp:343
+msgid "Sch&ema"
+msgstr "Es&quema"
+
+#: konsole.cpp:509
+msgid "S&ize"
+msgstr "&Tamanho"
+
+#: konsole.cpp:512
+msgid "40x15 (&Small)"
+msgstr "40x15 (&pequeno)"
+
+#: konsole.cpp:513
+msgid "80x24 (&VT100)"
+msgstr "80x24 (&vt100)"
+
+#: konsole.cpp:514
+msgid "80x25 (&IBM PC)"
+msgstr "80x25 (&ibm pc)"
+
+#: konsole.cpp:515
+msgid "80x40 (&XTerm)"
+msgstr "80x40 (&xterm)"
+
+#: konsole.cpp:516
+msgid "80x52 (IBM V&GA)"
+msgstr "80x52 (IBM V&GA)"
+
+#: konsole.cpp:522 konsole_part.cpp:345
+msgid "&History..."
+msgstr "&Histórico ..."
+
+#: konsole.cpp:543
+msgid "&Tip of the Day..."
+msgstr "&Dica do Dia ..."
+
+#: konsole.cpp:550
+msgid "&Close Session"
+msgstr "&Fechar Sessão"
+
+#: konsole.cpp:568 konsole_part.cpp:408
+msgid "S&ettings"
+msgstr "&Configurações"
+
+#: konsole.cpp:570
+msgid "C&lose Session"
+msgstr "&Fechar Sessão"
+
+#: konsole.cpp:612
+msgid "&New"
+msgstr "&Novo"
+
+#: konsole.cpp:641
+msgid "Session"
+msgstr "Sessão"
+
+#: konsole.cpp:644
+msgid "Settings"
+msgstr "Preferências"
+
+#: konsole.cpp:671
+msgid ""
+"You have open sessions (besides the current one). These will be killed if "
+"you continue.\n"
+"Are you sure you want to quit?"
+msgstr ""
+"Você tem sessões abertas (além desta). Elas serão finalizadas se você "
+"continuar.\n"
+"Tem certeza de que quer sair ?"
+
+#: konsole.cpp:692
+msgid ""
+"Not all sessions could be closed. Please end all sessions running under "
+"other user IDs. In most cases typing 'exit' at the prompt will end them."
+msgstr ""
+"Nem todas as sessões poderiam ser fechadas. Por favor finalize todas as "
+"sessões executando com  outro ID de usuário. Na maioria dos casos, digitar "
+" 'exit'  irá finalizá-las."
+
+#: konsole.cpp:1094 konsole_part.cpp:564
+msgid ""
+"Font `%1' not found.\n"
+"Check README.linux.console for help."
+msgstr ""
+"Fonte '%1' não encontrada.\n"
+"Verifique o README.linux.console para obter ajuda."
+
+#: konsole.cpp:1107
+msgid "Use the right mouse button to bring back the menu"
+msgstr "Use o botão direito do mouse para trazer o menu de volta"
+
+#: konsole.cpp:1328
+#, fuzzy
+msgid "%1 No. %2"
+msgstr "%1 sem %2"
+
+#: konsole.cpp:1642
+msgid "`%1' terminated abnormally."
+msgstr "'%1' terminou anormalmente."
+
+#: konsole.cpp:1645
+msgid ""
+"\n"
+"Return code = "
+msgstr ""
+"\n"
+"Código de retorno = "
+
+#: konsole.cpp:1871
+msgid "New "
+msgstr "Novo"
+
+#: konsole.cpp:1898
+#, c-format
+msgid ""
+"_: Screen is a program controlling screens!\n"
+"Screen at %1"
+msgstr "Tela em %1"
+
+#: konsole.cpp:2027
+msgid "Session name"
+msgstr "Nome da sessão"
+
+#: konsole.cpp:2028
+msgid "Rename Session"
+msgstr "Renomear sessão"
+
+#: konsole.cpp:2076 konsole_part.cpp:754
+msgid "History Configuration"
+msgstr "Configuração do Histórico"
+
+#: konsole.cpp:2084 konsole_part.cpp:762
+msgid "&Enable"
+msgstr "&Habilitar"
+
+#: konsole.cpp:2091 konsole_part.cpp:769
+msgid ""
+"_: Unlimited (number of lines)\n"
+"Unlimited"
+msgstr "Ilimitado"
+
+#: konsole.cpp:2094 konsole.cpp:2296 konsole_part.cpp:772
+msgid "Number of lines : "
+msgstr "Número de Linhas:"
+
+#: konsole.cpp:2208
+msgid ""
+"End of history reached.\n"
+"Continue from the beginning?"
+msgstr ""
+"Fim do histórico encontrado.\n"
+"Deseja continuar do início?"
+
+#: konsole.cpp:2209 konsole.cpp:2217 konsole.cpp:2226
+msgid "Find"
+msgstr "Encontrar"
+
+#: konsole.cpp:2216
+msgid ""
+"Beginning of history reached.\n"
+"Continue from the end?"
+msgstr ""
+"Início do histórico encontrado.\n"
+"Desejar continuar do fim?"
+
+#: konsole.cpp:2225
+msgid "Search string '%1' not found."
+msgstr "String '%1'  não encontrada."
+
+#: konsole.cpp:2240
+msgid "Save History..."
+msgstr "Salvar Histórico ..."
+
+#: konsole.cpp:2244
+msgid ""
+"This is not a local file.\n"
+msgstr ""
+"Este não é um arquivo local.\n"
+
+#: konsole.cpp:2254
+msgid ""
+"A file with this name already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Já existe um arquivo com este nome.\n"
+"Deseja sobrescrevê-lo?"
+
+#: konsole.cpp:2259
+msgid "Unable to write to file."
+msgstr "Impossível escrever para arquivo."
+
+#: konsole.cpp:2268
+msgid "Could not save history."
+msgstr "Não foi possível salvar o histórico."
+
+#: konsole.cpp:2279
+msgid "Size Configuration"
+msgstr "Configuração do Tamanho"
+
+#: konsole.cpp:2293
+msgid "Number of columns : "
+msgstr "Número de Colunas:"
+
+#: konsole_part.cpp:92 main.cpp:126
+msgid "Konsole"
+msgstr "Konsole"
+
+#: konsole_part.cpp:325
+msgid "&Linux"
+msgstr "&Linux"
+
+#: konsole_part.cpp:354
+msgid "Li&ne Spacing"
+msgstr "Espaçamento de &Linha"
+
+#: konsole_part.cpp:365
+msgid "&0"
+msgstr "&0"
+
+#: konsole_part.cpp:366
+msgid "&1"
+msgstr "&1"
+
+#: konsole_part.cpp:367
+msgid "&2"
+msgstr "&2"
+
+#: konsole_part.cpp:368
+msgid "&3"
+msgstr "&3"
+
+#: konsole_part.cpp:369
+msgid "&4"
+msgstr "&4"
+
+#: konsole_part.cpp:370
+msgid "&5"
+msgstr "&5"
+
+#: konsole_part.cpp:371
+msgid "&6"
+msgstr "&6"
+
+#: konsole_part.cpp:372
+msgid "&7"
+msgstr "&7"
+
+#: konsole_part.cpp:373
+msgid "&8"
+msgstr "&8"
+
+#: konsole_part.cpp:379
+msgid "Blinking &Cursor"
+msgstr "&Cursor Intermitente"
+
+#: konsole_part.cpp:384
+msgid "Show Fr&ame"
+msgstr "Mostrar &quadro"
+
+#: konsole_part.cpp:389
+msgid "Wor&d Connectors..."
+msgstr "C&onectores de Palavras ...."
+
+#: konsole_part.cpp:411
+msgid "&Close Terminal Emulator"
+msgstr "Finalizar &Emulador de Terminal"
+
+#: konsole_part.cpp:741
+msgid ""
+"Characters other than alphanumerics considered part of a word when double "
+"clicking"
+msgstr ""
+"Caracteres diferentes de alfanuméricos que são considerados parte de uma "
+"palavra durante um clique duplo:"
+
+#: konsole_part.cpp:742
+msgid "Word Connectors"
+msgstr "Conectores de Palavras"
+
+#: kwrited.cpp:89
+msgid "KDE Daemon for receiving 'write' messages."
+msgstr "Serviço do KDE para receber mensagens 'write'."
+
+#: kwrited.cpp:96
+msgid "kwrited is already running."
+msgstr "kwrited já está rodando."
+
+#: main.cpp:31
+msgid "X terminal for use with KDE."
+msgstr "Terminal X para uso com o KDE."
+
+#: main.cpp:36
+msgid "Set window class"
+msgstr "Configurar classe da janela"
+
+#: main.cpp:37
+msgid "Start login shell"
+msgstr "Iniciar shell de login"
+
+#: main.cpp:38
+msgid "Set the window title"
+msgstr "Configurar o título da janela"
+
+#: main.cpp:39
+msgid ""
+"Specify terminal type as set in the TERM\n"
+"environment variable"
+msgstr ""
+"Especifica o tipo de terminal como configurado na\n"
+"variável de ambiente TERM"
+
+#: main.cpp:40
+msgid "ignored"
+msgstr "ignorado"
+
+#: main.cpp:41
+msgid "Do not save lines in history"
+msgstr "Não salvar linhas no histórico"
+
+#: main.cpp:42
+msgid "Do not display menubar"
+msgstr "Não mostrar barra de menus"
+
+#: main.cpp:43
+msgid "Do not display toolbar"
+msgstr "Não mostrar barra de ferramentas"
+
+#: main.cpp:44
+msgid "Do not display frame"
+msgstr "Não mostrar quadros"
+
+#: main.cpp:45
+msgid "Do not display scrollbar"
+msgstr "Não mostrar barra de rolagem"
+
+#: main.cpp:46
+msgid "Do not use XFT (Anti-Aliasing)"
+msgstr "Não usar XFT (Anti-Aliasing)"
+
+#: main.cpp:47
+msgid "Terminal size in columns x lines"
+msgstr "Tamanho do terminal em colunas X linhas"
+
+#: main.cpp:48
+msgid "Open the given session type instead of the default shell"
+msgstr "Abrir o tipo de sessão fornecido ao invés do shell padrão"
+
+#: main.cpp:49
+msgid "Change working directory of the konsole to 'dir'"
+msgstr "Modificar o diretório de trabalho do Konsole para 'dir'"
+
+#: main.cpp:50
+msgid "Execute 'command' instead of shell"
+msgstr "Executar 'comando' ao invés de um shell"
+
+#: main.cpp:52
+msgid "Arguments for 'command'"
+msgstr "Argumentos para 'comando' "
+
+#: main.cpp:129
+msgid "Maintainer"
+msgstr "Mantenedor"
+
+#: main.cpp:130
+msgid "Author"
+msgstr "Autor"
+
+#: main.cpp:132
+msgid "bug fixing and improvements"
+msgstr "Correção de erros e melhorias"
+
+#: main.cpp:135 main.cpp:171 main.cpp:174 main.cpp:177 main.cpp:180
+msgid "bug fixing"
+msgstr "conserto de erros"
+
+#: main.cpp:138
+msgid "Solaris support and work on history"
+msgstr "Suporte a Solaris e trabalho no histórico"
+
+#: main.cpp:141
+msgid "faster startup, bug fixing"
+msgstr "inicialização mais rápida; correção de erro"
+
+#: main.cpp:144
+msgid "decent marking"
+msgstr "marcação decente"
+
+#: main.cpp:147
+msgid ""
+"partification\n"
+"Toolbar and session names"
+msgstr ""
+"particionamento\n"
+"Barra de ferramentas e nomes de sessão"
+
+#: main.cpp:151
+msgid ""
+"partification\n"
+"overall improvements"
+msgstr ""
+"particionamento\n"
+"melhorias gerais"
+
+#: main.cpp:155
+msgid "transparency"
+msgstr "transparência"
+
+#: main.cpp:158
+msgid ""
+"most of main.C donated via kvt\n"
+"overall improvements"
+msgstr ""
+"a maior parte do main.C doada via kvt\n"
+"melhorias generalizadas"
+
+#: main.cpp:162
+msgid "schema and selection improvements"
+msgstr "melhorias de esquema e seleção"
+
+#: main.cpp:165
+msgid "SGI Port"
+msgstr "Porte para SGI"
+
+#: main.cpp:168
+msgid "FreeBSD port"
+msgstr "Porte para FreeBSD"
+
+#: main.cpp:182
+msgid ""
+"Thanks to many others.\n"
+"The above list only reflects the contributors\n"
+"I managed to keep track of."
+msgstr ""
+"Obrigado a muitos outros.\n"
+"A lista acima apenas reflete os contribuintes\n"
+"que eu consegui manter registrados."
+
+#: main.cpp:219
+msgid ""
+"You can't use BOTH -ls and -e.\n"
+msgstr ""
+"Você não pode usar ambos -ls e -e.\n"
+
+#: main.cpp:266
+msgid ""
+"expected --vt_sz <#columns>x<#lines> ie. 80x40\n"
+msgstr ""
+"esperado --vt_sz <#colunas>x<#linhas> por exemplo 80x40\n"
+
+#: schema.cpp:173 schema.cpp:203
+msgid "[no title]"
+msgstr "[sem título]"
+
+#: schema.cpp:216
+msgid "Konsole Default"
+msgstr "Padrão do Konsole"
+
+#: schemas.cpp:1
+msgid "Black on Light Yellow"
+msgstr "Preto sobre amarelo claro"
+
+#: schemas.cpp:2
+msgid "Black on White"
+msgstr "Preto sobre branco"
+
+#: schemas.cpp:3
+msgid "Marble"
+msgstr "Mármore"
+
+#: schemas.cpp:4
+msgid "Green on Black"
+msgstr "Verde sobre preto"
+
+#: schemas.cpp:5
+msgid "Green Tint"
+msgstr "Tonalidade verde"
+
+#: schemas.cpp:6
+msgid "Green Tint with Transparent MC"
+msgstr "Tonalidade verde transparente MC"
+
+#: schemas.cpp:7
+msgid "Paper"
+msgstr "Papel"
+
+#: schemas.cpp:8
+msgid "Linux Colors"
+msgstr "Cores do Linux"
+
+#: schemas.cpp:9
+msgid "Paper II"
+msgstr "Papel"
+
+#: schemas.cpp:10
+msgid "Transparent Konsole"
+msgstr "Konsole transparente"
+
+#: schemas.cpp:11
+msgid "Transparent for MC"
+msgstr "Transparente para MC"
+
+#: schemas.cpp:12
+msgid "Transparent, Dark Background"
+msgstr "Transparente, fundo escuro"
+
+#: schemas.cpp:13
+msgid "Transparent, Light Background"
+msgstr "Transparente, fundo claro"
+
+#: schemas.cpp:14
+msgid "White on Black"
+msgstr "Branco sobre preto"
+
+#: schemas.cpp:15
+msgid "XTerm Colors"
+msgstr "Cores do XTerm"
+
+#: schemas.cpp:16
+msgid "System Colors"
+msgstr "Cores do sistema"
+
+#: schemas.cpp:17
+msgid "VIM Colors"
+msgstr "Cores do VIM"
+
+#: schemas.cpp:18
+msgid "XTerm (XFree 4.x.x)"
+msgstr "XTerm (XFree 4.x.x) "
+
+#: schemas.cpp:19
+msgid "linux console"
+msgstr "Console do Linux"
+
+#: schemas.cpp:20
+msgid "vt100 (historical)"
+msgstr "vt100 (histórico)"
+
+#: schemas.cpp:21
+msgid "VT420PC"
+msgstr "VT420PC"
+
+#: schemas.cpp:22
+msgid "XTerm (XFree 3.x.x)"
+msgstr "XTerm (XFree 3.x.x)"
+
+#: tips.cpp:3
+msgid ""
+"<p>"
+"...that you can start new Konsole sessions by pressing the \"New\" button in "
+"the Konsole toolbar?\n"
+msgstr ""
+"<p>"
+"...que você pode iniciar novas sessões do Konsole pressionando o botão "
+"\"Novo\"  na barra de ferramentas do Konsole?\n"
+
+#: tips.cpp:7
+msgid ""
+"<p>...that pressing and holding the \"New\" button in the Konsole toolbar "
+"will allow you to\n"
+"select what session type the \"New\" button starts?\n"
+msgstr ""
+"<p> .... que ao pressionar o botão \"Novo\"  na varra de ferramentas do "
+"Konsole, e mantê-lo pressionado, você poderá selecionar qual o tipo de "
+"sessão\n"
+"que o botão irá iniciar?\n"
+
+#: tips.cpp:12
+msgid ""
+"<p>"
+"...that pressing Ctrl+Alt+N is the same as clicking the \"New\" button in "
+"the toolbar?\n"
+msgstr ""
+"<p>...que pressionar Ctrl+Alt+N é o mesmo que clicar no botão \"Novo\" na "
+"barra de ferramentas?\n"
+
+#: tips.cpp:16
+msgid ""
+"<p>...that you can cycle through the Konsole sessions by holding down the "
+"Shift key and\n"
+"pressing the Left or Right Arrow keys?\n"
+msgstr ""
+"<p>...que você pode circular através das sessões do Konsole pressionando "
+"a tecla Shift e pressionando\n"
+"as teclas de fecha Direita e Esquerda?\n"
+
+#: tips.cpp:21
+msgid ""
+"<p>...that you can get a 'Linux console-like' terminal? \n"
+"<p>"
+"Deactivate the Konsole's menubar, toolbar and scrollbar, select the Linux "
+"font\n"
+"and the Linux Colors schema and apply the full-screen mode. You might also "
+"then\n"
+"want to set the panel to auto-hide.\n"
+msgstr ""
+"<p>...que você pode obter um terminal do tipo 'Linux console'? \n"
+"<p>"
+"Desative as barras de menus, ferramentas e a barra de rolagem do Konsole, "
+"selecione o esquema de fontes\n"
+"e de Colores do linux e aplique o modo de tela cheia. Você provavelmente "
+"tambémdesejará\n"
+"ajustar o painel para a ocultação automática.\n"
+
+#: tips.cpp:28
+msgid ""
+"<p>...that you can rename your Konsole sessions by clicking with the right "
+"mouse\n"
+"button and selecting \"Rename session\"? The change will be reflected in "
+"the\n"
+"Konsole toolbar, making it easier to remember the content of the session.\n"
+msgstr ""
+"<p>...que você pode renomear as suas sessões do Konsole clicando com o "
+"botão direito do  mouse\n"
+"e selecionando \"Renomear Sessão\"?  A mudança irá refletir na barra de "
+"ferramentas do\n"
+"Konsole,  tornando-se mais fácil de lembrar o conteúdo da sessão.\n"
+
+#: tips.cpp:34
+msgid ""
+"<p>...that you can rename a Konsole session by double-clicking its button\n"
+"in the Konsole toolbar?\n"
+msgstr ""
+"<p>...que você pode renomear uma sessão do Konsole dando um clique duplo "
+"em seu\n"
+"botão na barra de ferramentas do Konsole?\n"
+
+#: tips.cpp:39
+msgid ""
+"<p>...that you can activate the menu with the Ctrl+Alt+M shortcut?\n"
+msgstr ""
+"<p>...que você pode ativar o menu com as teclas de atalho Ctrl+Alt+M?\n"
+
+#: tips.cpp:43
+msgid ""
+"<p>...that you can rename your current Konsole session with the Ctrl+Alt+S "
+"shortcut?\n"
+msgstr ""
+"<p>...que você pode renomear a sessão atual do Konsole com as teclas de "
+"atalho Ctrl+Alt+S?\n"
+
+#: tips.cpp:47
+msgid ""
+"<p>...that you can create your own session types by using the session\n"
+"type editor which you can find under \"Settings/Configure Konsole...\"?\n"
+msgstr ""
+"<p>...que você pode criar seu próprio tipo de sessão usando o editor de "
+"sessões\n"
+"que você pode encontrar no menu \"Preferências/Configurar Konsole...\"?\n"
+
+#: tips.cpp:52
+msgid ""
+"<p>...that you can create your own color schemes by using the schema editor\n"
+"which you can find under \"Settings/Configure Konsole...\"?\n"
+"</p>\n"
+msgstr ""
+"<p>...que você pode criar seu próprio esquema de cores usando o editor de "
+"esquemas\n"
+"que você pode encontrar no menu  \"Preferências/Configurar Konsole...\"?\n"
+"</p>\n"
+
+#: tips.cpp:58
+msgid ""
+"<p>...that you can reorder the session buttons in the toolbar with \"View\" "
+"menu\n"
+"commands or by holding down the Shift and Ctrl keys and pressing the Left or "
+"Right \n"
+"Arrow keys?\n"
+"</p>\n"
+msgstr ""
+"<p>"
+"...que você pode reordenar os botões de sessão na barra de ferramentas "
+"através do menu  de comandos \"Ver\"\n"
+"ou pressionando as teclas Shift e Ctrl simultaneamente, juntamente com a "
+"tecla de Flechas\n"
+" esquerda ou direita?\n"
+"</p>\n"
+
+#: tips.cpp:65
+msgid ""
+"<p>...that you can scroll pagewise in the history by holding down the Shift "
+"key \n"
+"and pressing the Page Up or Page Down keys?\n"
+msgstr ""
+"<p>"
+"...que você pode rolar páginas no histórico pressionando a tecla Shift "
+"juntamente com\n"
+"as teclas Page Up ou Page Down?\n"
+
+#: tips.cpp:70
+msgid ""
+"<p>...that you can scroll linewise in the history by holding down the Shift "
+"key \n"
+"and pressing the Up or Down Arrow keys?\n"
+msgstr ""
+"<p>...que você pode rolar linhas no histórico pressionando a tecla Shift "
+"juntamente \n"
+"com as teclas de fecha Up ou Down?\n"
+
+#: tips.cpp:75
+msgid ""
+"<p>...that you can insert the clipboard by holding down the Shift key and \n"
+"pressing the Insert key?\n"
+msgstr ""
+"<p>...que você pode inserir a área de transferência pressionando a tecla "
+"Shift\n"
+"juntamente com a tecla Insert?\n"
+
+#: tips.cpp:80
+msgid ""
+"<p>...that you can insert the X selection by holding down the Shift and \n"
+"Ctrl keys and pressing the Insert key?\n"
+msgstr ""
+"<p>...que você pode inserir a seleção X pressionando as teclas Shift e "
+"Ctrl\n"
+"juntamente com a tecla Insert?\n"
+
+#: tips.cpp:85
+msgid ""
+"<p>...that you can drag &amp; drop selected text?\n"
+msgstr ""
+"<p>...que você pode arrastar &amp; soltar o texto selecionado?\n"
+
+#: tips.cpp:89
+msgid ""
+"<p>...that you can set the history length to \"unlimited\"? </p>\n"
+"<p>Just set it to 0 lines.\n"
+msgstr ""
+"<p>...que você pode configurar o comprimento do histórico para  "
+"\"ilimitado\"? </p>\n"
+"<p>Basta configurá-lo para 0 linhas.\n"
+
+#: tips.cpp:94
+msgid ""
+"<p>...that pressing Ctrl while pasting the selection with the middle mouse\n"
+"button will send the selection buffer instead of pasting it?\n"
+msgstr ""
+"<p>...que pressionando Ctrl ao colar a seleção com o botão do meio do "
+"mouse,\n"
+"irá enviar a seleção ao buffer de Seleção ao invés de colá-la?\n"
+
+#: tips.cpp:99
+msgid ""
+"<p>...that you can turn off the terminal size hint under "
+"\"Settings/Configure Konsole...\"?\n"
+msgstr ""
+"<p>...que você pode desligar a dica sobre o tamanho do terminal,  "
+"em\"Preferências/Configurar Konsole...\"?\n"
+
+#: tips.cpp:103
+msgid ""
+"<p>...that pressing Ctrl while selecting text will let Konsole ignore line "
+"breaks?\n"
+msgstr ""
+"<p>...que pressionar Ctrl ao selecionar um texto irá fazer com que o "
+"Konsole ignore quebras de linha?\n"
+
+#: tips.cpp:107
+msgid ""
+"<p>...that when a program evaluates the right mouse button you can still \n"
+"get the right mouse button pop-up menu while pressing the Shift key?\n"
+msgstr ""
+"<p>...que quando um programa testa o botão direito do mouse, você ainda "
+"pode \n"
+"obter o menu de contexto do botão direto do mouse pressionando a tecla "
+"Shift?\n"
+
+#: tips.cpp:112
+msgid ""
+"<p>...that when a program evaluates the left mouse button you can still "
+"select \n"
+"text while pressing the Shift key?\n"
+msgstr ""
+"<p>...que quando um programa testa o botão esquerdo do mouse, você ainda "
+"pode  selecionar um texto \n"
+"pressionando a tecla Shift?\n"
+
+#: tips.cpp:117
+msgid ""
+"<p>...that you can let Konsole set the current directory as the window "
+"title?\n"
+"For Bash, put 'export PS1=$PS1\"\\[\\e]0;\\H:\\w\\a\\]' in your ~/.bashrc .\n"
+msgstr ""
+"<p>... que você pode deixar o Konsole configurar o diretório atual como "
+"sendo o título  da janela?\n"
+"Para o Bash, coloque  'export PS1=$PS1\"\\[\\e]0;\\H:\\w\\a\\]' em seu "
+"arquivo ~/.bashrc .\n"
+
+#: tips.cpp:122
+msgid ""
+"<p>...that double-clicking will select a whole word?\n"
+"<p>When you don't release the mouse button after the second click you \n"
+"can extend your selection by additional words when moving the mouse.\n"
+msgstr ""
+"<p>... que um duplo clique irá selecionar uma palavra inteira?\n"
+"<p>Quando você não solta o botão do mouse depois do segundo clique, "
+"você\n"
+"pode estender sua seleção para palavras adicionais, bastando mover o "
+"mouse.\n"
+
+#: tips.cpp:128
+msgid ""
+"<p>...that triple-clicking will select a whole line?\n"
+"<p>When you don't release the mouse button after the third click you \n"
+"can extend your selection by additional lines when moving the mouse.\n"
+msgstr ""
+"<p>...que um clique triplo irá selecionar a linha inteira?\n"
+"<p>Quando você não solta o botão do mouse depois do terceiro clique, "
+"você \n"
+"pode estender sua seleção para linhas adicionais, ao mover o mouse.\n"

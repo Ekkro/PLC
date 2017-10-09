@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-18 18:21CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:13
+#, no-c-format
+msgid "The &kasteroids; Handbook"
+msgstr "Le manuel de &kasteroids;"
+
+#: index.docbook:16
+#, no-c-format
+msgid ""
+"<firstname>Martin</firstname> <othername>R.</othername> "
+"<surname>Jones</surname> <affiliation> "
+"<address><email>mjones@kde.org</email></address> </affiliation>"
+msgstr ""
+"<firstname>Martin</firstname> <othername>R.</othername> "
+"<surname>Jones</surname> <affiliation> "
+"<address><email>mjones@kde.org</email></address> </affiliation>"
+
+#: index.docbook:25
+#, no-c-format
+msgid ""
+"<firstname>Philip</firstname> <surname>Rodrigues</surname> <affiliation> "
+"<address><email>phil.rod@ntlworld.com</email></address> </affiliation>"
+msgstr ""
+"<firstname>Philip</firstname> <surname>Rodrigues</surname> <affiliation> "
+"<address><email>phil.rod@ntlworld.com</email></address> </affiliation>"
+
+#: index.docbook:33
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Éric</firstname><surname>Bischoff</surname>"
+"<affiliation><address><email>e.bischoff@noos.fr</email></address>"
+"</affiliation><contrib>Traduction française</contrib></othercredit> "
+"<othercredit "
+"role=\"translator\"><firstname>Ludovic</firstname><surname>Grossard</surname>"
+"<affiliation><address><email>ludovic.grossard@libertysurf.fr</email>"
+"</address></affiliation> <contrib>"
+"mise à jour et relecture de la traduction française</contrib></othercredit>"
+
+#: index.docbook:38
+#, no-c-format
+msgid "Martin R. Jones"
+msgstr "Martin R. Jones"
+
+#: index.docbook:43
+#, no-c-format
+msgid "Philip Rodrigues"
+msgstr "Philip Rodrigues"
+
+#: index.docbook:50
+#, no-c-format
+msgid ""
+"&kasteroids; is, as you would expect, the &kde; clone of the popular "
+"<application>Asteroids</application> game."
+msgstr ""
+"&kasteroids; est, comme vous devez vous en douter, le clone pour &kde; du "
+"jeu populaire <application>Asteroids</application>."
+
+#: index.docbook:54
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:55
+#, no-c-format
+msgid "games"
+msgstr "jeux"
+
+#: index.docbook:56
+#, no-c-format
+msgid "linux"
+msgstr "linux"
+
+#: index.docbook:57
+#, no-c-format
+msgid "asteroids"
+msgstr "astéroïdes"
+
+#: index.docbook:63
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:65
+#, no-c-format
+msgid ""
+"The objective of &kasteroids; is to destroy all the asteroids on the screen "
+"to advance to the next level. Your ship is destroyed if it makes contact "
+"with an asteroid."
+msgstr ""
+"L'objectif de &kasteroids; est de détruire tous les astéroïdes à "
+"l'écran afin de passer au niveau suivant. Votre vaisseau est détruit s'il "
+"entre en contact avec un astéroïde."
+
+#: index.docbook:72
+#, no-c-format
+msgid "Your Ship"
+msgstr "Votre vaisseau"
+
+#: index.docbook:74
+#, no-c-format
+msgid ""
+"When your ship is first launched, it has only basic abilities: Turning, "
+"Thrusting and Shooting"
+msgstr ""
+"Quand votre vaisseau se met en route pour la première fois, il n'est "
+"capable que de&nbsp;: pivoter, déclencher une poussée et tirer."
+
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"In order to move your ship, rotate it to face the direction you wish to "
+"travel and press the thrust key. Of course the ship has momentum, so you "
+"will have to compensate when you select the angle of the ship. Thrusting "
+"uses fuel, so you should not use your thrusters more than necessary."
+msgstr ""
+"Pour déplacer votre vaisseau, faites-le pivoter jusqu'à ce qu'il adopte la "
+"direction vers laquelle vous désirez vous déplacer et appuyez sur la "
+"touche de poussée. Bien entendu le vaisseau a de l'inertie, vous devrez "
+"donc la compenser l'orque vous choisissez l'angle du vaisseau. La poussée "
+"consomme du carburant, vous ne devez donc pas utiliser les moteurs plus que "
+"nécessaire."
+
+#: index.docbook:82
+#, no-c-format
+msgid ""
+"You have an unlimited amount of ammunition, so shoot away. Only limited "
+"number of shots can be active at once, though. If you repeatedly shoot and "
+"miss, you will find that you are unable to shoot until some of the shots "
+"have expired."
+msgstr ""
+"Vous avez une quantité non limitée de munitions, vous pouvez donc "
+"<quote>canarder</quote>. Cependant, seul un certain nombre de missiles peut "
+"être en route simultanément. Si vous tirez sans arrêt sans atteindre "
+"votre cible, vous pouvez vous retrouver dans une situation où vous devez "
+"attendre que certains missiles aient disparu avant de pouvoir recommencer à "
+"tirer."
+
+#: index.docbook:87
+#, no-c-format
+msgid ""
+"Your ship has a limited amount of fuel. When all the ship's fuel has been "
+"consumed it is unable to thrust anymore. This leaves you immobile, but not "
+"defenseless - you can still rotate and shoot."
+msgstr ""
+"Votre vaisseau a une quantité limitée de carburant. Quand tout le "
+"carburant du vaisseau a été consommé, il est incapable de déclencher une "
+"poussée à nouveau. Vous vous retrouvez immobilisé, mais non sans défense "
+"- vous pouvez toujours pivoter et tirer."
+
+#: index.docbook:91
+#, no-c-format
+msgid ""
+"Fortunately the asteroids occasionally release fuel when they are shot. Fly "
+"your ship into the fuel symbol to collect it."
+msgstr ""
+"Par chance, les astéroïdes libèrent parfois du carburant quand ils sont "
+"détruits. Déplacez votre vaisseau jusqu'au symbole du carburant pour "
+"remplir le réservoir."
+
+#: index.docbook:94
+#, no-c-format
+msgid "Fuel Upgrade"
+msgstr "Collecte de carburant"
+
+#: index.docbook:109
+#, no-c-format
+msgid "Ship Upgrades"
+msgstr "Équipements additionnels pour le vaisseau"
+
+#: index.docbook:111
+#, no-c-format
+msgid ""
+"Occasionally when you shoot an asteroid a symbol will be produced. These "
+"symbols represent upgrades to your ship. Fly over the symbol to install it "
+"in your ship. The upgrades have a cumulative effect, up to a maximum of 5."
+msgstr ""
+"Parfois, quand vous tirez sur un astéroïde, un symbole apparaît. Ces "
+"symboles représentent des équipements additionnels pour votre vaisseau. "
+"Déplacez votre vaisseau jusqu'au symbole pour installer l'équipement dans "
+"votre vaisseau. Les équipements additionnels ont un effet cumulatif, et il "
+"peut y en avoir jusqu'à cinq."
+
+#: index.docbook:115
+#, no-c-format
+msgid "The improvements available are:"
+msgstr "Les équipements additionnels disponibles sont&nbsp;:"
+
+#: index.docbook:117
+#, no-c-format
+msgid "Brakes"
+msgstr "Des freins"
+
+#: index.docbook:117
+#, no-c-format
+msgid ""
+"Brakes stop your ship as quickly as possible. The more brake upgrades you "
+"have the faster you can stop, with lower fuel usage."
+msgstr ""
+"Les freins arrêtent votre vaisseau aussi vite que faire se peut. Plus vous "
+"avez d'équipements de freinage, plus vite vous pouvez vous arrêter, en "
+"utilisant moins de carburant."
+
+#: index.docbook:117
+#, no-c-format
+msgid "Shields"
+msgstr "Des boucliers"
+
+#: index.docbook:117
+#, no-c-format
+msgid ""
+"Shields absorb the collision with asteroids, but use a lot of fuel. You need "
+"at least two shield upgrades to survive a hit from a medium sized rock, and "
+"3 to survive a large rock. You will also need to have enough fuel to "
+"maintain the shield during the strike."
+msgstr ""
+"Les boucliers absorbent la collision avec les astéroïdes, mais utilisent "
+"beaucoup de carburant. Vous avez besoin d'au moins deux équipements de "
+"bouclier pour survivre à une collision avec un fragment de roche de taille "
+"moyenne, et de trois pour survivre à une collision avec un gros fragment. "
+"Il vous faut également disposer de suffisamment de carburant pour maintenir "
+"le bouclier pendant l'impact."
+
+#: index.docbook:137
+#, no-c-format
+msgid "Controls"
+msgstr "Commandes"
+
+#: index.docbook:139
+#, no-c-format
+msgid ""
+"The key bindings are configurable via the "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure "
+"Shortcuts...</guimenuitem></menuchoice> menu item."
+msgstr ""
+"Les raccourcis clavier peuvent être configurés grâce à l'élément de "
+"menu <menuchoice><guimenu>Configuration</guimenu><guimenuitem>"
+"Configurer les raccourcis clavier</guimenuitem></menuchoice>"
+
+#: index.docbook:143
+#, no-c-format
+msgid "The defaults are:"
+msgstr "Les raccourcis par défaut sont&nbsp;:"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Rotate Anti-Clockwise</action> - <keysym>Left Arrow</keysym>"
+msgstr ""
+"<action>Pivoter en sens contraire des aiguilles d'une montre</action> - "
+"<keysym>Flèche vers la gauche</keysym>"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Rotate Clockwise</action> - <keysym>Right Arrow</keysym>"
+msgstr ""
+"<action>Pivoter dans le sens des aiguilles d'une montre</action> - "
+"<keysym>Flèche vers la droite</keysym>"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Thrust</action> - <keysym>Up Arrow</keysym>"
+msgstr "<action>Poussée</action> - <keysym>Flèche vers le haut</keysym>"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Shoot</action> - <keysym>Space Bar</keysym>"
+msgstr "<action>Tirer</action> - <keysym>Barre d'espacement</keysym>"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Shields</action> - <keycap>S</keycap>"
+msgstr "<action>Boucliers</action> - <keycap>S</keycap>"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Pause</action> - <keycap>P</keycap>"
+msgstr "<action>Pause</action> - <keycap>P</keycap>"
+
+#: index.docbook:145
+#, no-c-format
+msgid "<action>Brake</action> - <keycap>X</keycap>"
+msgstr "<action>Freiner</action> - <keycap>X</keycap>"
+
+#: index.docbook:162
+#, no-c-format
+msgid "Configuring &kasteroids;"
+msgstr "Configuration de &kasteroids;"
+
+#: index.docbook:163
+#, no-c-format
+msgid ""
+"&kasteroids; only has a few options, which can be reached from "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure "
+"KAsteroids...</guimenuitem></menuchoice>."
+msgstr ""
+"&kasteroids; dispose de peu d'options, qui peuvent être obtenues depuis "
+"<menuchoice><guimenu>Configuration</guimenu><guimenuitem>Configurer "
+"KAsteroids</guimenuitem></menuchoice>."
+
+#: index.docbook:167
+#, no-c-format
+msgid "Start new game with <replaceable>n</replaceable> ships"
+msgstr "Commencer une nouvelle partie avec <replaceable>n</replaceable> vaisseaux"
+
+#: index.docbook:167
+#, no-c-format
+msgid ""
+"When you start a new game, you have ships in reserve, in case of an accident "
+";-). This specifies how many ships you have <emphasis>in total</emphasis> "
+"when the game starts."
+msgstr ""
+"Lorsque vous commencez une nouvelle partie, vous avez des vaisseaux en "
+"réserve, en cas d'accident ;-). Ceci spécifie combien de vaisseaux vous "
+"avez <emphasis>au total</emphasis> lorsque le jeu démarre."
+
+#: index.docbook:167
+#, no-c-format
+msgid "Show Highscores on Game Over"
+msgstr "Afficher les meilleurs scores à la fin de la partie"
+
+#: index.docbook:167
+#, no-c-format
+msgid ""
+"If selected, shows all of the highscores each time you finish a game, "
+"regardless of whether or not you achieve a highscore."
+msgstr ""
+"Si cette option est sélectionnée, les meilleurs scores seront affichés "
+"chaque fois que vous terminez un jeu, que vous ayez fait un bon score ou non."
+
+#: index.docbook:167
+#, no-c-format
+msgid "Player can destroy Powerups"
+msgstr "Le joueur peut détruire les recharges de fuel"
+
+#: index.docbook:167
+#, no-c-format
+msgid ""
+"If selected, shooting a powerup destroys it. If unselected, the powerup "
+"remains, allowing you to still pick it up."
+msgstr ""
+"Si cette option est sélectionnée, les recharges de fuel seront détruites "
+"si vous tirez dessus. Sinon, les recharges ne sont pas détruites et vous "
+"pouvez les attraper."
+
+#: index.docbook:193
+#, no-c-format
+msgid "Tips"
+msgstr "Trucs et astuces"
+
+#: index.docbook:195
+#, no-c-format
+msgid "Here are some tips that may help:"
+msgstr "Voici certaines recommandations qui pourraient vous aider&nbsp;:"
+
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"If you want to stop your ship, use the brakes rather than stopping manually. "
+"The brakes stop you faster, with less fuel usage."
+msgstr ""
+"Si vous désirez arrêter votre vaisseau, utilisez les freins plutôt que de "
+"stopper manuellement. Les freins vous arrêtent plus rapidement, en "
+"consommant moins de carburant."
+
+#: index.docbook:200
+#, no-c-format
+msgid ""
+"Shields are expensive. They should be used as a last resort. Try to use your "
+"thrusters to avoid collisions when practical."
+msgstr ""
+"Les boucliers sont coûteux. Ils devraient être utilisés en dernière "
+"extrémité. Essayez d'utiliser vos moteurs afin d'éviter les collisions "
+"quand c'est possible."
+
+#: index.docbook:203
+#, no-c-format
+msgid ""
+"Avoid the edges of the playing field. It's more difficult to see asteroids "
+"approaching from the opposite side of the field."
+msgstr ""
+"Évitez les bords du terrain de jeu. Il est est plus difficile de voir les "
+"astéroïdes venant du côté opposé du terrain."
+
+#: index.docbook:208
+#, no-c-format
+msgid "Menu Reference"
+msgstr "Liste des menus"
+
+#: index.docbook:210
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:212
+#, no-c-format
+msgid "Starts a new game of &kasteroids;"
+msgstr "Démarre une nouvelle partie de &kasteroids;"
+
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Show "
+"Highscores</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Meilleurs "
+"scores</guimenuitem>"
+
+#: index.docbook:212
+#, no-c-format
+msgid "Shows the High Scores for &kasteroids;"
+msgstr "Montre les meilleurs scores obtenus en jouant à &kasteroids;"
+
+#: index.docbook:212
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:212
+#, no-c-format
+msgid "<action>Quits</action> &kasteroids;"
+msgstr "<action>Sort de</action> &kasteroids;"
+
+#: index.docbook:248
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"seq\">&Alt;<keycap>S</keycap><keycap>K</keycap></keycombo> "
+"</shortcut><guimenu>Settings</guimenu><guimenuitem>Configure "
+"Shortcuts...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo "
+"action=\"seq\">&Alt;<keycap>S</keycap><keycap>K</keycap></keycombo> "
+"</shortcut> <guimenu>Configuration</guimenu> <guimenuitem>Configurer les "
+"raccourcis clavier</guimenuitem>"
+
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"Brings up the Shortcuts Configuration dialog. This is a standard &kde; "
+"shortcuts configuration dialog, which you are probably familiar with. See "
+"<xref linkend=\"controls\"/> for details of the default controls."
+msgstr ""
+"Affiche la boîte de dialogue de configuration des raccourcis claviers. Il "
+"s'agit d'un dialogue standard de &kde; pour la configuration des raccourcis "
+"clavier, que connaissez probablement déjà. Voir <xref "
+"linkend=\"controls\"/> pour les détails des assignations clavier par "
+"défaut."
+
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo "
+"action=\"seq\">&Alt;<keycap>S</keycap><keycap>C</keycap></keycombo> "
+"</shortcut> <guimenu>Settings</guimenu> <guimenuitem>Configure "
+"KAsteroids...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo "
+"action=\"seq\">&Alt;<keycap>S</keycap><keycap>C</keycap></keycombo> "
+"</shortcut> <guimenu>Configuration</guimenu> <guimenuitem>Configurer "
+"KAsteroids</guimenuitem>"
+
+#: index.docbook:250
+#, no-c-format
+msgid ""
+"<action>Brings up the configuration dialog</action> for &kasteroids;. See "
+"<xref linkend=\"config\"/>."
+msgstr ""
+"<action>Affiche la boîte de dialogue de configuration</action> de "
+"&kasteroids;. Voir <xref linkend=\"config\"/>."
+
+#: index.docbook:277
+#, no-c-format
+msgid "The <guimenuitem>Help</guimenuitem> Menu"
+msgstr "Le menu <guimenuitem>Aide</guimenuitem>"
+
+#: index.docbook:287
+#, no-c-format
+msgid "Credits"
+msgstr "Remerciements"
+
+#: index.docbook:289
+#, no-c-format
+msgid "&kasteroids;"
+msgstr "&kasteroids;"
+
+#: index.docbook:291
+#, no-c-format
+msgid "Copyright 1997 Martin R Jones <email>mjones@kde.org</email>"
+msgstr "Copyright 1997 Martin R Jones <email>mjones@kde.org</email>"
+
+#: index.docbook:293
+#, no-c-format
+msgid ""
+"Documentation based on the original by Martin R Jones, currently maintained "
+"by Philip Rodrigues <email>phil.rod@ntlworld.com</email>"
+msgstr ""
+"Documentation basée sur la documentation originale de Martin R Jones, "
+"actuellement maintenue par Philip Rodrigues "
+"<email>phil.rod@ntlworld.com</email>"
+
+#: index.docbook:297
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française Éric Bischoff "
+"<email>e.bischoff@noos.fr</email></para> <para>"
+"Mise à jour et relecture par Ludovic Grossard "
+"<email>ludovic.grossard@libertysurf.fr</email> </para>"
+
+#: index.docbook:305
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:308
+#, no-c-format
+msgid "How to obtain &kasteroids;"
+msgstr "Comment obtenir &kasteroids;"
+
+#: index.docbook:315
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

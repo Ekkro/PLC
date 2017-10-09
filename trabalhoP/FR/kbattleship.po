@@ -1,0 +1,590 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-19 10:25CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "The &kbattleship; Handbook"
+msgstr "Le manuel de &kbattleship;"
+
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<firstname>Daniel</firstname> <surname>Molkentin</surname> <affiliation> "
+"<address><email>molkentin@kde.org</email></address></affiliation>"
+msgstr ""
+"<firstname>Daniel</firstname> <surname>Molkentin</surname> <affiliation> "
+"<address><email>molkentin@kde.org</email></address></affiliation>"
+
+#: index.docbook:21
+#, no-c-format
+msgid ""
+"<firstname>Nikolas</firstname> <surname>Zimmermann</surname> <affiliation> "
+"<address><email>wildfox@kde.org</email></address> </affiliation>"
+msgstr ""
+"<firstname>Nikolas</firstname> <surname>Zimmermann</surname> <affiliation> "
+"<address><email>wildfox@kde.org</email></address> </affiliation>"
+
+#: index.docbook:31
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecture"
+
+#: index.docbook:35
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Ludovic</firstname><surname>Grossard</surname>"
+"<affiliation><address><email>ludovic.grossard@libertysurf.fr</email>"
+"</address></affiliation><contrib>Traduction "
+"française</contrib></othercredit>"
+
+#: index.docbook:43
+#, no-c-format
+msgid "Daniel Molkentin"
+msgstr "Daniel Molkentin"
+
+#: index.docbook:47
+#, no-c-format
+msgid "Nikolas Zimmermann"
+msgstr "Nikolas Zimmermann"
+
+#: index.docbook:51
+#, no-c-format
+msgid "Kevin Krammer"
+msgstr "Kevin Krammer"
+
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"&kbattleship; is a network-enabled implementation of the famous "
+"<quote>Battle Ship</quote> game for &kde;."
+msgstr ""
+"&kbattleship; est une réécriture pour &kde; du fameux jeux <quote>"
+"Bataille navale</quote> avec la gestion du réseau."
+
+#: index.docbook:64
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:65
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:66
+#, no-c-format
+msgid "kbattleship"
+msgstr "kbattleship"
+
+#: index.docbook:67
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:68
+#, no-c-format
+msgid "battleship"
+msgstr "bataille navale"
+
+#: index.docbook:69
+#, no-c-format
+msgid "battle"
+msgstr "bataille"
+
+#: index.docbook:75
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:78
+#, no-c-format
+msgid "Features"
+msgstr "Caractéristiques"
+
+#: index.docbook:79
+#, no-c-format
+msgid "Network Gaming"
+msgstr "Jeu en réseau"
+
+#: index.docbook:79
+#, no-c-format
+msgid "Computer Player (AI)"
+msgstr "Jeu contre l'ordinateur (Intelligence artificielle)"
+
+#: index.docbook:79
+#, no-c-format
+msgid "Sounds"
+msgstr "Sons"
+
+#: index.docbook:79
+#, no-c-format
+msgid "Chat"
+msgstr "Chat"
+
+#: index.docbook:79
+#, no-c-format
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: index.docbook:79
+#, no-c-format
+msgid "Highscore List"
+msgstr "Meilleurs scores"
+
+#: index.docbook:88
+#, no-c-format
+msgid ""
+"&kbattleship; uses an &XML; based communcation protocol so you can write "
+"clients for every platform and in any language. If you want to write one in "
+"your favourite programming language or/and environment, contact us. We would "
+"really like to hear of it."
+msgstr ""
+"KBattleship utilise un protocole de communication dérivé de &XML; donc "
+"vous pouvez écrire des clients pour chaque plate-forme dans n'importe quel "
+"language. SI vous voulez en écrire un dans votre langage de programmation "
+"et/ou environnement favori, contactez-nous. On voudrait vraiment en entendre "
+"parler."
+
+#: index.docbook:101
+#, no-c-format
+msgid "Using &kbattleship;"
+msgstr "Utilisation de KBattleship"
+
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"If you want to play &kbattleship;, you will need two players as it is a "
+"network game only. One player has to open the game via "
+"<menuchoice><guimenu>Game</guimenu> <guimenuitem>Start "
+"Server</guimenuitem></menuchoice> or by pressing <keycap>F3</keycap>."
+msgstr ""
+"Si vous voulez jouer à &kbattleship;, il vous faut être à deux joueurs "
+"puisqu'il s'agit d'un jeu en réseau uniquement. Un joueur doit ouvrir une "
+"partie avec <menuchoice><guimenu>Jeu</guimenu> <guimenuitem>Démarrer le "
+"serveur</guimenuitem></menuchoice> ou en appuyant sur <keycap>F3</keycap>."
+
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"A dialog box opens which will ask you for for a "
+"<guilabel>Nickname</guilabel> and <guilabel>Port</guilabel>. Normally, "
+"&kbattleship; will suggest your login name but you can enter any string you "
+"want. The predefined port should be ok. However, if you encounter problems, "
+"you can choose any other free ports above 1024."
+msgstr ""
+"Une boîte de dialogue s'ouvre et vous demande un <guilabel>Pseudonyme "
+":</guilabel> et un <guilabel>Port :</guilabel>. Normalement, &kbattleship; "
+"vous suggère votre nom d'utilisateur, mais vous êtes libre de mettre ce "
+"que vous voulez. Le port prédéfini devrait convenir. Cependant, si vous "
+"rencontrez des problèmes, vous pouvez choisir n'importe quel port libre au "
+"dessus de 1024."
+
+#: index.docbook:118
+#, no-c-format
+msgid ""
+"You need to tell the other player in case you use a port other than the "
+"default as both players need to use the same port in order to be able to "
+"establish a connection."
+msgstr ""
+"Vous devez informer l'autre joueur lorsque vous utilisez un port différent "
+"du port par défaut car les deux joueurs doivent utiliser le même port pour "
+"pouvoir établir une connexion."
+
+#: index.docbook:124
+#, no-c-format
+msgid ""
+"The other player has to choose <menuchoice><guimenu>Game</guimenu> "
+"<guimenuitem>Connect to Server</guimenuitem></menuchoice>, or press "
+"<keycap>F2</keycap>. Again, a <guilabel>Nickname</guilabel> is suggested, "
+"but you can choose any name you like."
+msgstr ""
+"L'autre joueur doit choisir "
+"<menuchoice><guimenu>Jeu</guimenu><guimenuitem>Se connecter au "
+"serveur</guimenuitem></menuchoice> ou appuyer sur <keycap>F2</keycap>. "
+"Encore une fois, un <guilabel>pseudonyme</guilabel> est proposé, mais vous "
+"mettez ce que vous voulez"
+
+#: index.docbook:131
+#, no-c-format
+msgid ""
+"An important point is the field <guilabel>Server</guilabel>. Here, you have "
+"to enter the host name of the server (the machine of the player that "
+"initiated the game)."
+msgstr ""
+"Un point important est le champ <guilabel>Serveur</guilabel>. Ici, vous "
+"devez saisir le nom d'hôte du serveur (la machine de l'autre joueur qui a "
+"démarré le jeu)"
+
+#: index.docbook:137
+#, no-c-format
+msgid ""
+"Another possibility is to play &kbattleship; against your computer. Select "
+"<guimenuitem>Single Player</guimenuitem> from the "
+"<guimenuitem>Game</guimenuitem> Menu, or press <keycap>F4</keycap>."
+msgstr ""
+"Une autre possibilité est de jouer à &kbattleship; contre votre "
+"ordinateur. Sélectionnez <guimenuitem>Partie à un joueur</guimenuitem> "
+"dans le menu <guimenuitem>Jeu</guimenuitem>, ou appuyez sur "
+"<keycap>F4</keycap>."
+
+#: index.docbook:143
+#, no-c-format
+msgid ""
+"When you are done, you can start the game. Simply follow the instructions in "
+"the statusbar. It will issue hints and suggest what to do next. When you now "
+"look at the screen, you will find two grid fields, the so-called "
+"<quote>battle areas</quote>"
+". The left area belongs to you. This is where you place your ships and where "
+"you can follow the military actions of your enemy. The right area is where "
+"your enemy's fleet is located. When it's your turn to fire, you need to "
+"click on a certain sector (a field of the battle area) where you suppose the "
+"ships to be located."
+msgstr ""
+"Lorsque c'est fait, vous pouvez démarrer le jeu. Suivez simplement les "
+"instructions dans la barre d'état. Elle vous indiquera des astuces et "
+"suggérera ce qu'il faut faire ensuite. Lorsque vous regardez l'écran, vous "
+"voyez deux grilles, nommées <quote>champs de bataille</quote>"
+". La partie à gauche vous appartient. C'est ici que vous placez vos bateaux "
+"et que vous pouvez suivre les actions militaires de votre adversaire. La "
+"partie droite correspond à la flotte de votre adversaire. Lorsque c'est à "
+"votre tour de jouer, cliquez sur un certain secteur (une case dans le champ "
+"de bataille) où vous pensez qu'un bateau de votre adversaire se trouve."
+
+#: index.docbook:155
+#, no-c-format
+msgid ""
+"First, you need to place your ships. The game initiator starts. When he/she "
+"is done, player two sets his/her ships."
+msgstr ""
+"Tout d'abord, vous devez placer vos bateaux. C'est la phase de préparation "
+"de la partie. Lorsque c'est fait, c'est au joueur 2 de placer ses bateaux."
+
+#: index.docbook:160
+#, no-c-format
+msgid ""
+"Ship placement is very easy: Simply click on the field where you want to "
+"place your ship. The first one will have a length of four squares, the next "
+"will be three fields long &etc;. Click on the field where you want to start "
+"the placement. If you click with the &LMB; the ship will be placed "
+"horizotally, a <keycombo>&Shift;&LMB;</keycombo> click will cause it to be "
+"placed vertically. &Shift; itself will flip the ship placement preview."
+msgstr ""
+"Le placement des bateaux est très simple. Cliquez simplement à l'endroit "
+"où vous voulez placer un bateau. Le premier à une longueur de 4, le "
+"suivant de 3, &etc;. Cliquez sur l'endroit où vous voulez que commence le "
+"placement. Si vous cliquez avec le &BGS;, le bateau sera placé "
+"horizontalement. Si vous cliquez avec le &BGS; tout en appuyant sur &Maj;, "
+"le bateau sera placé verticalement. &Maj; seulement fait basculer entre les "
+"prévisualisations horizontale et verticale."
+
+#: index.docbook:169
+#, no-c-format
+msgid ""
+"Now you can blindly fire on the enemy battle area. The statusbar indicates "
+"who is about to shoot."
+msgstr ""
+"Maintenant, vous pouvez tirer aveuglément sur le champ de bataille de votre "
+"adversaire. La barre d'état indique à qui c'est le tour de tirer."
+
+#: index.docbook:174
+#, no-c-format
+msgid "The first player destroying all their opponents ships wins the game!"
+msgstr ""
+"Le premier joueur qui détruit tous les navires de l'adversaire remporte la "
+"partie&nbsp;!"
+
+#: index.docbook:181
+#, no-c-format
+msgid "The Menus"
+msgstr "Les menus"
+
+#: index.docbook:184
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"<shortcut><keycap>F2</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Connect to server</guimenuitem>"
+msgstr ""
+"<shortcut><keycap>F2</keycap></shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Se connecter au serveur</guimenuitem>"
+
+#: index.docbook:186
+#, no-c-format
+msgid "Initiate a connection to another player's server."
+msgstr "Démarre une connexion vers le serveur d'un autre joueur."
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"<shortcut><keycap>F3</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Start server</guimenuitem>"
+msgstr ""
+"<shortcut><keycap>F3</keycap></shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Démarrer le serveur</guimenuitem>"
+
+#: index.docbook:186
+#, no-c-format
+msgid "Start the server so another player can connect to you."
+msgstr "Démarre le serveur afin qu'un autre joueur puisse se connecter à vous."
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"<shortcut><keycap>F4</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Single player</guimenuitem>"
+msgstr ""
+"<shortcut><keycap>F4</keycap></shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Partie à un joueur</guimenuitem>"
+
+#: index.docbook:186
+#, no-c-format
+msgid "Start a game with your computer as the opponent."
+msgstr "Vous permet de jouer contre l'ordinateur."
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"<shortcut><keycap>F10</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Highscore</guimenuitem>"
+msgstr ""
+"<shortcut><keycap>F10</keycap></shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Meilleurs scores</guimenuitem>"
+
+#: index.docbook:186
+#, no-c-format
+msgid "Show the highest scores so far."
+msgstr "Affiche les meilleurs scores."
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"<shortcut> <keycap>F11</keycap></shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Enemy Info...</guimenuitem>"
+msgstr ""
+"<shortcut> <keycap>F11</keycap></shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Informations sur l'ennemi</guimenuitem>"
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"Show the enemy's client (might also be &Mac;), the client version, a short "
+"description and the protocol version used."
+msgstr ""
+"Affiche le type de client de l'ennemi (il peut s'agir d'un &Mac;), la "
+"version du client, une rapide description ainsi que la version du protocole "
+"utilisée."
+
+#: index.docbook:186
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:186
+#, no-c-format
+msgid "<action>Exit</action> &kbattleship;"
+msgstr "<action>Quitte</action> &kbattleship;"
+
+#: index.docbook:280
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:282
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Afficher la barre "
+"d'état</guimenuitem>"
+
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"<action>Toggle on or off the display of the statusbar.</action> The default "
+"is on."
+msgstr ""
+"<action>(Dés)active l'affichage de la barre d'état.</action> Par défaut, "
+"elle est.affichée."
+
+#: index.docbook:282
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Play Sounds</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Jouer les sons</guimenuitem>"
+
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"<action>Toggle whether sounds (played when shooting) should be "
+"played.</action> The default is on."
+msgstr "<action>(Dés)active les sons.</action> Par défaut, ils sont joués."
+
+#: index.docbook:282
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Grid</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Afficher la "
+"grille</guimenuitem>"
+
+#: index.docbook:282
+#, no-c-format
+msgid ""
+"<action>Toggle on and off the display of a grid on the playing "
+"field.</action> The default is off."
+msgstr ""
+"<action>(Dés)active l'affichage de la grille dans la zone de jeu.</action> "
+"La valeur par défaut est désactivé."
+
+#: index.docbook:332
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> menu"
+msgstr "Le menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:340
+#, no-c-format
+msgid "Questions, Answers, and Tips"
+msgstr "Questions, réponses et astuces"
+
+#: index.docbook:343
+#, no-c-format
+msgid "Frequently asked questions"
+msgstr "Questions fréquemment posées"
+
+#: index.docbook:346
+#, no-c-format
+msgid ""
+"I get the error: <errorname>Couldn't connect to &arts; Soundserver. Sound "
+"deactivated.</errorname>"
+msgstr ""
+"J'obtiens l'erreur&nbsp;: <errorname>Impossible de se connecter au serveur "
+"de son aRts. Son désactivé</errorname>"
+
+#: index.docbook:350
+#, no-c-format
+msgid ""
+"&kbattleship; relies on &arts;, &kde;'s soundserver, to play any sound. "
+"Enable &arts; in the &kcontrolcenter; by browsing to "
+"<menuchoice><guisubmenu>Sound</guisubmenu> <guimenuitem>Sound "
+"Server</guimenuitem></menuchoice> and making sure that the box labelled "
+"<guilabel>Starts &arts; soundserver on &kde; startup</guilabel> is checked."
+msgstr ""
+"D&kbattleship; repose sur &arts;, le serveur de son de &kde;, pour jouer les "
+"sons. Activez &arts; dans le &kcontrol; dans "
+"<menuchoice><guisubmenu>son</guisubmenu> <guimenuitem>Serveur de "
+"son</guimenuitem></menuchoice> et assurez-vous que la case intitulée "
+"<guilabel>Lancer le serveur de son &arts; au démarrage de &kde;</guilabel> "
+"est cochée."
+
+#: index.docbook:361
+#, no-c-format
+msgid "I have a question that is likely to become a &FAQ;. Who should I contact?"
+msgstr ""
+"J'ai une question qui pourrait faire partie de la &FAQ;. Qui dois-je "
+"contacter&nbsp;?"
+
+#: index.docbook:365
+#, no-c-format
+msgid "Contact the authors. They will most likely add it here."
+msgstr "Contactez les auteurs. Il l'ajouteront certainement."
+
+#: index.docbook:373
+#, no-c-format
+msgid "Credits and Licenses"
+msgstr "Remerciements et licence"
+
+#: index.docbook:375
+#, no-c-format
+msgid "&kbattleship; Copyright 2000, 2001"
+msgstr "&kbattleship; Copyright 2000, 2001"
+
+#: index.docbook:377
+#, no-c-format
+msgid "Authors"
+msgstr "Auteurs"
+
+#: index.docbook:377
+#, no-c-format
+msgid "Nikolas Zimmermann <email>wildfox@kde.org</email>"
+msgstr "Nikolas Zimmermann <email>wildfox@kde.org</email>"
+
+#: index.docbook:377
+#, no-c-format
+msgid "Daniel Molkentin <email>molkentin@kde.org</email>"
+msgstr "Daniel Molkentin <email>molkentin@kde.org</email>"
+
+#: index.docbook:377
+#, no-c-format
+msgid "Kevin Krammer <email>kevin.krammer@gmx.at</email>"
+msgstr "Kevin Krammer <email>kevin.krammer@gmx.at</email>"
+
+#: index.docbook:396
+#, no-c-format
+msgid "Contributors"
+msgstr "Collaborateurs"
+
+#: index.docbook:396
+#, no-c-format
+msgid "Benjamin Adler <email>benadler@bigfoot.de</email>"
+msgstr "Benjamin Adler <email>benadler@bigfoot.de</email>"
+
+#: index.docbook:396
+#, no-c-format
+msgid "Nils Trzebin <email>nils.trzebin@stud.uni-hannover.de</email>"
+msgstr "Nils Trzebin <email>nils.trzebin@stud.uni-hannover.de</email>"
+
+#: index.docbook:396
+#, no-c-format
+msgid "Elmar Hoefner <email>elmar.hoefner@uibk.ac.at</email>"
+msgstr "Elmar Hoefner <email>elmar.hoefner@uibk.ac.at</email>"
+
+#: index.docbook:415
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Ludovic Grossard "
+"<email>ludovic.grossard@libertysurf.fr</email> </para>"
+
+#: index.docbook:423
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:428
+#, no-c-format
+msgid "Requirements"
+msgstr "Pré-requis"
+
+#: index.docbook:430
+#, no-c-format
+msgid ""
+"At the time of writing, &kbattleship; requires &kde; 3.x or greater and &Qt; "
+"3.x or greater."
+msgstr ""
+"À l'heure où cette documentation est rédigée, &kbattleship; nécessite "
+"&kde; 3.x ou supérieur et &Qt; 3.x ou supérieur."
+
+#: index.docbook:438
+#, no-c-format
+msgid "Compiling"
+msgstr "Compilation"

@@ -1,0 +1,833 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-19 14:27CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "The &ktron; Handbook"
+msgstr "Le manuel de &ktron;"
+
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<firstname>Fabian</firstname> <surname>Dal Santo</surname> <affiliation> "
+"<address><email>linuxgnu@yahoo.com.au</email></address> </affiliation>"
+msgstr ""
+"<firstname>Fabian</firstname> <surname>Dal Santo</surname> <affiliation> "
+"<address><email>linuxgnu@yahoo.com.au</email></address> </affiliation>"
+
+#: index.docbook:28
+#, no-c-format
+msgid "Developer"
+msgstr "Développeur"
+
+#: index.docbook:37
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecteur"
+
+#: index.docbook:39
+#, no-c-format
+msgid "ROLES OF TRANSLATOR"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Yves</firstname><surname>Dessertine</surname>"
+"<affiliation><address><email>yves.d@hrnet.fr</email></address></affiliation>"
+"<contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:45
+#, no-c-format
+msgid "Matthias Kiefer"
+msgstr "Matthias Kiefer"
+
+#: index.docbook:50
+#, no-c-format
+msgid "Fabian Dal Santo"
+msgstr "Fabian Dal Santo"
+
+#: index.docbook:59
+#, no-c-format
+msgid ""
+"&ktron; is a simple <quote>Tron</quote> clone for &kde;, which you can play "
+"alone or against a friend."
+msgstr ""
+"&ktron; est un simple clone de <quote>Tron</quote>"
+", auquel vous pouvez jouer seul ou contre un ami."
+
+#: index.docbook:66
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:67
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:68
+#, no-c-format
+msgid "KTron"
+msgstr "KTron"
+
+#: index.docbook:69
+#, no-c-format
+msgid "game"
+msgstr "game"
+
+#: index.docbook:70
+#, no-c-format
+msgid "tron"
+msgstr "tron"
+
+#: index.docbook:75
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"&ktron; is a simple Tron-Clone for the <ulink url=\"http://www.kde.org\">K "
+"Desktop Environment</ulink>. You can play &ktron; against the computer or a "
+"friend."
+msgstr ""
+"&ktron; est un simple clone de Tron pour <ulink "
+"url=\"http://www.kde.org\">l'environnement de bureau KDE</ulink>. Vous "
+"pouvez jouer à &ktron; contre l'ordinateur ou contre un ami."
+
+#: index.docbook:83
+#, no-c-format
+msgid ""
+"The aim of the game is to live longer than your opponent. To do that, avoid "
+"running into a wall, your own tail and that of your opponent."
+msgstr ""
+"Le but du jeu est de survivre plus longtemps que votre adversaire. Pour ce "
+"faire, évitez de heurter le mur, votre propre queue ou celle de votre "
+"adversaire."
+
+#: index.docbook:91
+#, no-c-format
+msgid "Playing &ktron;"
+msgstr "Jouer à &ktron;"
+
+#: index.docbook:94
+#, no-c-format
+msgid "Rules"
+msgstr "Règles"
+
+#: index.docbook:96
+#, no-c-format
+msgid ""
+"Once a round is started, the players do not stop moving forward (unless the "
+"game is paused). All you have to do is avoid crashing by changing your "
+"players direction. Additionally you can try to hinder your opponent. For "
+"this it is possible to increase the velocity by pressing your accelerator "
+"key."
+msgstr ""
+"Une fois qu'une partie est débutée, le serpent ne cesse d'avancer (a moins "
+"que la partie ne soit mise en pause). Tout ce que vous avez à faire est "
+"d'éviter de vous écraser en changeant votre joueur de direction. De plus, "
+"vous pouvez essayer de gêner votre adversaire. Il est pour cela possible "
+"d'augmenter sa vitesse en actionnant la touche accélérateur."
+
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"Pushing a direction key in the opposite direction to which you are "
+"travelling, will make you crash."
+msgstr ""
+"L'appui de la touche de direction opposée à votre direction actuelle vous "
+"fera vous écraser."
+
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"A round starts when all human players press a direction key. The initial "
+"moving direction is then in this direction."
+msgstr ""
+"Une partie commence quand tous les joueurs humains ont appuyé sur une "
+"touche de direction. La première direction suivie par chaque joueur est "
+"alors celle qui correspond à la touche actionnée."
+
+#: index.docbook:111
+#, no-c-format
+msgid ""
+"If you want to interrupt playing, select "
+"<guimenuitem>Pause/Continue</guimenuitem> from the <guimenu>Game</guimenu> "
+"menu or hit the keyboard shortcut (see section <link "
+"linkend=\"keys\">Default Key Bindings</link>). Additionally the game is "
+"paused when the game loses the keyboard focus, &eg; when switching to an "
+"other window."
+msgstr ""
+"Si vous voulez suspendre la partie, choisissez l'option "
+"<guimenuitem>Suspendre/Continuer</guimenuitem> dans le menu "
+"<guimenu>Jeu</guimenu> ou actionnez le raccourci-clavier (voir la section "
+"<link linkend=\"keys\">Attribution des touches</link>). De plus, le jeu est "
+"suspendu quand la fenêtre perd le focus du clavier, par exemple lorsque "
+"vous activez une autre fenêtre."
+
+#: index.docbook:119
+#, no-c-format
+msgid ""
+"To continue the game, select the menu item "
+"<guimenuitem>Pause/Continue</guimenuitem> again, or the keyboard shortcut. "
+"The game will also continue if the human players press one of their "
+"direction keys. But be careful, your player switches to this direction "
+"immediately."
+msgstr ""
+"Pour reprendre la partie, utilisez à nouveau l'option "
+"<guimenuitem>Suspendre/Continuer</guimenuitem> ou le raccourci-clavier. La "
+"partie reprendra aussi si tous les joueurs humains appuient sur une de leurs "
+"touches de direction. Attention, votre joueur part dans cette direction "
+"immédiatement."
+
+#: index.docbook:126
+#, no-c-format
+msgid ""
+"A game consists of several rounds, and ends if a player has at least nine "
+"points, and additionally two more points than the opponent. The current "
+"score is always displayed in the status bar."
+msgstr ""
+"Une partie consiste en plusieurs manches, et se termine lorsqu'un joueur a "
+"au moins neuf points, et s'il a plus deux points supplémentaires par "
+"rapport à son adversaire. Le score actuel est toujours affiché dans la "
+"barre d'état."
+
+#: index.docbook:134
+#, no-c-format
+msgid "The Computer Player"
+msgstr "Le joueur Ordinateur"
+
+#: index.docbook:136
+#, no-c-format
+msgid ""
+"You can let the computer be Player One, Player Two or both players. There "
+"are three difficulty levels: Beginner, Average and Expert."
+msgstr ""
+"Vous pouvez paramétrer l'ordinateur pour être le joueur un, le joueur "
+"deux, les deux ou aucun. Il y a trois niveaux de difficulté&nbsp;: "
+"Débutant, Moyen et Expert."
+
+#: index.docbook:140
+#, no-c-format
+msgid ""
+"If you choose Beginner, the computer doesn't care about the opponent and "
+"just moves around. This is the same algorithm as used by xtron-1.1."
+msgstr ""
+"Si vous choisissez Débutant, l'ordinateur ne se soucie pas de son "
+"adversaire et se contente de se déplacer. C'est le même algorithme que "
+"celui utilisé par xtron 1.1."
+
+#: index.docbook:140
+#, no-c-format
+msgid ""
+"At skill levels Average and Expert, the computer tries to hinder the "
+"opponent when he comes near."
+msgstr ""
+"Aux niveaux Moyen et Expert, l'ordinateur tente de gêner l'adversaire "
+"lorsqu'il s'en approche."
+
+#: index.docbook:152
+#, no-c-format
+msgid ""
+"See the <link linkend=\"settings-menu\"><guimenu>Settings</guimenu> "
+"Menu</link> section for information on how to configure the computer player."
+msgstr ""
+"Consultez la section <link linkend=\"settings-menu\">Menu "
+"<guimenu>Configuration</guimenu></link> pour des informations sur la "
+"configuration du joueur Ordinateur."
+
+#: index.docbook:159
+#, no-c-format
+msgid "Using the keyboard"
+msgstr "Utilisation du clavier"
+
+#: index.docbook:161
+#, no-c-format
+msgid ""
+"Each player has five keys. Four keys for changing the direction and one to "
+"accelerate."
+msgstr ""
+"Chaque joueur utilise cinq touches. Quatre touches pour changer de direction "
+"et une pour accélérer."
+
+#: index.docbook:166
+#, no-c-format
+msgid ""
+"The direction keys do not have to be held down. Simply press them once to "
+"change the direction of your player."
+msgstr ""
+"Vous n'avez pas besoin d'appuyer sur la touche en permanence. Appuyez "
+"simplement un bref instant pour changer la direction de votre joueur. "
+
+#: index.docbook:171
+#, no-c-format
+msgid ""
+"Acceleration only occurs while the acceleration key remains depressed. When "
+"you release the acceleration key, velocity returns to normal."
+msgstr ""
+"L'accélération est active seulement lorsque vous maintenez la touche "
+"enfoncée.Lorsque vous relâchez la touche d'accélération, la vitesse "
+"retourne à la normale."
+
+#: index.docbook:176
+#, no-c-format
+msgid ""
+"See section <link linkend=\"settings-menu\"><guimenu>Settings</guimenu> "
+"Menu</link> for information how to change the default keys."
+msgstr ""
+"Reportez vous à la section <link linkend=\"settings-menu\">Menu "
+"<guimenu>Configuration</guimenu></link> pour apprendre à changer les "
+"raccourcis clavier."
+
+#: index.docbook:184
+#, no-c-format
+msgid "Command Reference"
+msgstr "Référence des commandes"
+
+#: index.docbook:186
+#, no-c-format
+msgid "The following sections briefly describe each menu bar option."
+msgstr ""
+"Les chapitres suivants décrivent brièvement chaque option de la barre des "
+"menus."
+
+#: index.docbook:189
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New Game</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouvelle partie</guimenuitem>"
+
+#: index.docbook:191
+#, no-c-format
+msgid "Starts a new game."
+msgstr "Commence une nouvelle partie."
+
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"<shortcut> <keycap>P</keycap> </shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Pause/Continue</guimenuitem>"
+msgstr ""
+"<shortcut> <keycap>P</keycap> </shortcut> <guimenu>Jeu</guimenu> "
+"<guimenuitem>Pause/Reprendre</guimenuitem>"
+
+#: index.docbook:191
+#, no-c-format
+msgid "Pauses the game."
+msgstr "Met la partie en pause."
+
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Exit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:191
+#, no-c-format
+msgid "Quits."
+msgstr "Quitte."
+
+#: index.docbook:229
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Afficher la barre "
+"d'état</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Shows or hides the Statusbar."
+msgstr "Affiche ou cache la barre d'état."
+
+#: index.docbook:231
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Configurer les raccourcis "
+"clavier</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Displays a standard &kde; key bindings configurator."
+msgstr ""
+"Affiche une boîte de dialogue standard de &kde; permettant de configurer "
+"les raccourcis clavier."
+
+#: index.docbook:231
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Computerplayer</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>L'ordinateur est</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"Selects the number of computer players, and their skill level, "
+"<guimenuitem>Beginner</guimenuitem>, <guimenuitem>Average</guimenuitem> or "
+"<guimenuitem>Expert</guimenuitem>"
+msgstr ""
+"Fixe le nombre de joueurs ordinateur, ainsi que leur niveau, "
+"<guimenuitem>Débutant</guimenuitem>, <guimenuitem>Moyen</guimenuitem> ou "
+"<guimenuitem>Expert</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "The computer can be Player 1, Player 2 or both players."
+msgstr "L'ordinateur peut être le Joueur 1, le Joueur 2 ou les deux à la fois."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<guimenuitem>Beginner</guimenuitem> ignores the opponent, and just moves "
+"randomly. <guimenuitem>Average</guimenuitem> or "
+"<guimenuitem>Expert</guimenuitem>"
+" causes the computer to actively hinder the opponent."
+msgstr ""
+"Le niveau <guimenuitem>Débutant</guimenuitem> ignorera l'adversaire, se "
+"déplacera au hasard. Les niveaux <guimenuitem>Moyen</guimenuitem> et "
+"<guimenuitem>Expert</guimenuitem>"
+" vont faire de sorte à ce que l'ordinateur gêne activement l'adversaire."
+
+#: index.docbook:231
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Velocity</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Rapidité</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<action>Selects the speed of the game</action>, from slow "
+"<guimenuitem>1</guimenuitem> to fast <guimenuitem>10</guimenuitem>. The "
+"default velocity is <guimenuitem>5</guimenuitem>."
+msgstr ""
+"<action>Fixe la vitesse du jeu</action>, de lent "
+"<guimenuitem>1</guimenuitem> à rapide <guimenuitem>10</guimenuitem>. La "
+"vitesse par défaut est <guimenuitem>5</guimenuitem>."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Appearance</guimenuitem> "
+"<guimenuitem>Drawing Style</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Apparence</guimenuitem> "
+"<guimenuitem>Style des lignes</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<action>Selects the drawing style</action> of the &ktron; players. The "
+"options are: <guimenuitem>3D Line</guimenuitem>, <guimenuitem>3D "
+"Rects</guimenuitem>, <guimenuitem>Line</guimenuitem> and "
+"<guimenuitem>Circles</guimenuitem>."
+msgstr ""
+"<action>Sélectionne un style de dessin</action> pour les joueurs de "
+"&ktron;. Les options sont&nbsp;: <guimenuitem>Ligne 3D</guimenuitem>, "
+"<guimenuitem>Rectangle 3D</guimenuitem>, <guimenuitem>Ligne</guimenuitem>"
+" et <guimenuitem>Cercles</guimenuitem>."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Appearance</guimenuitem> "
+"<guimenuitem>Color Player 1</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Apparence</guimenuitem> "
+"<guimenuitem>Couleur du joueur 1</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Changes the color of Player 1, using a color selector"
+msgstr "Change la couleur du joueur 1 en utilisant un sélecteur de couleur."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Appearance</guimenuitem> "
+"<guimenuitem>Color Player 2</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Apparence</guimenuitem> "
+"<guimenuitem>Couleur du joueur 2</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Changes the color of Player 2, using a color selector."
+msgstr "Change la couleur du joueur 2 en utilisant un sélecteur de couleur."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Appearance</guimenuitem> "
+"<guimenuitem>Backgroundcolor</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Apparence</guimenuitem> "
+"<guimenuitem>Couleur du fond...</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Changes the color of the background, using a color selector."
+msgstr "Change la couleur du fond, en utilisant un sélecteur de couleur."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Appearance</guimenuitem> "
+"<guimenuitem>Background image</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Apparence</guimenuitem> "
+"<guimenuitem>Image de fond...</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Allows selection of a background image, using a dialog box."
+msgstr "Permet la sélection d'une image de fond à l'aide d'une boîte de dialogue."
+
+#: index.docbook:231
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Size</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Taille</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<action>Selects how large</action> the &ktron; players are drawn, from "
+"<guimenuitem>Very Small</guimenuitem> to <guimenuitem>Very "
+"Large</guimenuitem>."
+msgstr ""
+"<action>Sélectionne la largeur</action> avec laquelle les joueurs de "
+"&ktron; sont dessinés, de <guimenuitem>Très petite</guimenuitem> à "
+"<guimenuitem>Très grande</guimenuitem>."
+
+#: index.docbook:231
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Other...</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Autres...</guimenuitem>"
+
+#: index.docbook:231
+#, no-c-format
+msgid "Brings up a tabbed window,with the following options:"
+msgstr ""
+"Affiche une boîte de dialogue à onglets comportant les options "
+"suivantes&nbsp;:"
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<action>The player can be given more descriptive names</action>, other than "
+"Player 1 and Player 2."
+msgstr ""
+"<action>Des noms plus descriptifs peuvent être donnés aux "
+"joueurs</action>, plutôt que Joueur 1 et Joueur 2."
+
+#: index.docbook:231
+#, no-c-format
+msgid ""
+"<action>Acceleration can be disabled</action>, leaving both players "
+"travelling at a constant velocity."
+msgstr ""
+"<action>L'accélération peut être désactivée</action>"
+", laissant les deux joueurs se déplacer à vitesse constante."
+
+#: index.docbook:231
+#, no-c-format
+msgid "The players colors can be changed on winning."
+msgstr ""
+"Les couleurs des joueurs peuvent êtres changées lorsque l'un d'entre eux "
+"gagne."
+
+#: index.docbook:390
+#, no-c-format
+msgid "The <guimenuitem>Help</guimenuitem> Menu"
+msgstr "Le menu <guimenuitem>Aide</guimenuitem>"
+
+#: index.docbook:397
+#, no-c-format
+msgid "Default Key Bindings"
+msgstr "Raccourcis clavier par défaut"
+
+#: index.docbook:399
+#, no-c-format
+msgid "The following tables show you the default key bindings."
+msgstr "Le tableau suivant vous montre les raccourcis clavier par défaut."
+
+#: index.docbook:403
+#, no-c-format
+msgid "Player 1 Key bindings"
+msgstr "Raccourcis clavier pour le Joueur 1"
+
+#: index.docbook:405 index.docbook:437 index.docbook:471
+#, no-c-format
+msgid "Key Combo"
+msgstr "Combinaison de touches"
+
+#: index.docbook:405 index.docbook:437 index.docbook:471
+#, no-c-format
+msgid "Action"
+msgstr "Action"
+
+#: index.docbook:409
+#, no-c-format
+msgid "<keycap>R</keycap>"
+msgstr "<keycap>R</keycap>"
+
+#: index.docbook:409 index.docbook:443
+#, no-c-format
+msgid "<entry>Up</entry>"
+msgstr "<entry>Haut</entry>"
+
+#: index.docbook:409
+#, no-c-format
+msgid "<keycap>F</keycap>"
+msgstr "<keycap>F</keycap>"
+
+#: index.docbook:409 index.docbook:443
+#, no-c-format
+msgid "Down"
+msgstr "Bas"
+
+#: index.docbook:409
+#, no-c-format
+msgid "<keycap>G</keycap>"
+msgstr "<keycap>G</keycap>"
+
+#: index.docbook:409 index.docbook:443
+#, no-c-format
+msgid "Right"
+msgstr "Droite"
+
+#: index.docbook:409
+#, no-c-format
+msgid "<keycap>D</keycap>"
+msgstr "<keycap>D</keycap>"
+
+#: index.docbook:409 index.docbook:443
+#, no-c-format
+msgid "Left"
+msgstr "Gauche"
+
+#: index.docbook:409
+#, no-c-format
+msgid "<keycap>A</keycap>"
+msgstr "<keycap>A</keycap>"
+
+#: index.docbook:409 index.docbook:443
+#, no-c-format
+msgid "Accelerate"
+msgstr "Accélérer"
+
+#: index.docbook:435
+#, no-c-format
+msgid "Player 2 Key bindings"
+msgstr "Raccourcis clavier pour le Joueur 2"
+
+#: index.docbook:443
+#, no-c-format
+msgid "Up Arrow"
+msgstr "Flèche Haut"
+
+#: index.docbook:443
+#, no-c-format
+msgid "Down Arrow"
+msgstr "Flèche Bas"
+
+#: index.docbook:443
+#, no-c-format
+msgid "Right Arrow"
+msgstr "Flèche Droite"
+
+#: index.docbook:443
+#, no-c-format
+msgid "Left Arrow"
+msgstr "Flèche Gauche"
+
+#: index.docbook:443
+#, no-c-format
+msgid "<keycap>+</keycap>"
+msgstr "<keycap>+</keycap>"
+
+#: index.docbook:469
+#, no-c-format
+msgid "General Key Bindings"
+msgstr "Raccourcis clavier généraux"
+
+#: index.docbook:477
+#, no-c-format
+msgid "<keycap>P</keycap>"
+msgstr "<keycap>P</keycap>"
+
+#: index.docbook:477
+#, no-c-format
+msgid "Pause Game"
+msgstr "Met la partie en pause"
+
+#: index.docbook:477
+#, no-c-format
+msgid "&Ctrl; <keycap>N</keycap>"
+msgstr "&Ctrl; <keycap>N</keycap>"
+
+#: index.docbook:477
+#, no-c-format
+msgid "New Game"
+msgstr "Nouvelle partie"
+
+#: index.docbook:477
+#, no-c-format
+msgid "&Ctrl;<keycap>Q</keycap>"
+msgstr "&Ctrl;<keycap>Q</keycap>"
+
+#: index.docbook:477
+#, no-c-format
+msgid "Quit &ktron;"
+msgstr "Quitte &ktron;"
+
+#: index.docbook:477
+#, no-c-format
+msgid "<keycap>F1</keycap>"
+msgstr "<keycap>F1</keycap>"
+
+#: index.docbook:477
+#, no-c-format
+msgid "Help Contents"
+msgstr "Contenu de l'aide"
+
+#: index.docbook:477
+#, no-c-format
+msgid "<keycap>Shift</keycap><keycap>F1</keycap>"
+msgstr "<keycap>Shift</keycap><keycap>F1</keycap>"
+
+#: index.docbook:477
+#, no-c-format
+msgid "What's This Help"
+msgstr "Aide Qu'est-ce que c'est&nbsp;?"
+
+#: index.docbook:505
+#, no-c-format
+msgid ""
+"These key bindings can be changed by selecting <menuchoice> "
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Key "
+"Bindings</guimenuitem> </menuchoice> from the menubar."
+msgstr ""
+"Ces raccourcis clavier peuvent être changés en sélectionnant <menuchoice>"
+" <guimenu>Configuration</guimenu> <guimenuitem>Raccourcis "
+"clavier...</guimenuitem></menuchoice> depuis la barre des menus."
+
+#: index.docbook:517
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:519
+#, no-c-format
+msgid "&ktron;"
+msgstr "&ktron;"
+
+#: index.docbook:522
+#, no-c-format
+msgid "Program Copyright 1999 Matthias Kiefer <email>matthias.kiefer@gmx.de</email>"
+msgstr ""
+"Programme Copyright 1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+
+#: index.docbook:526
+#, no-c-format
+msgid ""
+"Parts of the code are from xtron-1.1 by Rhett D. Jacobs "
+"<email>rhett@hotel.canberra.edu.au&gt;</email>"
+msgstr ""
+"Des portions de code proviennent de xtron 1.1 de Rhett D. Jacobs "
+"<email>rhett@hotel.canberra.edu.au&gt;</email>"
+
+#: index.docbook:531
+#, no-c-format
+msgid ""
+"Documentation Copyright 1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+msgstr ""
+"Documentation Copyright 1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+
+#: index.docbook:536
+#, no-c-format
+msgid ""
+"Documentation updated for KDE 2.0 by Fabian Dal Santo "
+"<email>linuxgnu@yahoo.com.au</email>"
+msgstr ""
+"Documentation mise à jour pour KDE 2.0 par Fabian Dal Santo "
+"<email>linuxgnu@yahoo.com.au</email>"
+
+#: index.docbook:539
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Yves Dessertine "
+"<email>yves.d@hrnet.fr</email></para>"
+
+#: index.docbook:547
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:550
+#, no-c-format
+msgid "How to obtain &ktron;"
+msgstr "Comment obtenir &ktron;"
+
+#: index.docbook:557
+#, no-c-format
+msgid "Requirements"
+msgstr "Programmes requis"
+
+#: index.docbook:559
+#, no-c-format
+msgid ""
+"In order to successfully compile &ktron;, you need &kde; 3.0 All required "
+"libraries as well as &ktron; itself can be found on <ulink "
+"url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/kde/</ulink>."
+msgstr ""
+"Pour mener à bien la compilation de &ktron;, vous avez besoin de &kde; 3.0. "
+"Toutes les bibliothèques requises ainsi que &ktron; lui-même peuvent être "
+"téléchargés à l'adresse <ulink "
+"url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/kde/</ulink>."
+
+#: index.docbook:566
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"
+
+#: index.docbook:570
+#, no-c-format
+msgid ""
+"Should you run into problems, please report them to the the author at <ulink "
+"url=\"mailto:matthias.kiefer@gmx.de\">Matthias Kiefer</ulink>"
+msgstr ""
+"Si toutefois vous aviez des problèmes, veuillez les signaler à l'auteur à "
+"l'adresse <ulink url=\"mailto:matthias.kiefer@gmx.de\">Matthias "
+"Kiefer</ulink>"

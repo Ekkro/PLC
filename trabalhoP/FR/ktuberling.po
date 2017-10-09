@@ -1,0 +1,777 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-20 12:32CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:12
+#, no-c-format
+msgid "The &ktuberling; Handbook"
+msgstr "Le manuel de &ktuberling;"
+
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Eric</firstname> <surname>Bischoff</surname> <affiliation> "
+"<address><email>e.bischoff@noos.fr</email></address> </affiliation>"
+msgstr ""
+"<firstname>Éric</firstname> <surname>Bischoff</surname> <affiliation> "
+"<address><email>e.bischoff@noos.fr</email></address> </affiliation>"
+
+#: index.docbook:22
+#, no-c-format
+msgid ""
+"<firstname>Paul</firstname> <othername>E.</othername> "
+"<surname>Ahlquist</surname> <lineage>Jr.</lineage> <affiliation> "
+"<address><email>pea@ahlquist.org</email></address> </affiliation>"
+msgstr ""
+"<firstname>Paul</firstname> <othername>E.</othername> "
+"<surname>Ahlquist</surname> <lineage>Jr.</lineage> <affiliation> "
+"<address><email>pea@ahlquist.org</email></address> </affiliation>"
+
+#: index.docbook:35
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecteur"
+
+#: index.docbook:38
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"> <firstname>Benoit</firstname> "
+"<surname>Cosandier</surname> <affiliation> "
+"<address><email>cosandier.benoit@bluewin.ch</email></address> </affiliation>"
+" <contrib>Traduction</contrib> </othercredit>"
+
+#: index.docbook:47
+#, no-c-format
+msgid "Eric Bischoff"
+msgstr "Éric Bischoff"
+
+#: index.docbook:52
+#, no-c-format
+msgid "Paul E. Ahlquist Jr."
+msgstr "Paul E. Ahlquist Jr."
+
+#: index.docbook:58
+#, no-c-format
+msgid "&ktuberling; is a game intended for small children."
+msgstr "&ktuberling; est un jeu destiné aux jeunes enfants."
+
+#: index.docbook:64
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:65
+#, no-c-format
+msgid "KTuberling"
+msgstr "KTuberling"
+
+#: index.docbook:66
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:67
+#, no-c-format
+msgid "potato"
+msgstr "patate"
+
+#: index.docbook:68
+#, no-c-format
+msgid "penguin"
+msgstr "pingouin"
+
+#: index.docbook:69
+#, no-c-format
+msgid "tuberling"
+msgstr "tuberling"
+
+#: index.docbook:70
+#, no-c-format
+msgid "children"
+msgstr "enfant"
+
+#: index.docbook:75
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"&ktuberling; is a game intended for small children. Of course, it may be "
+"suitable for adults who have remained young at heart."
+msgstr ""
+"&ktuberling; est un jeu conçu pour les jeunes enfants. Bien sûr, il peut "
+"être aussi adéquat pour les adultes qui sont resté, au fond, jeunes."
+
+#: index.docbook:82
+#, no-c-format
+msgid ""
+"It is a <quote>potato editor</quote>. That means that you can drag and drop "
+"eyes, mouths, mustache, and other parts of face and goodies onto a "
+"potato-like guy. Similarly, you have a penguin on which you can drop other "
+"stuff."
+msgstr ""
+"C'est un <quote>éditeur de patate</quote>. Cela signifie que vous pouvez "
+"glisser-déposer des yeux, des bouches, des moustaches et d'autres parties "
+"du visage sur un bonhomme ressemblant à une patate. De même, vous avez un "
+"pingouin sur lequel vous pouvez déposer d'autres choses."
+
+#: index.docbook:88
+#, no-c-format
+msgid ""
+"There is no winner for the game. The only purpose is to make the funniest "
+"faces you can."
+msgstr ""
+"Il n'y a pas de gagnant dans ce jeu. Le seul but est de faire les plus "
+"amusantes figures que vous pouvez."
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"There is a museum (like a <quote>Madame Tusseau</quote> gallery) where you "
+"can find many funny examples of decorated potatoes and penguins. Of course, "
+"you can send your own creations to the programmer, <ulink "
+"url=\"mailto:e.bischoff@noos.fr\">Eric Bischoff</ulink>, who will include "
+"them in the museum if he gets some spare time."
+msgstr ""
+"Il y a un musée (comme par exemple <quote>Madame Tusseau</quote>) où vous "
+"pouvez trouver quelques drôles d'exemples de décoration de patates. Bien "
+"sûr, vous pouvez envoyer votre création au programmeur, <ulink "
+"url=\"mailto:e.bischoff@noos.fr\">Éric Bischoff</ulink>, qui les inclura "
+"dans le musée, s'ils trouve un moment pour ça."
+
+#: index.docbook:101
+#, no-c-format
+msgid ""
+"&ktuberling; can also <quote>speak</quote>. It will spell out the name of "
+"the objects you drag and drop. It will <quote>speak</quote> in your own "
+"language, or English if the sounds for your language do not exist. "
+"Currently, &ktuberling; can <quote>speak</quote> Danish, German, English, "
+"French, Dutch, Romanian, Slovenian and Swedish."
+msgstr ""
+"&ktuberling; peut également <quote>parler</quote>"
+". Il prononcera le nom des objets que vous glissez et déposez. Il "
+"<quote>parlera</quote> dans votre propre langue, ou en anglais si les sons "
+"dans votre langue n'existent pas. À ce jour, KTuberling sait "
+"<quote>parler</quote> danois, allemand, anglais, français, néerlandais, "
+"roumain, slovène et suédois."
+
+#: index.docbook:110
+#, no-c-format
+msgid "On screen Fundamentals"
+msgstr "Utilisation de l'interface"
+
+#: index.docbook:113
+#, no-c-format
+msgid "Mouse Operation"
+msgstr "Operation avec la Souris"
+
+#: index.docbook:115
+#, no-c-format
+msgid "There are two areas in the main window:"
+msgstr "Il y a deux zones dans la fenêtre principale&nbsp;:"
+
+#: index.docbook:119
+#, no-c-format
+msgid "<quote>Playground</quote> area, on the left side."
+msgstr "La zone <quote>de jeu</quote>, sur le côté gauche."
+
+#: index.docbook:119
+#, no-c-format
+msgid ""
+"<quote>Objects</quote> area, on the right side, where you select Objects to "
+"place on your playground."
+msgstr ""
+"La zone <quote>d'objets</quote>"
+", sur le côté droit, où vous sélectionnez les objets que vous placez sur "
+"votre terrain de jeu."
+
+#: index.docbook:128
+#, no-c-format
+msgid "Main Window of &ktuberling; main window:"
+msgstr "Fenêtre principale de &ktuberling; Fenêtre principal&nbsp;:"
+
+#: index.docbook:128
+#, no-c-format
+msgid "Main Window"
+msgstr "Fenêtre principale"
+
+#: index.docbook:142
+#, no-c-format
+msgid "Placing an Object"
+msgstr "Placer un objet"
+
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"To drag an object, move the mouse pointer to the <quote>objects</quote>"
+" area on the right. Click on the object you want to drag, but do not release "
+"the mouse button until you have moved the mouse pointer to the location in "
+"the <quote>playground</quote> area where you want to drop the object."
+msgstr ""
+"Pour faire glisser un objet, déplacez le pointeur de la souris dans la zone "
+"<quote>d'objets</quote> sur la droite. Cliquez sur l'objet que vous voulez "
+"faire glisser, mais ne relâchez pas le bouton de la souris avant que vous "
+"n'ayez déplacé le pointeur de la souris à l'emplacement de la zone "
+"<quote>de jeu</quote> où vous voulez déposer l'objet."
+
+#: index.docbook:153
+#, no-c-format
+msgid "Moving an Object"
+msgstr "Déplacer un objet"
+
+#: index.docbook:154
+#, no-c-format
+msgid ""
+"Once dropped in the <quote>playground</quote> area, an object can be moved. "
+"Just click on the object to select it for further drag and drop. When you "
+"click on it, it goes on top of other objects that were partially hiding it. "
+"This trick is useful for getting the glasses and eyes placed correctly."
+msgstr ""
+"Une fois déposé dans la zone <quote>de jeu</quote>, un objet peut être "
+"déplacé. Il suffit juste de cliquer sur l'objet sélectionné pour le "
+"faire glisser et le déposer plus loin. Quand vous cliquez dessus, il est "
+"placé au sommet des autres objets qui le cachaient partiellement. Cette "
+"astuce est utile pour placer correctement les lunettes et les yeux."
+
+#: index.docbook:163
+#, no-c-format
+msgid "Removing an Object"
+msgstr "Enlever un objet"
+
+#: index.docbook:164
+#, no-c-format
+msgid ""
+"To remove an object that has been dropped in the <quote>playground</quote> "
+"area, drag it back from the <quote>playground</quote> area to the "
+"<quote>objects</quote> area."
+msgstr ""
+"Pour enlever un objet qui a été déposé dans la zone <quote>de "
+"jeu</quote>, faites-le glisser depuis la zone <quote>de jeu</quote> vers la "
+"zone <quote>d'objets</quote>."
+
+#: index.docbook:173
+#, no-c-format
+msgid "The Tool Bar"
+msgstr "La barre d'outils"
+
+#: index.docbook:175
+#, no-c-format
+msgid "Toolbar"
+msgstr "Barre d'outils"
+
+#: index.docbook:185
+#, no-c-format
+msgid "The toolbar provides buttons for the commonly used functions."
+msgstr ""
+"La barre d'outils fournit des boutons pour les fonctions couramment "
+"utilisées."
+
+#: index.docbook:190
+#, no-c-format
+msgid "Toolbar Buttons"
+msgstr "Les boutons de la barre d'outils"
+
+#: index.docbook:193
+#, no-c-format
+msgid "Button"
+msgstr "Bouton"
+
+#: index.docbook:193
+#, no-c-format
+msgid "Name"
+msgstr "Nom"
+
+#: index.docbook:193
+#, no-c-format
+msgid "Action"
+msgstr "Action"
+
+#: index.docbook:200
+#, no-c-format
+msgid "<guiicon>New</guiicon>"
+msgstr "<guiicon>Nouveau</guiicon>"
+
+#: index.docbook:200
+#, no-c-format
+msgid ""
+"Resets the <quote>playground</quote> area. This cleans all parts off the "
+"playground so a new decoration may be created."
+msgstr ""
+"Réinitialise la zone <quote>de jeu</quote>. Ceci nettoie toutes parties du "
+"terrain de jeu afin de créer un nouveau tableau."
+
+#: index.docbook:200
+#, no-c-format
+msgid "Open"
+msgstr "Ouvrir"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Opens an existing tuberling file from the museum or from other folders."
+msgstr ""
+"Ouvre un fichier <quote>patate</quote> existant  depuis le musée ou dans "
+"d'autres dossiers."
+
+#: index.docbook:200
+#, no-c-format
+msgid "Save Button"
+msgstr "Bouton enregistrer"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Save"
+msgstr "Enregistrer"
+
+#: index.docbook:200
+#, no-c-format
+msgid ""
+"Saves your creation to your home folder, or to some other folder like the "
+"museum if you wish. The tuberling is saved to a small file where only the "
+"position of objects are saved."
+msgstr ""
+"Enregistre votre création dans votre dossier personnel, ou dans un autre "
+"répertoire comme le musée si vous le désirez. Le tableau est enregistré "
+"dans un petit fichier qui contient seulement les positions des objets."
+
+#: index.docbook:200
+#, no-c-format
+msgid "Print Button"
+msgstr "Bouton Imprimer"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Print"
+msgstr "Imprimer"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Prints your picture (&PostScript; format)."
+msgstr "Imprime votre image (au format &PostScript;)."
+
+#: index.docbook:200
+#, no-c-format
+msgid "Undo Button"
+msgstr "Bouton annuler"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Undo"
+msgstr "Annuler"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Undoes last operation."
+msgstr "Annule la dernière opération."
+
+#: index.docbook:200
+#, no-c-format
+msgid "Redo Button"
+msgstr "Bouton refaire"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Redo"
+msgstr "Refaire"
+
+#: index.docbook:200
+#, no-c-format
+msgid "Re-does last operation."
+msgstr "Refaire la dernière opération."
+
+#: index.docbook:344
+#, no-c-format
+msgid "The Menu Items"
+msgstr "Les éléments des menus"
+
+#: index.docbook:346
+#, no-c-format
+msgid "Menu Bar"
+msgstr "Barre de menu"
+
+#: index.docbook:357
+#, no-c-format
+msgid "The <guimenu>File</guimenu> Menu"
+msgstr "Le menu <guimenu>Fichier</guimenu>"
+
+#: index.docbook:358
+#, no-c-format
+msgid "<guimenu>File</guimenu> Menu"
+msgstr "Menu <guimenu>Fichier</guimenu>"
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>File</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Fichier</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:368
+#, no-c-format
+msgid "<action>Clears</action> the <quote>playground</quote> area"
+msgstr "<action>Réinitialise</action> la zone <quote>de jeu</quote>"
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> "
+"</shortcut> <guimenu>File</guimenu> <guimenuitem>Open</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> "
+"</shortcut> <guimenu>Fichier</guimenu> <guimenuitem>Ouvrir</guimenuitem>"
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<action>Opens an existing tuberling file</action> from the museum or from "
+"somewhere else if you wish."
+msgstr ""
+"<action>Ouvrir un fichier patate existant</action> depuis le musée ou "
+"d'ailleur si vous le souhaitez."
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> "
+"</shortcut> <guimenu>File</guimenu> <guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> "
+"</shortcut> <guimenu>Fichier</guimenu> <guimenuitem>Enregistrer</guimenuitem>"
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<action>Saves</action>"
+" your creation. The tuberling is saved to a small file where only the "
+"position of objects are saved."
+msgstr ""
+"<action>Enregistre</action> votre création. La <quote>atate</quote> est "
+"enregistrée dans un petit fichier qui contient les positions des objets."
+
+#: index.docbook:368
+#, no-c-format
+msgid "<guimenu>File</guimenu> <guimenuitem>Save as picture...</guimenuitem>"
+msgstr ""
+"<guimenu>Fichier</guimenu> <guimenuitem>Enregistrer comme une "
+"image...</guimenuitem>"
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<action>Creates a graphics file</action> containing a picture of your "
+"tuberling. Available file formats are XPM, JPEG, PNG and BMP."
+msgstr ""
+"<action>Crée un fichier graphique</action> contenant une image de votre "
+"tableau. Les formats de fichier disponibles sont XPM, JPEG, PNG et BMP. "
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo> "
+"</shortcut> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo> "
+"</shortcut> <guimenu>Fichier</guimenu> <guimenuitem>Imprimer</guimenuitem>"
+
+#: index.docbook:368
+#, no-c-format
+msgid "<action>Print</action> your tuberling picture using &PostScript; format."
+msgstr ""
+"<action>Imprime</action> votre image de <quote>patate</quote> en utilisant "
+"le format &PostScript;."
+
+#: index.docbook:368
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>File</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Fichier</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:368
+#, no-c-format
+msgid "<action>Quit</action> &ktuberling;."
+msgstr "<action>Quitte</action> &ktuberling;."
+
+#: index.docbook:448
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> Menu"
+msgstr "Le menu <guimenu>Édition</guimenu>"
+
+#: index.docbook:449
+#, no-c-format
+msgid "Edit Menu"
+msgstr "Menu Édition"
+
+#: index.docbook:459
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> "
+"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>C</keycap></keycombo> "
+"</shortcut> <guimenu>Édition</guimenu> <guimenuitem>Copier</guimenuitem>"
+
+#: index.docbook:459
+#, no-c-format
+msgid "<action>Copy</action> the <quote>playground</quote> area to the clipboard."
+msgstr "<action>Copie</action> la zone <quote>de jeu</quote> dans le presse papiers."
+
+#: index.docbook:459
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+"</shortcut> <guimenu>Édition</guimenu> <guimenuitem>Annuler</guimenuitem>"
+
+#: index.docbook:459
+#, no-c-format
+msgid "<action>Undo</action> the last <quote>object</quote> placement."
+msgstr "<action>Annule</action> le dernier <quote>objet</quote> placé."
+
+#: index.docbook:459
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Shift</keycap> "
+"<keycap>Z</keycap></keycombo> </shortcut> <guimenu>Edit</guimenu> "
+"<guimenuitem>Redo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Maj</keycap> "
+"<keycap>Z</keycap></keycombo> </shortcut> <guimenu>Édition</guimenu> "
+"<guimenuitem>Refaire</guimenuitem>"
+
+#: index.docbook:459
+#, no-c-format
+msgid ""
+"<action>Re-does</action> the last <quote>object</quote>"
+" placement. This menu option is active only if you have previously used "
+"<guilabel>Undo</guilabel>."
+msgstr ""
+"<action>Refait</action> le dernier<quote>objet</quote> placé. Ce menu "
+"optionnel est seulement actif si vous avez au préalable utilisé "
+"<guilabel>Annuler</guilabel>."
+
+#: index.docbook:505
+#, no-c-format
+msgid "The <guimenu>Options</guimenu> Menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:506
+#, no-c-format
+msgid "Options Menu"
+msgstr "Menu Option"
+
+#: index.docbook:516
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guimenuitem>Sound</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Son</guimenuitem>"
+
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"<action>Toggles sound on/off</action>. If <filename>artsd</filename> is not "
+"running, this menu item is disabled. You need to have kdemultimedia and OGG "
+"Vorbis rc3 installed to be able to hear sounds. &ktuberling; remembers last "
+"setting of this option the next time it starts up."
+msgstr ""
+"<action>Active ou désactive le son</action>. Si <filename>artsd</filename> "
+"n'est pas lancé, cet élément de menu est grisé. Il faut que "
+"kdemultimedia et OGG Vorbis rc3 soient installés pour que vous puissiez "
+"entendre les sons. &ktuberling; se souvient du dernier réglage de cette "
+"option la fois suivante qu'il est lancé."
+
+#: index.docbook:516
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guimenuitem>Potato Guy</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Monsieur Patate</guimenuitem>"
+
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"<action>Switches to potato playground</action>. &ktuberling; remembers the "
+"last chosen playground the next time it starts up."
+msgstr ""
+"<action>Choisit le terrain de jeu de la patate</action>. &ktuberling; se "
+"souvient du dernier terrain de jeu choisi la fois suivante qu'il est lancé."
+
+#: index.docbook:516
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guimenuitem>Penguin</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Pingouin</guimenuitem>"
+
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"<action>Switches to penguin playground</action>. &ktuberling; remembers the "
+"last chosen playground the next time it starts up."
+msgstr ""
+"<action>Choisit le terrain de jeu du pingouin</action>. &ktuberling; se "
+"souvient du dernier terrain de jeu choisi la fois suivante qu'il est lancé."
+
+#: index.docbook:553
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "Le menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:554
+#, no-c-format
+msgid "Help Menu"
+msgstr "Menu Aide"
+
+#: index.docbook:573
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et Licence"
+
+#: index.docbook:575
+#, no-c-format
+msgid "&ktuberling;"
+msgstr "&ktuberling;"
+
+#: index.docbook:577
+#, no-c-format
+msgid "John Calhoun - Original idea, original pictures and English sounds"
+msgstr "John Calhoun - Idée originale, images originelles et sons en anglais"
+
+#: index.docbook:577
+#, no-c-format
+msgid "Eric Bischoff <email>ebisch@cybercable.tm.fr</email> - &kde; Programming"
+msgstr "Éric Bischoff <email>ebisch@cybercable.tm.fr</email> - programmation &kde;"
+
+#: index.docbook:577
+#, no-c-format
+msgid ""
+"Fran&ccedil;ois-xavier Duranceau <email>duranceau@free.fr</email> - Tests, "
+"advice and help"
+msgstr ""
+"François-Xavier Duranceau <email>duranceau@free.fr</email>"
+" - tests, conseil et aide"
+
+#: index.docbook:577
+#, no-c-format
+msgid ""
+"Agnieszka Czajkowska <email>agnieszka@imagegalaxy.de</email> - Penguin "
+"graphics"
+msgstr ""
+"Agnieszka Czajkowska <email>agnieszka@imagegalaxy.de</email>"
+" - Graphismes du pingoin"
+
+#: index.docbook:577
+#, no-c-format
+msgid "Bas Willems <email>next@euronet.nl</email> - Graphics reworks"
+msgstr "Bas Willems <email>next@euronet.nl</email> - Amélioration des graphismes"
+
+#: index.docbook:577
+#, no-c-format
+msgid "Roger Larsson <email>roger.larsson@norran.net</email> - Sounds tuning"
+msgstr "Roger Larsson <email>roger.larsson@norran.net</email> - Réglage des sons"
+
+#: index.docbook:577
+#, no-c-format
+msgid ""
+"Peter Silva <email>peter.silva@videotron.ca</email> - Proofreading of the "
+"documentation"
+msgstr ""
+"Peter Silva <email>peter.silva@videotron.ca</email> - relecture de la "
+"documentation"
+
+#: index.docbook:577
+#, no-c-format
+msgid "Paul Ahlquist <email>pea@ahlquist.org</email> - Bettering of documentation"
+msgstr ""
+"Peter Silva <email>peter.silva@videotron.ca</email> - Amélioration de la "
+"documentation"
+
+#: index.docbook:616
+#, no-c-format
+msgid "This game is dedicated to my little daughter Sunniva Bischoff"
+msgstr "Ce jeu est dédié à ma petit fille Sunniva Bischoff"
+
+#: index.docbook:618
+#, no-c-format
+msgid ""
+"Thanks to Apple Computer and to the &LinuxPPC; project for having made ports "
+"of &Linux; to the &Mac;. &ktuberling; would never have existed without that!"
+msgstr ""
+"Remerciements à Apple Computer et au projet &LinuxPPC; pour avoir porté "
+"&Linux; sur &Mac;.&ktuberling; n'aurais jamais existé sans ça&nbsp;!"
+
+#: index.docbook:622
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para> Traduction française par Benoit "
+"Cosandier<email>cosandier.benoit@bluewin.ch</email> </para> <para>"
+" Relecture par Ludovic Grossard "
+"<email>ludovic.grossard@libertysurf.fr</email> </para>"
+
+#: index.docbook:631
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:634
+#, no-c-format
+msgid "How to obtain <application>ktuberling</application>"
+msgstr "Comment obtenir <application>ktuberling</application>"
+
+#: index.docbook:641
+#, no-c-format
+msgid "Requirements"
+msgstr "Pré-requis"
+
+#: index.docbook:643
+#, no-c-format
+msgid ""
+"In order to successfully compile &ktuberling;, you need &kde; 3.0. All "
+"required libraries as well as &ktuberling; itself can be found on &kde-ftp;."
+msgstr ""
+
+#: index.docbook:648
+#, no-c-format
+msgid ""
+"To be able to hear the sounds, you need to have kdemultimedia and OGG Vorbis "
+"rc3 installed."
+msgstr ""
+"Pour pouvoir entendre les sons, il vous faut installer kdemultimedia ainsi "
+"que OGG Vorbis rc3."
+
+#: index.docbook:655
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"
+
+#, fuzzy
+#~ msgid ""
+#~ "In order to successfully compile &ktuberling;, you need the latest "
+#~ "versions of <filename>libkdecore</filename>, <filename>libkdeui</"
+#~ "filename>, <filename>libkfile</filename>, and <filename>libkfm</"
+#~ "filename>. All required libraries as well as &ktuberling; itself can be "
+#~ "found on <ulink url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/"
+#~ "kde/</ulink>."
+#~ msgstr ""
+#~ "Pour compiler avec succès &ktuberling;, vous devez avoir la dernière "
+#~ "version de <filename>libkdecore</filename>, <filename>libkdeui</"
+#~ "filename>, <filename>libkfile</filename> et <filename>libkfm</filename>. "
+#~ "Toutes les bibliothèques requises, ainsi que &ktuberling; lui même "
+#~ "peuvent être trouvés sur <ulink url=\"ftp://ftp.kde.org/pub/kde/\">ftp://"
+#~ "ftp.kde.org/pub/kde/</ulink>."

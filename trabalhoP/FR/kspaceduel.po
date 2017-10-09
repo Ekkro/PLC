@@ -1,0 +1,1470 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-19 13:58CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "The &kspaceduel; Handbook"
+msgstr "Le manuel de &kspaceduel;"
+
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<firstname>Andreas </firstname> <surname>Zehender</surname> <affiliation> "
+"<address><email>az@azweb.de</email></address> </affiliation>"
+msgstr ""
+"<firstname>Andreas</firstname> <surname>Zehender</surname> <affiliation> "
+"<address><email>az@azweb.de</email></address> </affiliation>"
+
+#: index.docbook:22
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Éric</firstname><surname>Bischoff</surname>"
+"<affiliation><address><email>eric@caldera.de</email></address></affiliation>"
+"<contrib>Traduction française</contrib></othercredit><othercredit "
+"role=\"reviewer\"><firstname>Gérard</firstname><surname>Delafond</surname>"
+"<affiliation><address><email>g.delafond@medsyn.fr</email></address>"
+"</affiliation><contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:26
+#, no-c-format
+msgid "Andreas Zehender"
+msgstr "Andreas Zehender"
+
+#: index.docbook:35
+#, no-c-format
+msgid "&kspaceduel; is an space arcade game."
+msgstr "&kspaceduel; est un jeu d'arcade dans l'espace."
+
+#: index.docbook:36
+#, no-c-format
+msgid "Two ships fly around the sun and try to shoot eachother."
+msgstr ""
+"Deux vaisseaux volent autour du Soleil en essayant mutuellement de se tirer "
+"dessus."
+
+#: index.docbook:41
+#, no-c-format
+msgid "Space duel"
+msgstr "duel de l'espace"
+
+#: index.docbook:42
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:43
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:44
+#, no-c-format
+msgid "ships"
+msgstr "vaisseaux spatiaux"
+
+#: index.docbook:45
+#, no-c-format
+msgid "shooting"
+msgstr "arcade"
+
+#: index.docbook:51
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:53
+#, no-c-format
+msgid "&kspaceduel; is an space arcade game for two players."
+msgstr "&kspaceduel; est un jeu d'arcade dans l'espace à deux joueurs."
+
+#: index.docbook:55
+#, no-c-format
+msgid ""
+"Each player controls a ship that flies around the sun and tries to shoot at "
+"the other ship. You can play &kspaceduel; with another person, against the "
+"computer, or you can have the computer control both ships and play each "
+"other."
+msgstr ""
+"Chaque joueur contrôle un vaisseau qui vole autour du Soleil et essaye de "
+"tirer sur l'autre vaisseau. Vous pouvez jouer à &kspaceduel; contre une "
+"autre personne, contre l'ordinateur ou laisser l'ordinateur contrôler les "
+"deux vaisseaux"
+
+#: index.docbook:63
+#, no-c-format
+msgid "The Game"
+msgstr "Le jeu"
+
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"The idea of the game is simple (but addictive). You try to destroy your "
+"opponent before he destroys you."
+msgstr ""
+"L'idée du jeu est simple (mais prenante). Vous essayez de détruire votre "
+"adversaire avant qu'il ne vous détruise."
+
+#: index.docbook:65
+#, no-c-format
+msgid "Be careful not to hit the sun."
+msgstr "Soyez attentif à ne pas heurter le Soleil."
+
+#: index.docbook:67
+#, no-c-format
+msgid "Rules of the Game"
+msgstr "Règles du jeu"
+
+#: index.docbook:69
+#, no-c-format
+msgid "Ship Movement"
+msgstr "Déplacements du vaisseau"
+
+#: index.docbook:70
+#, no-c-format
+msgid "Each player controls one ship."
+msgstr "Chaque joueur contrôle un vaisseau."
+
+#: index.docbook:71
+#, no-c-format
+msgid "The ships can rotate, accelerate, shoot and lay mines."
+msgstr "Les vaisseaux peuvent tourner, accélérer, tirer et déposer des mines."
+
+#: index.docbook:75
+#, no-c-format
+msgid "Energy"
+msgstr "Énergie"
+
+#: index.docbook:77
+#, no-c-format
+msgid "Each ship has an amount of energy (refer to the game options for values)."
+msgstr ""
+"Chaque vaisseau dispose d'un certain montant d'énergie (voir les options de "
+"jeu pour en connaître la valeur)."
+
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"Ships need energy for rotation, acceleration, shooting and laying mines. A "
+"ship gets energy from its solar panels. The amount of energy a ship gets "
+"depends on the distance from and direction to the sun. A ship gets more "
+"energy near the sun and less energy near the border. It gets the full amount "
+"of energy if the sun shines directly on the panels and less or even no "
+"energy if the sun shines at an angle to the panel or to the side of the "
+"panel."
+msgstr ""
+"Les vaisseaux ont besoin d'énergie pour tourner, accélérer, tirer et "
+"déposer des mines. Un vaisseau obtient de l'énergie de ses panneaux "
+"solaires. La quantité d'énergie ainsi obtenue dépend de la distance au "
+"Soleil et de la direction de ce dernier. Un vaisseau obtient plus d'énergie "
+"au voisinage du Soleil et moins aux frontières du jeu. Il reçoit une "
+"quantité d'énergie maximale si le Soleil brille directement sur les "
+"panneaux et moins ou même pas du tout d'énergie si le Soleil brille "
+"transversalement ou perpendiculairement par rapport au panneau."
+
+#: index.docbook:87
+#, no-c-format
+msgid "If a ship has no energy it can't navigate or shoot."
+msgstr "Si un vaisseau ne dispose plus d'énergie, il ne peut ni manoeuvrer ni tirer."
+
+#: index.docbook:92
+#, no-c-format
+msgid "Hit points"
+msgstr "Points de vie"
+
+#: index.docbook:94
+#, no-c-format
+msgid ""
+"Collisions with own or other bullets or mines decrease the hit points of a "
+"ship. If two ships collide, the weaker ship is destroyed and the hit points "
+"of the stronger ship are decreased by the hit points of the weaker ship plus "
+"an amount (Crash Damage). A ship is destroyed when it flies into the sun."
+msgstr ""
+"Les impacts avec ses propres balles, celles de l'ennemi ou les mines "
+"diminuent les points de vie du vaisseau. Si les deux vaisseaux entrent en "
+"collision, le vaisseau le plus faible est détruit et les points de vie du "
+"plus fort sont diminués des points de vie du plus faible ainsi que d'une "
+"valeur fixe (Dégâts de Crash). Un vaisseau est détruit s'il s'abîme dans "
+"le Soleil."
+
+#: index.docbook:102
+#, no-c-format
+msgid "Bullets and Mines"
+msgstr "Balles et Mines"
+
+#: index.docbook:104
+#, no-c-format
+msgid "Bullets fly around the sun like a ship."
+msgstr "Les balles sont en orbite autour du Soleil comme un vaisseau."
+
+#: index.docbook:106
+#, no-c-format
+msgid ""
+"Mines have an amount of energy to stay at the same position. When the energy "
+"is spent, the mine falls into the sun. Mines near the sun need more energy "
+"than those which are further away."
+msgstr ""
+"Les mines disposent d'énergie pour rester en place au même endroit. Quant "
+"cette énergie est dépensée, la mine tombe dans le Soleil. Les mines "
+"proches du Soleil consomment plus d'énergie que celles qui en sont plus "
+"loin."
+
+#: index.docbook:110
+#, no-c-format
+msgid "Mines can be destroyed with bullets."
+msgstr "Les mines peuvent être détruites par les balles."
+
+#: index.docbook:112
+#, no-c-format
+msgid "By default a ship can have 5 bullets and 3 mines on the screen."
+msgstr ""
+"Par défaut, un vaisseau peut placer au maximum 5 balles et 3 mines à "
+"l'écran."
+
+#: index.docbook:117 index.docbook:414
+#, no-c-format
+msgid "Powerups"
+msgstr "Bonus"
+
+#: index.docbook:119
+#, no-c-format
+msgid "From time to time powerups appear on the play field."
+msgstr "De temps en temps, des bonus apparaissent sur le terrain de jeu."
+
+#: index.docbook:121
+#, no-c-format
+msgid "There are four different powerups:"
+msgstr "Il y a quatre bonus différents&nbsp;:"
+
+#: index.docbook:123 index.docbook:316
+#, no-c-format
+msgid "Mine"
+msgstr "Mine"
+
+#: index.docbook:123
+#, no-c-format
+msgid "The maximum number of mines is increased for the player."
+msgstr "Le nombre maximal de mines est augmenté pour le joueur."
+
+#: index.docbook:123 index.docbook:283
+#, no-c-format
+msgid "Bullet"
+msgstr "Balles"
+
+#: index.docbook:123
+#, no-c-format
+msgid "The maximum number of bullets is increased for the player."
+msgstr "Le nombre maximal de balles est augmenté pour le joueur."
+
+#: index.docbook:123
+#, no-c-format
+msgid "Energy (yellow sphere)"
+msgstr "Énergie (sphère jaune)"
+
+#: index.docbook:123
+#, no-c-format
+msgid "The player gets energy."
+msgstr "Le joueur obtient de l'énergie."
+
+#: index.docbook:123
+#, no-c-format
+msgid "Shield (blue sphere)"
+msgstr "Bouclier (sphère bleue)"
+
+#: index.docbook:123
+#, no-c-format
+msgid "The player gets hit points"
+msgstr "Le joueur obtient des points de vie"
+
+#: index.docbook:147
+#, no-c-format
+msgid "The &kspaceduel; screen"
+msgstr "L'écran de &kspaceduel;"
+
+#: index.docbook:149
+#, no-c-format
+msgid "&kspaceduel; Main Screen"
+msgstr "Écran principal de &kspaceduel;"
+
+#: index.docbook:157
+#, no-c-format
+msgid ""
+"You can see that the central part of the &kspaceduel; screen is the playing "
+"area. To the left and the right are the Red Player's and the Blue Player's "
+"stats."
+msgstr ""
+"Vous pouvez voir que la partie centrale de l'écran de &kspaceduel; est la "
+"zone de jeu. À gauche et à droite se situent les scores du joueur rouge et "
+"du joueur bleu."
+
+#: index.docbook:160
+#, no-c-format
+msgid ""
+"The top box on the player stats, represents the <quote>Hit Points</quote>"
+" of the craft."
+msgstr ""
+"La boîte du haut des scores du joueur représente les <quote>Points de "
+"vie</quote> du vaisseau."
+
+#: index.docbook:162
+#, no-c-format
+msgid "The middle box on the player stats, represents the battery power."
+msgstr "La boîte du milieu représente l'énergie de la batterie."
+
+#: index.docbook:163
+#, no-c-format
+msgid "The bottom box on the player stats, shows the number of wins."
+msgstr "La boîte du bas affiche le nombre de manches gagnées."
+
+#: index.docbook:164
+#, no-c-format
+msgid "The top of the playing area is occupied by the menubar and toolbar."
+msgstr ""
+"Le haut de la zone de jeu est occupée par la barre de menus et la barre "
+"d'outils."
+
+#: index.docbook:165
+#, no-c-format
+msgid "The bottom of the playing area is the status bar."
+msgstr "Le bas de la zone de jeu est la barre d'état."
+
+#: index.docbook:171
+#, no-c-format
+msgid "Game Options"
+msgstr "Options de jeu"
+
+#: index.docbook:173
+#, no-c-format
+msgid ""
+"&kspaceduel; has many, many options you can adjust to increase the enjoyment "
+"of this game."
+msgstr ""
+"&kspaceduel; a beaucoup beaucoup d'options que vous pouvez ajuster pour "
+"augmenter le plaisir de ce jeu."
+
+#: index.docbook:175
+#, no-c-format
+msgid ""
+"All of the game options can be changed using the <guimenu>Settings</guimenu>"
+" menu."
+msgstr ""
+"Toutes les options du jeu peuvent être changées en utilisant le menu "
+"<guimenu>Configuration</guimenu>."
+
+#: index.docbook:178
+#, no-c-format
+msgid "Configuration is divided into 5 sections:"
+msgstr "La configuration est divisée en 5 sections&nbsp;:"
+
+#: index.docbook:180
+#, no-c-format
+msgid "Player Keys"
+msgstr "Touches des joueurs"
+
+#: index.docbook:180
+#, no-c-format
+msgid "Game"
+msgstr "Jeu"
+
+#: index.docbook:180 index.docbook:442
+#, no-c-format
+msgid "Handicap"
+msgstr "Handicap"
+
+#: index.docbook:180 index.docbook:452
+#, no-c-format
+msgid "Graphics"
+msgstr "Affichage"
+
+#: index.docbook:180
+#, no-c-format
+msgid "<link linkend=\"ai\">AI</link>"
+msgstr "<link linkend=\"ai\">IA</link>"
+
+#: index.docbook:189
+#, no-c-format
+msgid "Keys"
+msgstr "Touches"
+
+#: index.docbook:191
+#, no-c-format
+msgid ""
+"&kspaceduel; has a default set of keys to control the game. For a list of "
+"default keys see the section entitled <link linkend=\"keys\">Default key "
+"bindings</link>."
+msgstr ""
+"&kspaceduel; possède un lot de touches par défaut pour contrôler le jeu. "
+"Voir la liste des touches par défaut à la section intitulée <link "
+"linkend=\"keys\">Raccourcis-clavier par défaut </link>."
+
+#: index.docbook:195
+#, no-c-format
+msgid "Keys can be configured by:"
+msgstr "On peut configurer les touches en&nbsp;:"
+
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"Selecting <menuchoice> <guimenu>Settings</guimenu><guimenuitem>Player "
+"Keys...</guimenuitem> </menuchoice> from the menubar."
+msgstr ""
+"Sélectionnant <menuchoice> "
+"<guimenu>Configuration</guimenu><guimenuitem>Touches des "
+"joueurs...</guimenuitem> </menuchoice> dans la barre de menus."
+
+#: index.docbook:200 index.docbook:477
+#, no-c-format
+msgid "This will bring up a dialog box."
+msgstr "Ceci ouvrira une boîte de dialogue."
+
+#: index.docbook:202
+#, no-c-format
+msgid "Configure Player Keys"
+msgstr "Configuration des touches"
+
+#: index.docbook:210
+#, no-c-format
+msgid ""
+"You can see that each player (Red and Blue), have 5 keystrokes corresponding "
+"to Rotate Left, Rotate Right, Accelerate, Shot, and Mines."
+msgstr ""
+"Vous pouvez voir que chaque joueur (Rouge et bleu) a 5 touches, "
+"correspondant à Tourner vers la gauche, Tourner vers la droite, "
+"Accélérer, Tirer et Mines."
+
+#: index.docbook:213
+#, no-c-format
+msgid ""
+"To change a key, click on the button for the correct player. Then press the "
+"key you want for that control."
+msgstr ""
+"Pour changer une touche, cliquez sur le bouton du joueur désiré, puis, "
+"appuyez sur la touche que vous voulez pour cette action."
+
+#: index.docbook:216
+#, no-c-format
+msgid ""
+"When the key is detected, it will show the new key in the box to the right "
+"of the button."
+msgstr ""
+"Quand la touche est détectée, il s'affichera la nouvelle touche dans la "
+"boîte située à droite du bouton."
+
+#: index.docbook:219
+#, no-c-format
+msgid ""
+"When you are finished configuring your keys, you should click on "
+"<guibutton>OK</guibutton> to apply your changes."
+msgstr ""
+"Quand vous avez fini de configurer vos touches, il faut cliquer sur "
+"<guibutton>OK </guibutton> pour appliquer vos changements."
+
+#: index.docbook:222
+#, no-c-format
+msgid ""
+"If you want to restore the default keys, simply click on the "
+"<guibutton>Default</guibutton>"
+" button once. To make these changes permenant, press "
+"<guibutton>OK</guibutton>."
+msgstr ""
+"Si vous voulez revenir aux réglages par défaut, cliquez simplement sur le "
+"bouton <guibutton>Par défaut</guibutton>. Pour rendre ces changements "
+"permanents, cliquez sur <guibutton>OK</guibutton>."
+
+#: index.docbook:226
+#, no-c-format
+msgid ""
+"If you want to abandon the changes you made, and return to your previously "
+"selected keys, simply click <guibutton>Cancel</guibutton>, and your changes "
+"will be lost."
+msgstr ""
+"Si vous voulez annuler les changements que vous avez faits et retourner aux "
+"touches précédemment sélectionnées, cliquez simplement sur "
+"<guibutton>Annuler</guibutton>, et vos changements seront perdus."
+
+#: index.docbook:233
+#, no-c-format
+msgid "Game Configuration"
+msgstr "Configuration du jeu"
+
+#: index.docbook:235
+#, no-c-format
+msgid "All game settings of &kspaceduel; are configurable."
+msgstr "Tous les réglages de jeu de &kspaceduel; sont configurables."
+
+#: index.docbook:237
+#, no-c-format
+msgid ""
+"If you want to change the game settings, simply select "
+"<menuchoice><guimenu>Settings</guimenu><guimenuitem>Game...</guimenuitem> "
+"</menuchoice> from the menubar."
+msgstr ""
+"Si vous voulez changer les réglages de jeu, sélectionnez simplement "
+"<menuchoice><guimenu>Configuration</guimenu><guimenuitem>Jeu...</guimenuitem>"
+" </menuchoice> dans la barre de menus."
+
+#: index.docbook:241
+#, no-c-format
+msgid "This will bring up a dialog box with 7 tabs across the top."
+msgstr "Ceci ouvrira une boîte de dialogue avec 7 onglets."
+
+#: index.docbook:243
+#, no-c-format
+msgid ""
+"Settings are collected in different configurations. You can choose from "
+"several pre-defined configurations."
+msgstr ""
+"Les réglages sont réunis en différentes configurations. Vous pouvez "
+"choisir parmi plusieurs configurations pré définies."
+
+#: index.docbook:246
+#, no-c-format
+msgid ""
+"If you choose the <guilabel>Custom</guilabel> configuration, you can define "
+"all settings for yourself."
+msgstr ""
+"Si vous choisissez <guilabel>Personnalisé</guilabel>, vous pouvez définir "
+"tous les réglages vous-même."
+
+#: index.docbook:249
+#, no-c-format
+msgid ""
+"If you have not selected <guilabel>Custom</guilabel>, you will not be able "
+"to make any changes to these options."
+msgstr ""
+"Si vous n'avez pas sélectionné <guilabel>Personnalisé</guilabel>"
+", vous ne pourrez pas faire de changement à ces options."
+
+#: index.docbook:252
+#, no-c-format
+msgid ""
+"If you have found an interesting configuration, mail it to the author of the "
+"game. It can be implemented in a future version (send the part [Game] in the "
+"file <filename>~/.kde/share/config/kspaceduelrc</filename>)."
+msgstr ""
+"Si vous avez trouvé une configuration intéressante, envoyez-la par "
+"courrier électronique à l'auteur du jeu. Elle pourra être intégrée à "
+"une version future (envoyez la partie [Game] du fichier "
+"<filename>~/.kde/share/config/kspaceduelrc </filename>)."
+
+#: index.docbook:257
+#, no-c-format
+msgid ""
+"When you are finished altering the options, you should click on "
+"<guibutton>OK</guibutton> to apply your changes."
+msgstr ""
+"Quand vous avez fini de modifier les options, vous devrez cliquer sur "
+"<guibutton>OK</guibutton> pour appliquer vos changements."
+
+#: index.docbook:260
+#, no-c-format
+msgid ""
+"If you want to restore the default, simply click on the "
+"<guibutton>Default</guibutton>"
+" button once. To make these changes permenant, press "
+"<guibutton>OK</guibutton>."
+msgstr ""
+"Si vous voulez revenir aux réglages par défaut, cliquez simplement sur le "
+"bouton <guibutton>Par défaut</guibutton>. Pour rendre ces changements "
+"permanents, cliquez sur le bouton <guibutton>OK</guibutton>."
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"If you want to abandon the changes you made, and return to your previous "
+"options, simply click <guibutton>Cancel</guibutton>, and your changes will "
+"be lost."
+msgstr ""
+"Si vous voulez annuler les changements que vous avez faits et retourner aux "
+"touches précédemment sélectionnées, cliquez simplement sur "
+"<guibutton>Annuler</guibutton>, et vos changements seront perdus."
+
+#: index.docbook:268
+#, no-c-format
+msgid "The settings are:"
+msgstr "Les réglages sont&nbsp;:"
+
+#: index.docbook:271
+#, no-c-format
+msgid "General"
+msgstr "Général"
+
+#: index.docbook:273
+#, no-c-format
+msgid "Game speed"
+msgstr "Rapidité du jeu"
+
+#: index.docbook:273
+#, no-c-format
+msgid "Controls the speed of the whole game."
+msgstr "Contrôle la vitesse de l'ensemble du jeu."
+
+#: index.docbook:285
+#, no-c-format
+msgid "Shot speed"
+msgstr "Vitesse de tir"
+
+#: index.docbook:285
+#, no-c-format
+msgid "The speed of bullets"
+msgstr "La vitesse des balles"
+
+#: index.docbook:285 index.docbook:318 index.docbook:352
+#, no-c-format
+msgid "Energy need"
+msgstr "Besoin d'énergie"
+
+#: index.docbook:285
+#, no-c-format
+msgid "The amount of energy needed for one shot."
+msgstr "La quantité d'énergie nécessaire à un tir."
+
+#: index.docbook:285 index.docbook:318
+#, no-c-format
+msgid "Max number"
+msgstr "Nombre maximum"
+
+#: index.docbook:285
+#, no-c-format
+msgid "The maximum number of bullets a player can have on the screen."
+msgstr "Le nombre maximum de balles qu'un joueur peut avoir à l'écran."
+
+#: index.docbook:285 index.docbook:318
+#, no-c-format
+msgid "Damage"
+msgstr "Dégâts"
+
+#: index.docbook:285
+#, no-c-format
+msgid "The number of hit points damage done when a bullet hits a ship."
+msgstr "Le nombre de points marqués lorsqu'une balle atteint un vaisseau."
+
+#: index.docbook:285 index.docbook:416
+#, no-c-format
+msgid "Life time"
+msgstr "Durée de vie"
+
+#: index.docbook:285
+#, no-c-format
+msgid "The maximum life time of a bullet."
+msgstr "La durée maximale de vie d'une balle."
+
+#: index.docbook:285 index.docbook:318
+#, no-c-format
+msgid "Reload time"
+msgstr "Délai de recharge"
+
+#: index.docbook:285
+#, no-c-format
+msgid "The time a ship needs to reload a bullet."
+msgstr "Le temps dont un vaisseau a besoin pour recharger une balle."
+
+#: index.docbook:318
+#, no-c-format
+msgid "Mine fuel"
+msgstr "Essence par mine"
+
+#: index.docbook:318
+#, no-c-format
+msgid "The amount of fuel on a mine."
+msgstr "La quantité d'essence sur une mine."
+
+#: index.docbook:318
+#, no-c-format
+msgid "The amount of energy needed for laying a mine."
+msgstr "La quantité d'énergie nécessaire pour déposer une mine."
+
+#: index.docbook:318
+#, no-c-format
+msgid "Activate time"
+msgstr "Temps d'activation"
+
+#: index.docbook:318
+#, no-c-format
+msgid "The time a mine is inactive."
+msgstr "Le temps qu'une mine est inactive."
+
+#: index.docbook:318
+#, no-c-format
+msgid "The number of hit points of damage done when a ship hits a mine."
+msgstr ""
+"Le nombre de points de dommages occasionnés quand un vaisseau heurte une "
+"mine."
+
+#: index.docbook:318
+#, no-c-format
+msgid "Maximum number of mines a player can have on the screen."
+msgstr "Le nombre maximal de mines qu'un joueur peut avoir à l'écran."
+
+#: index.docbook:318
+#, no-c-format
+msgid "The time a ship needs to reload a mine."
+msgstr "Le temps dont un vaisseau a besoin pour recharger une mine."
+
+#: index.docbook:350
+#, no-c-format
+msgid "Ship"
+msgstr "Vaisseau"
+
+#: index.docbook:352
+#, no-c-format
+msgid "Acceleration"
+msgstr "Accélération"
+
+#: index.docbook:352
+#, no-c-format
+msgid "Acceleration of the ships"
+msgstr "L'accélération des vaisseaux"
+
+#: index.docbook:352
+#, no-c-format
+msgid "The energy needed to accelerate a ship."
+msgstr "L'énergie nécessaire pour accélérer un vaisseau."
+
+#: index.docbook:352
+#, no-c-format
+msgid "Rotation speed"
+msgstr "Vitesse de rotation"
+
+#: index.docbook:352
+#, no-c-format
+msgid "The speed at which a ship rotates."
+msgstr "La vitesse à laquelle un vaisseau tourne."
+
+#: index.docbook:352
+#, no-c-format
+msgid "The energy needed to rotate a ship."
+msgstr "L'énergie nécessaire pour faire tourner un vaisseau."
+
+#: index.docbook:352
+#, no-c-format
+msgid "Crash damage"
+msgstr "Dégâts de collision"
+
+#: index.docbook:352
+#, no-c-format
+msgid "The number of hit points damage done when two ships collide."
+msgstr "Le nombre de points de dégâts obtenus lors d'une collision."
+
+#: index.docbook:379
+#, no-c-format
+msgid "<guilabel>Sun</guilabel>"
+msgstr "<guilabel>Soleil</guilabel>"
+
+#: index.docbook:381
+#, no-c-format
+msgid "Sun energy"
+msgstr "Énergie solaire"
+
+#: index.docbook:381
+#, no-c-format
+msgid ""
+"The strength of the sun. The higher the value, the quicker ships will be "
+"recharged."
+msgstr ""
+"L'énergie du Soleil. Plus la valeur est haute, plus vite les vaisseaux se "
+"rechargeront."
+
+#: index.docbook:381
+#, no-c-format
+msgid "Gravity"
+msgstr "Force de gravité"
+
+#: index.docbook:381
+#, no-c-format
+msgid "The strength of the gravitational pull of the sun."
+msgstr "La force d'attraction gravitationnelle du Soleil."
+
+#: index.docbook:397
+#, no-c-format
+msgid "Start"
+msgstr "Démarrage"
+
+#: index.docbook:399
+#, no-c-format
+msgid "<guilabel>Position X</guilabel> and <guilabel>Position Y</guilabel>"
+msgstr "<guilabel>Position X</guilabel> et  <guilabel>Position Y</guilabel>"
+
+#: index.docbook:399
+#, no-c-format
+msgid ""
+"The ships position at the beginning of a new round. The ships start at "
+"opposite sides of the sun."
+msgstr ""
+"la position de vaisseau au début d'une manche. Les vaisseaux démarrent à "
+"des emplacements opposés du Soleil."
+
+#: index.docbook:399
+#, no-c-format
+msgid "<guilabel>Velocity X</guilabel> and <guilabel>Velocity Y</guilabel>"
+msgstr "<guilabel>Vitesse X</guilabel> et <guilabel>Vitesse Y</guilabel>"
+
+#: index.docbook:399
+#, no-c-format
+msgid "Velocity at the beginning of a new round."
+msgstr "La vitesse au début d'un round."
+
+#: index.docbook:416
+#, no-c-format
+msgid "Appearance time"
+msgstr "Délai d'apparition"
+
+#: index.docbook:416
+#, no-c-format
+msgid "Maximal time between the appearance of two powerups."
+msgstr "Durée maximale entre l'apparition de bonus."
+
+#: index.docbook:416
+#, no-c-format
+msgid "Maximal life time of a powerup."
+msgstr "Durée de vie maximale d'un bonus."
+
+#: index.docbook:416
+#, no-c-format
+msgid "Energy amount"
+msgstr "Quantité d'énergie"
+
+#: index.docbook:416
+#, no-c-format
+msgid "Amount of energy a player gets from an energy powerup."
+msgstr "quantité d'énergie qu'un joueur obtient d'un bonus d'énergie."
+
+#: index.docbook:416
+#, no-c-format
+msgid "Shield amount"
+msgstr "Quantité de bouclier"
+
+#: index.docbook:416
+#, no-c-format
+msgid "Amount of hit points a player gets from a shield powerup."
+msgstr "Quantité de points de vie qu'un joueur obtient d'un bonus de protection."
+
+#: index.docbook:444
+#, no-c-format
+msgid ""
+"You can specify the number of hit points each player has at the begin of a "
+"new round by selecting <menuchoice> "
+"<guimenu>Options</guimenu><guimenuitem>Handicap...</guimenuitem> "
+"</menuchoice> from the menubar."
+msgstr ""
+"Vous pouvez spécifier le nombre de points de vie que chaque joueur a au "
+"début d'un nouveau round en sélectionnant <menuchoice> "
+"<guimenu>Options</guimenu><guimenuitem>Handicap...</guimenuitem> "
+"</menuchoice> de la barre de menus."
+
+#: index.docbook:454
+#, no-c-format
+msgid "Refresh time"
+msgstr "Délai de rafraîchissement"
+
+#: index.docbook:454
+#, no-c-format
+msgid ""
+"Time between two screen refreshes in milliseconds. All other settings are "
+"independent of the refresh time."
+msgstr ""
+"Délai entre deux rafraîchissement en millisecondes. Tous les autres "
+"réglages sont indépendants du délai de rafraîchissement."
+
+#: index.docbook:467
+#, no-c-format
+msgid "<guilabel>AI</guilabel>"
+msgstr "<guilabel>IA</guilabel>"
+
+#: index.docbook:469
+#, no-c-format
+msgid ""
+"Each ship can be controlled by the computer. You can choose a difficulty for "
+"each ship."
+msgstr ""
+"Chaque vaisseau peut être contrôlé par l'ordinateur (IA=Intelligence "
+"Artificielle). Vous pouvez choisir un niveau pour chaque vaisseau."
+
+#: index.docbook:471
+#, no-c-format
+msgid ""
+"The <abbrev>AI</abbrev> is optimized for the default config, but can mamage "
+"with other configs. Just try..."
+msgstr ""
+"L'<abbrev>IA</abbrev>"
+" est optimisée pour la configuration par défaut, mais peut gérer d'autres "
+"configurations. Essayez..."
+
+#: index.docbook:473
+#, no-c-format
+msgid ""
+"To alter the <acronym>AI</acronym> settings on either or both players, "
+"simply select <menuchoice><guimenu>Settings</guimenu> "
+"<guimenuitem>AI...</guimenuitem> </menuchoice> from the menubar."
+msgstr ""
+"Pour changer les réglages d'<acronym>IA</acronym> pour un joueur ou les "
+"deux, sélectionnez simplement <menuchoice><guimenu>Configuration</guimenu> "
+"<guimenuitem>IA...</guimenuitem> </menuchoice> dans la barre de menus."
+
+#: index.docbook:479
+#, no-c-format
+msgid "<acronym>AI</acronym> Configure Dialog"
+msgstr "Configuration de l'<acronym>IA</acronym>"
+
+#: index.docbook:487
+#, no-c-format
+msgid ""
+"For each player, there is a check box labled <guilabel>Player is "
+"AI</guilabel>. If this box is checked, the computer will control that ship."
+msgstr ""
+"Pour chaque joueur, il y a une case à cocher étiquetée <guilabel>Le "
+"joueur est l'IA</guilabel>. Si la case est cochée, l'ordinateur aura le "
+"contrôle de ce vaisseau."
+
+#: index.docbook:491
+#, no-c-format
+msgid ""
+"Below that, is a drop down box, with several levels of <acronym>AI</acronym>"
+" <guilabel>intelligence</guilabel>"
+". Select the level that is appropriate for you."
+msgstr ""
+"Au-dessous, il y a une liste déroulante, avec plusieurs niveaux "
+"d'<acronym>IA</acronym> <guilabel>Niveau</guilabel>"
+". Sélectionnez le niveau adapté à vos besoins."
+
+#: index.docbook:495
+#, no-c-format
+msgid ""
+"When you are done, simply click <guibutton>OK</guibutton>. If you want to "
+"leave things as they were before, click <guibutton>Cancel</guibutton>, to "
+"abort your changes."
+msgstr ""
+"Quand c'est fait, cliquez simplement sur <guibutton>OK</guibutton>. Si vous "
+"voulez laisser les choses comme elles étaient avant, cliquez sur "
+"<guibutton>Annuler</guibutton> pour annuler vos changements."
+
+#: index.docbook:503
+#, no-c-format
+msgid "Commands/Keyboard Shortcuts"
+msgstr "Raccourcis-clavier et commandes"
+
+#: index.docbook:505
+#, no-c-format
+msgid "The following sections briefly describe each menubar option."
+msgstr "La section suivante décrit brièvement chaque option de la barre de menus."
+
+#: index.docbook:508
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:510
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> menu is used to start and pause the game."
+msgstr ""
+"Le menu <guimenu>Jeu</guimenu> est utilisé pour démarrer et interrompre "
+"une partie."
+
+#: index.docbook:512
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\"> "
+"&Ctrl;<keycap>G</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\"> "
+"&Ctrl;<keycap>G</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Nouvelle partie </guimenuitem>"
+
+#: index.docbook:512
+#, no-c-format
+msgid "Starts a new game of &kspaceduel;"
+msgstr "Commence une nouvelle partie de &kspaceduel;"
+
+#: index.docbook:512
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\"> "
+"&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>New Round</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\"> "
+"&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Nouvelle manche </guimenuitem>"
+
+#: index.docbook:512
+#, no-c-format
+msgid "Starts a new round, at the current level."
+msgstr "Commence une nouvelle manche au niveau actuel."
+
+#: index.docbook:512
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Pause</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Suspendre</guimenuitem>"
+
+#: index.docbook:512
+#, no-c-format
+msgid "Pauses and unpauses the game."
+msgstr "Suspend et reprend une partie."
+
+#: index.docbook:512
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; "
+"<keycap>Q</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl; "
+"<keycap>Q</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:512
+#, no-c-format
+msgid "<action>Quits</action> &kspaceduel;"
+msgstr "<action>Quitte</action> &kspaceduel;"
+
+#: index.docbook:549
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> Menu"
+msgstr "Menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Afficher la barre "
+"d'outils</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"When selected, the toolbar will be visible. When not selected, the toolbar "
+"will be hidden."
+msgstr ""
+"Lorsque l'item est coché, la barre d'outils sera visible. Dans le cas "
+"contraire, elle sera cachée."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Afficher la barre "
+"d'état</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"When selected, the status bar (the bar along the bottom of the screen which "
+"gives textual information) will be visible. When not selected, the status "
+"bar will be hidden."
+msgstr ""
+"Lorsque l'item est coché, la barre d'état (la barre en bas de la fenêtre, "
+"qui donne des informations sur le contexte) sera visible. Dans le cas "
+"contraire, elle sera cachée."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Save Settings</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Enregistrer la "
+"configuration</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"Saves your current setup to a configuration file. These settings will be "
+"reloaded when you start &kspaceduel; again."
+msgstr ""
+"Enregistre vos réglages actuels dans un fichier de configuration. Ces "
+"réglages seront rechargés quand vous redémarrerez &kspaceduel;."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Configurer les raccourcis "
+"clavier</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "Allows you to change the keyboard shortcuts for &kspaceduel;"
+msgstr "Vous permet de changer les raccourcis-clavier pour &kspaceduel;"
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"Be careful not to confuse this option with configuring players keys. Players "
+"Keys are the keys used during the game (Rotate Left, Bullets, etc). This "
+"option allows you to change the keyboard shortcuts for <quote>Pause "
+"Game</quote>, <quote>New Game</quote>, &etc;"
+msgstr ""
+"Faites bien attention de ne pas confondre cette option avec la configuration "
+"des touches pour jouer. Les touches des joueurs sont les touches utilisées "
+"durant la partie (Tourner, balles, etc.). Cette option vous permet de "
+"changer les raccourcis-clavier pour <quote>Suspendre</quote>, "
+"<quote>Nouvelle partie</quote>, &etc;"
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Player Keys...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Touches des "
+"joueurs...</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "Allows you to configure the keys used during game play."
+msgstr "Vous permet de configurer les touches utilisées pendant le jeu."
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"For more detailed instructions, see the section entitled <link "
+"linkend=\"options-keys\">Keys</link>."
+msgstr ""
+"Pour des instructions plus détaillées, voyez la section intitulée <link "
+"linkend=\"options-keys\">Touches</link>."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Game...</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu><guimenuitem>Jeu... </guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "Allows you to configure game options"
+msgstr "Vous permet de configurer les options de jeu"
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"For more detailed instructions, see the section entitled <link "
+"linkend=\"options-configurations\">Game Configuration</link>."
+msgstr ""
+"Pour des instructions plus détaillées, voyez la section intitulée <link "
+"linkend=\"options-configurations\">Configuration du jeu </link>."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Handicap...</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Handicap...</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "Allows you to handicap a player to make the game more challenging (or easy)."
+msgstr ""
+"Vous permet de handicaper un joueur pour rendre le jeu plus difficile (ou "
+"facile)."
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"For more detailed instructions, see the section entitled <link "
+"linkend=\"options-handicap\">Handicap</link>."
+msgstr ""
+"Pour des instructions plus détaillées, voyez la section intitulée <link "
+"linkend=\"options-handicap\">Handicap</link>."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Graphics...</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Affichage...</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "Allows you to change the graphics refresh rate."
+msgstr "Vous permet de changer le délai de rafraîchissement."
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"For more detailed instructions, see the section entitled <link "
+"linkend=\"options-graphics\">Graphics</link>."
+msgstr ""
+"Pour des instructions plus détaillées, voyez la section intitulée <link "
+"linkend=\"options-graphics\">Affichage</link>."
+
+#: index.docbook:551
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Ai...</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>IA...</guimenuitem>"
+
+#: index.docbook:551
+#, no-c-format
+msgid "Allows you to alter the nature of the computers play."
+msgstr "Vous permet de modifier l'ordinateur joueur."
+
+#: index.docbook:551
+#, no-c-format
+msgid ""
+"For more detailed instructions, see the section entitled <link "
+"linkend=\"ai\">AI</link>."
+msgstr ""
+"Pour des instructions plus détaillées, voyez la section intitulée <link "
+"linkend=\"ai\">IA</link>."
+
+#: index.docbook:636
+#, no-c-format
+msgid "<guimenu>Help</guimenu> Menu"
+msgstr "Menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:643
+#, no-c-format
+msgid "Default Key Bindings"
+msgstr "Raccourcis-clavier par défaut"
+
+#: index.docbook:645
+#, no-c-format
+msgid "The following tables show you the default key bindings."
+msgstr "Les tables suivantes affichent les raccourcis-clavier par défaut."
+
+#: index.docbook:647
+#, no-c-format
+msgid "Menu bindings"
+msgstr "Raccourcis des menus"
+
+#: index.docbook:651
+#, no-c-format
+msgid "Key Combo"
+msgstr "Combinaison de touches"
+
+#: index.docbook:651 index.docbook:675
+#, no-c-format
+msgid "Action"
+msgstr "Action"
+
+#: index.docbook:652
+#, no-c-format
+msgid "&Ctrl;<keycap>Q</keycap>"
+msgstr "&Ctrl;<keycap>Q</keycap>"
+
+#: index.docbook:652
+#, no-c-format
+msgid "Quit &kspaceduel;"
+msgstr "Quitte &kspaceduel;"
+
+#: index.docbook:652
+#, no-c-format
+msgid "&Ctrl;<keycap>G</keycap>"
+msgstr "&Ctrl;<keycap>G</keycap>"
+
+#: index.docbook:652
+#, no-c-format
+msgid "New Game"
+msgstr "Nouvelle partie"
+
+#: index.docbook:652
+#, no-c-format
+msgid "&Ctrl;<keycap>N</keycap>"
+msgstr "&Ctrl;<keycap>N</keycap>"
+
+#: index.docbook:652
+#, no-c-format
+msgid "New Round"
+msgstr "Nouvelle manche"
+
+#: index.docbook:652
+#, no-c-format
+msgid "&Ctrl;<keycap>P</keycap>"
+msgstr "&Ctrl;<keycap>P</keycap>"
+
+#: index.docbook:652
+#, no-c-format
+msgid "Pause Game"
+msgstr "Suspendre"
+
+#: index.docbook:652
+#, no-c-format
+msgid "<keycap>F1</keycap>"
+msgstr "<keycap>F1</keycap>"
+
+#: index.docbook:652
+#, no-c-format
+msgid "Help Contents"
+msgstr "Contenu de l'aide"
+
+#: index.docbook:652
+#, no-c-format
+msgid "&Shift;<keycap>F1</keycap>"
+msgstr "&Maj;<keycap>F1</keycap>"
+
+#: index.docbook:652
+#, no-c-format
+msgid "Whats This Help"
+msgstr "Qu'est-ce que c'est&nbsp;"
+
+#: index.docbook:652
+#, no-c-format
+msgid "Space"
+msgstr "Espace"
+
+#: index.docbook:652
+#, no-c-format
+msgid "Start Game"
+msgstr "Commence une partie"
+
+#: index.docbook:664
+#, no-c-format
+msgid ""
+"The Menu Key Bindings can be changed by selecting <menuchoice> "
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Key "
+"Bindings</guimenuitem> </menuchoice>"
+msgstr ""
+"Les raccourcis-clavier des menus peuvent être changés en sélectionnant "
+"<menuchoice> <guimenu>Configuration</guimenu> "
+"<guimenuitem>Raccourcis-clavier</guimenuitem> </menuchoice>"
+
+#: index.docbook:668
+#, no-c-format
+msgid "Game Play"
+msgstr "Touches de jeu"
+
+#: index.docbook:675
+#, no-c-format
+msgid "Red Player"
+msgstr "Joueur rouge"
+
+#: index.docbook:675
+#, no-c-format
+msgid "Blue Player"
+msgstr "Joueur bleu"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Rotate Left"
+msgstr "Tourner à gauche"
+
+#: index.docbook:676
+#, no-c-format
+msgid "<entry>S</entry>"
+msgstr "<entry>S</entry>"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Left Arrow"
+msgstr "Flèche gauche"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Rotate Right"
+msgstr "Tourner à droite"
+
+#: index.docbook:676
+#, no-c-format
+msgid "<entry>F</entry>"
+msgstr "<entry>F</entry>"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Right Arrow"
+msgstr "Flèche droite"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Accelerate"
+msgstr "Accélérer"
+
+#: index.docbook:676
+#, no-c-format
+msgid "<entry>E</entry>"
+msgstr "<entry>E</entry>"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Up Arrow"
+msgstr "Flèche haut"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Shot"
+msgstr "Tirer"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Down Arrow"
+msgstr "Flèche bas"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Mines"
+msgstr "Mines"
+
+#: index.docbook:676
+#, no-c-format
+msgid "<entry>A</entry>"
+msgstr "<entry>A</entry>"
+
+#: index.docbook:676
+#, no-c-format
+msgid "Insert"
+msgstr "Inser"
+
+#: index.docbook:686
+#, no-c-format
+msgid ""
+"To change these keys, refer to the section entitled <link "
+"linkend=\"options-keys\">Player Keys...</link>."
+msgstr ""
+"Pour changer ces touches, reportez-vous à la section intitulée <link "
+"linkend=\"options-keys\">Touches des joueurs...</link>."
+
+#: index.docbook:693
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et Licence"
+
+#: index.docbook:695
+#, no-c-format
+msgid "&kspaceduel;"
+msgstr "&kspaceduel;"
+
+#: index.docbook:698
+#, no-c-format
+msgid "Program copyright 1999-2000 Andreas Zehender <email>az@azweb.de</email>"
+msgstr "Program copyright 1999-2000 Andreas Zehender <email>az@azweb.de</email>"
+
+#: index.docbook:700
+#, no-c-format
+msgid "Documentation copyright 2000 Andreas Zehender <email>az@azweb.de</email>"
+msgstr "Documentation copyright 2000 Andreas Zehender <email>az@azweb.de</email>"
+
+#: index.docbook:701
+#, no-c-format
+msgid ""
+"Documentation updated for &kde; 2.0 by Mike McBride "
+"<email>mpmcbride7@yahoo.com</email>"
+msgstr ""
+"Documentation mise à jour pour &kde; 2.0 par Mike McBride "
+"<email>mpmcbride7@yahoo.com</email>"
+
+#: index.docbook:702
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française de la documentation par Éric Bischoff "
+"<email>.bischoff@noos.fr</email></para><para>Mise à jour de la traduction "
+"française par Gérard Delafond <email>g.delafond@medsyn.fr</email></para>"
+
+#: index.docbook:710
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:713
+#, no-c-format
+msgid "How to obtain &kspaceduel;"
+msgstr "Comment obtenir &kspaceduel;"
+
+#: index.docbook:720
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

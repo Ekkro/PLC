@@ -1,0 +1,341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ktron\n"
+"POT-Creation-Date: 2002-02-16 02:29+0100\n"
+"PO-Revision-Date: 2001-01-10 22:09-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Elvis Pfützenreuter"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "epx@conectiva.com.br"
+
+#: ktoptdlg.cpp:41
+msgid "Other"
+msgstr "Outro"
+
+#: ktoptdlg.cpp:91
+msgid "Behavior"
+msgstr "Comportamento"
+
+#: ktoptdlg.cpp:95
+msgid "Show winner by changing color"
+msgstr "Mostrar vencedor via mudança de cor"
+
+#: ktoptdlg.cpp:98
+msgid "Disable acceleration"
+msgstr "Desligar aceleração"
+
+#: ktoptdlg.cpp:100
+msgid "Crash when moving in opposite direction"
+msgstr ""
+
+#: ktoptdlg.cpp:102
+msgid "Name of Players"
+msgstr "Nomes dos jogadores"
+
+#: ktoptdlg.cpp:106
+msgid "Player 1:"
+msgstr "Jogador 1:"
+
+#: ktoptdlg.cpp:109
+msgid "Player 2:"
+msgstr "Jogador 2:"
+
+#: ktoptdlg.cpp:115
+msgid ""
+"Show winner by changing color\n"
+"\n"
+"If this is enabled and a player crashes,\n"
+"his color changes to the other players color."
+msgstr ""
+"Mostrar vencedor mudando a cor\n"
+"\n"
+"Se este recurso for habilitado e um jogador quebrar,\n"
+"sua cor muda para a do outro jogador."
+
+#: ktoptdlg.cpp:122
+msgid ""
+"Disable acceleration\n"
+"\n"
+"If checked, the accelerator key is blocked."
+msgstr ""
+"Desligar aceleração\n"
+"\n"
+"Se este recurso for habilitado, a tecla de aceleração X bloqueada."
+
+#: ktoptdlg.cpp:128
+msgid ""
+"Crash on moving in opposite direction\n"
+"\n"
+"If checked, moving in the opposite direction will cause a crash."
+msgstr ""
+
+#: ktron.cpp:67
+msgid "Player 1 Up"
+msgstr "Jogador 1 para cima"
+
+#: ktron.cpp:68
+msgid "Player 1 Down"
+msgstr "Jogador 1 para baixo"
+
+#: ktron.cpp:69
+msgid "Player 1 Right"
+msgstr "Jogador 1 para a direita"
+
+#: ktron.cpp:70
+msgid "Player 1 Left"
+msgstr "Jogador 1 para a esquerda"
+
+#: ktron.cpp:71
+msgid "Player 1 Accelerator"
+msgstr "Acelerador jogador 1"
+
+#: ktron.cpp:73
+msgid "Player 2 Up"
+msgstr "Jogador 2 para cima"
+
+#: ktron.cpp:74
+msgid "Player 2 Down"
+msgstr "Jogador 2 para baixo"
+
+#: ktron.cpp:75
+msgid "Player 2 Right"
+msgstr "Jogador 2 para a direita"
+
+#: ktron.cpp:76
+msgid "Player 2 Left"
+msgstr "Jogador 2 para a esquerda"
+
+#: ktron.cpp:77
+msgid "Player 2 Accelerator"
+msgstr "Acelerador do jogador 2"
+
+#: ktron.cpp:83
+msgid "&Pause/Continue"
+msgstr "&Pausar/Continuar"
+
+#: ktron.cpp:94
+msgid "Player &1"
+msgstr "Jogador &1"
+
+#: ktron.cpp:96
+msgid "Player &2"
+msgstr "Jogador &2"
+
+#: ktron.cpp:99
+msgid "Beginner"
+msgstr "Novato"
+
+#: ktron.cpp:101
+msgid "Average"
+msgstr "Mediano"
+
+#: ktron.cpp:103
+msgid "Expert"
+msgstr "Expert"
+
+#: ktron.cpp:110
+msgid "&Velocity"
+msgstr "&Velocidade"
+
+#: ktron.cpp:113
+msgid "&1 (slow)"
+msgstr "&1 (lento)"
+
+#: ktron.cpp:114
+msgid "&2"
+msgstr "&2"
+
+#: ktron.cpp:115
+msgid "&3"
+msgstr "&3"
+
+#: ktron.cpp:116
+msgid "&4"
+msgstr "&4"
+
+#: ktron.cpp:117
+msgid "&5 (default)"
+msgstr "&5 (padrão)"
+
+#: ktron.cpp:118
+msgid "&6"
+msgstr "&6"
+
+#: ktron.cpp:119
+msgid "&7"
+msgstr "&7"
+
+#: ktron.cpp:120
+msgid "&8"
+msgstr "&8"
+
+#: ktron.cpp:121
+msgid "&9 (fast)"
+msgstr "&9 (rápido)"
+
+#: ktron.cpp:125
+#, fuzzy
+msgid "&Drawing Style"
+msgstr "Estilo de &desenho"
+
+#: ktron.cpp:128
+msgid "&3D Line"
+msgstr "Linha &3D"
+
+#: ktron.cpp:129
+msgid "3&D Rects"
+msgstr "Retângulos 3&D"
+
+#: ktron.cpp:130
+msgid "&Line"
+msgstr "&Linha"
+
+#: ktron.cpp:131
+msgid "&Circles"
+msgstr "&Círculos"
+
+#: ktron.cpp:135
+msgid "Si&ze"
+msgstr "&Tamanho"
+
+#: ktron.cpp:138
+msgid "&Very Small"
+msgstr "&Muito pequeno"
+
+#: ktron.cpp:139
+msgid "&Small"
+msgstr "&Pequeno"
+
+#: ktron.cpp:140
+msgid "&Medium"
+msgstr "&Médio"
+
+#: ktron.cpp:141
+msgid "&Large"
+msgstr "&Grande"
+
+#: ktron.cpp:142
+msgid "&Very Large"
+msgstr "M&uito grande"
+
+#: ktron.cpp:148
+msgid "Color Player &1..."
+msgstr "Cor do jogador &1..."
+
+#: ktron.cpp:151
+msgid "Color Player &2..."
+msgstr "Cor do jogador &2..."
+
+#: ktron.cpp:154
+#, fuzzy
+msgid "&Background Color..."
+msgstr "Cor do &fundo..."
+
+#: ktron.cpp:157
+#, fuzzy
+msgid "B&ackground Image..."
+msgstr "&Imagem de fundo..."
+
+#: ktron.cpp:166
+msgid "Other..."
+msgstr "Outro..."
+
+#: ktron.cpp:201 ktron.cpp:325 ktron.cpp:349 ktron.cpp:376 ktron.cpp:433
+#: ktron.cpp:691 ktron.cpp:735
+msgid "Player 1"
+msgstr "Jogador 1"
+
+#: ktron.cpp:204 ktron.cpp:330 ktron.cpp:354 ktron.cpp:381 ktron.cpp:439
+#: ktron.cpp:694 ktron.cpp:740
+msgid "Player 2"
+msgstr "Jogador 2"
+
+#: ktron.cpp:283
+msgid "Computer(%1)"
+msgstr "Computador(%1)"
+
+#: ktron.cpp:287
+msgid "Computer"
+msgstr "Computador"
+
+#: ktron.cpp:421 main.cpp:40
+msgid "KTron"
+msgstr "KTron"
+
+#: ktron.cpp:429
+msgid "%1 has won!"
+msgstr "%1 venceu !"
+
+#: ktron.cpp:435 ktron.cpp:441
+msgid "%1 has won versus %2 with %3 : %4 points!"
+msgstr "%1 venceu versus %2 com %3 : %4 pontos!"
+
+#: ktron.cpp:447
+msgid "%1 has won with %2 : %3 points!"
+msgstr "%1 venceu com %2 : %3 pontos!"
+
+#: ktron.cpp:451
+msgid "Winner"
+msgstr "Vencedor"
+
+#: ktron.cpp:576
+#, c-format
+msgid ""
+"Wasn't able to load wallpaper\n"
+"%1"
+msgstr ""
+"Não foi possível carregar o papel de parede\n"
+"%1"
+
+#: main.cpp:32
+msgid "A race in the hyperspace"
+msgstr "Uma corrida no hiperespaço"
+
+#: main.cpp:33
+msgid ""
+"(c) 1998-2000, Matthias Kiefer\n"
+"\n"
+"Parts of the algorithms for the computerplayer are from\n"
+"xtron-1.1 by Rhett D. Jacobs <rhett@hotel.canberra.edu.au>"
+msgstr ""
+"(c) 1998-2000, Matthias Kiefer\n"
+"\n"
+"Partes dos algoritmos para o robô-jogador são do\n"
+"xtron-1.1 de Rhett D. Jacobs <rhett@hotel.canberra.edu.au>"
+
+#: rc.cpp:2
+msgid "&Computerplayer"
+msgstr "&Robô-jogador"
+
+#: rc.cpp:3
+msgid "&Appearance"
+msgstr "&Aparência"
+
+#: tron.cpp:687
+msgid "Game paused"
+msgstr "Jogo pausado"
+
+#: tron.cpp:697
+msgid "Crash!"
+msgstr "Crash!"
+
+#: tron.cpp:734
+msgid "Press any of your direction keys to start!"
+msgstr "Pressione qualquer de suas teclas de direção para iniciar!"
+
+#~ msgid "&Exit"
+#~ msgstr "&Sair"

@@ -1,0 +1,1106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-19 13:36CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "&kpoker; Handbook"
+msgstr "Manuel de &kpoker;"
+
+#: index.docbook:13
+#, no-c-format
+msgid ""
+"<firstname>Jochen</firstname> <surname>Tuchbreiter</surname> <affiliation> "
+"<address><email>whynot@mabi.de</email></address> </affiliation>"
+msgstr ""
+"<firstname>Jochen</firstname> <surname>Tuchbreiter</surname> <affiliation> "
+"<address><email>whynot@mabi.de</email></address> </affiliation>"
+
+#: index.docbook:20
+#, no-c-format
+msgid ""
+"<firstname>Andreas</firstname> <surname>Beckermann</surname> <affiliation> "
+"<address><email>b_mann@gmx.de</email></address> </affiliation>"
+msgstr ""
+"<firstname>Andreas</firstname> <surname>Beckermann</surname> <affiliation> "
+"<address><email>b_mann@gmx.de</email></address> </affiliation>"
+
+#: index.docbook:29
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Gérard</firstname><surname>Delafond</surname>"
+"<affiliation><address><email>gerard@delafond.org</email></address>"
+"</affiliation><contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:33
+#, no-c-format
+msgid "Jochen Tuchbreiter, Andreas Beckermann"
+msgstr "Jochen Tuchbreiter, Andreas Beckermann"
+
+#: index.docbook:42
+#, no-c-format
+msgid "This is the helpfile of &kpoker;, a little poker game."
+msgstr "Ceci est le fichier d'aide de &kpoker;, un petit jeu de poker."
+
+#: index.docbook:47
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:48
+#, no-c-format
+msgid "kpoker"
+msgstr "kpoker"
+
+#: index.docbook:49
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:50
+#, no-c-format
+msgid "games"
+msgstr "jeux"
+
+#: index.docbook:51
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:52
+#, no-c-format
+msgid "poker"
+msgstr "poker"
+
+#: index.docbook:53
+#, no-c-format
+msgid "play cards"
+msgstr "jeu de cartes"
+
+#: index.docbook:58
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:61
+#, no-c-format
+msgid "What is &kpoker;?"
+msgstr "Qu'est &kpoker;&nbsp;?"
+
+#: index.docbook:63
+#, no-c-format
+msgid ""
+"&kpoker; is a <ulink url=\"http://www.kde.org\">KDE</ulink> compliant clone "
+"of those highly addictive pocket video poker games which are sometimes "
+"called <quote>Videopoker</quote> as well."
+msgstr ""
+"&kpoker; est un jeu compatible avec <ulink "
+"url=\"http://www.kde.org\">KDE</ulink>"
+", semblable à ces jeux de poche très prenants, parfois appelés "
+"<quote>Videopoker</quote>."
+
+#: index.docbook:69
+#, no-c-format
+msgid "Where do I get the latest version of &kpoker;?"
+msgstr "Où obtenir la dernière version de &kpoker;&nbsp;?"
+
+#: index.docbook:71
+#, no-c-format
+msgid "The latest version of &kpoker; is always avaible at"
+msgstr "La dernière version de &kpoker; se trouve toujours sur"
+
+#: index.docbook:72
+#, no-c-format
+msgid ""
+"The &kpoker; homepage: <ulink "
+"url=\"http://kpoker.sourceforge.net/\">http://kpoker.sourceforge.net/</ulink>"
+msgstr ""
+"la page de &kpoker;&nbsp;: <ulink "
+"url=\"http://kpoker.sourceforge.net/\">http://kpoker.sourceforge.net/</ulink>"
+
+#: index.docbook:72
+#, no-c-format
+msgid "The &kde; homepage: &kde-http;"
+msgstr "La page Web de &kde;&nbsp;: &kde-http;"
+
+#: index.docbook:86
+#, no-c-format
+msgid "Starting a new game"
+msgstr "Commencer une nouvelle partie"
+
+#: index.docbook:88
+#, no-c-format
+msgid "You can start a new game two ways:"
+msgstr "Vous pouvez démarrer une nouvelle partie de deux manières&nbsp;:"
+
+#: index.docbook:90
+#, no-c-format
+msgid ""
+"By selecting <menuchoice> <guimenu>Game</guimenu> "
+"<guimenuitem>New</guimenuitem></menuchoice> from the menubar."
+msgstr ""
+"En sélectionnant <menuchoice><guimenu>Jeu</guimenu> "
+"<guimenuitem>Nouveau</guimenuitem> </menuchoice> dans la barre de menus."
+
+#: index.docbook:90
+#, no-c-format
+msgid "Selecting <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo>"
+msgstr "En tapant <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo>"
+
+#: index.docbook:100
+#, no-c-format
+msgid "Either way, you will be presented with a dialog box."
+msgstr "De toutes les manières, il vous sera présentée une boîte de dialogues."
+
+#: index.docbook:102
+#, no-c-format
+msgid "<acronym>AI</acronym> Configure Dialog"
+msgstr "Configuration de l'<acronym>IA</acronym> (Intelligence Artificielle)"
+
+#: index.docbook:110
+#, no-c-format
+msgid "How many players do you want"
+msgstr "Combien de joueurs voulez-vous"
+
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"Will determine if you play a <link linkend=\"one-player-game\">one player "
+"game</link> (against the house), or a <link linkend=\"two-player-game\">two "
+"player game</link>."
+msgstr ""
+"Déterminera si vous voulez une partie à <link "
+"linkend=\"one-player-game\">un joueur</link>"
+" (contre la maison), ou à <link linkend=\"two-player-game\">deux "
+"joueurs</link>."
+
+#: index.docbook:110
+#, no-c-format
+msgid "Your name"
+msgstr "Votre nom"
+
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"Lets you personalize &kpoker; so that it calls you by name (instead of "
+"<guilabel>You</guilabel>you>)."
+msgstr ""
+"Vous permet de personnaliser &kpoker; de telle manière qu'il vous appelle "
+"par votre nom (au lieu de <guilabel>Vous</guilabel>)."
+
+#: index.docbook:110
+#, no-c-format
+msgid "Start money of the players"
+msgstr "Fonds de départ des joueurs"
+
+#: index.docbook:110
+#, no-c-format
+msgid "Lets you set the money you start each game with."
+msgstr "Vous permet de fixer la somme avec laquelle vous commencez la partie."
+
+#: index.docbook:110
+#, no-c-format
+msgid "The names of your enemies"
+msgstr "Le nom de vos ennemis"
+
+#: index.docbook:110
+#, no-c-format
+msgid "lets you set the name of the other player."
+msgstr "Vous permet de fixer le nom de l'autre joueur."
+
+#: index.docbook:110
+#, no-c-format
+msgid "Show this dialog every time on startup"
+msgstr "Afficher ce message à chaque démarrage"
+
+#: index.docbook:110
+#, no-c-format
+msgid ""
+"If this is checked, the first game after you start &kpoker; will show this "
+"menu. If this option is not checked, then the game will not show this menu "
+"for the first game."
+msgstr ""
+"Si ceci est coché, la première partie après que vous ayez démarré "
+"&kpoker; affichera ce menu. Si cette option n'est pas cochée, le jeu "
+"n'affichera pas ce menu pour la première partie."
+
+#: index.docbook:144
+#, no-c-format
+msgid ""
+"When you are satisfied with your settings, click <guibutton>OK</guibutton>, "
+"to start the game. Clicking <guibutton>Cancel</guibutton>, will cancel the "
+"start of a new game."
+msgstr ""
+"Quand vous êtes satisfait de vos réglages, cliquez sur "
+"<guibutton>OK</guibutton> pour commencer la partie. Un clic sur "
+"<guibutton>annuler</guibutton> annulera le commencement d'une nouvelle "
+"partie."
+
+#: index.docbook:152
+#, no-c-format
+msgid "One player game"
+msgstr "Jeu à un joueur"
+
+#: index.docbook:155
+#, no-c-format
+msgid "How do I play ?"
+msgstr "Comment jouer&nbsp;?"
+
+#: index.docbook:157
+#, no-c-format
+msgid ""
+"At the beginning of the game you get $100. You draw five cards and decide "
+"which ones you want to keep. You indicate which cards you want to keep by "
+"clicking on the face of the card. The word <guilabel>Held</guilabel> will "
+"appear above the card."
+msgstr ""
+"Au début de la partie, vous avez 100 $. Vous distribuez cinq cartes et "
+"décidez lesquelles vous voulez garder. Vous indiquez quelles cartes vous "
+"gardez en cliquant sur les cartes. Le mot <guilabel>Conservé</guilabel> "
+"apparaîtra au-dessus de la carte."
+
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"After doing this you draw new cards for those you did not want to keep. This "
+"is accomplished by clicking on <guibutton>Draw!</guibutton>."
+msgstr ""
+"Après avoir fait ceci, vous faites une nouvelle donne pour les cartes que "
+"vous ne voulez pas garder. Ceci se fait en cliquant sur le bouton "
+"<guibutton>Donne &nbsp;!</guibutton>."
+
+#: index.docbook:166
+#, no-c-format
+msgid ""
+"The game now looks if you have any <link linkend=\"hands\">poker hand</link>"
+" and gives cash according to the kind of hand you got (see <link "
+"linkend=\"scoring\">scoring</link>)."
+msgstr ""
+"Le jeu regarde maintenant si vous avez une <link linkend=\"hands\">main de "
+"poker</link> et vous donne de l'argent en fonction de la valeur de la main "
+"que vous avez (voir <link linkend=\"scoring\">scores</link>)."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Now you start over, drawing five cards, deciding which ones you want to keep "
+"..."
+msgstr ""
+"Maintenant, vous recommencez, en distribuant cinq cartes, puis en décidant "
+"lesquelles vous gardez..."
+
+#: index.docbook:173
+#, no-c-format
+msgid ""
+"The game ends if you can't pay for another round or if you close the "
+"&kpoker; window."
+msgstr ""
+"La partie se termine si vous ne pouvez plus payer un tour supplémentaire ou "
+"si vous fermez la fenêtre de &kpoker;."
+
+#: index.docbook:179
+#, no-c-format
+msgid "What are possible poker hands ?"
+msgstr "Quelles sont les mains possibles&nbsp;?"
+
+#: index.docbook:181
+#, no-c-format
+msgid "Possible poker hands are:"
+msgstr "Les mains de poker possibles sont&nbsp;:"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Jacks or higher"
+msgstr "Les valets ou plus"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Two cards of the same rank, both Jacks or higher"
+msgstr "Deux cartes de même rang, toutes deux valets ou plus"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Two pairs"
+msgstr "Deux paires"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Two cards of one rank and two cards of another rank"
+msgstr "Deux cartes de même rang et deux cartes d'un autre rang"
+
+#: index.docbook:183 index.docbook:244
+#, no-c-format
+msgid "Three of a kind"
+msgstr "Trois de même rang (brelan)"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Three cards of the same rank"
+msgstr "Trois cartes du même rang"
+
+#: index.docbook:183 index.docbook:244
+#, no-c-format
+msgid "Four of a kind"
+msgstr "Quatre de même rang (carré)"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Four cards of the same rank"
+msgstr "Quatre cartes de même rang"
+
+#: index.docbook:183 index.docbook:244
+#, no-c-format
+msgid "Full House"
+msgstr "Full"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Three cards of one rank and two cards of another"
+msgstr "Trois cartes d'un rang et deux cartes d'un autre rang"
+
+#: index.docbook:183 index.docbook:244
+#, no-c-format
+msgid "Straight"
+msgstr "Petite suite"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Five cards of consecutive rank including the combo ace-2-3-4-5"
+msgstr "Cinq cartes de rangs consécutifs, y compris la suite as-2-3-4-5"
+
+#: index.docbook:183 index.docbook:244
+#, no-c-format
+msgid "Flush"
+msgstr "Flush (couleur)"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Five cards of the same suit"
+msgstr "Cinq cartes de la même couleur"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Straight flush"
+msgstr "Quinte flush"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Five cards of the same suit and of consecutive rank"
+msgstr "Cinq cartes de la même couleur et de rangs consécutifs"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Royal flush"
+msgstr "Royal flush"
+
+#: index.docbook:183
+#, no-c-format
+msgid "Ace, king, queen, jack, and ten of the same suit"
+msgstr "As, roi, dame, valet et dix de la même couleur"
+
+#: index.docbook:240
+#, no-c-format
+msgid "How many bucks do I get for what hand ?"
+msgstr "Combien de gains pour quelle main&nbsp;?"
+
+#: index.docbook:244
+#, no-c-format
+msgid "A pair of Jacks or higher cards"
+msgstr "Une paire de valets ou plus"
+
+#: index.docbook:244
+#, no-c-format
+msgid "<entry>$5</entry>"
+msgstr "<entry> 5 F</entry>"
+
+#: index.docbook:244
+#, no-c-format
+msgid "Two Pairs"
+msgstr "Deux paires"
+
+#: index.docbook:244
+#, no-c-format
+msgid "<entry> $10</entry>"
+msgstr "<entry> 10 F</entry>"
+
+#: index.docbook:244
+#, no-c-format
+msgid "<entry> $15</entry>"
+msgstr "<entry> 15 F</entry>"
+
+#: index.docbook:244
+#, no-c-format
+msgid "<entry> $20</entry>"
+msgstr "<entry> 20 F</entry>"
+
+#: index.docbook:244
+#, no-c-format
+msgid "<entry> $25</entry>"
+msgstr "<entry> 25 F</entry>"
+
+#: index.docbook:244
+#, no-c-format
+msgid "<entry> $40</entry>"
+msgstr "<entry> 40 F</entry>"
+
+#: index.docbook:244
+#, no-c-format
+msgid "$125"
+msgstr "125 F"
+
+#: index.docbook:244
+#, no-c-format
+msgid "Straight Flush"
+msgstr "Quinte flush"
+
+#: index.docbook:244
+#, no-c-format
+msgid "$250"
+msgstr "250 F"
+
+#: index.docbook:244
+#, no-c-format
+msgid "Royal Flush"
+msgstr "Flush royal"
+
+#: index.docbook:244
+#, no-c-format
+msgid "$2000"
+msgstr "2 000 F"
+
+#: index.docbook:264
+#, no-c-format
+msgid "Two player game"
+msgstr "Jeu à deux joueurs"
+
+#: index.docbook:266
+#, no-c-format
+msgid ""
+"The two player game is very different from a <link "
+"linkend=\"one-player-game\">one player game</link>."
+msgstr ""
+"Le jeu à deux joueurs est très différent du <link "
+"linkend=\"one-player-game\">jeu à un joueur</link>."
+
+#: index.docbook:270
+#, no-c-format
+msgid "Starting a two player game"
+msgstr "Commencer une partie à deux joueurs"
+
+#: index.docbook:272
+#, no-c-format
+msgid ""
+"To start a two player game, select <menuchoice><guimenu>Game</guimenu> "
+"<guimenuitem>New Game</guimenuitem> </menuchoice> on the menubar. This will "
+"bring up a dialog. Simply select <guilabel>Two players</guilabel> under the "
+"drop down box labeled <guilabel>How many players do you want?</guilabel>. "
+"Then click <guibutton>OK</guibutton>."
+msgstr ""
+"Pour commencer un jeu à deux joueurs, sélectionnez "
+"<menuchoice><guimenu>Jeu</guimenu> "
+"<guimenuitem>Nouveau</guimenuitem></menuchoice>"
+" dans la barre de menus. Ceci ouvre une boîte de dialogue. Sélectionnez "
+"simplement <guilabel>2</guilabel> dans la boîte libellée <guilabel>"
+"Combien de joueurs voulez-vous&nbsp;?</guilabel>"
+". Puis cliquez sur le bouton <guibutton>OK</guibutton>"
+
+#: index.docbook:280
+#, no-c-format
+msgid "Playing a two player game"
+msgstr "Jouer une partie à deux joueurs"
+
+#: index.docbook:282
+#, no-c-format
+msgid "There are four phases to a two-player game:"
+msgstr "Il y a quatre phases pour une partie à deux joueurs&nbsp;:"
+
+#: index.docbook:284
+#, no-c-format
+msgid "you begin to draw cards"
+msgstr "Vous commencez par distribuer les cartes"
+
+#: index.docbook:284
+#, no-c-format
+msgid "then you bet some money"
+msgstr "Vous pariez de l'argent"
+
+#: index.docbook:284
+#, no-c-format
+msgid "after that you exchange your cards"
+msgstr "après que vous échangiez vos cartes"
+
+#: index.docbook:284
+#, no-c-format
+msgid ""
+"then you raise and finally you will see the cards of the other player and "
+"the winner will get all the money."
+msgstr ""
+"Puis, vous augmentez les mises et finalement, vous verrez les cartes de "
+"l'autre joueur et le gagnant prendra tout l'argent."
+
+#: index.docbook:292
+#, no-c-format
+msgid "Draw"
+msgstr "Donne"
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"You will begin the game with $100. After clicking on the draw button you "
+"will get five cards. That's all, here."
+msgstr ""
+"Vous commencez avec 100 F. après un clic sur le bouton de donne, vous "
+"obtiendrez cinq cartes. C'est tout pour le moment."
+
+#: index.docbook:292
+#, no-c-format
+msgid "<term>Bet</term>"
+msgstr "<term>Mise</term>"
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"Now you decide if your cards are good or not. If they are, you bet some "
+"money - at least $5 and maximal $20. Just click on the "
+"<guibutton>+$5</guibutton> and similar buttons."
+msgstr ""
+"Maintenant, vous décidez si vos cartes sont bonnes ou non. Si elles le "
+"sont, vous pariez de l'argent - au moins 5&nbsp;F et au plus 20&nbsp;F. "
+"Cliquez simplement sur les boutons <guibutton>+5,00&nbsp;F</guibutton> et "
+"semblables."
+
+#: index.docbook:292
+#, no-c-format
+msgid "Exchange"
+msgstr "Échange"
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"Now you decide which cards you want to keep. Click on them. If you have a "
+"royal flush then don't exchange any cards! When you think you are ready then "
+"click again on the <guibutton>draw</guibutton> button - you will probably "
+"get new cards."
+msgstr ""
+"Maintenant, vous décidez quelles cartes garder. Cliquez dessus. De grâce, "
+"si vous avez une flush royale, n'échangez aucune carte&nbsp;! Quand vous "
+"pensez que vous êtes prêt, cliquez à nouveau sur le bouton "
+"<guibutton>Donne&nbsp;!</guibutton>"
+" - vous obtiendrez alors probablement des cartes différentes."
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"Perhaps you do not get new cards - then the computer player has quite good "
+"cards (or at least not very bad cards) and he has raised. You have to decide "
+"to adjust your bet or to get out of the round. By default you will adjust "
+"your bet. Click again on the <guibutton>draw</guibutton> button when ready."
+msgstr ""
+"Peut-être n'obtiendrez-vous pas de nouvelles cartes - alors le joueur "
+"ordinateur a d'assez bonnes cartes (ou au moins pas trop mauvaises) et il a "
+"surenchéri. Vous devez décider d'ajuster votre mise ou quitter le tour. "
+"Par défaut, vous ajusterez votre mise. Cliquez encore sur le bouton "
+"<guibutton>donne</guibutton> lorsque vous êtes prêt."
+
+#: index.docbook:292
+#, no-c-format
+msgid "Raise"
+msgstr "Augmenter"
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"After you got new cards you are allowed to raise a little bit. It is the "
+"same as the bet phase so I don't explain it again. Click on the draw button "
+"(which is now labeled with <guilabel>see</guilabel>) when ready."
+msgstr ""
+"Après que vous avez obtenu de nouvelles cartes, vous pouvez surenchérir un "
+"peu. C'est la même chose que la mise, et je ne réexpliquerai pas. Cliquez "
+"sur le bouton donne (qui s'appelle maintenant "
+"<guilabel>retourner</guilabel>) lorsque vous êtes prêt."
+
+#: index.docbook:292
+#, no-c-format
+msgid "See / Draw"
+msgstr "Retourner / Donne"
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"I know I said there are four phases and this one is the fifth. But it is "
+"nearly the same as the draw phase. You will also see the cards of the "
+"computer player and the winning cards are blinking. The winner gets all "
+"money. Click on draw to begin a new round!"
+msgstr ""
+"Je sais que j'ai dit qu'il y a quatre phases et ceci est la cinquième. "
+"Mais, c'est presque la même que la phase de donne. Vous verrez aussi les "
+"cartes de l'ordinateur et les cartes du gagnant clignotent. Le gagnant gagne "
+"tout l'argent. Cliquez sur donne pour commencer un nouveau tour."
+
+#: index.docbook:292
+#, no-c-format
+msgid ""
+"The blinking cards are not necessarily the best cards of that player. Only "
+"the cards which caused the win are blinking. So if you have two pairs (&eg; "
+"2 * 2 and 2 * 3) and an ace, but only the ace is blinking, then the computer "
+"player also has these two pairs (2 * 2 and 2 * 3) but not an ace."
+msgstr ""
+"Les cartes clignotantes ne sont pas nécessairement les meilleures cartes du "
+"joueur. Seules les cartes qui ont provoqué la victoire clignotent. Ainsi, "
+"si vous avec deux paires (&pex;; 2*2 et 2*3) et un as mais que seul l'as "
+"clignote, c'est que l'ordinateur a aussi deux paires de même valeur, mais "
+"pas d'as."
+
+#: index.docbook:348
+#, no-c-format
+msgid "Commands and Keyboard Shortcuts"
+msgstr "Raccourcis clavier pour les commandes"
+
+#: index.docbook:350
+#, no-c-format
+msgid "The following sections briefly describe each menubar option."
+msgstr ""
+"Les chapitres suivants décrivent brièvement chaque option de la barre de "
+"menus."
+
+#: index.docbook:353
+#, no-c-format
+msgid "<guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:355
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> menu consists of three options."
+msgstr "Le menu <guimenu>Jeu</guimenu> consiste en trois options."
+
+#: index.docbook:357
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:357
+#, no-c-format
+msgid ""
+"<action>Starts a new game</action> of &kpoker;. For more information, see "
+"the section entitled <link linkend=\"new-game\">Starting a new game</link>."
+msgstr ""
+"<action>Commence une nouvelle partie</action> de &kpoker;. Pour plus "
+"d'informations, voyez la section intitulée <link "
+"linkend=\"new-game\">Commencer une nouvelle partie</link>."
+
+#: index.docbook:357
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Enregistrer</guimenuitem>"
+
+#: index.docbook:357
+#, no-c-format
+msgid ""
+"<action>Saves your current game</action> to disk. This will replace any "
+"previously saved games."
+msgstr ""
+"<action>Enregistre la partie en cours</action> sur le disque. Ceci "
+"remplacera les parties précédemment enregistrées."
+
+#: index.docbook:357
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:357
+#, no-c-format
+msgid "<action>Quits</action> &kpoker;"
+msgstr "<action>Quitte</action> &kpoker;"
+
+#: index.docbook:392
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> Menu"
+msgstr "Menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:394
+#, no-c-format
+msgid "The settings menu is used to start and pause the game."
+msgstr "Le menu de configuration est utilisé pour démarrer et suspendre la partie."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Menubar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Afficher la barre de "
+"menus</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"This toggles the menubar on or off. If it is off, and you need to use the "
+"menubar, you can right click in the playing area of &kpoker; and a menu will "
+"appear. You can then select <guilabel>Show Menubar</guilabel> to turn it "
+"back on."
+msgstr ""
+"Ceci affiche/masque la barre de menus. Si elle est cachée et que vous "
+"voulez la revoir, vous cliquez du bouton droit dans la zone de jeu de "
+"&kpoker; et un menu apparaîtra. Vous pouvez sélectionner "
+"<guilabel>Afficher la barre de menus</guilabel> pour la faire réapparaître."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Afficher la barre "
+"d'état</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"This option will <action>toggle the statusbar on or off</action>"
+". The status bar is located at the bottom of the &kpoker; window, and "
+"contains instructions for play, and how much you won on the previous hand."
+msgstr ""
+"Cette option <action>affichera/masquera la barre d'état</action>. La barre "
+"d'état est située en bas de la fenêtre de &kpoker; et affiche des "
+"instructions pour jouer, et combien vous avez gagné dans les précédentes "
+"donnes."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Sound</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu><guimenuitem>Son</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid "This option will <action>toggle the sound on or off</action>."
+msgstr "Cette option <action>actionnera/coupera</action> le son."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Blinking Cards</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Cartes "
+"clignotantes</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"If this option has a check beside it, then when you win a hand, the "
+"<action>cards which won you the money will blink</action>"
+". If this option is not checked, no cards blink."
+msgstr ""
+"Si cette option est cochée, quand vous gagnez un tour, les <action>cartes "
+"qui vous font gagner clignoteront</action>. Si cette option n'est pas "
+"cochée, les cartes ne clignoteront pas."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Adjust Bet is default.</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu><guimenuitem> Mise par défaut.</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"If this option does not have a check in front of it, and you are playing a 2 "
+"person game, you will be responsible for clicking <guibutton>Adjust "
+"bet</guibutton>, if your opponent raises the stakes, because the default "
+"action will be to <quote>fold</quote> your hand in defeat."
+msgstr ""
+"Si cette option n'est pas cochée et que vous jouez une partie à deux, vous "
+"devrez cliquer vous-même sur <guibutton>Ajuster la mise</guibutton> si "
+"votre adversaire surenchérit, car l'action par défaut sera de "
+"<quote>replier</quote> votre main de manière à perdre."
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"If, on the other hand, the option does have a check in front of it, and you "
+"are in the same situation, the default action of the game, is to match your "
+"opponents bet, and you will be responsible for folding your hand."
+msgstr ""
+"Si, par ailleurs, l'option est cochée et que vous êtes dans la même "
+"situation, l'action par défaut du jeu est de faire correspondre la mise de "
+"votre adversaire et ce sera à vous de replier votre main."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Save Settings</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Enregistrer la "
+"configuration</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"This saves all your options to your hard drive. These options will be "
+"restored automatically when you restart &kpoker;."
+msgstr ""
+"Ceci enregistre toutes vos options sur votre disque dur. Ces options seront "
+"restaurées automatiquement quand vous redémarrerez &kpoker;."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Configure Carddecks...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Configurer le dos des "
+"cartes</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"This will open a new window where you can select the front and back of the "
+"cards for &kpoker;."
+msgstr ""
+"Ceci ouvrira une nouvelle fenêtre où vous pouvez sélectionner la face et "
+"le dos des cartes pour &kpoker;."
+
+#: index.docbook:396
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Configure KPoker...</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu><guimenuitem>Configurer KPoker</guimenuitem>"
+
+#: index.docbook:396
+#, no-c-format
+msgid "This opens a dialog box."
+msgstr "Ceci ouvre une nouvelle boîte de dialogue."
+
+#: index.docbook:396
+#, no-c-format
+msgid "AI Configure Dialog"
+msgstr "Dialogue de configuration de l'IA"
+
+#: index.docbook:396
+#, no-c-format
+msgid "There are either one or three options to adjust:"
+msgstr "Il y a soit une option, soit trois options à ajuster&nbsp;:"
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"The top text box determines in milliseconds how long to delay before showing "
+"the next card. This can be used to speed up the deals, if you are not "
+"interested in the more realistic default speed."
+msgstr ""
+"La boîte de texte du haut détermine en millisecondes quel délai attendre "
+"avant d'afficher la carte suivante. Ceci peut être utilisé pour "
+"accélérer les donnes, si vous n'êtes pas intéressé par les détails "
+"plus réalistes de la vitesse par défaut."
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"The text box labeled <guilabel>Maximal Bet</guilabel>, determines the "
+"maximum bet for each hand."
+msgstr ""
+"La boîte de texte libellée <guilabel>Mise maximale</guilabel> détermine "
+"la mise maximale pour chaque main."
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"The text box labeled <guilabel>Minimal Bet</guilabel>"
+" determins the smallest allowable bet for each hand"
+msgstr ""
+"La boîte de texte libellée <guilabel>Mise minimale</guilabel> détermine "
+"la mise la plus petite pour chaque main."
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"The <guilabel>Maximal Bet</guilabel> and <guilabel>Minimal Bet</guilabel> "
+"lines are not shown in one player mode. In single player mode, only the card "
+"delay can be adjusted."
+msgstr ""
+"Les lignes <guilabel>Mise maximale</guilabel> et <guilabel>Mise "
+"minimale</guilabel> ne sont pas visibles en mode un joueur. En mode un "
+"joueur, seul le délai des cartes peut être ajusté."
+
+#: index.docbook:396
+#, no-c-format
+msgid ""
+"As you can see, the changes will not go into effect until a new round is "
+"started."
+msgstr ""
+"Comme vous pouvez voir, les changements ne prendront effet que lors d'une "
+"nouvelle partie."
+
+#: index.docbook:488
+#, no-c-format
+msgid "<guimenu>Help</guimenu> Menu"
+msgstr "Menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:495
+#, no-c-format
+msgid "Default Key Bindings"
+msgstr "Les raccourcis clavier par défaut"
+
+#: index.docbook:499
+#, no-c-format
+msgid "Key Combo"
+msgstr "Combinaison de touches"
+
+#: index.docbook:499
+#, no-c-format
+msgid "Action"
+msgstr "Action"
+
+#: index.docbook:500
+#, no-c-format
+msgid "&Ctrl;<keycap>Q</keycap>"
+msgstr "&Ctrl;<keycap>Q</keycap>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "Quit &kpoker;"
+msgstr "Quitter &kpoker;"
+
+#: index.docbook:500
+#, no-c-format
+msgid "&Ctrl;<keycap>N</keycap>"
+msgstr "&Ctrl;<keycap>N</keycap>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "New Game"
+msgstr "Nouvelle partie"
+
+#: index.docbook:500
+#, no-c-format
+msgid "&Ctrl;<keycap>S</keycap>"
+msgstr "&Ctrl;<keycap>S</keycap>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "Save Game"
+msgstr "Enregistrer la partie"
+
+#: index.docbook:500
+#, no-c-format
+msgid "&Ctrl;<keycap>M</keycap>"
+msgstr "&Ctrl;<keycap>M</keycap>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "Show Menubar"
+msgstr "Afficher la barre de menus"
+
+#: index.docbook:500
+#, no-c-format
+msgid "&Ctrl;<keycap>F1</keycap>"
+msgstr "&Ctrl;<keycap>F1</keycap>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "<quote>What is this</quote> help"
+msgstr "<quote>Qu'est-ce que c'est&nbsp;?</quote>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "<keycap>F1</keycap>"
+msgstr "<keycap>F1</keycap>"
+
+#: index.docbook:500
+#, no-c-format
+msgid "Help Contents"
+msgstr "Contenu de l'aide"
+
+#: index.docbook:512
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:514
+#, no-c-format
+msgid "&kpoker;"
+msgstr "&kpoker;"
+
+#: index.docbook:516
+#, no-c-format
+msgid ""
+"Program copyright 1997-2000 Jochen Tuchbreiter<email>whynot@mabi.de</email>"
+", Andreas Beckermann <email>b_mann@gmx.de</email>"
+msgstr ""
+"Program copyright 1997-2000 Jochen Tuchbreiter<email>whynot@mabi.de</email>"
+", Andreas Beckermann <email>b_mann@gmx.de</email>"
+
+#: index.docbook:518
+#, no-c-format
+msgid "Persons helping me:"
+msgstr "Personnes qui m'ont aidé&nbsp;:"
+
+#: index.docbook:519
+#, no-c-format
+msgid ""
+"Chris Holmes - idea of writing this game and for parts of the visual "
+"appearence"
+msgstr ""
+"Chris Holmes - l'idée d'écrire ce jeu et des parties de l'apparence "
+"visuelle"
+
+#: index.docbook:519
+#, no-c-format
+msgid "John Fitzgibbon - provided the card images"
+msgstr "John Fitzgibbon - a fourni les images des cartes"
+
+#: index.docbook:519
+#, no-c-format
+msgid "Nico Schirwing - drew the backs of the cards"
+msgstr "Nico Schirwing - a dessiné le dos des cartes"
+
+#: index.docbook:519
+#, no-c-format
+msgid "Andreas Beckermann - currently maintaining the game"
+msgstr "Andreas Beckermann - maintient actuellement le jeu"
+
+#: index.docbook:527
+#, no-c-format
+msgid ""
+"Documentation updated for &kde; 2.0 by Mike McBride "
+"<email>mpmcbride7@yahoo.com</email>"
+msgstr ""
+"Documentation mise à jour pour &kde; 2.0 par Mike McBride "
+"<email>mpmcbride7@yahoo.com</email>"
+
+#: index.docbook:530
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Gérard "
+"Delafond<email>gerard@delafond.org</email></para>"
+
+#: index.docbook:538
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:541
+#, no-c-format
+msgid "How to obtain &kpoker;"
+msgstr "Comment obtenir &kpoker;"
+
+#: index.docbook:548
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et Installation"

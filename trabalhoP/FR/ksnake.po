@@ -1,0 +1,462 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2001-08-06 15:39GMT\n"
+"Last-Translator: Ludovic Grossard <ludovic.grossard@libertysurf.fr>\n"
+"Language-Team: français <kde-francophone@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.1\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "The &ksnake; Handbook"
+msgstr "Le manuel de  &ksnake;"
+
+#: index.docbook:13
+#, no-c-format
+msgid "<firstname>Michel</firstname> <surname>Filippi</surname>"
+msgstr "<firstname>Michel</firstname><surname>Filippi</surname>"
+
+#: index.docbook:21
+#, no-c-format
+msgid "Michel Filippi"
+msgstr "Michel Filippi"
+
+#: index.docbook:26
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Éric</firstname><surname>Bischoff</surname>"
+"<affiliation><address><email>e.bischoff@noos.fr</email></address>"
+"</affiliation><contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:31
+#, no-c-format
+msgid ""
+"Snake Race is a game of speed and agility. You are a hungry snake and are "
+"trying to eat all the apples in the room before getting out!"
+msgstr ""
+"Snake Race est un jeu de vitesse et d'agilité. Vous êtes un serpent "
+"affamé et vous essayez de manger toutes les pommes dans la pièce avant "
+"d'en sortir&nbsp;!"
+
+#: index.docbook:38
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:39
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:40
+#, no-c-format
+msgid "linux"
+msgstr "linux"
+
+#: index.docbook:41
+#, no-c-format
+msgid "race"
+msgstr "course"
+
+#: index.docbook:47
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:49
+#, no-c-format
+msgid ""
+"&ksnake; is a game of speed and agility. You are a hungry snake and are "
+"trying to eat all the apples in the room before getting out!"
+msgstr ""
+"Snake Race est un jeu de vitesse et d'agilité. Vous êtes un serpent "
+"affamé et vous essayez de manger toutes les pommes dans la pièce avant "
+"d'en sortir&nbsp;!"
+
+#: index.docbook:57
+#, no-c-format
+msgid "Rules of the Game"
+msgstr "Règles du jeu"
+
+#: index.docbook:60
+#, no-c-format
+msgid "To Win"
+msgstr "Pour gagner"
+
+#: index.docbook:62
+#, no-c-format
+msgid ""
+"To win &ksnake; you must eat all the apples in the room and leave through "
+"the exit that opens at the top."
+msgstr ""
+"Pour gagner à Snake Race, vous devez manger toutes les pommes dans la "
+"pièce et en sortir par l'issue qui s'ouvre en haut."
+
+#: index.docbook:67
+#, no-c-format
+msgid "Each apple you eat makes you grow longer."
+msgstr "Chaque pomme que vous mangez vous fait allonger."
+
+#: index.docbook:67
+#, no-c-format
+msgid "If you hit a wall, you die."
+msgstr "Si vous cognez dans un mur, vous mourez."
+
+#: index.docbook:67
+#, no-c-format
+msgid "If you hit yourself, you die."
+msgstr "Si vous vous cognez vous-même, vous mourez."
+
+#: index.docbook:67
+#, no-c-format
+msgid "If you are hit in the head by a bouncing ball, you die."
+msgstr "Si vous êtes touché à la tête par une balle qui rebondit, vous mourez. "
+
+#: index.docbook:67
+#, no-c-format
+msgid "If you take too long to eat the apples, more of them appear."
+msgstr ""
+"Si vous mettez trop longtemps à manger les pommes, il en apparaît "
+"d'autres. "
+
+#: index.docbook:98
+#, no-c-format
+msgid "Scoring"
+msgstr "Le score"
+
+#: index.docbook:101
+#, no-c-format
+msgid "Before the timer has run out"
+msgstr "Avant la fin du délai imparti"
+
+#: index.docbook:104
+#, no-c-format
+msgid "Before the timer has run out, you score:"
+msgstr "Avant la fin du délai imparti, vous recevez&nbsp;: "
+
+#: index.docbook:108
+#, no-c-format
+msgid "1 point for a red apple + a bonus depending on your skill level."
+msgstr "1 point par pomme rouge + un bonus dépendant de votre niveau d'adresse,"
+
+#: index.docbook:108
+#, no-c-format
+msgid ""
+"5 points for a gold apple + a bonus for your skill level + 2 points for each "
+"computer snake + 2 points for each bouncing ball."
+msgstr ""
+"5 points par pomme dorée + un bonus dépendant de votre niveau d'adresse + "
+"2 points pour chaque serpent de l'ordinateur + 2 points pour chaque balle "
+"qui rebondit,"
+
+#: index.docbook:108
+#, no-c-format
+msgid ""
+"Twice your level number when you exit the room + a bonus depending on your "
+"skill level."
+msgstr ""
+"Deux fois le numéro du niveau courant quand vous sortez de la pièce + un "
+"bonus dépendant de votre niveau d'adresse."
+
+#: index.docbook:131
+#, no-c-format
+msgid "After the timer has run out"
+msgstr "Lorsque le délai imparti s'est écoulé"
+
+#: index.docbook:133
+#, no-c-format
+msgid "After the timer has run out, you score:"
+msgstr "Lorsque le délai imparti s'est écoulé, vous recevez&nbsp;:"
+
+#: index.docbook:137
+#, no-c-format
+msgid "1 point for a red apple."
+msgstr "1 point par pomme rouge,"
+
+#: index.docbook:137
+#, no-c-format
+msgid "2 points for a gold apple."
+msgstr "2 points par pomme dorée,"
+
+#: index.docbook:137
+#, no-c-format
+msgid ""
+"Points equal to your level number when you exit the room + a bonus depending "
+"on your skill level."
+msgstr ""
+"Autant de points que le niveau courant lorsque vous sortez de la pièce + un "
+"bonus dépendant de votre niveau d'adresse. "
+
+#: index.docbook:159
+#, no-c-format
+msgid "When the computer snake eats an object"
+msgstr "Quand le serpent de l'ordinateur mange un objet"
+
+#: index.docbook:161
+#, no-c-format
+msgid "When the computer snake eats an object you loose:"
+msgstr "Quand le serpent de l'ordinateur mange un objet vous perdez&nbsp;: "
+
+#: index.docbook:165
+#, no-c-format
+msgid "2 points for a red apple."
+msgstr "2 points par pomme rouge,"
+
+#: index.docbook:165
+#, no-c-format
+msgid "5 points for a gold apple."
+msgstr "5 points par pomme dorée."
+
+#: index.docbook:181
+#, no-c-format
+msgid "Other points"
+msgstr "Autres points"
+
+#: index.docbook:183
+#, no-c-format
+msgid "You score 20 points for killing a computer snake."
+msgstr "Vous recevez 20 points quand vous tuez un serpent de l'ordinateur"
+
+#: index.docbook:193
+#, no-c-format
+msgid "Customization"
+msgstr "Personnalisation"
+
+#: index.docbook:196
+#, no-c-format
+msgid "Create Your Own Levels"
+msgstr "Créez vos propres niveaux"
+
+#: index.docbook:198
+#, no-c-format
+msgid ""
+"To create your own level, copy one of the levels from <filename "
+"class=\"directory\">$<envar>KDEDIR</envar>"
+"/share/apps/ksnake/levels</filename> to <filename "
+"class=\"directory\">$<envar>HOME</envar>/.kde/share/apps/ksnake</filename> "
+"and edit it with a bitmap editor. You can then select it in "
+"<menuchoice><guimenu>Options</guimenu> <guimenuitem>Starting "
+"room</guimenuitem> </menuchoice>."
+msgstr ""
+"Pour créer votre propre niveau, copiez un des niveaux de <filename "
+"class=\"directory\">$<envar>KDEDIR</envar>"
+"/share/apps/ksnake/levels</filename> vers  <filename "
+"class=\"directory\">$<envar>HOME</envar>/.kde/share/apps/ksnake</filename> "
+"et modifiez-le avec un éditeur de bitmap. Vous pouvez alors le choisir dans "
+"<menuchoice><guimenu>Configuration</guimenu> <guimenuitem>Terrain "
+"initial</guimenuitem> </menuchoice>."
+
+#: index.docbook:213
+#, no-c-format
+msgid "Menu Reference"
+msgstr ""
+
+#: index.docbook:216
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr ""
+
+#: index.docbook:218
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+
+#: index.docbook:218
+#, no-c-format
+msgid "Start a new game"
+msgstr ""
+
+#: index.docbook:218
+#, no-c-format
+msgid ""
+"<shortcut> <keycap>F3</keycap> </shortcut> <guimenu>Game</guimenu> "
+"<guimenuitem>Pause</guimenuitem>"
+msgstr ""
+
+#: index.docbook:218
+#, fuzzy, no-c-format
+msgid "Pause the game."
+msgstr "Règles du jeu"
+
+#: index.docbook:218
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Show "
+"Highscores...</guimenuitem>"
+msgstr ""
+
+#: index.docbook:218
+#, no-c-format
+msgid "Show the High Score dialog."
+msgstr ""
+
+#: index.docbook:262
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Beginner</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Intermediate</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Advanced</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Expert</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"<action>Choose the difficulty level of the game.</action> The default is "
+"<guimenuitem>Intermediate</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Balls</guisubmenu>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"<action>Choose how many balls are in play.</action> You can choose between "
+"<guimenuitem>0</guimenuitem>, <guimenuitem>1</guimenuitem>, "
+"<guimenuitem>2</guimenuitem>, or <guimenuitem>3</guimenuitem>. The default "
+"is one ball."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Balls AI</guisubmenu>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"<action>Select how dangerous the balls are.</action> You can choose between "
+"<guimenuitem>Dumb</guimenuitem> where the balls show no intelligence, "
+"<guimenuitem>Killer</guimenuitem>, where the balls try to chase you, and "
+"<guimenuitem>Default</guimenuitem>, which is somewhere in between."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Snakes</guisubmenu>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"<action>Choose how many computer snakes are playing against you.</action> "
+"You can choose from <guimenuitem>0</guimenuitem>, "
+"<guimenuitem>1</guimenuitem>, <guimenuitem>2</guimenuitem>, or "
+"<guimenuitem>3</guimenuitem>. The default is three snakes."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Snakes AI</guisubmenu>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"<action>Choose how the snakes act.</action> The default is "
+"<guimenuitem>Eater</guimenuitem>, where the snakes will try to eat the "
+"apples before you can get to them. You could also choose "
+"<guimenuitem>Random</guimenuitem>, where the snakes act randomly, or you "
+"could choose <guimenuitem>Killer</guimenuitem>"
+" where the computer snakes try to kill your snake."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Select Background Color</guisubmenu>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "Change the color of the playing area."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Select Background Pixmap</guisubmenu>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"Choose from several provided pictures as a background, in place of a single "
+"color."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Change Keys...</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "Customize the keys you use to maneuver your snake."
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Starting Room...</guimenuitem>"
+msgstr ""
+
+#: index.docbook:264
+#, no-c-format
+msgid ""
+"<action>Select the level you would like to start the game from.</action>"
+" You don't have to replay the early levels if you are feeling particularly "
+"skillful, you can skip ahead to the more challenging ones. &ksnake; comes "
+"with 25 levels, and you can create more of your own."
+msgstr ""
+
+#: index.docbook:383
+#, no-c-format
+msgid "Credits and Licenses"
+msgstr "Remerciements et licence"
+
+#: index.docbook:385
+#, no-c-format
+msgid "&ksnake; copyright 2000, Michel Filippi"
+msgstr "&ksnake; copyright 2000, Michel Filippi"
+
+#: index.docbook:389
+#, no-c-format
+msgid "Documentation copyright 2000, Michel Filippi and Robert Williams."
+msgstr "Documentation copyright 2000, Michel Filippi and Robert Williams."
+
+#: index.docbook:393
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Éric Bischoff "
+"<email>e.bischoff@noos.fr</email></para>"
