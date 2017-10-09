@@ -1,0 +1,29 @@
+#!/usr/bin/gawk -f
+
+BEGIN {
+  s = -1
+
+
+}
+
+/^msgid/ {
+  #print($0)
+  s++
+
+}
+
+
+/<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/{
+  gsub(/^[^ ]* *|<.*$/,"")
+  print
+}
+
+
+
+
+END{
+  #print(s)
+
+
+
+}
