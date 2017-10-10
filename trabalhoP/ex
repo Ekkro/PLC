@@ -1,28 +1,45 @@
 #!/usr/bin/gawk -f
 
 BEGIN {
-  s = -1
-
-
+  bck = 0
+  empty_bck = 0
 }
 
 /^msgid/ {
-  #print($0)
-  s++
-
+  bck++
 }
 
+/^msgid[ \t]*""/ {
+  empty_bck++
+}
+
+#tem problemas
+/^"Language:/ {
+  gsub(/^"Language: *|\n"/,"")
+  languages[l++] = $0
+
+}
 
 /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/{
   gsub(/^[^ ]* *|<.*$/,"")
-  print
+  authors[i++] = $0
 }
 
 
 
 
-END{
-  #print(s)
+END {
+  print("Empty blocks: " empty_bck)
+  print("All blocks: " bck)
+  print("percent blocks: " (bck - empty_bck)*100/bck "%")
+  print("translators ... there are " i " and they are:")
+
+  # temos de ver os po's em FR, ta muito mal os autores la
+  for (j in authors){
+    print( "\t" authors[j])
+  }
+
+  for(j in languages){print(languages[j])}
 
 
 
