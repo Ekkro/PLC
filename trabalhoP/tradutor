@@ -4,9 +4,12 @@ BEGIN {
 	FS = "\""
 }
 
-/^"Language:/ {
-  gsub(/^"Language: *|\\n"/,"")
-  language = $0
+/^"Language-Team:/ {
+  gsub(/^"Language-Team: *| *<.*/,"")
+  language = tolower($0)
+  if(language=="brazilian portugueses"){
+  	language="brazilian portuguese"
+  }
 }
 
 /^msgid[ \t]*""/ {
@@ -22,13 +25,27 @@ BEGIN {
 }
 
 /^msgstr *"/ {
-  dic[language][msg] = $2
+  dic[msg][language] = $2
 }
 
 END{
+
+	#i-> msg ; j  -> lang
 	for ( i in dic){
-		for ( j in dic[i] ){
-			print( dic[i] "->" dic[i][j])
-		}
+		if(length(dic[i]) == 2){
+			print(dic[i]["brazilian portuguese"] " -> " dic[i]["français"])
+		}	
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
