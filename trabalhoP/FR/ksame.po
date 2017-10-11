@@ -1,9 +1,370 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/FR/ksame.po
-on this server.<br />
-</p>
-</body></html>
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-01-24 17:44CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:12
+#, no-c-format
+msgid "The &ksame; Handbook"
+msgstr "Le manuel de &ksame;"
+
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Nicholas</firstname> <surname>Robbins</surname> <affiliation> "
+"<address><email>logik9000@chartermi.net</email></address> </affiliation>"
+msgstr ""
+"<firstname>Nicholas</firstname> <surname>Robbins</surname> <affiliation> "
+"<address><email>logik9000@chartermi.net</email></address> </affiliation>"
+
+#: index.docbook:23
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit role=\"translator\"> <firstname>Daniel</firstname> "
+"<surname>Cartron</surname> <affiliation> "
+"<address><email>daniel@cartron.org</email></address> </affiliation> "
+"<contrib>Traduction française</contrib> </othercredit>"
+
+#: index.docbook:27
+#, no-c-format
+msgid "Nicholas Robbins"
+msgstr "Nicholas Robbins"
+
+#: index.docbook:34
+#, no-c-format
+msgid ""
+"&ksame; is a nice little program meant to amuse you for anywhere from 3 "
+"minutes to 6 days(straight)."
+msgstr ""
+"&ksame; est un gentil petit programme dont le but est de vous amuser de 3 "
+"minutes à 6 jours (consécutifs)."
+
+#: index.docbook:38
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:39
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:40
+#, no-c-format
+msgid "ksame"
+msgstr "ksame"
+
+#: index.docbook:46
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:48
+#, no-c-format
+msgid ""
+"&ksame; is a simple game. It is played by one player, so there is only one "
+"winner :-) You play for fun and against the high score. It has been inspired "
+"by SameGame, which is only really famous on the Macintosh."
+msgstr ""
+"&ksame; est un jeu simple. On y joue à un seul joueur, donc il y a "
+"seulement un gagnant :-) Vous jouez pour le plaisir et pour battre le plus "
+"haut score. Il a été inspiré par SameGame, qui n'est vraiment connu que "
+"sur Macintosh."
+
+#: index.docbook:52
+#, no-c-format
+msgid ""
+"In 1997 Stephan Kulow and Marcus Kreutzberger wrote <foreignphrase "
+"lang=\"de\">Probiere</foreignphrase> (a German pun). It was their first "
+"attempt to write a X11 application. They decided that it would be a good "
+"idea to port it to KDE, and here we are."
+msgstr ""
+"En 1997, Stephan Kulow et Marcus Kreutzberger ont écrit <foreignphrase "
+"lang=\"de\">Probiere</foreignphrase> (un jeu de mot en allemand). C'était "
+"leur premier essai d'application pour X11. Ils décidèrent que ce serait "
+"une bonne idée de l'adapter pour KDE, et voilà."
+
+#: index.docbook:61
+#, no-c-format
+msgid "Using &ksame;"
+msgstr "Jouer à &ksame;"
+
+#: index.docbook:63
+#, no-c-format
+msgid "A very simple premise. There are a bunch of marbles. Get rid of them all. ;-)"
+msgstr ""
+"Les prémisses sont simples. Il y a un tas de billes. Vous devez vous en "
+"débarrasser."
+
+#: index.docbook:66
+#, no-c-format
+msgid ""
+"You can erase same marbles when they are connected vertically or "
+"horizontally when you click them. If there are pieces over the erased ones, "
+"they will drop down. If all of the pieces on the vertical line are erased, "
+"all pieces on the right side will slide to the left."
+msgstr ""
+"Vous pouvez effacer un groupe de billes identiques, en contact verticalement "
+"ou horizontalement, en cliquant dessus. S'il y a des billes au-dessus de  "
+"celles-ci, elles chuteront. Si toutes les billes d'une colonne sont "
+"effacées toutes les colonnes situées à sa droite glisseront vers la "
+"gauche."
+
+#: index.docbook:71
+#, no-c-format
+msgid "The score is calculated as follows:"
+msgstr "Le score est calculé comme suit&nbsp;:"
+
+#: index.docbook:72
+#, no-c-format
+msgid "Subtract 2 from the number of marbles erased, and square the result."
+msgstr ""
+"Soustrayez 2 au nombre de billes effacées, et élevez le résultat au "
+"carré."
+
+#: index.docbook:73
+#, no-c-format
+msgid ""
+"As an example, if you erase 7 balls, then you get 25 points (7 minus 2 = 5. "
+"5 squared is 25 points).If you erase 8 balls, then you get 36 points (8 "
+"minus 2 = 6. 6 squared is 36 points."
+msgstr ""
+"Par exemple, si vous effacez 7 billes, vous marquez 25 points (7 moins 2 = "
+"5. 5 au carré donne 25 points). Si vous effacez 8 billes, alors vous "
+"marquez 36 points (8 moins 2 = 6. 6 au carré donne 36 points)."
+
+#: index.docbook:76
+#, no-c-format
+msgid ""
+"Get as many of the same pieces as you can, and then erase them in one click. "
+"That way you will get a higher score. The game is over when there are no "
+"pieces that can be erased."
+msgstr ""
+"Regroupez autant de billes identiques que vous le pouvez, puis effacez les. "
+"De cette façon vous ferez le meilleur score. Le jeu est terminé quand il "
+"n'est plus possible d'effacer de billes."
+
+#: index.docbook:81
+#, no-c-format
+msgid ""
+"The score will then be decreased according to the number of remaining "
+"pieces. If you erase all pieces 1,000 bonus points will be added to the "
+"final score."
+msgstr ""
+"Votre score sera diminué d'autant qu'il reste de billes. Si vous effacez "
+"toutes les billes, un bonus de 1 000 points sera ajouté à votre score."
+
+#: index.docbook:87
+#, no-c-format
+msgid "More &ksame; features"
+msgstr "Autres fonctionnalités de &ksame;"
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"&ksame; is wonderful in that it will allow you to kill 5 minutes while you "
+"wait for that program to compile."
+msgstr ""
+"&ksame; est merveilleux si vous voulez tuer 5 minutes en attendant que votre "
+"programme se compile."
+
+#: index.docbook:92
+#, no-c-format
+msgid "Or, if nothing else, it will allow you to kill 5 minutes."
+msgstr "Ou bien, si vous n'avez rien d'autre à faire, simplement de tuer 5 minutes."
+
+#: index.docbook:98
+#, no-c-format
+msgid "Command Reference"
+msgstr "Référence des commandes"
+
+#: index.docbook:101
+#, no-c-format
+msgid "The main &ksame; window"
+msgstr "La fenêtre principale de &ksame;"
+
+#: index.docbook:103
+#, no-c-format
+msgid ""
+"There is a large area with lots of marbles. Underneath is the status bar. "
+"Above is the menu bar."
+msgstr ""
+"C'est une grande zone pleine de billes. Au dessous se trouve la barre "
+"d'état. Au dessus la barre de menu."
+
+#: index.docbook:107
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:109
+#, no-c-format
+msgid "Starts a new game."
+msgstr "Démarre une nouvelle partie."
+
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Show highscore</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Meilleurs "
+"scores</guimenuitem>"
+
+#: index.docbook:109
+#, no-c-format
+msgid "Displays the high score table"
+msgstr "Affiche le tableau des meilleurs scores"
+
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:109
+#, no-c-format
+msgid "<action>Quits</action> &ksame;"
+msgstr "<action>Quitter</action> &ksame;"
+
+#: index.docbook:147
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> Menu"
+msgstr "Le menu <guimenu>Édition</guimenu>"
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+"</shortcut> <guimenu>Édition</guimenu> <guimenuitem>Annuler</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid "This will undo the last move."
+msgstr "Ceci annulera le dernier mouvement"
+
+#: index.docbook:165
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> Menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:167
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Random Board</guimenuitem>"
+msgstr "<guimenu>Configuration</guimenu> <guimenuitem>Partie aléatoire</guimenuitem>"
+
+#: index.docbook:167
+#, no-c-format
+msgid ""
+"<action>Nothing.</action> Leave it on, otherwise it just brings up a blank "
+"window."
+msgstr ""
+"<action>Ne fait rien.</action> Laissez le, sinon cela produira juste une "
+"fenêtre vide."
+
+#: index.docbook:181
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "Le menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:192
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:194
+#, no-c-format
+msgid "&ksame;"
+msgstr "&ksame;"
+
+#: index.docbook:196
+#, no-c-format
+msgid ""
+"Program copyright 1997 Marcus Kreutzberger "
+"<email>kreutzbe@informatik.mu-luebeck.de</email>"
+msgstr ""
+"Programme copyright 1997 Marcus Kreutzberger "
+"<email>kreutzbe@informatik.mu-luebeck.de</email>"
+
+#: index.docbook:198
+#, no-c-format
+msgid "Contributors:"
+msgstr "Collaborateurs&nbsp;:"
+
+#: index.docbook:199
+#, no-c-format
+msgid "Stephen Kulow"
+msgstr "Stephen Kulow"
+
+#: index.docbook:204
+#, no-c-format
+msgid ""
+"Documentation copyright 2000 Nicholas R. Robbins "
+"<email>logik9000@home.com</email>"
+msgstr ""
+"Documentation copyright 2000 Nicholas R. Robbins "
+"<email>logik9000@home.com</email>"
+
+#: index.docbook:206
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para> Traduction française par Daniel Cartron "
+"<email>daniel@cartron.org</email> </para>"
+
+#: index.docbook:216
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:219
+#, no-c-format
+msgid "How to obtain &ksame;"
+msgstr "Comment obtenir &ksame;"
+
+#: index.docbook:226
+#, no-c-format
+msgid "Requirements"
+msgstr "Configuration nécessaire"
+
+#: index.docbook:228
+#, no-c-format
+msgid ""
+"In order to successfully use &ksame;, you need &kde; 3.0. Or at least the "
+"kdelibs package."
+msgstr ""
+"Pour pouvoir utiliser &ksame;, il vous faut &kde; 3.0, ou du moins le "
+"paquetage kdelibs."
+
+#: index.docbook:234
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

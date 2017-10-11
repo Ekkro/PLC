@@ -1,9 +1,309 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/FR/konquest.po
-on this server.<br />
-</p>
-</body></html>
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-01-24 17:21CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:12
+#, no-c-format
+msgid "The &konquest; Handbook"
+msgstr "Le manuel de &konquest;"
+
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Nicholas</firstname> <surname>Robbins</surname> <affiliation> "
+"<address><email>logik9000@chartermi.net</email></address> </affiliation>"
+msgstr ""
+"<firstname>Nicholas</firstname> <surname>Robbins</surname> <affiliation> "
+"<address><email>logik9000@chartermi.net</email></address> </affiliation>"
+
+#: index.docbook:29
+#, no-c-format
+msgid "Developer"
+msgstr "Développeur"
+
+#: index.docbook:38
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecteur"
+
+#: index.docbook:41
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Yves</firstname><surname>Dessertine</surname>"
+"<affiliation><address><email>yves.d@hrnet.fr</email></address></affiliation>"
+"<contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:45
+#, no-c-format
+msgid "Nicholas Robbins"
+msgstr "Nicholas Robbins"
+
+#: index.docbook:53
+#, no-c-format
+msgid ""
+"&konquest; is a wonderfully complex game for universal domination, or "
+"konquest, if you like. :)"
+msgstr ""
+"&konquest; est un jeu merveilleusement complexe de domination universelle, "
+"ou de konquête, si vous préférez. :)"
+
+#: index.docbook:57
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:58
+#, no-c-format
+msgid "Konquest"
+msgstr "Konquest"
+
+#: index.docbook:59
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:65
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:67
+#, no-c-format
+msgid ""
+"This the &kde; version of <application>Gnu-Lactic Konquest</application>, a "
+"multi-player strategy game. The goal of the game is to expand your "
+"interstellar empire across the galaxy and of course, crush your rivals in "
+"the process."
+msgstr ""
+"Ceci est la version pour &kde; de <application>Gnu-Lactic "
+"Konquest</application>"
+", un jeu de stratégie multi-joueurs. Le but de ce jeu est d'étendre votre "
+"empire interstellaire à travers la galaxie, et, bien sûr, de détruire vos "
+"rivaux par la même occasion."
+
+#: index.docbook:75
+#, no-c-format
+msgid "Using &konquest;"
+msgstr "Utilisation de &konquest;"
+
+#: index.docbook:78
+#, no-c-format
+msgid "More &konquest; features"
+msgstr "Plus de fonctions de &konquest;"
+
+#: index.docbook:80
+#, no-c-format
+msgid ""
+"A really entertaining game of universal domination. The only downfall is "
+"there is no one player mode. Which means you'll have to find a friend to "
+"play this with."
+msgstr ""
+"Un jeu de domination universelle réellement divertissant. Le seul "
+"inconvénient est qu'il n'y a pas de mode un joueur. Ce qui signifie que "
+"vous aurez besoin d'un ami pour jouer avec."
+
+#: index.docbook:87
+#, no-c-format
+msgid "Configuration"
+msgstr "Configuration"
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"When you start &konquest;, you a window settings window pop up. From here "
+"you need to enter player names, decide the number of planets, and how many "
+"turns are allowed. (Don't worry, you can add more later) You can also reject "
+"the map, until a you find a galaxy layout you like. After this, just "
+"<guibutton>Start Game</guibutton>!"
+msgstr ""
+"Lorsque vous démarrez &konquest;, une fenêtre de configuration apparaît. "
+"D'ici vous aurez à saisir les noms des joueurs, décider le nombre de "
+"planètes, et combien de tours seront autorisés. (Ne vous inquiétez pas, "
+"vous pourrez toujours augmenter le nombre de tours ultérieurement). Vous "
+"pouvez aussi refuser la carte, jusqu'a ce que vous trouviez un agencement de "
+"galaxie qui vous convient. Après cela, il vous suffit de "
+"<guibutton>Commencer la partie</guibutton>&nbsp;!"
+
+#: index.docbook:101
+#, no-c-format
+msgid "Command Reference"
+msgstr "Référence des commandes"
+
+#: index.docbook:103
+#, no-c-format
+msgid "<para></para>"
+msgstr "<para></para>"
+
+#: index.docbook:106
+#, no-c-format
+msgid "The main &konquest; window"
+msgstr "La fenêtre principale de &konquest;"
+
+#: index.docbook:108
+#, no-c-format
+msgid ""
+"The Planet Status indicator (the big black box on the left) is your source "
+"for intelligence on the state of the Galaxy. Your spies will report on the "
+"status of your rivals, but not on the native-controlled planets. The "
+"information present in the display is: <guilabel>name</guilabel>, "
+"<guilabel>owner</guilabel>, <guilabel>production</guilabel> rate, fleet "
+"strength (<guilabel>ships</guilabel> and <guilabel>kill percent</guilabel>."
+msgstr ""
+"L'indicateur d'état des planètes (la grande boîte noire à gauche) est "
+"votre source d'information sur l'état de la Galaxie. Vos espions vous "
+"informent sur l'état de vos rivaux, mais pas sur les planètes contrôlées "
+"par les indigènes. L'information disponible donne&nbsp;: <guilabel>nom de "
+"la planète</guilabel>, <guilabel>propriétaire</guilabel>, capacité de "
+"<guilabel>production</guilabel>, importance de la flotte "
+"(<guilabel>vaisseaux</guilabel> et <guilabel>taux de mortalité</guilabel>)."
+
+#: index.docbook:117
+#, no-c-format
+msgid ""
+"The <guilabel>production</guilabel> rate is the number of ships that planet "
+"will construct in one turn. The fleet strength is the number of "
+"<guilabel>ships</guilabel> currently in place at the planet. And, the "
+"<guilabel>kill percent</guilabel> is a measure of the effectiveness of the "
+"ships produced at that planet. Attack fleets take the kill percentage of "
+"their planet of departure, and defense fleets use the kill percentage of the "
+"planet they are defending."
+msgstr ""
+"La capacité de <guilabel>production</guilabel> est le nombre de vaisseaux "
+"que la planète va construire en un tour. L'importance de la flotte est le "
+"nombre de <guilabel>vaisseaux</guilabel> actuellement en place sur cette "
+"planète. Le <guilabel>taux de mortalité</guilabel> est une mesure de "
+"l'efficacité des vaisseaux produits sur cette planète. Les flottes "
+"attaquantes disposent de la puissance de feu de leur planète de départ, et "
+"les flottes de défense celle de la planète qu'elles défendent."
+
+#: index.docbook:126
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:128
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Nouvelle partie</guimenuitem>"
+
+#: index.docbook:128
+#, no-c-format
+msgid "Starts a new game."
+msgstr "Commence une nouvelle partie."
+
+#: index.docbook:128
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:128
+#, no-c-format
+msgid "Quits the game."
+msgstr "Quitte le jeu."
+
+#: index.docbook:147
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> Menu"
+msgstr "Le menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:158
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:160
+#, no-c-format
+msgid "&konquest;"
+msgstr "&konquest;"
+
+#: index.docbook:162
+#, no-c-format
+msgid ""
+"GNU-Lactic Conquest Project, &kde; version by Russ Steffen, "
+"<email>rsteffen@ia.net</email>. See <ulink "
+"url=\"http://www.ia.net/~rsteffen/konquest.html\">"
+"http://www.ia.net/~rsteffen/konquest.html</ulink> for more information."
+msgstr ""
+"Projet GNU-Lactic Conquest, version pour &kde; par Russ Steffen, "
+"<email>rsteffen@ia.net</email>. Consultez <ulink "
+"url=\"http://www.ia.net/~rsteffen/konquest.html\">"
+"http://www.ia.net/~rsteffen/konquest.html</ulink> pour plus d'informations."
+
+#: index.docbook:167
+#, no-c-format
+msgid "Copyright &copy; 1998 by the GNU-Lactic Conquest Project"
+msgstr "Copyright &copy; 1998 par le Projet GNU-Lactic Conquest"
+
+#: index.docbook:169
+#, no-c-format
+msgid ""
+"Documentation copyright 2000 Nicholas Robbins "
+"<email>logik9000@chartermi.com</email>"
+msgstr ""
+"Documentation copyright 2000 Nicholas Robbins "
+"<email>logik9000@chartermi.com</email>"
+
+#: index.docbook:172
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Yves Dessertine "
+"<email>yves.d@hrnet.fr</email></para>"
+
+#: index.docbook:181
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:184
+#, no-c-format
+msgid "How to obtain &konquest;"
+msgstr "Comment obtenir &konquest;"
+
+#: index.docbook:191
+#, no-c-format
+msgid "Requirements"
+msgstr "Programmes requis"
+
+#: index.docbook:193
+#, no-c-format
+msgid ""
+"In order to successfully use &konquest;, you need &kde; 3.0. It is also "
+"reccomended that you have your X server set to over 8bpp, as the plants are "
+"scanned and require a rather high color depth."
+msgstr ""
+"Pour utiliser de &konquest;, vous aurez besoin de &kde; 3.0. Il vous est "
+"aussi recommandé d'avoir un serveur X configuré à plus de 8bpp, parce que "
+"les sprites sont numérisées et nécessitent une profondeur de couleur "
+"plutôt importante."
+
+#: index.docbook:197
+#, no-c-format
+msgid ""
+"All required libraries as well as &konquest; itself can also be found on "
+"<ulink url=\"http://www.ia.net/~rsteffen/konquest.html\">"
+"The &konquest; home page</ulink>."
+msgstr ""
+"Toutes les bibliothèques requises ainsi que &konquest; lui-même peuvent "
+"être trouvés sur <ulink "
+"url=\"http://www.ia.net/~rsteffen/konquest.html\">, la page Web de "
+"&konquest;</ulink>."
+
+#: index.docbook:204
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

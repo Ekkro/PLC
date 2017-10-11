@@ -1,9 +1,121 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/PT/ksame.po
-on this server.<br />
-</p>
-</body></html>
+msgid ""
+msgstr ""
+"Project-Id-Version: ksame\n"
+"POT-Creation-Date: 2002-02-10 02:44+0100\n"
+"PO-Revision-Date: 2001-01-16 13:31-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: KSameWidget.cpp:59
+#, fuzzy
+msgid "&Restart this Board"
+msgstr "&Reiniciar este tabuleiro"
+
+#: KSameWidget.cpp:63
+msgid "S&how Highscore"
+msgstr "&Mostrar Pontuações"
+
+#: KSameWidget.cpp:70
+msgid "&Random Board"
+msgstr "Cam&po Aleatório"
+
+#: KSameWidget.cpp:75
+msgid "Colors: XX"
+msgstr "Cores: XX"
+
+#: KSameWidget.cpp:76
+msgid "Board: XXXXXX"
+msgstr "Campo: XXXXXX"
+
+#: KSameWidget.cpp:77
+msgid "Marked: XXXXXX"
+msgstr "Marcada: XXXXX"
+
+#: KSameWidget.cpp:78
+msgid "Score: XXXXXX"
+msgstr "Pontuação: XXXXXX"
+
+#: KSameWidget.cpp:132
+msgid "Do you want to resign?"
+msgstr "Quer mesmo desistir?"
+
+#: KSameWidget.cpp:142
+#, fuzzy
+msgid "Select Board"
+msgstr "Selecione um tabuleiro"
+
+#: KSameWidget.cpp:150
+msgid "Select a board"
+msgstr "Selecione um tabuleiro"
+
+#: KSameWidget.cpp:182 KSameWidget.cpp:233
+#, fuzzy
+msgid "Board"
+msgstr "Tabuleiro: %1"
+
+#: KSameWidget.cpp:198
+msgid "%1 Colors"
+msgstr "%1 Cores"
+
+#: KSameWidget.cpp:202
+#, c-format
+msgid "Board: %1"
+msgstr "Tabuleiro: %1"
+
+#: KSameWidget.cpp:206
+#, c-format
+msgid "Marked: %1"
+msgstr "Marcadas: %1"
+
+#: KSameWidget.cpp:211
+msgid "%1 stones removed."
+msgstr "%1 pedras removidas."
+
+#: KSameWidget.cpp:215
+#, c-format
+msgid "Score: %1"
+msgstr "Pontuação: %1"
+
+#: KSameWidget.cpp:224
+msgid ""
+"You removed even the last stone, great job! This gave you a score of %1 in "
+"total."
+msgstr ""
+"Você removeu a última pedra, bom trabalho! Você obteve o escore de %1 no "
+"total."
+
+#: KSameWidget.cpp:228
+msgid "There are no more removeable stones. You got a score of %1 in total."
+msgstr "Não há mais pedras removíveis. Você obteve um escore de %1 no total."
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Elvis Pfützenreuter"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "epx@conectiva.com.br"
+
+#: main.cpp:32
+msgid "Same Game - a little game about balls and how to get rid of them"
+msgstr "Same Game - um pequeno jogo sobre bolas e como livrar-se delas"
+
+#: main.cpp:35
+msgid "SameGame"
+msgstr "SameGame"
+
+#~ msgid "Highscores"
+#~ msgstr "Pontuações"
+
+#~ msgid "Please &enter your name:"
+#~ msgstr "&Insira o seu nome:"
+
+#~ msgid "Anonymous"
+#~ msgstr "Anônimo"

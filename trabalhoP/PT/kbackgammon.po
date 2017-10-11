@@ -1,9 +1,1476 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/PT/kbackgammon.po
-on this server.<br />
-</p>
-</body></html>
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-02-03 03:06+0100\n"
+"PO-Revision-Date: 2001-01-12 14:30-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: kbg.cpp:76
+msgid "Open Board"
+msgstr ""
+
+#: kbg.cpp:77
+msgid "FIBS"
+msgstr ""
+
+#: kbg.cpp:78
+msgid "GNU Backgammon (Experimental)"
+msgstr ""
+
+#: kbg.cpp:79
+msgid "Next Generation (Experimental)"
+msgstr ""
+
+#: kbg.cpp:81
+msgid "FIBS Home"
+msgstr ""
+
+#: kbg.cpp:84
+msgid "Backgammon Rules"
+msgstr ""
+
+#: kbg.cpp:87 main.cpp:43
+msgid "KBackgammon"
+msgstr ""
+
+#: kbg.cpp:102
+msgid "Load Game"
+msgstr ""
+
+#: kbg.cpp:103
+msgid "Save Game"
+msgstr ""
+
+#: kbg.cpp:115
+msgid "&Engine"
+msgstr ""
+
+#: kbg.cpp:122
+msgid "Roll Dice"
+msgstr ""
+
+#: kbg.cpp:125
+msgid "Done Moving"
+msgstr ""
+
+#: kbg.cpp:128
+msgid "Double Cube"
+msgstr ""
+
+#: kbg.cpp:134
+msgid "Show Command &Line"
+msgstr ""
+
+#: kbg.cpp:146
+msgid "&Backgammon on the Web"
+msgstr ""
+
+#: kbg.cpp:165
+msgid "Command: "
+msgstr ""
+
+#: kbg.cpp:196
+msgid ""
+"This area contains the status messages for the game. Most of these messages "
+"are sent to you from the current engine."
+msgstr ""
+
+#: kbg.cpp:200
+msgid ""
+"This is the command line. You can type special commands related to the "
+"current engine in here. Most relevant commands are also available through "
+"the menus."
+msgstr ""
+
+#: kbg.cpp:205
+msgid ""
+"This is the button bar tool bar. It gives you easy access to game related "
+"commands. You can drag the bar to a different location within the window."
+msgstr ""
+
+#: kbg.cpp:210
+msgid ""
+"This is the status bar. It shows you the currently selected engine in the "
+"left corner."
+msgstr ""
+
+#: kbg.cpp:535
+msgid "General"
+msgstr ""
+
+#: kbg.cpp:535
+#, c-format
+msgid "Here you can configure general settings of %1"
+msgstr ""
+
+#: kbg.cpp:542
+msgid "Messages:"
+msgstr ""
+
+#: kbg.cpp:543
+msgid "Timer:"
+msgstr ""
+
+#: kbg.cpp:544
+msgid "Autosave:"
+msgstr ""
+
+#: kbg.cpp:545
+msgid "Events:"
+msgstr ""
+
+#: kbg.cpp:550
+msgid ""
+"After you finished your moves, they have to be sent to the engine. You can "
+"either do that manually (in which case you should not enable this feature), "
+"or you can specify an amount of time that has to pass before the move is "
+"commited. If you undo a move during the timeout, the timeout will be reset "
+"and restarted once you finish the move. This is very useful if you would "
+"like to review the result of your move."
+msgstr ""
+
+#: kbg.cpp:557
+msgid "Enable Timeout"
+msgstr ""
+
+#: kbg.cpp:562
+msgid "Move timout in seconds"
+msgstr ""
+
+#: kbg.cpp:575
+msgid ""
+"Check the box to enable all the messages the you have previously disabled by "
+"chosing the \"Don't show this message again\" option."
+msgstr ""
+
+#: kbg.cpp:579
+msgid "Reenable all messages"
+msgstr ""
+
+#: kbg.cpp:585
+msgid ""
+"Check the box to automatically save all window positions on program exit. "
+"They will be restored at next start."
+msgstr ""
+
+#: kbg.cpp:589
+msgid "Save settings on exit"
+msgstr ""
+
+#: kbg.cpp:596
+msgid ""
+"Event notification of %1 is configured as part of the system-wide "
+"notification process. Click here, and you will be able to configure system "
+"sounds, etc."
+msgstr ""
+
+#: kbg.cpp:603
+msgid "Klick here to configure the event notification"
+msgstr ""
+
+#: kbg.cpp:697
+msgid ""
+"You can enable the menubar again with the right mouse button menu of the "
+"board."
+msgstr ""
+
+#: kbgboard.cpp:171
+msgid "Board"
+msgstr ""
+
+#: kbgboard.cpp:171
+msgid "Here you can configure the backgammon board"
+msgstr ""
+
+#: kbgboard.cpp:190
+msgid "Colors:"
+msgstr ""
+
+#: kbgboard.cpp:191
+msgid "Short Moves:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:228 kbgboard.cpp:192
+msgid "Options:"
+msgstr ""
+
+#: kbgboard.cpp:204
+msgid "Background"
+msgstr ""
+
+#: kbgboard.cpp:207
+msgid "Color 1"
+msgstr ""
+
+#: kbgboard.cpp:210
+msgid "Color 2"
+msgstr ""
+
+#: kbgboard.cpp:232
+msgid "&Disable short moves. Only drag'n drop will move."
+msgstr ""
+
+#: kbgboard.cpp:233
+msgid ""
+"&Single clicks with the left mouse button will\n"
+"move a checker the shortest possible distance."
+msgstr ""
+
+#: kbgboard.cpp:235
+msgid ""
+"D&ouble clicks with the left mouse button will\n"
+"move a checker the shortest possible distance."
+msgstr ""
+
+#: kbgboard.cpp:250
+msgid "Show pip count in title bar"
+msgstr ""
+
+#: kbgboard.cpp:263
+msgid "&Board"
+msgstr ""
+
+#: kbgboard.cpp:285
+msgid "&Font"
+msgstr ""
+
+#: kbgboard.cpp:423
+msgid "Set Cube Values"
+msgstr ""
+
+#: kbgboard.cpp:434
+msgid ""
+"Set the face value of the cube and select who should be able to\n"
+"double. Note that a face value of 1 automatically allows both\n"
+"players to double."
+msgstr ""
+
+#: kbgboard.cpp:486
+msgid "Lower Player"
+msgstr ""
+
+#: kbgboard.cpp:487
+msgid "Upper Player"
+msgstr ""
+
+#: kbgboard.cpp:488
+msgid "Open Cube"
+msgstr ""
+
+#: kbgboard.cpp:573
+msgid "Set Dice Values"
+msgstr ""
+
+#: kbgboard.cpp:584
+msgid ""
+"Set the face values of the selected dice. The other player's\n"
+"dice will be cleared and it will be the dice's owner's turn."
+msgstr ""
+
+#: kbgboard.cpp:1653
+msgid ""
+"This is the bar of the backgammon board.\n"
+"\n"
+"Checkers that have been kicked from the board are put on the bar and remain "
+"there until they can be put back on the board. Checkers can be moved by "
+"dragging them to their destination or by using the 'short move' feature.\n"
+"\n"
+"If the cube hasn't been doubled yet and if it can be used, its face shows 64 "
+"and if the cube can be doubled, double clicking it will do so."
+msgstr ""
+
+#: kbgboard.cpp:1670
+msgid ""
+"This is a regular field of the backgammon board.\n"
+"\n"
+"Checkers can be placed on this field and if the current state of the game "
+"and the dice permit this, they can be moved by dragging them to their "
+"destination or by using the 'short move' feature."
+msgstr ""
+
+#: kbgboard.cpp:1684
+msgid ""
+"This part of the backgammon board is the home.\n"
+"\n"
+"Depending on the direction of the game, one of the homes contains the dice "
+"and the other one contains checkers that have been moved off the board. "
+"Checkers can never be moved away from the home. If this home contains the "
+"dice and the current state of the game permits this, double clicking on the "
+"dice will roll them. Moreover, the cube might be placed on the home bar and "
+"if it can be doubled, double clicking it will do so."
+msgstr ""
+
+#: rc.cpp:2
+msgid "&Move"
+msgstr ""
+
+#: rc.cpp:3
+msgid "&Command"
+msgstr ""
+
+#: rc.cpp:7
+msgid "Command Toolbar"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:124
+msgid "&Swap Colors"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:126
+msgid "&Edit Mode"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:182
+msgid "Offline Engine"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:182
+msgid "Use this to configure the Offline engine"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:199
+msgid "Names:"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:209
+msgid "First player"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:210
+msgid "Second player"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:217
+msgid "Enter the name of the first player."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:218
+msgid "Enter the name of the second player."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:224
+msgid "&Player Names"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:237 engines/offline/kbgoffline.cpp:253
+msgid "South"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:238 engines/offline/kbgoffline.cpp:254
+msgid "North"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:282 engines/offline/kbgoffline.cpp:286
+msgid "A game is currently in progress. Starting a new one will terminate it."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:284 engines/offline/kbgoffline.cpp:288
+msgid "Start new game"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:284 engines/offline/kbgoffline.cpp:289
+msgid "Continue old game"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:320
+msgid "%1 rolls %2, %3 rolls %4."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:325 engines/offline/kbgoffline.cpp:328
+msgid "%1 makes the first move."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:242 engines/offline/kbgoffline.cpp:341
+#: engines/offline/kbgoffline.cpp:802
+msgid "%1 vs. %2"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:391
+msgid ""
+"Please enter the nickname of the player whose home\n"
+"is in the lower half of the board."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:395
+msgid ""
+"Please enter the nickname of the player whose home\n"
+"is in the upper half of the board."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:424 engines/offline/kbgoffline.cpp:660
+msgid "%1 wins the game. Congratulations!"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:443
+msgid "%1, please roll or double."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:562
+msgid "It's not your turn to roll!"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:614
+msgid "Game over!"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:621
+msgid "%1, you can't move."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:628
+msgid "%1, please move 1 piece."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:633
+msgid "%1, please move %2 pieces."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:653
+msgid "%1 has doubled. %2, do you accept the double?"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:656
+msgid "Doubling"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2217 engines/offline/kbgoffline.cpp:656
+msgid "Accept"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2218 engines/offline/kbgoffline.cpp:656
+msgid "Reject"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:665
+msgid "%1 has accepted the double. The game continues."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:703
+msgid "In the middle of a game. Really quit?"
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:728
+msgid "Text commands are not yet working. The command '%1' has been ignored."
+msgstr ""
+
+#: engines/offline/kbgoffline.cpp:798
+msgid "%1 vs. %2 - Edit Mode"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:211
+msgid "FIBS Engine"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:211
+msgid "Here you can configure the FIBS backgammon engine"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:229
+msgid "Automatic Messages:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:237
+msgid "Show copy of personal messages in main window"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:238
+msgid "Automatically request player info on invitation"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:240
+msgid ""
+"Usually, all messages sent directly to you by other players are displayed "
+"only in the chat window. Check this box if you would like to get a copy of "
+"these messages in the main window."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:243
+msgid ""
+"Check this box if you would like to receive information on players that "
+"invite you to games."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:258
+msgid "Start match :"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:259
+msgid "Win match :"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:260
+msgid "Lose match :"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:262
+msgid ""
+"If you want to send a standard greeting to your opponent whenever you start "
+"a new match, check this box and write the message into the entry field."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:266
+msgid ""
+"If you want to send a standard message to your opponent whenever you won a "
+"match, check this box and write the message into the entry field."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:269
+msgid ""
+"If you want to send a standard message to your opponent whenever you lost a "
+"match, check this box and write the message into the entry field."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:287
+msgid "&Local"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:296
+msgid "Server:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:297
+msgid "Other:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:309
+msgid "Server Name:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:310
+msgid "Server Port:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:311
+msgid "User Name:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:312
+msgid "Password:"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:321
+msgid ""
+"Enter here the host name of FIBS. With almost absolute certainty this should "
+"be \"fibs.com\". If you leave this blank, you will be asked again at "
+"connection time."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:325
+msgid ""
+"Enter here the port number of FIBS. With almost absolute certainty this "
+"should be \"4321\". If you leave this blank, you will be asked again at "
+"connection time."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:329
+msgid ""
+"Enter your login on FIBS here. If you do not have a login yet, you should "
+"first create an account using the corresponding menu entry. If you leave "
+"this blank, you will be asked again at connection time."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:333
+msgid ""
+"Enter your password on FIBS here. If you do not have a login yet, you should "
+"first create an account using the corresponding menu entry. If you leave "
+"this blank, you will be asked again at connection time. The password will "
+"not be visible."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:342
+msgid "Keep connections alive"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:344
+msgid ""
+"Usually, FIBS drops the connection after one hour of inactivity. When you "
+"check this box, %1 will try to keep the connection alive, even if you are "
+"not actually playing or chatting. Use this with caution if you don't have a "
+"flat rate Internet access!"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:358
+msgid "&Connection"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:370
+msgid "&Buddy List"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:435
+msgid ""
+"_: R means resume\n"
+"%1 (R)"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:436
+msgid ""
+"%1 (experience %2, rating %3) wants to resume a saved match with you. If you "
+"want to play, use the corresponding menu entry to join (or type 'join %4')."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:439
+msgid "%1 wants to resume a saved match with you"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:442
+msgid ""
+"_: U means unlimited\n"
+"%1 (U)"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:443
+msgid ""
+"%1 (experience %2, rating %3) wants to play an unlimited match with you. If "
+"you want to play, use the corresponding menu entry to join (or type 'join "
+"%4')."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:446
+msgid "%1 has invited you to an unlimited match"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:451
+msgid ""
+"_: If the format of the (U) and (R) strings is changed, it should also be "
+"changed here\n"
+"%1 (%2)"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:452
+msgid ""
+"%1 (experience %2, rating %3) wants to play a %4 point match with you. If "
+"you want to play, use the corresponding menu entry to join (or type 'join "
+"%5')."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:455
+msgid "%1 has invited you for a %2 point match"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:646
+msgid "Still connected. Log out first?"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:731
+msgid ""
+"Please type the message that should be displayed to other\n"
+"users while you are away."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:879
+#, c-format
+msgid "Looking up %1"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:890
+#, c-format
+msgid "Connecting to %1"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:900
+msgid "Error, connection has been refused"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:903
+msgid "Error, nonexistent host or name server down."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:906
+msgid "Error, reading data from socket"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:981
+msgid "Connected"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1026
+msgid "Disconnected."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1052
+msgid ""
+"Enter the name of the server you want to connect to.\n"
+"This should almost always be \"fibs.com\"."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1064
+msgid "Enter the port number on the server. It should almost always be \"4321\"."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1077
+msgid ""
+"Enter the login you would like to use on the server %1. The login may not\n"
+"contain spaces or colons. If the login you choose is not available, you'll "
+"later be\n"
+"given the opportunity to pick another one.\n"
+"\n"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1083
+msgid ""
+"Enter your login on the server %1. If you don't have a login, you\n"
+"should create one using the corresponding menu option.\n"
+"\n"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1092
+msgid "The login may not contain spaces or colons!"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1107
+msgid ""
+"Enter the password you would like to use with the login %1\n"
+"on the server %2. It may not contain colons.\n"
+"\n"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1113
+msgid ""
+"Enter the password for the login %1 on the server %2.\n"
+"\n"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1128
+msgid "The password may not contain colons or spaces!"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1402
+msgid ""
+"There was a problem with your login and password. You can reenter\n"
+"your login and password and try to reconnect."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1407
+msgid "Wrong Login/Password"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1408
+msgid "Reconnect"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1437
+msgid "%1, last logged in from %2 at %3."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1508
+msgid "The moreboards toggle has been set."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1515
+msgid "The notify toggle has been set."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1522
+msgid "The report toggle has been set."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1570
+msgid "The selected login is alreay in use! Please select another one."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1578
+msgid ""
+"\n"
+"\n"
+"The login may not contain spaces or colons!"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1610
+msgid ""
+"Your account has been created. Your new login is <u>%1</u>. To fully "
+"activate this account, I will now close the connection. Once you reconnect, "
+"you can start playing backgammon on FIBS."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1738
+msgid "%1 (%2) vs. %3 (%4) - game over"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1741
+msgid "%1 (%2) vs. %3 (%4) - unlimited match"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1744
+msgid "%1 (%2) vs. %3 (%4) - %5 point match"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1770
+msgid "Please make your move"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1783
+msgid "(or use the corresponding menu entry to join the match)"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1837
+msgid "It's your turn to roll the dice or double the cube"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1898
+msgid "(or use the corresponding menu entry to leave or continue the match)"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:1994
+msgid "(or use the corresponding menu entry to accept or reject the offer)"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2015
+msgid "Sorry, you lost the game."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2023
+msgid "Congratulations, you won the game!"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2061
+msgid ""
+"You should never set the 'boardstyle' variable by hand! It is vital for "
+"proper functioning of this program that it remains set to 3. It has been "
+"reset for you."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2161
+msgid "&Connect"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2162
+msgid "New Account"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2163
+msgid "&Disconnect"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2171
+msgid "&Invite..."
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2177
+msgid "&Commands"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2179
+msgid "Away"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2196
+msgid "Ready to Play"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2198
+msgid "Show  Rating Computations"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2200
+msgid "Greedy Bearoffs"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2202
+msgid "Ask for Doubles"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2215
+msgid "&Response"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2225
+msgid "Join"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2226
+msgid "Leave"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2236
+msgid "&Join"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2259
+msgid "&Player List"
+msgstr ""
+
+#: engines/fibs/kbgfibs.cpp:2260
+msgid "&Chat"
+msgstr ""
+
+#: engines/fibs/kbginvite.cpp:54
+msgid "Invite Players"
+msgstr ""
+
+#: engines/fibs/kbginvite.cpp:63
+msgid "&Invite"
+msgstr ""
+
+#: engines/fibs/kbginvite.cpp:64
+msgid "&Resume"
+msgstr ""
+
+#: engines/fibs/kbginvite.cpp:65
+msgid "&Unlimited"
+msgstr ""
+
+#: engines/fibs/kbginvite.cpp:70
+msgid ""
+"Type the name of the player you want to invite in the first entry\n"
+"field and select the desired match length in the spin box."
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:217
+msgid "Player"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:218
+msgid "Opponent"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:219
+msgid "Watches"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:220
+msgid "Status"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:221
+msgid "Rating"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:222
+msgid "Exp."
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:223
+msgid "Idle"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:224
+msgid "Time"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:225
+msgid "Hostname"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:226
+msgid "Client"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:227
+msgid "Email"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:244
+msgid ""
+"_: abreviate blind\n"
+"B"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:245
+msgid ""
+"_: abreviate away\n"
+"A"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:246
+msgid ""
+"_: abreviate ready\n"
+"R"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:258
+msgid ""
+"This window contains the player list. It shows all players that are "
+"currently logged into FIBS.Use the right mouse button to get a context menu "
+"with helpful information and commands."
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:288
+msgid "Info   "
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:292
+msgid "Talk   "
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:297
+msgid "Look   "
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:298
+msgid "Watch  "
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:299
+msgid "Unwatch"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:300
+msgid "Blind  "
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:301
+msgid "Update "
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:243 engines/fibs/kplayerlist.cpp:307
+msgid "Use Dialog"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:245 engines/fibs/kplayerlist.cpp:309
+msgid "1 Point match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:247 engines/fibs/kplayerlist.cpp:311
+msgid "2 Point Match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:249 engines/fibs/kplayerlist.cpp:313
+msgid "3 Point Match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:251 engines/fibs/kplayerlist.cpp:315
+msgid "4 Point Match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:253 engines/fibs/kplayerlist.cpp:317
+msgid "5 Point Match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:255 engines/fibs/kplayerlist.cpp:319
+msgid "6 Point Match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:257 engines/fibs/kplayerlist.cpp:321
+msgid "7 Point Match"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:259 engines/fibs/kplayerlist.cpp:323
+msgid "Unlimited"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:261 engines/fibs/kplayerlist.cpp:325
+msgid "Resume"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:335
+msgid "Invite"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:453
+msgid "Column Selection:"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:460
+msgid ""
+"Select all the columns that you would\n"
+"like to be shown in the player list."
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:483
+msgid "&Playerlist"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:693 engines/fibs/kplayerlist.cpp:571
+#, c-format
+msgid "Info on %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:454 engines/fibs/kbgfibschat.cpp:480
+#: engines/fibs/kbgfibschat.cpp:690 engines/fibs/kplayerlist.cpp:572
+#, c-format
+msgid "Talk to %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:573
+#, c-format
+msgid "Email to %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:574
+#, c-format
+msgid "Look at %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:575
+#, c-format
+msgid "Watch %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:576
+#, c-format
+msgid "Update %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:697 engines/fibs/kplayerlist.cpp:589
+#, c-format
+msgid "Invite %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:597
+#, c-format
+msgid "Unblind %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:597
+#, c-format
+msgid "Blind %1"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:599
+msgid "Blind"
+msgstr ""
+
+#: engines/fibs/kplayerlist.cpp:888
+msgid "Player List - %1 - %2/%3"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:204
+msgid "%1 user"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:206
+msgid "Kibitz to watchers and players"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:208
+msgid "Whisper to watchers only"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:223
+msgid "Chat Window"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:225
+msgid ""
+"This is the chat window.\n"
+"\n"
+"The text in this window is colored depending on whether it is directed at "
+"you personally, shouted to the general FIBS population, has been said by "
+"you, or is of general interest. If you select the name of a player, the "
+"context contains entries specifically geared towards that player."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:234
+msgid "Info on"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:238
+msgid "Talk to"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:281
+msgid "Gag"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:282
+msgid "Ungag"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:283
+msgid "Clear Gag List"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:287
+msgid "Silent"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:365
+msgid "Select users to be removed from the gag list."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:367
+msgid ""
+"Select all the users you want to remove from the gag list and then click Ok. "
+"Afterwards you will again hear what they shout."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:382
+msgid "&Gag List"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:553
+msgid "<u>%1 tells you:</u> %2"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:562
+msgid "<u>%1 shouts:</u> %2"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:570
+msgid "<u>%1 whispers:</u> %2"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:579
+msgid "<u>%1 kibitzes:</u> %2"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:587
+msgid "<u>You tell %1:</u> %2"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:594
+#, c-format
+msgid "<u>You shout:</u> %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:601
+#, c-format
+msgid "<u>You whisper:</u> %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:608
+#, c-format
+msgid "<u>You kibitz:</u> %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:619
+msgid "<u>User %1 left a message at %2</u>: %3"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:626
+msgid "Your message for %1 has been delivered."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:633
+msgid "Your message for %1 has been saved."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:650
+msgid "<u>You say to yourself:</u> "
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:702
+#, c-format
+msgid "Gag %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:705
+#, c-format
+msgid "Ungag %1"
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:734
+msgid "The gag list is now empty."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:748
+msgid "You won't hear what %1 says and shouts."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:770
+msgid "You will again hear what %1 says and shouts."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:792
+msgid "You won't hear what people shout."
+msgstr ""
+
+#: engines/fibs/kbgfibschat.cpp:794
+msgid "You will hear what people shout."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:137
+#, c-format
+msgid "gnubg doubles the cube to %1."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:138
+msgid "gnubg doubles"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:139
+msgid "&Accept"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:139
+msgid "Re&double"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:139
+msgid "&Reject"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:191
+msgid "Please roll or double"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:194
+msgid "Please roll"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:205
+msgid "You roll %1 and %2."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:211
+msgid "Please move 1 piece."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:214
+msgid "Please move %1 pieces."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:226
+msgid "gnubg rolls %1 and %2."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:228
+msgid "gnubg cannot move."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:297
+msgid "Starting a new game."
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:385
+msgid "GNU Engine"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:385
+msgid "Here you can configure the GNU backgammon engine"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:445
+msgid "&Restart GNU Backgammon"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:477
+msgid ""
+"This is experimental code which currently requires a specially patched "
+"version of GNU Backgammon.<br/><br/>"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:510
+msgid ""
+"Could not start the GNU Backgammon process.\n"
+"Make sure the program is in your PATH and is called \"gnubg\".\n"
+"Make sure that your copy is at least version 0.10"
+msgstr ""
+
+#: engines/gnubg/kbggnubg.cpp:538
+msgid "The GNU Backgammon process (%1) has exited. "
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:64
+msgid "Local Games"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:65
+msgid "Offer Network Games"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:66
+msgid "Join Network Games"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:72
+msgid "&Types"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:78
+msgid "&Names..."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:139
+msgid ""
+"Type the port number on which you want to listen to connections.\n"
+"The number should be between 1024 and 65535."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:151
+#, c-format
+msgid "Now waiting for incoming connections on port %1."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:154
+#, c-format
+msgid "Failed to offer connections on port %1."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:160
+msgid "Type the name of the server you want to connect to."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:168
+msgid ""
+"Type the port number on %1 you want to connect to.\n"
+"The number should be between 1024 and 65535."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:187
+msgid "Now connected to %1:%2."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:190
+msgid "Failed to connect to %1:%2."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:211 engines/nextgen/kbgng.cpp:212
+msgid "Player %1 (%2) has joined the game."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:217
+#, c-format
+msgid "creating player. virtual=%1"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:459
+msgid "one"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:460
+msgid "two"
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:512
+msgid "Player %1 has changed the name to %2."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:549
+msgid "Type the name of the %1 player."
+msgstr ""
+
+#: engines/nextgen/kbgng.cpp:567
+msgid "Players are %1 and %2"
+msgstr ""
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: main.cpp:31
+msgid "A Backgammon program for the KDE."
+msgstr ""
+
+#: main.cpp:32
+msgid ""
+"This is a graphical backgammon program. It supports backgammon games\n"
+"with other players, games against computer engines like GNU bg and even\n"
+"on-line games on the 'First Internet Backgammon Server'."
+msgstr ""
+
+#: main.cpp:47
+msgid "Author & maintainer"
+msgstr ""
+
+#: main.cpp:50
+msgid "Initial anti-aliasing of the board"
+msgstr ""

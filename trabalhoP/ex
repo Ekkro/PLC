@@ -15,7 +15,7 @@ BEGIN {
 
 #tem problemas
 /^"Language:/ {
-  gsub(/^"Language: *|\n"/,"")
+  gsub(/^"Language: *|\\n"/,"")
   languages[l++] = $0
 
 }

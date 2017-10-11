@@ -1,0 +1,953 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-20 12:25CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:12
+#, no-c-format
+msgid "The &kmines; Handbook"
+msgstr "Le manuel de &kmines;"
+
+#: index.docbook:15
+#, no-c-format
+msgid ""
+"<firstname>Nicolas</firstname> <surname>Hadacek</surname> <affiliation> "
+"<address><email>hadacek@kde.org</email></address> </affiliation>"
+msgstr ""
+"<firstname>Nicolas</firstname> <surname>Hadacek</surname> <affiliation> "
+"<address><email>hadacek@kde.org</email></address> </affiliation>"
+
+#: index.docbook:22
+#, no-c-format
+msgid ""
+"<firstname>Michael</firstname> <surname>McBride</surname> "
+"<affiliation><address><email>mmcbride@ematic.org</email></address>"
+"</affiliation>"
+msgstr ""
+"<firstname>Michael</firstname> <surname>McBride</surname> "
+"<affiliation><address><email>mmcbride@ematic.org</email></address>"
+"</affiliation>"
+
+#: index.docbook:33
+#, no-c-format
+msgid "Developer"
+msgstr "Développeur"
+
+#: index.docbook:39
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecteur"
+
+#: index.docbook:41
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Anne-Marie</firstname><surname>"
+"Mahfouf</surname><affiliation><address><email>a-m.mahfouf@lineone.net</email>"
+"</address></affiliation><contrib>Traduction "
+"française</contrib></othercredit><othercredit "
+"role=\"translator\"><firstname>Yves</firstname><surname>Dessertine</surname>"
+"<affiliation><address><email>yves.d@hrnet.fr</email></address> "
+"</affiliation><contrib>Mise à jour de la traduction "
+"française</contrib></othercredit>"
+
+#: index.docbook:46
+#, no-c-format
+msgid "Nicolas Hadacek, Michael McBride"
+msgstr "Nicolas Hadacek, Michael McBride"
+
+#: index.docbook:54
+#, no-c-format
+msgid "&kmines; is the &kde; version of the classic minesweeper game."
+msgstr "&kmines; est la version pour &kde; du classique jeu de détection de mines."
+
+#: index.docbook:58
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:59
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:60
+#, no-c-format
+msgid "minesweeper"
+msgstr "démineur"
+
+#: index.docbook:66
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:68
+#, no-c-format
+msgid ""
+"&kmines; is the classic Minesweeper game. You must uncover all the empty "
+"cases without blowing on a mine."
+msgstr ""
+"&kmines; est le jeu classique détection de mines. Vous devez découvrir "
+"toutes les cases vides sans sauter sur une mine."
+
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"When you uncover a case, a number appears: it indicates how many mines "
+"surround this case. If there is no number the neighbour cases are "
+"automatically uncovered. In your process of uncovering secure cases, it is "
+"<emphasis>very</emphasis> useful to put a flag on the cases which contain a "
+"mine."
+msgstr ""
+"Lorsque vous découvrez une case, un nombre apparaît&nbsp;: il indique "
+"combien de mines entourent cette case. S'il n'y a pas de nombre, les cases "
+"voisines sont découvertes automatiquement. Dans votre recherche des cases "
+"sûres à découvrir, il est <emphasis>très</emphasis> utile de placer un "
+"drapeau sur les cases qui contiennent une mine."
+
+#: index.docbook:80
+#, no-c-format
+msgid "How to play"
+msgstr "Comment jouer"
+
+#: index.docbook:82
+#, no-c-format
+msgid ""
+"You have to use the mouse and its three buttons (with two-buttoned mouses, "
+"clicking the <mousebutton>middle</mousebutton> button is generally achieved "
+"by simultaneously pressing the <mousebutton>left</mousebutton> and the "
+"<mousebutton>right</mousebutton> buttons) to uncover or to flag the cases. "
+"Here are the details :"
+msgstr ""
+"Vous devez utiliser la souris et ses trois boutons (avec les souris à deux "
+"boutons, le fait de cliquer sur le bouton <mousebutton>central</mousebutton>"
+" est généralement émulé en appuyant simultanément sur les boutons de "
+"<mousebutton>gauche</mousebutton> et de <mousebutton>droite</mousebutton>) "
+"pour découvrir ou marquer les cases. Voici les détails&nbsp;:"
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"The <mousebutton>left</mousebutton> button will uncover a case. If there is "
+"a bomb below that case, the bomb will explode, and the game will be over"
+msgstr ""
+"Le bouton de <mousebutton>gauche</mousebutton> de la souris découvre une "
+"case. S'il y a une bombe sous cette case, la bombe explosera et le jeu sera "
+"fini"
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"If there is not a bomb under the case, a number will appear. That is the "
+"number of neighboring cases that do have bombs under them. Which ones you "
+"ask? Thats the point of the game."
+msgstr ""
+"S'il n'y a pas de bombe sous la case, un nombre apparaîtra. C'est le nombre "
+"de cases avoisinantes comportant des bombes. Lesquelles, "
+"demandez-vous&nbsp;? C'est le but du jeu de les découvrir."
+
+#: index.docbook:89
+#, no-c-format
+msgid "For each box (excluding edge and cornerboxes), there are 8 neighboring boxes."
+msgstr ""
+"Pour chaque case (sauf celles des bords et des coins), il y a 8 cases "
+"avoisinantes."
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"If none of the neighboring boxes has a bomb, then a blank will be shown "
+"under the case, and all neighboring boxes will be automatically uncovered."
+msgstr ""
+"Si aucune de ces cases avoisinantes n'a de bombe, une case vide sera "
+"montrée sous la case et toutes les cases avoisinantes seront "
+"automatiquement découvertes."
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"<mousebutton>Left</mousebutton> clicking a flagged case is secure and does "
+"nothing."
+msgstr ""
+"Cliquer avec le bouton <mousebutton>gauche</mousebutton> de la souris sur "
+"une case marquée avec un drapeau peut se faire en toute sécurité car il "
+"ne se passera rien."
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"The <mousebutton>right</mousebutton>"
+" button will mark a case as containing a mine (draw a red flag) or, if the "
+"option is set, as being uncertain (draw a question mark). The uncertain tag "
+"can be useful when you are puzzled about the positions of mines."
+msgstr ""
+"Le bouton <mousebutton>droit</mousebutton> de la souris va marquer une case "
+"comme contenant une mine (en dessinant un drapeau rouge) ou, si cette option "
+"est sélectionnée, comme étant incertaine (en dessinant un point "
+"d'interrogation). Le drapeau incertain peut être utile si vous doutez de la "
+"position des mines."
+
+#: index.docbook:89
+#, no-c-format
+msgid ""
+"The <mousebutton>middle</mousebutton> button will clear the surrounding "
+"cases if there is the right number of cases already flagged. It is very "
+"useful since it is much quicker than uncovering all individual cases."
+msgstr ""
+"Le bouton du <mousebutton>milieu</mousebutton> de la souris va découvrir "
+"les cases environnantes s'il y a déjà le bon nombre de cases marquées "
+"avec des drapeaux. Il est très utile car c'est beaucoup plus rapide que de "
+"découvrir individuellement toutes les cases."
+
+#: index.docbook:89
+#, no-c-format
+msgid "If your flags are not properly positionned, you will explode on a bomb."
+msgstr ""
+"Si vos drapeaux ne sont pas correctement positionnés, vous sauterez sur une "
+"mine."
+
+#: index.docbook:89
+#, no-c-format
+msgid "Pressing the <guiicon>yellow smiley</guiicon> will start a new game."
+msgstr ""
+"Cliquer sur l'icône jaune représentant <guiicon>une figure "
+"souriante</guiicon> démarrera un nouveau jeu."
+
+#: index.docbook:118
+#, no-c-format
+msgid ""
+"These are the default settings. The mouse buttons can be reprogrammed. For "
+"more information, see the section entitled <link linkend=\"prefs\">Game "
+"Options</link>."
+msgstr ""
+"Ce sont les paramètres par défaut. Les boutons de la souris peuvent être "
+"reprogrammés. Pour plus d'information, voir la section intitulée <link "
+"linkend=\"prefs\">Options du jeu</link>."
+
+#: index.docbook:122 index.docbook:124
+#, no-c-format
+msgid "The &kmines; Screen"
+msgstr "L'interface de &kmines;"
+
+#: index.docbook:133
+#, no-c-format
+msgid "The &kmines; screen consists of:"
+msgstr "L'interface de &kmines; est constituée par&nbsp;:"
+
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"A Box showing you the number of mines still left to be marked. Everytime you "
+"flag a bomb site, this number will decrease by one."
+msgstr ""
+"Une boîte vous montrant le nombre de mines restantes non marquées. Chaque "
+"fois que vous mettez un drapeau sur une case avec une bombe, ce nombre "
+"décroît de un."
+
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"This box does not determine if you are right or wrong, but only how many "
+"mines you need to theoretically mark before you are done with this game."
+msgstr ""
+"Cette boîte ne détermine pas si vous avez raison ou tort mais seulement "
+"combien de mines vous devez théoriquement marquer avant d'avoir fini ce jeu."
+
+#: index.docbook:135
+#, no-c-format
+msgid "In this example, there are 10 mines to be marked."
+msgstr "Dans cet exemple, il reste 10 mines à marquer."
+
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"A Yellow Smiley Face. Clicking this will start a new game. If you loose the "
+"game, it will become a frown."
+msgstr ""
+"Une figure souriante jaune. Cliquer dessus va démarrer un nouveau jeu. Si "
+"vous perdez le jeu, elle se changera en figure mécontente."
+
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"The box on the right, shows how much time this round has taken. The shortest "
+"time for each level, gets to list their name as the high score."
+msgstr ""
+"La boîte sur la droite montre combien de temps a pris ce jeu. Les temps les "
+"plus courts pour chaque niveau permettent au joueur de faire figurer son nom "
+"dans le tableau des meilleurs scores."
+
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"The playing area. This will vary in size depending on the difficulty level "
+"of the game. In this example, it consists of 64 boxes. This is where you "
+"play the game."
+msgstr ""
+"La surface du jeu. Sa taille variera en fonction de la difficulté du jeu. "
+"Dans cet exemple, elle fait 64 cases. C'est ici que se joue le jeu."
+
+#: index.docbook:135
+#, no-c-format
+msgid ""
+"A status line at the bottom of the window. In this example, it simply says "
+"<guilabel>Game stopped</guilabel>."
+msgstr ""
+"Une ligne d'état en bas de la fenêtre. Dans cet exemple, elle indique "
+"simplement <guilabel>Partie en cours</guilabel>."
+
+#: index.docbook:155
+#, no-c-format
+msgid "Game options"
+msgstr "Options du jeu"
+
+#: index.docbook:156
+#, no-c-format
+msgid ""
+"The options to &kmines; are set by selecting <menuchoice> "
+"<guimenu>Settings</guimenu> <guimenuitem>Configure &kmines;</guimenuitem> "
+"</menuchoice> from the menubar. This will bring up a dialog box."
+msgstr ""
+"Les options de &kmines; sont fixées en sélectionnant <menuchoice> "
+"<guimenu>Configuration</guimenu> <guimenuitem>Configurer "
+"&kmines;</guimenuitem> </menuchoice> dans la barre de menus. Cela va faire "
+"apparaître une boîte de dialogue."
+
+#: index.docbook:160
+#, no-c-format
+msgid "&kmines; Preferences"
+msgstr "Préférences de &kmines;"
+
+#: index.docbook:168
+#, no-c-format
+msgid "This dialog box is divided into four sections."
+msgstr "Cette boîte de dialogue est divisée en quatre onglets."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Game"
+msgstr "Pertie"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The first option, labelled <guilabel>Enable ? Mark</guilabel>, determines "
+"whether you can mark squares as <quote>questionable</quote>. If there is a "
+"mark in front of this option, then right clicking the mouse will first cause "
+"a case to be flaged. If you click again on the same square, the flag will "
+"change to a <guiicon>?</guiicon>, to indicate you don't know if there is a "
+"bomb there or not. If you click again, the square will change back to blank."
+msgstr ""
+"La première option, intitulée <guilabel>Activer les "
+"marques&nbsp;?</guilabel>"
+", détermine si vous pouvez marquer les cases comme étant "
+"<quote>discutables</quote>. Si cette option est cochée, le fait de cliquer "
+"avec le &BDS; va d'abord marquer la case avec un drapeau. Si vous cliquez "
+"ensuite sur la même case, le drapeau va se changer en un "
+"<guiicon>?</guiicon>, pour indiquer que vous ne savez pas s'il y a ici une "
+"bombe ou non. Si vous cliquez à nouveau, la case va revenir à son état "
+"initial."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"If there is not a mark in front of this option, the first "
+"<mousebutton>right</mousebutton> mouse click will change the case to a red "
+"flag. The second will make it blank again, thus skipping the ? symbol."
+msgstr ""
+"Si cette option n'est pas cochée, le premier clic avec le bouton "
+"<mousebutton>droit</mousebutton> de la souris va changer la case en un "
+"drapeau rouge. Le second va la faire revenir dans son état normal, sans "
+"passer par le symbole&nbsp;?."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The next option down, labelled <guilabel>Enable keyboard</guilabel>, "
+"determins if the keyboard shortcuts will work while playing the game."
+msgstr ""
+"L'option suivante, intitulée \"<guilabel>Activer le clavier</guilabel>\", "
+"détermine si les raccourcis clavier vont fonctionner pendant que vous jouez."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The only keyboard shortcuts affected, are those responsible for playing the "
+"game. Keyboard commands such as <guimenuitem>New Game</guimenuitem>, and "
+"<guimenuitem>Quit</guimenuitem>, still work, regardless of this option."
+msgstr ""
+"Les seuls raccourcis clavier affectés sont ceux responsables du lancement "
+"du jeu. Les commandes du clavier telles que "
+"\"<guimenuitem>Nouveau</guimenuitem>\" et "
+"\"<guimenuitem>Quitter</guimenuitem>"
+"\" fonctionnent toujours, peu importe si cette option est cochée ou non."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The last section of this tab, allows you to change the action of each of the "
+"three mouse buttons. Your options are:"
+msgstr ""
+"La dernière partie de cet onglet vous permet de changer les actions de "
+"chacun des trois boutons de la souris. Vos options sont&nbsp;:"
+
+#: index.docbook:170
+#, no-c-format
+msgid "Reveal"
+msgstr "révéler"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"This will reveal the contents of the case. If there is no bomb, then a "
+"number will appear. If there is a bomb under that case, then the bomb will "
+"explode, and the game will be over."
+msgstr ""
+"Cette option va révéler le contenu de la case. S'il n'y a pas de bombe, un "
+"nombre va apparaître. S'il y a une bombe sous cette case, elle explosera et "
+"le jeu se terminera."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Toggle Mark"
+msgstr "changer la marque"
+
+#: index.docbook:170
+#, no-c-format
+msgid "Clicking with this button on a case, will mark/unmark with a redflag."
+msgstr ""
+"Le fait de cliquer avec ce bouton sur une case va marquer la case avec un "
+"drapeau rouge ou supprimer la marque."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Autoreveal"
+msgstr "révéler automatiquement"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Clicking on a case with this button, will automatically reveal all "
+"neighboring cases, that are not marked with red flags. If one of those "
+"neighboring cases has a bomb under it, the bomb will explode, and the game "
+"will be over."
+msgstr ""
+"Cliquer sur une case avec ce bouton va automatiquement révéler toutes les "
+"cases avoisinantes qui ne sont pas marquées avec un drapeau rouge. Si l'une "
+"de ces cases avoisinantes contient une bombe, la bombe va exploser et le jeu "
+"sera terminé."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Toggle flag"
+msgstr "changer la marque"
+
+#: index.docbook:170
+#, no-c-format
+msgid "Clicking with this button on a case, will flag/unflag with a question mark."
+msgstr ""
+"Le fait de cliquer avec ce bouton sur une case va marquer la case avec un "
+"point d'interrogation ou supprimer cette marque."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Toggle ? mark"
+msgstr "changer la marque&nbsp;?"
+
+#: index.docbook:170
+#, no-c-format
+msgid "Clicking with this button on a case, will mark/unmark with a question mark."
+msgstr ""
+"Cliquer avec ce bouton sur une case va marquer la case avec un point "
+"d'interrogation ou supprimer cette marque."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Appearance"
+msgstr "Apparence"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The top option, entitled <guilabel>case size</guilabel>"
+", determines the size of each of the squares in the playing area. By "
+"default, they are set small. You can increase the size, if you are working "
+"on a very high resolution monitor."
+msgstr ""
+"La première option, intitulée <guilabel>Taille des cases</guilabel>, "
+"détermine la taille de chacune des cases de la surface de jeu. Par défaut, "
+"ils sont fixés à la taille la plus petite. Vous pouvez augmenter leur "
+"taille si vous travaillez avec un écran de très haute résolution."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"The rest of this page is concerned with colors. To adjust, simply click the "
+"color button beside each description, and select the new color."
+msgstr ""
+"Le reste de cette page concerne les couleurs. Pour les ajuster, il suffit de "
+"cliquer sur le bouton de choix de la couleur en face d'une des descriptions, "
+"et de choisir la nouvelle couleur."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Highscores"
+msgstr "Meilleurs scores"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Here you can change your <guilabel>Nickname</guilabel> and add a cute "
+"<guilabel>Comment</guilabel> about yourself, to show in the high score "
+"table. You can also enable the <guilabel>World-wide highscores "
+"enabled</guilabel> checkbox, and share your skill at &kmines; across the "
+"world with an online high score server."
+msgstr ""
+"Vous pouvez changer ici votre <guilabel>Pseudo</guilabel> et ajouter des "
+"<guilabel>Commentaires</guilabel> sympathiques à votre propre sujet, afin "
+"qu'ils s'affichent dans la table des meilleurs scores. Vous pouvez "
+"également cocher la case <guilabel>Utiliser les meilleurs scores "
+"mondiaux</guilabel>, afin de montrer votre talent pour &kmines; à toute la "
+"planète à l'aide d'un serveur de scores en ligne."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Custom Game"
+msgstr "Partie personnalisée"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Finally, if you are not finding the existing configurations challenging "
+"enough, you can set up a custom game here. Use the sliders to change the "
+"<guilabel>Width</guilabel>, <guilabel>Height</guilabel>, and the percentage "
+"of the board covered with <guilabel>Mines</guilabel>. The default game has "
+"20 percent of the board covered, so there is plenty of room to make the game "
+"harder."
+msgstr ""
+"Pour finir, si vous ne trouvez pas les parties proposées suffisemment "
+"attractives, vous pouvez définir une partie personnalisée ici. Utilisez "
+"les glissières pour changer la largeur, ma hauteur et le pourcentage du "
+"terrain de jeu infesté de <guilabel>Mines</guilabel>"
+". La partie par défaut a 20 pour cent du terrain infesté, vous avez donc "
+"beaucoup de marge pour rendre le jeu plus difficile."
+
+#: index.docbook:170
+#, no-c-format
+msgid "Saving your changes"
+msgstr "Enregistrer vos changements"
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"Once your changes are complete, click <guibutton>OK</guibutton>"
+" to make them permenant."
+msgstr ""
+"Une fois vos changements terminés, cliquez sur <guibutton>OK</guibutton> "
+"pour les rendre permanents."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"If you want to abandon your changes, click <guibutton>Cancel</guibutton> to "
+"abort the changes."
+msgstr ""
+"Si vous voulez abandonner vos modifications, cliquez sur "
+"<guibutton>Annuler</guibutton> pour annuler les changements."
+
+#: index.docbook:170
+#, no-c-format
+msgid ""
+"If you click on <guilabel>Default</guilabel>, the default settings will be "
+"restored. Click <guilabel>OK</guilabel> to make these default changes "
+"permenant, or edit the settings some more."
+msgstr ""
+"Si vous cliquez sur <guilabel>Par défaut</guilabel>, la configuration par "
+"défaut sera restaurée. Cliquez sur <guilabel>OK</guilabel>"
+" pour rendre ces changements par défaut permanents ou continuez la "
+"configuration."
+
+#: index.docbook:292
+#, no-c-format
+msgid "Commands/Keyboard Shortcuts"
+msgstr "Raccourcis clavier pour les commandes"
+
+#: index.docbook:294
+#, no-c-format
+msgid "The following sections briefly describe each menubar option."
+msgstr ""
+"Les chapitres suivants décrivent brièvement chaque option de la barre de "
+"menus."
+
+#: index.docbook:297
+#, no-c-format
+msgid "<guimenu>Game</guimenu> Menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:299
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> menu consists of 5 options."
+msgstr "Le menu <guimenu>Jeu</guimenu> comporte 5 options."
+
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:301
+#, no-c-format
+msgid "Starts a new game."
+msgstr "Débute un nouveau jeu."
+
+#: index.docbook:301
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guisubmenu>Choose Level</guisubmenu>"
+msgstr "<guimenu>Jeu</guimenu> <guisubmenu>Choisir un niveau</guisubmenu>"
+
+#: index.docbook:301
+#, no-c-format
+msgid "Lets you set the difficulty level from a submenu."
+msgstr "Vous permet de choisir le niveau de difficulté depuis un sous-menu."
+
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"There are three default levels of difficulty: "
+"<guimenuitem>Easy</guimenuitem> (64 boxes, 10 mines), "
+"<guimenuitem>Normal</guimenuitem> (256 boxes, 40 mines), and "
+"<guimenuitem>Expert</guimenuitem> (480 boxes, 99 mines). There is also a "
+"<guimenuitem>Custom...</guimenuitem> level settings."
+msgstr ""
+"Il y a trois niveaux de difficulté par défaut&nbsp;: "
+"<guimenuitem>Facile</guimenuitem> (64 cases, 10 mines), "
+"<guimenuitem>Moyen</guimenuitem> (256 cases, 40 mines), et "
+"<guimenuitem>Expert</guimenuitem> (480 cases, 99 mines). Il y a en plus un "
+"niveau de configuration <guimenuitem>Personnalisé...</guimenuitem>"
+
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"If you select <guimenuitem>Custom...</guimenuitem>, then the settings you "
+"have configured in the <guimenuitem>Configure &kmines;</guimenuitem> dialog "
+"will be used."
+msgstr ""
+"Si vous choisissez <guimenuitem>Personnalisées...</guimenuitem>, alors les "
+"réglages que vous avez définis dans la boîte de dialogue "
+"<guimenuitem>Configurer &kmines;</guimenuitem> seront utilisés."
+
+#: index.docbook:301
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Pause</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Pause</guimenuitem>"
+
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"Pauses the game. This will hide the board (no cheating), and give you a "
+"button to press when you want to continue this game."
+msgstr ""
+"Met le jeu en pause. Cela va cacher le tableau (pas de triche) et afficher "
+"un bouton à presser lorsque vous voulez continuer ce jeu."
+
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Show "
+"Highscores</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Meilleurs "
+"scores</guimenuitem>"
+
+#: index.docbook:301
+#, no-c-format
+msgid "This shows you the high score (the shortest time) for each difficulty level."
+msgstr ""
+"Cela vous montre le score le plus haut (le temps le plus court) pour chaque "
+"niveau de difficulté."
+
+#: index.docbook:301
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut><guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:301
+#, no-c-format
+msgid "<action>Quits</action> &kmines;"
+msgstr "<action>Quitte</action> &kmines;"
+
+#: index.docbook:360
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> Menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:361
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Show Menubar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Afficher la barre de "
+"menus</guimenuitem>"
+
+#: index.docbook:361
+#, no-c-format
+msgid ""
+"If there is a check in front of this option, then the menubar will be "
+"visible. Selecting this option, hides the menubar."
+msgstr ""
+"S'il y a un coche à côté de cette option, la barre de menus sera alors "
+"visible. Enlever le coche cachera la barre de menus."
+
+#: index.docbook:361
+#, no-c-format
+msgid ""
+"To restore a hidden menubar, click outside the game play area, with the "
+"right mouse button. This will bring up a small submenu. Simply select "
+"<guimenuitem>Show Menubar</guimenuitem> from this submenu, and the menubar "
+"will be visible again."
+msgstr ""
+"Pour retrouver une barre de menus cachée, cliquez hors de la surface de jeu "
+"avec le bouton droit de la souris. Cela va ouvrir un petit sous-menu. "
+"Sélectionnez simplement <guimenuitem>Afficher la barre de "
+"menus</guimenuitem> dans ce sous-menu et la barre de menus sera à nouveau "
+"visible."
+
+#: index.docbook:361
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure Shortcuts</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Configurer les "
+"raccourcis-clavier</guimenuitem>"
+
+#: index.docbook:361
+#, no-c-format
+msgid "Allows you to change the keyboard shortcuts for &kmines;"
+msgstr "Vous permet de changer les raccourcis clavier pour &kmines;"
+
+#: index.docbook:361
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Configure &kmines;</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Configurer "
+"&kmines;</guimenuitem>"
+
+#: index.docbook:361
+#, no-c-format
+msgid ""
+"Allows you to adjust game options. For more detailed information, see the "
+"section entitled <link linkend=\"prefs\">Game Options</link>."
+msgstr ""
+"Vous permet d'ajuster les options du jeu. Pour des informations plus "
+"détaillées, voyez le chapitre intitulé <link linkend=\"prefs\">"
+"Options du jeu</link>."
+
+#: index.docbook:393
+#, no-c-format
+msgid "<guimenu>Help</guimenu> Menu"
+msgstr "Le menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:399
+#, no-c-format
+msgid "Default Key Bindings"
+msgstr "Les raccourcis clavier par défaut"
+
+#: index.docbook:400
+#, no-c-format
+msgid "The following tables show you the default key bindings."
+msgstr "Les tableaux suivants vous montrent les raccourcis clavier par défaut."
+
+#: index.docbook:404
+#, no-c-format
+msgid "Menu bindings"
+msgstr "Raccourcis des menus"
+
+#: index.docbook:406
+#, no-c-format
+msgid "Key Combo"
+msgstr "Combinaison de touches"
+
+#: index.docbook:406
+#, no-c-format
+msgid "Action"
+msgstr "Action"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Arrows"
+msgstr "Flèches"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Move cursor in playing area."
+msgstr "Déplace le curseur sur la surface de jeu."
+
+#: index.docbook:407
+#, no-c-format
+msgid "&Ctrl;"
+msgstr "&Ctrl;"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Automatically reveal all surrounding cases not marked by a flag."
+msgstr ""
+"Révèle automatiquement toutes les cases avoisinantes non marquées par un "
+"drapeau."
+
+#: index.docbook:407
+#, no-c-format
+msgid "&Ctrl;<keycap>N</keycap>"
+msgstr "&Ctrl;<keycap>N</keycap>"
+
+#: index.docbook:407
+#, no-c-format
+msgid "New Game"
+msgstr "Nouveau jeu"
+
+#: index.docbook:407
+#, no-c-format
+msgid "&Ctrl;<keycap>P</keycap>"
+msgstr "&Ctrl;<keycap>P</keycap>"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Pause Game"
+msgstr "Met le jeu en pause"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Print Game"
+msgstr "Imprime le jeu"
+
+#: index.docbook:407
+#, no-c-format
+msgid "&Ctrl;<keycap>Q</keycap>"
+msgstr "&Ctrl;<keycap>Q</keycap>"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Quit &kmines;"
+msgstr "Quitte &kmines;"
+
+#: index.docbook:407
+#, no-c-format
+msgid "<keycap>F1</keycap>"
+msgstr "<keycap>F1</keycap>"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Help Contents"
+msgstr "Le contenu de l'aide"
+
+#: index.docbook:407
+#, no-c-format
+msgid "&Shift;<keycap>F1</keycap>"
+msgstr "&Shift;<keycap>F1</keycap>"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Whats This Help"
+msgstr "L'aide Qu'est-ce que c'est&nbsp;?"
+
+#: index.docbook:407
+#, no-c-format
+msgid "&Shift;"
+msgstr "&Shift;"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Reveal Mine."
+msgstr "Révèle la mine."
+
+#: index.docbook:407
+#, no-c-format
+msgid "Space"
+msgstr "Barre espace"
+
+#: index.docbook:407
+#, no-c-format
+msgid "Mark Mine"
+msgstr "Marque la mine"
+
+#: index.docbook:422
+#, no-c-format
+msgid ""
+"These key bindings can be changed by selecting <menuchoice> "
+"<guimenu>Settings</guimenu> <guimenuitem>Configure Key "
+"Bindings</guimenuitem> </menuchoice> from the menubar."
+msgstr ""
+"Ces raccourcis clavier peuvent être changés en sélectionnant "
+"<menuchoice><guimenu>Configuration</guimenu> <guimenuitem>Raccourcis "
+"clavier...</guimenuitem> </menuchoice> dans la barre de menus."
+
+#: index.docbook:429
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:431
+#, no-c-format
+msgid "&kmines;"
+msgstr "&kmines;"
+
+#: index.docbook:434
+#, no-c-format
+msgid "Program copyright 1996-2000 Nicolas Hadacek <email>hadacek@kde.org</email>"
+msgstr "Programme copyright 1996-2000 Nicolas Hadacek <email>hadacek@kde.org</email>"
+
+#: index.docbook:436
+#, no-c-format
+msgid "Documentation copyright 2000 Nicolas Hadacek <email>hadacek@kde.org</email>"
+msgstr "Documentation copyright 2000 Nicolas Hadacek <email>hadacek@kde.org</email>"
+
+#: index.docbook:437
+#, no-c-format
+msgid ""
+"Documentation updated for KDE 2.0 by Mike McBride "
+"<email>mpmcbride7@yahoo.com</email>"
+msgstr ""
+"Documentation mise à jour pour KDE 2.0 by Mike McBride "
+"<email>mpmcbride7@yahoo.com</email>"
+
+#: index.docbook:438
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction française par Anne-Marie Mahfouf "
+"<email>a-m.mahfouf@lineone.net</email></para><para>Mise à jour de la "
+"traduction française par Yves Dessertine "
+"<email>yves.d@hrnet.fr</email></para>"
+
+#: index.docbook:446
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:449
+#, no-c-format
+msgid "How to obtain &kmines;"
+msgstr "Comment obtenir &kmines;"
+
+#: index.docbook:456
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

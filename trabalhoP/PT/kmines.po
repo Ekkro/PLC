@@ -1,9 +1,467 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/PT/kmines.po
-on this server.<br />
-</p>
-</body></html>
+msgid ""
+msgstr ""
+"Project-Id-Version: kmines\n"
+"POT-Creation-Date: 2002-01-27 03:54+0100\n"
+"PO-Revision-Date: 2001-01-10 22:10-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: defines.cpp:7
+msgid "Easy"
+msgstr "Fácil"
+
+#: defines.cpp:8
+msgid "Normal"
+msgstr "Normal"
+
+#: defines.cpp:9
+msgid "Expert"
+msgstr "Perito"
+
+#: defines.cpp:10
+#, fuzzy
+msgid "Custom"
+msgstr "Personalizado"
+
+#: dialogs.cpp:104
+#, fuzzy
+msgid "Custom Game"
+msgstr "Customizar Jogo"
+
+#: dialogs.cpp:124
+msgid "Choose level"
+msgstr ""
+
+#: dialogs.cpp:138
+msgid "Mines (%1%)"
+msgstr "Minas (%1%)"
+
+#: dialogs.cpp:167
+msgid "Left button"
+msgstr "Botão esquerdo"
+
+#: dialogs.cpp:167
+msgid "Mid button"
+msgstr "Botão central"
+
+#: dialogs.cpp:168
+msgid "Right button"
+msgstr "Botão direito"
+
+#: dialogs.cpp:171
+msgid "reveal"
+msgstr "mostrar"
+
+#: dialogs.cpp:171
+msgid "autoreveal"
+msgstr "auto-exposição"
+
+#: dialogs.cpp:172
+#, fuzzy
+msgid "toggle flag"
+msgstr "marcar"
+
+#: dialogs.cpp:172
+msgid "toggle ? mark"
+msgstr "marcar ?"
+
+#: dialogs.cpp:176
+msgid "Enable ? mark"
+msgstr "Habilitar ? marcação"
+
+#: dialogs.cpp:183
+msgid "Enable keyboard"
+msgstr "Habilitar teclado"
+
+#: dialogs.cpp:190
+msgid "Pause if window lose focus"
+msgstr ""
+
+#: dialogs.cpp:208
+msgid "Game"
+msgstr ""
+
+#: dialogs.cpp:223
+#, fuzzy
+msgid "Mouse Bindings"
+msgstr "Delimitações do mouse"
+
+#: dialogs.cpp:272
+msgid "Flag color"
+msgstr "Cor da bandeira"
+
+#: dialogs.cpp:273
+msgid "Explosion color"
+msgstr "Cor da explosão"
+
+#: dialogs.cpp:274
+msgid "Error color"
+msgstr "Cor de erro"
+
+#: dialogs.cpp:285
+msgid "Case size"
+msgstr "Tamanho"
+
+#: dialogs.cpp:328
+#, fuzzy
+msgid "1 mine color"
+msgstr "cor de minas %1"
+
+#: dialogs.cpp:329
+msgid "%1 mines color"
+msgstr "cor de minas %1"
+
+#: main.cpp:40
+msgid "Move up"
+msgstr "Para cima"
+
+#: main.cpp:43
+msgid "Move down"
+msgstr "Para baixo"
+
+#: main.cpp:46
+msgid "Move left"
+msgstr "Para a esquerda"
+
+#: main.cpp:49
+msgid "Move right"
+msgstr "Para a direita"
+
+#: main.cpp:52
+msgid "Reveal mine"
+msgstr "Mostrar mina"
+
+#: main.cpp:55
+msgid "Mark mine"
+msgstr "Marcar mina"
+
+#: main.cpp:58
+msgid "Automatic reveal"
+msgstr "Mostrar automaticamente"
+
+#: main.cpp:76
+#, fuzzy
+msgid "Choose &Level"
+msgstr "Ní&vel"
+
+#: main.cpp:186
+#, fuzzy
+msgid "KMines is a classic mine sweeper game."
+msgstr "Kmines é um jogo clássico sobre encontrar minas."
+
+#: main.cpp:190
+msgid "KMines"
+msgstr "Minas"
+
+#: main.cpp:194
+msgid "Smiley pixmaps"
+msgstr "Pixmaps sorridentes"
+
+#: status.cpp:29
+msgid ""
+"<qt>Mines left."
+"<br/>It turns <font color=\"red\">red</font> when you have flagged more "
+"cases than present mines.</qt>"
+msgstr ""
+
+#: status.cpp:39
+msgid "Press to start a new game"
+msgstr "Pressionar para continuar"
+
+#: status.cpp:44
+msgid ""
+"<qt>Time elapsed."
+"<br/>It turns <font color=\"blue\">blue</font> if it is a highscore and "
+"<font color=\"red\">red</font> if it is the best time.</qt>"
+msgstr ""
+
+#: status.cpp:67
+#, fuzzy
+msgid "Mines field."
+msgstr "Campo de minas"
+
+#: status.cpp:75
+#, fuzzy
+msgid "Press to Resume"
+msgstr "Pressionar para continuar"
+
+#: generic/ghighscores.cpp:67
+msgid "Multiplayers scores"
+msgstr ""
+
+#: generic/gsettings.cpp:628
+msgid "Configure..."
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:134
+msgid "no score entry"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:138
+msgid "Best &Scores"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:141
+#, fuzzy
+msgid "&Players"
+msgstr "Jogando"
+
+#: generic/ghighscores_gui.cpp:145
+msgid "View world-wide highscores"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:151
+msgid "View world-wide players"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:180
+msgid "Winner"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:211 generic/ghighscores_internal.cpp:557
+#, fuzzy
+msgid "Highscores"
+msgstr "Pódio..."
+
+#: generic/ghighscores_gui.cpp:223
+msgid "Nickname"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:229 generic/ghighscores_internal.cpp:220
+msgid "Comment"
+msgstr ""
+
+#: generic/ghighscores_gui.cpp:237
+msgid "World-wide highscores enabled"
+msgstr ""
+
+#: generic/ghighscores_item.cpp:112 highscores.cpp:57
+#, fuzzy
+msgid "anonymous"
+msgstr "Anônimo"
+
+#: generic/ghighscores_item.cpp:137
+msgid "Score"
+msgstr ""
+
+#: generic/ghighscores_item.cpp:141
+msgid "Mean score"
+msgstr ""
+
+#: generic/ghighscores_item.cpp:148
+msgid "Best score"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:210
+msgid "Games count"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:217
+msgid "Black mark"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:402
+msgid "Undefined error."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:403
+msgid "Missing argument(s)."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:404
+msgid "Invalid argument(s)."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:406
+msgid "Unable to connect to MySQL server."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:407
+msgid "Unable to select database."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:408
+msgid "Error on database query."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:409
+msgid "Error on database insert."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:411
+msgid "Nickname already registered."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:412
+msgid "Nickname not registered."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:413
+msgid "Invalid key."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:414
+msgid "Invalid submit key."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:416
+msgid "Invalid level."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:417
+msgid "Invalid score."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:425
+msgid "Unable to contact world-wide highscore server"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:426
+#, c-format
+msgid "Server URL: %1"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:434
+msgid "Unable to contact world-wide highscore server."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:435
+msgid "Unable to open temporary file."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:457
+msgid "Message from world-wide highscores server"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:464
+msgid "Invalid answer from world-wide highscores server."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:465
+#, c-format
+msgid "Raw message: %1"
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:477
+msgid "Invalid answer from world-wide highscores server (missing item: %1)."
+msgstr ""
+
+#: generic/ghighscores_internal.cpp:502
+msgid "Please choose a non empty nickname."
+msgstr ""
+
+#: generic/ghighscores_internal.h:45
+msgid "Rank"
+msgstr ""
+
+#: generic/ghighscores_internal.h:56
+msgid "Name"
+msgstr ""
+
+#: generic/ghighscores_internal.h:65
+msgid "Date"
+msgstr ""
+
+#: generic/ghighscores_internal.h:74
+msgid "Success"
+msgstr ""
+
+#: highscores.cpp:29
+msgid "Clicks"
+msgstr ""
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Elvis Pfützenreuter"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "epx@conectiva.com.br"
+
+#, fuzzy
+#~ msgid "Game type :"
+#~ msgstr "Jogo parado"
+
+#~ msgid "One mine color"
+#~ msgstr "Uma cor de mina"
+
+#, fuzzy
+#~ msgid "Player"
+#~ msgstr "Jogando"
+
+#, fuzzy
+#~ msgid "Nb of games"
+#~ msgstr "Pódio"
+
+#, fuzzy
+#~ msgid "Highscores : %1"
+#~ msgstr "Pódio..."
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Preferências de cor"
+
+#~ msgid "&Resume"
+#~ msgstr "&Continuar"
+
+#~ msgid "&Pause"
+#~ msgstr "&Pausa"
+
+#~ msgid "no score for this level"
+#~ msgstr "sem escore para este nível"
+
+#~ msgid "in %1 minutes and %2 seconds."
+#~ msgstr "em %1 minutos e %2 segundos."
+
+#~ msgid "in %1 minutes."
+#~ msgstr "em %1 minutos."
+
+#~ msgid "in %1 seconds."
+#~ msgstr "em %1 segundos."
+
+#~ msgid "Set name"
+#~ msgstr "Configurar nome"
+
+#~ msgid "Settings"
+#~ msgstr "Preferências"
+
+#~ msgid "Main settings"
+#~ msgstr "Principais preferências"
+
+#~ msgid "Mines left"
+#~ msgstr "Minas restantes"
+
+#~ msgid "Time elapsed"
+#~ msgstr "Tempo consumido"
+
+#~ msgid "Game paused"
+#~ msgstr "Jogo pausado"
+
+#~ msgid "Yeeeesssssss!"
+#~ msgstr "Siiimmmm !"
+
+#~ msgid "You did it ... but not in time."
+#~ msgstr "Conseguiu ... mas não em tempo."
+
+#~ msgid "Bad luck!"
+#~ msgstr "Má sorte!"
+
+#~ msgid "Pause"
+#~ msgstr "Pausar jogo"
+
+#~ msgid "Game status"
+#~ msgstr "Condição do jogo"
+
+#~ msgid "Width"
+#~ msgstr "Largura"
+
+#~ msgid "Height"
+#~ msgstr "Altura"

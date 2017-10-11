@@ -1,9 +1,577 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/FR/kwin4.po
-on this server.<br />
-</p>
-</body></html>
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-02-10 14:45CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "Four Wins"
+msgstr "Puissance 4"
+
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<firstname>Martin</firstname> <surname>Heni</surname> <affiliation> "
+"<address><email>martin@heni-online.de</email></address> </affiliation>"
+msgstr ""
+"<firstname>Martin</firstname> <surname>Heni</surname> <affiliation> "
+"<address><email>martin@heni-online.de</email></address> </affiliation>"
+
+#: index.docbook:25
+#, no-c-format
+msgid "Reviewer"
+msgstr "Relecteur"
+
+#: index.docbook:29
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Eric</firstname><surname>Bischoff</surname>"
+"<contrib>Traduction "
+"française</contrib><affiliation><address><email>e.bischoff@noos.fr</email>"
+"</address></affiliation></othercredit>"
+
+#: index.docbook:37
+#, no-c-format
+msgid "This documentation describes &kwin4; version 1.0.0"
+msgstr "Cette documentation décrit &kwin4; version 1.0.0"
+
+#: index.docbook:42
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:43
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:44
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:45
+#, no-c-format
+msgid "board"
+msgstr "plateau"
+
+#: index.docbook:46
+#, no-c-format
+msgid "board game"
+msgstr "jeu de plateau"
+
+#: index.docbook:47
+#, no-c-format
+msgid "four wins"
+msgstr "puissance 4"
+
+#: index.docbook:48
+#, no-c-format
+msgid "four"
+msgstr "quatre"
+
+#: index.docbook:49
+#, no-c-format
+msgid "four in a row"
+msgstr "quatre alignés"
+
+#: index.docbook:50
+#, no-c-format
+msgid "win4"
+msgstr "win4"
+
+#: index.docbook:51
+#, no-c-format
+msgid "kwin4"
+msgstr "kwin4"
+
+#: index.docbook:52
+#, no-c-format
+msgid "connect four"
+msgstr "quatre gagnant"
+
+#: index.docbook:53
+#, no-c-format
+msgid "connect 4"
+msgstr "puissance 4"
+
+#: index.docbook:58
+#, no-c-format
+msgid "Overview"
+msgstr "Présentation générale"
+
+#: index.docbook:60
+#, no-c-format
+msgid "Four wins is a game for two players."
+msgstr "Quatre gagnant est un jeu qui se joue à deux."
+
+#: index.docbook:64
+#, no-c-format
+msgid ""
+"Each player is represented by a color (yellow and red). The goal of the game "
+"is to get four connected pieces of your color into a row, column or any "
+"diagonal. This is done by placing one of your pieces into any of the seven "
+"columns."
+msgstr ""
+"Chaque joueur est représenté par une couleur (jaune ou rouge). Le but du "
+"jeu est d'obtenir quatre jetons de votre couleur alignés dans une ligne, "
+"une colonne ou en diagonal. Ceci est réalisé en plaçant les jetons dans "
+"les sets colonnes."
+
+#: index.docbook:71
+#, no-c-format
+msgid ""
+"A piece will begin to fill a column from the bottom, &ie; it will fall down "
+"until it reaches the ground level or another stone. After a move is done it "
+"is the turn of the other player."
+msgstr ""
+"Un jeton rempli une colonne à partir du bas, &cad; qu'elle tombera jusqu'à "
+"ce qu'elle atteigne le bas ou un autre jeton. Une fois le jeton joué, c'est "
+"au tour de l'autre joueur."
+
+#: index.docbook:77
+#, no-c-format
+msgid ""
+"This is repeated until the game is over, which is when one of the players "
+"has four pieces in a row, column or diagonal or no more moves are possible "
+"because the board is filled."
+msgstr ""
+"Ceci est répété jusqu'à la fin du jeu, qui se produit lorsqu'un des deux "
+"joueurs a quatre jetons alignés dans une ligne, une colonne ou en diagonal, "
+"ou bien lorsque plus aucun coup n'est possible parce que le plateau est "
+"rempli."
+
+#: index.docbook:86
+#, no-c-format
+msgid "Rules"
+msgstr "Règles du jeu"
+
+#: index.docbook:88
+#, no-c-format
+msgid "The board is separated into three regions."
+msgstr "Le plateau de jeu est divisé en trois parties."
+
+#: index.docbook:92
+#, no-c-format
+msgid ""
+"The <firstterm>game board</firstterm>"
+" is constructed out of 7x6 fields which will be filled from bottom to top. "
+"The fields are marked in the color of the player who made the current move. "
+"On top of each column a colored arrow shows were the last piece had been put."
+msgstr ""
+"Le <firstterm>terrain de jeu</firstterm> est constitué d'une grille de 7 "
+"cases sur 6 qui sera remplie de jetons de bas en haut. Les cases sont "
+"coloriées dans la couleur du joueur dont c'est le tour. Au sommet de chaque "
+"rangée verticale, une flèche de couleur indique à quel endroit les "
+"derniers jetons ont été joués."
+
+#: index.docbook:99
+#, no-c-format
+msgid ""
+"The <firstterm>status display</firstterm> shows which player color starts "
+"and which color is played by whom (player, computer, remote connection). It "
+"further shows the level of the computer opponent, the number of moves done "
+"as well as the computer calculated chance of winning. This chance is "
+"calculated only if the computer opponent makes a move. A positive number "
+"means that the player has an advantage, a negative number means that the "
+"computer thinks he is better."
+msgstr ""
+"La <firstterm>barre d'état</firstterm> montre quelle couleur commence en "
+"premier et quelle couleur est jouée par quel joueur (joueur, ordinateur, "
+"connexion distante). Elle montre de plus le niveau de l'ordinateur lorsqu'il "
+"joue, le nombre de tours passés ainsi que la probabilité calculée par "
+"l'ordinateur de gagner. Cette probabilité n'est calculée que lorsque "
+"l'ordinateur joue son tour. Un nombre positif signifie que le joueur a "
+"l'avantage, et un nombre négative signifie que l'ordinateur pense être "
+"meilleur."
+
+#: index.docbook:109
+#, no-c-format
+msgid ""
+"The <firstterm>table display</firstterm> shows the number of won, lost and "
+"drawn games is noted for both player. Also the number of aborted games (Brk) "
+"and the sum of games is shown."
+msgstr ""
+"Le <firstterm>tableau d'affichage</firstterm> montre le nombre de parties "
+"gagnées, perdues ou nulles pour chaque joueur. Le nombre de jeux arrêtés "
+"(Ar) et le nombre total de parties sont également affichés."
+
+#: index.docbook:118
+#, no-c-format
+msgid "Remote connections"
+msgstr "Connexions distantes"
+
+#: index.docbook:120
+#, no-c-format
+msgid ""
+"It is possible to play the game over a network connection with another "
+"computer. One of the computers will act as game server. This one can "
+"determine who should play which color. You can configure the network options "
+"in the game menu, network dialog. There you also find a chat dialog box "
+"which allows you to speak with your friend."
+msgstr ""
+"Il est possible de jouer en réseau avec un autre ordinateur. Un des "
+"ordinateurs se comportera comme serveur de jeu. C'est lui qui déterminera "
+"qui joue avec quelle couleur. Vous pouvez configurer les options de réseau "
+"dans le dialogue de réseau du menu Jeu. Vous trouverez également à cet "
+"emplacement une boîte de dialogue de discussion qui vous permet de parler "
+"avec votre ami(e)."
+
+#: index.docbook:130
+#, no-c-format
+msgid ""
+"When a network connection is build you are asked to enter a remote host and "
+"a port. The port can usually just be left untouched, but if you know what "
+"you are doing replace it by another number, which has to be the same in both "
+"player games of course. The hostname should be the name of the remote host "
+"to which you are connecting. Only the client in the connection has to supply "
+"a hostname. It is often wise that the player behind a firewall chooses to be "
+"client as the firewall might not allow incoming connections."
+msgstr ""
+"Quand une connexion en réseau se met en place, il vous est demandé de "
+"saisir un nom d'hôte distant et un port. Le port peut en général rester "
+"inchangé, mais si vous savez ce que vous faites, remplacez-le par un autre "
+"nombre, qui devra bien entendu être le même pour les deux joueurs. Le nom "
+"d'hôte doit être le nom de l'hôte distant vers lequel vous vous "
+"connectez. Seul le client de cette connexion doit fournir un nom d'hôte. Il "
+"est recommandé que le joueur derrière un pare-feu choisisse d'être le "
+"client car le pare-feu pourrait ne pas autoriser de connexions entrantes."
+
+#: index.docbook:144
+#, no-c-format
+msgid "Menus"
+msgstr "Menus"
+
+#: index.docbook:147
+#, no-c-format
+msgid "Game Menu"
+msgstr "Le menu Jeu"
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"Starts a new game. In a network game this option is only available for the "
+"network server. The network client will be automatically started by the "
+"server."
+msgstr ""
+"Démarre une nouvelle partie. Dans une partie en réseau, cette option n'est "
+"disponible que pour le serveur réseau. Le client réseau sera démarré "
+"automatiquement par le serveur."
+
+#: index.docbook:149
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Open ...</guimenuitem>"
+msgstr ""
+"<guimenu>Jeu</guimenu> <guimenuitem>Ouvrir une partie "
+"sauvegardée...</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid "Loads a saved game."
+msgstr "Charge une partie enregistrée."
+
+#: index.docbook:149
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Save As ...</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Sauvegarder une partie</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid "Saves the current game."
+msgstr "Enregistre le jeu actuel."
+
+#: index.docbook:149
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Abort Game</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Arrêter la partie</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid "Aborts a running game."
+msgstr "Interrompt une partie en cours."
+
+#: index.docbook:149
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Network configuration...</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Configuration réseau...</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"Pops up a dialog for the network configuration. You can choose to be server "
+"or client. If you are server you can also choose what color the remote "
+"player should take over. If a network game is running you can also "
+"disconnect it in this menu."
+msgstr ""
+"Fait apparaître un dialogue de configuration des options réseau. Vous "
+"pouvez choisir d'être client ou serveur. Si vous êtes me serveur vous "
+"pouvez choisir quelle couleur le joueur distant doit adopter. Si un jeu "
+"réseau est en cours vous pouvez également le déconnecter dans ce menu."
+
+#: index.docbook:149
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Chat widget...</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Outil de dialogue</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid "Pops up a chat widget which allows you to send messages to the other party."
+msgstr ""
+"Fait apparaître une fenêtre de discussion qui vous permet d'envoyer un "
+"message au joueur distant."
+
+#: index.docbook:149
+#, no-c-format
+msgid "<guimenu>Game</guimenu> <guimenuitem>Show Statistics...</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu> <guimenuitem>Afficher les statistiques</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"Shows the all time game statistics and allows to reset it. This statistic is "
+"usually saved when the game ended and shows the amount of played and won "
+"games per player."
+msgstr ""
+"Affiche les statistiques de toutes les parties jouées et permet de les "
+"réinitialiser. Ces statistiques sont normalement sauvées à la fin du jeu "
+"et comprennent le nombre de parties jouées et gagnées par joueur."
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Hint</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>H</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Conseil</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"The computer will calculate the best possible move and mark it with a small "
+"circle on the board. How good the move is depends on the level of the "
+"computer."
+msgstr ""
+"L'ordinateur calculera le meilleur coup possible et l'indiquera au moyen "
+"d'un petit cercle sur le terrain de jeu. La qualité de ce coup dépend du "
+"niveau choisi pour l'ordinateur."
+
+#: index.docbook:149
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Game</guimenu> <guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Q</keycap></keycombo> "
+"</shortcut> <guimenu>Jeu</guimenu> <guimenuitem>Quitter</guimenuitem>"
+
+#: index.docbook:149
+#, no-c-format
+msgid "Quits the program."
+msgstr "Sort du programme."
+
+#: index.docbook:278
+#, no-c-format
+msgid "Edit Menu"
+msgstr "Le menu Édition"
+
+#: index.docbook:279
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+"</shortcut> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap></keycombo> "
+"</shortcut> <guimenu>Édition</guimenu> <guimenuitem>Annuler</guimenuitem>"
+
+#: index.docbook:279
+#, no-c-format
+msgid ""
+"Undo the last move. If the previous player is played by the computer two "
+"moves are taken back so that it is the player's turn again."
+msgstr ""
+"Annule le dernier coup. Si le joueur précédent est joué par l'ordinateur, "
+"on remonte deux coups en arrière de sorte que c'est au tour du joueur "
+"humain à nouveau."
+
+#: index.docbook:279
+#, no-c-format
+msgid ""
+"<shortcut> <keycombo "
+"action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></keycombo> </shortcut> "
+"<guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem>"
+msgstr ""
+"<shortcut> <keycombo "
+"action=\"simul\">&Ctrl;&Shift;<keycap>Z</keycap></keycombo> </shortcut> "
+"<guimenu>Édition</guimenu> <guimenuitem>Refaire</guimenuitem>"
+
+#: index.docbook:279
+#, no-c-format
+msgid "Replay a move which had been undone."
+msgstr "Rejoue un coup annulé précédemment."
+
+#: index.docbook:316
+#, no-c-format
+msgid "Options Menu"
+msgstr "Le menu Options"
+
+#: index.docbook:318
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guisubmenu>Startplayer</guisubmenu>"
+msgstr "<guimenu>Options</guimenu><guisubmenu>Premier joueur</guisubmenu>"
+
+#: index.docbook:318
+#, no-c-format
+msgid "Determines which color player has the first move in the next game."
+msgstr ""
+"Détermine quelle couleur ou joueur joue le premier coup de la prochaine "
+"partie."
+
+#: index.docbook:318
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guisubmenu>Yellow played by</guisubmenu>"
+msgstr "<guimenu>Options</guimenu><guisubmenu>Les jaunes sont joués par</guisubmenu>"
+
+#: index.docbook:318
+#, no-c-format
+msgid ""
+"Chooses who should play for player 1 (yellow). It can be either "
+"<guimenuitem>mouse</guimenuitem> or <guimenuitem>keyboard</guimenuitem>, "
+"&ie; a local player using the mouse or keyboard as input device or "
+"<guimenuitem>computer</guimenuitem>, &ie; the computer plays for this player."
+msgstr ""
+"Détermine qui joue en tant que joueur 1 (jaune). Ce peut être soit celui "
+"qui a la <guimenuitem>Souris</guimenuitem> soit celui qui a le "
+"<guimenuitem>Clavier</guimenuitem>, &cad; un joueur local utilisant la "
+"souris ou le clavier comme périphérique d'entrée, soit encore "
+"l'<guimenuitem>Ordinateur</guimenuitem>, &cad; que l'ordinateur choisit les "
+"coups de ce joueur."
+
+#: index.docbook:318
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guisubmenu>Red played by</guisubmenu>"
+msgstr "<guimenu>Options</guimenu><guisubmenu>Les rouges sont joués par</guisubmenu>"
+
+#: index.docbook:318
+#, no-c-format
+msgid "Same as <guimenuitem>Player 1 played by</guimenuitem> but for player 2 (red)."
+msgstr ""
+"Même signification que pour <guimenuitem>Les jaunes sont joués "
+"par</guimenuitem>, mais pour le deuxième joueur (rouge)."
+
+#: index.docbook:318
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guisubmenu>Level</guisubmenu>"
+msgstr "<guimenu>Options</guimenu><guisubmenu>Niveau</guisubmenu>"
+
+#: index.docbook:318
+#, no-c-format
+msgid "Selects the level of the computer player."
+msgstr "Détermine le niveau du joueur joué par l'ordinateur."
+
+#: index.docbook:318
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guimenuitem>Change Names...</guimenuitem>"
+msgstr "<guimenu>Options</guimenu><guimenuitem>Changer les noms...</guimenuitem>"
+
+#: index.docbook:318
+#, no-c-format
+msgid "Change the names of the players."
+msgstr "Change les noms des joueurs."
+
+#: index.docbook:318
+#, no-c-format
+msgid "<guimenu>Options</guimenu> <guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Options</guimenu><guimenuitem>Afficher la barre "
+"d'état</guimenuitem>"
+
+#: index.docbook:318
+#, no-c-format
+msgid "Toggle on and off the display of the status bar."
+msgstr "Affiche ou non la barre d'état."
+
+#: index.docbook:402
+#, no-c-format
+msgid "The <guimenuitem>Help</guimenuitem> Menu"
+msgstr "Le menu <guimenuitem>Aide</guimenuitem>"
+
+#: index.docbook:411
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:413
+#, no-c-format
+msgid "&kwin4;"
+msgstr "&kwin4;"
+
+#: index.docbook:416
+#, no-c-format
+msgid "Program copyright 1995-2002 Martin Heni <email>martin@heni-online.de</email>"
+msgstr ""
+"Programme copyright 1995-2002 Martin Heni "
+"<email>martin@heni-online.de</email>"
+
+#: index.docbook:419
+#, no-c-format
+msgid "Documentation copyright 2002 Martin Heni <email>martin@heni-online.de</email>"
+msgstr "Documentation copyright 2002 Martin Heni <email>martin@heni-online.de</email>"
+
+#: index.docbook:423
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Traduction de la documentation copyright 2001 Eric Bischoff "
+"<email>e.bischoff@noos.fr</email></para>"
+
+#: index.docbook:431
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:434
+#, no-c-format
+msgid "How to obtain &kwin4;"
+msgstr "Comment obtenir &kwin4;"
+
+#: index.docbook:441
+#, no-c-format
+msgid "Requirements"
+msgstr "Configuration nécessaire"
+
+#: index.docbook:443
+#, no-c-format
+msgid "In order to successfully compile &kwin4;, you need &kde; 2.0"
+msgstr "Pour réussir à compiler &kwin4;, il vous faut &kde; 2.0."
+
+#: index.docbook:447
+#, no-c-format
+msgid ""
+"All required libraries as well as &kwin4; itself can be found on <ulink "
+"url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/kde/</ulink>."
+msgstr ""
+"Toutes les bibliothèques nécessaires ainsi que &kwin4; lui-même se "
+"trouvent à l'adresse <ulink "
+"url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/kde/</ulink>."
+
+#: index.docbook:453
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"

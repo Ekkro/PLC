@@ -1,9 +1,852 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/PT/kwin4.po
-on this server.<br />
-</p>
-</body></html>
+msgid ""
+msgstr ""
+"Project-Id-Version: kwin4\n"
+"POT-Creation-Date: 2002-02-10 02:45+0100\n"
+"PO-Revision-Date: 2001-01-24 15:16-0300\n"
+"Last-Translator: Elvis Pfützenreuter <epx@conectiva.com>\n"
+"Language-Team: Brazilian Portugueses <kde-i18n-pt_BR@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.7.1\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Elvis Pfützenreuter"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "epx@conectiva.com.br"
+
+#: kenddlg.cpp:72
+#, fuzzy
+msgid "Good Bye"
+msgstr "Adeus"
+
+#: kenddlg.cpp:84
+msgid ""
+"Thanks for playing !\n"
+"\n"
+"Come back soon\n"
+"\n"
+"\n"
+"Sure you really wanna quit?"
+msgstr ""
+"Obrigado por jogar !\n"
+"\n"
+"Volte logo\n"
+"\n"
+"\n"
+"Tem certeza de que quer sair ?"
+
+#: kenddlg.cpp:100
+#, fuzzy
+msgid "Stay Here"
+msgstr "Fique aqui"
+
+#: kwin4.cpp:77
+msgid "Chat Dlg"
+msgstr ""
+
+#: kwin4.cpp:86 kwin4.cpp:95
+msgid "Chat"
+msgstr ""
+
+#: kwin4.cpp:102
+#, fuzzy
+msgid "Configure..."
+msgstr "Configurar nomes..."
+
+#: kwin4.cpp:136
+msgid "Four wins"
+msgstr "Quatro ganha"
+
+#: kwin4.cpp:357 kwin4.cpp:358
+#, fuzzy
+msgid "Starting a new game..."
+msgstr "Iniciando novo jogo..."
+
+#: kwin4.cpp:361 kwin4.cpp:362
+#, fuzzy
+msgid "Open a saved game..."
+msgstr "Iniciando novo jogo..."
+
+#: kwin4.cpp:365 kwin4.cpp:366
+#, fuzzy
+msgid "Save a game."
+msgstr "Começa um novo jogo"
+
+#: kwin4.cpp:368
+#, fuzzy
+msgid "&Abort Game"
+msgstr "Abortou"
+
+#: kwin4.cpp:370
+#, fuzzy
+msgid "Ending the current game..."
+msgstr "Finaliza o jogo corrente"
+
+#: kwin4.cpp:371
+msgid "Aborts a currently played game. No winner will be declared."
+msgstr ""
+
+#: kwin4.cpp:373
+msgid "&Network Configuration..."
+msgstr ""
+
+#: kwin4.cpp:375
+msgid "Chat Widget"
+msgstr ""
+
+#: kwin4.cpp:377
+msgid "Debug KGame"
+msgstr ""
+
+#: kwin4.cpp:382
+#, fuzzy
+msgid "&Show Statistics..."
+msgstr "Estatísticas..."
+
+#: kwin4.cpp:384
+#, fuzzy
+msgid "Show all time statistics..."
+msgstr "Mostrando estatísticas do jogo..."
+
+#: kwin4.cpp:385
+msgid "Shows the all time statistics which is kept in all sessions."
+msgstr ""
+
+#: kwin4.cpp:387
+msgid "&Hint"
+msgstr "&Dica"
+
+#: kwin4.cpp:389 kwin4.cpp:390
+msgid "Shows a hint on how to move."
+msgstr ""
+
+#: kwin4.cpp:393
+msgid "Exiting..."
+msgstr "Saindo..."
+
+#: kwin4.cpp:394
+msgid "Quits the program."
+msgstr ""
+
+#: kwin4.cpp:397 kwin4.cpp:398
+#, fuzzy
+msgid "Undo last move."
+msgstr "Desfaz um movimento"
+
+#: kwin4.cpp:401 kwin4.cpp:402
+#, fuzzy
+msgid "Redo last move."
+msgstr "Refazer movimento..."
+
+#: kwin4.cpp:404
+#, fuzzy
+msgid "&View Statusbar"
+msgstr "Barra de &status"
+
+#: kwin4.cpp:406 kwin4.cpp:407
+msgid "Toggle the statusbar..."
+msgstr "Comutar barra de status..."
+
+#: kwin4.cpp:409
+#, fuzzy
+msgid "Startplayer"
+msgstr "Iniciar jogo"
+
+#: kwin4.cpp:411
+#, fuzzy
+msgid "Changing startplayer..."
+msgstr "Mudando vermelho para jogador remoto..."
+
+#: kwin4.cpp:412
+msgid "Chooses which player begins the next game."
+msgstr ""
+
+#: kwin4.cpp:414
+msgid "&Yellow"
+msgstr "&Amarelo"
+
+#: kwin4.cpp:415
+msgid "&Red"
+msgstr "&Vermelho"
+
+#: kwin4.cpp:418
+#, fuzzy
+msgid "Yellow Played By"
+msgstr "&Amarelo jogado por"
+
+#: kwin4.cpp:420 kwin4.cpp:421
+#, fuzzy
+msgid "Change who plays the yellow player..."
+msgstr "Muda os nomes dos jogadores"
+
+#: kwin4.cpp:423
+msgid "&Mouse"
+msgstr ""
+
+#: kwin4.cpp:424
+msgid "&Computer"
+msgstr "&Computador"
+
+#: kwin4.cpp:425
+msgid "&Keyboard"
+msgstr ""
+
+#: kwin4.cpp:427
+#, fuzzy
+msgid "Red Played By"
+msgstr "&Vermelho jogado por"
+
+#: kwin4.cpp:429 kwin4.cpp:430
+#, fuzzy
+msgid "Change who plays the red player..."
+msgstr "Mudando vermelho para computador..."
+
+#: kwin4.cpp:433
+msgid "&Level"
+msgstr "&Nível"
+
+#: kwin4.cpp:435
+#, fuzzy
+msgid "Change level..."
+msgstr "Mudar &nomes..."
+
+#: kwin4.cpp:436
+#, fuzzy
+msgid "Change the strength of the computer player."
+msgstr "Configurar o nível do computador para %1"
+
+#: kwin4.cpp:438
+msgid "&1"
+msgstr "&1"
+
+#: kwin4.cpp:439
+msgid "&2"
+msgstr "&2"
+
+#: kwin4.cpp:440
+msgid "&3"
+msgstr "&3"
+
+#: kwin4.cpp:441
+msgid "&4"
+msgstr "&4"
+
+#: kwin4.cpp:442
+msgid "&5"
+msgstr "&5"
+
+#: kwin4.cpp:443
+msgid "&6"
+msgstr "&6"
+
+#: kwin4.cpp:444
+#, fuzzy
+msgid "&7"
+msgstr "7"
+
+#: kwin4.cpp:445
+#, fuzzy
+msgid "&8"
+msgstr "8"
+
+#: kwin4.cpp:446
+#, fuzzy
+msgid "&9"
+msgstr "9"
+
+#: kwin4.cpp:450
+msgid "Change &Names..."
+msgstr "Mudar &nomes..."
+
+#: kwin4.cpp:452 kwin4.cpp:453
+msgid "Configure player names..."
+msgstr "Configurar nomes de jogadores..."
+
+#: kwin4.cpp:467 kwin4.cpp:478
+msgid "Ready"
+msgstr "Pronto"
+
+#: kwin4.cpp:476
+msgid "This leaves space for the mover"
+msgstr "Isto deixa espaço para o jogador"
+
+#: kwin4.cpp:477
+msgid "23:45"
+msgstr "23:45"
+
+#: kwin4.cpp:481
+msgid "(c) Martin Heni   "
+msgstr "(c) Martin Heni   "
+
+#: kwin4.cpp:482
+#, c-format
+msgid "Welcome to %1"
+msgstr "Bem-vindo a %1"
+
+#: kwin4.cpp:982
+msgid "No game  "
+msgstr "Sem jogo"
+
+#: kwin4.cpp:986
+msgid " - Yellow "
+msgstr " - Amarelo "
+
+#: kwin4.cpp:990
+msgid " - Red "
+msgstr " - Vermelho "
+
+#: kwin4.cpp:994
+msgid "Nobody  "
+msgstr "Ninguém  "
+
+#: kwin4.cpp:1029
+#, fuzzy
+msgid ""
+"The network game ended!\n"
+msgstr ""
+" O jogo terminou empatado!\n"
+
+#: kwin4.cpp:1038
+msgid "Game running..."
+msgstr ""
+
+#: kwin4.cpp:1049
+msgid "The game is drawn. Please restart next round."
+msgstr "O jogo está empatado. Reinicie próxima rodada."
+
+#: kwin4.cpp:1059 kwin4.cpp:1069
+msgid "%1 won the game. Please restart next round."
+msgstr "%1 venceu o jogo. Queira reiniciar a próxima rodada."
+
+#: kwin4.cpp:1079
+msgid " Game aborted. Please restart next round."
+msgstr " Jogo abortado. Reinicie a próxima rodada."
+
+#: kwin4.cpp:1116
+#, fuzzy
+msgid "Yellow should be played by remote"
+msgstr "Amarelo é jogado pelo computador"
+
+#: kwin4.cpp:1117
+#, fuzzy
+msgid "Red should be played by remote"
+msgstr "Vermelho é jogado pelo computador"
+
+#: kwin4aboutdlg.cpp:32
+msgid "About Four Wins"
+msgstr "Sobre 4 Wins"
+
+#: kwin4aboutdlg.cpp:65
+#, c-format
+msgid ""
+"Four Wins\n"
+"\n"
+"Version %1"
+msgstr ""
+"Four Wins\n"
+"\n"
+"Versão %1"
+
+#: kwin4aboutdlg.cpp:72
+msgid ""
+"(c) 2000 Martin Heni\n"
+"Email: martin@heni-online.de\n"
+"\n"
+"Gamefeatures:\n"
+"  - Multiplayer network game\n"
+"  - Up to two Computerplayer\n"
+"\n"
+"\n"
+" Many thanks to Laura for betatesting!"
+msgstr ""
+"(c) 2000 Martin Heni\n"
+"Email: martin@heni-online.de\n"
+"\n"
+"Recursos do jogo:\n"
+"  - Jogo remoto multijogadores\n"
+"  - Até dois jogadores-robôs\n"
+"\n"
+"\n"
+" Muitos agradecimentos à Laura pelos testes !"
+
+#: kwin4doc.cpp:147 namedlg.cpp:67 statdlg.cpp:71
+msgid "Player 1"
+msgstr "Jogador 1"
+
+#: kwin4doc.cpp:156 namedlg.cpp:82 namedlg.cpp:86 statdlg.cpp:77
+msgid "Player 2"
+msgstr "Jogador 2"
+
+#: kwin4view.cpp:321
+msgid ""
+"_: 1. intro line, welcome to win4\n"
+"Welcome"
+msgstr ""
+
+#: kwin4view.cpp:327
+msgid ""
+"_: 2. intro line, welcome to win4\n"
+"to"
+msgstr ""
+
+#: kwin4view.cpp:333
+msgid ""
+"_: 3. intro line, welcome to win4\n"
+"KWin4"
+msgstr ""
+
+#: kwin4view.cpp:561
+msgid "Hold on..the other was not yet gone..."
+msgstr "Espere... o outro não foi ainda..."
+
+#: kwin4view.cpp:562
+msgid "Hold your horses..."
+msgstr "Segure seus cavalos..."
+
+#: kwin4view.cpp:563
+msgid "Ah ah ah...only one go at a time..."
+msgstr "Ah ah ah... um de cada vez..."
+
+#: kwin4view.cpp:564
+msgid "Please wait... it is not your turn."
+msgstr "Aguarde... não é sua vez."
+
+#: main.cpp:33
+msgid "Enter debug level"
+msgstr "Digite nível de depuração"
+
+#: main.cpp:41
+msgid "KWin4"
+msgstr "KWin4"
+
+#: main.cpp:43
+msgid "KWin4: Two player network game"
+msgstr "KWin4: Jogo em rede para dois jogadores"
+
+#: msgdlg.cpp:44
+#, fuzzy
+msgid "Send Message to Remote Player..."
+msgstr "Mandar mensagem para jogador remoto..."
+
+#: msgdlg.cpp:50
+msgid "Enter message"
+msgstr "Digite mensagem"
+
+#: msgdlg.cpp:62
+msgid "Send"
+msgstr "Mandar"
+
+#: namedlg.cpp:32
+#, fuzzy
+msgid "Configure Names..."
+msgstr "Configurar nomes..."
+
+#: namedlg.cpp:49
+msgid "Player names"
+msgstr "Nomes dos jogadores"
+
+#: namedlg.cpp:72 namedlg.cpp:88
+msgid "Enter a player's name"
+msgstr "Digite o nome de um jogador"
+
+#: networkdlg.cpp:32
+#, fuzzy
+msgid "Configure Network Options..."
+msgstr "Configurar opções de rede..."
+
+#: networkdlg.cpp:46
+msgid "Remote settings"
+msgstr "Preferências remotas"
+
+#: networkdlg.cpp:81
+msgid "Connect to a remote game"
+msgstr "Conecta a um jogo remoto"
+
+#: networkdlg.cpp:97
+msgid "Remote host"
+msgstr "Máquina remota"
+
+#: networkdlg.cpp:101
+msgid "Port"
+msgstr "Porta"
+
+#: scorewidget.cpp:32
+msgid "Form1"
+msgstr ""
+
+#: scorewidget.cpp:46
+msgid "vs"
+msgstr ""
+
+#: scorewidget.cpp:69
+#, fuzzy
+msgid "Level"
+msgstr "&Nível"
+
+#: scorewidget.cpp:97
+#, fuzzy
+msgid "Chance"
+msgstr "Chance:"
+
+#: scorewidget.cpp:182
+msgid "Winner"
+msgstr "Vencedor"
+
+#: scorewidget.cpp:184
+msgid "Loser"
+msgstr "Perdedor"
+
+#: statdlg.cpp:36
+msgid "Statistics..."
+msgstr "Estatísticas..."
+
+#: statdlg.cpp:52
+msgid "All time game statistics"
+msgstr "Estatísticas gerais"
+
+#: statdlg.cpp:65
+msgid "Name"
+msgstr "Nome"
+
+#: statdlg.cpp:88
+msgid "Won"
+msgstr "Venceu"
+
+#: statdlg.cpp:111
+msgid "Drawn"
+msgstr "Empatou"
+
+#: statdlg.cpp:134
+msgid "Lost"
+msgstr "Perdeu"
+
+#: statdlg.cpp:157
+msgid "Aborted"
+msgstr "Abortou"
+
+#: statdlg.cpp:180
+msgid "Sum"
+msgstr "Soma"
+
+#: statdlg.cpp:214
+#, fuzzy
+msgid "Clear All Statistics"
+msgstr "Limpar todas as estatísticas"
+
+#: statdlg.cpp:263
+#, fuzzy
+msgid ""
+"Do you really want to delete the all time statistics?\n"
+msgstr ""
+"Você realmente quer apagar as estatísticas\n"
+"gerais ?\n"
+
+#: statdlg.cpp:265
+msgid "Statistics warning"
+msgstr "Aviso das estatísticas"
+
+#: statuswidget.cpp:46
+#, fuzzy
+msgid ""
+"_: 1-2_letter_abbr_won\n"
+"W"
+msgstr "G"
+
+#: statuswidget.cpp:52
+#, fuzzy
+msgid ""
+"_: 1-2_letter_abbr_drawn\n"
+"D"
+msgstr "E"
+
+#: statuswidget.cpp:58
+#, fuzzy
+msgid ""
+"_: 1-2_letter_abbr_lost\n"
+"L"
+msgstr "P"
+
+#: statuswidget.cpp:67
+msgid ""
+"_: 1-2_letter_abbr_number\n"
+"No"
+msgstr "Nr"
+
+#: statuswidget.cpp:73
+msgid ""
+"_: 1-2_letter_abbr_breaks/aborted\n"
+"Bk"
+msgstr "Ab"
+
+#~ msgid "&Remote"
+#~ msgstr "&Remoto"
+
+#, fuzzy
+#~ msgid "&End Game"
+#~ msgstr "&Finalizar jogo"
+
+#~ msgid "Send &Message..."
+#~ msgstr "Mandar &Mensagem..."
+
+#~ msgid "Sending message to remote player..."
+#~ msgstr "Mandando mensagem para o jogador remoto..."
+
+#~ msgid "&Player"
+#~ msgstr "&Jogador"
+
+#, fuzzy
+#~ msgid "Network server"
+#~ msgstr "Servidor de rede..."
+
+#, fuzzy
+#~ msgid "Try to act as network master..."
+#~ msgstr "Tenta ser servidor de rede, se possível..."
+
+#~ msgid "&Animations"
+#~ msgstr "&Animações"
+
+#, fuzzy
+#~ msgid "Display animations."
+#~ msgstr "&Animações"
+
+#~ msgid "Remote connection to %1:%2..."
+#~ msgstr "Conexão remota a %1:%2..."
+
+#~ msgid "Offering remote connection on port %1 ..."
+#~ msgstr "Oferecendo conexão remota na porta %1 ..."
+
+#~ msgid "Abort"
+#~ msgstr "Abortar"
+
+#~ msgid "It is not possible to start the yellow and red player.\n"
+#~ msgstr "Não é possível iniciar os jogadores amarelo e vermelho.\n"
+
+#~ msgid "It is not possible to start the yellow player.\n"
+#~ msgstr "Não é possível iniciar o jogador amarelo.\n"
+
+#~ msgid "It is not possible to start the red player.\n"
+#~ msgstr "Não é possível iniciar o jogador vermelho.\n"
+
+#~ msgid ""
+#~ "This is a serious error. If one player is played by\n"
+#~ "the computer check for the existance of the file '%1'.\n"
+#~ msgstr ""
+#~ "Este é um erro sério. Se um jogador é jogado por\n"
+#~ "computador, verifique a existência do arquivo %1.\n"
+
+#~ msgid ""
+#~ "It is not possbile to start the hint process.\n"
+#~ "This is a serious error. Check for the existance of\n"
+#~ "the file '%1'.\n"
+#~ msgstr ""
+#~ "Não é possível iniciar o processo de dica.\n"
+#~ "Este é um erro sério. Verifique a existência do\n"
+#~ "arquivo %1.\n"
+
+#~ msgid "It is not your turn. You cannot undo now.\n"
+#~ msgstr "Não é sua vez. Você não pode desfazer agora.\n"
+
+#~ msgid "It is not your turn. You cannot redo now.\n"
+#~ msgstr "Não é sua vez. Você não pode refazer agora.\n"
+
+#~ msgid "Waiting for the computer to move..."
+#~ msgstr "Esperando pelo computador jogar..."
+
+#~ msgid "Waiting for remote player..."
+#~ msgstr "Esperando pelo jogador remoto..."
+
+#~ msgid "Please make your move..."
+#~ msgstr "Faça seu movimento..."
+
+#~ msgid "Remote player ended game..."
+#~ msgstr "Jogador remoto terminou o jogo..."
+
+#~ msgid "Remote player ended game."
+#~ msgstr "Jogador remoto terminou o jogo."
+
+#~ msgid "Game started as remote slave"
+#~ msgstr "O jogo iniciou como escravo remoto"
+
+#~ msgid "Game started as remote master"
+#~ msgstr "O jogo inicial como mestre remoto"
+
+#~ msgid "Remote connection lost for yellow..."
+#~ msgstr "Conexão remota perdida para amarelo..."
+
+#~ msgid "Remote connection lost for red..."
+#~ msgstr "Conexão remota perdida para vermelho..."
+
+#~ msgid "Received an error from the remote player"
+#~ msgstr "Recebi um erro do jogador remoto"
+
+#~ msgid "Please wait... Computer is thinking.\n"
+#~ msgstr "Aguarde... O computador está pensando.\n"
+
+#~ msgid "This move is not possible.\n"
+#~ msgstr "Este movimento não é possível.\n"
+
+#~ msgid "%1 (Yellow) has won the game!"
+#~ msgstr "%1 (Amarelo) venceu o jogo!"
+
+#~ msgid "%1 (Red) has won the game!"
+#~ msgstr "%1 (Vermelho) venceu o jogo!"
+
+#~ msgid ""
+#~ "_: versus\n"
+#~ "vs"
+#~ msgstr "vs"
+
+#~ msgid "Level:"
+#~ msgstr "Nível:"
+
+#~ msgid "Move:"
+#~ msgstr "Movimento:"
+
+#~ msgid "Computer"
+#~ msgstr "Computador"
+
+#~ msgid " Human"
+#~ msgstr " Humano"
+
+#~ msgid "Remote"
+#~ msgstr "Remoto"
+
+#~ msgid "Statistics"
+#~ msgstr "Estatísticas"
+
+#~ msgid "Hint"
+#~ msgstr "Dica"
+
+#~ msgid "Send Message"
+#~ msgstr "Mandar mensagem"
+
+#~ msgid "&New game"
+#~ msgstr "&Novo jogo"
+
+#~ msgid "&Statistics"
+#~ msgstr "&Estatísticas"
+
+#~ msgid "&Undo move"
+#~ msgstr "&Desfazer movimento"
+
+#~ msgid "&Redo move"
+#~ msgstr "&Refazer movimento"
+
+#~ msgid "&Toolbar"
+#~ msgstr "&Barra de ferramentas"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid "&Starting color"
+#~ msgstr "Cor &inicial"
+
+#~ msgid "New File"
+#~ msgstr "Novo arquivo"
+
+#~ msgid "Opening file..."
+#~ msgstr "Abrindo arquivo..."
+
+#~ msgid "Ending game..."
+#~ msgstr "Finalizando jogo..."
+
+#~ msgid "Showing hint...  "
+#~ msgstr "Mostrando dica..."
+
+#~ msgid "Undo move..."
+#~ msgstr "Desfazer movimento..."
+
+#~ msgid "Toggle the toolbar..."
+#~ msgstr "Comutar barra de ferramentas..."
+
+#~ msgid "Changing start color to red..."
+#~ msgstr "Mudando cor inicial para vermelho..."
+
+#~ msgid "Changing start color to yellow..."
+#~ msgstr "Mudando cor inicial para amarelo..."
+
+#~ msgid "Changing yellow to interactive player..."
+#~ msgstr "Mudando amarelo para jogador interativo..."
+
+#~ msgid "Changing yellow to computer player..."
+#~ msgstr "Mudando amarelo para computador..."
+
+#~ msgid "Changing yellow to remote player..."
+#~ msgstr "Mudando amarelo para jogador remoto..."
+
+#~ msgid "Changing red to interactive player..."
+#~ msgstr "Mudando vermelho para jogador interativo..."
+
+#~ msgid "Changing computer level to %1 ..."
+#~ msgstr "Mudando nível do computador para %1 ..."
+
+#~ msgid "Trying to become network server if possible..."
+#~ msgstr "Tentando ser servidor de rede se possível..."
+
+#~ msgid "Configure network..."
+#~ msgstr "Configurar rede..."
+
+#~ msgid "Quits %1"
+#~ msgstr "Sai de %1"
+
+#~ msgid "Shows statistical information"
+#~ msgstr "Mostra estatísticas"
+
+#~ msgid "Closes remote connection"
+#~ msgstr "Fecha conexão remota"
+
+#~ msgid "Shows you a hint"
+#~ msgstr "Mostra uma dica"
+
+#~ msgid "Sends a message to a remote player"
+#~ msgstr "Manda uma mensagem para jogador remoto"
+
+#~ msgid "Redoes a previously undone move"
+#~ msgstr "Refaz um movimento desfeito antes"
+
+#~ msgid "Enables/disables the toolbar"
+#~ msgstr "Liga/desliga a barra de ferramentas"
+
+#~ msgid "Enables/disables the statusbar"
+#~ msgstr "Liga/desliga a barra de status"
+
+#~ msgid "Lets red start the next game"
+#~ msgstr "Deixa o vermelho iniciar o próximo jogo"
+
+#~ msgid "Lets yellow start the next game"
+#~ msgstr "Deixa o amarelo iniciar o próximo jogo"
+
+#~ msgid "Yellow is played interactively"
+#~ msgstr "Amarelo é jogado interativamente"
+
+#~ msgid "Yellow is played over the network"
+#~ msgstr "Amarelo é jogado remotamente"
+
+#~ msgid "Red is played interactively"
+#~ msgstr "Vermelho é jogado interativamente"
+
+#~ msgid "Red is played over the network"
+#~ msgstr "Vermelho é jogado remotamente"
+
+#~ msgid "Switch animations on/off..."
+#~ msgstr "Liga/desliga animações..."
+
+#~ msgid "About Kwin4..."
+#~ msgstr "Sobre o KWin4..."
+
+#~ msgid ""
+#~ "You can leave the remote host input empty.\n"
+#~ "Then your computer acts as server only and\n"
+#~ "does not try to connect to a remote host."
+#~ msgstr ""
+#~ "Você pode deixar o item máquina remote vazio.\n"
+#~ "Então seu computador age somente como servidor\n"
+#~ "e não tenta conectar-se à máquina remota."

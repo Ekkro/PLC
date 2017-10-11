@@ -1,9 +1,659 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /~jj/plc-17/PO/FR/kjumpingcube.po
-on this server.<br />
-</p>
-</body></html>
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2001-02-09 01:25+0100\n"
+"PO-Revision-Date: 2002-01-25 18:42CEST\n"
+"Last-Translator: Éric Bischoff <e.bischoff@noos.fr>\n"
+"Language-Team: Français <kde-francophone@kdei.org>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: index.docbook:11
+#, no-c-format
+msgid "The &kjumpingcube; Handbook"
+msgstr "Le manuel de &kjumpingcube;"
+
+#: index.docbook:14
+#, no-c-format
+msgid ""
+"<firstname>Matthias</firstname> <surname>Kiefer</surname> <affiliation> "
+"<address><email>matthias.kiefer@gmx.de</email></address> </affiliation>"
+msgstr ""
+"<firstname>Matthias</firstname> <surname>Kiefer</surname> <affiliation> "
+"<address><email>matthias.kiefer@gmx.de</email></address> </affiliation>"
+
+#: index.docbook:26
+#, no-c-format
+msgid "Matthias Kiefer"
+msgstr "Matthias Kiefer"
+
+#: index.docbook:29
+#, no-c-format
+msgid "ROLES_OF_TRANSLATORS"
+msgstr ""
+"<othercredit "
+"role=\"translator\"><firstname>Eric</firstname><surname>Bischoff</surname>"
+"<affiliation><address><email>e.bischoff@noos.fr</email></address>"
+"</affiliation><contrib>Traduction française</contrib></othercredit>"
+
+#: index.docbook:36
+#, no-c-format
+msgid ""
+"&kjumpingcube; is a simple tactical game you can play against a friend or "
+"the computer."
+msgstr ""
+"&kjumpingcube; est un jeu tactique simple auquel vous pouvez jouer contre un "
+"ami ou contre l'ordinateur."
+
+#: index.docbook:41
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr "<keyword>KDE</keyword>"
+
+#: index.docbook:42
+#, no-c-format
+msgid "KJumpingCube"
+msgstr "KJumpingCube"
+
+#: index.docbook:43
+#, no-c-format
+msgid "kdegames"
+msgstr "kdegames"
+
+#: index.docbook:44
+#, no-c-format
+msgid "game"
+msgstr "jeu"
+
+#: index.docbook:45
+#, no-c-format
+msgid "strategy"
+msgstr "stratégie"
+
+#: index.docbook:52
+#, no-c-format
+msgid "Introduction"
+msgstr "Introduction"
+
+#: index.docbook:54
+#, no-c-format
+msgid ""
+"&kjumpingcube; is a simple tactical game. You can play it against the "
+"computer or against a friend. The playing field consists of squares that "
+"contains points. By clicking on the squares you can increase the points, and "
+"if the points reach a maximum the points will jump to the squares neighbours "
+"and take them over. The winner is the one who owns all squares."
+msgstr ""
+"&kjumpingcube; est un jeu tactique simple. Vous pouvez y jouer contre "
+"l'ordinateur ou contre un ami. Le terrain de jeu est formé de cases qui "
+"contiennent des points. En cliquant sur les cases vous augmentez le nombre "
+"de points, et si ce nombre de points atteint le nombre maximal de points sur "
+"une case, ces points sauteront sur les cases voisines et prendront ces "
+"cases. Le gagnant est celui qui contrôle toutes les cases."
+
+#: index.docbook:64
+#, no-c-format
+msgid "Playing &kjumpingcube;"
+msgstr "Jouer à &kjumpingcube;"
+
+#: index.docbook:67
+#, no-c-format
+msgid "Rules"
+msgstr "Règles"
+
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"A move consists of increasing the points of a square by clicking on it. You "
+"can only increase a square that doesn't belong to your opponent. By clicking "
+"a square that has no owner, you become the owner."
+msgstr ""
+"Un tour de jeu consiste à augmenter le nombre de points sur une case en "
+"cliquant dessus. Vous ne pouvez déposer des points que sur une case qui "
+"n'appartient pas à votre adversaire. En cliquant sur une case n'appartenant "
+"à personne, vous en prenez possession."
+
+#: index.docbook:69
+#, no-c-format
+msgid ""
+"If a square has more points than it has neighbours, the points jump to its "
+"neighbours and take them over."
+msgstr ""
+"Si une case a plus de points qu'elle n'a de cases voisines, alors les points "
+"sautent sur ces cases voisines et en prennent le contrôle."
+
+#: index.docbook:69
+#, no-c-format
+msgid "Neighbour-Fields are only direct neighbours, not the diagonal neighbours."
+msgstr ""
+"Les cases voisines sont les voisins directs, pas les cases voisines en "
+"diagonale."
+
+#: index.docbook:69
+#, no-c-format
+msgid "The winner is the one who owns all squares."
+msgstr "Le gagnant est celui qui possède toutes les cases."
+
+#: index.docbook:85
+#, no-c-format
+msgid "Command Reference"
+msgstr "Liste des commandes"
+
+#: index.docbook:88
+#, no-c-format
+msgid "The menu bar"
+msgstr "La barre de menus"
+
+#: index.docbook:91
+#, no-c-format
+msgid "The <guimenu>Game</guimenu> menu"
+msgstr "Le menu <guimenu>Jeu</guimenu>"
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>New</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Nouveau</guimenuitem>"
+
+#: index.docbook:93
+#, no-c-format
+msgid "Start a new game."
+msgstr "Démarre un nouveau jeu."
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Load...</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Charger</guimenuitem>"
+
+#: index.docbook:93 index.docbook:276
+#, no-c-format
+msgid "Open a previously saved game."
+msgstr "Ouvre un jeu précédemment sauvé."
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>S</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Save</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo "
+"action=\"simul\">&Ctrl;<keycap>N</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Enregistrer</guimenuitem>"
+
+#: index.docbook:93 index.docbook:276
+#, no-c-format
+msgid "Save the current game."
+msgstr "Enregistre le jeu en cours."
+
+#: index.docbook:93
+#, no-c-format
+msgid "<guimenu>Game</guimenu><guimenuitem>Save As...</guimenuitem>"
+msgstr "<guimenu>Jeu</guimenu><guimenuitem>Enregistrer sous...</guimenuitem>"
+
+#: index.docbook:93
+#, no-c-format
+msgid "Save the current game with a different name."
+msgstr "Enregistre le jeu en cours sous un autre nom."
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\"> "
+"<keycap>H</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Get Hint</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\"> "
+"<keycap>H</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Donner un conseil</guimenuitem>"
+
+#: index.docbook:93 index.docbook:276
+#, no-c-format
+msgid "Get a hint as to the best next move."
+msgstr "Conseiller le meilleur mouvement."
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<shortcut>&Esc;</shortcut> <guimenu>Game</guimenu><guimenuitem>Stop "
+"thinking</guimenuitem>"
+msgstr ""
+"<shortcut>&Echap;</shortcut> <guimenu>Jeu</guimenu><guimenuitem>"
+" Interrompre la réflexion</guimenuitem>"
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<action>Stop the computer opponent thinking about its next move.</action> "
+"The computer opponent will then make the best move it has found up to the "
+"moment you told it to stop."
+msgstr ""
+"<action>Arrête la réflexion sur le prochain coup de l'ordinateur.</action>"
+" L'adversaire joué par l'ordinateur utilisera le meilleur coup qu'il avait "
+"trouvé avant que vous ne l'arrêtiez."
+
+#: index.docbook:93
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\"> "
+"&Ctrl;<keycap>Q</keycap></keycombo></shortcut> "
+"<guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\"> "
+"<keycap>H</keycap></keycombo></shortcut> "
+"<guimenu>Jeu</guimenu><guimenuitem>Donner un conseil</guimenuitem>"
+
+#: index.docbook:93
+#, no-c-format
+msgid "<action>Quits</action> &kjumpingcube;."
+msgstr "<action>Sort de</action> &kjumpingcube;."
+
+#: index.docbook:160
+#, no-c-format
+msgid "The <guimenu>Edit</guimenu> menu"
+msgstr "Le menu <guimenu>Édition</guimenu>"
+
+#: index.docbook:161
+#, no-c-format
+msgid ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap> "
+"</keycombo></shortcut> <guimenu>Edit</guimenu><guimenuitem>Undo "
+"Move</guimenuitem>"
+msgstr ""
+"<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>Z</keycap> "
+"</keycombo></shortcut> "
+"<guimenu>Édition</guimenu><guimenuitem>Annuler</guimenuitem>"
+
+#: index.docbook:161 index.docbook:276
+#, no-c-format
+msgid "Undo the last move you made."
+msgstr "Annule le dernier coup que vous ayez joué."
+
+#: index.docbook:175
+#, no-c-format
+msgid "The <guimenu>Settings</guimenu> menu"
+msgstr "Le menu <guimenu>Configuration</guimenu>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Afficher la barre "
+"d'outils</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Toggle on and off the view of the tool bar."
+msgstr "Cache ou affiche la barre d'outils à l'écran."
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Afficher la barre "
+"d'état</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Toggle on and off the view of the status bar."
+msgstr "Cache ou affiche la barre d'outils à l'écran."
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu><guimenuitem>Configure Key "
+"Bindings...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu><guimenuitem>Raccourcis "
+"clavier...</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"<action>Open a dialog where you can change the keybindings</action> for "
+"&kjumpingcube;"
+msgstr ""
+"<action>"
+"Ouvre une boîte de dialogue où vous pouvez modifier les raccourcis "
+"clavier</action> de &kjumpingcube;"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Playfield</guisubmenu>"
+msgstr "<guimenu>Configuration</guimenu> <guisubmenu>Dimension</guisubmenu>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Lets you choose from a list of playfield sizes."
+msgstr "Vous permet de choisir la taille du terrain de jeu dans une liste."
+
+#: index.docbook:177
+#, no-c-format
+msgid "The sizes available in the submenu are:"
+msgstr "Les tailles disponibles dans le sous-menu sont&nbsp;:"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenuitem>5x5</guimenuitem>"
+msgstr "<guimenuitem>5x5</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenuitem>6x6</guimenuitem>"
+msgstr "<guimenuitem>6x6</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenuitem>7x7</guimenuitem>"
+msgstr "<guimenuitem>7x7</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenuitem>8x8</guimenuitem>"
+msgstr "<guimenuitem>8x8</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenuitem>9x9</guimenuitem>"
+msgstr "<guimenuitem>9x9</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "10x10"
+msgstr "10x10"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guisubmenu>Skill</guisubmenu>"
+msgstr "<guimenu>Configuration</guimenu> <guisubmenu>Difficulté</guisubmenu>"
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"<action>Lets you choose your playing skill from a submenu.</action> This "
+"decides how clever your computer opponent is, if you are playing against the "
+"computer."
+msgstr ""
+"<action>Vous permet de choisir votre niveau de jeu dans un "
+"sous-menu.</action> Cela détermine l'intelligence de l'ordinateur lorsque "
+"vous jouez contre lui."
+
+#: index.docbook:177
+#, no-c-format
+msgid "You can choose from:"
+msgstr "Vous pouvez choisir&nbsp;:"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Beginner"
+msgstr "Débutant"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Average"
+msgstr "Moyen"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Expert"
+msgstr "Expert"
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Computer plays Player "
+"1</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>L'ordinateur est le joueur "
+"1</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Sets the computer opponent to be Player 1"
+msgstr "L'ordinateur jouera en tant que joueur 1"
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"The computer can play against itself if you select both this and "
+"<guimenuitem>Computer plays Player 2</guimenuitem>"
+msgstr ""
+"L'ordinateur peut jouer contre lui-même si vous choisissez à la fois cette "
+"option et l'option <guimenuitem>L'ordinateur est le joueur 2</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"<guimenu>Settings</guimenu> <guimenuitem>Computer plays Player "
+"2</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>L'ordinateur est le joueur "
+"2</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Sets the computer opponent to be Player 2"
+msgstr "L'ordinateur jouera en tant que joueur 2"
+
+#: index.docbook:177
+#, no-c-format
+msgid ""
+"The computer can play against itself if you select both this and "
+"<guimenuitem>Computer plays Player 1</guimenuitem>"
+msgstr ""
+"L'ordinateur peut jouer contre lui-même si vous choisissez à la fois cette "
+"option et l'option <guimenuitem>L'ordinateur est le joueur 1</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Color Player 1...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Couleur du joueur "
+"1...</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Opens a dialog box where you can choose the color for Player 1's pieces."
+msgstr ""
+"Ouvre une boîte de dialogue où vous pouvez choisir la couleur des pièces "
+"du joueur 1."
+
+#: index.docbook:177
+#, no-c-format
+msgid "<guimenu>Settings</guimenu> <guimenuitem>Color Player 2...</guimenuitem>"
+msgstr ""
+"<guimenu>Configuration</guimenu> <guimenuitem>Couleur du joueur "
+"2...</guimenuitem>"
+
+#: index.docbook:177
+#, no-c-format
+msgid "Opens a dialog box where you can choose the color for Player 2's pieces."
+msgstr ""
+"Ouvre une boîte de dialogue où vous pouvez choisir la couleur des pièces "
+"du joueur 2."
+
+#: index.docbook:266
+#, no-c-format
+msgid "The <guimenu>Help</guimenu> menu"
+msgstr "Le menu <guimenu>Aide</guimenu>"
+
+#: index.docbook:274
+#, no-c-format
+msgid "The &kjumpingcube; tool bar"
+msgstr "La barre d'outils de &kjumpingcube;"
+
+#: index.docbook:276
+#, no-c-format
+msgid "<guiicon>New</guiicon>"
+msgstr "<guiicon>Nouveau</guiicon>"
+
+#: index.docbook:276
+#, no-c-format
+msgid "Starts a new game"
+msgstr "Démarre un nouveau jeu"
+
+#: index.docbook:276
+#, no-c-format
+msgid "Open"
+msgstr "Ouvrir"
+
+#: index.docbook:276
+#, no-c-format
+msgid "Save"
+msgstr "Sauver"
+
+#: index.docbook:276
+#, no-c-format
+msgid "Stop Thinking"
+msgstr "Arrêter la réflexion"
+
+#: index.docbook:276
+#, no-c-format
+msgid ""
+"<action>Stop the computer opponent thinking about it's next move.</action> "
+"The computer opponent will then make the best move it has found up to the "
+"moment you told it to stop."
+msgstr ""
+"<action>Arrête la réflexion sur le prochain coup de l'ordinateur.</action>"
+" L'adversaire joué par l'ordinateur utilisera le meilleur coup qu'il avait "
+"trouvé avant que vous ne l'arrêtiez."
+
+#: index.docbook:276
+#, no-c-format
+msgid "Get a Hint"
+msgstr "Conseille le meilleur mouvement."
+
+#: index.docbook:276
+#, no-c-format
+msgid "Undo"
+msgstr "Annuler"
+
+#: index.docbook:276
+#, no-c-format
+msgid "Help"
+msgstr "Aide"
+
+#: index.docbook:276
+#, no-c-format
+msgid "<action>Open the help</action> for &kjumpingcube; (this document)"
+msgstr "<action>Ouvre l'aide</action> en ligne de &kjumpingcube; (ce document)"
+
+#: index.docbook:322
+#, no-c-format
+msgid "Questions, Answers, and Tips"
+msgstr "Questions, réponses et astuces"
+
+#: index.docbook:325
+#, no-c-format
+msgid "Strategy tips"
+msgstr "Astuces tactiques"
+
+#: index.docbook:327
+#, no-c-format
+msgid ""
+"Try to avoid increasing a square when your opponent owns a neighbour square, "
+"that reaches it maximum earlier than your square."
+msgstr ""
+"Essayez d'éviter d'augmenter le nombre de pions sur une case lorsque votre "
+"adversaire possède une case voisine qui pourra atteindre son maximum avant "
+"votre case."
+
+#: index.docbook:338
+#, no-c-format
+msgid "Credits and License"
+msgstr "Remerciements et licence"
+
+#: index.docbook:340
+#, no-c-format
+msgid ""
+"&kjumpingcube; is Copyright 1998,1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+msgstr ""
+"&kjumpingcube; est Copyright 1998,1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+
+#: index.docbook:343
+#, no-c-format
+msgid ""
+"&kjumpingcube; was inspired by a game that came out for the Commodore64 and "
+"for other home computers, too. Sorry, that I don't know the original "
+"author's name."
+msgstr ""
+"&kjumpingcube; s'inspire d'un jeu qui est sorti pour le Commodore64 et "
+"d'autres ordinateurs domestiques aussi. Désolé, je ne me souviens pas du "
+"nom de l'auteur original."
+
+#: index.docbook:347
+#, no-c-format
+msgid ""
+"Documentation Copyright 1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+msgstr ""
+"Documentation Copyright 1999 Matthias Kiefer "
+"<email>matthias.kiefer@gmx.de</email>"
+
+#: index.docbook:350
+#, no-c-format
+msgid "Documentation updated for &kde; 2 by Lauri Watts <email>lauri@kde.org</email>"
+msgstr ""
+"Documentation mise à jour pour &kde; 2 par Lauri Watts "
+"<email>lauri@kde.org</email>"
+
+#: index.docbook:353
+#, no-c-format
+msgid "CREDIT_FOR_TRANSLATORS"
+msgstr ""
+"<para>Documentation traduite en français par Éric "
+"Bischoff<email>e.bischoff@noos.fr</email></para>"
+
+#: index.docbook:361
+#, no-c-format
+msgid "Installation"
+msgstr "Installation"
+
+#: index.docbook:364
+#, no-c-format
+msgid "How to obtain &kjumpingcube;"
+msgstr "Comment obtenir &kjumpingcube;"
+
+#: index.docbook:371
+#, no-c-format
+msgid "Requirements"
+msgstr "Configuration nécessaire"
+
+#: index.docbook:373
+#, no-c-format
+msgid ""
+"In order to successfully compile &kjumpingcube;, you need KDE 2.0. All "
+"required libraries as well as &kjumpingcube; itself can be found on <ulink "
+"url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/kde/</ulink>."
+msgstr ""
+"Pour compiler avec succès &kjumpingcube;, vous aurez besoin de KDE 2.0. "
+"Toutes les bibliothèques nécessaires ainsi que &kjumpingcube; lui-même se "
+"trouvent à l'adresse <ulink "
+"url=\"ftp://ftp.kde.org/pub/kde/\">ftp://ftp.kde.org/pub/kde/</ulink>. "
+
+#: index.docbook:381
+#, no-c-format
+msgid "Compilation and Installation"
+msgstr "Compilation et installation"
+
+#: index.docbook:385
+#, no-c-format
+msgid ""
+"That should do it! Should you run into any problems, please report them to "
+"the author, at <email>matthias.kiefer@gmx.de</email>"
+msgstr ""
+"Ça devrait suffire&nbsp;! Si vous rencontrez des difficultés, veuillez les "
+"rapporter à l'auteur, à l'adresse <email>matthias.kiefer@gmx.de</email>"
