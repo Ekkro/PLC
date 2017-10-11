@@ -13,7 +13,6 @@ BEGIN {
   empty_bck++
 }
 
-#tem problemas
 /^"Language:/ {
   gsub(/^"Language: *|\\n"/,"")
   languages[l++] = $0
@@ -22,7 +21,6 @@ BEGIN {
 
 /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/{
   gsub(/^[^ ]* *|<.*$/,"")
-<<<<<<< HEAD
   b=0
   for (k in authors){
     if(authors[k]==$0){
@@ -34,9 +32,6 @@ BEGIN {
     authors[i++]=$0
   }
 
-=======
-  authors[i++] = $0
->>>>>>> ad8591a07161023838cb4f155a50f82fa2a922fa
 }
 
 
@@ -47,16 +42,7 @@ END {
   print("All blocks: " bck)
   print("percent blocks: " (bck - empty_bck)*100/bck "%")
   print("translators ... there are " i " and they are:")
-<<<<<<< HEAD
-=======
 
-  # temos de ver os po's em FR, ta muito mal os autores la
-  for (j in authors){
-    print( "\t" authors[j])
-  }
-
-  for(j in languages){print(languages[j])}
->>>>>>> ad8591a07161023838cb4f155a50f82fa2a922fa
 
   # temos de ver os po's em FR, ta muito mal os autores la
   for (j in authors){
