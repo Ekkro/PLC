@@ -1,0 +1,25 @@
+#!/usr/bin/gawk -f
+
+BEGIN{
+  print("\\documentclass[10pt]{article}")
+  print("\\usepackage{amsmath,amsfonts,amsthm,amssymb}")
+  print("\\title{Dicionário}")
+  print("\\begin{document}")
+}
+
+/\\n/ {
+  sub(/\\n/,"",$0)
+}
+/#/ {
+  sub(/#/,"--",$0)
+}
+
+{
+  print($0 "\\\\")
+}
+
+
+END{
+
+  print("\\end{document}")
+}
