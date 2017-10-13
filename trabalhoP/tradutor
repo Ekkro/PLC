@@ -2,14 +2,25 @@
 
 BEGIN {
 	FS = "\""
+
+	print("PT\t->\tFR")
+
+
+}
+
+/^"Language-Team: *\\n"/{
+  next
 }
 
 /^"Language-Team:/ {
   gsub(/^"Language-Team: *| *<.*/,"")
   language = tolower($0)
-  if(language=="brazilian portugueses"){
-  	language="brazilian portuguese"
-  }
+  if(language ~ /portugu[êe]se?s?/){
+  	language = "PT"
+  }else{
+		language = "FR"
+	}
+
 }
 
 /^msgid[ \t]*""/ {
@@ -33,19 +44,7 @@ END{
 	#i-> msg ; j  -> lang
 	for ( i in dic){
 		if(length(dic[i]) == 2){
-			print(dic[i]["brazilian portuguese"] " -> " dic[i]["français"])
-		}	
+			print(dic[i]["PT"] " -> " dic[i]["FR"])
+		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-

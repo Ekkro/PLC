@@ -13,14 +13,14 @@ BEGIN {
   empty_bck++
 }
 
-/^"Language:/ {
+/^"Language: \w/ {
   gsub(/^"Language: *|\\n"/,"")
   languages[l++] = $0
-
 }
 
-/<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/{
-  gsub(/^[^ ]* *|<.*$/,"")
+/^# */ && /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/{
+  gsub(/^[^ ]*[ "]*|<.*$/,"")
+
   b=0
   for (k in authors){
     if(authors[k]==$0){
@@ -34,22 +34,18 @@ BEGIN {
 
 }
 
-
-
-
 END {
-  print("Empty blocks: " empty_bck)
-  print("All blocks: " bck)
-  print("percent blocks: " (bck - empty_bck)*100/bck "%")
-  print("translators ... there are " i " and they are:")
-
+  print("Quantidade de blocos: " bck)
+  print("Percentagem de blocos com traducao: " (bck - empty_bck)*100/bck "%")
+  print("Ha " i " tradutores, eles sao:")
 
   # temos de ver os po's em FR, ta muito mal os autores la
   for (j in authors){
     print( "\t" authors[j])
   }
 
-  for(j in languages){print(languages[j])}
+  print("Ha " l " linguagens, elas sao:")
+  for(j in languages){print("\t" languages[j])}
 
 
 
