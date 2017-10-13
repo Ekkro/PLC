@@ -2,15 +2,15 @@
 % Layout retirado de http://www.di.uminho.pt/~prh/curplc09.html#notas
 %
 \documentclass{report}
-\usepackage[portuges]{babel}
-%\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage[latin1]{inputenc}
 
 \usepackage{url}
 \usepackage{enumerate}
 
-%\usepackage{alltt}
-%\usepackage{fancyvrb}
+\usepackage{alltt}
+\usepackage{fancyvrb}
 \usepackage{listings}
 %LISTING - GENERAL
 \lstset{
@@ -23,7 +23,7 @@
 	mathescape=true,  
 	escapeinside={(*@}{@*)}
 }
-%
+
 %\lstset{ %
 %	language=Java,							% choose the language of the code
 %	basicstyle=\ttfamily\footnotesize,		% the size of the fonts that are used for the code
@@ -78,7 +78,7 @@
 
 \begin{document}
 
-\maketitle
+
 
 \begin{abstract}
 Este trabalho foca-se os conceitos básicos do funcionamento GAWK e das expressões regulares utilizadas para descrever padrões.
@@ -148,24 +148,39 @@ Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK.
 \section{Algoritmos}
 Utilizamos as seguintes expressões regulares:
 \begin{enumerate}[i)]
-\item /^msgid/ \rightarrow "msgid" 
-\item /^msgid[ \t]*""/ \rightarrow "msgid " (com tab)
-\item /^"Language:/ \rightarrow
-\item /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/ \rightarrow
-\item /^"Language-Team: *\\n"/ \rightarrow
-\item /^"Language-Team:/ \rightarrow
-\item /portugu[êe]se?s?/ \rightarrow
-\item /^msgid[ \t]*""/ \rightarrow
-\item /^msgstr[ \t]*""/ \rightarrow
-\item /^msgid *"/ \rightarrow
-\item /^msgstr *"/ \rightarrow
+\item /^msgid/  
+\item /^msgid[ \t]*""/ 
+\item /^"Language:/ 
+\item /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/ 
+\item /^"Language-Team: *\\n"/ 
+\item /^"Language-Team:/ 
+\item /portugu[êe]se?s?/ 
+\item /^msgid[ \t]*""/ 
+\item /^msgstr[ \t]*""/ 
+\item /^msgid *"/ 
+\item /^msgstr *"/ 
 
 
 
 
 
 \chapter{Codificação e Testes}
-\section{Alternativas, Decisões e Problemas de Implementação}
+\section{Problemas de implementação, Decisões e Alternativas}
+\titulo{Problemas de implementação}
+Em geral, no trabalho encontramos problemas com a formatação de alguns ficheiros,pois não estavam na formatação prevista, e tivemos alguns problemas com o LaTex.
+\titulo{Decisões}
+No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, quantos blocos tem o ficheiro e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".
+No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros tinha linguagem no campo"Language". Usamos uma matriz descritiva sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos só a linguagem portuguesa e a francesa e imprimimos unicamente o que tem tradução en triangulação.
+No último problema ignoramos o "\n" e o "#", devido ao LaTex, sustituindo por "" e por --, respetivamente.
+\titulo{Alternativas}
+Uma alternativa era modificar os ficheiros manualmente de modo a estar no formato certo, outra era fazer inúmeros casos especiais.   
+
+
+
+
+
+
+
 \section{Testes realizados e Resultados}
 Mostram-se a seguir alguns testes feitos (valores introduzidos) e
 os respectivos resultados obtidos:
