@@ -36,15 +36,14 @@ BEGIN {
 
 END {
   print("Quantidade de blocos: " bck)
-  print("Percentagem de blocos com traducao: " (bck - empty_bck)*100/bck "%")
-  print("Ha " i " tradutores, eles sao:")
+  print("Percentagem de blocos com tradução: " (bck - empty_bck)*100/bck "%")
+  print("Há " i " tradutores, eles são:")
 
-  # temos de ver os po's em FR, ta muito mal os autores la
   for (j in authors){
     print( "\t" authors[j])
   }
 
-  print("Ha " l " linguagens, elas sao:")
+  print("Há " l " linguagens, elas são:")
   for(j in languages){print("\t" languages[j])}
 
 
