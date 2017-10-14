@@ -77,7 +77,7 @@
 
 \begin{document}
 
-
+\maketitle
 
 \begin{abstract}
 Este trabalho foca-se os conceitos básicos do funcionamento GAWK e das expressões
@@ -154,17 +154,17 @@ Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK.
 \section{Algoritmos}
 Utilizamos as seguintes expressões regulares:
 \begin{enumerate}[i)]
-\item /\^ msgid/
-\item /\^ msgid[ \t]*""/
-\item /\^ "Language:/
-\item /<.*@.*>/ \&\& !/\^"Report/ \&\& !/FIRST/ \&\& !/\^"Language/
-\item /\^ "Language-Team: *\\n"/
-\item /\^ "Language-Team:/
+\item /\^{}{}msgid/
+\item /\^{}msgid[ \t]*""/
+\item /\^{}"Language:/
+\item /<.*@.*>/ \&\& !/\^{}"Report/ \&\& !/FIRST/ \&\& !/\^{}"Language/
+\item /\^{}"Language-Team: *\\n"/
+\item /\^{}"Language-Team:/
 \item /portugu[êe]se?s?/
-\item /\^ msgid[ \t]*""/
-\item /\^ msgstr[ \t]*""/
-\item /\^ msgid *"/
-\item /\^ msgstr *"/
+\item /\^{}msgid[ \t]*""/
+\item /\^{}msgstr[ \t]*""/
+\item /\^{}msgid *"/
+\item /\^{}msgstr *"/
 \end{enumerate}
 
 
