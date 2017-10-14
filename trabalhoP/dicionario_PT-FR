@@ -1,117 +1,99 @@
 PT	->	FR
-KTuberling -> KTuberling
-KAtômico -> KAtomic
-Átomo abaixo -> Atome vers le bas
-Abaixo -> Bas
-Minar -> Tirer
-Átomo para esquerda -> Atome vers la gauche
-Esquerda -> Gauche
-Tempo de aparência -> Délai d'apparition
-Comentário -> Commentaire
-Mover à Direita -> Déplacer à droite
-Amarelo -> Les jaunes
-Dois Pares -> Deux paires
-Difícil -> Difficile
-Tempo de atualização -> Délai de rafraîchissement
-Combustível da mina -> Essence par mine
-Iniciar apostas -> Fonds de départ des joueurs
-desenvolvedor (bib. E/S, autenticação) -> développeur (I/O lib, Gestion de l'authentification)
-Energizadores -> Bonus
-Necessidades -> Configuration nécessaire
-Desenvolvedor (design, partes) -> développeur (framework, parts)
-Introdução -> Introduction
-Novato -> Débutant
-Mantenedor -> Mainteneur
-desenvolvedor (suporte a SSL) -> développeur (Gestion de SSL)
-O jogador pode destruir os Powerups -> Le joueur peut détruire les recharges de fuel
-Gravidade -> Force de gravité
-Número máximo -> Nombre maximum
-Mover à Esquerda -> Déplacer à gauche
-Full House -> Full
-Configurar o título da janela -> Détermine le titre de la fenêtre
-Flush -> Flush (couleur)
-Tempo de recarga -> Délai de recharge
-KFoulEgss é um clone do popular (pelo menos no Japão)jogo PuyoPuyo -> KFoulEggs
-epx@conectiva.com.br -> KBlackBox
-Energia do Sol -> Énergie solaire
-Velocidade de tiro -> Vitesse de tir
-Girar para a esquerda -> Tourner à gauche
-Lixo -> Corbeille
-Velocidade de rotação -> Vitesse de rotation
-Os nomes de seus oponentes -> Le nom de vos ennemis
-Tempo de vida -> Durée de vie
-Sai do programa. -> Ferme le programme.
-&Nível -> Niveau
-Straight -> Petite suite
-Histórico -> Historique
-desenvolvedor (bib. I/O) -> développeur (I/O lib)
-desenvolvedor (design) -> développeur (framework)
-Tempo de ativação -> Temps d'activation
-Dano -> Dégâts
-desenvolvedor (JavaScript) -> développeur (JavaScript)
-desenvolvedor (navigation panel framework) -> développeur (framework)
 Konqueror -> Konqueror
-Energia -> Énergie
-Ajuda -> Aide
-Átomo para direita -> Atome vers la droite
-Konquest -> Konquest
-KTron -> KTron
-Sempre mostrar este diálogo no início -> Afficher ce message à chaque démarrage
-Nenhuma -> Aucun
-Comportamento -> Comportement
-Empurrar -> Pousser
-Linhas -> Règles
-KReversi -> Othello
-Tenente Skat -> Lieutenant Skat
-desenvolvedor (partes, bib. E/S) e mantenedor -> développeur (parts, I/O lib) et mainteneur
-Dano ao bater -> Dégâts de collision
-Mostrar próxima peça -> Afficher la pièce suivante
-Normal -> Normal
-Pausar jogo -> Puyos
-Pontuação -> Score
-Ação -> Action
-Direita -> Droite
-Fácil -> Facile
-Dar as cartas ! -> Donne
-Customizar Jogo -> Partie personnalisée
-Royal Flush -> Flush royal
-Acelerar -> Accélérer
-Opções -> Configuration
-Ambos -> Les deux
-autor do kfm -> auteur de kfm
+desenvolvedor (suporte a SSL) -> développeur (Gestion de SSL)
+Dois Pares -> Deux paires
+KAtômico -> KAtomic
 Geral -> Général
-Aceleração -> Accélération
-desenvolvedor -> développeur
-Mostrar título -> Afficher l'ombre des pièces
-Átomo acima -> Atome vers le haut
-Início -> Démarrage
-Meio -> central
-Jogador azul -> Joueur bleu
-Necessidade de energia -> Besoin d'énergie
-iuri@bol.com.br -> KJumpingCube
-Iniciar Jogo -> Commence une partie
-Mina -> Balles
-Dicas -> Conseils
-Jogador vermelho -> Joueur rouge
+&Nível -> Niveau
+desenvolvedor (JavaScript) -> développeur (JavaScript)
 Mediano -> Moyen
-Salvar -> Enregistrer
-Expert -> Expert
-HTML -> HTML
-Habilitar animações -> Activer les animations
-Girar para a direita -> Tourner à droite
-Jogo terminado -> Jeu
-Empurrar para fora -> Pousser à l'extérieur
+Mostrar título -> Afficher l'ombre des pièces
+Átomo para esquerda -> Atome vers la gauche
+Iniciar apostas -> Fonds de départ des joueurs
+Energizadores -> Bonus
+Amarelo -> Les jaunes
+Girar para a esquerda -> Tourner à gauche
 Desfazer jogada -> Annuler le coup
-Salvar jogo. -> Enregistrer la partie
-Straight Flush -> Quinte flush
-Pontos de batida -> Points de vie
-Gráficos -> Affichage
+Átomo abaixo -> Atome vers le bas
 Velocidade do jogo -> Rapidité du jeu
-Manual -> Manuel
-Concluido -> Arrête la partie
-Estatísticas -> Statistiques
-Gerenciador de Arquivos -> Gestionnaire de fichiers
-Nave -> Vaisseau
-Nome -> Nom
+Mantenedor -> Mainteneur
+Dar as cartas ! -> Donne
+Novato -> Débutant
+Combustível da mina -> Essence par mine
+Normal -> Normal
+Energia -> Énergie
+Introdução -> Introduction
 Pódio... -> Meilleurs scores
+Flush -> Flush (couleur)
+Jogo terminado -> Jeu
+Salvar jogo. -> Enregistrer la partie
+Empurrar para fora -> Pousser à l'extérieur
+Energia do Sol -> Énergie solaire
+iuri@bol.com.br -> KJumpingCube
+desenvolvedor (bib. I/O) -> développeur (I/O lib)
+Desenvolvedor (design, partes) -> développeur (framework, parts)
+Straight Flush -> Quinte flush
 Próximo átomo -> Prochain Atome
+Nome -> Nom
+Gravidade -> Force de gravité
+Lixo -> Corbeille
+Mina -> Balles
+Gráficos -> Affichage
+Habilitar animações -> Activer les animations
+Customizar Jogo -> Partie personnalisée
+autor do kfm -> auteur de kfm
+Manual -> Manuel
+epx@conectiva.com.br -> KBlackBox
+KFoulEgss é um clone do popular (pelo menos no Japão)jogo PuyoPuyo -> KFoulEggs
+Tempo de ativação -> Temps d'activation
+Nave -> Vaisseau
+KTron -> KTron
+Sai do programa. -> Ferme le programme.
+Acelerar -> Accélérer
+Tempo de recarga -> Délai de recharge
+Histórico -> Historique
+Dano -> Dégâts
+Pontuação -> Score
+Início -> Démarrage
+Empurrar -> Pousser
+Difícil -> Difficile
+Royal Flush -> Flush royal
+Átomo acima -> Atome vers le haut
+Iniciar Jogo -> Commence une partie
+Full House -> Full
+desenvolvedor -> développeur
+Girar para a direita -> Tourner à droite
+KReversi -> Othello
+Necessidade de energia -> Besoin d'énergie
+Número máximo -> Nombre maximum
+Tempo de aparência -> Délai d'apparition
+O jogador pode destruir os Powerups -> Le joueur peut détruire les recharges de fuel
+Aceleração -> Accélération
+Pontos de batida -> Points de vie
+Expert -> Expert
+Comportamento -> Comportement
+Straight -> Petite suite
+desenvolvedor (bib. E/S, autenticação) -> développeur (I/O lib, Gestion de l'authentification)
+Mostrar próxima peça -> Afficher la pièce suivante
+Velocidade de tiro -> Vitesse de tir
+Jogador azul -> Joueur bleu
+desenvolvedor (navigation panel framework) -> développeur (framework)
+Tenente Skat -> Lieutenant Skat
+Dicas -> Conseils
+Tempo de atualização -> Délai de rafraîchissement
+Fácil -> Facile
+Átomo para direita -> Atome vers la droite
+Velocidade de rotação -> Vitesse de rotation
+Konquest -> Konquest
+Sempre mostrar este diálogo no início -> Afficher ce message à chaque démarrage
+Dano ao bater -> Dégâts de collision
+KTuberling -> KTuberling
+Pausar jogo -> Puyos
+Jogador vermelho -> Joueur rouge
+Abaixo -> Bas
+desenvolvedor (partes, bib. E/S) e mantenedor -> développeur (parts, I/O lib) et mainteneur
+Minar -> Tirer
+Tempo de vida -> Durée de vie
+Configurar o título da janela -> Détermine le titre de la fenêtre
+Os nomes de seus oponentes -> Le nom de vos ennemis
+desenvolvedor (design) -> développeur (framework)

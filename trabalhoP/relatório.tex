@@ -3,26 +3,25 @@
 %
 \documentclass{report}
 \usepackage[portuguese]{babel}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
-\usepackage[latin1]{inputenc}
-
-\usepackage{url}
+%\usepackage[latin1]{inputenc}
+%\usepackage{url}
 \usepackage{enumerate}
-
-\usepackage{alltt}
-\usepackage{fancyvrb}
-\usepackage{listings}
+%\usepackage{alltt}
+%\usepackage{fancyvrb}
+%\usepackage{listings}
 %LISTING - GENERAL
-\lstset{
-	basicstyle=\small,
-	numbers=left,
-	numberstyle=\tiny,
-	numbersep=5pt,
-	breaklines=true,
-    frame=tB,
-	mathescape=true,  
-	escapeinside={(*@}{@*)}
-}
+%\lstset{
+%	basicstyle=\small,
+%	numbers=left,
+%	numberstyle=\tiny,
+%	numbersep=5pt,
+%	breaklines=true,
+%    frame=tB,
+%	mathescape=true,
+%	escapeinside={(*@}{@*)}
+%}
 
 %\lstset{ %
 %	language=Java,							% choose the language of the code
@@ -81,19 +80,23 @@
 
 
 \begin{abstract}
-Este trabalho foca-se os conceitos básicos do funcionamento GAWK e das expressões regulares utilizadas para descrever padrões.
-Neste relatório descrevemos as decisões tomadas e as dificuldades encontradas bem como pequenos exemplos, para que qualquer um que o leia perceba facilmente como funciona o nosso projeto.
+Este trabalho foca-se os conceitos básicos do funcionamento GAWK e das expressões
+regulares utilizadas para descrever padrões.
+Neste relatório descrevemos as decisões tomadas e as dificuldades encontradas bem
+como pequenos exemplos, para que qualquer um que o leia perceba facilmente como
+funciona o nosso projeto.
 \end{abstract}
 
 \tableofcontents
 
 \chapter{Introdução} \label{intro}
-Uma parte importante do sistema linux são as expressões regulares, a capacidade de procurar num input um determinado padrão facilita muitas das operaçoẽs.
+Uma parte importante do sistema linux são as expressões regulares, a capacidade
+de procurar num input um determinado padrão facilita muitas das operações.
 \titulo{Um belo Projeto}
-\area{Processamento de Linguagens}
-blablabla
-\super{José João}
-\titulo{Um belo Dia em Briteiros}
+%\area{Processamento de Linguagens}
+%blablabla
+%\super{José João}
+%\titulo{Um belo Dia em Briteiros}
 
 
 \begin{description}
@@ -108,6 +111,7 @@ letras gregas são estas $ \alpha \beta \gamma \delta $ que aqui demonstro
 exemplo simples de fração \[ \frac{\frac{a * b + c}{4-3}}{3*5} \] simples
 
 Mais exemplos de listas enumeradas mas agora com letras:
+
 \begin{enumerate}[a)]
 \item Listar todas as Pessoas identificadas, sem repetições;
 \item Listar os Países e Cidades marcadas;
@@ -121,45 +125,47 @@ A mesma enumeração mas no standard numérico
 \item[Etape 3:] Listar as Organizações.
 \end{description}
 
-\section*{Estrutura do Relatório} \
-explicar como está organizado o documento, referindo os capítulos existentes em~\cite{Pereira201635}
-e a sua articulação explicando o conteúdo de cada um.
-No capítulo~\ref{fi} faz-se uma análise detalhada do problema proposto
-de modo a poder-se especificar  as entradas, resultados e formas de transformação.\\
-etc. \ldots\\
-No capítulo~\ref{concl} termina-se o relatório com uma síntese do que foi dito,
-as conclusões e o trabalho futuro
+%\section*{Estrutura do Relatório} \
+%explicar como está organizado o documento, referindo os capítulos existentes em~\cite{Pereira201635}
+%e a sua articulação explicando o conteúdo de cada um.
+%No capítulo~\ref{fi} faz-se uma análise detalhada do problema proposto
+%de modo a poder-se especificar  as entradas, resultados e formas de transformação.\\
+%etc. \ldots\\
+%No capítulo~\ref{concl} termina-se o relatório com uma síntese do que foi dito,
+%as conclusões e o trabalho futuro
 
 \chapter{Ficheiros de internacionalização} \label{fi}
 
 \section{Descrição informal do problema}\
 É necessária um "script" que permita:
 \begin{enumerate}[a)]
-\item Analisar vários ficheiros de formato PO, e devolver o número de traduções e os seus tradutores, bem como alguns metadados acharmos relevantes.
-\item Através de ficheiros PO's criar dicionários de triangulação de Português para Francês.
+\item Analisar vários ficheiros de formato PO, e devolver o número de traduções
+e os seus tradutores, bem como alguns metadados acharmos relevantes.
+\item Através de ficheiros PO's criar dicionários de triangulação de Português
+para Francês.
 \item Reformatar ficheiros de formato PO pra LaTeX.
 \end{enumerate}
 
 \section{Especificação do Requisitos}
-Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK. 
+Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK.
 
 \chapter{Concepção/desenho da Resolução}
 \section{Estruturas de Dados}
 \section{Algoritmos}
 Utilizamos as seguintes expressões regulares:
 \begin{enumerate}[i)]
-\item /^msgid/  
-\item /^msgid[ \t]*""/ 
-\item /^"Language:/ 
-\item /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/ 
-\item /^"Language-Team: *\\n"/ 
-\item /^"Language-Team:/ 
-\item /portugu[êe]se?s?/ 
-\item /^msgid[ \t]*""/ 
-\item /^msgstr[ \t]*""/ 
-\item /^msgid *"/ 
-\item /^msgstr *"/ 
-
+\item /\^ msgid/
+\item /\^ msgid[ \t]*""/
+\item /\^ "Language:/
+\item /<.*@.*>/ \&\& !/\^"Report/ \&\& !/FIRST/ \&\& !/\^"Language/
+\item /\^ "Language-Team: *\\n"/
+\item /\^ "Language-Team:/
+\item /portugu[êe]se?s?/
+\item /\^ msgid[ \t]*""/
+\item /\^ msgstr[ \t]*""/
+\item /\^ msgid *"/
+\item /\^ msgstr *"/
+\end{enumerate}
 
 
 
@@ -171,9 +177,9 @@ Em geral, no trabalho encontramos problemas com a formatação de alguns ficheir
 \titulo{Decisões}
 No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, quantos blocos tem o ficheiro e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".
 No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros tinha linguagem no campo"Language". Usamos uma matriz descritiva sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos só a linguagem portuguesa e a francesa e imprimimos unicamente o que tem tradução en triangulação.
-No último problema ignoramos o "\n" e o "#", devido ao LaTex, sustituindo por "" e por --, respetivamente.
+No último problema ignoramos o "\\n" e o "\#", devido ao LaTex, sustituindo por "" e por --, respetivamente.
 \titulo{Alternativas}
-Uma alternativa era modificar os ficheiros manualmente de modo a estar no formato certo, outra era fazer inúmeros casos especiais.   
+Uma alternativa era modificar os ficheiros manualmente de modo a estar no formato certo, outra era fazer inúmeros casos especiais.
 
 
 
@@ -187,16 +193,37 @@ os respectivos resultados obtidos:
 
 %\VerbatimInput{teste1.txt}
 
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics{exercicio1.png}
+%\caption{Exercicio 1}
+%\label{Exercicio 1}
+%\end{figure}
 
-\chapter{Conclusão} \label{concl}
-Síntese do Documento~\cite{Martini2016a,Hoare73a}.\\
-Estado final do projecto; Análise crítica dos resultados~\cite{Sto77a}.\\
-Trabalho futuro.
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics{exercicio2.png}
+%\caption{Exercicio 2}
+%\label{Exercicio 2}
+%\end{figure}
 
-\appendix
-\chapter{Código do Programa}
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics{exercicio3.png}
+%\caption{Exercicio 3}
+%\label{Exercicio 3}
+%\end{figure}
 
-Lista-se a seguir o código \antlr~\cite{Par05} do programa \darius~\cite{NPH2016a} que foi desenvolvido.
+
+%\chapter{Conclusão} \label{concl}
+%Síntese do Documento~\cite{Martini2016a,Hoare73a}.\\
+%Estado final do projecto; Análise crítica dos resultados~\cite{Sto77a}.\\
+%Trabalho futuro.
+
+%\appendix
+%\chapter{Código do Programa}
+
+%Lista-se a seguir o código \antlr~\cite{Par05} do programa \darius~\cite{NPH2016a} que foi desenvolvido.
 \begin{verbatim}
 public class Aula()
   {
@@ -209,38 +236,24 @@ public class Aula()
   }
 \end{verbatim}
 
-\begin{verbatim}
-llll sanjdb c kjnjcnjnjj mmmmmmmmmmmmm hhhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkk
-      aqui deve aparecer o código do programa,
-      tal como está formato no ficheiro-fonte "darius.java"
-      caso indesejável $\varepsilon$
-\end{verbatim}
+%\begin{verbatim}
+%llll sanjdb c kjnjcnjnjj mmmmmmmmmmmmm hhhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkk
+%      aqui deve aparecer o código do programa,
+%      tal como está formato no ficheiro-fonte "darius.java"
+%      caso indesejável $\varepsilon$
+%\end{verbatim}
 
-\begin{lstlisting}[caption={Exemplo de uma Listagem}, label={lstExe1}]
-llll sanjdb c kjnjcnjnjj mmmmmmmmmmmmm hhhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkk
-      ou então aparecer aqui neste sítio um pouco de matematica $\$$
-      como alternativa ao anterior.
-      e aqui mais um teste $\varepsilon$
-\end{lstlisting}
+%\begin{lstlisting}[caption={Exemplo de uma Listagem}, label={lstExe1}]
+%llll sanjdb c kjnjcnjnjj mmmmmmmmmmmmm hhhhhhhhhhhhhhhhhhhhhhhh jjjjjjjjjjjjjjjjjjjjjjjjjjjj kkkkkkkkkkkkkkkkkk
+%      ou então aparecer aqui neste sítio um pouco de matematica $\$$
+%      como alternativa ao anterior.
+%      e aqui mais um teste $\varepsilon$
+%\end{lstlisting}
 
-É ainda possível importar diretamente o ficheiro:
-\lstinputlisting{plfiltrobase.l} %input de um ficheiro
+%É ainda possível importar diretamente o ficheiro:
+%\lstinputlisting{plfiltrobase.l} %input de um ficheiro
 
-\bibliographystyle{alpha}
-\bibliography{relprojLayout}
+%\bibliographystyle{alpha}
+%\bibliography{relprojLayout}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\end{document} 
+\end{document}
