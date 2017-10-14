@@ -80,23 +80,17 @@
 
 
 \begin{abstract}
-Este trabalho foca-se os conceitos básicos do funcionamento GAWK e das expressões
-regulares utilizadas para descrever padrões.
-Neste relatório descrevemos as decisões tomadas e as dificuldades encontradas bem
-como pequenos exemplos, para que qualquer um que o leia perceba facilmente como
-funciona o nosso projeto.
+Este trabalho foca os conceitos básicos do funcionamento GAWK e das expressões regulares utilizadas para descrever padrões.
+Neste relatório descrevemos as decisões tomadas e as dificuldades encontradas, bem como pequenos exemplos para que qualquer um que o leia perceba facilmente como funciona o nosso projeto.
 \end{abstract}
 
 \tableofcontents
 
 \chapter{Introdução} \label{intro}
-Uma parte importante do sistema linux são as expressões regulares, a capacidade
-de procurar num input um determinado padrão facilita muitas das operações.
-\titulo{Um belo Projeto}
-%\area{Processamento de Linguagens}
-%blablabla
-%\super{José João}
-%\titulo{Um belo Dia em Briteiros}
+Neste trabalho vamos filtrar vários ficheiros de internacionalização, utilizando expressões regulares e o sitema de filtragem de texto GAWK. Uma parte importante do sistema linux são as expressões regulares e a capacidade de procurar num input um determinado padrão, o que facilita muitas das operaçoẽs
+As expressões regulares são uma sequência de caracteres, sucinta e flexível, que identifica palavras ou pradrões de caracteres. Combinando-as com o sistema de filtragem, conseguimos extrair informações dos ficheiros POs que são documentos que contêm traduções de uma língua para outra.
+Este trabalho tem como objetivos aprofundar os conhecimento do GAWK, do sistema Linux e as suas ferramentas, bem como aprender melhor o funcionamento das exprexões regulares.
+
 
 
 \begin{description}
@@ -173,13 +167,13 @@ Utilizamos as seguintes expressões regulares:
 \chapter{Codificação e Testes}
 \section{Problemas de implementação, Decisões e Alternativas}
 \titulo{Problemas de implementação}
-Em geral, no trabalho encontramos problemas com a formatação de alguns ficheiros,pois não estavam na formatação prevista, e tivemos alguns problemas com o LaTex.
+De um modo geral no trabalho, tivemos problemas com a formatação de alguns ficheiros, dado não se encontrarem na formatação prevista, e com o LaTex.
 \titulo{Decisões}
-No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, quantos blocos tem o ficheiro e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".
-No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros tinha linguagem no campo"Language". Usamos uma matriz descritiva sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos só a linguagem portuguesa e a francesa e imprimimos unicamente o que tem tradução en triangulação.
+No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, a quantidade de blocos por ficheiro, e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".
+No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros apresentava linguagem no campo"Language". Usamos uma matriz descritiva, sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos só a linguagem portuguesa e a francesa e imprimimos unicamente o que tem tradução en triangulação.
 No último problema ignoramos o "\\n" e o "\#", devido ao LaTex, sustituindo por "" e por --, respetivamente.
 \titulo{Alternativas}
-Uma alternativa era modificar os ficheiros manualmente de modo a estar no formato certo, outra era fazer inúmeros casos especiais.
+Uma alternativa seria modificar os ficheiros manualmente de modo a estarem no formato certo. Outra alternativa seria fazer inúmeros casos especiais.
 
 
 
