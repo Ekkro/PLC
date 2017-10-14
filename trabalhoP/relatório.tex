@@ -2,8 +2,8 @@
 % Layout retirado de http://www.di.uminho.pt/~prh/curplc09.html#notas
 %
 \documentclass{report}
-\usepackage[portuguese]{babel}
 \usepackage{graphicx}
+\usepackage[portuguese]{babel}
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
 %\usepackage{url}
@@ -71,8 +71,8 @@
 
 %%%%\input{LPgeneralDefintions}
 
-\title{Processamento de Linguagens e Compiladores 3º ano\\ \textbf{Expressões Regulares e GAWK}\\ Relatório de Desenvolvimento do grupo 14}
-\author{Artur Queiroz\\ (A77136) \and \\ Rafael Fernandes\\ (A78242) \and \\ Rafaela Pinho\\ A77293  }
+\title{Processamento de Linguagens e Compiladores 3º ano\\ \textbf{Expressões Regulares e GAWK}\\ Grupo 14}
+\author{Artur Queiroz\\ (A77136) \and  Rafael Fernandes\\ A78242 \and Rafaela Pinho\\ A77293  }
 \date{\today}
 
 \begin{document}
@@ -87,37 +87,9 @@ Neste relatório descrevemos as decisões tomadas e as dificuldades encontradas,
 \tableofcontents
 
 \chapter{Introdução} \label{intro}
-Neste trabalho vamos filtrar vários ficheiros de internacionalização, utilizando expressões regulares e o sitema de filtragem de texto GAWK. Uma parte importante do sistema linux são as expressões regulares e a capacidade de procurar num input um determinado padrão, o que facilita muitas das operaçoẽs
+Neste trabalho vamos filtrar vários ficheiros de internacionalização, utilizando expressões regulares e o sitema de filtragem de texto GAWK. Uma parte importante do sistema linux são as expressões regulares e a capacidade de procurar num input um determinado padrão, o que facilita muitas das operações
 As expressões regulares são uma sequência de caracteres, sucinta e flexível, que identifica palavras ou pradrões de caracteres. Combinando-as com o sistema de filtragem, conseguimos extrair informações dos ficheiros POs que são documentos que contêm traduções de uma língua para outra.
 Este trabalho tem como objetivos aprofundar os conhecimento do GAWK, do sistema Linux e as suas ferramentas, bem como aprender melhor o funcionamento das exprexões regulares.
-
-
-
-\begin{description}
-  \item [Enquadramento] \textbf{bla bla} bla bla
-  \item [Conteúdo do documento] \textsf{ble ble} \texttt{ble} ble
-  \item [Resultados -- pontos a evidenciar] \textit{bli bli bli bli}
-  \item [Estrutura do documento] \underline{blo blo blo}
-\end{description}
-
-letras gregas são estas $ \alpha \beta \gamma \delta $ que aqui demonstro
-
-exemplo simples de fração \[ \frac{\frac{a * b + c}{4-3}}{3*5} \] simples
-
-Mais exemplos de listas enumeradas mas agora com letras:
-
-\begin{enumerate}[a)]
-\item Listar todas as Pessoas identificadas, sem repetições;
-\item Listar os Países e Cidades marcadas;
-\item Listar as Organizações.
-\end{enumerate}
-
-A mesma enumeração mas no standard numérico
-\begin{description}
-\item[Etape 1:] Listar todas as Pessoas identificadas, sem repetições;
-\item[Etape 2:] Listar os Países e Cidades marcadas;
-\item[Etape 3:] Listar as Organizações.
-\end{description}
 
 %\section*{Estrutura do Relatório} \
 %explicar como está organizado o documento, referindo os capítulos existentes em~\cite{Pereira201635}
@@ -147,6 +119,7 @@ Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK.
 \section{Estruturas de Dados}
 \section{Algoritmos}
 Utilizamos as seguintes expressões regulares:
+
 \begin{enumerate}[i)]
 \item /\^{}msgid/
 \item /\^{}"Language:/
@@ -160,47 +133,37 @@ Utilizamos as seguintes expressões regulares:
 \item /\^{}msgstr *"/
 \end{enumerate}
 
-
-
-
 \chapter{Codificação e Testes}
 \section{Problemas de implementação, Decisões e Alternativas}
-\titulo{Problemas de implementação}
+\subsection{Problemas de implementação}
 De um modo geral no trabalho, tivemos problemas com a formatação de alguns ficheiros, dado não se encontrarem na formatação prevista, e com o LaTex.
-\titulo{Decisões}
+\subsection{Decisões}
 No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, a quantidade de blocos por ficheiro, e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".
 No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros apresentava linguagem no campo"Language". Usamos uma matriz descritiva, sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos só a linguagem portuguesa e a francesa e imprimimos unicamente o que tem tradução en triangulação.
 No último problema ignoramos o "\\n" e o "\#", devido ao LaTex, sustituindo por "" e por --, respetivamente.
-\titulo{Alternativas}
+\subsection{Alternativas}
 Uma alternativa seria modificar os ficheiros manualmente de modo a estarem no formato certo. Outra alternativa seria fazer inúmeros casos especiais.
-
-
-
-
-
-
 
 \section{Testes realizados e Resultados}
 Mostram-se a seguir alguns testes feitos (valores introduzidos) e
 os respectivos resultados obtidos:
 
-%\VerbatimInput{teste1.txt}
 
-%\begin{figure}[!htb]
-%\centering
-%\includegraphics{exercicio1.png}
+%\begin{figure}[h]
+%\center
+%\includegraphics[scale=1]{exercicio1.png}
 %\caption{Exercicio 1}
-%\label{Exercicio 1}
+%\label{figura:Exercicio 1}
 %\end{figure}
 
-%\begin{figure}[!htb]
+%\begin{figure}[h]
 %\centering
-%\includegraphics{exercicio2.png}
+%\includegraphics[15,10]{exercicio2.png}
 %\caption{Exercicio 2}
 %\label{Exercicio 2}
 %\end{figure}
 
-%\begin{figure}[!htb]
+%\begin{figure}[h]
 %\centering
 %\includegraphics{exercicio3.png}
 %\caption{Exercicio 3}
@@ -208,13 +171,15 @@ os respectivos resultados obtidos:
 %\end{figure}
 
 
-%\chapter{Conclusão} \label{concl}
-%Síntese do Documento~\cite{Martini2016a,Hoare73a}.\\
-%Estado final do projecto; Análise crítica dos resultados~\cite{Sto77a}.\\
-%Trabalho futuro.
+\chapter{Conclusão} \label{concl}
+Com este trabalho concluimos que as expressões regulares são excelentes auxiliares na procura do que pretendemos em vários ficheiros simultaneamente.
+Para além disso, este trabalho permitiu a familiarização com o LaTex, já que até então não era uma ferramenta utilizada regularmente.
+Como perspetiva futura, e mencionado anteriormente, sugerimos a alteração dos ficheiros que não estão com o formato correto, de modo a não conterem "lixo" no resultado da nossa procura. Esta opção seria a mais sensata, dado que criar casos especiais para esses ficheiros é um procedimento mais complexo.
+
+
 
 %\appendix
-%\chapter{Código do Programa}
+\chapter{Código do Programa}
 
 %Lista-se a seguir o código \antlr~\cite{Par05} do programa \darius~\cite{NPH2016a} que foi desenvolvido.
 \begin{verbatim}
