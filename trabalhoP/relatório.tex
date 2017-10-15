@@ -88,8 +88,8 @@ Neste relatório descrevemos as decisões tomadas e as dificuldades encontradas,
 \tableofcontents
 
 \chapter{Introdução} \label{intro}
-Neste trabalho vamos filtrar vários ficheiros de internacionalização, utilizando expressões regulares e o sitema de filtragem de texto GAWK. Uma parte importante do sistema linux são as expressões regulares e a capacidade de procurar num input um determinado padrão, o que facilita muitas das operações
-As expressões regulares são uma sequência de caracteres, sucinta e flexível, que identifica palavras ou pradrões de caracteres. Combinando-as com o sistema de filtragem, conseguimos extrair informações dos ficheiros POs que são documentos que contêm traduções de uma língua para outra.
+Neste trabalho vamos filtrar vários ficheiros de internacionalização, utilizando expressões regulares e o sitema de filtragem de texto GAWK. Uma parte importante do sistema linux são as expressões regulares e a capacidade de procurar num input um determinado padrão, o que facilita muitas das operações.\\
+As expressões regulares são uma sequência de caracteres, sucinta e flexível, que identifica palavras ou pradrões de caracteres. Combinando-as com o sistema de filtragem, conseguimos extrair informações dos ficheiros POs que são documentos que contêm traduções de uma língua para outra.\\
 Este trabalho tem como objetivos aprofundar os conhecimento do GAWK, do sistema Linux e as suas ferramentas, bem como aprender melhor o funcionamento das exprexões regulares.
 
 %\section*{Estrutura do Relatório} \
@@ -117,7 +117,6 @@ para Francês.
 Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK.
 
 \chapter{Concepção/desenho da Resolução}
-\section{Estruturas de Dados}
 \section{Algoritmos}
 Utilizamos as seguintes expressões regulares:
 
@@ -137,16 +136,16 @@ Utilizamos as seguintes expressões regulares:
 \chapter{Codificação e Testes}
 \section{Problemas de implementação, Decisões e Alternativas}
 \subsection{Problemas de implementação}
-De um modo geral no trabalho, tivemos problemas com a formatação de alguns ficheiros, dado não se encontrarem na formatação prevista, e com o LaTex.
+De um modo geral no trabalho, tivemos problemas com a formatação de alguns ficheiros, devido a não se encontrarem na formatação prevista, e com o LaTex.
 \subsection{Decisões}
-No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, a quantidade de blocos por ficheiro, e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".
-No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros apresentava linguagem no campo"Language". Usamos uma matriz descritiva, sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos só a linguagem portuguesa e a francesa e imprimimos unicamente o que tem tradução en triangulação.
-No último problema ignoramos o "\\n" e o "\#", devido ao LaTex, sustituindo por "" e por --, respetivamente.
+No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, a quantidade de blocos por ficheiro, e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".\\
+No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros apresentava linguagem no campo"Language". Usamos uma matriz descritiva, sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos que os ficheiros apenas contêm traduções de português e francês e imprimimos unicamente aqueles que têm tradução nas duas linguas.\\
+No último problema ignoramos o "\\n" e o "\#", devido ao LaTex, sustituindo por " "(espaço) e por "--", respetivamente.
 \subsection{Alternativas}
 Uma alternativa seria modificar os ficheiros manualmente de modo a estarem no formato certo. Outra alternativa seria fazer inúmeros casos especiais.
 
 \section{Testes realizados e Resultados}
-Mostram-se a seguir alguns testes feitos (valores introduzidos) e os respectivos resultados obtidos:
+Mostram-se a seguir alguns testes feitos (valores introduzidos) e os respectivos resultados:
 
 
 \begin{figure}[h]
@@ -179,9 +178,9 @@ Mostram-se a seguir alguns testes feitos (valores introduzidos) e os respectivos
 
 
 \chapter{Conclusão} \label{concl}
-Com este trabalho concluimos que as expressões regulares são excelentes auxiliares na procura do que pretendemos em vários ficheiros simultaneamente.
-Para além disso, este trabalho permitiu a familiarização com o LaTex, já que até então não era uma ferramenta utilizada regularmente.
-Como perspetiva futura, e mencionado anteriormente, sugerimos a alteração dos ficheiros que não estão com o formato correto, de modo a não conterem "lixo" no resultado da nossa procura. Esta opção seria a mais sensata, dado que criar casos especiais para esses ficheiros é um procedimento mais complexo.
+Com este trabalho concluimos que as expressões regulares são excelentes para procurar certos padrões em vários ficheiros simultaneamente.
+Para além disso, este trabalho permitiu a familiarização com o LaTex, que até então não era uma ferramenta utilizada regularmente.
+Como perspetiva futura, e mencionado anteriormente, sugerimos a alteração dos ficheiros que não estão com o formato correto, de modo a não conterem "lixo" no resultado da nossa procura. Esta opção seria a mais sensata, dado que criar casos especiais para esses ficheiros é um procedimento mais complexo e tedioso.
 
 
 
