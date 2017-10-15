@@ -12,6 +12,7 @@
 \usepackage{alltt}
 \usepackage{fancyvrb}
 \usepackage{listings}
+\usepackage{amsmath}
 %LISTING - GENERAL
 \lstset{
 	basicstyle=\small,
@@ -22,7 +23,7 @@
     frame=tB,
 	mathescape=true,
 	escapeinside={(*@}{@*)}
-}
+	}
 
 %\lstset{ %
 %	language=Java,							% choose the language of the code
@@ -60,14 +61,14 @@
 \setlength{\headsep}{-1cm}
 \setlength{\textheight}{23cm}
 
-\def\darius{\textsf{Darius}\xspace}
-\def\antlr{\texttt{AnTLR}\xspace}
-\def\pe{\emph{Publicação Eletrónica}\xspace}
+%\def\darius{\textsf{Darius}\xspace}
+%\def\antlr{\texttt{AnTLR}\xspace}
+%\def\pe{\emph{Publicação Eletrónica}\xspace}
 
-\def\titulo#1{\section{#1}}
-\def\super#1{{\em Supervisor: #1}\\ }
-\def\area#1{{\em \'{A}rea: #1}\\[0.2cm]}
-\def\resumo{\underline{Resumo}:\\ }
+%\def\titulo#1{\section{#1}}
+%\def\super#1{{\em Supervisor: #1}\\ }
+%\def\area#1{{\em \'{A}rea: #1}\\[0.2cm]}
+%\def\resumo{\underline{Resumo}:\\ }
 
 
 %%%%\input{LPgeneralDefintions}
@@ -107,16 +108,16 @@ Este trabalho tem como objetivos aprofundar os conhecimento do GAWK, do sistema 
 É necessária um "script" que permita:
 \begin{enumerate}[a)]
 \item Analisar vários ficheiros de formato PO, e devolver o número de traduções
-e os seus tradutores, bem como alguns metadados acharmos relevantes.
+e os seus tradutores, bem como alguns metadados que acharmos relevantes.
 \item Através de ficheiros PO's criar dicionários de triangulação de Português
 para Francês.
-\item Reformatar ficheiros de formato PO pra LaTeX.
+\item Reformatar ficheiros de formato PO para \LaTeX.
 \end{enumerate}
 
-\section{Especificação do Requisitos}
+\section{Especificação dos requisitos}
 Os requisitos mínimos deste tarbalho são saber utilizar Linux, bash e GAWK.
 
-\chapter{Concepção/desenho da Resolução}
+\chapter{Conceção / desenho da resolução}
 \section{Algoritmos}
 Utilizamos as seguintes expressões regulares:
 
@@ -136,23 +137,22 @@ Utilizamos as seguintes expressões regulares:
 \chapter{Codificação e Testes}
 \section{Problemas de implementação, Decisões e Alternativas}
 \subsection{Problemas de implementação}
-De um modo geral no trabalho, tivemos problemas com a formatação de alguns ficheiros, devido a não se encontrarem na formatação prevista, e com o LaTex.
+De um modo geral no trabalho, tivemos problemas com a formatação de alguns ficheiros, devido a não se encontrarem na formatação prevista, e com o \LaTeX.
 \subsection{Decisões}
-No problema 1 proposto no exercício, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução.Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, a quantidade de blocos por ficheiro, e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".\\
-No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros apresentava linguagem no campo"Language". Usamos uma matriz descritiva, sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos que os ficheiros apenas contêm traduções de português e francês e imprimimos unicamente aqueles que têm tradução nas duas linguas.\\
-No último problema ignoramos o "\textbackshlash n" e o "\#", devido ao LaTex, sustituindo por " "(espaço) e por "--", respetivamente.
+No problema 1 proposto no exercício 2.5, decidimos ignorar os "msgid" que não contivessem nenhuma mensagem ou que contivessem mais de uma tradução. Escolhemos como metadados mais importantes a linguagem, a percentagem de blocos, a quantidade de blocos por ficheiro, e quantos e quem são os tradutores. Decidimos também que a linguagem só está no "Language".\\
+No problema 2 decidimos utilizar a "Language-team" para definir a linguagem de tradução, pois nenhum dos ficheiros apresentava linguagem no campo "Language". Usamos uma matriz descritiva, sendo as linhas a frase em inglês e os descritivos das colunas a linguagem portuguesa ou francesa. Assumimos que os ficheiros apenas contêm traduções de português e francês e imprimimos unicamente aqueles que têm tradução nas duas linguas.\\
+No último problema ignoramos o "$\backslash n$" e o "\#" devido ao \LaTeX, substituindo-os por "$ $"(espaço) e por "$--$", respetivamente.
 \subsection{Alternativas}
 Uma alternativa seria modificar os ficheiros manualmente de modo a estarem no formato certo. Outra alternativa seria fazer inúmeros casos especiais.
 
 \section{Testes realizados e Resultados}
-Mostram-se a seguir alguns testes feitos (valores introduzidos) e os respectivos resultados:
-
+Mostram-se a seguir alguns testes feitos e os respectivos resultados:
 
 \begin{figure}[h]
 \center
 \includegraphics [width=9cm,height= 9cm]{exercicio1.png}
 \caption{Exercicio 1}
-\label{figura:Exercicio 1}
+\label{Exercicio 1}
 \end{figure}
 
 \begin{figure}[h]
@@ -165,22 +165,23 @@ Mostram-se a seguir alguns testes feitos (valores introduzidos) e os respectivos
 \begin{figure}[h]
 \centering
 \includegraphics[width=9cm,height= 9cm]{exercicio31.png}
-\caption{Exercicio 3-terminal}
+\caption{Exercicio 3- Terminal}
 \label{Exercicio 3}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=10cm,height= 12cm]{exercicio32.png}
-\caption{Exercicio 3-resultado}
+\caption{Exercicio 3- Resultado}
 \label{Exercicio 3}
 \end{figure}
 
 
 \chapter{Conclusão} \label{concl}
 Com este trabalho concluimos que as expressões regulares são excelentes para procurar certos padrões em vários ficheiros simultaneamente.
-Para além disso, este trabalho permitiu a familiarização com o LaTex, que até então não era uma ferramenta utilizada regularmente.
-Como perspetiva futura, e mencionado anteriormente, sugerimos a alteração dos ficheiros que não estão com o formato correto, de modo a não conterem "lixo" no resultado da nossa procura. Esta opção seria a mais sensata, dado que criar casos especiais para esses ficheiros é um procedimento mais complexo e tedioso.
+Para além disso, este trabalho permitiu a familiarização com o \LaTeX, que até então não era uma ferramenta utilizada regularmente.\\
+Como perspetiva futura, e como mencionado anteriormente, sugerimos a alteração dos ficheiros que não estão com o formato correto, de modo a não conterem "lixo" no resultado da nossa procura.\\
+Esta opção seria a mais sensata, dado que criar casos especiais para esses ficheiros é um procedimento mais complexo e tedioso.
 
 
 
