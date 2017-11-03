@@ -1,0 +1,23 @@
+\h1< Titulo >
+
+\h2< Sub-Titulo >
+
+\ul<
+	Quando se faz \b<negrito> o simbolo é b.|
+	Quando se faz \i<itálico> o simbolo é i.|
+	Quando se faz \u<sublinhado> o simbolo é u.
+>
+
+\ol<
+	Quando se faz \b<negrito> o simbolo é b.|
+	Quando se faz \i<itálico> o simbolo é i.|
+	Quando se faz \u<sublinhado> o simbolo é u.
+>
+
+\dl<
+	\b<negrito> $ b |
+	\i<itálico> $ i |
+	\u<sublinhado> $ u
+>
+
+\h3< The End Folks >
