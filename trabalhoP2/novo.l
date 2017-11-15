@@ -1,10 +1,18 @@
 %{
 /* Declaracoes C diversas */
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 int n=0;
-char title[100];
-char author[100];
-FILE * f;
+char** st;
+char* simb;
+FILE* f;
+
+typedef struct stack{
+	char* s;
+	struct stack* next;
+
+} *Stack;
 
 %}
 
@@ -13,52 +21,28 @@ FILE * f;
 %x TEXT SIMB
 
 
-Abrev ER
+
 %%
-title:	{BEGIN TITLE; strcpy(title,""); strcpy(author,"")}
 
 <TEXT>{
-	[=*]	{;}
-	\n 		{BEGIN META;}
-	.		{strcat(title, yytext);}
+	">"		{fprintf(f, "<%s>", st[n--] ); }
+	\\		{BEGIN SIMB; strcpy(simb,"");}
+	.|\n	{fprintf(f, "%s\n", yytext );}
 }
 
-<A>{
-	[,;]	{strcat(author, "\nC:");}
-	\n 		{BEGIN META;}
-	.		{strcat(title, yytext);}
+<SIMB>{
+	"<"   	    {BEGIN TEXT; fprintf(f, "<%s>", simb ); n++;  put(st,simb);}
+	.|\n		{strcat(simb, yytext);}
 }
 
-<POEMA>{
-	title:	{BEGIN TITLE; strcpy(title,"");}
-	"<abc>"	{BEGIN ABC;}
-	.|\n 	{;}
-
-}
-
-<META>{
-	"<abc>"	{BEGIN ABC;}
-	(author|music|lyrics):	{BEGIN AUTOR; strcat(author,)}
-	\n\n 	{BEGIN POEMA;}
-	.|\n 	{;}
-
-}
-
-<ABC>{
-	X:.*\n	{fprintf(f,"%sT:%s\nC:%s\n", yytext, title, author);}
-	"</abc>"	{BEGIN POEMA; part++;}
-	.|\n 	{fprintf(f,"%s", yytext );}
-
-}
 
 <*>.|\n 	{fprintf(stderr, "caracter estranho \n");}
 
 %%
 
 int main(){
-	f=fopen("partituras.abc", "w");
+	f=fopen("novo.html", "w");
 	yylex(); 
-	printf("Contagem de partituras: %d\n",part );
 	fclose(f);
 	return 0; 
 }
