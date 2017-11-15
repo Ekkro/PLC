@@ -1,0 +1,51 @@
+#!/usr/bin/gawk -f
+
+BEGIN {
+  bck = 0
+  empty_bck = 0
+}
+
+/^msgid/ {
+  bck++
+}
+
+/^msgid[ \t]*""/ {
+  empty_bck++
+}
+
+/^"Language: \w/ {
+  gsub(/^"Language: *|\\n"/,"")
+  languages[l++] = $0
+}
+
+/^# */ && /<.*@.*>/ && !/^"Report/ && !/FIRST/ && !/^"Language/{
+  gsub(/^[^ ]*[ "]*|<.*$/,"")
+
+  b=0
+  for (k in authors){
+    if(authors[k]==$0){
+      b=1
+      break
+    }
+  }
+  if(b==0){
+    authors[i++]=$0
+  }
+
+}
+
+END {
+  print("Quantidade de blocos: " bck)
+  print("Percentagem de blocos com tradução: " (bck - empty_bck)*100/bck "%")
+  print("Há " i " tradutores, eles são:")
+
+  for (j in authors){
+    print( "\t" authors[j])
+  }
+
+  print("Há " l " linguagens, elas são:")
+  for(j in languages){print("\t" languages[j])}
+
+
+
+}
