@@ -1,20 +1,43 @@
 %{
+/* Declaracoes C diversas */
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#define Max 128
+
+int n = 0;
+char simb[32] = {0};
+char* st[Max];
+FILE* f;
+
 %}
 
 %option noyywrap
+
+%x TEXT SIMB
+
 Abrev ER
 
 %%
 
-[\<>|$] 		{return(yytext[0]);}
-\\[bui]<[^>]*>		{ char* mystr = strdup(yytext +3); mystr[strlen(mystr)-2]; 
-			  printf("<%c>%s</%c>", yytext[1], yytext, yytext[1]); }
-\\h[1-6]<[^>]*>		{ printf("<%c%c>%s</%c%c>", 
-                            yytext[1],yytext[2], yytext[]+, yytext[1], yytext[2]); }
-\\[uo]l<[^>]*>		{  }
-\\dl<[^>]*>		{  }
-.            		{ printf("%c", yytext[0]); }
+			{BEGIN TEXT;}
+
+<TEXT>{
+	">"		{fprintf(f, "</%s>", st[--n] ); }
+	"\\"		{BEGIN SIMB; strcpy(simb,"");}
+	.|\n		{fprintf(f, "%s", yytext );}
+}
+
+<SIMB>{
+	"<"   	    	{BEGIN TEXT; fprintf(f, "<%s>", simb );st[n++]=simb;}
+	.|\n		{strcat(simb, yytext);}
+}
+
 %%
 
+int main(){
+	f=fopen("novo.html", "w");
+	yylex(); 
+	fclose(f);
+	return 0; 
+}
