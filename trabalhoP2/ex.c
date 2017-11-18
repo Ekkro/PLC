@@ -811,7 +811,7 @@ YY_RULE_SETUP
 case 5:
 YY_RULE_SETUP
 #line 37 "ex.l"
-{fprintf(f,"</dd>\n<dt >");}
+{fprintf(f,"</dd>\n<dt>");}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
