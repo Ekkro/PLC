@@ -5,4 +5,4 @@ $(EXEC): $(EXEC).l
 	gcc -o $(EXEC) $(EXEC).c 
 
 teste: $(EXEC)
-	./$(EXEC) < exemplo2.txt
+	./$(EXEC) < exemplo1.txt

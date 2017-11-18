@@ -2,22 +2,22 @@
 
 \h2< Sub-Titulo >
 
-\ul<
+\ul[
 	Quando se faz \b<negrito> o simbolo é b.|
 	Quando se faz \i<itálico> o simbolo é i.|
 	Quando se faz \u<sublinhado> o simbolo é u.
->
+]
 
-\ol<
-	Quando se faz \b<negrito> o simbolo é b.|
-	Quando se faz \i<itálico> o simbolo é i.|
-	Quando se faz \u<sublinhado> o simbolo é u.
->
+\ol[
+	Quando se faz \b<negrito> o simbolo \: b.|
+	Quando se faz \i<itálico> o simbolo \$ i.|
+	Quando se faz \u<sublinhado> o simbolo \| u.
+]
 
-\dl<
-	\b<negrito> $ b |
-	\i<itálico> $ i |
-	\u<sublinhado> $ u
->
+\dl{
+	\b<negrito> : b\:coisas $
+	\i<itálico> : i $
+	\u<sublinhado> : u
+}
 
 \h3< The End Folks >
