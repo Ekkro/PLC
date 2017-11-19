@@ -3,7 +3,7 @@
 \h2< Sub-Titulo >
 
 \ul[
-	Quando se faz \b<negrito 2\>3> o simbolo é b.|
+	Quando se faz \b<negrito> o simbolo é b.|
 	Quando se faz \i<itálico> o simbolo é i.|
 	Quando se faz \u<sublinhado> o simbolo é u.
 ]
@@ -15,9 +15,9 @@
 ]
 
 \dl{
-	\b<negrito> : b\:coisas $
-	\i<itálico> : i $
-	\u<sublinhado> : u
+	\u<\i<Frutas> : maçã>, perâ, abacaxi. $
+	\b<Árvores>: castanheiro, pinheiro, eucalipto.$ 
+	
 }
 
 \h3< The End Folks >
