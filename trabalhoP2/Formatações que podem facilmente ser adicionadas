@@ -1,0 +1,37 @@
+<strong> - Important text
+
+<em> - Emphasized text
+
+<mark> - Marked text
+
+<small> - Small text
+
+<del> - Deleted text
+
+<ins> - Inserted text
+
+<sub> - Subscript text
+
+<sup> - Superscript text
+
+<strike> </strike> - Strike-out
+
+<pre> </pre> - Preformatted Text
+
+<code> </code> - Source Code
+
+<tt> </tt> - Typewriter Text
+    
+<blockquote> </blockquote> - Block Quote
+
+<font color="#??????"> </font> (*) - Font Colour
+
+<font size="?"> </font> - Font Size
+
+<font size="+/-?"> </font> - Font Size Change
+
+<font face="?"> </font> - Change Font Face
+
+<center> </center> - Centre
+
+<em> </em> - Emphasis
