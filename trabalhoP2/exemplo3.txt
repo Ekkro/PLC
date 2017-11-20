@@ -20,4 +20,8 @@
 	
 }
 
+\strong<Maria>
+
+P\sub<x>
+
 \h3< The End Folks >

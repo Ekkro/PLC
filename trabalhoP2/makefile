@@ -3,7 +3,7 @@ $(EXEC): $(EXEC).l
 	flex -o $(EXEC).c $(EXEC).l
 	gcc -o $(EXEC) $(EXEC).c 
 teste: $(EXEC)
-	./$(EXEC) < exemplo3.txt
+	./$(EXEC) < exemplo1.txt
 
 
 

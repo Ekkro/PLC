@@ -15,7 +15,7 @@
 ]
 
 \dl{
-	\b<negrito> : b\:coisas $
+	\b<negrito> : b\:bond $
 	\i<itálico> : i $
 	\u<sublinhado> : u
 }

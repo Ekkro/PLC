@@ -109,18 +109,14 @@ No nosso trabalho construímos um pré-processador que ajuda a simplificar a esc
 Neste trabalho é necessário:
 \begin{enumerate}[i)]
 \item Criar marcas menos pesadas que são inseridas para anotar o texto.
-\item Através do Flex construir o processador. (ficheiro flex é o processador)
+\item Através do Flex construir o processador.
 \item Passar um ficheiro através do processador para $HTML$.
 \end{enumerate}
 
 \section{Especificação dos requisitos}
 
-
-Para este trabalho foi necessário  encontrar símbolos que facilitassem a escrita ao utilizador e que não interferisse na passagem para HTML. 
-
-%O que se lhe pede neste trabalho é que, depois de investigar os tais pré-processadores a linguagem de um Wiki, %especifique uma sua linguagem de anotação para abreviar a escrita de formatação (negrito, itálico, sublinhado, %váriosnı́veis de tı́tulos) e listas de tópicos (items) não-numerados, numerados ou tipo entradas de um dicionário. %Deve a seguir criar, com a ferramenta Flex, um processador que transforme a sua notação em HTML.
-%
-
+Os requesitos para este trabalho são investigar o pré-processador da linguagem Wiki e especificar uma linguagem com símbolos que facilitassem a escrita de formatação, listas de tópicos numerados e não-numerados e dicionários e que não interferisse na passagem para HTML.
+ 
 \section{Expressões regulares} 
 
 As expressões regulares usadas foram:
@@ -131,6 +127,18 @@ As expressões regulares usadas foram:
 \item $ dl$$\backslash$$\{$
 \item $ .|$$\backslash$n
 \item " $\backslash\backslash$ "
+\item $strong<|em<|mark<|small<$
+\item $del<|ins<|sub<$
+\item $sup<|strike<|pre<$
+\item $code<|tt<$
+\item $ blockquote<|center<$
+\item "$>$"
+\item "$]$"
+\item "$|$"
+\item "$\}$"
+\item "$\$$"
+\item "$:$"
+
 
 \end{enumerate}
 
@@ -165,6 +173,8 @@ palavra: definição $\$$\\
 ......\\ 
 $\}$
 
+Acrescentamos outros símbolos, mas têm a mesma formatação que o 1, 2, 3 e 4.
+
 \end{enumerate}
 Caso alguém queira utilizar algum dos símbolos, mas não usar a sua formatação, basta acrescentar um $\backslash$ 
 antes dos símbolos. Por exemplo escrever a expressão matemática "$3>1$" em negrito, basta fazer  " $\backslash$$b$$<3$$\backslash$$>1>$" 
@@ -176,7 +186,7 @@ Outra alternativa era modificar a implementação do pré-processador para ident
 
 \section{Testes realizados e Resultados}
 
-Criamos um ficheiro txt com as nossas anotações mais leves. (Figura A.1). Depois através do ficheiro makefile, compilamos o nosso ficheiro em $Flex$ e passamos ao executável o ficheiro txt (Figura A.2 e A.3).\\ 
+Criamos um ficheiro txt com as nossas anotações mais simples e mais leves. (Figura A.1). Depois através do ficheiro makefile, compilamos o nosso ficheiro em $Flex$ e passamos ao executável o ficheiro txt (Figura A.2 e A.3).\\ 
 Como resultado obtemos um ficheiro já com as anotações do HTML. (Figura A.4 e A.5) 
 
 
@@ -184,9 +194,8 @@ Como resultado obtemos um ficheiro já com as anotações do HTML. (Figura A.4 e
 \chapter{Conclusão} \label{concl}
 
 Hoje em dia já existem muitos pré-processadores que facilitam a escrita de documentos em HTML.\\
-Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o $Flex$ é uma boa ferramenta para fazer o pré-processador e que com ele se torna fácil programar usando expressões regulares e um pouco de linguagem C. 
-%Tinhamos pensado usar o $flex$ e o $yacc$ em conjunto, mas usar só o $flex$ mostrou como através de "estados"
-
+Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o $Flex$ é uma boa ferramenta para fazer o pré-processador e que com ele se torna fácil programar usando expressões regulares e um pouco de linguagem C. \\
+Como trabalho futuro poderíamos acrescentar mais símbolos para completar o pré processador.
 
 
 \appendix
@@ -200,14 +209,14 @@ Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=15cm,height= 3cm]{makefile.png}
+\includegraphics[width=9cm,height= 2cm]{makefile.png}
 \caption{Ficheiro makefile}
 \label{makefile}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=15cm,height= 3cm]{terminal.png}
+\includegraphics[width=12cm,height= 2cm]{terminal.png}
 \caption{Terminal}
 \label{Terminal}
 \end{figure}
@@ -269,10 +278,15 @@ void insere(char *id ){
 }
 
 <SIMB>{
-	[bui]<|h[1-6]< 	{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
-	[ou]l\[ 		{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><li>", st[n++] );}
-	dl\{ 			{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><dt>", st[n++] );}
-	.|\n			{BEGIN TEXT; fprintf(f,"%s",yytext);}
+	[bui]<|h[1-6]< 				{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	strong<|em<|mark<|small<	{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	del<|ins<|sub<				{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	sup<|strike<|pre<  			{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	code<|tt<					{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	blockquote<|center<			{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	[ou]l\[ 					{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><li>", st[n++] );}
+	dl\{ 						{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><dt>", st[n++] );}
+	.|\n						{BEGIN TEXT; fprintf(f,"%s",yytext);}
 }
 
 %%
