@@ -1,0 +1,330 @@
+
+<!-- saved from url=(0056)http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title> PPP - V2.0 (preprocessador para ªTeX e/ou HTML)</title>
+</head><body background="./PPP - V2.0 (preprocessador para ªTeX e_ou HTML)_files/fundo2.gif">
+<p>
+</p><h2> José Carlos Ramalho</h2>
+
+<p>
+Pode fazer download do programa FLEX aqui: <a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.fl">ppp.fl</a>.
+</p><p>
+</p><h1><a name="ind1">Indice Remissivo</a></h1><p></p><h6>
+<a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind2">Introdução</a><p>
+<a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind3">PPP - Composição e Instalação</a></p><p>
+<a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind4">PPP - Invocação</a></p><p>
+<a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind5">PPP - Ptext PreProcessor</a></p><p>
+</p><dl><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind6">Comandos latex/html</a><p>
+</p><dl><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind7">Exemplos</a><p>
+</p></dd></dl></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind8">Acentos e Cedilhas</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind9">Cabeçalhos e Preâmbulos de um Documento</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind10">Texto Formatado</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind11">Texto não formatado</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind12">Listas </a><p>
+</p><dl><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind13">Items</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind14">Descritivas</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind15">Numeradas </a><p>
+</p></dd></dl></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind16">Macros pré-definidas</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind17">Comentários</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind18">Links</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind19">Grafismos (só em HTML)</a><p>
+</p></dd><dd><a href="http://www4.di.uminho.pt/~jcr/AULAS/plc2008/tp1/ppp.html#ind20">Tabelas (de momento só para HTML)</a><p>
+</p></dd></dl></h6>
+
+<hr>
+<h1><a name="ind2">Introdução</a></h1>
+      Como é sabido por quem tenha já praticado a escrita de textos
+em latex e html, não é fácil, por exemplo,  a acentuação e a
+cedilhação.
+<p>
+ Apesar dos muitos conversores existentes no mercado, a conversão de textos latex para html
+ e vice-versa não é tão fácil como às vezes seria de desejar. 
+</p><p>
+  Actualmente muitos utilizadores latex tentam disponibilizar na Internet
+  através do serviço WWW os seus documentos e lutam com o processo de
+  conversão de modo a tornar a versão final html o mais próxima possível
+  da versão latex e, não menos importante, o mais eficiente possível 
+  para o utilizador final (a eficiência traduz-se em tempos de espera de carregamento
+  de páginas o que está relacionado com a sua organização e natureza).
+</p><p>
+Neste contexto surgiu a ideia de criar uma linguagem um pouco mais
+abstracta que o latex ou o html, que não é nem pretende ser um
+substituto de nenhum dos dois mas sim uma plataforma intermédia entre os
+dois a partir da qual seja fácil e trivial converter em latex ou html.
+</p><p>
+A linguagem proposta neste documento não cobre nem de perto as
+facilidades e potencialidades quer do latex quer do html, cobre apenas um
+subconjunto que se pensou ser o utilizado em cerca de 75% dos documentos
+(foi criado um mecanismo que permite a introdução de texto na linguagem
+destino: latex ou html).
+</p><p>
+Em resumo os objectivos deste preprocessador são facilitar:
+</p><ul>
+<li>  a conversão entre latex e html
+</li><li>  a introdução de acentos e cedilhas
+</li><li>  a introdução de capítulos, secções, etc.
+</li><li>  o mecanismo de descrição por listas de items
+</li><li>  o mecanismo de descrição por listas enumeradas
+</li><li>  o mecanismo de descrição por listas descritivas
+</li><li>  a introdução de comentários no texto
+</li><li>  grafismos (só em HTML)
+</li><li>  links (só em HTML)
+</li><li>  Tabelas
+</li><li>  formatação de caracteres
+</li><li>  geração de índices
+</li><li>  modos protegidos
+</li><li>  e outras coisas que vão surgindo no dia-a-dia...
+</li></ul>
+
+<hr>
+<h1><a name="ind3">PPP - Composição e Instalação</a></h1>A versão actual do PPP está desenvolvida em <em>flex</em>, estando prevista uma futura versão em <em>Perl</em>.
+A ferramenta é assim constituída pelos ficheiros:
+<dl>
+<dt> ppp.fl
+	</dt><dd>  código fonte da ferramenta.
+</dd><dt> makefile
+	</dt><dd>  a makefile que cria o executável na plataforma corrente (tem que ter o flex instalado).
+</dd></dl>
+
+<p>
+Para instalar a ferramenta basta copiar os 2 ficheiros para a directoria apropriada e mandar executar a makefile. Isso fará com que um executável de nome <em>ppp</em> seja criado nessa directoria.
+</p><p>
+</p><hr>
+<h1><a name="ind4">PPP - Invocação</a></h1>Inicialmente o PPP permitia várias opções de invocação, mas à medida que foi evoluindo, algumas dessas opções incompatibilizaram-se com alguns dos procedimentos da ferramenta, de modo que a invocação aconselhada será:
+<dl>
+<dt> para gerar LaTeX
+	</dt><dd>  ppp -l fich.pre fich.tex
+</dd><dt> para gerar HTML
+	</dt><dd>  ppp -h fich.pre fich.html
+</dd></dl>
+
+<p>
+</p><hr>
+<h1><a name="ind5">PPP - Ptext PreProcessor</a></h1>Nas secções seguintes descreve-se de maneira sucinta o funcionamento e
+as facilidades inseridas na ferramenta criada.
+<p>
+</p><h2><a name="ind6">Comandos latex/html</a></h2> Como já foi referido o utilizador pode em qualquer altura introduzir
+ comandos nativos em latex/html (ao fazê-lo não está a tirar partido
+ da ferramenta, mas para as facilidades não cobertas pelo PPP é a
+ única solução).
+<p>
+Devido à característica multi-língua da ferramenta os comandos
+escritos numa das linguagens nativas têm que ser protegidos, e só
+aparecerão no documento da linguagem a que pertencem. Por exemplo, se
+num documento quisermos introduzir texto latex puro, podemos fazê-lo em
+modo protegido latex mas, esse texto só aparecerá na conversão do
+texto para latex.
+</p><p>
+Como temos duas linguagens alvo possíveis temos dois modos protegidos:
+</p><dl>
+<dt> latex
+	</dt><dd>   \latex ... texto latex ... \endlatex .
+</dd><dt> html
+	</dt><dd>   \html ... texto html ... \endhtml .
+</dd></dl>
+
+<p>
+</p><h3><a name="ind7">Exemplos</a></h3>
+<dl>
+<dt> latex
+	</dt><dd>  <pre>               \latex
+                 \maketitle
+               \endlatex
+         </pre>
+</dd><dt> html
+	</dt><dd>  <pre>               \html
+                 &lt;IMG ALIGN=TOP SRC="exemplo.gif"&gt;
+               \endhtml
+        </pre>
+</dd></dl>
+         
+<p>
+</p><h2><a name="ind8">Acentos e Cedilhas</a></h2>Este foi um dos aspectos que mais motivou a presente ferramenta.
+A sintaxe definida é a seguinte:
+<ul>
+<li> 'a = á
+</li><li> `a = à
+</li><li> ^e = ê
+</li><li> ~O = Õ
+</li><li> ,c = ç
+</li></ul>
+
+<p>
+</p><h2><a name="ind9">Cabeçalhos e Preâmbulos de um Documento</a></h2>Título e Autor do Documento:
+<ul>
+<li>  =titulo=[texto]
+</li><li>  =autor=[texto]
+</li></ul>
+
+<p>
+Pano de Fundo (só em HTML):
+</p><ul>
+<li>  =body=[imagem]
+</li></ul>
+
+Aqui o [imagem] refere o "pathname" da imagem fundo (normalmente um GIF pequeno), que irá ser colocada como "BACKGROUND" da página HTML gerada.
+<p>
+Índices:
+</p><ul>
+<li>  =indice=
+</li></ul>
+
+Os índices são gerados no ponto do documento onde este comando aparece e contendo informação desse ponto em diante. É assim possivel, ter indices que abrangem apenas parte do documento. Neste momento, só é possivel criar um índice por documento.
+<p>
+Secções e Subsecções:
+</p><ul>
+<li>  =título de secção
+</li><li>  ==título de subsecção
+</li><li>  ===título de subsubsecção
+</li><li>  ====t'tulo de subsecção de nível 4
+</li><li>  =====título de subsecção de nível 5
+</li></ul>
+
+<p>
+      Os "=" devem aparecer no início das linhas 
+respectivas dando origem automáticamente à numeração. Deste modo, 
+os títulos não devem incluir outra numeração.
+Por exemplo:
+</p><ul>
+<li>  == 2.5. A utilidade do boi 
+        daria origem a duas numerações
+</li><li>  3.2  2.5 A utilidade do boi
+</li></ul>
+
+<p>
+</p><h2><a name="ind10">Texto Formatado</a></h2>      Qualquer pedaço de texto pode ser formatado em itálico bold ou simplesmente realçado.
+      A seguir apresentam-se exemplos de cada um dos casos:
+<dl>
+<dt> itálico
+	</dt><dd>  coloca-se no <b>texto</b> o seguinte comando envolvente "\bf{texto}".
+</dd><dt> bold
+	</dt><dd>  coloca-se no <b>texto</b> o seguinte comando envolvente "\it{texto}".
+</dd><dt> realçado
+	</dt><dd>  coloca-se no <b>texto</b> o seguinte comando envolvente "\emph{texto}".
+</dd></dl>
+
+<p>
+</p><h2><a name="ind11">Texto não formatado</a></h2>      Uma das necessidade de um formatador de texto é, em certas
+partes, não formatar, copiando simplesmente para a saída o texto
+entrado sem quaisquer modificações. 
+Isso pode ser realizado envolvendo
+o texto a "proteger" entre os comandos "\noprep" e "\prep"
+ou "\begin{verbatim\}"  "\end{verbatim\}", se o texto fôr composto por várias linhas, mas se o texto que a gente quer proteger da acção do PPP fôr uma parte de uma linha pode-se e deve-se usar a macro "\sic" (ver à frente em macros).
+Em termos de protecção o par "\noprep" e "prep" é o mais poderoso pois vai converter todos os caracteres em código ASCII puro (o melhor ainda é experimentar e ver o código gerado).
+<p>
+</p><h2><a name="ind12">Listas </a></h2>Neste momento, o PPP suporta três tipos de listas, que podem ser misturados e aninhados consoante a vontade do utilizador: listas de items, descritivas e numeradas.
+<p>
+</p><h3><a name="ind13">Items</a></h3>      Utilizaremos uma descrição por items para descrever este
+comando:
+<ul>
+<li> Iniciado por ":" no final de uma linha.
+</li><li> Cada Item começado por "." como primeiro caracter não branco da
+linha e seguido por um caracter diferente de "[" ou digito.
+</li><li> Terminada por um caracter #.
+</li></ul>
+
+<p>
+</p><h3><a name="ind14">Descritivas</a></h3>      Utilizaremos uma lista descritiva para descrever este
+comando:
+<dl>
+<dt> (a)
+	</dt><dd>  Iniciado por ":" no final de uma linha.
+</dd><dt> (b)
+	</dt><dd>  Cada Item começado por "." como primeiro caracter não branco da
+linha e seguido por uma palavra ou mais palavras entre "[" "]".
+</dd><dt> (c)
+	</dt><dd>  Terminada por um caracter #.
+</dd></dl>
+
+<p>
+</p><h3><a name="ind15">Numeradas </a></h3>      Utilizaremos uma lista numerada para descrever este
+comando:
+<ol>
+<li>  Iniciado por ":" no final de uma linha.
+</li><li>  Cada Item começado por "." como primeiro caracter não branco da
+linha e seguido por um digito.
+</li><li>  Terminada por um caracter #.
+</li></ol>
+
+<p>
+</p><h2><a name="ind16">Macros pré-definidas</a></h2>Lista das macros definidas:
+<ul>
+<li>   \sic{...}  = não modifica o argumento
+</li><li>  \cao  = ção
+</li><li>  \coes = ções
+</li><li>  1\.a  = 1ª
+</li><li>  2\.o  = 2º
+</li><li>  \ENDINGS = coloca um rodapé no documento semelhante ao que se pode encontrar no fim deste; só deve ser usada no fim do documento.
+</li></ul>
+
+<p>
+</p><h2><a name="ind17">Comentários</a></h2>
+        É frequentemente util introduzir notas de comentários no texto
+de modo que não apareçam no texto final. Estes comentários podem ser
+introduzidos entre "%" na primeira coluna e <newline>.
+<p>
+
+</p><p>
+</p><h2><a name="ind18">Links</a></h2>
+Neste momento, só são pré-processados os links "normais", isto é, aqueles compostos por um URL e o texto que lhe fica associado:
+<dl>
+<dt> Sintaxe
+	</dt><dd>  \link{URL,texto}.
+</dd><dt> Exemplo
+	</dt><dd>  \link{http://www.di.uminho.pt/~jcr,este 'e um link para a minha p'agina}, que dá: <a href="http://www.di.uminho.pt/~jcr">este é um link para a minha página</a>.
+</dd></dl>
+
+<p>
+</p><h2><a name="ind19">Grafismos (só em HTML)</a></h2>
+<dl>
+<dt> Imagens
+	</dt><dd>  \image{path para a imagem}
+</dd><dt> Linha Horizontal
+	</dt><dd>  \linha - coloca uma linha horizontal a preto; este comando deve aparecer no início da linha.
+</dd></dl>
+
+<p>
+</p><h2><a name="ind20">Tabelas (de momento só para HTML)</a></h2>Sintaxe:
+<table border=""><tbody><tr>
+
+<th align="center">
+Comando </th><th align="center">
+Descrição
+</th></tr><tr>
+
+<td align="left">
+\table </td><td align="left">
+ inicia uma tabela com 1 linha e com "border".
+</td></tr><tr>
+
+<td align="left">
+\tablen </td><td align="left">
+ inicia uma tabela com 1 linha e sem "border".
+</td></tr><tr>
+
+<td align="left">
+##  </td><td align="left">
+termina a linha corrente e inicia uma nova linha.
+</td></tr><tr>
+
+<td align="left">
+#x#texto </td><td align="left">
+ Cria uma nova coluna com cabeçalho <em>texto</em>. O parâmetro <em>x</em> pode tomar os seguintes valores:
+l (encosta à esquerda), r (encosta à direita), c (centra).
+</td></tr><tr>
+
+<td align="left">
+&amp;x&amp;texto </td><td align="left">
+ Preenche a coluna corrente da linha corrente com o <em>texto</em>.
+</td></tr><tr>
+
+<td align="left">
+\endtable </td><td align="left">
+ Termina a tabela.
+</td></tr></tbody></table>
+
+<p>
+
+</p><hr><h5>
+ - generated by <a href="http://www.di.uminho.pt/~jcr/projectos/ppp/ppp.html">PPP</a> in </h5>
+Fri Mar  9 18:57:12 WET 2001
+</newline></body></html>
