@@ -75,7 +75,7 @@
 
 
 %\input{LPgeneralDefintions}
-\title{Processamento de Linguagens e Compiladores 3º ano\\ \textbf{Pré-processador para HTML}\\ TP2\\ Grupo 14}
+\title{Processamento de Linguagens e Compiladores (3º ano de LCC)\\ \textbf{Pré-processador para HTML}\\ TP2\\ Grupo 14}
 \author{Artur Queiroz\\ A77136 \and  Rafael Fernandes\\ A78242 \and Rafaela Pinho\\ A77293 }
 \date{\today}
 
@@ -85,16 +85,14 @@
 
 \begin{abstract}
 Neste relatório será apresentado as ideias implementadas para criar um pré-processador de HTML através da ferramenta $Flex$. 
-Também descrevemos as decisões tomadas e as dificuldades encontradas, bem como pequenos exemplos deforma que qualquer pessoa que leia este relatório perceba facilmente como funciona o nosso projeto.
+Também descrevemos as decisões tomadas e as dificuldades encontradas, bem como pequenos exemplos de forma que qualquer pessoa que leia este relatório perceba facilmente como funciona o nosso projeto.
 \end{abstract}
 
 \tableofcontents
 
 \chapter{Introdução} \label{intro}
-Escrever um documento em HTML trona-se muito cansativo, devido ao peso das "tags" que são inseridas para anotar o texto. Por exemplo, para colocar alguma coisa em negrito é necessário fazer:$ <b>(texto que queremos a negrito)</b>$. \\ 
-
+Escrever um documento em HTML trona-se muito cansativo, devido ao peso das "tags" que são inseridas para anotar o texto. Por exemplo, para colocar alguma coisa em negrito é necessário fazer:$ <b>$(texto que queremos a negrito)$</b>$. \\ 
 Por isso existem pré-processadores de HTML que facilitam a tarefa da inserção dessas "tags", pois permitem ao utilizador usar anotações mais leves e mais simples. Depois, o pré-processador substitui a notação abreviada para a notação de HTML.\\ 
-
 No nosso trabalho construímos um pré-processador que ajuda a simplificar a escrita do código HTML. 
 
 %\section*{Estrutura do Relatório} \
@@ -111,15 +109,18 @@ No nosso trabalho construímos um pré-processador que ajuda a simplificar a esc
 Neste trabalho é necessário:
 \begin{enumerate}[i)]
 \item Criar marcas menos pesadas que são inseridas para anotar o texto.
-\item Através do Flex construímos o processador. (ficheiro flex é o processador)
+\item Através do Flex construir o processador. (ficheiro flex é o processador)
 \item Passar um ficheiro através do processador para $HTML$.
 \end{enumerate}
 
 \section{Especificação dos requisitos}
 
-Para este trabalho foi necessário encontrar símbolos que facilitassem a escrita ao utilizador e que não interferisse na passagem para HTML. 
 
-  
+Para este trabalho foi necessário  encontrar símbolos que facilitassem a escrita ao utilizador e que não interferisse na passagem para HTML. 
+
+%O que se lhe pede neste trabalho é que, depois de investigar os tais pré-processadores a linguagem de um Wiki, %especifique uma sua linguagem de anotação para abreviar a escrita de formatação (negrito, itálico, sublinhado, %váriosnı́veis de tı́tulos) e listas de tópicos (items) não-numerados, numerados ou tipo entradas de um dicionário. %Deve a seguir criar, com a ferramenta Flex, um processador que transforme a sua notação em HTML.
+%
+
 \section{Expressões regulares} 
 
 As expressões regulares usadas foram:
@@ -192,16 +193,18 @@ Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o 
 \chapter{Figuras}
 \begin{figure}[h]
 \centering
-\includegraphics[width=10cm,height= 8cm]{exemplo1.png}
+\includegraphics[scale= 0.5]{exemplo1.png}
 \caption{Exemplo com as "tags" simplificadas}
 \label{Exemplo 1}
 \end{figure}
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=9cm,height= 5cm]{makefile.png}
+\includegraphics[width=15cm,height= 3cm]{makefile.png}
 \caption{Ficheiro makefile}
 \label{makefile}
 \end{figure}
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=15cm,height= 3cm]{terminal.png}
@@ -210,13 +213,13 @@ Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o 
 \end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics[width=12cm,height= 10cm]{exemplo1html.png}
+\includegraphics[scale= 0.5]{exemplo1html.png}
 \caption{Exemplo 1 depois do pré-processador}
 \label{Ficheiro em HTML}
 \end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics[width=9cm,height= 9cm]{HTML.png}
+\includegraphics[width=8cm,height= 10cm]{HTML.png}
 \caption{Exemplo HTML}
 \label{HTML}
 \end{figure}
@@ -261,15 +264,15 @@ void insere(char *id ){
 	"}"		{fprintf(f, "</dd></%s>", st[--n]);}
 	"$"		{fprintf(f,"</dd>\n<dt>");}
 	":"		{fprintf(f,"</dt>\n<dd>");}
-	"\\"		{BEGIN SIMB; strcpy(st[n],"");}
-	.|\n		{fprintf(f, "%s", yytext );}
+	"\\"	{BEGIN SIMB; strcpy(st[n],"");}
+	.|\n	{fprintf(f, "%s", yytext );}
 }
 
 <SIMB>{
 	[bui]<|h[1-6]< 	{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
-	[ou]l\[ 	{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><li>", st[n++] );}
-	dl\{ 		{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><dt>", st[n++] );}
-	.|\n		{BEGIN TEXT; fprintf(f,"%s",yytext);}
+	[ou]l\[ 		{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><li>", st[n++] );}
+	dl\{ 			{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><dt>", st[n++] );}
+	.|\n			{BEGIN TEXT; fprintf(f,"%s",yytext);}
 }
 
 %%
