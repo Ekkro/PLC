@@ -30,21 +30,23 @@ Abrev ER
 			{BEGIN TEXT;}
 
 <TEXT>{
-	">"		{fprintf(f, "</%s>", st[--n] );}
-	"]"		{fprintf(f, "</li></%s>", st[--n]);}
-	"|"		{fprintf(f,"</li>\n<li>");}
-	"}"		{fprintf(f, "</dd></%s>", st[--n]);}
-	"$"		{fprintf(f,"</dd>\n<dt>");}
-	":"		{fprintf(f,"</dt>\n<dd>");}
+	">"			{fprintf(f, "</%s>", st[--n] );}
+	"]"			{fprintf(f, "</li></%s>", st[--n]);}
+	"|"			{fprintf(f,"</li>\n<li>");}
+	"}"			{fprintf(f, "</dd></%s>", st[--n]);}
+	"$"			{fprintf(f,"</dd>\n<dt>");}
+	":"			{fprintf(f,"</dt>\n<dd>");}
 	"\\"		{BEGIN SIMB; strcpy(st[n],"");}
 	.|\n		{fprintf(f, "%s", yytext );}
 }
 
 <SIMB>{
-	[bui]<|h[1-6]< 	{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
-	[ou]l\[ 	{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><li>", st[n++] );}
-	dl\{ 		{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><dt>", st[n++] );}
-	.|\n		{BEGIN TEXT; fprintf(f,"%s",yytext);}
+	[bui]<|h[1-6]< 										{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	strong<|em<|mark<|small<|del<|ins<|sub<				{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	sup<|strike<|pre<|code<|tt<|blockquote<|center<		{BEGIN TEXT; insere(yytext); fprintf(f, "<%s>", st[n++] ); }
+	[ou]l\[ 											{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><li>", st[n++] );}
+	dl\{ 												{BEGIN TEXT; insere(yytext); fprintf(f, "<%s><dt>", st[n++] );}
+	.|\n												{BEGIN TEXT; fprintf(f,"%s",yytext);}
 }
 
 %%
@@ -55,3 +57,12 @@ int main(){
 	fclose(f);
 	return 0; 
 }
+/*
+<font color="#??????"> </font> (*) - Font Colour
+
+<font size="?"> </font> - Font Size
+
+<font size="+/-?"> </font> - Font Size Change
+
+<font face="?"> </font> - Change Font Face
+*/
