@@ -6,7 +6,7 @@
 #define Max 128
 
 int n = 0;
-char st[Max][32] = {0};
+char st[Max][Max] = {0};
 FILE* f;
 
 void insere(char *id ){
@@ -21,7 +21,7 @@ void insere(char *id ){
 
 %option noyywrap
 
-%x TEXT SIMB
+%x TEXT SIMB 
 
 Abrev ER
 
@@ -31,9 +31,9 @@ Abrev ER
 
 <TEXT>{
 	">"			{fprintf(f, "</%s>", st[--n] );}
-	"]"			{fprintf(f, "</li></%s>", st[--n]);}
+	"]"			{fprintf(f, "</li>\n</%s>", st[--n]);}
 	"|"			{fprintf(f,"</li>\n<li>");}
-	"}"			{fprintf(f, "</dd></%s>", st[--n]);}
+	"}"			{fprintf(f, "</dd>\n</%s>", st[--n]);}
 	"$"			{fprintf(f,"</dd>\n<dt>");}
 	":"			{fprintf(f,"</dt>\n<dd>");}
 	"\\"		{BEGIN SIMB; strcpy(st[n],"");}
@@ -57,12 +57,3 @@ int main(){
 	fclose(f);
 	return 0; 
 }
-/*
-<font color="#??????"> </font> (*) - Font Colour
-
-<font size="?"> </font> - Font Size
-
-<font size="+/-?"> </font> - Font Size Change
-
-<font face="?"> </font> - Change Font Face
-*/
