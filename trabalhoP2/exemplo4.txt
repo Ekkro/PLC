@@ -24,5 +24,18 @@
 Uma expressão matemática a negrito:
 \b< 3\> 1>
 
+\strong<strong>
+\strike<strike>
+\em<em>    
+\pre<pre>
+\mark<mark>   
+\code< int main(){ while(True){return 0;\}\}>
+\del<del>
+\tt<tt>
+\ins<ins>
+\blockquote< int main(){ while(True){return 0;\}\}>
+\sub<sub>		 
+\center<center>
+\sup<sup>
 
 \h3< The End Folks >
