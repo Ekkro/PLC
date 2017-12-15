@@ -6,12 +6,17 @@
 	Quando se faz \b<negrito> o simbolo é b.|
 	Quando se faz \i<itálico> o simbolo é i.|
 	Quando se faz \u<sublinhado> o simbolo é u.
+	\ul[coisas|1|2]|
+	ola
 ]
 
 \ol[
 	Quando se faz \b<negrito> o simbolo  b.|
 	Quando se faz \i<itálico> o simbolo  i.|
 	Quando se faz \u<sublinhado> o simbolo \| u.
+	\ol[coisas|1|2] |
+	ola
+
 ]
 
 \dl{

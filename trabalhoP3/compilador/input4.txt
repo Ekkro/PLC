@@ -1,0 +1,16 @@
+escrever(s)?("digitar uma sequencia de números, termina quando for zero\n")
+
+int cont = 0;
+int r = 0;
+int i = leri();
+
+enq(i != 0){
+	r = i % 2;
+	se (r == 1){
+		cont = cont + 1;
+		escreveri(i);
+	}
+escreverf("Foram lidos ");
+esvreveri(cont);
+excreverf(" impares \n");
+}
