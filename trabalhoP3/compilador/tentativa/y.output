@@ -1,0 +1,551 @@
+Grammar
+
+    0 $accept: Prog $end
+
+    1 Prog: SE Cond '{' Prog '}' Se
+    2     | ENQ Cond '{' Prog '}' Prog
+    3     | TIPO VAR '=' Expr ';' Prog
+    4     | ';' Prog
+    5     | TIPO VAR Ltipo '{' Prog '}'
+    6     | %empty
+
+    7 Ltipo: '(' ')'
+    8      | '(' Etipo ')'
+
+    9 Etipo: TIPO VAR
+   10      | Etipo ',' TIPO VAR
+
+   11 Se: Prog
+   12   | CASO Cond '{' Prog '}' SE
+   13   | SENAO '{' Prog '}' Prog
+
+   14 Cond: VERDADE
+   15     | FALSO
+
+   16 Expr: VAR
+   17     | VAR '(' ')'
+   18     | NUM
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'(' (40) 7 8 17
+')' (41) 7 8 17
+',' (44) 10
+';' (59) 3 4
+'=' (61) 3
+'{' (123) 1 2 5 12 13
+'}' (125) 1 2 5 12 13
+error (256)
+SE (258) 1 12
+SENAO (259) 13
+VERDADE (260) 14
+FALSO (261) 15
+CASO (262) 12
+ENQ (263) 2
+VAR (264) 3 5 9 10 16 17
+TIPO (265) 3 5 9 10
+NUM (266) 18
+
+
+Nonterminals, with rules where they appear
+
+$accept (19)
+    on left: 0
+Prog (20)
+    on left: 1 2 3 4 5 6, on right: 0 1 2 3 4 5 11 12 13
+Ltipo (21)
+    on left: 7 8, on right: 5
+Etipo (22)
+    on left: 9 10, on right: 8 10
+Se (23)
+    on left: 11 12 13, on right: 1
+Cond (24)
+    on left: 14 15, on right: 1 2 12
+Expr (25)
+    on left: 16 17 18, on right: 3
+
+
+State 0
+
+    0 $accept: . Prog $end
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 5
+
+
+State 1
+
+    1 Prog: SE . Cond '{' Prog '}' Se
+
+    VERDADE  shift, and go to state 6
+    FALSO    shift, and go to state 7
+
+    Cond  go to state 8
+
+
+State 2
+
+    2 Prog: ENQ . Cond '{' Prog '}' Prog
+
+    VERDADE  shift, and go to state 6
+    FALSO    shift, and go to state 7
+
+    Cond  go to state 9
+
+
+State 3
+
+    3 Prog: TIPO . VAR '=' Expr ';' Prog
+    5     | TIPO . VAR Ltipo '{' Prog '}'
+
+    VAR  shift, and go to state 10
+
+
+State 4
+
+    4 Prog: ';' . Prog
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 11
+
+
+State 5
+
+    0 $accept: Prog . $end
+
+    $end  shift, and go to state 12
+
+
+State 6
+
+   14 Cond: VERDADE .
+
+    $default  reduce using rule 14 (Cond)
+
+
+State 7
+
+   15 Cond: FALSO .
+
+    $default  reduce using rule 15 (Cond)
+
+
+State 8
+
+    1 Prog: SE Cond . '{' Prog '}' Se
+
+    '{'  shift, and go to state 13
+
+
+State 9
+
+    2 Prog: ENQ Cond . '{' Prog '}' Prog
+
+    '{'  shift, and go to state 14
+
+
+State 10
+
+    3 Prog: TIPO VAR . '=' Expr ';' Prog
+    5     | TIPO VAR . Ltipo '{' Prog '}'
+
+    '='  shift, and go to state 15
+    '('  shift, and go to state 16
+
+    Ltipo  go to state 17
+
+
+State 11
+
+    4 Prog: ';' Prog .
+
+    $default  reduce using rule 4 (Prog)
+
+
+State 12
+
+    0 $accept: Prog $end .
+
+    $default  accept
+
+
+State 13
+
+    1 Prog: SE Cond '{' . Prog '}' Se
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 18
+
+
+State 14
+
+    2 Prog: ENQ Cond '{' . Prog '}' Prog
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 19
+
+
+State 15
+
+    3 Prog: TIPO VAR '=' . Expr ';' Prog
+
+    VAR  shift, and go to state 20
+    NUM  shift, and go to state 21
+
+    Expr  go to state 22
+
+
+State 16
+
+    7 Ltipo: '(' . ')'
+    8      | '(' . Etipo ')'
+
+    TIPO  shift, and go to state 23
+    ')'   shift, and go to state 24
+
+    Etipo  go to state 25
+
+
+State 17
+
+    5 Prog: TIPO VAR Ltipo . '{' Prog '}'
+
+    '{'  shift, and go to state 26
+
+
+State 18
+
+    1 Prog: SE Cond '{' Prog . '}' Se
+
+    '}'  shift, and go to state 27
+
+
+State 19
+
+    2 Prog: ENQ Cond '{' Prog . '}' Prog
+
+    '}'  shift, and go to state 28
+
+
+State 20
+
+   16 Expr: VAR .
+   17     | VAR . '(' ')'
+
+    '('  shift, and go to state 29
+
+    $default  reduce using rule 16 (Expr)
+
+
+State 21
+
+   18 Expr: NUM .
+
+    $default  reduce using rule 18 (Expr)
+
+
+State 22
+
+    3 Prog: TIPO VAR '=' Expr . ';' Prog
+
+    ';'  shift, and go to state 30
+
+
+State 23
+
+    9 Etipo: TIPO . VAR
+
+    VAR  shift, and go to state 31
+
+
+State 24
+
+    7 Ltipo: '(' ')' .
+
+    $default  reduce using rule 7 (Ltipo)
+
+
+State 25
+
+    8 Ltipo: '(' Etipo . ')'
+   10 Etipo: Etipo . ',' TIPO VAR
+
+    ')'  shift, and go to state 32
+    ','  shift, and go to state 33
+
+
+State 26
+
+    5 Prog: TIPO VAR Ltipo '{' . Prog '}'
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 34
+
+
+State 27
+
+    1 Prog: SE Cond '{' Prog '}' . Se
+
+    SE     shift, and go to state 1
+    SENAO  shift, and go to state 35
+    CASO   shift, and go to state 36
+    ENQ    shift, and go to state 2
+    TIPO   shift, and go to state 3
+    ';'    shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 37
+    Se    go to state 38
+
+
+State 28
+
+    2 Prog: ENQ Cond '{' Prog '}' . Prog
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 39
+
+
+State 29
+
+   17 Expr: VAR '(' . ')'
+
+    ')'  shift, and go to state 40
+
+
+State 30
+
+    3 Prog: TIPO VAR '=' Expr ';' . Prog
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 41
+
+
+State 31
+
+    9 Etipo: TIPO VAR .
+
+    $default  reduce using rule 9 (Etipo)
+
+
+State 32
+
+    8 Ltipo: '(' Etipo ')' .
+
+    $default  reduce using rule 8 (Ltipo)
+
+
+State 33
+
+   10 Etipo: Etipo ',' . TIPO VAR
+
+    TIPO  shift, and go to state 42
+
+
+State 34
+
+    5 Prog: TIPO VAR Ltipo '{' Prog . '}'
+
+    '}'  shift, and go to state 43
+
+
+State 35
+
+   13 Se: SENAO . '{' Prog '}' Prog
+
+    '{'  shift, and go to state 44
+
+
+State 36
+
+   12 Se: CASO . Cond '{' Prog '}' SE
+
+    VERDADE  shift, and go to state 6
+    FALSO    shift, and go to state 7
+
+    Cond  go to state 45
+
+
+State 37
+
+   11 Se: Prog .
+
+    $default  reduce using rule 11 (Se)
+
+
+State 38
+
+    1 Prog: SE Cond '{' Prog '}' Se .
+
+    $default  reduce using rule 1 (Prog)
+
+
+State 39
+
+    2 Prog: ENQ Cond '{' Prog '}' Prog .
+
+    $default  reduce using rule 2 (Prog)
+
+
+State 40
+
+   17 Expr: VAR '(' ')' .
+
+    $default  reduce using rule 17 (Expr)
+
+
+State 41
+
+    3 Prog: TIPO VAR '=' Expr ';' Prog .
+
+    $default  reduce using rule 3 (Prog)
+
+
+State 42
+
+   10 Etipo: Etipo ',' TIPO . VAR
+
+    VAR  shift, and go to state 46
+
+
+State 43
+
+    5 Prog: TIPO VAR Ltipo '{' Prog '}' .
+
+    $default  reduce using rule 5 (Prog)
+
+
+State 44
+
+   13 Se: SENAO '{' . Prog '}' Prog
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 47
+
+
+State 45
+
+   12 Se: CASO Cond . '{' Prog '}' SE
+
+    '{'  shift, and go to state 48
+
+
+State 46
+
+   10 Etipo: Etipo ',' TIPO VAR .
+
+    $default  reduce using rule 10 (Etipo)
+
+
+State 47
+
+   13 Se: SENAO '{' Prog . '}' Prog
+
+    '}'  shift, and go to state 49
+
+
+State 48
+
+   12 Se: CASO Cond '{' . Prog '}' SE
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 50
+
+
+State 49
+
+   13 Se: SENAO '{' Prog '}' . Prog
+
+    SE    shift, and go to state 1
+    ENQ   shift, and go to state 2
+    TIPO  shift, and go to state 3
+    ';'   shift, and go to state 4
+
+    $default  reduce using rule 6 (Prog)
+
+    Prog  go to state 51
+
+
+State 50
+
+   12 Se: CASO Cond '{' Prog . '}' SE
+
+    '}'  shift, and go to state 52
+
+
+State 51
+
+   13 Se: SENAO '{' Prog '}' Prog .
+
+    $default  reduce using rule 13 (Se)
+
+
+State 52
+
+   12 Se: CASO Cond '{' Prog '}' . SE
+
+    SE  shift, and go to state 53
+
+
+State 53
+
+   12 Se: CASO Cond '{' Prog '}' SE .
+
+    $default  reduce using rule 12 (Se)
