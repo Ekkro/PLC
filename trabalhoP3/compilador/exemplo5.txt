@@ -42,6 +42,3 @@ enq(i<N){
     escreveri(v[i]);
     escreverf("\n");
 }
-
-
-
