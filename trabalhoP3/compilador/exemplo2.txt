@@ -1,0 +1,50 @@
+
+int N = leri();
+
+int i = 0;
+int a = 0;
+int res = 0;
+
+se (N!=0){
+    res = leri();
+    i = 1;
+    enq (i < N){
+        a = leri();
+
+        se (res > a){
+            res = a;
+        }
+
+        i = i + 1;
+    }
+
+
+    escrever(s)?("o menor numero foi o ");
+    escreveri(res);
+    escrever(s)?("\n");
+
+}
+senao{
+    escrever(s)?("nao leu nenhum numero\n");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

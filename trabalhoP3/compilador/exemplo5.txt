@@ -1,0 +1,47 @@
+
+void troca(int* v, int i, int j){
+    int k = v[i];
+    v[i] = v[j];
+    v[j] = k;
+}
+
+void ordena(int* v, int N){
+    int i = 0; //inicio
+    int j = 0; //procura
+    int m ;    //pos do menor
+
+    enq (i<N-1){
+        j = i + 1;
+        m = i;
+        enq (j<N){
+            se(v[j]>v[m]){
+                m = j;
+            }
+            j = j + 1;
+        }
+        troca(v,i,m);
+        i = i + 1;
+    }
+
+}
+
+int N = leri();
+int i = 0;
+int v[N];
+
+enq(i<N){
+    v[i] = leri();
+    i = i+1;
+}
+
+ordena(v, N);
+
+i = 0;
+
+enq(i<N){
+    escreveri(v[i]);
+    escreverf("\n");
+}
+
+
+

@@ -1,0 +1,24 @@
+
+escreverf("Vao se ler os 5 primeiros numeros\n");
+
+int N = 5;
+int i = 0;
+int r = 1;
+
+enq(i < N){
+
+    r = r * leri();
+
+    i = i + 1;
+}
+
+
+escreverf("o produtorio desta sequencia de 5 numeros e ");
+escreveri(r);
+escreverf("\n");
+
+
+
+
+
+
