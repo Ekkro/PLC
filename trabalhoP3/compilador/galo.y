@@ -14,15 +14,30 @@
 }
 
 
-%token SE SENAO VERDADE FALSO CASO ENQ VAR TIPO NUM
+%token SE SENAO VERDADE FALSO CASO ENQ VAR TIPO NUM COMPL FUNL
 
 %%
 Prog    : SE Cond '{' Prog '}' Se
         | ENQ Cond '{' Prog '}' Prog
-        | TIPO VAR '=' Expr ';' Prog
+        | TIPO Eatrib ';' Prog
+        | TIPO VAR Ltipo '{' Prog '}' Prog
+        | VAR Lexpr ';' Prog                /*funcao*/
         | ';' Prog
-        | TIPO VAR Ltipo '{' Prog '}'
         | 
+        ;
+
+Eatrib  : VAR 
+        | VAR '=' Expr 
+        | Eatrib ',' VAR '=' Expr 
+        | Eatrib ',' VAR 
+        ;
+
+Lexpr   : '(' ')'
+        | '(' Eexpr ')'
+        ;
+
+Eexpr   : Expr
+        | Eexpr ',' Expr
         ;
 
 Ltipo   : '(' ')'
@@ -40,6 +55,17 @@ Se      : Prog
 
 Cond    : VERDADE
         | FALSO
+        | '(' Expr COMPL Expr ')'
+        | '(' Cond FUNL Cond ')'
+        | '!' Cond
+        ;
+
+Simbl   : '=='
+        | '!='
+        | '<'
+        | '>'
+        | '<='
+        | '>='
         ;
 
 Expr    : VAR
