@@ -9,6 +9,6 @@ enq (i < N){
 enq(i > 0){
 	a = v[i-1];
 	escreveri(a);
-	escreverf("\n");
+	escrevers("\n");
 	i = i-1;
 }

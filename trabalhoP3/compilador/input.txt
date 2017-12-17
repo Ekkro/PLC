@@ -4,4 +4,10 @@ int i = 0;
 
 int j;
 
+int i,j;
+
+
+
+
+
 

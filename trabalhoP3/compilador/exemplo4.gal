@@ -1,4 +1,4 @@
-escrever(s)?("digitar uma sequencia de números, termina quando for zero\n")
+escrevers("digitar uma sequencia de números, termina quando for zero\n");
 
 int cont = 0;
 int r = 0;
@@ -10,7 +10,7 @@ enq(i != 0){
 		cont = cont + 1;
 		escreveri(i);
 	}
-escreverf("Foram lidos ");
+escrevers("Foram lidos ");
 esvreveri(cont);
-excreverf(" impares \n");
+excrevers(" impares \n");
 }

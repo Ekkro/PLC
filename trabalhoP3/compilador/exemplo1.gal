@@ -5,17 +5,10 @@ int b = leri();
 int c = leri();
 int d = leri();
 
-se (a==b e b==c e c==d) {
+se (((a==b) e (b==c)) e (c==d)) {
     escrevers("E um quadrado\n");
 }
 senao {
     escrevers("nao e um quadrado\n");
 }
-
-
-
-
-
-
-
 

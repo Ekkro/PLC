@@ -1,5 +1,5 @@
 
-escreverf("Vao se ler os 5 primeiros numeros\n");
+escrevers("Vao se ler os 5 primeiros numeros\n");
 
 int N = 5;
 int i = 0;
@@ -13,12 +13,7 @@ enq(i < N){
 }
 
 
-escreverf("o produtorio desta sequencia de 5 numeros e ");
+escrevers("o produtorio desta sequencia de 5 numeros e ");
 escreveri(r);
-escreverf("\n");
-
-
-
-
-
+escrevers("\n");
 

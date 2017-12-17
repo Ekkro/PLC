@@ -19,32 +19,12 @@ se (N!=0){
     }
 
 
-    escrever(s)?("o menor numero foi o ");
+    escrevers("O menor numero foi o ");
     escreveri(res);
-    escrever(s)?("\n");
+    escrevers("\n");
 
 }
 senao{
-    escrever(s)?("nao leu nenhum numero\n");
+    escrevers("Nao leu nenhum numero\n");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

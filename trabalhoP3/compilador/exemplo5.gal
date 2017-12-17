@@ -6,9 +6,9 @@ void troca(int* v, int i, int j){
 }
 
 void ordena(int* v, int N){
-    int i = 0; //inicio
-    int j = 0; //procura
-    int m ;    //pos do menor
+    int i = 0; #inicio
+    int j = 0; #procura
+    int m ;    #pos do menor
 
     enq (i<N-1){
         j = i + 1;
@@ -40,5 +40,5 @@ i = 0;
 
 enq(i<N){
     escreveri(v[i]);
-    escreverf("\n");
+    escrevers("\n");
 }
