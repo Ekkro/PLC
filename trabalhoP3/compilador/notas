@@ -1,0 +1,15 @@
+int i; :
+    pushi 0 
+
+i = leri(); :
+    //saber que x = lugar onde esta i
+    read
+    atoi
+    storeg x
+
+escreveri(i); :
+    //saber que x = lugar onde esta i
+    pushg x
+    writei
+
+
