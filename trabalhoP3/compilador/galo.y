@@ -14,7 +14,7 @@
 
 %token SE SENAO VERDADE FALSO CASO ENQ VAR TIPO NUM COMPL FUNL EQ NEQ LEQ GEQ E OU STR COM
 
-%type<s> Prog 
+%type<s> Prog  
 
 
 %%
@@ -61,23 +61,16 @@ Se      : Prog                                  { ; }
         | SENAO '{' Prog '}' Prog               { ; }
         ;
 
-Cond    : VERDADE                               { ; }
-        | FALSO                                 { ; }
-        | '(' Expr Simbcmp Expr ')'             { ; }
-        | '(' Cond Funl Cond ')'                { ; }
+Cond    : NUM                                   { ; }
+        | '(' Expr EQ Expr ')'                  { ; }
+        | '(' Expr NEQ Expr ')'                 { ; }
+        | '(' Expr '<' Expr ')'                 { ; }
+        | '(' Expr '>' Expr ')'                 { ; }
+        | '(' Expr LEQ Expr ')'                 { ; }
+        | '(' Expr GEQ Expr ')'                 { ; }
+        | '(' Cond E Cond ')'                   { ; }
+        | '(' Cond OU Cond ')'                  { ; }
         | '!' Cond                              { ; }
-        ;
-
-Simbcmp : EQ                                    { ; }
-        | NEQ                                   { ; }
-        | '<'                                   { ; }
-        | '>'                                   { ; }
-        | LEQ                                   { ; }
-        | GEQ                                   { ; }
-        ;
-
-Funl    : E                                     { ; }
-        | OU                                    { ; }
         ;
 
 Expr    : VAR                                   { ; }
@@ -88,16 +81,11 @@ Expr    : VAR                                   { ; }
         | STR                                   { ; }
         ;
 
-Cexpr   : Opint VAR                             { ; }
-        | Opint NUM                             { ; }
-        | Opint VAR Lexpr                       { ; }
-        ;
-
-Opint   : '+'                                   { ; }
-        | '-'                                   { ; }
-        | '*'                                   { ; }
-        | '/'                                   { ; }
-        | '%'                                   { ; }
+Cexpr   : '+' Expr                              { ; }
+        | '-' Expr                              { ; }
+        | '*' Expr                              { ; }
+        | '/' Expr                              { ; }
+        | '%' Expr                              { ; }
         ;
 %%
 
