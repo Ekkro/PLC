@@ -4,7 +4,7 @@
 
 %%
 #.*$                        { return(COM); }
-\"[^"]*\"                   { return(STR); }
+\"[^"]*\"                   { yyval.s return(STR); }
 [ ]+e[ ]+                   { return(E); }
 [ ]+ou[ ]+                  { return(OU); }
 ==                          { return(EQ); }
@@ -14,8 +14,6 @@
 [=;{}(),<>!\+\-\*\/%\[\]]   { return(yytext[0]); }
 se|SE                       { return(SE); }
 senao|SENAO                 { return(SENAO); }
-verdade|VERDADE             { return(VERDADE); }
-falso|FALSO                 { return(FALSO); }
 caso|CASO                   { return(CASO); }
 enq|ENQ                     { return(ENQ); }
 int\ *\*?|void\ *\*?        { return(TIPO); }

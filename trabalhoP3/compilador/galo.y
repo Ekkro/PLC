@@ -5,25 +5,40 @@
     int yylex();
     int yyerror();
 
-    struct variavel{
+    typedef struct variavel{
+        char* tipo;
         char* designacao;
         char* valor;
-        char* tipo;
         int posicaoStack;
-    }
+    } Variavel;
+
+    typedef struct expressao{
+        char* tipo;
+        char* valor;
+        int posicaoStack;
+    } Expressao;
+
 %}
 
 %union{
   int i;
   char *s;
+  Variavel var;
+  Expressao expr; 
 }
 
 
 
 
-%token SE SENAO VERDADE FALSO CASO ENQ VAR TIPO NUM COMPL FUNL EQ NEQ LEQ GEQ E OU STR COM
+%token SE SENAO CASO ENQ VAR TIPO NUM EQ NEQ LEQ GEQ E OU STR COM
 
-%type<s> Prog  
+%type<i> NUM
+%type<s> VAR TIPO STR
+
+%type<s> Prog Eatrib 
+%type<s> Prog
+%type<s> Prog
+%type<s> Prog
 
 
 %%
@@ -106,11 +121,22 @@ int yyerror(char *s){
 
 int main(int argc, char* argv[]){
     if(argc == 2){
-        f1 = fopen(argv[0]);
+        FILE* f = fopen(argv[1],"r");
+        FILE* out = fopen("a.mv", "w");
+        if (f == NULL || out == NULL){
+            printf("Error opening file!\n");
+            exit(1);
+        }
 
-        printf("start\n"); 
+        char codigo[1024*1024];
+
+        fprintf(out, "start\n"); 
         yyparse();
-        printf("stop\n"); 
+
+        fprintf(out, "stop\n");
+        
+
+        fclose(f); fclose(out);
     }
     return(0);
 }
