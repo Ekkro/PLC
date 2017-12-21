@@ -5,8 +5,8 @@
 %%
 #.*$                        { return(COM); }
 \"[^"]*\"                   { return(STR); }
-[ ]e[ ]                     { return(E); }
-[ ]ou[ ]                    { return(OU); }
+[ ]+e[ ]+                   { return(E); }
+[ ]+ou[ ]+                  { return(OU); }
 ==                          { return(EQ); }
 \<=                         { return(LEQ); }
 >=                          { return(GEQ); }
