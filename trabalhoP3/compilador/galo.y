@@ -35,10 +35,8 @@
 %type<i> NUM
 %type<s> VAR TIPO STR
 
-%type<s> Prog Eatrib 
-%type<s> Prog
-%type<s> Prog
-%type<s> Prog
+%type<s> Prog Eatrib Se Lexpr Eexpr Ltipo 
+%type<i> Cond
 
 
 %%
@@ -101,16 +99,14 @@ Expr    : VAR                                   { ; }
         | NUM                                   { ; }
         | VAR '[' Expr ']'                      { ; }
         | VAR Lexpr                             { ; }
-        | Expr Cexpr                            { ; }
+        | Expr '+' Expr                         { ; }
+        | Expr '-' Expr                         { ; }
+        | Expr '*' Expr                         { ; }
+        | Expr '/' Expr                         { ; }
+        | Expr '%' Expr                         { ; }
         | STR                                   { ; }
         ;
 
-Cexpr   : '+' Expr                              { ; }
-        | '-' Expr                              { ; }
-        | '*' Expr                              { ; }
-        | '/' Expr                              { ; }
-        | '%' Expr                              { ; }
-        ;
 %%
 
 #include "galo.c"
@@ -119,25 +115,20 @@ int yyerror(char *s){
     fprintf(stderr, "ERRO SINTATICO: %s \n", s);
 }
 
-int main(int argc, char* argv[]){
-    if(argc == 2){
-        FILE* f = fopen(argv[1],"r");
-        FILE* out = fopen("a.mv", "w");
-        if (f == NULL || out == NULL){
-            printf("Error opening file!\n");
-            exit(1);
-        }
-
-        char codigo[1024*1024];
-
-        fprintf(out, "start\n"); 
-        yyparse();
-
-        fprintf(out, "stop\n");
-        
-
-        fclose(f); fclose(out);
+int main(){
+    FILE* out = fopen("a.mv", "w");
+    if (out == NULL){
+        printf("Error opening file!\n");
+        exit(1);
     }
+
+    char codigo[1024*1024];
+
+    fprintf(out, "start\n"); 
+    yyparse();
+    fprintf(out, "stop\n");
+
+    fclose(out);
     return(0);
 }
 

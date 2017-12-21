@@ -4,7 +4,7 @@
 
 %%
 #.*$                        { return(COM); }
-\"[^"]*\"                   { yyval.s return(STR); }
+\"[^"]*\"                   { yylval.s = strdup(yytext); return(STR); }
 [ ]+e[ ]+                   { return(E); }
 [ ]+ou[ ]+                  { return(OU); }
 ==                          { return(EQ); }
@@ -16,9 +16,9 @@ se|SE                       { return(SE); }
 senao|SENAO                 { return(SENAO); }
 caso|CASO                   { return(CASO); }
 enq|ENQ                     { return(ENQ); }
-int\ *\*?|void\ *\*?        { return(TIPO); }
-[0-9]+                      { return(NUM); }
-[a-zA-Z][a-zA-Z0-9]*        { return(VAR); }
+int\ *\*?|void\ *\*?        { yylval.s = strdup(yytext); return(TIPO); }
+[0-9]+                      { yylval.i = atoi(yytext); return(NUM); }
+[a-zA-Z][a-zA-Z0-9]*        { yylval.s = strdup(yytext); return(VAR); }
 [ \t\n]                     { ; }
 .                           { printf("Caracter invalido %c\n", yytext[0]); }
 %%

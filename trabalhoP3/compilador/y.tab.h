@@ -47,57 +47,51 @@ extern int yydebug;
   {
     SE = 258,
     SENAO = 259,
-    VERDADE = 260,
-    FALSO = 261,
-    CASO = 262,
-    ENQ = 263,
-    VAR = 264,
-    TIPO = 265,
-    NUM = 266,
-    COMPL = 267,
-    FUNL = 268,
-    EQ = 269,
-    NEQ = 270,
-    LEQ = 271,
-    GEQ = 272,
-    E = 273,
-    OU = 274,
-    STR = 275,
-    COM = 276
+    CASO = 260,
+    ENQ = 261,
+    VAR = 262,
+    TIPO = 263,
+    NUM = 264,
+    EQ = 265,
+    NEQ = 266,
+    LEQ = 267,
+    GEQ = 268,
+    E = 269,
+    OU = 270,
+    STR = 271,
+    COM = 272
   };
 #endif
 /* Tokens.  */
 #define SE 258
 #define SENAO 259
-#define VERDADE 260
-#define FALSO 261
-#define CASO 262
-#define ENQ 263
-#define VAR 264
-#define TIPO 265
-#define NUM 266
-#define COMPL 267
-#define FUNL 268
-#define EQ 269
-#define NEQ 270
-#define LEQ 271
-#define GEQ 272
-#define E 273
-#define OU 274
-#define STR 275
-#define COM 276
+#define CASO 260
+#define ENQ 261
+#define VAR 262
+#define TIPO 263
+#define NUM 264
+#define EQ 265
+#define NEQ 266
+#define LEQ 267
+#define GEQ 268
+#define E 269
+#define OU 270
+#define STR 271
+#define COM 272
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 9 "galo.y" /* yacc.c:1909  */
+#line 23 "galo.y" /* yacc.c:1909  */
 
   int i;
   char *s;
+  Variavel var;
+  Expressao expr; 
 
-#line 101 "y.tab.h" /* yacc.c:1909  */
+#line 95 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
