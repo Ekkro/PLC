@@ -94,8 +94,8 @@ union YYSTYPE
 {
 #line 9 "galo.y" /* yacc.c:1909  */
 
-  int vali;
-  char *vals;
+  int i;
+  char *s;
 
 #line 101 "y.tab.h" /* yacc.c:1909  */
 };

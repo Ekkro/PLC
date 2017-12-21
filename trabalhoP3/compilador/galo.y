@@ -4,12 +4,21 @@
 
     int yylex();
     int yyerror();
+
+    struct variavel{
+        char* designacao;
+        char* valor;
+        char* tipo;
+        int posicaoStack;
+    }
 %}
 
 %union{
   int i;
   char *s;
 }
+
+
 
 
 %token SE SENAO VERDADE FALSO CASO ENQ VAR TIPO NUM COMPL FUNL EQ NEQ LEQ GEQ E OU STR COM
@@ -25,9 +34,9 @@ Prog    : SE Cond '{' Prog '}' Se               { ; }
         | VAR '[' Expr ']' '=' Expr ';' Prog    { ; }
         | TIPO VAR Ltipo '{' Prog '}' Prog      { ; }
         | VAR Lexpr ';' Prog                    { ; }
-        | ';' Prog                              { ; }
-        | COM Prog                              { ; }
-        |                                       { ; }
+        | ';' Prog                              { $$ = $2; } /*check*/
+        | COM Prog                              { $$ = $2; } /*check*/
+        |                                       { ; } /*check*/
         ;
 
 Eatrib  : VAR                                   { ; }
@@ -95,10 +104,14 @@ int yyerror(char *s){
     fprintf(stderr, "ERRO SINTATICO: %s \n", s);
 }
 
-int main(){
-    printf("start\n"); 
-    yyparse();
-    printf("stop\n"); 
+int main(int argc, char* argv[]){
+    if(argc == 2){
+        f1 = fopen(argv[0]);
+
+        printf("start\n"); 
+        yyparse();
+        printf("stop\n"); 
+    }
     return(0);
 }
 
