@@ -99,12 +99,12 @@ Prog    : SE Cond '{' Prog '}' Se               { ; }
         |                                       { ; } /*check*/
         ;
 
-Eatrib  : VAR                                   { createvar(tipo,$1,0,1,topo++); fprintf(out, "push"); }
-        | VAR '[' NUM ']'                       { if($3>0){createvar(tipo,$1,0,$3,topo++);}      ; }
-        | VAR '=' Expr                          { ; }
-        | VAR '[' NUM ']' '=' Expr              { ; }
-        | Eatrib ',' VAR '=' Expr               { ; }
-        | Eatrib ',' VAR                        { ; }
+Eatrib  : VAR                                   { if(isapontador(tipo)){   		}else{createvar(tipo,$1,0,1,topo++); 	fprintf(out, "push"tipo[1]" 0");   }}
+        | VAR '[' NUM ']'                       { if($3>0){if(isapontador(tipo)){   	}else{createvar(tipo,$1,0,$3,topo++); 	fprintf(out, "push");		   }}}  	//que tipo de push? pushn?
+        | VAR '=' Expr                          { if(isapontador(tipo)){   		}else{createvar(tipo,$1,$3,1,topo++); 	fprintf(out, "push"tipo[1]" "$3);  }}  		//como printo push $3?
+        | VAR '[' NUM ']' '=' Expr              { if($3>0){if(isapontador(tipo)){   	}else{createvar(tipo,$1,$6,$3,topo++); 	fprintf(out, "push"tipo[1]" "$3);  }}}		//mistura dos acima
+        | Eatrib ',' VAR '=' Expr               { if(isapontador(tipo)){   		}else{createvar(tipo,$3,$5,1,topo++); 	fprintf(out, "push"tipo[1]);       }}		//mistura dos acima
+        | Eatrib ',' VAR                        { if(isapontador(tipo)){   		}else{createvar(tipo,$3,0,1,topo++); 	fprintf(out, "push"tipo[1]" 0");   }}
         ;
 
 /*lista de expressoes*/
