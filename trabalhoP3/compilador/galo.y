@@ -4,13 +4,15 @@
 
     int yylex();
     int yyerror();
+    int topo = 0;
 
     typedef struct variavel{
         char* tipo;
         char* designacao;
-        char* valor;
+        void* valor;    //o artur explica: "É à macho"
+	int   quantelem;
         int posicaoStack;
-    } Variavel;
+    } *Variavel;
 
     typedef struct expressao{
         char* tipo;
@@ -18,6 +20,51 @@
         int posicaoStack;
     } Expressao;
 
+    Variavel v[1024] = {0};
+    int quantidade = 0;
+
+    int insere (Variavel var, Variavel v[],int N){
+	if(N>=1024)return -1;
+	
+	int x;
+	for(x = 0; x<1024 ; x++){
+		if(v[x]==NULL)break;	 
+	}
+	v[x]=var;
+	return N++;
+    }
+    int remove (Variavel var, Variavel v[], int N){
+	if(N==0)return -1;
+	int x , y = 0;
+	for(x = 0; x<1024 && y<N ; x++){
+		if(v[x]!=NULL)y++;
+		if(v[x]->posicaoStack == var->posicaoStack){
+			v[x]=NULL;
+			return N--;
+		}
+	}
+	return -1;
+    }
+
+    Variavel createvar (char* tipo, char* designacao , void valor,int quantelem, int posicaoStack){
+	struct variavel var;
+	var.tipo = tipo;
+	var.designacao = designacao;
+	var.valor = &valor;
+	var.quantelem = quantelem;
+	var.posicaoStack = posicaoStack;
+	return &var;
+    }
+
+    void alteraValor (Variavel var, void valor){
+	var->valor=&valor;
+    }	
+
+    int isapontador (char* t){
+	int i;
+	for (i=0; t[i]!='\0'; i++);
+	return t[i-1]=='*';
+    }
 %}
 
 %union{
@@ -42,7 +89,7 @@
 %%
 Prog    : SE Cond '{' Prog '}' Se               { ; }
         | ENQ Cond '{' Prog '}' Prog            { ; }
-        | TIPO Eatrib ';' Prog                  { ; }
+        | TIPO Eatrib ';' Prog                  { char* tipo = $1; }
         | VAR '=' Expr ';' Prog                 { ; }
         | VAR '[' Expr ']' '=' Expr ';' Prog    { ; }
         | TIPO VAR Ltipo '{' Prog '}' Prog      { ; }
@@ -52,10 +99,10 @@ Prog    : SE Cond '{' Prog '}' Se               { ; }
         |                                       { ; } /*check*/
         ;
 
-Eatrib  : VAR                                   { ; }
-        | VAR '[' Expr ']'                      { ; }
+Eatrib  : VAR                                   { createvar(tipo,$1,0,1,topo++); fprintf(out, "push"); }
+        | VAR '[' NUM ']'                       { if($3>0){createvar(tipo,$1,0,$3,topo++);}      ; }
         | VAR '=' Expr                          { ; }
-        | VAR '[' Expr ']' '=' Expr             { ; }
+        | VAR '[' NUM ']' '=' Expr              { ; }
         | Eatrib ',' VAR '=' Expr               { ; }
         | Eatrib ',' VAR                        { ; }
         ;
@@ -99,13 +146,16 @@ Expr    : VAR                                   { ; }
         | NUM                                   { ; }
         | VAR '[' Expr ']'                      { ; }
         | VAR Lexpr                             { ; }
-        | Expr '+' Expr                         { ; }
-        | Expr '-' Expr                         { ; }
-        | Expr '*' Expr                         { ; }
-        | Expr '/' Expr                         { ; }
-        | Expr '%' Expr                         { ; }
+        | Expr Cexpr	                        { ; }
         | STR                                   { ; }
         ;
+
+Cexpr	: '+' Expr				{ ; }
+	| '-' Expr				{ ; }
+	| '*' Expr				{ ; }
+	| '/' Expr				{ ; }
+	| '%' Expr				{ ; }
+	;
 
 %%
 
@@ -122,7 +172,7 @@ int main(){
         exit(1);
     }
 
-    char codigo[1024*1024];
+    //char codigo[1023*1024];
 
     fprintf(out, "start\n"); 
     yyparse();
