@@ -1,17 +1,18 @@
 %{
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
     int yylex();
     int yyerror();
     int topo = 0;
+    FILE* out;
 
     typedef struct variavel{
         char* tipo;
         char* designacao;
-        void* valor;    //o artur explica: "É à macho"
-	int   quantelem;
-        int posicaoStack;
+        void* valor;    
+        int   posicaoStack;
     } *Variavel;
 
     typedef struct expressao{
@@ -21,49 +22,61 @@
     } Expressao;
 
     Variavel v[1024] = {0};
-    int quantidade = 0;
+    int quant = 0;
 
-    int insere (Variavel var, Variavel v[],int N){
-	if(N>=1024)return -1;
+
+
+    int insereVar (Variavel var, Variavel v[], int N){
+	    if(N>=1024)return -1;
 	
-	int x;
-	for(x = 0; x<1024 ; x++){
-		if(v[x]==NULL)break;	 
-	}
-	v[x]=var;
-	return N++;
-    }
-    int remove (Variavel var, Variavel v[], int N){
-	if(N==0)return -1;
-	int x , y = 0;
-	for(x = 0; x<1024 && y<N ; x++){
-		if(v[x]!=NULL)y++;
-		if(v[x]->posicaoStack == var->posicaoStack){
-			v[x]=NULL;
-			return N--;
-		}
-	}
-	return -1;
+    	int x;
+    	for(x = 0; x<1024 ; x++){
+    		if(v[x]==NULL)break;	 
+    	}
+    	v[x]=var;
+    	return N++;
     }
 
-    Variavel createvar (char* tipo, char* designacao , void valor,int quantelem, int posicaoStack){
-	struct variavel var;
-	var.tipo = tipo;
-	var.designacao = designacao;
-	var.valor = &valor;
-	var.quantelem = quantelem;
-	var.posicaoStack = posicaoStack;
-	return &var;
+    int removeVar (Variavel var, Variavel v[], int N){
+	    if(N==0)return -1;
+	    int x , y = 0;
+	    for(x = 0; x<1024 && y<N ; x++){
+    		if(v[x]!=NULL)y++;
+	    	if(v[x]->posicaoStack == var->posicaoStack){
+	    		v[x]=NULL;
+    			return N--;
+    		}
+    	}
+    	return -1;
     }
 
-    void alteraValor (Variavel var, void valor){
-	var->valor=&valor;
+    Variavel criaVar (char* tipo, char* designacao , void* valor, int posicaoStack){
+    	Variavel var = (Variavel)malloc(sizeof(struct variavel));
+    	var->tipo = tipo;
+    	var->designacao = designacao;
+    	var->valor = valor;
+    	var->posicaoStack = posicaoStack;
+    	return var;
+    }
+
+    void alteraValor (Variavel var, void* valor){
+    	var->valor = valor;
     }	
 
     int isapontador (char* t){
-	int i;
-	for (i=0; t[i]!='\0'; i++);
-	return t[i-1]=='*';
+	    int i;
+	    for (i=0; t[i]!='\0'; i++);
+	    return t[i-1]=='*';
+    }
+
+    void atualizaTipoVar(char* tipo, Variavel v[], int N){
+        int i, q;
+        for(i=0; q<N && i<1024; i++){
+            if(v[i]!=NULL)q++;
+            if(strcmp(v[i]->tipo,"indef")==0){
+                v[i]->tipo = tipo;
+            }
+        }
     }
 %}
 
@@ -89,7 +102,7 @@
 %%
 Prog    : SE Cond '{' Prog '}' Se               { ; }
         | ENQ Cond '{' Prog '}' Prog            { ; }
-        | TIPO Eatrib ';' Prog                  { char* tipo = $1; }
+        | TIPO Eatrib ';' Prog                  { atualizaTipoVar($1,v,quant);}
         | VAR '=' Expr ';' Prog                 { ; }
         | VAR '[' Expr ']' '=' Expr ';' Prog    { ; }
         | TIPO VAR Ltipo '{' Prog '}' Prog      { ; }
@@ -99,12 +112,12 @@ Prog    : SE Cond '{' Prog '}' Se               { ; }
         |                                       { ; } /*check*/
         ;
 
-Eatrib  : VAR                                   { if(isapontador(tipo)){   		}else{createvar(tipo,$1,0,1,topo++); 	fprintf(out, "push"tipo[1]" 0");   }}
-        | VAR '[' NUM ']'                       { if($3>0){if(isapontador(tipo)){   	}else{createvar(tipo,$1,0,$3,topo++); 	fprintf(out, "pushn"$3);	   }}}  	//que tipo de push? pushn?
-        | VAR '=' Expr                          { if(isapontador(tipo)){   		}else{createvar(tipo,$1,$3,1,topo++); 	fprintf(out, "push"tipo[1]" "$3);  }}  		//como printo push $3?
-        | VAR '[' NUM ']' '=' Expr              { if($3>0){if(isapontador(tipo)){   	}else{createvar(tipo,$1,$6,$3,topo++); 	fprintf(out, "pushn"$3);          }}}		//mistura dos acima
-        | Eatrib ',' VAR '=' Expr               { if(isapontador(tipo)){   		}else{createvar(tipo,$3,$5,1,topo++); 	fprintf(out, "push"tipo[1]);       }}		//mistura dos acima
-        | Eatrib ',' VAR                        { if(isapontador(tipo)){   		}else{createvar(tipo,$3,0,1,topo++); 	fprintf(out, "push"tipo[1]" 0");   }}
+Eatrib  : VAR                                   { int val = 0; insereVar(criaVar("indef",$1,&val,topo++), v, quant++); }
+        | VAR '[' Expr ']'                      { ; }
+        | VAR '=' Expr                          { ; }
+        | VAR '[' Expr ']' '=' Expr             { ; }
+        | Eatrib ',' VAR '=' Expr               { ; }
+        | Eatrib ',' VAR                        { ; }
         ;
 
 /*lista de expressoes*/
@@ -142,21 +155,21 @@ Cond    : NUM                                   { ; }
         | '!' Cond                              { ; }
         ;
 
-Expr    : VAR                                   { ; }
+Sexpr   : VAR                                   { ; }
         | NUM                                   { ; }
         | VAR '[' Expr ']'                      { ; }
         | VAR Lexpr                             { ; }
-        | Expr Cexpr	                        { ; }
         | STR                                   { ; }
         ;
 
-Cexpr	: '+' Expr				{ ; }
-	| '-' Expr				{ ; }
-	| '*' Expr				{ ; }
-	| '/' Expr				{ ; }
-	| '%' Expr				{ ; }
-	;
-
+Expr	: Expr '+' Sexpr          			    { ; }
+        | Expr '-' Sexpr       		            { ; }
+        | Expr '*' Sexpr       		            { ; }
+        | Expr '/' Sexpr       		            { ; }
+        | Expr '%' Sexpr       		            { ; }
+        | '(' Expr ')'                          { ; }
+        | Sexpr                                 { ; }
+        ;
 %%
 
 #include "galo.c"
@@ -166,12 +179,11 @@ int yyerror(char *s){
 }
 
 int main(){
-    FILE* out = fopen("a.mv", "w");
+    out = fopen("a.mv", "w");
     if (out == NULL){
         printf("Error opening file!\n");
         exit(1);
     }
-
     //char codigo[1023*1024];
 
     fprintf(out, "start\n"); 
