@@ -1,2 +1,2 @@
-int i;
+char* a,b,c,d,e;
 

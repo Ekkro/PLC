@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define MAX 1024
 
     int yylex();
     int yyerror();
-    int topo = 0;
+    int topo = 0, ZERO = 0;
     FILE* out;
 
     typedef struct variavel{
@@ -17,33 +18,32 @@
 
     typedef struct expressao{
         char* tipo;
-        char* valor;
-        int posicaoStack;
+        void* valor;
     } Expressao;
 
-    Variavel v[1024] = {0};
+    Variavel v[MAX] = {0};
     int quant = 0;
 
 
 
     int insereVar (Variavel var, Variavel v[], int N){
-	    if(N>=1024)return -1;
+	    if(N>=MAX) return -1;
 	
     	int x;
-    	for(x = 0; x<1024 ; x++){
-    		if(v[x]==NULL)break;	 
+    	for(x = 0; x<MAX ; x++){
+    		if(v[x]==NULL) break;	 
     	}
-    	v[x]=var;
+    	v[x] = var;
     	return N++;
     }
 
     int removeVar (Variavel var, Variavel v[], int N){
 	    if(N==0)return -1;
 	    int x , y = 0;
-	    for(x = 0; x<1024 && y<N ; x++){
-    		if(v[x]!=NULL)y++;
+	    for(x = 0; x<MAX && y<N ; x++){
+    		if(v[x]!=NULL) y++;
 	    	if(v[x]->posicaoStack == var->posicaoStack){
-	    		v[x]=NULL;
+	    		v[x] = NULL;
     			return N--;
     		}
     	}
@@ -71,10 +71,42 @@
 
     void atualizaTipoVar(char* tipo, Variavel v[], int N){
         int i, q;
-        for(i=0; q<N && i<1024; i++){
-            if(v[i]!=NULL)q++;
+        for(i=0; q<N && i<MAX; i++){
+            if(v[i]!=NULL) q++;
             if(strcmp(v[i]->tipo,"indef")==0){
                 v[i]->tipo = tipo;
+            }
+        }
+    }
+
+    char* removeEspacos(char* s){
+        int i = 0, j = 0;
+        while(s[j]!='\0'){
+            while(s[j]==' '){j++;}
+            if(s[j]=='\0') break;
+            s[i] = s[j];
+            i++;j++;
+        }
+        s[i] = '\0';
+        return s;
+    }
+
+    void pushVarInd(FILE* f, char* tipo, Variavel v[], int N){
+        int i, q;
+        for(i=0; q<N && i<MAX; i++){
+            if(v[i]!=NULL){
+                q++;
+                if(strcmp(v[i]->tipo,"indef")==0){
+                    if(strcmp(tipo,"int")==0){
+                        fprintf(f, "pushi %d\n",*(int*)(v[i]->valor) );
+                    }else if(strcmp(tipo,"char")==0){
+                        fprintf(f, "pushs \"%c\"\n",*(char*)(v[i]->valor) );
+                    }else if(strcmp(tipo,"int*")==0){
+                        fprintf(f, "pushi %d\n",*(int*)(v[i]->valor) );
+                    }else if(strcmp(tipo,"char*")==0){
+                        fprintf(f, "pushs %s\n",*(char**)(v[i]->valor) );
+                    }
+                }
             }
         }
     }
@@ -83,8 +115,6 @@
 %union{
   int i;
   char *s;
-  Variavel var;
-  Expressao expr; 
 }
 
 
@@ -102,7 +132,7 @@
 %%
 Prog    : SE Cond '{' Prog '}' Se               { ; }
         | ENQ Cond '{' Prog '}' Prog            { ; }
-        | TIPO Eatrib ';' Prog                  { atualizaTipoVar($1,v,quant);}
+        | TIPO Eatrib ';' Prog                  { pushVarInd(out, $1, v, quant); atualizaTipoVar($1, v, quant); }
         | VAR '=' Expr ';' Prog                 { ; }
         | VAR '[' Expr ']' '=' Expr ';' Prog    { ; }
         | TIPO VAR Ltipo '{' Prog '}' Prog      { ; }
@@ -112,12 +142,12 @@ Prog    : SE Cond '{' Prog '}' Se               { ; }
         |                                       { ; } /*check*/
         ;
 
-Eatrib  : VAR                                   { int val = 0; insereVar(criaVar("indef",$1,&val,topo++), v, quant++); }
+Eatrib  : VAR                                   { insereVar(criaVar("indef",$1,&ZERO,topo++), v, quant++); }
         | VAR '[' Expr ']'                      { ; }
         | VAR '=' Expr                          { ; }
         | VAR '[' Expr ']' '=' Expr             { ; }
         | Eatrib ',' VAR '=' Expr               { ; }
-        | Eatrib ',' VAR                        { ; }
+        | Eatrib ',' VAR                        { insereVar(criaVar("indef",$3,&ZERO,topo++), v, quant++); }
         ;
 
 /*lista de expressoes*/

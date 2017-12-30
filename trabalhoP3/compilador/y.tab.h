@@ -84,14 +84,12 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 83 "galo.y" /* yacc.c:1909  */
+#line 115 "galo.y" /* yacc.c:1909  */
 
   int i;
   char *s;
-  Variavel var;
-  Expressao expr; 
 
-#line 95 "y.tab.h" /* yacc.c:1909  */
+#line 93 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
