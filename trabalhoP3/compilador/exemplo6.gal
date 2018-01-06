@@ -1,14 +1,16 @@
-int N =  leri();
+int N = leri();
 int i = 0;
 int a = 0;
 int v[N];
+
 enq (i < N){
-	v[i]= leri();
-	i = i + 1;
+	v[i] = leri();
+	i = (i + 1);
 }
+
 enq(i > 0){
-	a = v[i-1];
+	a = v[(i-1)];
 	escreveri(a);
 	escrevers("\n");
-	i = i-1;
+	i = (i-1);
 }

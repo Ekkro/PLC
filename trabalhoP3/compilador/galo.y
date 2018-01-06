@@ -118,9 +118,7 @@
 }
 
 
-
-
-%token SE SENAO CASO ENQ VAR TIPO NUM EQ NEQ LEQ GEQ E OU STR COM
+%token SE SENAO CASO ENQ VAR TIPO NUM EQ NEQ LEQ GEQ E OU STR COM RETURN
 
 %type<i> NUM
 %type<s> VAR TIPO STR
@@ -130,16 +128,28 @@
 
 
 %%
-Prog    : SE Cond '{' Prog '}' Se               { ; }
-        | ENQ Cond '{' Prog '}' Prog            { ; }
-        | TIPO Eatrib ';' Prog                  { pushVarInd(out, $1, v, quant); atualizaTipoVar($1, v, quant); }
-        | VAR '=' Expr ';' Prog                 { ; }
-        | VAR '[' Expr ']' '=' Expr ';' Prog    { ; }
-        | TIPO VAR Ltipo '{' Prog '}' Prog      { ; }
-        | VAR Lexpr ';' Prog                    { ; }
-        | ';' Prog                              { $$ = $2; } /*check*/
-        | COM Prog                              { $$ = $2; } /*check*/
-        |                                       { ; } /*check*/
+ProgG   : ProgG SE Cond '{' ProgG '}' Se        { printf("se\n"); }
+        | ProgG ENQ Cond '{' ProgG '}'          { printf("enquanto\n"); }
+        | ProgG TIPO Eatrib ';'                 { printf("inicializa var\n"); pushVarInd(out, $2, v, quant); atualizaTipoVar($2, v,quant); }
+        | ProgG VAR '=' Expr ';'                { printf("atualiza var\n"); }
+        | ProgG VAR '[' Expr ']' '=' Expr ';'   { printf("atualiza vetor\n"); }
+        | ProgG TIPO VAR Ltipo '{' Prog '}'     { printf("declarar funcao\n"); }
+        | ProgG VAR Lexpr ';'                   { printf("chamar funcao\n"); }
+        | ProgG ';'                             { printf("; desnecessario\n"); } 
+        | ProgG COM                             { printf("comentario\n"); } 
+        |                                       { printf("inicio\n"); } 
+        ;
+
+Prog    : Prog SE Cond '{' Prog '}' Se          { printf("se\n"); }
+        | Prog ENQ Cond '{' Prog '}'            { printf("enquanto\n"); }
+        | Prog TIPO Eatrib ';'                  { printf("inicializa var\n"); pushVarInd(out, $2, v, quant); atualizaTipoVar($2, v,quant); }
+        | Prog VAR '=' Expr ';'                 { printf("atualiza var\n"); }
+        | Prog VAR '[' Expr ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
+        | Prog VAR Lexpr ';'                    { printf("chamar funcao\n"); }
+        | Prog ';'                              { printf("; desnecessario\n"); } 
+        | Prog COM                              { printf("comentario\n"); } 
+        | Prog RETURN Expr ';'                  { printf("return\n"); }
+        |                                       { printf("inicio\n"); } 
         ;
 
 Eatrib  : VAR                                   { insereVar(criaVar("indef",$1,&ZERO,topo++), v, quant++); }
@@ -168,9 +178,9 @@ Etipo   : TIPO VAR                              { ; }
         | Etipo ',' TIPO VAR                    { ; }
         ;
 
-Se      : Prog                                  { ; }
-        | CASO Cond '{' Prog '}' SE             { ; }
-        | SENAO '{' Prog '}' Prog               { ; }
+Se      :                                       { ; }
+        | CASO Cond '{' Prog '}' Se             { ; }
+        | SENAO '{' Prog '}'                    { ; }
         ;
 
 Cond    : NUM                                   { ; }
@@ -192,11 +202,11 @@ Sexpr   : VAR                                   { ; }
         | STR                                   { ; }
         ;
 
-Expr	: Expr '+' Sexpr          			    { ; }
-        | Expr '-' Sexpr       		            { ; }
-        | Expr '*' Sexpr       		            { ; }
-        | Expr '/' Sexpr       		            { ; }
-        | Expr '%' Sexpr       		            { ; }
+Expr	: '(' Expr '+' Expr ')'    			    { ; }
+        | '(' Expr '-' Expr ')'  	            { ; }
+        | '(' Expr '*' Expr ')'    	            { ; }
+        | '(' Expr '/' Expr ')'    	            { ; }
+        | '(' Expr '%' Expr ')'    	            { ; }
         | '(' Expr ')'                          { ; }
         | Sexpr                                 { ; }
         ;
@@ -215,10 +225,17 @@ int main(){
         exit(1);
     }
     //char codigo[1023*1024];
-
     fprintf(out, "start\n"); 
     yyparse();
     fprintf(out, "stop\n");
+    
+    int i, q = 0;
+    for(i=0;i<MAX && q<quant ;i++){
+        if(v[i]!=NULL){
+            q++;
+            printf("%s\n",v[i]->designacao);
+        }
+    }
 
     fclose(out);
     return(0);

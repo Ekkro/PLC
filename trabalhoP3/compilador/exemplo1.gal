@@ -1,5 +1,3 @@
-int a,b,c,d;
-
 int a = leri();
 int b = leri();
 int c = leri();

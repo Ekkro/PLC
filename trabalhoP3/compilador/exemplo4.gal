@@ -5,11 +5,11 @@ int r = 0;
 int i = leri();
 
 enq(i != 0){
-	r = i % 2;
+	r = (i % 2);
 	se (r == 1){
-		cont = cont + 1;
+		cont = (cont + 1);
 		escreveri(i);
-	}
+  }
 escrevers("Foram lidos ");
 esvreveri(cont);
 excrevers(" impares \n");

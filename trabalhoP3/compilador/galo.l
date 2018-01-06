@@ -16,6 +16,7 @@ se|SE                       { return(SE); }
 senao|SENAO                 { return(SENAO); }
 caso|CASO                   { return(CASO); }
 enq|ENQ                     { return(ENQ); }
+return                      { return(RETURN); }
 int\ *\*?|char\ *\*?        { yylval.s = strdup(removeEspacos(yytext)); return(TIPO); }
 [0-9]+                      { yylval.i = atoi(yytext); return(NUM); }
 [a-zA-Z][a-zA-Z0-9]*        { yylval.s = strdup(yytext); return(VAR); }

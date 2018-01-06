@@ -1,2 +1,3 @@
-char* a,b,c,d,e;
+#ola
+int a=0,b=203,c=a,d=1+2,e=3+(b*d);
 
