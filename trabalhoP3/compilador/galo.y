@@ -25,8 +25,24 @@
     int quant = 0;
 
 
+    
+    int removeVarDesig (char* designacao, Variavel v[], int N){
+	    if(N==0)return -1;
+	    int x , y = 0;
+	    for(x = 0; x<MAX && y<N ; x++){
+    		if(v[x]!=NULL) y++;
+	    	if(strcmp(v[x]->designacao, designacao)==0){
+	    		v[x] = NULL;
+    			return N--;
+    		}
+    	}
+        return -1;
+
+    }
+
 
     int insereVar (Variavel var, Variavel v[], int N){
+        N = removeVarDesig(var->designacao,v,N);
 	    if(N>=MAX) return -1;
 	
     	int x;
@@ -51,6 +67,7 @@
     }
 
     Variavel criaVar (char* tipo, char* designacao , void* valor, int posicaoStack){
+        
     	Variavel var = (Variavel)malloc(sizeof(struct variavel));
     	var->tipo = tipo;
     	var->designacao = designacao;
@@ -110,6 +127,18 @@
             }
         }
     }
+   
+    Variavel procuraDesig(char* designacao, Variavel v[], int N){
+        int i ,q = 0;
+        for(i=0; q<N && i<MAX; i++){
+            if(v[i]!=NULL) q++;
+            if(strcmp(v[i]->designacao,designacao)==0){
+                return v[i];
+            }
+        }
+        return NULL;
+        
+    }
 %}
 
 %union{
@@ -154,7 +183,7 @@ Prog    : Prog SE Cond '{' Prog '}' Se          { printf("se\n"); }
 
 Eatrib  : VAR                                   { insereVar(criaVar("indef",$1,&ZERO,topo++), v, quant++); }
         | VAR '[' Expr ']'                      { ; }
-        | VAR '=' Expr                          { ; }
+        | VAR '=' Expr                          { insereVar(criaVar("indef",$1,&ZERO,topo++), v, quant++); }
         | VAR '[' Expr ']' '=' Expr             { ; }
         | Eatrib ',' VAR '=' Expr               { ; }
         | Eatrib ',' VAR                        { insereVar(criaVar("indef",$3,&ZERO,topo++), v, quant++); }
@@ -183,30 +212,30 @@ Se      :                                       { ; }
         | SENAO '{' Prog '}'                    { ; }
         ;
 
-Cond    : NUM                                   { ; }
-        | '(' Expr EQ Expr ')'                  { ; }
-        | '(' Expr NEQ Expr ')'                 { ; }
-        | '(' Expr '<' Expr ')'                 { ; }
-        | '(' Expr '>' Expr ')'                 { ; }
-        | '(' Expr LEQ Expr ')'                 { ; }
-        | '(' Expr GEQ Expr ')'                 { ; }
-        | '(' Cond E Cond ')'                   { ; }
-        | '(' Cond OU Cond ')'                  { ; }
-        | '!' Cond                              { ; }
+Cond    : NUM                                   { fprintf(out,"pushi %d\n",abs($1)); }
+        | '(' Expr EQ Expr ')'                  { fprintf(out,"equal\n"); }
+        | '(' Expr NEQ Expr ')'                 { fprintf(out,"equal\npushi 0\nequal\n"); }
+        | '(' Expr '<' Expr ')'                 { fprintf(out,"inf\n"); }
+        | '(' Expr '>' Expr ')'                 { fprintf(out,"sup\n"); }
+        | '(' Expr LEQ Expr ')'                 { fprintf(out,"infeq\n"); }
+        | '(' Expr GEQ Expr ')'                 { fprintf(out,"supeq\n"); }
+        | '(' Cond E Cond ')'                   { fprintf(out,"mul\n"); }
+        | '(' Cond OU Cond ')'                  { fprintf(out,"add\n"); }
+        | '!' Cond                              { fprintf(out,"pushi 0\nequal\n"); }
         ;
 
-Sexpr   : VAR                                   { ; }
-        | NUM                                   { ; }
+Sexpr   : VAR                                   { fprintf(out,"pushg %d\n",procuraDesig($1,v,quant)->posicaoStack); }
+        | NUM                                   { fprintf(out,"pushi %d\n", $1); }
         | VAR '[' Expr ']'                      { ; }
         | VAR Lexpr                             { ; }
-        | STR                                   { ; }
+        | STR                                   { fprintf(out,"pushs %s\n", $1); }
         ;
 
-Expr	: '(' Expr '+' Expr ')'    			    { ; }
-        | '(' Expr '-' Expr ')'  	            { ; }
-        | '(' Expr '*' Expr ')'    	            { ; }
-        | '(' Expr '/' Expr ')'    	            { ; }
-        | '(' Expr '%' Expr ')'    	            { ; }
+Expr	: '(' Expr '+' Expr ')'    			    { fprintf(out,"add\n"); }
+        | '(' Expr '-' Expr ')'  	            { fprintf(out,"sub\n"); }
+        | '(' Expr '*' Expr ')'    	            { fprintf(out,"mul\n"); }
+        | '(' Expr '/' Expr ')'    	            { fprintf(out,"div\n"); }
+        | '(' Expr '%' Expr ')'    	            { fprintf(out,"mod\n"); }
         | '(' Expr ')'                          { ; }
         | Sexpr                                 { ; }
         ;

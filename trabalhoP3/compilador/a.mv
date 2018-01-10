@@ -1,2 +1,15 @@
 start
+pushg 0
+pushg 1
+equal
+pushg 1
+pushg 2
+equal
+pushg 2
+pushg 3
+equal
+mul
+mul
+pushs "E um quadrado\n"
+pushs "nao e um quadrado\n"
 stop

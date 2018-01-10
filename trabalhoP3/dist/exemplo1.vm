@@ -1,0 +1,47 @@
+pushi 0
+read
+atoi
+storeg 0
+
+pushi 1
+read
+atoi
+storeg 1
+
+pushi 2
+read
+atoi
+storeg 2
+
+pushi 3
+read
+atoi
+storeg 3
+
+pushg 0
+pushg 1
+equal
+
+pushg 1
+pushg 2
+equal
+
+mul
+
+pushg 2
+pushg 3
+equal
+
+mul
+
+jz senao1
+pushs "e um quad"
+writes
+
+jump fimse1
+senao1:
+pushs "nao e um quad"
+writes
+
+fimse1:
+stop
