@@ -1,0 +1,7 @@
+pushi 5
+allocn
+
+
+pushg 0
+pushi 4
+store 2
