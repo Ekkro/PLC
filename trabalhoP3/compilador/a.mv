@@ -1,35 +1,3 @@
 start
-pushs "Vao se ler os 5 primeiros numeros\n"
-writes
 pushi 0
-pushi 5
-storeg 0
-pushi 0
-pushi 0
-storeg 1
-pushi 0
-pushi 1
-storeg 2
-enq0:
-pushg 1
-pushg 0
-inf
-jz fimenq0
-pushg 2
-read
-atoi
-mul
-storeg 2
-pushg 1
-pushi 1
-add
-storeg 1
-jump enq0
-fimenq0:
-pushs "o produtorio desta sequencia de 5 numeros e "
-writes
-pushg 2
-writei
-pushs "\n"
-writes
 stop

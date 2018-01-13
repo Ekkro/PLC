@@ -1,4 +1,4 @@
-int troca(int* v, int i, int j){
+int troca(int v, int i, int j){
     int k = v[i];
     v[i] = v[j];
     v[j] = k;

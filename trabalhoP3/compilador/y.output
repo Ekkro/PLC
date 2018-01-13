@@ -9,116 +9,126 @@ Grammar
     2      | ProgG Enq
     3      | ProgG Atrib ';'
     4      | ProgG VAR '=' Expr ';'
-    5      | ProgG VAR '[' Expr ']' '=' Expr ';'
-    6      | ProgG TIPO VAR Ltipo '{' Prog '}'
+    5      | ProgG VAR '[' NUM ']' '=' Expr ';'
+    6      | ProgG TIPO VAR Ltipo '{' ProgF '}'
     7      | ProgG Funcao ';'
     8      | ProgG ';'
     9      | ProgG COM
    10      | %empty
 
-   11 Prog: Prog SE Cond '{' Prog '}' Se
-   12     | Prog ENQ Cond '{' Prog '}'
-   13     | Prog Atrib ';'
-   14     | Prog VAR '=' Expr ';'
-   15     | Prog VAR '[' Expr ']' '=' Expr ';'
-   16     | Prog Funcao ';'
-   17     | Prog ';'
-   18     | Prog COM
-   19     | Prog RETURN Expr ';'
-   20     | %empty
+   11 ProgF: ProgF Se
+   12      | ProgF Enq
+   13      | ProgF Atrib ';'
+   14      | ProgF VAR '=' Expr ';'
+   15      | ProgF VAR '[' NUM ']' '=' Expr ';'
+   16      | ProgF Funcao ';'
+   17      | ProgF ';'
+   18      | ProgF COM
+   19      | ProgF RETURN Expr ';'
+   20      | %empty
 
-   21 Funcao: VAR Lexpr
+   21 Prog: Prog Se
+   22     | Prog Enq
+   23     | Prog Atrib ';'
+   24     | Prog VAR '=' Expr ';'
+   25     | Prog VAR '[' NUM ']' '=' Expr ';'
+   26     | Prog Funcao ';'
+   27     | Prog ';'
+   28     | Prog COM
+   29     | %empty
 
-   22 Atrib: TIPO VAR
-   23      | TIPO VAR '[' Expr ']'
-   24      | Igual
+   30 Funcao: VAR Lexpr
 
-   25 Igual: TIPO VAR '='
-   26      | Igual Expr
+   31 Atrib: TIPO VAR
+   32      | TIPO VAR '[' NUM ']'
+   33      | Igual
 
-   27 Lexpr: '(' ')'
-   28      | '(' Eexpr ')'
+   34 Igual: TIPO VAR '='
+   35      | Igual Expr
 
-   29 Eexpr: Expr
-   30      | Eexpr ',' Expr
+   36 Lexpr: '(' ')'
+   37      | '(' Eexpr ')'
 
-   31 Ltipo: '(' ')'
-   32      | '(' Etipo ')'
+   38 Eexpr: Expr
+   39      | Eexpr ',' Expr
 
-   33 Etipo: TIPO VAR
-   34      | Etipo ',' TIPO VAR
+   40 Ltipo: '(' ')'
+   41      | '(' Etipo ')'
 
-   35 Se: SE Cond
-   36   | Se '{' Prog '}' CASO Cond
-   37   | Se '{' Prog '}' SENAO
-   38   | Se '{' Prog '}'
+   42 Etipo: TIPO VAR
+   43      | Etipo ',' TIPO VAR
 
-   39 Enq: ENQ
-   40    | Enq Cond
-   41    | Enq '{' Prog '}'
+   44 Se: SE Cond
+   45   | Se '{' Prog '}' CASO Cond
+   46   | Se '{' Prog '}' SENAO
+   47   | Se '{' Prog '}'
 
-   42 Cond: NUM
-   43     | '(' Expr EQ Expr ')'
-   44     | '(' Expr NEQ Expr ')'
-   45     | '(' Expr '<' Expr ')'
-   46     | '(' Expr '>' Expr ')'
-   47     | '(' Expr LEQ Expr ')'
-   48     | '(' Expr GEQ Expr ')'
-   49     | '(' Cond E Cond ')'
-   50     | '(' Cond OU Cond ')'
-   51     | '!' Cond
+   48 Enq: ENQ
+   49    | Enq Cond
+   50    | Enq '{' Prog '}'
 
-   52 Sexpr: VAR
-   53      | NUM
-   54      | VAR '[' Expr ']'
-   55      | Funcao
-   56      | STR
+   51 Cond: NUM
+   52     | '(' Expr EQ Expr ')'
+   53     | '(' Expr NEQ Expr ')'
+   54     | '(' Expr '<' Expr ')'
+   55     | '(' Expr '>' Expr ')'
+   56     | '(' Expr LEQ Expr ')'
+   57     | '(' Expr GEQ Expr ')'
+   58     | '(' Cond E Cond ')'
+   59     | '(' Cond OU Cond ')'
+   60     | '!' Cond
 
-   57 Expr: '(' Expr '+' Expr ')'
-   58     | '(' Expr '-' Expr ')'
-   59     | '(' Expr '*' Expr ')'
-   60     | '(' Expr '/' Expr ')'
-   61     | '(' Expr '%' Expr ')'
-   62     | '(' Expr ')'
-   63     | Sexpr
+   61 Sexpr: VAR
+   62      | NUM
+   63      | VAR '[' Expr ']'
+   64      | Funcao
+   65      | STR
+
+   66 Expr: '(' Expr '+' Expr ')'
+   67     | '(' Expr '-' Expr ')'
+   68     | '(' Expr '*' Expr ')'
+   69     | '(' Expr '/' Expr ')'
+   70     | '(' Expr '%' Expr ')'
+   71     | '(' Expr ')'
+   72     | Sexpr
 
 
 Terminals, with rules where they appear
 
 $end (0) 0
-'!' (33) 51
-'%' (37) 61
-'(' (40) 27 28 31 32 43 44 45 46 47 48 49 50 57 58 59 60 61 62
-')' (41) 27 28 31 32 43 44 45 46 47 48 49 50 57 58 59 60 61 62
-'*' (42) 59
-'+' (43) 57
-',' (44) 30 34
-'-' (45) 58
-'/' (47) 60
-';' (59) 3 4 5 7 8 13 14 15 16 17 19
-'<' (60) 45
-'=' (61) 4 5 14 15 25
-'>' (62) 46
-'[' (91) 5 15 23 54
-']' (93) 5 15 23 54
-'{' (123) 6 11 12 36 37 38 41
-'}' (125) 6 11 12 36 37 38 41
+'!' (33) 60
+'%' (37) 70
+'(' (40) 36 37 40 41 52 53 54 55 56 57 58 59 66 67 68 69 70 71
+')' (41) 36 37 40 41 52 53 54 55 56 57 58 59 66 67 68 69 70 71
+'*' (42) 68
+'+' (43) 66
+',' (44) 39 43
+'-' (45) 67
+'/' (47) 69
+';' (59) 3 4 5 7 8 13 14 15 16 17 19 23 24 25 26 27
+'<' (60) 54
+'=' (61) 4 5 14 15 24 25 34
+'>' (62) 55
+'[' (91) 5 15 25 32 63
+']' (93) 5 15 25 32 63
+'{' (123) 6 45 46 47 50
+'}' (125) 6 45 46 47 50
 error (256)
-SE (258) 11 35
-SENAO (259) 37
-CASO (260) 36
-ENQ (261) 12 39
-VAR (262) 4 5 6 14 15 21 22 23 25 33 34 52 54
-TIPO (263) 6 22 23 25 33 34
-NUM (264) 42 53
-EQ (265) 43
-NEQ (266) 44
-LEQ (267) 47
-GEQ (268) 48
-E (269) 49
-OU (270) 50
-STR (271) 56
-COM (272) 9 18
+SE (258) 44
+SENAO (259) 46
+CASO (260) 45
+ENQ (261) 48
+VAR (262) 4 5 6 14 15 24 25 30 31 32 34 42 43 61 63
+TIPO (263) 6 31 32 34 42 43
+NUM (264) 5 15 25 32 51 62
+EQ (265) 52
+NEQ (266) 53
+LEQ (267) 56
+GEQ (268) 57
+E (269) 58
+OU (270) 59
+STR (271) 65
+COM (272) 9 18 28
 RETURN (273) 19
 
 
@@ -128,35 +138,38 @@ $accept (36)
     on left: 0
 ProgG (37)
     on left: 1 2 3 4 5 6 7 8 9 10, on right: 0 1 2 3 4 5 6 7 8 9
-Prog (38)
+ProgF (38)
     on left: 11 12 13 14 15 16 17 18 19 20, on right: 6 11 12 13 14
-    15 16 17 18 19 36 37 38 41
-Funcao (39)
-    on left: 21, on right: 7 16 55
-Atrib (40)
-    on left: 22 23 24, on right: 3 13
-Igual (41)
-    on left: 25 26, on right: 24 26
-Lexpr (42)
-    on left: 27 28, on right: 21
-Eexpr (43)
-    on left: 29 30, on right: 28 30
-Ltipo (44)
-    on left: 31 32, on right: 6
-Etipo (45)
-    on left: 33 34, on right: 32 34
-Se (46)
-    on left: 35 36 37 38, on right: 1 11 36 37 38
-Enq (47)
-    on left: 39 40 41, on right: 2 40 41
-Cond (48)
-    on left: 42 43 44 45 46 47 48 49 50 51, on right: 11 12 35 36 40
-    49 50 51
-Sexpr (49)
-    on left: 52 53 54 55 56, on right: 63
-Expr (50)
-    on left: 57 58 59 60 61 62 63, on right: 4 5 14 15 19 23 26 29
-    30 43 44 45 46 47 48 54 57 58 59 60 61 62
+    15 16 17 18 19
+Prog (39)
+    on left: 21 22 23 24 25 26 27 28 29, on right: 21 22 23 24 25 26
+    27 28 45 46 47 50
+Funcao (40)
+    on left: 30, on right: 7 16 26 64
+Atrib (41)
+    on left: 31 32 33, on right: 3 13 23
+Igual (42)
+    on left: 34 35, on right: 33 35
+Lexpr (43)
+    on left: 36 37, on right: 30
+Eexpr (44)
+    on left: 38 39, on right: 37 39
+Ltipo (45)
+    on left: 40 41, on right: 6
+Etipo (46)
+    on left: 42 43, on right: 41 43
+Se (47)
+    on left: 44 45 46 47, on right: 1 11 21 45 46 47
+Enq (48)
+    on left: 48 49 50, on right: 2 12 22 49 50
+Cond (49)
+    on left: 51 52 53 54 55 56 57 58 59 60, on right: 44 45 49 58 59
+    60
+Sexpr (50)
+    on left: 61 62 63 64 65, on right: 72
+Expr (51)
+    on left: 66 67 68 69 70 71 72, on right: 4 5 14 15 19 24 25 35
+    38 39 52 53 54 55 56 57 63 66 67 68 69 70 71
 
 
 State 0
@@ -175,8 +188,8 @@ State 1
     2      | ProgG . Enq
     3      | ProgG . Atrib ';'
     4      | ProgG . VAR '=' Expr ';'
-    5      | ProgG . VAR '[' Expr ']' '=' Expr ';'
-    6      | ProgG . TIPO VAR Ltipo '{' Prog '}'
+    5      | ProgG . VAR '[' NUM ']' '=' Expr ';'
+    6      | ProgG . TIPO VAR Ltipo '{' ProgF '}'
     7      | ProgG . Funcao ';'
     8      | ProgG . ';'
     9      | ProgG . COM
@@ -205,7 +218,7 @@ State 2
 
 State 3
 
-   35 Se: SE . Cond
+   44 Se: SE . Cond
 
     NUM  shift, and go to state 14
     '('  shift, and go to state 15
@@ -216,16 +229,16 @@ State 3
 
 State 4
 
-   39 Enq: ENQ .
+   48 Enq: ENQ .
 
-    $default  reduce using rule 39 (Enq)
+    $default  reduce using rule 48 (Enq)
 
 
 State 5
 
     4 ProgG: ProgG VAR . '=' Expr ';'
-    5      | ProgG VAR . '[' Expr ']' '=' Expr ';'
-   21 Funcao: VAR . Lexpr
+    5      | ProgG VAR . '[' NUM ']' '=' Expr ';'
+   30 Funcao: VAR . Lexpr
 
     '='  shift, and go to state 18
     '['  shift, and go to state 19
@@ -236,10 +249,10 @@ State 5
 
 State 6
 
-    6 ProgG: ProgG TIPO . VAR Ltipo '{' Prog '}'
-   22 Atrib: TIPO . VAR
-   23      | TIPO . VAR '[' Expr ']'
-   25 Igual: TIPO . VAR '='
+    6 ProgG: ProgG TIPO . VAR Ltipo '{' ProgF '}'
+   31 Atrib: TIPO . VAR
+   32      | TIPO . VAR '[' NUM ']'
+   34 Igual: TIPO . VAR '='
 
     VAR  shift, and go to state 22
 
@@ -274,15 +287,15 @@ State 10
 
 State 11
 
-   24 Atrib: Igual .
-   26 Igual: Igual . Expr
+   33 Atrib: Igual .
+   35 Igual: Igual . Expr
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
     STR  shift, and go to state 27
     '('  shift, and go to state 28
 
-    $default  reduce using rule 24 (Atrib)
+    $default  reduce using rule 33 (Atrib)
 
     Funcao  go to state 29
     Sexpr   go to state 30
@@ -292,9 +305,9 @@ State 11
 State 12
 
     1 ProgG: ProgG Se .
-   36 Se: Se . '{' Prog '}' CASO Cond
-   37   | Se . '{' Prog '}' SENAO
-   38   | Se . '{' Prog '}'
+   45 Se: Se . '{' Prog '}' CASO Cond
+   46   | Se . '{' Prog '}' SENAO
+   47   | Se . '{' Prog '}'
 
     '{'  shift, and go to state 32
 
@@ -304,8 +317,8 @@ State 12
 State 13
 
     2 ProgG: ProgG Enq .
-   40 Enq: Enq . Cond
-   41    | Enq . '{' Prog '}'
+   49 Enq: Enq . Cond
+   50    | Enq . '{' Prog '}'
 
     NUM  shift, and go to state 14
     '{'  shift, and go to state 33
@@ -319,21 +332,21 @@ State 13
 
 State 14
 
-   42 Cond: NUM .
+   51 Cond: NUM .
 
-    $default  reduce using rule 42 (Cond)
+    $default  reduce using rule 51 (Cond)
 
 
 State 15
 
-   43 Cond: '(' . Expr EQ Expr ')'
-   44     | '(' . Expr NEQ Expr ')'
-   45     | '(' . Expr '<' Expr ')'
-   46     | '(' . Expr '>' Expr ')'
-   47     | '(' . Expr LEQ Expr ')'
-   48     | '(' . Expr GEQ Expr ')'
-   49     | '(' . Cond E Cond ')'
-   50     | '(' . Cond OU Cond ')'
+   52 Cond: '(' . Expr EQ Expr ')'
+   53     | '(' . Expr NEQ Expr ')'
+   54     | '(' . Expr '<' Expr ')'
+   55     | '(' . Expr '>' Expr ')'
+   56     | '(' . Expr LEQ Expr ')'
+   57     | '(' . Expr GEQ Expr ')'
+   58     | '(' . Cond E Cond ')'
+   59     | '(' . Cond OU Cond ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 35
@@ -349,7 +362,7 @@ State 15
 
 State 16
 
-   51 Cond: '!' . Cond
+   60 Cond: '!' . Cond
 
     NUM  shift, and go to state 14
     '('  shift, and go to state 15
@@ -360,9 +373,9 @@ State 16
 
 State 17
 
-   35 Se: SE Cond .
+   44 Se: SE Cond .
 
-    $default  reduce using rule 35 (Se)
+    $default  reduce using rule 44 (Se)
 
 
 State 18
@@ -381,22 +394,15 @@ State 18
 
 State 19
 
-    5 ProgG: ProgG VAR '[' . Expr ']' '=' Expr ';'
+    5 ProgG: ProgG VAR '[' . NUM ']' '=' Expr ';'
 
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 41
+    NUM  shift, and go to state 41
 
 
 State 20
 
-   27 Lexpr: '(' . ')'
-   28      | '(' . Eexpr ')'
+   36 Lexpr: '(' . ')'
+   37      | '(' . Eexpr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -412,23 +418,23 @@ State 20
 
 State 21
 
-   21 Funcao: VAR Lexpr .
+   30 Funcao: VAR Lexpr .
 
-    $default  reduce using rule 21 (Funcao)
+    $default  reduce using rule 30 (Funcao)
 
 
 State 22
 
-    6 ProgG: ProgG TIPO VAR . Ltipo '{' Prog '}'
-   22 Atrib: TIPO VAR .
-   23      | TIPO VAR . '[' Expr ']'
-   25 Igual: TIPO VAR . '='
+    6 ProgG: ProgG TIPO VAR . Ltipo '{' ProgF '}'
+   31 Atrib: TIPO VAR .
+   32      | TIPO VAR . '[' NUM ']'
+   34 Igual: TIPO VAR . '='
 
     '='  shift, and go to state 45
     '['  shift, and go to state 46
     '('  shift, and go to state 47
 
-    $default  reduce using rule 22 (Atrib)
+    $default  reduce using rule 31 (Atrib)
 
     Ltipo  go to state 48
 
@@ -449,41 +455,41 @@ State 24
 
 State 25
 
-   21 Funcao: VAR . Lexpr
-   52 Sexpr: VAR .
-   54      | VAR . '[' Expr ']'
+   30 Funcao: VAR . Lexpr
+   61 Sexpr: VAR .
+   63      | VAR . '[' Expr ']'
 
     '['  shift, and go to state 49
     '('  shift, and go to state 20
 
-    '('       [reduce using rule 52 (Sexpr)]
-    $default  reduce using rule 52 (Sexpr)
+    '('       [reduce using rule 61 (Sexpr)]
+    $default  reduce using rule 61 (Sexpr)
 
     Lexpr  go to state 21
 
 
 State 26
 
-   53 Sexpr: NUM .
+   62 Sexpr: NUM .
 
-    $default  reduce using rule 53 (Sexpr)
+    $default  reduce using rule 62 (Sexpr)
 
 
 State 27
 
-   56 Sexpr: STR .
+   65 Sexpr: STR .
 
-    $default  reduce using rule 56 (Sexpr)
+    $default  reduce using rule 65 (Sexpr)
 
 
 State 28
 
-   57 Expr: '(' . Expr '+' Expr ')'
-   58     | '(' . Expr '-' Expr ')'
-   59     | '(' . Expr '*' Expr ')'
-   60     | '(' . Expr '/' Expr ')'
-   61     | '(' . Expr '%' Expr ')'
-   62     | '(' . Expr ')'
+   66 Expr: '(' . Expr '+' Expr ')'
+   67     | '(' . Expr '-' Expr ')'
+   68     | '(' . Expr '*' Expr ')'
+   69     | '(' . Expr '/' Expr ')'
+   70     | '(' . Expr '%' Expr ')'
+   71     | '(' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -497,78 +503,78 @@ State 28
 
 State 29
 
-   55 Sexpr: Funcao .
+   64 Sexpr: Funcao .
 
-    $default  reduce using rule 55 (Sexpr)
+    $default  reduce using rule 64 (Sexpr)
 
 
 State 30
 
-   63 Expr: Sexpr .
+   72 Expr: Sexpr .
 
-    $default  reduce using rule 63 (Expr)
+    $default  reduce using rule 72 (Expr)
 
 
 State 31
 
-   26 Igual: Igual Expr .
+   35 Igual: Igual Expr .
 
-    $default  reduce using rule 26 (Igual)
+    $default  reduce using rule 35 (Igual)
 
 
 State 32
 
-   36 Se: Se '{' . Prog '}' CASO Cond
-   37   | Se '{' . Prog '}' SENAO
-   38   | Se '{' . Prog '}'
+   45 Se: Se '{' . Prog '}' CASO Cond
+   46   | Se '{' . Prog '}' SENAO
+   47   | Se '{' . Prog '}'
 
-    $default  reduce using rule 20 (Prog)
+    $default  reduce using rule 29 (Prog)
 
     Prog  go to state 51
 
 
 State 33
 
-   41 Enq: Enq '{' . Prog '}'
+   50 Enq: Enq '{' . Prog '}'
 
-    $default  reduce using rule 20 (Prog)
+    $default  reduce using rule 29 (Prog)
 
     Prog  go to state 52
 
 
 State 34
 
-   40 Enq: Enq Cond .
+   49 Enq: Enq Cond .
 
-    $default  reduce using rule 40 (Enq)
+    $default  reduce using rule 49 (Enq)
 
 
 State 35
 
-   42 Cond: NUM .
-   53 Sexpr: NUM .
+   51 Cond: NUM .
+   62 Sexpr: NUM .
 
-    E         reduce using rule 42 (Cond)
-    OU        reduce using rule 42 (Cond)
-    $default  reduce using rule 53 (Sexpr)
+    E         reduce using rule 51 (Cond)
+    OU        reduce using rule 51 (Cond)
+    $default  reduce using rule 62 (Sexpr)
 
 
 State 36
 
-   43 Cond: '(' . Expr EQ Expr ')'
-   44     | '(' . Expr NEQ Expr ')'
-   45     | '(' . Expr '<' Expr ')'
-   46     | '(' . Expr '>' Expr ')'
-   47     | '(' . Expr LEQ Expr ')'
-   48     | '(' . Expr GEQ Expr ')'
-   49     | '(' . Cond E Cond ')'
-   50     | '(' . Cond OU Cond ')'
-   57 Expr: '(' . Expr '+' Expr ')'
-   58     | '(' . Expr '-' Expr ')'
-   59     | '(' . Expr '*' Expr ')'
-   60     | '(' . Expr '/' Expr ')'
-   61     | '(' . Expr '%' Expr ')'
-   62     | '(' . Expr ')'
+   52 Cond: '(' . Expr EQ Expr ')'
+   53     | '(' . Expr NEQ Expr ')'
+   54     | '(' . Expr '<' Expr ')'
+   55     | '(' . Expr '>' Expr ')'
+   56     | '(' . Expr LEQ Expr ')'
+   57     | '(' . Expr GEQ Expr ')'
+   58     | '(' . Cond E Cond ')'
+   59     | '(' . Cond OU Cond ')'
+   66 Expr: '(' . Expr '+' Expr ')'
+   67     | '(' . Expr '-' Expr ')'
+   68     | '(' . Expr '*' Expr ')'
+   69     | '(' . Expr '/' Expr ')'
+   70     | '(' . Expr '%' Expr ')'
+   71     | '(' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 35
@@ -584,8 +590,8 @@ State 36
 
 State 37
 
-   49 Cond: '(' Cond . E Cond ')'
-   50     | '(' Cond . OU Cond ')'
+   58 Cond: '(' Cond . E Cond ')'
+   59     | '(' Cond . OU Cond ')'
 
     E   shift, and go to state 54
     OU  shift, and go to state 55
@@ -593,12 +599,12 @@ State 37
 
 State 38
 
-   43 Cond: '(' Expr . EQ Expr ')'
-   44     | '(' Expr . NEQ Expr ')'
-   45     | '(' Expr . '<' Expr ')'
-   46     | '(' Expr . '>' Expr ')'
-   47     | '(' Expr . LEQ Expr ')'
-   48     | '(' Expr . GEQ Expr ')'
+   52 Cond: '(' Expr . EQ Expr ')'
+   53     | '(' Expr . NEQ Expr ')'
+   54     | '(' Expr . '<' Expr ')'
+   55     | '(' Expr . '>' Expr ')'
+   56     | '(' Expr . LEQ Expr ')'
+   57     | '(' Expr . GEQ Expr ')'
 
     EQ   shift, and go to state 56
     NEQ  shift, and go to state 57
@@ -610,9 +616,9 @@ State 38
 
 State 39
 
-   51 Cond: '!' Cond .
+   60 Cond: '!' Cond .
 
-    $default  reduce using rule 51 (Cond)
+    $default  reduce using rule 60 (Cond)
 
 
 State 40
@@ -624,22 +630,22 @@ State 40
 
 State 41
 
-    5 ProgG: ProgG VAR '[' Expr . ']' '=' Expr ';'
+    5 ProgG: ProgG VAR '[' NUM . ']' '=' Expr ';'
 
     ']'  shift, and go to state 63
 
 
 State 42
 
-   27 Lexpr: '(' ')' .
+   36 Lexpr: '(' ')' .
 
-    $default  reduce using rule 27 (Lexpr)
+    $default  reduce using rule 36 (Lexpr)
 
 
 State 43
 
-   28 Lexpr: '(' Eexpr . ')'
-   30 Eexpr: Eexpr . ',' Expr
+   37 Lexpr: '(' Eexpr . ')'
+   39 Eexpr: Eexpr . ',' Expr
 
     ')'  shift, and go to state 64
     ','  shift, and go to state 65
@@ -647,36 +653,29 @@ State 43
 
 State 44
 
-   29 Eexpr: Expr .
+   38 Eexpr: Expr .
 
-    $default  reduce using rule 29 (Eexpr)
+    $default  reduce using rule 38 (Eexpr)
 
 
 State 45
 
-   25 Igual: TIPO VAR '=' .
+   34 Igual: TIPO VAR '=' .
 
-    $default  reduce using rule 25 (Igual)
+    $default  reduce using rule 34 (Igual)
 
 
 State 46
 
-   23 Atrib: TIPO VAR '[' . Expr ']'
+   32 Atrib: TIPO VAR '[' . NUM ']'
 
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 66
+    NUM  shift, and go to state 66
 
 
 State 47
 
-   31 Ltipo: '(' . ')'
-   32      | '(' . Etipo ')'
+   40 Ltipo: '(' . ')'
+   41      | '(' . Etipo ')'
 
     TIPO  shift, and go to state 67
     ')'   shift, and go to state 68
@@ -686,14 +685,14 @@ State 47
 
 State 48
 
-    6 ProgG: ProgG TIPO VAR Ltipo . '{' Prog '}'
+    6 ProgG: ProgG TIPO VAR Ltipo . '{' ProgF '}'
 
     '{'  shift, and go to state 70
 
 
 State 49
 
-   54 Sexpr: VAR '[' . Expr ']'
+   63 Sexpr: VAR '[' . Expr ']'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -707,12 +706,12 @@ State 49
 
 State 50
 
-   57 Expr: '(' Expr . '+' Expr ')'
-   58     | '(' Expr . '-' Expr ')'
-   59     | '(' Expr . '*' Expr ')'
-   60     | '(' Expr . '/' Expr ')'
-   61     | '(' Expr . '%' Expr ')'
-   62     | '(' Expr . ')'
+   66 Expr: '(' Expr . '+' Expr ')'
+   67     | '(' Expr . '-' Expr ')'
+   68     | '(' Expr . '*' Expr ')'
+   69     | '(' Expr . '/' Expr ')'
+   70     | '(' Expr . '%' Expr ')'
+   71     | '(' Expr . ')'
 
     ')'  shift, and go to state 72
     '+'  shift, and go to state 73
@@ -724,74 +723,74 @@ State 50
 
 State 51
 
-   11 Prog: Prog . SE Cond '{' Prog '}' Se
-   12     | Prog . ENQ Cond '{' Prog '}'
-   13     | Prog . Atrib ';'
-   14     | Prog . VAR '=' Expr ';'
-   15     | Prog . VAR '[' Expr ']' '=' Expr ';'
-   16     | Prog . Funcao ';'
-   17     | Prog . ';'
-   18     | Prog . COM
-   19     | Prog . RETURN Expr ';'
-   36 Se: Se '{' Prog . '}' CASO Cond
-   37   | Se '{' Prog . '}' SENAO
-   38   | Se '{' Prog . '}'
+   21 Prog: Prog . Se
+   22     | Prog . Enq
+   23     | Prog . Atrib ';'
+   24     | Prog . VAR '=' Expr ';'
+   25     | Prog . VAR '[' NUM ']' '=' Expr ';'
+   26     | Prog . Funcao ';'
+   27     | Prog . ';'
+   28     | Prog . COM
+   45 Se: Se '{' Prog . '}' CASO Cond
+   46   | Se '{' Prog . '}' SENAO
+   47   | Se '{' Prog . '}'
 
-    SE      shift, and go to state 78
-    ENQ     shift, and go to state 79
-    VAR     shift, and go to state 80
-    TIPO    shift, and go to state 81
-    COM     shift, and go to state 82
-    RETURN  shift, and go to state 83
-    ';'     shift, and go to state 84
-    '}'     shift, and go to state 85
+    SE    shift, and go to state 3
+    ENQ   shift, and go to state 4
+    VAR   shift, and go to state 78
+    TIPO  shift, and go to state 79
+    COM   shift, and go to state 80
+    ';'   shift, and go to state 81
+    '}'   shift, and go to state 82
 
-    Funcao  go to state 86
-    Atrib   go to state 87
+    Funcao  go to state 83
+    Atrib   go to state 84
     Igual   go to state 11
+    Se      go to state 85
+    Enq     go to state 86
 
 
 State 52
 
-   11 Prog: Prog . SE Cond '{' Prog '}' Se
-   12     | Prog . ENQ Cond '{' Prog '}'
-   13     | Prog . Atrib ';'
-   14     | Prog . VAR '=' Expr ';'
-   15     | Prog . VAR '[' Expr ']' '=' Expr ';'
-   16     | Prog . Funcao ';'
-   17     | Prog . ';'
-   18     | Prog . COM
-   19     | Prog . RETURN Expr ';'
-   41 Enq: Enq '{' Prog . '}'
+   21 Prog: Prog . Se
+   22     | Prog . Enq
+   23     | Prog . Atrib ';'
+   24     | Prog . VAR '=' Expr ';'
+   25     | Prog . VAR '[' NUM ']' '=' Expr ';'
+   26     | Prog . Funcao ';'
+   27     | Prog . ';'
+   28     | Prog . COM
+   50 Enq: Enq '{' Prog . '}'
 
-    SE      shift, and go to state 78
-    ENQ     shift, and go to state 79
-    VAR     shift, and go to state 80
-    TIPO    shift, and go to state 81
-    COM     shift, and go to state 82
-    RETURN  shift, and go to state 83
-    ';'     shift, and go to state 84
-    '}'     shift, and go to state 88
+    SE    shift, and go to state 3
+    ENQ   shift, and go to state 4
+    VAR   shift, and go to state 78
+    TIPO  shift, and go to state 79
+    COM   shift, and go to state 80
+    ';'   shift, and go to state 81
+    '}'   shift, and go to state 87
 
-    Funcao  go to state 86
-    Atrib   go to state 87
+    Funcao  go to state 83
+    Atrib   go to state 84
     Igual   go to state 11
+    Se      go to state 85
+    Enq     go to state 86
 
 
 State 53
 
-   43 Cond: '(' Expr . EQ Expr ')'
-   44     | '(' Expr . NEQ Expr ')'
-   45     | '(' Expr . '<' Expr ')'
-   46     | '(' Expr . '>' Expr ')'
-   47     | '(' Expr . LEQ Expr ')'
-   48     | '(' Expr . GEQ Expr ')'
-   57 Expr: '(' Expr . '+' Expr ')'
-   58     | '(' Expr . '-' Expr ')'
-   59     | '(' Expr . '*' Expr ')'
-   60     | '(' Expr . '/' Expr ')'
-   61     | '(' Expr . '%' Expr ')'
-   62     | '(' Expr . ')'
+   52 Cond: '(' Expr . EQ Expr ')'
+   53     | '(' Expr . NEQ Expr ')'
+   54     | '(' Expr . '<' Expr ')'
+   55     | '(' Expr . '>' Expr ')'
+   56     | '(' Expr . LEQ Expr ')'
+   57     | '(' Expr . GEQ Expr ')'
+   66 Expr: '(' Expr . '+' Expr ')'
+   67     | '(' Expr . '-' Expr ')'
+   68     | '(' Expr . '*' Expr ')'
+   69     | '(' Expr . '/' Expr ')'
+   70     | '(' Expr . '%' Expr ')'
+   71     | '(' Expr . ')'
 
     EQ   shift, and go to state 56
     NEQ  shift, and go to state 57
@@ -809,7 +808,18 @@ State 53
 
 State 54
 
-   49 Cond: '(' Cond E . Cond ')'
+   58 Cond: '(' Cond E . Cond ')'
+
+    NUM  shift, and go to state 14
+    '('  shift, and go to state 15
+    '!'  shift, and go to state 16
+
+    Cond  go to state 88
+
+
+State 55
+
+   59 Cond: '(' Cond OU . Cond ')'
 
     NUM  shift, and go to state 14
     '('  shift, and go to state 15
@@ -818,20 +828,23 @@ State 54
     Cond  go to state 89
 
 
-State 55
-
-   50 Cond: '(' Cond OU . Cond ')'
-
-    NUM  shift, and go to state 14
-    '('  shift, and go to state 15
-    '!'  shift, and go to state 16
-
-    Cond  go to state 90
-
-
 State 56
 
-   43 Cond: '(' Expr EQ . Expr ')'
+   52 Cond: '(' Expr EQ . Expr ')'
+
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 90
+
+
+State 57
+
+   53 Cond: '(' Expr NEQ . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -843,9 +856,9 @@ State 56
     Expr    go to state 91
 
 
-State 57
+State 58
 
-   44 Cond: '(' Expr NEQ . Expr ')'
+   56 Cond: '(' Expr LEQ . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -857,9 +870,9 @@ State 57
     Expr    go to state 92
 
 
-State 58
+State 59
 
-   47 Cond: '(' Expr LEQ . Expr ')'
+   57 Cond: '(' Expr GEQ . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -871,9 +884,9 @@ State 58
     Expr    go to state 93
 
 
-State 59
+State 60
 
-   48 Cond: '(' Expr GEQ . Expr ')'
+   54 Cond: '(' Expr '<' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -885,9 +898,9 @@ State 59
     Expr    go to state 94
 
 
-State 60
+State 61
 
-   45 Cond: '(' Expr '<' . Expr ')'
+   55 Cond: '(' Expr '>' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -899,20 +912,6 @@ State 60
     Expr    go to state 95
 
 
-State 61
-
-   46 Cond: '(' Expr '>' . Expr ')'
-
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 96
-
-
 State 62
 
     4 ProgG: ProgG VAR '=' Expr ';' .
@@ -922,21 +921,21 @@ State 62
 
 State 63
 
-    5 ProgG: ProgG VAR '[' Expr ']' . '=' Expr ';'
+    5 ProgG: ProgG VAR '[' NUM ']' . '=' Expr ';'
 
-    '='  shift, and go to state 97
+    '='  shift, and go to state 96
 
 
 State 64
 
-   28 Lexpr: '(' Eexpr ')' .
+   37 Lexpr: '(' Eexpr ')' .
 
-    $default  reduce using rule 28 (Lexpr)
+    $default  reduce using rule 37 (Lexpr)
 
 
 State 65
 
-   30 Eexpr: Eexpr ',' . Expr
+   39 Eexpr: Eexpr ',' . Expr
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -945,65 +944,79 @@ State 65
 
     Funcao  go to state 29
     Sexpr   go to state 30
-    Expr    go to state 98
+    Expr    go to state 97
 
 
 State 66
 
-   23 Atrib: TIPO VAR '[' Expr . ']'
+   32 Atrib: TIPO VAR '[' NUM . ']'
 
-    ']'  shift, and go to state 99
+    ']'  shift, and go to state 98
 
 
 State 67
 
-   33 Etipo: TIPO . VAR
+   42 Etipo: TIPO . VAR
 
-    VAR  shift, and go to state 100
+    VAR  shift, and go to state 99
 
 
 State 68
 
-   31 Ltipo: '(' ')' .
+   40 Ltipo: '(' ')' .
 
-    $default  reduce using rule 31 (Ltipo)
+    $default  reduce using rule 40 (Ltipo)
 
 
 State 69
 
-   32 Ltipo: '(' Etipo . ')'
-   34 Etipo: Etipo . ',' TIPO VAR
+   41 Ltipo: '(' Etipo . ')'
+   43 Etipo: Etipo . ',' TIPO VAR
 
-    ')'  shift, and go to state 101
-    ','  shift, and go to state 102
+    ')'  shift, and go to state 100
+    ','  shift, and go to state 101
 
 
 State 70
 
-    6 ProgG: ProgG TIPO VAR Ltipo '{' . Prog '}'
+    6 ProgG: ProgG TIPO VAR Ltipo '{' . ProgF '}'
 
-    $default  reduce using rule 20 (Prog)
+    $default  reduce using rule 20 (ProgF)
 
-    Prog  go to state 103
+    ProgF  go to state 102
 
 
 State 71
 
-   54 Sexpr: VAR '[' Expr . ']'
+   63 Sexpr: VAR '[' Expr . ']'
 
-    ']'  shift, and go to state 104
+    ']'  shift, and go to state 103
 
 
 State 72
 
-   62 Expr: '(' Expr ')' .
+   71 Expr: '(' Expr ')' .
 
-    $default  reduce using rule 62 (Expr)
+    $default  reduce using rule 71 (Expr)
 
 
 State 73
 
-   57 Expr: '(' Expr '+' . Expr ')'
+   66 Expr: '(' Expr '+' . Expr ')'
+
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 104
+
+
+State 74
+
+   67 Expr: '(' Expr '-' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -1015,9 +1028,9 @@ State 73
     Expr    go to state 105
 
 
-State 74
+State 75
 
-   58 Expr: '(' Expr '-' . Expr ')'
+   68 Expr: '(' Expr '*' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -1029,9 +1042,9 @@ State 74
     Expr    go to state 106
 
 
-State 75
+State 76
 
-   59 Expr: '(' Expr '*' . Expr ')'
+   69 Expr: '(' Expr '/' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -1043,9 +1056,9 @@ State 75
     Expr    go to state 107
 
 
-State 76
+State 77
 
-   60 Expr: '(' Expr '/' . Expr ')'
+   70 Expr: '(' Expr '%' . Expr ')'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -1057,651 +1070,577 @@ State 76
     Expr    go to state 108
 
 
-State 77
-
-   61 Expr: '(' Expr '%' . Expr ')'
-
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 109
-
-
 State 78
 
-   11 Prog: Prog SE . Cond '{' Prog '}' Se
+   24 Prog: Prog VAR . '=' Expr ';'
+   25     | Prog VAR . '[' NUM ']' '=' Expr ';'
+   30 Funcao: VAR . Lexpr
 
-    NUM  shift, and go to state 14
-    '('  shift, and go to state 15
-    '!'  shift, and go to state 16
-
-    Cond  go to state 110
-
-
-State 79
-
-   12 Prog: Prog ENQ . Cond '{' Prog '}'
-
-    NUM  shift, and go to state 14
-    '('  shift, and go to state 15
-    '!'  shift, and go to state 16
-
-    Cond  go to state 111
-
-
-State 80
-
-   14 Prog: Prog VAR . '=' Expr ';'
-   15     | Prog VAR . '[' Expr ']' '=' Expr ';'
-   21 Funcao: VAR . Lexpr
-
-    '='  shift, and go to state 112
-    '['  shift, and go to state 113
+    '='  shift, and go to state 109
+    '['  shift, and go to state 110
     '('  shift, and go to state 20
 
     Lexpr  go to state 21
 
 
+State 79
+
+   31 Atrib: TIPO . VAR
+   32      | TIPO . VAR '[' NUM ']'
+   34 Igual: TIPO . VAR '='
+
+    VAR  shift, and go to state 111
+
+
+State 80
+
+   28 Prog: Prog COM .
+
+    $default  reduce using rule 28 (Prog)
+
+
 State 81
 
-   22 Atrib: TIPO . VAR
-   23      | TIPO . VAR '[' Expr ']'
-   25 Igual: TIPO . VAR '='
+   27 Prog: Prog ';' .
 
-    VAR  shift, and go to state 114
+    $default  reduce using rule 27 (Prog)
 
 
 State 82
 
-   18 Prog: Prog COM .
+   45 Se: Se '{' Prog '}' . CASO Cond
+   46   | Se '{' Prog '}' . SENAO
+   47   | Se '{' Prog '}' .
 
-    $default  reduce using rule 18 (Prog)
+    SENAO  shift, and go to state 112
+    CASO   shift, and go to state 113
+
+    $default  reduce using rule 47 (Se)
 
 
 State 83
 
-   19 Prog: Prog RETURN . Expr ';'
+   26 Prog: Prog Funcao . ';'
 
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 115
+    ';'  shift, and go to state 114
 
 
 State 84
 
-   17 Prog: Prog ';' .
+   23 Prog: Prog Atrib . ';'
 
-    $default  reduce using rule 17 (Prog)
+    ';'  shift, and go to state 115
 
 
 State 85
 
-   36 Se: Se '{' Prog '}' . CASO Cond
-   37   | Se '{' Prog '}' . SENAO
-   38   | Se '{' Prog '}' .
+   21 Prog: Prog Se .
+   45 Se: Se . '{' Prog '}' CASO Cond
+   46   | Se . '{' Prog '}' SENAO
+   47   | Se . '{' Prog '}'
 
-    SENAO  shift, and go to state 116
-    CASO   shift, and go to state 117
+    '{'  shift, and go to state 32
 
-    $default  reduce using rule 38 (Se)
+    $default  reduce using rule 21 (Prog)
 
 
 State 86
 
-   16 Prog: Prog Funcao . ';'
+   22 Prog: Prog Enq .
+   49 Enq: Enq . Cond
+   50    | Enq . '{' Prog '}'
 
-    ';'  shift, and go to state 118
+    NUM  shift, and go to state 14
+    '{'  shift, and go to state 33
+    '('  shift, and go to state 15
+    '!'  shift, and go to state 16
+
+    $default  reduce using rule 22 (Prog)
+
+    Cond  go to state 34
 
 
 State 87
 
-   13 Prog: Prog Atrib . ';'
+   50 Enq: Enq '{' Prog '}' .
 
-    ';'  shift, and go to state 119
+    $default  reduce using rule 50 (Enq)
 
 
 State 88
 
-   41 Enq: Enq '{' Prog '}' .
+   58 Cond: '(' Cond E Cond . ')'
 
-    $default  reduce using rule 41 (Enq)
+    ')'  shift, and go to state 116
 
 
 State 89
 
-   49 Cond: '(' Cond E Cond . ')'
+   59 Cond: '(' Cond OU Cond . ')'
 
-    ')'  shift, and go to state 120
+    ')'  shift, and go to state 117
 
 
 State 90
 
-   50 Cond: '(' Cond OU Cond . ')'
+   52 Cond: '(' Expr EQ Expr . ')'
 
-    ')'  shift, and go to state 121
+    ')'  shift, and go to state 118
 
 
 State 91
 
-   43 Cond: '(' Expr EQ Expr . ')'
+   53 Cond: '(' Expr NEQ Expr . ')'
 
-    ')'  shift, and go to state 122
+    ')'  shift, and go to state 119
 
 
 State 92
 
-   44 Cond: '(' Expr NEQ Expr . ')'
+   56 Cond: '(' Expr LEQ Expr . ')'
 
-    ')'  shift, and go to state 123
+    ')'  shift, and go to state 120
 
 
 State 93
 
-   47 Cond: '(' Expr LEQ Expr . ')'
+   57 Cond: '(' Expr GEQ Expr . ')'
 
-    ')'  shift, and go to state 124
+    ')'  shift, and go to state 121
 
 
 State 94
 
-   48 Cond: '(' Expr GEQ Expr . ')'
+   54 Cond: '(' Expr '<' Expr . ')'
 
-    ')'  shift, and go to state 125
+    ')'  shift, and go to state 122
 
 
 State 95
 
-   45 Cond: '(' Expr '<' Expr . ')'
+   55 Cond: '(' Expr '>' Expr . ')'
 
-    ')'  shift, and go to state 126
+    ')'  shift, and go to state 123
 
 
 State 96
 
-   46 Cond: '(' Expr '>' Expr . ')'
+    5 ProgG: ProgG VAR '[' NUM ']' '=' . Expr ';'
 
-    ')'  shift, and go to state 127
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 124
 
 
 State 97
 
-    5 ProgG: ProgG VAR '[' Expr ']' '=' . Expr ';'
+   39 Eexpr: Eexpr ',' Expr .
 
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 128
+    $default  reduce using rule 39 (Eexpr)
 
 
 State 98
 
-   30 Eexpr: Eexpr ',' Expr .
+   32 Atrib: TIPO VAR '[' NUM ']' .
 
-    $default  reduce using rule 30 (Eexpr)
+    $default  reduce using rule 32 (Atrib)
 
 
 State 99
 
-   23 Atrib: TIPO VAR '[' Expr ']' .
+   42 Etipo: TIPO VAR .
 
-    $default  reduce using rule 23 (Atrib)
+    $default  reduce using rule 42 (Etipo)
 
 
 State 100
 
-   33 Etipo: TIPO VAR .
+   41 Ltipo: '(' Etipo ')' .
 
-    $default  reduce using rule 33 (Etipo)
+    $default  reduce using rule 41 (Ltipo)
 
 
 State 101
 
-   32 Ltipo: '(' Etipo ')' .
+   43 Etipo: Etipo ',' . TIPO VAR
 
-    $default  reduce using rule 32 (Ltipo)
+    TIPO  shift, and go to state 125
 
 
 State 102
 
-   34 Etipo: Etipo ',' . TIPO VAR
+    6 ProgG: ProgG TIPO VAR Ltipo '{' ProgF . '}'
+   11 ProgF: ProgF . Se
+   12      | ProgF . Enq
+   13      | ProgF . Atrib ';'
+   14      | ProgF . VAR '=' Expr ';'
+   15      | ProgF . VAR '[' NUM ']' '=' Expr ';'
+   16      | ProgF . Funcao ';'
+   17      | ProgF . ';'
+   18      | ProgF . COM
+   19      | ProgF . RETURN Expr ';'
 
-    TIPO  shift, and go to state 129
+    SE      shift, and go to state 3
+    ENQ     shift, and go to state 4
+    VAR     shift, and go to state 126
+    TIPO    shift, and go to state 79
+    COM     shift, and go to state 127
+    RETURN  shift, and go to state 128
+    ';'     shift, and go to state 129
+    '}'     shift, and go to state 130
+
+    Funcao  go to state 131
+    Atrib   go to state 132
+    Igual   go to state 11
+    Se      go to state 133
+    Enq     go to state 134
 
 
 State 103
 
-    6 ProgG: ProgG TIPO VAR Ltipo '{' Prog . '}'
-   11 Prog: Prog . SE Cond '{' Prog '}' Se
-   12     | Prog . ENQ Cond '{' Prog '}'
-   13     | Prog . Atrib ';'
-   14     | Prog . VAR '=' Expr ';'
-   15     | Prog . VAR '[' Expr ']' '=' Expr ';'
-   16     | Prog . Funcao ';'
-   17     | Prog . ';'
-   18     | Prog . COM
-   19     | Prog . RETURN Expr ';'
+   63 Sexpr: VAR '[' Expr ']' .
 
-    SE      shift, and go to state 78
-    ENQ     shift, and go to state 79
-    VAR     shift, and go to state 80
-    TIPO    shift, and go to state 81
-    COM     shift, and go to state 82
-    RETURN  shift, and go to state 83
-    ';'     shift, and go to state 84
-    '}'     shift, and go to state 130
-
-    Funcao  go to state 86
-    Atrib   go to state 87
-    Igual   go to state 11
+    $default  reduce using rule 63 (Sexpr)
 
 
 State 104
 
-   54 Sexpr: VAR '[' Expr ']' .
-
-    $default  reduce using rule 54 (Sexpr)
-
-
-State 105
-
-   57 Expr: '(' Expr '+' Expr . ')'
-
-    ')'  shift, and go to state 131
-
-
-State 106
-
-   58 Expr: '(' Expr '-' Expr . ')'
-
-    ')'  shift, and go to state 132
-
-
-State 107
-
-   59 Expr: '(' Expr '*' Expr . ')'
-
-    ')'  shift, and go to state 133
-
-
-State 108
-
-   60 Expr: '(' Expr '/' Expr . ')'
-
-    ')'  shift, and go to state 134
-
-
-State 109
-
-   61 Expr: '(' Expr '%' Expr . ')'
+   66 Expr: '(' Expr '+' Expr . ')'
 
     ')'  shift, and go to state 135
 
 
+State 105
+
+   67 Expr: '(' Expr '-' Expr . ')'
+
+    ')'  shift, and go to state 136
+
+
+State 106
+
+   68 Expr: '(' Expr '*' Expr . ')'
+
+    ')'  shift, and go to state 137
+
+
+State 107
+
+   69 Expr: '(' Expr '/' Expr . ')'
+
+    ')'  shift, and go to state 138
+
+
+State 108
+
+   70 Expr: '(' Expr '%' Expr . ')'
+
+    ')'  shift, and go to state 139
+
+
+State 109
+
+   24 Prog: Prog VAR '=' . Expr ';'
+
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 140
+
+
 State 110
 
-   11 Prog: Prog SE Cond . '{' Prog '}' Se
+   25 Prog: Prog VAR '[' . NUM ']' '=' Expr ';'
 
-    '{'  shift, and go to state 136
+    NUM  shift, and go to state 141
 
 
 State 111
 
-   12 Prog: Prog ENQ Cond . '{' Prog '}'
-
-    '{'  shift, and go to state 137
-
-
-State 112
-
-   14 Prog: Prog VAR '=' . Expr ';'
-
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 138
-
-
-State 113
-
-   15 Prog: Prog VAR '[' . Expr ']' '=' Expr ';'
-
-    VAR  shift, and go to state 25
-    NUM  shift, and go to state 26
-    STR  shift, and go to state 27
-    '('  shift, and go to state 28
-
-    Funcao  go to state 29
-    Sexpr   go to state 30
-    Expr    go to state 139
-
-
-State 114
-
-   22 Atrib: TIPO VAR .
-   23      | TIPO VAR . '[' Expr ']'
-   25 Igual: TIPO VAR . '='
+   31 Atrib: TIPO VAR .
+   32      | TIPO VAR . '[' NUM ']'
+   34 Igual: TIPO VAR . '='
 
     '='  shift, and go to state 45
     '['  shift, and go to state 46
 
-    $default  reduce using rule 22 (Atrib)
+    $default  reduce using rule 31 (Atrib)
 
 
-State 115
+State 112
 
-   19 Prog: Prog RETURN Expr . ';'
+   46 Se: Se '{' Prog '}' SENAO .
 
-    ';'  shift, and go to state 140
-
-
-State 116
-
-   37 Se: Se '{' Prog '}' SENAO .
-
-    $default  reduce using rule 37 (Se)
+    $default  reduce using rule 46 (Se)
 
 
-State 117
+State 113
 
-   36 Se: Se '{' Prog '}' CASO . Cond
+   45 Se: Se '{' Prog '}' CASO . Cond
 
     NUM  shift, and go to state 14
     '('  shift, and go to state 15
     '!'  shift, and go to state 16
 
-    Cond  go to state 141
+    Cond  go to state 142
+
+
+State 114
+
+   26 Prog: Prog Funcao ';' .
+
+    $default  reduce using rule 26 (Prog)
+
+
+State 115
+
+   23 Prog: Prog Atrib ';' .
+
+    $default  reduce using rule 23 (Prog)
+
+
+State 116
+
+   58 Cond: '(' Cond E Cond ')' .
+
+    $default  reduce using rule 58 (Cond)
+
+
+State 117
+
+   59 Cond: '(' Cond OU Cond ')' .
+
+    $default  reduce using rule 59 (Cond)
 
 
 State 118
 
-   16 Prog: Prog Funcao ';' .
+   52 Cond: '(' Expr EQ Expr ')' .
 
-    $default  reduce using rule 16 (Prog)
+    $default  reduce using rule 52 (Cond)
 
 
 State 119
 
-   13 Prog: Prog Atrib ';' .
+   53 Cond: '(' Expr NEQ Expr ')' .
 
-    $default  reduce using rule 13 (Prog)
+    $default  reduce using rule 53 (Cond)
 
 
 State 120
 
-   49 Cond: '(' Cond E Cond ')' .
+   56 Cond: '(' Expr LEQ Expr ')' .
 
-    $default  reduce using rule 49 (Cond)
+    $default  reduce using rule 56 (Cond)
 
 
 State 121
 
-   50 Cond: '(' Cond OU Cond ')' .
+   57 Cond: '(' Expr GEQ Expr ')' .
 
-    $default  reduce using rule 50 (Cond)
+    $default  reduce using rule 57 (Cond)
 
 
 State 122
 
-   43 Cond: '(' Expr EQ Expr ')' .
+   54 Cond: '(' Expr '<' Expr ')' .
 
-    $default  reduce using rule 43 (Cond)
+    $default  reduce using rule 54 (Cond)
 
 
 State 123
 
-   44 Cond: '(' Expr NEQ Expr ')' .
+   55 Cond: '(' Expr '>' Expr ')' .
 
-    $default  reduce using rule 44 (Cond)
+    $default  reduce using rule 55 (Cond)
 
 
 State 124
 
-   47 Cond: '(' Expr LEQ Expr ')' .
+    5 ProgG: ProgG VAR '[' NUM ']' '=' Expr . ';'
 
-    $default  reduce using rule 47 (Cond)
+    ';'  shift, and go to state 143
 
 
 State 125
 
-   48 Cond: '(' Expr GEQ Expr ')' .
+   43 Etipo: Etipo ',' TIPO . VAR
 
-    $default  reduce using rule 48 (Cond)
+    VAR  shift, and go to state 144
 
 
 State 126
 
-   45 Cond: '(' Expr '<' Expr ')' .
+   14 ProgF: ProgF VAR . '=' Expr ';'
+   15      | ProgF VAR . '[' NUM ']' '=' Expr ';'
+   30 Funcao: VAR . Lexpr
 
-    $default  reduce using rule 45 (Cond)
+    '='  shift, and go to state 145
+    '['  shift, and go to state 146
+    '('  shift, and go to state 20
+
+    Lexpr  go to state 21
 
 
 State 127
 
-   46 Cond: '(' Expr '>' Expr ')' .
+   18 ProgF: ProgF COM .
 
-    $default  reduce using rule 46 (Cond)
+    $default  reduce using rule 18 (ProgF)
 
 
 State 128
 
-    5 ProgG: ProgG VAR '[' Expr ']' '=' Expr . ';'
+   19 ProgF: ProgF RETURN . Expr ';'
 
-    ';'  shift, and go to state 142
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 147
 
 
 State 129
 
-   34 Etipo: Etipo ',' TIPO . VAR
+   17 ProgF: ProgF ';' .
 
-    VAR  shift, and go to state 143
+    $default  reduce using rule 17 (ProgF)
 
 
 State 130
 
-    6 ProgG: ProgG TIPO VAR Ltipo '{' Prog '}' .
+    6 ProgG: ProgG TIPO VAR Ltipo '{' ProgF '}' .
 
     $default  reduce using rule 6 (ProgG)
 
 
 State 131
 
-   57 Expr: '(' Expr '+' Expr ')' .
+   16 ProgF: ProgF Funcao . ';'
 
-    $default  reduce using rule 57 (Expr)
+    ';'  shift, and go to state 148
 
 
 State 132
 
-   58 Expr: '(' Expr '-' Expr ')' .
+   13 ProgF: ProgF Atrib . ';'
 
-    $default  reduce using rule 58 (Expr)
+    ';'  shift, and go to state 149
 
 
 State 133
 
-   59 Expr: '(' Expr '*' Expr ')' .
+   11 ProgF: ProgF Se .
+   45 Se: Se . '{' Prog '}' CASO Cond
+   46   | Se . '{' Prog '}' SENAO
+   47   | Se . '{' Prog '}'
 
-    $default  reduce using rule 59 (Expr)
+    '{'  shift, and go to state 32
+
+    $default  reduce using rule 11 (ProgF)
 
 
 State 134
 
-   60 Expr: '(' Expr '/' Expr ')' .
+   12 ProgF: ProgF Enq .
+   49 Enq: Enq . Cond
+   50    | Enq . '{' Prog '}'
 
-    $default  reduce using rule 60 (Expr)
+    NUM  shift, and go to state 14
+    '{'  shift, and go to state 33
+    '('  shift, and go to state 15
+    '!'  shift, and go to state 16
+
+    $default  reduce using rule 12 (ProgF)
+
+    Cond  go to state 34
 
 
 State 135
 
-   61 Expr: '(' Expr '%' Expr ')' .
+   66 Expr: '(' Expr '+' Expr ')' .
 
-    $default  reduce using rule 61 (Expr)
+    $default  reduce using rule 66 (Expr)
 
 
 State 136
 
-   11 Prog: Prog SE Cond '{' . Prog '}' Se
+   67 Expr: '(' Expr '-' Expr ')' .
 
-    $default  reduce using rule 20 (Prog)
-
-    Prog  go to state 144
+    $default  reduce using rule 67 (Expr)
 
 
 State 137
 
-   12 Prog: Prog ENQ Cond '{' . Prog '}'
+   68 Expr: '(' Expr '*' Expr ')' .
 
-    $default  reduce using rule 20 (Prog)
-
-    Prog  go to state 145
+    $default  reduce using rule 68 (Expr)
 
 
 State 138
 
-   14 Prog: Prog VAR '=' Expr . ';'
+   69 Expr: '(' Expr '/' Expr ')' .
 
-    ';'  shift, and go to state 146
+    $default  reduce using rule 69 (Expr)
 
 
 State 139
 
-   15 Prog: Prog VAR '[' Expr . ']' '=' Expr ';'
+   70 Expr: '(' Expr '%' Expr ')' .
 
-    ']'  shift, and go to state 147
+    $default  reduce using rule 70 (Expr)
 
 
 State 140
 
-   19 Prog: Prog RETURN Expr ';' .
+   24 Prog: Prog VAR '=' Expr . ';'
 
-    $default  reduce using rule 19 (Prog)
+    ';'  shift, and go to state 150
 
 
 State 141
 
-   36 Se: Se '{' Prog '}' CASO Cond .
+   25 Prog: Prog VAR '[' NUM . ']' '=' Expr ';'
 
-    $default  reduce using rule 36 (Se)
+    ']'  shift, and go to state 151
 
 
 State 142
 
-    5 ProgG: ProgG VAR '[' Expr ']' '=' Expr ';' .
+   45 Se: Se '{' Prog '}' CASO Cond .
 
-    $default  reduce using rule 5 (ProgG)
+    $default  reduce using rule 45 (Se)
 
 
 State 143
 
-   34 Etipo: Etipo ',' TIPO VAR .
+    5 ProgG: ProgG VAR '[' NUM ']' '=' Expr ';' .
 
-    $default  reduce using rule 34 (Etipo)
+    $default  reduce using rule 5 (ProgG)
 
 
 State 144
 
-   11 Prog: Prog . SE Cond '{' Prog '}' Se
-   11     | Prog SE Cond '{' Prog . '}' Se
-   12     | Prog . ENQ Cond '{' Prog '}'
-   13     | Prog . Atrib ';'
-   14     | Prog . VAR '=' Expr ';'
-   15     | Prog . VAR '[' Expr ']' '=' Expr ';'
-   16     | Prog . Funcao ';'
-   17     | Prog . ';'
-   18     | Prog . COM
-   19     | Prog . RETURN Expr ';'
+   43 Etipo: Etipo ',' TIPO VAR .
 
-    SE      shift, and go to state 78
-    ENQ     shift, and go to state 79
-    VAR     shift, and go to state 80
-    TIPO    shift, and go to state 81
-    COM     shift, and go to state 82
-    RETURN  shift, and go to state 83
-    ';'     shift, and go to state 84
-    '}'     shift, and go to state 148
-
-    Funcao  go to state 86
-    Atrib   go to state 87
-    Igual   go to state 11
+    $default  reduce using rule 43 (Etipo)
 
 
 State 145
 
-   11 Prog: Prog . SE Cond '{' Prog '}' Se
-   12     | Prog . ENQ Cond '{' Prog '}'
-   12     | Prog ENQ Cond '{' Prog . '}'
-   13     | Prog . Atrib ';'
-   14     | Prog . VAR '=' Expr ';'
-   15     | Prog . VAR '[' Expr ']' '=' Expr ';'
-   16     | Prog . Funcao ';'
-   17     | Prog . ';'
-   18     | Prog . COM
-   19     | Prog . RETURN Expr ';'
-
-    SE      shift, and go to state 78
-    ENQ     shift, and go to state 79
-    VAR     shift, and go to state 80
-    TIPO    shift, and go to state 81
-    COM     shift, and go to state 82
-    RETURN  shift, and go to state 83
-    ';'     shift, and go to state 84
-    '}'     shift, and go to state 149
-
-    Funcao  go to state 86
-    Atrib   go to state 87
-    Igual   go to state 11
-
-
-State 146
-
-   14 Prog: Prog VAR '=' Expr ';' .
-
-    $default  reduce using rule 14 (Prog)
-
-
-State 147
-
-   15 Prog: Prog VAR '[' Expr ']' . '=' Expr ';'
-
-    '='  shift, and go to state 150
-
-
-State 148
-
-   11 Prog: Prog SE Cond '{' Prog '}' . Se
-
-    SE  shift, and go to state 3
-
-    Se  go to state 151
-
-
-State 149
-
-   12 Prog: Prog ENQ Cond '{' Prog '}' .
-
-    $default  reduce using rule 12 (Prog)
-
-
-State 150
-
-   15 Prog: Prog VAR '[' Expr ']' '=' . Expr ';'
+   14 ProgF: ProgF VAR '=' . Expr ';'
 
     VAR  shift, and go to state 25
     NUM  shift, and go to state 26
@@ -1713,27 +1652,134 @@ State 150
     Expr    go to state 152
 
 
+State 146
+
+   15 ProgF: ProgF VAR '[' . NUM ']' '=' Expr ';'
+
+    NUM  shift, and go to state 153
+
+
+State 147
+
+   19 ProgF: ProgF RETURN Expr . ';'
+
+    ';'  shift, and go to state 154
+
+
+State 148
+
+   16 ProgF: ProgF Funcao ';' .
+
+    $default  reduce using rule 16 (ProgF)
+
+
+State 149
+
+   13 ProgF: ProgF Atrib ';' .
+
+    $default  reduce using rule 13 (ProgF)
+
+
+State 150
+
+   24 Prog: Prog VAR '=' Expr ';' .
+
+    $default  reduce using rule 24 (Prog)
+
+
 State 151
 
-   11 Prog: Prog SE Cond '{' Prog '}' Se .
-   36 Se: Se . '{' Prog '}' CASO Cond
-   37   | Se . '{' Prog '}' SENAO
-   38   | Se . '{' Prog '}'
+   25 Prog: Prog VAR '[' NUM ']' . '=' Expr ';'
 
-    '{'  shift, and go to state 32
-
-    $default  reduce using rule 11 (Prog)
+    '='  shift, and go to state 155
 
 
 State 152
 
-   15 Prog: Prog VAR '[' Expr ']' '=' Expr . ';'
+   14 ProgF: ProgF VAR '=' Expr . ';'
 
-    ';'  shift, and go to state 153
+    ';'  shift, and go to state 156
 
 
 State 153
 
-   15 Prog: Prog VAR '[' Expr ']' '=' Expr ';' .
+   15 ProgF: ProgF VAR '[' NUM . ']' '=' Expr ';'
 
-    $default  reduce using rule 15 (Prog)
+    ']'  shift, and go to state 157
+
+
+State 154
+
+   19 ProgF: ProgF RETURN Expr ';' .
+
+    $default  reduce using rule 19 (ProgF)
+
+
+State 155
+
+   25 Prog: Prog VAR '[' NUM ']' '=' . Expr ';'
+
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 158
+
+
+State 156
+
+   14 ProgF: ProgF VAR '=' Expr ';' .
+
+    $default  reduce using rule 14 (ProgF)
+
+
+State 157
+
+   15 ProgF: ProgF VAR '[' NUM ']' . '=' Expr ';'
+
+    '='  shift, and go to state 159
+
+
+State 158
+
+   25 Prog: Prog VAR '[' NUM ']' '=' Expr . ';'
+
+    ';'  shift, and go to state 160
+
+
+State 159
+
+   15 ProgF: ProgF VAR '[' NUM ']' '=' . Expr ';'
+
+    VAR  shift, and go to state 25
+    NUM  shift, and go to state 26
+    STR  shift, and go to state 27
+    '('  shift, and go to state 28
+
+    Funcao  go to state 29
+    Sexpr   go to state 30
+    Expr    go to state 161
+
+
+State 160
+
+   25 Prog: Prog VAR '[' NUM ']' '=' Expr ';' .
+
+    $default  reduce using rule 25 (Prog)
+
+
+State 161
+
+   15 ProgF: ProgF VAR '[' NUM ']' '=' Expr . ';'
+
+    ';'  shift, and go to state 162
+
+
+State 162
+
+   15 ProgF: ProgF VAR '[' NUM ']' '=' Expr ';' .
+
+    $default  reduce using rule 15 (ProgF)

@@ -1,0 +1,9 @@
+// int a[ 10 ]; print a[ 3 ] + 10;
+
+start
+alloc 10
+dup 1
+pushi 10
+store 3
+load 4
+stop

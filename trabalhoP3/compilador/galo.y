@@ -7,7 +7,8 @@
     int yylex();
     int yyerror();
     int topo = 0, ZERO = 0;
-    int  numse = 0, numenq = 0;
+    int numse[128] = {0}, apse = 0, numenq[128] = {0}, apenq = 0;
+    int numelemfun = 0, numfun = 0; 
     FILE* out;
 
     typedef struct variavel{
@@ -142,22 +143,33 @@ ProgG   : ProgG Se                              { printf("se\n"); }
         | ProgG Atrib ';'                       { printf("inicializa var\n"); }
         | ProgG VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
         | ProgG VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
-        | ProgG TIPO VAR Ltipo '{' Prog '}'     { printf("declarar funcao\n"); }
+        | ProgG TIPO VAR Ltipo '{' ProgF '}'    { printf("declarar funcao com %d variaveis\n",numelemfun); numfun++;}
         | ProgG Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgG ';'                             { printf("; desnecessario\n"); } 
         | ProgG COM                             { printf("comentario\n"); } 
         |                                       { printf("inicio\n"); } 
         ;
 
-Prog    : Prog SE Cond '{' Prog '}' Se          { printf("se\n"); }
-        | Prog ENQ Cond '{' Prog '}'            { printf("enquanto\n"); }
+ProgF   : ProgF Se                              { printf("se\n"); }
+        | ProgF Enq                             { printf("enquanto\n"); }
+        | ProgF Atrib ';'                       { printf("inicializa var\n"); }
+        | ProgF VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
+        | ProgF VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
+        | ProgF Funcao ';'                      { printf("chamar funcao\n"); }
+        | ProgF ';'                             { printf("; desnecessario\n"); } 
+        | ProgF COM                             { printf("comentario\n"); } 
+        | ProgF RETURN Expr ';'                 { printf("return\n"); } 
+        |                                       { printf("inicio\n"); } 
+        ;
+
+Prog    : Prog Se                               { printf("se\n"); }
+        | Prog Enq                              { printf("enquanto\n"); }
         | Prog Atrib ';'                        { printf("inicializa var\n"); }
         | Prog VAR '=' Expr ';'                 { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
         | Prog VAR '[' NUM ']' '=' Expr ';'     { printf("atualiza vetor\n"); }
         | Prog Funcao ';'                       { printf("chamar funcao\n"); }
         | Prog ';'                              { printf("; desnecessario\n"); } 
         | Prog COM                              { printf("comentario\n"); } 
-        | Prog RETURN Expr ';'                  { printf("return\n"); } 
         |                                       { printf("inicio\n"); } 
         ;
 
@@ -198,23 +210,25 @@ Eexpr   : Expr                                  { ; }
         ;
 
 /*lista de tipos*/
-Ltipo   : '(' ')'                               { ; }
+Ltipo   : '(' ')'                               { numelemfun = 0 ; }
         | '(' Etipo ')'                         { ; }
         ;
 
-Etipo   : TIPO VAR                              { ; }
-        | Etipo ',' TIPO VAR                    { ; }
+Etipo   : TIPO VAR                              { numelemfun = 1; }
+        | Etipo ',' TIPO VAR                    { numelemfun++; }
         ;
 
-Se      : SE Cond                               { fprintf(out, "jz senao%d\n",numse); }
+Se      : SE Cond                               { fprintf(out, "jz fimse%d\n",numse[apse]); apse++; numse[apse] = numse[apse-1]+1; }
         | Se '{' Prog '}' CASO Cond             { ; }
-        | Se '{' Prog '}' SENAO                 { fprintf(out, "jump fimse%d\nsenao%d:\n",numse,numse); }
-        | Se '{' Prog '}'                       { fprintf(out, "fimse%d:\n",numse++); }
+        | Se '{' Prog '}' SENAO                 { apse--; fprintf(out, "jump fimse%d\nfimse%d:\n",numse[apse],numse[apse]+1);
+                                                  numse[apse] = numse[apse+1]; apse++; numse[apse] = numse[apse-1]+1; }
+        | Se '{' Prog '}'                       { apse--; fprintf(out, "fimse%d:\n",numse[apse]); numse[apse] = numse[apse+1]; }
         ;
 
-Enq     : ENQ                                   { fprintf(out,"enq%d:\n",numenq); }
-        | Enq Cond                              { fprintf(out,"jz fimenq%d\n",numenq); }
-        | Enq '{' Prog '}'                      { fprintf(out,"jump enq%d\nfimenq%d:\n",numenq,numenq); numenq++; }
+Enq     : ENQ                                   { fprintf(out,"enq%d:\n",numenq[apenq]);  }
+        | Enq Cond                              { fprintf(out,"jz fimenq%d\n",numenq[apenq]); apenq++; numenq[apenq] = numenq[apenq-1]+1; }
+        | Enq '{' Prog '}'                      { apenq--; fprintf(out,"jump enq%d\nfimenq%d:\n",numenq[apenq],numenq[apenq]); 
+                                                  numenq[apenq]= numenq[apenq+1]; }
         ;
 
 Cond    : NUM                                   { fprintf(out,"pushi %d\n",abs($1)); }
@@ -236,12 +250,12 @@ Sexpr   : VAR                                   { fprintf(out,"pushg %d\n",procu
         | STR                                   { fprintf(out,"pushs %s\n", $1); }
         ;
 
-Expr	: '(' Expr '+' Expr ')'    			    { fprintf(out,"add\n"); $$->tipo = $2->tipo; }
-        | '(' Expr '-' Expr ')'  	            { fprintf(out,"sub\n"); $$->tipo = $2->tipo; }
-        | '(' Expr '*' Expr ')'    	            { fprintf(out,"mul\n"); $$->tipo = $2->tipo; }
-        | '(' Expr '/' Expr ')'    	            { fprintf(out,"div\n"); $$->tipo = $2->tipo; }
-        | '(' Expr '%' Expr ')'    	            { fprintf(out,"mod\n"); $$->tipo = $2->tipo; }
-        | '(' Expr ')'                          { $$->tipo = $2->tipo; }
+Expr	: '(' Expr '+' Expr ')'    			    { fprintf(out,"add\n"); }
+        | '(' Expr '-' Expr ')'  	            { fprintf(out,"sub\n"); }
+        | '(' Expr '*' Expr ')'    	            { fprintf(out,"mul\n"); } 
+        | '(' Expr '/' Expr ')'    	            { fprintf(out,"div\n"); }
+        | '(' Expr '%' Expr ')'    	            { fprintf(out,"mod\n"); }
+        | '(' Expr ')'                          { ; }
         | Sexpr                                 { ; }
         ;
 %%

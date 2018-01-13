@@ -1,5 +1,4 @@
-#ola
-int a;
-int b=(2*(a+a)),c=a,d=(1+2);
-int f=(3+(b*d));
+int foo (int a, int b, string c) {
 
+    return 0;
+}

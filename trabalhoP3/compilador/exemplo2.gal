@@ -1,4 +1,4 @@
-
+escrevers("escreva o numero de elementos do array:\n");
 int N = leri();
 
 int i = 0;

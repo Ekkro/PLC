@@ -1,16 +1,18 @@
 escrevers("digitar uma sequencia de números, termina quando for zero\n");
 
 int cont = 0;
-int r = 0;
 int i = leri();
 
 enq(i != 0){
-	r = (i % 2);
-	se (r == 1){
-		cont = (cont + 1);
-		escreveri(i);
-  }
-escrevers("Foram lidos ");
-esvreveri(cont);
-excrevers(" impares \n");
+    se ((i % 2) == 1){
+        cont = (cont + 1);
+        escreveri(i);
+        escrevers(" \n");
+    }
+    i = leri();
 }
+
+escrevers("Foram lidos ");
+escreveri(cont);
+escrevers(" impares \n");
+
