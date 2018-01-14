@@ -6,9 +6,9 @@
 
     int yylex();
     int yyerror();
-    int topo = 0, ZERO = 0;
+    int topo = 0, topol = 0;
     int numse[128] = {0}, apse = 0, numenq[128] = {0}, apenq = 0;
-    int numelemfun = 0, numfun = 0; 
+    int numelemfun = 0, numfun = 0, dentrofun = 0; 
     FILE* out;
 
     typedef struct variavel{
@@ -22,8 +22,8 @@
         char* tipo;
     } *Expressao;
 
-    Variavel v[MAX] = {0}, aux = NULL;
-    int quant = 0;
+    Variavel v[MAX] = {0}, aux = NULL, vl[MAX] = {0};
+    int quant = 0, quantl = 0;
 
     
     int removeVarDesig (char* designacao, Variavel v[], int N){
@@ -115,8 +115,13 @@
 
     }
 
+
     void store(Variavel v){
         fprintf(out,"storeg %d\n",v->posicaoStack);
+    }
+
+    void storel(Variavel v){
+        fprintf(out,"storel %d\n",v->posicaoStack);
     }
 %}
 
@@ -143,7 +148,7 @@ ProgG   : ProgG Se                              { printf("se\n"); }
         | ProgG Atrib ';'                       { printf("inicializa var\n"); }
         | ProgG VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
         | ProgG VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
-        | ProgG TIPO VAR Ltipo '{' ProgF '}'    { printf("declarar funcao com %d variaveis\n",numelemfun); numfun++;}
+        | ProgG CriaFun                         { printf("declarar funcao com %d variaveis\n",numelemfun);}
         | ProgG Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgG ';'                             { printf("; desnecessario\n"); } 
         | ProgG COM                             { printf("comentario\n"); } 
@@ -158,7 +163,7 @@ ProgF   : ProgF Se                              { printf("se\n"); }
         | ProgF Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgF ';'                             { printf("; desnecessario\n"); } 
         | ProgF COM                             { printf("comentario\n"); } 
-        | ProgF RETURN Expr ';'                 { printf("return\n"); } 
+        | ProgF RETURN Expr ';'                 { printf("return\n"); fprintf(out,"storel %d\nreturn\n",-(numelemfun+1)); } 
         |                                       { printf("inicio\n"); } 
         ;
 
@@ -185,20 +190,47 @@ Funcao  : VAR Lexpr                             { if(strcmp($1,"leri")==0){
                                                 }
         ;
 
-Atrib   : TIPO VAR                              { aux = criaVar($1,$2,topo++,0);
-                                                  insereVar(aux, v, quant++); 
-                                                  push(aux); push(aux); store(aux); }
+CriaFun : TIPO VAR '('                          { fprintf(out,"jump fimfun%d\n%s:\nnop\n",numfun,$2); dentrofun = 1; }
+        | Ltipo '{' ProgF '}'                   { fprintf(out,"fimfun%d:\n",numfun); numfun++; dentrofun = 0; }
+        ;
+
+Atrib   : TIPO VAR                              { if(dentrofun){
+                                                    aux = criaVar($1,$2,topol++,0);
+                                                    insereVar(aux, vl, quantl++);
+                                                    push(aux); push(aux); storel(aux);
+                                                  }
+                                                  else{
+                                                    aux = criaVar($1,$2,topo++,0);
+                                                    insereVar(aux, v, quant++); 
+                                                    push(aux); push(aux); store(aux);
+                                                  } 
+                                                }
         | TIPO VAR '[' NUM ']'                  { insereVar(criaVar($1,$2,topo++,1), v, quant++);
 
-                                                  store(procuraDesig($2,v,quant)); }
+                                                  store(procuraDesig($2,v,quant)); 
+                                                }
         | Igual                                 { ; }        
         ;
 
-Igual   : TIPO VAR '='                          { aux = criaVar($1,$2,topo++,0); 
-                                                  insereVar(aux, v, quant++);
-                                                  push(aux);
+Igual   : TIPO VAR '='                          { if(dentrofun){
+                                                    aux = criaVar($1,$2,topol++,0);
+                                                    insereVar(aux, vl, quantl++);
+                                                    push(aux);
+                                                  }
+                                                  else{
+                                                    aux = criaVar($1,$2,topo++,0); 
+                                                    insereVar(aux, v, quant++);
+                                                    push(aux);
+                                                  }
                                                 }
-        | Igual Expr                            { store(aux); }
+        | Igual Expr                            { if(dentrofun){
+                                                    storel(aux);
+                                                  }
+                                                  else{
+                                                    store(aux);
+                                                  } 
+                                                }
+        ;
 
 /*lista de expressoes*/
 Lexpr   : '(' ')'                               { ; }
@@ -210,12 +242,16 @@ Eexpr   : Expr                                  { ; }
         ;
 
 /*lista de tipos*/
-Ltipo   : '(' ')'                               { numelemfun = 0 ; }
-        | '(' Etipo ')'                         { ; }
+Ltipo   : ')'                                   { numelemfun = 0 ; }
+        | Etipo ')'                             { ; }
         ;
 
-Etipo   : TIPO VAR                              { numelemfun = 1; }
-        | Etipo ',' TIPO VAR                    { numelemfun++; }
+Etipo   : TIPO VAR                              { numelemfun = 1; aux = criaVar($1,$2,-(numelemfun),0);
+                                                  insereVar(aux, vl, quantl++);
+                                                }
+        | Etipo ',' TIPO VAR                    { numelemfun++; aux = criaVar($3,$4,-(numelemfun),0);
+                                                  insereVar(aux, vl, quantl++);
+                                                }
         ;
 
 Se      : SE Cond                               { fprintf(out, "jz fimse%d\n",numse[apse]); apse++; numse[apse] = numse[apse-1]+1; }
@@ -243,7 +279,12 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",abs($
         | '!' Cond                              { fprintf(out,"pushi 0\nequal\n"); }
         ;
 
-Sexpr   : VAR                                   { fprintf(out,"pushg %d\n",procuraDesig($1,v,quant)->posicaoStack); }
+Sexpr   : VAR                                   { if(dentrofun){
+                                                    fprintf(out,"pushl %d\n",procuraDesig($1,vl,quantl)->posicaoStack); 
+                                                  }else{
+                                                    fprintf(out,"pushg %d\n",procuraDesig($1,vl,quantl)->posicaoStack); 
+                                                  }
+                                                }
         | NUM                                   { fprintf(out,"pushi %d\n", $1); }
         | VAR '[' Expr ']'                      { ; }
         | Funcao                                { ; } 
@@ -267,7 +308,7 @@ int yyerror(char *s){
 }
 
 int main(){
-    out = fopen("a.mv", "w");
+    out = fopen("a.vm", "w");
     if (out == NULL){
         printf("Error opening file!\n");
         exit(1);
@@ -277,14 +318,6 @@ int main(){
     yyparse();
     fprintf(out, "stop\n");
     
-    int i, q = 0;
-    for(i=0;i<MAX && q<quant ;i++){
-        if(v[i]!=NULL){
-            q++;
-            printf("%s\n",v[i]->designacao);
-        }
-    }
-
     fclose(out);
     return(0);
 }

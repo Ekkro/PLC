@@ -7,3 +7,9 @@ $(EXEC): $(EXEC).l $(EXEC).y
 
 teste: $(EXEC)
 	./$(EXEC) < input.txt
+
+pdf: 
+	evince ../VMdocpt.pdf &
+
+vm:
+	java -jar ../dist/vm.jar &

@@ -8,8 +8,8 @@ pushi 5
 
 //ChamarFuncao{
 pushi 0 // valor de return
-pushl 0 // sp-3 +0
 pushl 1 // sp-3 +1
+pushl 0 // sp-3 +0
 pusha soma
 call
 nop
@@ -24,11 +24,13 @@ writei
 jump fimfuncao0
 soma:
 nop
+
 pushl -1
 pushl -2
 add
 storel -3
 return
+
 fimfuncao0:
 //}
 

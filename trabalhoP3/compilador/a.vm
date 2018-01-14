@@ -1,11 +1,14 @@
 start
-pushi 1
-jz fimse0
-pushi 2
-jz fimse1
-fimse1:
-fimse0:
-pushi 3
-jz fimse2
-fimse2:
+jump fimfun0
+foo:
+nop
+pushi 0
+pushl -1
+pushl -2
+add
+storel 0
+pushl 0
+storel -3
+return
+fimfun0:
 stop
