@@ -307,7 +307,7 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0
 Sexpr   : VAR                                   { if(dentrofun){
                                                     fprintf(out,"pushl %d\n",procuraDesig($1,vl,quantl)->posicaoStack); 
                                                   }else{
-                                                    fprintf(out,"pushg %d\n",procuraDesig($1,vl,quantl)->posicaoStack); 
+                                                    fprintf(out,"pushg %d\n",procuraDesig($1,v,quant)->posicaoStack); 
                                                   }
                                                 }
         | NUM                                   { fprintf(out,"pushi %d\n", $1); $$->tipo = tipoInt; }
