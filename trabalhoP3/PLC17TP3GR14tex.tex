@@ -1,0 +1,155 @@
+% !TeX spellcheck = <none>
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+%\usepackage[latin1]{inputenc}
+%\usepackage{url}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{alltt}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{amsmath}
+\newcommand{\keyword}[1]{\textsf{#1}}
+
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\footnotesize}
+%LISTING - GENERAL
+\lstset{
+	basicstyle=\small,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	breaklines=true,
+    frame=tB,
+	mathescape=true,
+	escapeinside={(*@}{@*)}
+	}
+
+
+\title{Processamento de Linguagens e Compiladores\\ (3º ano de LCC)\\ \textbf{Galo}\\ TP3\\ Grupo 14}
+\author{Artur Queiroz\\ A77136 \and  Rafael Fernandes\\ A78242 \and Rafaela Pinho\\ A77293 }
+\date{\today}
+
+\begin{document}
+	
+\maketitle
+	
+
+\begin{abstract}
+	Neste relatório apresentamos a linguagem que criamos e o complidor que gera o código para a Máquina Virtual VM.
+\end{abstract}
+
+\tableofcontents
+
+\chapter{Introdução} \label{intro}
+\indent
+
+ 
+\chapter{Galo e Compilador} \label{fi}
+\section{Descrição informal do problema}
+\indent
+Neste trabalho foi pedido para criarmos uma linguagem de programação imperativa e desenvolver um compilador para a linguagem criada.\\
+\indent
+Na linguagem as declarações de variáveis devem ser colocadas no início do programa, não pode haver re-declarações e não se pode usar variáveis sem estar declaradas primeiro. Caso não seja atribuido uma valor à variável depois da declaração, esta ficará com o valor zero.\\
+\indent  	
+O complilador deve gerar o código assembly para a Máquina Virtual VM.
+
+\section{Especificação dos requisitos}
+\indent
+Para este tarbalho a linguagem que criamos tem de conter os seguintes requisitos:
+\begin{enumerate}[1)]
+	\item Declarar e manusear variáveis atómicas do tipo inteiro e estruturas do tipo array de inteiros.\\
+	\item Ler do standard input e escrever no standard output.\\
+	\item Fazer instruções básicas como a atribuição de expressões a variáveis.\\
+	\item definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico(?)
+	\item efetuar instruções para controlo do fluxo de execução—condicional e cíclica—que possam ser aninhadas. (?)
+\end{enumerate}
+\section{Expressões regulares} 
+As expressões regulares usadas foram:
+
+\begin{enumerate}[1)]
+	\item
+
+\end{enumerate}
+
+\section{A nossa linguagem}
+\subsection{Galo}
+\indent
+Como já referido em cima, foi-nos pedidos para criar uma linguagem de programação. Decidimos chamar de Galo por ser um símbolo típico de Potugal, e atribuimos .gl para a extensão.\\
+\indent
+Para a definirmos utilizamos uma gramática independente do contexto, em que tomamos certas decisões que serão especificadas.\\
+\indent
+O Galo reconhece os segintes tipos: números inteiros (int), números décimais  (float) e conjunto de caractéres (string).
+
+
+\begin{code}
+	
+
+\end{code}
+
+
+\chapter{Codificação e Testes}
+\section{Problemas de implementação, Decisões e Alternativas}
+\subsection{Problemas de implementação}
+
+   
+
+
+\subsection{Decisões}
+\begin{enumerate}[1)]
+	\item O E ($\&\&$) está definida pela multuplicação e o OU ($||$) pela adição.
+ 
+	 \begin{table}[h]
+		\begin{center}
+	 	\caption{Tabela do E}
+	 	\begin{tabular}{r|lr}
+	 	 *(E)& 0 & 1\\ % Note a separação de col. e a quebra de linhas
+	 	\hline          % para uma linha horizontal
+	 	0 & 0 & 0 \\
+	 	1 & 0 & 1\\
+ 	
+		\end{tabular}
+		\caption{Tabela do OU}
+		\begin{tabular}{r|lr}
+		+(OU)& 0 & 1\\ % Note a separação de col. e a quebra de linhas
+		\hline          % para uma linha horizontal
+		0 & 0 & 1 \\
+		1 & 1 & 2\\
+		\end{tabular}
+		\end{center}
+	\end{table}
+
+	\item Não se pode declarar mais do que uma variável numa linha.\\
+	 Exemplo: \\int a = 2 , c = 0;\\ terá de ser:\\
+	 int a = 2;\\
+	 int c = 0;\\
+	 \item Não se pode fazer "return" dentro dos Se's e dos Enq's.\\ 
+	 \item Nas expressões numéricas, as operações binárias têm de estar sempre dentro de parênteses.
+	 \item O Se tem de ter sempre Senao.
+	
+\end{enumerate}
+
+
+\subsection{Alternativas}
+
+
+
+\section{Testes realizados e Resultados}
+
+
+
+
+
+\chapter{Conclusão} \label{concl}
+
+Hoje em dia já existem muitos pré-processadores que facilitam a escrita de documentos em HTML.\\
+Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o $Flex$ é uma boa ferramenta para fazer o pré-processador e que com ele se torna fácil programar usando expressões regulares e um pouco de linguagem C. \\
+Como trabalho futuro poderíamos acrescentar mais símbolos para completar o pré processador.
+
+
+
+
+\end{document}
