@@ -6,10 +6,13 @@
 
     int yylex();
     int yyerror();
-    int topo = 0, topol = 0;
+    int topo = 0, topol = 0, i = 0;
     int numse[128] = {0}, apse = 0, numenq[128] = {0}, apenq = 0;
     int numelemfun = 0, numfun = 0, dentrofun = 0; 
     FILE* out;
+    char* tipoString = "string";
+    char* tipoInt = "int";
+    char* tipoFloat = "float";
 
     typedef struct variavel{
         int   dimensao;
@@ -22,7 +25,14 @@
         char* tipo;
     } *Expressao;
 
+    typedef struct funcao{
+        char* designacao;
+        char* tipos[128];
+        int numtipos;
+    } *Funcao;
+
     Variavel v[MAX] = {0}, aux = NULL, vl[MAX] = {0};
+    Funcao funcoes[128] = {0};
     int quant = 0, quantl = 0;
 
     
@@ -115,7 +125,6 @@
 
     }
 
-
     void store(Variavel v){
         fprintf(out,"storeg %d\n",v->posicaoStack);
     }
@@ -123,6 +132,16 @@
     void storel(Variavel v){
         fprintf(out,"storel %d\n",v->posicaoStack);
     }
+
+    void inserefun(char* tipo, char* designacao, char* funcoes[], int numfun){
+        int i;
+        for(i = 0;i< numfun;i++){
+            if(funcoes[i]==0){
+                
+            }
+        }
+    }
+
 %}
 
 %union{
@@ -132,14 +151,14 @@
 }
 
 
-%token SE SENAO CASO ENQ VAR TIPO NUM EQ NEQ LEQ GEQ E OU STR COM RETURN
+%token SE SENAO CASO ENQ VAR TIPO NUM FLOAT EQ NEQ LEQ GEQ E OU STR COM RETURN
 
 %type<i> NUM
 %type<s> VAR TIPO STR
 
 %type<s> Prog Atrib Se Lexpr Eexpr Ltipo 
 %type<i> Cond
-%type<expr> Expr 
+%type<expr> Expr Sexpr 
 
 
 %%
@@ -148,7 +167,7 @@ ProgG   : ProgG Se                              { printf("se\n"); }
         | ProgG Atrib ';'                       { printf("inicializa var\n"); }
         | ProgG VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
         | ProgG VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
-        | ProgG CriaFun                         { printf("declarar funcao com %d variaveis\n",numelemfun);}
+        | ProgG CriaFun                         { printf("declarar funcao");}
         | ProgG Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgG ';'                             { printf("; desnecessario\n"); } 
         | ProgG COM                             { printf("comentario\n"); } 
@@ -186,11 +205,15 @@ Funcao  : VAR Lexpr                             { if(strcmp($1,"leri")==0){
                                                         fprintf(out,"writei\n");
                                                   }else if(strcmp($1,"escrevers")==0){
                                                         fprintf(out,"writes\n");
-                                                  } 
+                                                  }else{
+                                                        for(i=0;i<numelemfun;i++){
+                                                            
+                                                        }
+                                                  }
                                                 }
         ;
 
-CriaFun : TIPO VAR '('                          { fprintf(out,"jump fimfun%d\n%s:\nnop\n",numfun,$2); dentrofun = 1; }
+CriaFun : TIPO VAR '('                          { fprintf(out,"jump fimfun%d\n%s:\nnop\n",numfun,$2); dentrofun = 1; inserefun($1,$2,funcoes,numfun); }
         | Ltipo '{' ProgF '}'                   { fprintf(out,"fimfun%d:\n",numfun); numfun++; dentrofun = 0; }
         ;
 
@@ -233,12 +256,12 @@ Igual   : TIPO VAR '='                          { if(dentrofun){
         ;
 
 /*lista de expressoes*/
-Lexpr   : '(' ')'                               { ; }
+Lexpr   : '(' ')'                               { numelemfun = 0; }
         | '(' Eexpr ')'                         { ; }
         ;
 
-Eexpr   : Expr                                  { ; }
-        | Eexpr ',' Expr                        { ; }
+Eexpr   : Expr                                  { numelemfun = 1; }
+        | Eexpr ',' Expr                        { numelemfun++; }
         ;
 
 /*lista de tipos*/
@@ -257,17 +280,19 @@ Etipo   : TIPO VAR                              { numelemfun = 1; aux = criaVar(
 Se      : SE Cond                               { fprintf(out, "jz fimse%d\n",numse[apse]); apse++; numse[apse] = numse[apse-1]+1; }
         | Se '{' Prog '}' CASO Cond             { ; }
         | Se '{' Prog '}' SENAO                 { apse--; fprintf(out, "jump fimse%d\nfimse%d:\n",numse[apse],numse[apse]+1);
-                                                  numse[apse] = numse[apse+1]; apse++; numse[apse] = numse[apse-1]+1; }
+                                                  numse[apse] = numse[apse+1]; apse++; numse[apse] = numse[apse-1]+1; 
+                                                }
         | Se '{' Prog '}'                       { apse--; fprintf(out, "fimse%d:\n",numse[apse]); numse[apse] = numse[apse+1]; }
         ;
 
-Enq     : ENQ                                   { fprintf(out,"enq%d:\n",numenq[apenq]);  }
+Enq     : ENQ                                   { fprintf(out,"enq%d:\n",numenq[apenq]); }
         | Enq Cond                              { fprintf(out,"jz fimenq%d\n",numenq[apenq]); apenq++; numenq[apenq] = numenq[apenq-1]+1; }
         | Enq '{' Prog '}'                      { apenq--; fprintf(out,"jump enq%d\nfimenq%d:\n",numenq[apenq],numenq[apenq]); 
-                                                  numenq[apenq]= numenq[apenq+1]; }
+                                                  numenq[apenq]= numenq[apenq+1]; 
+                                                }
         ;
 
-Cond    : NUM                                   { fprintf(out,"pushi %d\n",abs($1)); }
+Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0); }
         | '(' Expr EQ Expr ')'                  { fprintf(out,"equal\n"); }
         | '(' Expr NEQ Expr ')'                 { fprintf(out,"equal\npushi 0\nequal\n"); }
         | '(' Expr '<' Expr ')'                 { fprintf(out,"inf\n"); }
@@ -285,19 +310,20 @@ Sexpr   : VAR                                   { if(dentrofun){
                                                     fprintf(out,"pushg %d\n",procuraDesig($1,vl,quantl)->posicaoStack); 
                                                   }
                                                 }
-        | NUM                                   { fprintf(out,"pushi %d\n", $1); }
+        | NUM                                   { fprintf(out,"pushi %d\n", $1); $$->tipo = tipoInt; }
+        | FLOAT                                 { $$->tipo = tipoFloat; }
         | VAR '[' Expr ']'                      { ; }
         | Funcao                                { ; } 
-        | STR                                   { fprintf(out,"pushs %s\n", $1); }
+        | STR                                   { fprintf(out,"pushs %s\n", $1); $$->tipo = tipoString; }
         ;
 
 Expr	: '(' Expr '+' Expr ')'    			    { fprintf(out,"add\n"); }
         | '(' Expr '-' Expr ')'  	            { fprintf(out,"sub\n"); }
-        | '(' Expr '*' Expr ')'    	            { fprintf(out,"mul\n"); } 
+        | '(' Expr '*' Expr ')'    	            { fprintf(out,"mul\n"); }
         | '(' Expr '/' Expr ')'    	            { fprintf(out,"div\n"); }
         | '(' Expr '%' Expr ')'    	            { fprintf(out,"mod\n"); }
-        | '(' Expr ')'                          { ; }
-        | Sexpr                                 { ; }
+        | '(' Expr ')'                          { $$ = (Expressao)malloc(sizeof(struct expressao)); $$ = $2; }
+        | Sexpr                                 { $$ = (Expressao)malloc(sizeof(struct expressao)); $$ = $1; }
         ;
 %%
 

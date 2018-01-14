@@ -52,15 +52,16 @@ extern int yydebug;
     VAR = 262,
     TIPO = 263,
     NUM = 264,
-    EQ = 265,
-    NEQ = 266,
-    LEQ = 267,
-    GEQ = 268,
-    E = 269,
-    OU = 270,
-    STR = 271,
-    COM = 272,
-    RETURN = 273
+    FLOAT = 265,
+    EQ = 266,
+    NEQ = 267,
+    LEQ = 268,
+    GEQ = 269,
+    E = 270,
+    OU = 271,
+    STR = 272,
+    COM = 273,
+    RETURN = 274
   };
 #endif
 /* Tokens.  */
@@ -71,28 +72,29 @@ extern int yydebug;
 #define VAR 262
 #define TIPO 263
 #define NUM 264
-#define EQ 265
-#define NEQ 266
-#define LEQ 267
-#define GEQ 268
-#define E 269
-#define OU 270
-#define STR 271
-#define COM 272
-#define RETURN 273
+#define FLOAT 265
+#define EQ 266
+#define NEQ 267
+#define LEQ 268
+#define GEQ 269
+#define E 270
+#define OU 271
+#define STR 272
+#define COM 273
+#define RETURN 274
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 128 "galo.y" /* yacc.c:1909  */
+#line 147 "galo.y" /* yacc.c:1909  */
 
     int i;
     char *s;
     Expressao expr;
 
-#line 96 "y.tab.h" /* yacc.c:1909  */
+#line 98 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
