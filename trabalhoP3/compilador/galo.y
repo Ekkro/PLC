@@ -133,31 +133,46 @@
         fprintf(out,"storel %d\n",v->posicaoStack);
     }
 
-    void inserefun(char* tipo, char* designacao, char* funcoes[], int numfun){
+    void inserefun(Funcao fun, Funcao funcoes[], int numfun){
         int i;
         for(i = 0;i< numfun;i++){
             if(funcoes[i]==0){
-                
+                funcoes[i] = fun;
+                break;
             }
         }
+        return;
     }
-
+    
+    Funcao criafun(char* designacao, char* tipos[], int numtipos){
+        Funcao fun = (Funcao)malloc(sizeof(struct funcao));
+        fun->designacao = designacao;
+        int i;
+        for(i=0;i<numtipos;i++){
+            fun->tipos[i] = tipos[i];
+        }
+        fun->numtipos = numtipos;
+    }
 %}
 
 %union{
     int i;
+    float f;
     char *s;
     Expressao expr;
+    Funcao fun;
 }
 
 
 %token SE SENAO CASO ENQ VAR TIPO NUM FLOAT EQ NEQ LEQ GEQ E OU STR COM RETURN
 
 %type<i> NUM
+%type<f> FLOAT
 %type<s> VAR TIPO STR
 
 %type<s> Prog Atrib Se Lexpr Eexpr Ltipo 
 %type<i> Cond
+%type<fun> Funcao
 %type<expr> Expr Sexpr 
 
 
@@ -167,7 +182,7 @@ ProgG   : ProgG Se                              { printf("se\n"); }
         | ProgG Atrib ';'                       { printf("inicializa var\n"); }
         | ProgG VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
         | ProgG VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
-        | ProgG CriaFun                         { printf("declarar funcao");}
+        | ProgG CriaFun                         { printf("declarar funcao\n");}
         | ProgG Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgG ';'                             { printf("; desnecessario\n"); } 
         | ProgG COM                             { printf("comentario\n"); } 
@@ -213,7 +228,9 @@ Funcao  : VAR Lexpr                             { if(strcmp($1,"leri")==0){
                                                 }
         ;
 
-CriaFun : TIPO VAR '('                          { fprintf(out,"jump fimfun%d\n%s:\nnop\n",numfun,$2); dentrofun = 1; inserefun($1,$2,funcoes,numfun); }
+CriaFun : TIPO VAR '('                          { fprintf(out,"jump fimfun%d\n%s:\nnop\n",numfun,$2); dentrofun = 1; 
+                                                  inserefun(criafun($2,&$1,1),funcoes,numfun); 
+                                                }
         | Ltipo '{' ProgF '}'                   { fprintf(out,"fimfun%d:\n",numfun); numfun++; dentrofun = 0; }
         ;
 
@@ -310,10 +327,13 @@ Sexpr   : VAR                                   { if(dentrofun){
                                                     fprintf(out,"pushg %d\n",procuraDesig($1,v,quant)->posicaoStack); 
                                                   }
                                                 }
-        | NUM                                   { fprintf(out,"pushi %d\n", $1); $$->tipo = tipoInt; }
-        | FLOAT                                 { $$->tipo = tipoFloat; }
+        | NUM                                   { fprintf(out,"pushi %d\n", $1); $$ = (Expressao)malloc(sizeof(struct expressao));
+                                                  $$->tipo = tipoInt; }
+        | FLOAT                                 { fprintf(out,"pushf %f\n", $1); $$ = (Expressao)malloc(sizeof(struct expressao));
+                                                  $$->tipo = tipoFloat; }
         | VAR '[' Expr ']'                      { ; }
-        | Funcao                                { ; } 
+        | Funcao                                { $$ = (Expressao)malloc(sizeof(struct expressao));
+                                                  $$->tipo = $1->tipos[0]; } 
         | STR                                   { fprintf(out,"pushs %s\n", $1); $$->tipo = tipoString; }
         ;
 
