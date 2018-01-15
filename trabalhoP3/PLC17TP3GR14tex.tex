@@ -65,22 +65,22 @@ O complilador deve gerar o código assembly para a Máquina Virtual VM.
 \indent
 Para este tarbalho a linguagem que criamos tem de conter os seguintes requisitos:
 \begin{enumerate}
-	\item Declarar e manusear variáveis atómicas do tipo inteiro e estruturas do tipo array de inteiros.\\
-	\item Ler do standard input e escrever no standard output.\\
-	\item Fazer instruções básicas como a atribuição de expressões a variáveis.\\
-	\item definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico.\\
-	\item efetuar instruções para controlo do fluxo de execução—condicional e cíclica—que possam ser aninhadas.\\
+	\item Declarar e manusear variáveis atómicas do tipo inteiro e estruturas do tipo array de inteiros.
+	\item Ler do standard input e escrever no standard output.
+	\item Fazer instruções básicas como a atribuição de expressões a variáveis.
+	\item definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico.
+	\item efetuar instruções para controlo do fluxo de execução—condicional e cíclica—que possam ser aninhadas.
 \end{enumerate}
 \indent
 Também devrá conter um conjunto de testes (escritos na nossa linguagem) que tem de ter no mínino os 6 exemplos seguintes:
-\begin{enumerate}
-	\item Ler 4 números e dizer se podem ser os lados de um quadrado.\\
-	\item Ler um inteiro N, depois ler N números e escrever o menor deles.\\
-	\item Ler N (constante do programa) números e calcular e imprimir o seu produtório.\\
-	\item Contar e imprimir os números impares de uma sequência de números naturais.\\
+\begin{enumerate}[i)]
+	\item Ler 4 números e dizer se podem ser os lados de um quadrado.
+	\item Ler um inteiro N, depois ler N números e escrever o menor deles.
+	\item Ler N (constante do programa) números e calcular e imprimir o seu produtório.
+	\item Contar e imprimir os números impares de uma sequência de números naturais.
 	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
-	fazer a ordenação do array por trocas diretas.\\
-	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.\\
+	fazer a ordenação do array por trocas diretas.
+	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa
 \end{enumerate} 
 \section{Expressões regulares} 
 As expressões regulares usadas foram:
@@ -465,31 +465,204 @@ Obtivemos o seguinte resultado:
 	jz fimse0
 	pushs "É um quadrado\n"
 	writes
-	jump fimse0
-	fimse1:
+	jump fimse1
+	fimse0:
 	pushs "Não é um quadrado\n"
 	writes
 	fimse1:
 	stop
+	
 	\end{code}
 	\indent
-	Após abrir o ficheiro na máquina virtual, se in foto(1 e 2) 
+	Após abrir o ficheiro na máquina virtual, se atribuirmos, por exemplo, o número 4 ao a, b, c, d o programa retorna \textbf{"É um quadrado"} (Figura A.1). Se atribuinos valores diferentes ao a, b, c, d o programa diz \textbf{"Não é um quadrado"} (Figura A.2).
 	
 	
 	\item Ler um inteiro N, depois ler N números e escrever o menor deles.
 	
-	
-	
-	
-	
-	
-	
-	• ler N (constante do programa) números e calcular e imprimir o seu produtório.
-	• contar e imprimir os números impares de uma sequência de números naturais.
-	• ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
-	fazer a ordenação do array por trocas diretas.
-	• ler e armazenar N números num array; imprimir os valores por ordem inversa.
+	\begin{code}
+		start
+		pushs "Escreva o número de elementos do array:\n"
+		writes
+		pushi 0
+		read
+		atoi
+		storeg 0
+		pushi 0
+		pushi 0
+		storeg 1
+		pushi 0
+		pushi 0
+		storeg 2
+		pushi 0
+		pushi 0
+		storeg 3
+		pushg 0
+		pushi 0
+		equal
+		pushi 0
+		equal
+		jz fimse0
+		read
+		atoi
+		storeg 3
+		pushi 1
+		storeg 1
+		enq0:
+		pushg 1
+		pushg 0
+		inf
+		jz fimenq0
+		read
+		atoi
+		storeg 2
+		pushg 3
+		pushg 2
+		sup
+		jz fimse1
+		pushg 2
+		storeg 3
+		fimse1:
+		pushg 1
+		pushi 1
+		add
+		storeg 1
+		jump enq0
+		fimenq0:
+		pushs "O menor número foi o "
+		writes
+		pushg 3
+		writei
+		pushs "\n"
+		writes
+		jump fimse2
+		fimse0:
+		pushs "Não leu nenhum número\n"
+		writes
+		fimse2:
+		stop
+		
+	\end{code}
 
+	\indent
+	Defininos que o array tem 3 elementos e depois digitamos valores, por exemplo o 7, 5 e o 8. O resultado deste programa é o menor desses elementos, que é o 5 (figura A.3). Se o array tivesse 0 elementos o programa diz que " 
+	Não leu nenhum número" (figura A.4).
+	\item Ler N (constante do programa) números e calcular e imprimir o seu produtório.
+	
+	\begin{code}
+		start
+		pushs "Vão se ler 5 números\n"
+		writes
+		pushi 0
+		pushi 5
+		storeg 0
+		pushi 0
+		pushi 0
+		storeg 1
+		pushi 0
+		pushi 1
+		storeg 2
+		enq0:
+		pushg 1
+		pushg 0
+		inf
+		jz fimenq0
+		pushg 2
+		read
+		atoi
+		mul
+		storeg 2
+		pushg 1
+		pushi 1
+		add
+		storeg 1
+		jump enq0
+		fimenq0:
+		pushs "O produtório desta sequencia de 5 números é "
+		writes
+		pushg 2
+		writei
+		pushs "\n"
+		writes
+		stop
+		
+	\end{code}
+
+	\indent
+	Atribuimos 5 como o numero de elementos do array. de pois digitamos a sequência 3,4,5,6,8 de e o resultado do programa de 2880 que é o produtório da sequência (figura A.5).	
+	
+	\item Contar e imprimir os números impares de uma sequência de números naturais.
+	
+	\begin{code}
+		start
+		pushs "Digitar uma sequência de números, termina quando for zero\n"
+		writes
+		pushi 0
+		pushi 0
+		storeg 0
+		pushi 0
+		read
+		atoi
+		storeg 1
+		enq0:
+		pushg 1
+		pushi 0
+		equal
+		pushi 0
+		equal
+		jz fimenq0
+		pushg 1
+		pushi 2
+		mod
+		pushi 1
+		equal
+		jz fimse0
+		pushg 0
+		pushi 1
+		add
+		storeg 0
+		pushg 1
+		writei
+		pushs " \n"
+		writes
+		fimse0:
+		read
+		atoi
+		storeg 1
+		jump enq0
+		fimenq0:
+		pushs "Foram lidos "
+		writes
+		pushg 0
+		writei
+		pushs " impares \n"
+		writes
+		stop
+		
+	\end{code}
+	
+	\indent
+	Começa por aparecer a mensagem para digitarmos uma sequência de números. 
+	Digitando os valores 3, 1, 2, 6, 5 e 0. À medida que vamos inserindo os números vão aparecendo os que são impares. Depois quando digitamos o zero aprece a quantidade de números impares que foram lidos. (figura A.6).
+	
+	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
+	fazer a ordenação do array por trocas diretas.
+	
+	\begin{code}
+		
+	\end{code}
+
+	\indent
+	
+	
+	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.
+	
+	\begin{code}
+		
+	\end{code}
+
+	\indent
+	
+	
 \end{enumerate}
   
 
@@ -498,6 +671,54 @@ Obtivemos o seguinte resultado:
 
 
 \chapter{Conclusão} \label{concl}
+ 
+
+\appendix
+\chapter{Imagens}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=9cm,height= 5cm]{exemplo1-1.png}
+	\caption{Verifica se é um quadrado}
+	\label{Exemplo 1.1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=9cm,height= 5cm]{exemplo1-2.png}
+	\caption{Verifica que não é um quadrado}
+	\label{Exemplo 1.2}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=9cm,height= 5cm]{exemplo2-1.png}
+	\caption{Diz qual é o menor número}
+	\label{Exemplo 2.1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=9cm,height= 5cm]{exemplo2-2.png}
+	\caption{Verifica que não leu nenhum número}
+	\label{Exemplo 2.2}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=9cm,height= 5cm]{exemplo3-1.png}
+	\caption{Apresenta o produtório}
+	\label{Exemplo 3.1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=9cm,height= 5cm]{exemplo4-1.png}
+	\caption{Mostra quantos impares foram lidos}
+	\label{Exemplo 4.1}
+\end{figure}
+
+
 
 
 
