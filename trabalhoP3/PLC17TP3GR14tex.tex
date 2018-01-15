@@ -421,6 +421,78 @@ A nossa linguagem está definida pela seguinte GIC:
 \end{enumerate}
 
 \subsection{Resultados}
+\indent
+Depois de executarmos os comados seguintes:\\
+\noindent
+\$ flex -o galo.c galo.l\\
+\$ yacc -d -v galo.y\\
+\$ gcc -o galo y.tab.c -lm\\
+compilamos todos os nossos exemplos.\\
+\indent
+Obtivemos o seguinte resultado:
+\begin{enumerate}
+	\item Ler 4 números e dizer se podem ser os lados de um quadrado.
+	\begin{code}
+		
+	start
+	pushi 0
+	read
+	atoi
+	storeg 0
+	pushi 0
+	read
+	atoi
+	storeg 1
+	pushi 0
+	read
+	atoi
+	storeg 2
+	pushi 0
+	read
+	atoi
+	storeg 3
+	pushg 0
+	pushg 1
+	equal
+	pushg 1
+	pushg 2
+	equal
+	pushg 2
+	pushg 3
+	equal
+	mul
+	mul
+	jz fimse0
+	pushs "É um quadrado\n"
+	writes
+	jump fimse0
+	fimse1:
+	pushs "Não é um quadrado\n"
+	writes
+	fimse1:
+	stop
+	\end{code}
+	\indent
+	Após abrir o ficheiro na máquina virtual, se in foto(1 e 2) 
+	
+	
+	\item Ler um inteiro N, depois ler N números e escrever o menor deles.
+	
+	
+	
+	
+	
+	
+	
+	• ler N (constante do programa) números e calcular e imprimir o seu produtório.
+	• contar e imprimir os números impares de uma sequência de números naturais.
+	• ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
+	fazer a ordenação do array por trocas diretas.
+	• ler e armazenar N números num array; imprimir os valores por ordem inversa.
+
+\end{enumerate}
+  
+
 
 
 

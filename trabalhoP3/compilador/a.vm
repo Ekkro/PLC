@@ -4,9 +4,34 @@ read
 atoi
 storeg 0
 pushi 0
-pushi 0
+read
+atoi
 storeg 1
 pushi 0
-pushi 0
+read
+atoi
 storeg 2
+pushi 0
+read
+atoi
+storeg 3
+pushg 0
+pushg 1
+equal
+pushg 1
+pushg 2
+equal
+pushg 2
+pushg 3
+equal
+mul
+mul
+jz fimse0
+pushs "É um quadrado\n"
+writes
+jump fimse1
+fimse0:
+pushs "Não é um quadrado\n"
+writes
+fimse1:
 stop

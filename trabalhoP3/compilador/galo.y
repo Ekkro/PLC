@@ -295,7 +295,7 @@ Etipo   : TIPO VAR                              { numelemfun = 1; aux = criaVar(
         ;
 
 Se      : SE Cond                               { fprintf(out, "jz fimse%d\n",numse[apse]); apse++; numse[apse] = numse[apse-1]+1; }
-        | Se '{' Prog '}' SENAO                 { apse--; fprintf(out, "jump fimse%d\nfimse%d:\n",numse[apse],numse[apse]+1);
+        | Se '{' Prog '}' SENAO                 { apse--; fprintf(out, "jump fimse%d\nfimse%d:\n",numse[apse]+1,numse[apse]);
                                                   numse[apse] = numse[apse+1]; apse++; numse[apse] = numse[apse-1]+1; 
                                                 }
         | Se '{' Prog '}'                       { apse--; fprintf(out, "fimse%d:\n",numse[apse]); numse[apse] = numse[apse+1]; }

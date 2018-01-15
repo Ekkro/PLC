@@ -4,9 +4,9 @@ int c = leri();
 int d = leri();
 
 se ((a==b) e ((b==c) e (c==d))) {
-    escrevers("E um quadrado\n");
+    escrevers("É um quadrado\n");
 }
 senao {
-    escrevers("nao e um quadrado\n");
+    escrevers("Não é um quadrado\n");
 }
 
