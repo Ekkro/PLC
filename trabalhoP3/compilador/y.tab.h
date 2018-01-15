@@ -61,7 +61,9 @@ extern int yydebug;
     OU = 271,
     STR = 272,
     COM = 273,
-    RETURN = 274
+    RETURN = 274,
+    COS = 275,
+    SIN = 276
   };
 #endif
 /* Tokens.  */
@@ -82,21 +84,22 @@ extern int yydebug;
 #define STR 272
 #define COM 273
 #define RETURN 274
+#define COS 275
+#define SIN 276
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 186 "galo.y" /* yacc.c:1909  */
+#line 182 "galo.y" /* yacc.c:1909  */
 
     int i;
     float f;
     char *s;
-    Expressao expr;
     Funcao fun;
 
-#line 100 "y.tab.h" /* yacc.c:1909  */
+#line 103 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;

@@ -21,10 +21,6 @@
         int   posicaoStack;
     } *Variavel;
 
-    typedef struct expressao{
-        char* tipo;
-    } *Expressao;
-
     typedef struct funcao{
         char* designacao;
         char* tipos[128];
@@ -187,12 +183,11 @@
     int i;
     float f;
     char *s;
-    Expressao expr;
     Funcao fun;
 }
 
 
-%token SE SENAO CASO ENQ VAR TIPO NUM FLOAT EQ NEQ LEQ GEQ E OU STR COM RETURN
+%token SE SENAO CASO ENQ VAR TIPO NUM FLOAT EQ NEQ LEQ GEQ E OU STR COM RETURN COS SIN
 
 %type<i> NUM
 %type<f> FLOAT
@@ -200,7 +195,7 @@
 
 %type<s> Prog Atrib Se Lexpr Eexpr Ltipo Funcao 
 %type<i> Cond
-%type<expr> Expr Sexpr 
+%type<s> Expr Sexpr 
 
 
 %%
@@ -208,7 +203,7 @@ ProgG   : ProgG Se                              { printf("se\n"); }
         | ProgG Enq                             { printf("enquanto\n"); }
         | ProgG Atrib ';'                       { printf("inicializa var\n"); }
         | ProgG VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
-        | ProgG VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
+        | ProgG VAR '[' Expr ']' '=' Expr ';'   { printf("atualiza vetor\n"); }
         | ProgG CriaFun                         { printf("declarar funcao\n");}
         | ProgG Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgG ';'                             { printf("; desnecessario\n"); } 
@@ -220,7 +215,7 @@ ProgF   : ProgF Se                              { printf("se\n"); }
         | ProgF Enq                             { printf("enquanto\n"); }
         | ProgF Atrib ';'                       { printf("inicializa var\n"); }
         | ProgF VAR '=' Expr ';'                { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
-        | ProgF VAR '[' NUM ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
+        | ProgF VAR '[' Expr ']' '=' Expr ';'   { printf("atualiza vetor\n"); }
         | ProgF Funcao ';'                      { printf("chamar funcao\n"); }
         | ProgF ';'                             { printf("; desnecessario\n"); } 
         | ProgF COM                             { printf("comentario\n"); } 
@@ -232,7 +227,7 @@ Prog    : Prog Se                               { printf("se\n"); }
         | Prog Enq                              { printf("enquanto\n"); }
         | Prog Atrib ';'                        { printf("inicializa var\n"); }
         | Prog VAR '=' Expr ';'                 { printf("atualiza var\n"); store(procuraDesig($2,v,quant)); }
-        | Prog VAR '[' NUM ']' '=' Expr ';'     { printf("atualiza vetor\n"); }
+        | Prog VAR '[' Expr ']' '=' Expr ';'    { printf("atualiza vetor\n"); }
         | Prog Funcao ';'                       { printf("chamar funcao\n"); }
         | Prog ';'                              { printf("; desnecessario\n"); } 
         | Prog COM                              { printf("comentario\n"); } 
@@ -257,6 +252,24 @@ Funcao  : VAR Lexpr                             { if(strcmp($1,"leri")==0){
                                                   }else if(strcmp($1,"escreverf")==0){
                                                         fprintf(out,"writef\n");
                                                         $$ = tipoFloat;
+                                                  }else if(strcmp($1,"atoi")==0){
+                                                        fprintf(out,"atoi\n");
+                                                        $$ = tipoInt;
+                                                  }else if(strcmp($1,"atof")==0){
+                                                        fprintf(out,"atof\n");
+                                                        $$ = tipoFloat;
+                                                  }else if(strcmp($1,"ftoi")==0){
+                                                        fprintf(out,"ftoi\n");
+                                                        $$ = tipoInt;
+                                                  }else if(strcmp($1,"itof")==0){
+                                                        fprintf(out,"itof\n");
+                                                        $$ = tipoFloat;
+                                                  }else if(strcmp($1,"stri")==0){
+                                                        fprintf(out,"stri\n");
+                                                        $$ = tipoString;
+                                                  }else if(strcmp($1,"strf")==0){
+                                                        fprintf(out,"strf\n");
+                                                        $$ = tipoString;
                                                   }else{
                                                         funaux = procurafun($1,funcoes,numfun);
                                                         if(!funaux){
@@ -293,7 +306,7 @@ Atrib   : TIPO VAR                              { if(dentrofun){
                                                     push(aux); push(aux); store(aux);
                                                   } 
                                                 }
-        | TIPO VAR '[' NUM ']'                  { insereVar(criaVar($1,$2,topo++,1), v, quant++);
+        | TIPO VAR '[' Expr ']'                  { insereVar(criaVar($1,$2,topo++,1), v, quant++);
 
                                                   store(procuraDesig($2,v,quant)); 
                                                 }
@@ -311,6 +324,7 @@ Igual   : TIPO VAR '='                          { if(dentrofun){
                                                     push(aux);
                                                   }
                                                 }
+        | TIPO VAR '[' Expr ']' '='             { ; }
         | Igual Expr                            { if(dentrofun){
                                                     storel(aux);
                                                   }
@@ -369,28 +383,93 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0
         ;
 
 Sexpr   : VAR                                   { if(dentrofun){
-                                                    fprintf(out,"pushl %d\n",procuraDesig($1,vl,quantl)->posicaoStack); 
+                                                    aux = procuraDesig($1,vl,quantl);
+                                                    fprintf(out,"pushl %d\n",aux->posicaoStack); 
                                                   }else{
-                                                    fprintf(out,"pushg %d\n",procuraDesig($1,v,quant)->posicaoStack); 
+                                                    aux = procuraDesig($1,v,quant);
+                                                    fprintf(out,"pushg %d\n",aux->posicaoStack); 
                                                   }
+                                                  $$ = aux->tipo;
                                                 }
-        | NUM                                   { fprintf(out,"pushi %d\n", $1); $$ = (Expressao)malloc(sizeof(struct expressao));
-                                                  $$->tipo = tipoInt; }
-        | FLOAT                                 { fprintf(out,"pushf %f\n", $1); $$ = (Expressao)malloc(sizeof(struct expressao));
-                                                  $$->tipo = tipoFloat; }
-        | VAR '[' Expr ']'                      { ; }
-        | Funcao                                { $$ = (Expressao)malloc(sizeof(struct expressao));
-                                                  $$->tipo = $1; } 
-        | STR                                   { fprintf(out,"pushs %s\n", $1); $$->tipo = tipoString; }
+        | NUM                                   { fprintf(out,"pushi %d\n", $1); $$ = tipoInt; }
+        | FLOAT                                 { fprintf(out,"pushf %f\n", $1); $$ = tipoFloat; }
+        | VAR '[' Expr ']'                      { if(dentrofun){
+                                                    aux = procuraDesig($1,vl,quantl);
+                                                  }else{
+                                                    aux = procuraDesig($1,v,quant);
+                                                  }
+                                                  $$ = aux->tipo;
+                                                }
+        | Funcao                                { $$ = $1; } 
+        | STR                                   { fprintf(out,"pushs %s\n", $1); $$ = tipoString; }
         ;
 
-Expr	: '(' Expr '+' Expr ')'    			    { fprintf(out,"add\n"); }
-        | '(' Expr '-' Expr ')'  	            { fprintf(out,"sub\n"); }
-        | '(' Expr '*' Expr ')'    	            { fprintf(out,"mul\n"); }
-        | '(' Expr '/' Expr ')'    	            { fprintf(out,"div\n"); }
-        | '(' Expr '%' Expr ')'    	            { fprintf(out,"mod\n"); }
-        | '(' Expr ')'                          { $$ = (Expressao)malloc(sizeof(struct expressao)); $$ = $2; }
-        | Sexpr                                 { $$ = (Expressao)malloc(sizeof(struct expressao)); $$ = $1; }
+Expr	: '(' Expr '+' Expr ')'    			    { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
+                                                    fprintf(out,"add\n");
+                                                    $$ = $2;
+                                                  }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
+                                                    fprintf(out,"fadd\n");
+                                                    $$ = $2;
+                                                  }else if(strcmp($2,"string")==0 && strcmp($4,"string")==0){
+                                                    fprintf(out,"concat\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao '+' tipos sem sentido\n");
+                                                  }
+                                                }
+        | '(' Expr '-' Expr ')'  	            { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
+                                                    fprintf(out,"sub\n");
+                                                    $$ = $2;
+                                                  }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
+                                                    fprintf(out,"fsub\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao '-' tipos sem sentido\n");
+                                                  } 
+                                                }
+        | '(' Expr '*' Expr ')'    	            { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
+                                                    fprintf(out,"mul\n");
+                                                    $$ = $2;
+                                                  }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
+                                                    fprintf(out,"fmul\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao '*' tipos sem sentido\n");
+                                                  } 
+                                                }
+        | '(' Expr '/' Expr ')'    	            { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
+                                                    fprintf(out,"div\n");
+                                                    $$ = $2;
+                                                  }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
+                                                    fprintf(out,"fdiv\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao '/' tipos sem sentido\n");
+                                                  } 
+                                                }
+        | '(' Expr '%' Expr ')'    	            { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
+                                                    fprintf(out,"mod\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao '%%' tipos sem sentido\n");
+                                                  } 
+                                                }
+        | COS Expr                              { if(strcmp($2,"float")==0){
+                                                    fprintf(out,"fcos\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao 'cos' tipos sem sentido\n");
+                                                  } 
+                                                }
+        | SIN Expr                              { if(strcmp($2,"float")==0){
+                                                    fprintf(out,"fsin\n");
+                                                    $$ = $2;
+                                                  }else{
+                                                    printf("ERRO: Na operacao 'sin' tipos sem sentido\n");
+                                                  } 
+                                                }
+        | '(' Expr ')'                          { $$ = $2; }
+        | Sexpr                                 { $$ = $1; }
         ;
 %%
 
