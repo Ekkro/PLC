@@ -11,7 +11,7 @@
 [ ]+cos[ ]+                 { return(COS); }
 ==                          { return(EQ); }
 \<=                         { return(LEQ); }
->=                          { return(GEQ); }
+\>=                         { return(GEQ); }
 !=                          { return(NEQ); }
 [=;{}(),<>!\+\-\*\/%\[\]]   { return(yytext[0]); }
 se|SE                       { return(SE); }

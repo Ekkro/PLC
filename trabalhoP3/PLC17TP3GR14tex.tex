@@ -29,7 +29,7 @@
 	}
 
 
-\title{Processamento de Linguagens e Compiladores\\ (3º ano de LCC)\\ \textbf{Galo}\\ TP3\\ Grupo 14}
+\title{Processamento de Linguagens e Compiladores\\ (3º ano de LCC)\\ \textbf{Desenvolvimento de Linguagem de Programação}\\ TP3\\ Grupo 14}
 \author{Artur Queiroz\\ A77136 \and  Rafael Fernandes\\ A78242 \and Rafaela Pinho\\ A77293 }
 \date{\today}
 
@@ -39,7 +39,7 @@
 	
 
 \begin{abstract}
-	Neste relatório apresentamos a linguagem que criamos e o complidor que gera o código para a Máquina Virtual VM.
+	Neste relatório apresentamos a linguagem que criamos, o Galo, e o complidor que gera o código para a Máquina Virtual VM.
 \end{abstract}
 
 \tableofcontents
@@ -57,27 +57,27 @@ Este relatório está dividido em 4 partes. No primeiro capítulo encontramos a 
 \indent
 Neste trabalho foi pedido para criarmos uma linguagem de programação imperativa e desenvolver um compilador para a linguagem criada.\\
 \indent
-Na linguagem as declarações de variáveis devem ser colocadas no início do programa, não pode haver re-declarações e não se pode usar variáveis sem estar declaradas primeiro. Caso não seja atribuido uma valor à variável depois da declaração, esta ficará com o valor zero.\\
+Na linguagem as declarações de variáveis devem ser colocadas no início do programa, não pode haver re-declarações e não se pode usar variáveis sem estar declaradas primeiro. Caso não seja atribuido um valor à variável depois da declaração, esta ficará com o valor zero se for um inteiro, se for um float ficará 0.0 e se for string ficará $"$".\\
 \indent  	
 O complilador deve gerar o código assembly para a Máquina Virtual VM.
 
 \section{Especificação dos requisitos}
 \indent
-Para este tarbalho a linguagem que criamos tem de conter os seguintes requisitos:
+Para este trabalho a linguagem que criamos tem de conter os seguintes requisitos:
 \begin{enumerate}
 	\item Declarar e manusear variáveis atómicas do tipo inteiro e estruturas do tipo array de inteiros.
 	\item Ler do standard input e escrever no standard output.
 	\item Fazer instruções básicas como a atribuição de expressões a variáveis.
-	\item definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico.
-	\item efetuar instruções para controlo do fluxo de execução—condicional e cíclica—que possam ser aninhadas.
+	\item Definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico.
+	\item Efetuar instruções para controlo do fluxo de execução — condicional e cíclica — que possam ser aninhadas.
 \end{enumerate}
 \indent
-Também devrá conter um conjunto de testes (escritos na nossa linguagem) que tem de ter no mínino os 6 exemplos seguintes:
+Também deverá conter um conjunto de testes (escritos na nossa linguagem) que tem de ter no mínino os 6 exemplos seguintes:
 \begin{enumerate}[i)]
 	\item Ler 4 números e dizer se podem ser os lados de um quadrado.
 	\item Ler um inteiro N, depois ler N números e escrever o menor deles.
 	\item Ler N (constante do programa) números e calcular e imprimir o seu produtório.
-	\item Contar e imprimir os números impares de uma sequência de números naturais.
+	\item Contar e imprimir os números ímpares de uma sequência de números naturais.
 	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
 	fazer a ordenação do array por trocas diretas.
 	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa
@@ -87,11 +87,11 @@ As expressões regulares usadas foram:
 
 \begin{enumerate}
 	\item \#.*\$  
-	\item $\backslash$"[\^\"]* $\backslash$"
-	\item $[ ]+e[ ]+$
-	\item $[ ]+ou[ ]+$
-	\item $[ ]+sin[ ]+$
-	\item $[ ]+cos[ ]+$
+	\item $\backslash$"[\^ \"]* $\backslash$"
+	\item $[$ $]$+e$[$ $]$+
+	\item $[$ $]$+ou$[$ $]$+
+	\item $[$ $]$+sin$[$ $]$+
+	\item $[$ $]$+cos$[$ $]$+
 	\item ==
 	\item $\backslash$$<=$
 	\item $\backslash$$>=$
@@ -99,12 +99,11 @@ As expressões regulares usadas foram:
 	\item $[$=;\{\}(),$<>$!$\backslash$+$\backslash$-$\backslash$*$\backslash$/\%$\backslash$[$\backslash$]]
 	\item se$|$SE
 	\item senao$|$SENAO 
-	\item caso$|$CASO
 	\item enq$|$ENQ
 	\item return
 	\item $[$0-9]+$\backslash$.[0-9]+ 
 	\item int$|$string$|$float 
-	\item$[$0-9]+
+	\item -?$[$0-9]+
 	\item $[$a-zA-Z][a-zA-Z0-9]*
 	\item $[$$\backslash$t$\backslash$n] 
 	
@@ -113,11 +112,11 @@ As expressões regulares usadas foram:
 \section{A nossa linguagem}
 \subsection{Galo}
 \indent
-Como já referido em cima, foi-nos pedidos para criar uma linguagem de programação. Decidimos chamar de Galo por ser um símbolo típico de Potugal, e atribuimos .gl para a extensão.\\
+Como já referido em cima, foi-nos pedidos para criar uma linguagem de programação. Decidimos chamar de Galo por ser um símbolo típico de Potugal, e atribuimos *.gal para a extensão. Para a construção da nossa linguagem fomos inspirados pela pseudo linguagem usada nas aulas pelos professores.
 \indent
-Para a definirmos utilizamos uma gramática independente do contexto, em que tomamos certas decisões que serão especificadas.\\
+Para a definir utilizamos uma gramática independente do contexto, em que tomamos certas decisões que serão especificadas mais à frente.\\
 \indent
-O Galo reconhece os segintes tipos: números inteiros (int), números décimais  (float) e conjunto de caractéres (string). A linguagem usa os habituais síbolos de comparação, como $<=$, $>=$, $==$ e $!=$. Utiliza o "e" e o "ou" como símbolos de operadores lógicos.\\
+O Galo reconhece os segintes tipos: números inteiros (int), números décimais  (float) e sequência de caractéres (string). A linguagem usa os habituais símbolos de comparação, como $<=$, $>=$, $<$, $>$, $==$ e $!=$. Utiliza o "e" e o "ou" como símbolos de operadores lógicos.\\
 \indent
 Como a nossa linguagem é muito parecida ao C, para fazer o "ite" utilizamos o "se" e o "senao" (tanto minúsculo como maiúsculo) para o "while" usamos o "enq" ou "ENQ".\\
 \indent
@@ -229,10 +228,8 @@ A nossa linguagem está definida pela seguinte GIC:
 \indent
 Como em todos os trabalhos tivemos alguns contratempos, dos quais muitos foram superados.\\
 \indent
-Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemos alguns prblemas com o código assembly da máquina virtual, mas nada que não se resolvesse com um bocadinho de paciência e trabalho de grupo. Tivemos também problemas na implementação de vetores.   
+Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemos alguns problemas com o código assembly da máquina virtual, mas nada que não se resolvesse com um bocadinho de paciência e trabalho de grupo. Tivemos problemas com a implementaçáo de vetores, pois nao conseguimos compreender a forma de utilização correcta do comando load.   
    
-
-
 \subsection{Decisões}
 \begin{enumerate}[1)]
 	\item O "e" ($\&\&$) está definida pela multuplicação e o "ou" ($||$) pela adição.
@@ -264,8 +261,8 @@ Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemo
 	 \item Não se pode fazer "return" dentro dos Se's e dos Enq's.\\ 
 	 \item Nas expressões numéricas, as operações binárias têm de estar sempre dentro de parênteses.\\
 	 Exemplo:\\
-	 int a = (1+(2*3))
-	 \item todo o codigo dentro de se's, enq's e funções começa em $\{$ e acaba em  $\}$.
+	 int a = (1+(2*3));
+	 \item Todo o código dentro de se's, enq's e funções começa em '$\{$' e acaba em  '$\}$'.
 	 
 	
 \end{enumerate}
@@ -277,17 +274,17 @@ Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemo
 	\item Ler 4 números e dizer se podem ser os lados de um quadrado.\\
 	
 	\begin{code}
-	int a = leri();
-	int b = leri();
-	int c = leri();
-	int d = leri();
+		int a = leri();
+		int b = leri();
+		int c = leri();
+		int d = leri();
 	
-	se ((a==b) e ((b==c) e (c==d))) {
-		escrevers("É um quadrado\n");
-	}
-	senao {
-		escrevers("Não é um quadrado\n");
-	}
+		se ((a==b) e ((b==c) e (c==d))) {
+			escrevers("É um quadrado\n");
+		}
+		senao {
+			escrevers("Não é um quadrado\n");
+		}
 	\end{code}	
 	
 	\item Ler um inteiro N, depois ler N números e escrever o menor deles.\\
@@ -300,7 +297,7 @@ Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemo
 		int a = 0;
 		int res = 0;
 		
-		se (N!=0){
+		se (N>0){
 			res = leri();
 			i = 1;
 			enq (i < N){
@@ -345,7 +342,7 @@ Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemo
 		escrevers("\n");
 	\end{code}
 
-	\item Contar e imprimir os números impares de uma sequência de números naturais.\\
+	\item Contar e imprimir os números ímpares de uma sequência de números naturais.\\
 	
 	\begin{code}
 		escrevers("Digitar uma sequência de números, termina quando for zero\n");
@@ -362,9 +359,9 @@ Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemo
 			i = leri();
 		}
 	
-	escrevers("Foram lidos ");
-	escreveri(cont);
-	escrevers(" impares \n");
+		escrevers("Foram lidos ");
+		escreveri(cont);
+		escrevers(" ímpares \n");
 	\end{code}
  
   	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
@@ -378,7 +375,7 @@ Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemo
 			return 0;
 		}
 		
-		int ordena(int* v, int N){
+		int ordena(int[] v, int N){
 			int i = 0; #inicio
 			int j = 0; #procura
 			int m ;    #pos do menor
@@ -608,7 +605,7 @@ Obtivemos o seguinte resultado:
 	\end{code}
 
 	\indent
-	Atribuimos 5 como o numero de elementos do array. de pois digitamos a sequência 3,4,5,6,8 de e o resultado do programa de 2880 que é o produtório da sequência (figura A.5).	
+	Atribuimos 5 como o numero de elementos do array. Depois digitamos a sequência 3,4,5,6,8 de e o resultado do programa de 2880 que é o produtório da sequência (figura A.5).	
 	
 	\item Contar e imprimir os números impares de uma sequência de números naturais.
 	
@@ -662,72 +659,9 @@ Obtivemos o seguinte resultado:
 	
 	\indent
 	Começa por aparecer a mensagem para digitarmos uma sequência de números. 
-	Digitando os valores 3, 1, 2, 6, 5 e 0. À medida que vamos inserindo os números vão aparecendo os que são impares. Depois quando digitamos o zero aprece a quantidade de números impares que foram lidos. (figura A.6).
+	Digitando os valores 3, 1, 2, 6, 5 e 0. À medida que vamos inserindo os números vão aparecendo os que são impares. Depois quando digitamos o zero aparece a quantidade de números ímpares que foram lidos. (figura A.6).
 	
-	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
-	fazer a ordenação do array por trocas diretas.
-	
-	\begin{code}
-		
-	\end{code}
 
-	\indent
-	
-	
-	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.
-	
-	\begin{code}
-		
-		atoi
-		storeg 0
-		pushi 0
-		pushi 0
-		storeg 1
-		pushi 0
-		pushi 0
-		storeg 2
-		pushg 0
-		storeg 3
-		enq0:
-		pushg 1
-		pushg 0
-		inf
-		jz fimenq0
-		pushg 1
-		read
-		atoi
-		pushg 1
-		pushi 1
-		add
-		storeg 1
-		jump enq0
-		fimenq0:
-		enq1:
-		pushg 1
-		pushi 0
-		sup
-		jz fimenq1
-		pushg 1
-		pushi 1
-		sub
-		storeg 2
-		pushg 2
-		writei
-		pushs "\n"
-		writes
-		pushg 1
-		pushi 1
-		sub
-		storeg 1
-		jump enq1
-		fimenq1:
-		stop
-		
-	\end{code}
-
-	\indent
-	
-	
 \end{enumerate}
   
 
@@ -737,56 +671,95 @@ Obtivemos o seguinte resultado:
 
 \chapter{Conclusão} \label{concl}
  \indent
- Este trabalho abrangeu maior parte da matéria lecionada ao longo do semestre. Através do nosso conhecimento em GIC's e sobre o gerador Yacc e Flex criamos um compilador para converter a nossa linguagem em código assembly para a Máquina Virtual VM.\\
+ Este trabalho abrangeu maior parte da matéria lecionada ao longo do semestre. Através do nosso conhecimento em GIC's e sobre o gerador Yacc e Flex criamos um compilador para converter a nossa linguagem em pseudo-código para a Máquina Virtual VM.\\
  Não coseguimos acabar todas as tarefas propostas, o exemplo 5 e 6 não estão a funcionar devido aos vetores. Como referido no capítulo 3 tivemos dificuldades a implementar essa estrutura.\\
  \indent
- Como trabalho futuro gostaríamos de implementar os vetores e adicionar mais elementos à nossa linguagem. 
+ Como trabalho futuro gostaríamos de implementar os vetores e adicionar mais elementos à nossa linguagem, como a parte gráfica. 
 
 \appendix
 \chapter{Imagens}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm,height= 5cm]{exemplo1-1.png}
+	\includegraphics[width=14cm,height= 8cm]{exemplo1-1.png}
 	\caption{Verifica se é um quadrado}
 	\label{Exemplo 1.1}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm,height= 5cm]{exemplo1-2.png}
+	\includegraphics[width=14cm,height= 8cm]{exemplo1-2.png}
 	\caption{Verifica que não é um quadrado}
 	\label{Exemplo 1.2}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm,height= 5cm]{exemplo2-1.png}
+	\includegraphics[width=14cm,height= 8cm]{exemplo2-1.png}
 	\caption{Diz qual é o menor número}
 	\label{Exemplo 2.1}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm,height= 5cm]{exemplo2-2.png}
+	\includegraphics[width=14cm,height= 8cm]{exemplo2-2.png}
 	\caption{Verifica que não leu nenhum número}
 	\label{Exemplo 2.2}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm,height= 5cm]{exemplo3-1.png}
+	\includegraphics[width=14cm,height= 8cm]{exemplo3-1.png}
 	\caption{Apresenta o produtório}
 	\label{Exemplo 3.1}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm,height= 5cm]{exemplo4-1.png}
+	\includegraphics[width=14cm,height= 8cm]{exemplo4-1.png}
 	\caption{Mostra quantos impares foram lidos}
 	\label{Exemplo 4.1}
 \end{figure}
 
+\chapter{Código do Programa}
+Só o ficheiro galo.l
+\begin{code}
+%{
+#include "y.tab.h"
+%}
+
+%%
+#.*$                        { return(COM); }
+\"[^"]*\"                   { yylval.s = strdup(yytext); return(STR); }
+[ ]+e[ ]+                   { return(E); }
+[ ]+ou[ ]+                  { return(OU); }
+[ ]+sin[ ]+                 { return(SIN); }
+[ ]+cos[ ]+                 { return(COS); }
+==                          { return(EQ); }
+\<=                         { return(LEQ); }
+\>=                         { return(GEQ); }
+!=                          { return(NEQ); }
+[=;{}(),<>!\+\-\*\/%\[\]]   { return(yytext[0]); }
+se|SE                       { return(SE); }
+senao|SENAO                 { return(SENAO); }
+enq|ENQ                     { return(ENQ); }
+return                      { return(RETURN); }
+[0-9]+\.[0-9]+              { yylval.f = atof(yytext); return(FLOAT); }
+int|string|float            { yylval.s = strdup(removeEspacos(yytext)); return(TIPO); }
+-?[0-9]+                      { yylval.i = atoi(yytext); return(NUM); }
+[a-zA-Z][a-zA-Z0-9]*        { yylval.s = strdup(yytext); return(VAR); }
+[ \t\n]                     { ; }
+.                           { printf("Caracter invalido %c\n", yytext[0]); }
+	%%
+	
+	int yywrap(){
+		return(1);
+	}						
+							
+	
+
+
+\end{code}
 
 
 
