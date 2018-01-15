@@ -3,6 +3,8 @@
 start
 alloc 10
 dup 1
+storeg 0
+pushg 0
 pushi 10
 store 3
 load 4

@@ -32,9 +32,9 @@
     } *Funcao;
 
     Variavel v[MAX] = {0}, aux = NULL, vl[MAX] = {0};
-    Funcao funcoes[128] = {0};
+    Funcao funcoes[128] = {0}, funaux = NULL;
     int quant = 0, quantl = 0;
-
+    char* tiposaux[128] = {0};
     
     int removeVarDesig (char* designacao, Variavel v[], int N){
 	    if(N==0)return -1;
@@ -119,6 +119,21 @@
             fprintf(out,"pushi 0\n");  
         }else if (strcmp(v->tipo,"string")==0 && v->dimensao==0){
             fprintf(out,"pushs \"\"\n");
+        }else if (strcmp(v->tipo,"float")==0){
+            fprintf(out,"pushf 0.0\n");
+        }else {
+            printf("ERRO: tipo nao existe");   
+        }
+
+    }
+
+    void pushtipo(char* tipo){
+        if(strcmp(tipo,"int")==0){
+            fprintf(out,"pushi 0\n");  
+        }else if (strcmp(tipo,"string")==0){
+            fprintf(out,"pushs \"\"\n");
+        }else if (strcmp(tipo,"float")==0){
+            fprintf(out,"pushf 0.0\n");
         }else {
             printf("ERRO: tipo nao existe");   
         }
@@ -134,14 +149,7 @@
     }
 
     void inserefun(Funcao fun, Funcao funcoes[], int numfun){
-        int i;
-        for(i = 0;i< numfun;i++){
-            if(funcoes[i]==0){
-                funcoes[i] = fun;
-                break;
-            }
-        }
-        return;
+        funcoes[numfun] = fun;
     }
     
     Funcao criafun(char* designacao, char* tipos[], int numtipos){
@@ -152,6 +160,26 @@
             fun->tipos[i] = tipos[i];
         }
         fun->numtipos = numtipos;
+        return fun;
+    }
+
+    Funcao atualizafun(Funcao fun, char* tipos[], int numtipos){
+        int i;
+        for (i=fun->numtipos;i<fun->numtipos+numtipos;i++){
+            fun->tipos[i] = tipos[i-fun->numtipos];
+        }
+        fun->numtipos += numtipos;
+        return fun;
+    }
+
+    Funcao procurafun(char* designacao, Funcao funcoes[], int numfun ){
+        int i;
+        for(i=0;i<numfun;i++){
+            if(strcmp(funcoes[i]->designacao,designacao)==0){
+                return funcoes[i];
+            }
+        }
+        return NULL;
     }
 %}
 
@@ -170,9 +198,8 @@
 %type<f> FLOAT
 %type<s> VAR TIPO STR
 
-%type<s> Prog Atrib Se Lexpr Eexpr Ltipo 
+%type<s> Prog Atrib Se Lexpr Eexpr Ltipo Funcao 
 %type<i> Cond
-%type<fun> Funcao
 %type<expr> Expr Sexpr 
 
 
@@ -214,15 +241,36 @@ Prog    : Prog Se                               { printf("se\n"); }
 
 Funcao  : VAR Lexpr                             { if(strcmp($1,"leri")==0){
                                                         fprintf(out,"read\natoi\n");
+                                                        $$ = tipoInt;
+                                                  }else if(strcmp($1,"lerf")==0){
+                                                        fprintf(out,"read\natof\n");
+                                                        $$ = tipoFloat;
                                                   }else if(strcmp($1,"lers")==0){
                                                         fprintf(out,"read\n");
+                                                        $$ = tipoString;
                                                   }else if(strcmp($1,"escreveri")==0){
                                                         fprintf(out,"writei\n");
+                                                        $$ = tipoInt;
                                                   }else if(strcmp($1,"escrevers")==0){
                                                         fprintf(out,"writes\n");
+                                                        $$ = tipoString;
+                                                  }else if(strcmp($1,"escreverf")==0){
+                                                        fprintf(out,"writef\n");
+                                                        $$ = tipoFloat;
                                                   }else{
-                                                        for(i=0;i<numelemfun;i++){
-                                                            
+                                                        funaux = procurafun($1,funcoes,numfun);
+                                                        if(!funaux){
+                                                            printf("ERRO: funcao nao encontrada");
+                                                        }else{
+                                                            $$ = funaux->tipos[0];
+                                                            pushtipo(funaux->tipos[0]);
+                                                            for(i=0;i<numelemfun;i++){
+                                                                fprintf(out,"pushl %d\n",topo+numelemfun-i-1);
+                                                            }
+                                                            fprintf(out,"pusha %s\ncall\nnop\npop %d\n",$1,numelemfun);
+                                                            for(i=0;i<numelemfun;i++){
+                                                               fprintf(out,"swap\npop 1\n");
+                                                            }
                                                         }
                                                   }
                                                 }
@@ -282,20 +330,20 @@ Eexpr   : Expr                                  { numelemfun = 1; }
         ;
 
 /*lista de tipos*/
-Ltipo   : ')'                                   { numelemfun = 0 ; }
+Ltipo   : ')'                                   { numelemfun = 0; }
         | Etipo ')'                             { ; }
         ;
 
 Etipo   : TIPO VAR                              { numelemfun = 1; aux = criaVar($1,$2,-(numelemfun),0);
-                                                  insereVar(aux, vl, quantl++);
+                                                  insereVar(aux, vl, quantl++); atualizafun(funcoes[numfun],&$1,1);  
                                                 }
         | Etipo ',' TIPO VAR                    { numelemfun++; aux = criaVar($3,$4,-(numelemfun),0);
-                                                  insereVar(aux, vl, quantl++);
+                                                  insereVar(aux, vl, quantl++); atualizafun(funcoes[numfun],&$3,1); 
                                                 }
         ;
 
 Se      : SE Cond                               { fprintf(out, "jz fimse%d\n",numse[apse]); apse++; numse[apse] = numse[apse-1]+1; }
-        | Se '{' Prog '}' SENAO                 { apse--; fprintf(out, "jump fimse%d\nfimse%d:\n",numse[apse]+1,numse[apse]);
+        | Se '{' Prog '}' SENAO                 { apse--; fprintf(out, "jump fimse%d\nfimse%d:\n",numse[apse],numse[apse]+1);
                                                   numse[apse] = numse[apse+1]; apse++; numse[apse] = numse[apse-1]+1; 
                                                 }
         | Se '{' Prog '}'                       { apse--; fprintf(out, "fimse%d:\n",numse[apse]); numse[apse] = numse[apse+1]; }
@@ -332,7 +380,7 @@ Sexpr   : VAR                                   { if(dentrofun){
                                                   $$->tipo = tipoFloat; }
         | VAR '[' Expr ']'                      { ; }
         | Funcao                                { $$ = (Expressao)malloc(sizeof(struct expressao));
-                                                  $$->tipo = $1->tipos[0]; } 
+                                                  $$->tipo = $1; } 
         | STR                                   { fprintf(out,"pushs %s\n", $1); $$->tipo = tipoString; }
         ;
 
