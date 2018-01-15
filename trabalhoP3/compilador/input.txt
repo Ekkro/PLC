@@ -1,3 +1,11 @@
-float a = 0.2;
-float b = 0.6;
-escreverf(( sin a + cos b));
+int soma(int a, int b){
+    return (a+b);
+}
+
+int subt(int a, int b){
+    return (a-b);
+}
+
+int a = 4;
+int b = 2;
+escreveri(subt(a,b));

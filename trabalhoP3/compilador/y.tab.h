@@ -92,7 +92,7 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 182 "galo.y" /* yacc.c:1909  */
+#line 195 "galo.y" /* yacc.c:1909  */
 
     int i;
     float f;

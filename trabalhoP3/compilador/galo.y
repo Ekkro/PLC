@@ -177,6 +177,19 @@
         }
         return NULL;
     }
+    
+    void zerar(Variavel vl[], int quantl){
+        Variavel aux = NULL;
+        int i = 0;
+        while(i<quantl){
+            if(vl[i]){
+                aux = vl[i];
+                vl[i] = NULL;
+                free(aux);
+                i++;
+            }
+        }
+    }
 %}
 
 %union{
@@ -292,7 +305,7 @@ Funcao  : VAR Lexpr                             { if(strcmp($1,"leri")==0){
 CriaFun : TIPO VAR '('                          { fprintf(out,"jump fimfun%d\n%s:\nnop\n",numfun,$2); dentrofun = 1; 
                                                   inserefun(criafun($2,&$1,1),funcoes,numfun); 
                                                 }
-        | Ltipo '{' ProgF '}'                   { fprintf(out,"fimfun%d:\n",numfun); numfun++; dentrofun = 0; }
+        | Ltipo '{' ProgF '}'                   { fprintf(out,"fimfun%d:\n",numfun); numfun++; dentrofun = 0; zerar(vl,quantl); quantl = 0; }
         ;
 
 Atrib   : TIPO VAR                              { if(dentrofun){
