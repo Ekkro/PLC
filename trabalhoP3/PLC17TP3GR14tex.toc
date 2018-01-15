@@ -10,7 +10,6 @@
 \contentsline {section}{\numberline {3.1}Problemas de implementa\IeC {\c c}\IeC {\~a}o, Decis\IeC {\~o}es e Alternativas}{8}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Problemas de implementa\IeC {\c c}\IeC {\~a}o}{8}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Decis\IeC {\~o}es}{8}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Alternativas}{9}{subsection.3.1.3}
 \contentsline {section}{\numberline {3.2}Testes realizados e Resultados}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Exemplos escritos na nossa linguagem}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Resultados}{12}{subsection.3.2.2}
