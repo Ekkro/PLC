@@ -1,37 +1,60 @@
 start
+pushs "Escreva o número de elementos do array:\n"
+writes
 pushi 0
 read
 atoi
 storeg 0
 pushi 0
-read
-atoi
+pushi 0
 storeg 1
 pushi 0
-read
-atoi
+pushi 0
 storeg 2
 pushi 0
+pushi 0
+storeg 3
+pushg 0
+pushi 0
+equal
+pushi 0
+equal
+jz fimse0
 read
 atoi
 storeg 3
+pushi 1
+storeg 1
+enq0:
+pushg 1
 pushg 0
-pushg 1
-equal
-pushg 1
-pushg 2
-equal
-pushg 2
+inf
+jz fimenq0
+read
+atoi
+storeg 2
 pushg 3
-equal
-mul
-mul
-jz fimse0
-pushs "É um quadrado\n"
-writes
-jump fimse1
-fimse0:
-pushs "Não é um quadrado\n"
-writes
+pushg 2
+sup
+jz fimse1
+pushg 2
+storeg 3
 fimse1:
+pushg 1
+pushi 1
+add
+storeg 1
+jump enq0
+fimenq0:
+pushs "O menor número foi o "
+writes
+pushg 3
+writei
+pushs "\n"
+writes
+jump fimse2
+fimse0:
+pushs "Não leu nenhum número\n"
+writes
+fimse2:
 stop
