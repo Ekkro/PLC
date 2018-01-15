@@ -1,40 +1,47 @@
 start
-jump fimfun0
-soma:
-nop
-pushl -1
-pushl -2
-add
-storel -3
-return
-fimfun0:
-jump fimfun1
-subt:
-nop
-pushl -1
-pushl -2
-sub
-storel -3
-return
-fimfun1:
 pushi 0
-pushi 4
+read
+atoi
 storeg 0
 pushi 0
-pushi 2
+pushi 0
 storeg 1
+pushi 0
+pushi 0
+storeg 2
 pushg 0
+storeg 3
+enq0:
+pushg 1
+pushg 0
+inf
+jz fimenq0
+pushg 1
+read
+atoi
+pushg 1
+pushi 1
+add
+storeg 1
+jump enq0
+fimenq0:
+enq1:
 pushg 1
 pushi 0
-pushl 3
-pushl 2
-pusha subt
-call
-nop
-pop 2
-swap
-pop 1
-swap
-pop 1
+sup
+jz fimenq1
+pushg 1
+pushi 1
+sub
+storeg 2
+pushg 2
 writei
+pushs "\n"
+writes
+pushg 1
+pushi 1
+sub
+storeg 1
+jump enq1
+fimenq1:
 stop

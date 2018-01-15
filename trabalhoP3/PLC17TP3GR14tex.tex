@@ -85,9 +85,29 @@ Também devrá conter um conjunto de testes (escritos na nossa linguagem) que te
 \section{Expressões regulares} 
 As expressões regulares usadas foram:
 
-\begin{enumerate}[1)]
-	\item
-
+\begin{enumerate}
+	\item \#.*\$  
+	\item $\backslash$"[\^\"]* $\backslash$"
+	\item $[ ]+e[ ]+$
+	\item $[ ]+ou[ ]+$
+	\item $[ ]+sin[ ]+$
+	\item $[ ]+cos[ ]+$
+	\item ==
+	\item $\backslash$$<=$
+	\item $\backslash$$>=$
+	\item !=
+	\item $[$=;\{\}(),$<>$!$\backslash$+$\backslash$-$\backslash$*$\backslash$/\%$\backslash$[$\backslash$]]
+	\item se$|$SE
+	\item senao$|$SENAO 
+	\item caso$|$CASO
+	\item enq$|$ENQ
+	\item return
+	\item $[$0-9]+$\backslash$.[0-9]+ 
+	\item int$|$string$|$float 
+	\item$[$0-9]+
+	\item $[$a-zA-Z][a-zA-Z0-9]*
+	\item $[$$\backslash$t$\backslash$n] 
+	
 \end{enumerate}
 
 \section{A nossa linguagem}
@@ -101,7 +121,7 @@ O Galo reconhece os segintes tipos: números inteiros (int), números décimais 
 \indent
 Como a nossa linguagem é muito parecida ao C, para fazer o "ite" utilizamos o "se" e o "senao" (tanto minúsculo como maiúsculo) para o "while" usamos o "enq" ou "ENQ".\\
 \indent
-Existe as funções "ler?()" e "escrever?()" que são, respetivamente, a função de leitura no teclado e de escrita no ecrã. (? = i ou s, i-inteiro, s-string) \\
+Existe as funções "ler?()" e "escrever?()" que são, respetivamente, a função de leitura no teclado e de escrita no ecrã. (? = i ou s ou f, i-inteiro, s-string, f- float) \\
 
 \indent
 A nossa linguagem está definida pela seguinte GIC:
@@ -112,18 +132,18 @@ A nossa linguagem está definida pela seguinte GIC:
 	2      | ProgG Enq
 	3      | ProgG Atrib ';'
 	4      | ProgG VAR '=' Expr ';'
-	5      | ProgG VAR '[' NUM ']' '=' Expr ';'
+	5      | ProgG VAR '[' Expr ']' '=' Expr ';'
 	6      | ProgG CriaFun
 	7      | ProgG Funcao ';'
 	8      | ProgG ';'
 	9      | ProgG COM
-	10      | %empty
+	10     | %empty
 	
 	11 ProgF: ProgF Se
 	12      | ProgF Enq
 	13      | ProgF Atrib ';'
 	14      | ProgF VAR '=' Expr ';'
-	15      | ProgF VAR '[' NUM ']' '=' Expr ';'
+	15      | ProgF VAR '[' Expr ']' '=' Expr ';'
 	16      | ProgF Funcao ';'
 	17      | ProgF ';'
 	18      | ProgF COM
@@ -134,7 +154,7 @@ A nossa linguagem está definida pela seguinte GIC:
 	22     | Prog Enq
 	23     | Prog Atrib ';'
 	24     | Prog VAR '=' Expr ';'
-	25     | Prog VAR '[' NUM ']' '=' Expr ';'
+	25     | Prog VAR '[' Expr ']' '=' Expr ';'
 	26     | Prog Funcao ';'
 	27     | Prog ';'
 	28     | Prog COM
@@ -146,26 +166,26 @@ A nossa linguagem está definida pela seguinte GIC:
 	32        | Ltipo '{' ProgF '}'
 	
 	33 Atrib: TIPO VAR
-	34      | TIPO VAR '[' NUM ']'
+	34      | TIPO VAR '[' Expr ']'
 	35      | Igual
 	
 	36 Igual: TIPO VAR '='
-	37      | Igual Expr
+	37      | TIPO VAR '[' Expr ']' '='
+	38      | Igual Expr
 	
-	38 Lexpr: '(' ')'
-	39      | '(' Eexpr ')'
+	39 Lexpr: '(' ')'
+	40      | '(' Eexpr ')'
 	
-	40 Eexpr: Expr
-	41      | Eexpr ',' Expr
+	41 Eexpr: Expr
+	42      | Eexpr ',' Expr
 	
-	42 Ltipo: ')'
-	43      | Etipo ')'
+	43 Ltipo: ')'
+	44      | Etipo ')'
 	
-	44 Etipo: TIPO VAR
-	45      | Etipo ',' TIPO VAR
+	45 Etipo: TIPO VAR
+	46      | Etipo ',' TIPO VAR
 	
-	46 Se: SE Cond
-	47   | Se '{' Prog '}' CASO Cond
+	47 Se: SE Cond
 	48   | Se '{' Prog '}' SENAO
 	49   | Se '{' Prog '}'
 	
@@ -196,15 +216,20 @@ A nossa linguagem está definida pela seguinte GIC:
 	71     | '(' Expr '*' Expr ')'
 	72     | '(' Expr '/' Expr ')'
 	73     | '(' Expr '%' Expr ')'
-	74     | '(' Expr ')'
-	75     | Sexpr
+	74     | COS Expr
+	75     | SIN Expr
+	76     | '(' Expr ')'
+	77     | Sexpr
 	
 \end{code}
 
 \chapter{Codificação e Testes}
 \section{Problemas de implementação, Decisões e Alternativas}
 \subsection{Problemas de implementação}
-
+\indent
+Como em todos os trabalhos tivemos alguns contratempos, dos quais muitos foram superados.\\
+\indent
+Quando estavamos a passar a nossa linguagem para uma gramática tradutora tivemos alguns prblemas os   
    
 
 
@@ -657,6 +682,51 @@ Obtivemos o seguinte resultado:
 	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.
 	
 	\begin{code}
+		
+		atoi
+		storeg 0
+		pushi 0
+		pushi 0
+		storeg 1
+		pushi 0
+		pushi 0
+		storeg 2
+		pushg 0
+		storeg 3
+		enq0:
+		pushg 1
+		pushg 0
+		inf
+		jz fimenq0
+		pushg 1
+		read
+		atoi
+		pushg 1
+		pushi 1
+		add
+		storeg 1
+		jump enq0
+		fimenq0:
+		enq1:
+		pushg 1
+		pushi 0
+		sup
+		jz fimenq1
+		pushg 1
+		pushi 1
+		sub
+		storeg 2
+		pushg 2
+		writei
+		pushs "\n"
+		writes
+		pushg 1
+		pushi 1
+		sub
+		storeg 1
+		jump enq1
+		fimenq1:
+		stop
 		
 	\end{code}
 
