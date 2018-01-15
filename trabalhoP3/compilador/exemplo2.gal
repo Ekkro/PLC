@@ -1,4 +1,4 @@
-escrevers("escreva o numero de elementos do array:\n");
+escrevers("Escreva o número de elementos do array:\n");
 int N = leri();
 
 int i = 0;
@@ -19,12 +19,12 @@ se (N!=0){
     }
 
 
-    escrevers("O menor numero foi o ");
+    escrevers("O menor número foi o ");
     escreveri(res);
     escrevers("\n");
 
 }
 senao{
-    escrevers("Nao leu nenhum numero\n");
+    escrevers("Não leu nenhum número\n");
 }
 

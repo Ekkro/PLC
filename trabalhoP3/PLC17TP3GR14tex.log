@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.13)  14 JAN 2018 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.10.13)  15 JAN 2018 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -720,136 +720,236 @@ Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 47.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 55.
 [2
 
 ]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Overfull \hbox (13.27838pt too wide) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Overfull \hbox (24.3895pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10 efetuar ins-tru^^Xc~oes para con-trolo do fluxo de execu^^Xc~
 ao|condicional e c^^S^^Pclica|que
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 77.
 [3
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 79.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 94.
- [4]
-Cap\'{\i }tulo 3.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 94.
 
-Overfull \hbox (0.5797pt too wide) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 95--105
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 105.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 105.
+[4]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+ [6]
+Cap\'{\i }tulo 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 204.
+
+Overfull \hbox (0.5797pt too wide) in paragraph at lines 205--205
 []\OT1/cmr/bx/n/14.4 Problemas de im-ple-menta^^Xc~ao, De-cis~oes e Al-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 96.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 211.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
-[5
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 243.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
- [6]
-Cap\'{\i }tulo 4.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 155.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 243.
 [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 155.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 249.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 253.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 254.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 302.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 302.
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--352
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 357.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 357.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 413.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 413.
+[10]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 427.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 427.
+ [11]
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 427.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 434.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 434.
+[12
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
  (./PLC17TP3GR14tex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 155.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 155.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
 Package rerunfilecheck Info: File `PLC17TP3GR14tex.out' has not changed.
-(rerunfilecheck)             Checksum: 37816875BF0209E7AE34A002EAE7095F;963.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 155.
+(rerunfilecheck)             Checksum: FEA7952B0D2023393E99CB55F935BBBF;1053.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
  ) 
 Here is how much of TeX's memory you used:
- 8235 strings out of 494925
- 116917 string characters out of 6180250
- 210987 words of memory out of 5000000
- 11408 multiletter control sequences out of 15000+600000
+ 8268 strings out of 494925
+ 117284 string characters out of 6180250
+ 211992 words of memory out of 5000000
+ 11423 multiletter control sequences out of 15000+600000
  11549 words of font info for 42 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 28i,8n,32p,319b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,32p,461b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PLC17TP3GR14tex.pdf (9 pages, 98955 bytes).
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmtt8.pfb>
+Output written on PLC17TP3GR14tex.pdf (14 pages, 120403 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-escrevers("digitar uma sequencia de números, termina quando for zero\n");
+escrevers("Digitar uma sequência de números, termina quando for zero\n");
 
 int cont = 0;
 int i = leri();

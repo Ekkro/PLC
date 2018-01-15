@@ -46,7 +46,11 @@
 
 \chapter{Introdução} \label{intro}
 \indent
-
+Neste relatório apresentamos o último trabalho da unidade curricular "Processamento de Linguagens e Compliadores". Este consiste em desenvolver um processador de linguagens usando o método da tradução dirigida pela sintaxe. Também devemos desenvolver um compilador que gera o código para uma máquina de stack virtual. Utilizaremos a ferramenta Yacc para gerar compiladores baseados em gramáticas tradutoras.\\
+\indent
+Como todos os outros trabalhos, este também tem como objetivo aumentar a experência no uso do ambiente Linux, da linguagem C e  ferramentas de apoio à programção.\\
+\indent
+Este relatório está dividido em 4 partes. No primeiro capítulo encontramos a parte introdutório a este trabalho, onde explicamos no que consiste. No capítulo 2 (dois) apresentamos os requisitos e a linguagem que criamos. No terceiro mostramos as decisões e alguns teste efectuados. No último temos a conclusão e os objetivos do trabalho futuro.
  
 \chapter{Galo e Compilador} \label{fi}
 \section{Descrição informal do problema}
@@ -60,13 +64,24 @@ O complilador deve gerar o código assembly para a Máquina Virtual VM.
 \section{Especificação dos requisitos}
 \indent
 Para este tarbalho a linguagem que criamos tem de conter os seguintes requisitos:
-\begin{enumerate}[1)]
+\begin{enumerate}
 	\item Declarar e manusear variáveis atómicas do tipo inteiro e estruturas do tipo array de inteiros.\\
 	\item Ler do standard input e escrever no standard output.\\
 	\item Fazer instruções básicas como a atribuição de expressões a variáveis.\\
-	\item definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico(?)
-	\item efetuar instruções para controlo do fluxo de execução—condicional e cíclica—que possam ser aninhadas. (?)
+	\item definir e invocar subprogramas sem parâmetros mas que possam retornar um resultado atómico.\\
+	\item efetuar instruções para controlo do fluxo de execução—condicional e cíclica—que possam ser aninhadas.\\
 \end{enumerate}
+\indent
+Também devrá conter um conjunto de testes (escritos na nossa linguagem) que tem de ter no mínino os 6 exemplos seguintes:
+\begin{enumerate}
+	\item Ler 4 números e dizer se podem ser os lados de um quadrado.\\
+	\item Ler um inteiro N, depois ler N números e escrever o menor deles.\\
+	\item Ler N (constante do programa) números e calcular e imprimir o seu produtório.\\
+	\item Contar e imprimir os números impares de uma sequência de números naturais.\\
+	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
+	fazer a ordenação do array por trocas diretas.\\
+	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.\\
+\end{enumerate} 
 \section{Expressões regulares} 
 As expressões regulares usadas foram:
 
@@ -82,14 +97,109 @@ Como já referido em cima, foi-nos pedidos para criar uma linguagem de programa�
 \indent
 Para a definirmos utilizamos uma gramática independente do contexto, em que tomamos certas decisões que serão especificadas.\\
 \indent
-O Galo reconhece os segintes tipos: números inteiros (int), números décimais  (float) e conjunto de caractéres (string).
+O Galo reconhece os segintes tipos: números inteiros (int), números décimais  (float) e conjunto de caractéres (string). A linguagem usa os habituais síbolos de comparação, como $<=$, $>=$, $==$ e $!=$. Utiliza o "e" e o "ou" como símbolos de operadores lógicos.\\
+\indent
+Como a nossa linguagem é muito parecida ao C, para fazer o "ite" utilizamos o "se" e o "senao" (tanto minúsculo como maiúsculo) para o "while" usamos o "enq" ou "ENQ".\\
+\indent
+Existe as funções "ler?()" e "escrever?()" que são, respetivamente, a função de leitura no teclado e de escrita no ecrã. (? = i ou s, i-inteiro, s-string) \\
 
+\indent
+A nossa linguagem está definida pela seguinte GIC:
 
 \begin{code}
 	
-
+	1 ProgG: ProgG Se
+	2      | ProgG Enq
+	3      | ProgG Atrib ';'
+	4      | ProgG VAR '=' Expr ';'
+	5      | ProgG VAR '[' NUM ']' '=' Expr ';'
+	6      | ProgG CriaFun
+	7      | ProgG Funcao ';'
+	8      | ProgG ';'
+	9      | ProgG COM
+	10      | %empty
+	
+	11 ProgF: ProgF Se
+	12      | ProgF Enq
+	13      | ProgF Atrib ';'
+	14      | ProgF VAR '=' Expr ';'
+	15      | ProgF VAR '[' NUM ']' '=' Expr ';'
+	16      | ProgF Funcao ';'
+	17      | ProgF ';'
+	18      | ProgF COM
+	19      | ProgF RETURN Expr ';'
+	20      | %empty
+	
+	21 Prog: Prog Se
+	22     | Prog Enq
+	23     | Prog Atrib ';'
+	24     | Prog VAR '=' Expr ';'
+	25     | Prog VAR '[' NUM ']' '=' Expr ';'
+	26     | Prog Funcao ';'
+	27     | Prog ';'
+	28     | Prog COM
+	29     | %empty
+	
+	30 Funcao: VAR Lexpr
+	
+	31 CriaFun: TIPO VAR '('
+	32        | Ltipo '{' ProgF '}'
+	
+	33 Atrib: TIPO VAR
+	34      | TIPO VAR '[' NUM ']'
+	35      | Igual
+	
+	36 Igual: TIPO VAR '='
+	37      | Igual Expr
+	
+	38 Lexpr: '(' ')'
+	39      | '(' Eexpr ')'
+	
+	40 Eexpr: Expr
+	41      | Eexpr ',' Expr
+	
+	42 Ltipo: ')'
+	43      | Etipo ')'
+	
+	44 Etipo: TIPO VAR
+	45      | Etipo ',' TIPO VAR
+	
+	46 Se: SE Cond
+	47   | Se '{' Prog '}' CASO Cond
+	48   | Se '{' Prog '}' SENAO
+	49   | Se '{' Prog '}'
+	
+	50 Enq: ENQ
+	51    | Enq Cond
+	52    | Enq '{' Prog '}'
+	
+	53 Cond: NUM
+	54     | '(' Expr EQ Expr ')'
+	55     | '(' Expr NEQ Expr ')'
+	56     | '(' Expr '<' Expr ')'
+	57     | '(' Expr '>' Expr ')'
+	58     | '(' Expr LEQ Expr ')'
+	59     | '(' Expr GEQ Expr ')'
+	60     | '(' Cond E Cond ')'
+	61     | '(' Cond OU Cond ')'
+	62     | '!' Cond
+	
+	63 Sexpr: VAR
+	64      | NUM
+	65      | FLOAT
+	66      | VAR '[' Expr ']'
+	67      | Funcao
+	68      | STR
+	
+	69 Expr: '(' Expr '+' Expr ')'
+	70     | '(' Expr '-' Expr ')'
+	71     | '(' Expr '*' Expr ')'
+	72     | '(' Expr '/' Expr ')'
+	73     | '(' Expr '%' Expr ')'
+	74     | '(' Expr ')'
+	75     | Sexpr
+	
 \end{code}
-
 
 \chapter{Codificação e Testes}
 \section{Problemas de implementação, Decisões e Alternativas}
@@ -100,7 +210,7 @@ O Galo reconhece os segintes tipos: números inteiros (int), números décimais 
 
 \subsection{Decisões}
 \begin{enumerate}[1)]
-	\item O E ($\&\&$) está definida pela multuplicação e o OU ($||$) pela adição.
+	\item O "e" ($\&\&$) está definida pela multuplicação e o "ou" ($||$) pela adição.
  
 	 \begin{table}[h]
 		\begin{center}
@@ -122,13 +232,16 @@ O Galo reconhece os segintes tipos: números inteiros (int), números décimais 
 		\end{center}
 	\end{table}
 
-	\item Não se pode declarar mais do que uma variável numa linha.\\
+	\item Não se pode declarar mais do que uma variável numa linha, ou seja todas as declarações são individuais.\\
 	 Exemplo: \\int a = 2 , c = 0;\\ terá de ser:\\
 	 int a = 2;\\
 	 int c = 0;\\
 	 \item Não se pode fazer "return" dentro dos Se's e dos Enq's.\\ 
-	 \item Nas expressões numéricas, as operações binárias têm de estar sempre dentro de parênteses.
-	 \item O Se tem de ter sempre Senao.
+	 \item Nas expressões numéricas, as operações binárias têm de estar sempre dentro de parênteses.\\
+	 Exemplo:\\
+	 int a = (1+(2*3))
+	 \item todo o codigo dentro de se's, enq's e funções começa em $\{$ e acaba em  $\}$.
+	 
 	
 \end{enumerate}
 
@@ -138,16 +251,183 @@ O Galo reconhece os segintes tipos: números inteiros (int), números décimais 
 
 
 \section{Testes realizados e Resultados}
+\subsection{Exemplos escritos na nossa linguagem}
 
+\begin{enumerate}
+	\item Ler 4 números e dizer se podem ser os lados de um quadrado.\\
+	
+	\begin{code}
+	int a = leri();
+	int b = leri();
+	int c = leri();
+	int d = leri();
+	
+	se ((a==b) e ((b==c) e (c==d))) {
+		escrevers("É um quadrado\n");
+	}
+	senao {
+		escrevers("Não é um quadrado\n");
+	}
+	\end{code}	
+	
+	\item Ler um inteiro N, depois ler N números e escrever o menor deles.\\
+	
+	\begin{code}
+		escrevers("Escreva o número de elementos do array:\n");
+		int N = leri();
+		
+		int i = 0;
+		int a = 0;
+		int res = 0;
+		
+		se (N!=0){
+			res = leri();
+			i = 1;
+			enq (i < N){
+				a = leri();
+				
+				se (res > a){
+					res = a;
+				}
+				
+				i = (i+1);
+			}
+			
+			
+			escrevers("O menor número foi o ");
+			escreveri(res);
+			escrevers("\n");
+			
+		}
+		senao{
+			escrevers("Não leu nenhum número\n");
+		}
+	\end{code}
+	
+	\item Ler N (constante do programa) números e calcular e imprimir o seu produtório.\\
+	
+	\begin{code}
+		escrevers("Vão se ler 5 números\n");
+		
+		int N = 5;
+		int i = 0;
+		int r = 1;
+		
+		enq(i < N){
+			
+			r = (r * leri());
+			
+			i = (i + 1);
+		}
+				
+		escrevers("O produtório desta sequencia de 5 números é ");
+		escreveri(r);
+		escrevers("\n");
+	\end{code}
+
+	\item Contar e imprimir os números impares de uma sequência de números naturais.\\
+	
+	\begin{code}
+		escrevers("Digitar uma sequência de números, termina quando for zero\n");
+		
+		int cont = 0;
+		int i = leri();
+		
+		enq(i != 0){
+			se ((i % 2) == 1){
+				cont = (cont + 1);
+				escreveri(i);
+				escrevers(" \n");
+			}
+			i = leri();
+		}
+	
+	escrevers("Foram lidos ");
+	escreveri(cont);
+	escrevers(" impares \n");
+	\end{code}
+ 
+  	\item Ler e armazenar os elementos de um vetor de comprimento N; imprimir os valores por ordem decrescente após
+	fazer a ordenação do array por trocas diretas.\\
+	
+	\begin{code}
+		int troca(int v, int i, int j){
+			int k = v[i];
+			v[i] = v[j];
+			v[j] = k;
+			return 0;
+		}
+		
+		int ordena(int* v, int N){
+			int i = 0; #inicio
+			int j = 0; #procura
+			int m ;    #pos do menor
+			
+			enq (i<(N-1)){
+				j = (i + 1);
+				m = i;
+				enq (j<N){
+					se(v[j]>v[m]){
+						m = j;
+					}
+					j = (j + 1);
+				}
+				troca(v,i,m);
+				i = (i + 1);
+			}
+			return 0;
+		}
+		
+		int N = leri();
+		int i = 0;
+		int v[N];
+		
+		enq(i<N){
+			v[i] = leri();
+			i = (i+1);
+		}
+		
+		ordena(v, N);
+		
+		i = 0;
+		
+		enq(i<N){
+			escreveri(v[i]);
+			escrevers("\n");
+		}
+	\end{code}	
+	
+	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.\\
+	
+	\begin{code}
+		int N = leri();
+		int i = 0;
+		int a = 0;
+		int v[N];
+		
+		enq (i < N){
+			v[i] = leri();
+			i = (i + 1);
+		}
+		
+		enq(i > 0){
+			a = v[(i-1)];
+			escreveri(a);
+			escrevers("\n");
+			i = (i-1);
+		}
+	\end{code}
+
+\end{enumerate}
+
+\subsection{Resultados}
 
 
 
 
 \chapter{Conclusão} \label{concl}
 
-Hoje em dia já existem muitos pré-processadores que facilitam a escrita de documentos em HTML.\\
-Tendo em conta os aspetos apresentados ao longo do relatório, conclui-se que o $Flex$ é uma boa ferramenta para fazer o pré-processador e que com ele se torna fácil programar usando expressões regulares e um pouco de linguagem C. \\
-Como trabalho futuro poderíamos acrescentar mais símbolos para completar o pré processador.
+
 
 
 
