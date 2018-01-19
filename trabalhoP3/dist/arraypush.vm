@@ -1,0 +1,16 @@
+start
+
+pushi 1
+pushi 2
+pushi 3
+pushi 4
+pushi 5
+
+//[Expr]
+pushi 3
+
+pushgp
+swap
+loadn
+
+stop

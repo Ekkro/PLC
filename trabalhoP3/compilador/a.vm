@@ -1,47 +1,160 @@
 start
 pushi 0
+pushi 0
+storeg 0
+pushn 20
+pushn 20
+storeg 1
+storeg 2
+storeg 3
+storeg 4
+storeg 5
+storeg 6
+storeg 7
+storeg 8
+storeg 9
+storeg 10
+storeg 11
+storeg 12
+storeg 13
+storeg 14
+storeg 15
+storeg 16
+storeg 17
+storeg 18
+storeg 19
+storeg 20
+pushs "Introduza um numero natural menor que 20\n"
+writes
+pushi 0
 read
 atoi
-storeg 0
+storeg 21
 pushi 0
-pushi 0
-storeg 1
-pushi 0
-pushi 0
-storeg 2
-pushg 0
-storeg 3
+pushg 21
+supeq
+pushg 21
+pushi 20
+sup
+add
+jz fimse0
+pushs "OOps, parece que tivemo uns problemas, 0<N<=20.\n"
+writes
+jump fimse1
+fimse0:
 enq0:
-pushg 1
 pushg 0
+pushg 21
 inf
 jz fimenq0
-pushg 1
-read
-atoi
-pushg 1
+pushg 0
 pushi 1
 add
-storeg 1
+pushgp
+swap
+read
+atoi
+storen
+pushg 0
+pushi 1
+add
+storeg 0
 jump enq0
 fimenq0:
-enq1:
-pushg 1
 pushi 0
-sup
+storeg 0
+pushi 0
+pushi 1
+storeg 22
+enq1:
+pushg 22
+pushi 1
+equal
 jz fimenq1
-pushg 1
+pushi 0
+storeg 22
+enq2:
+pushg 0
+pushg 21
 pushi 1
 sub
-storeg 2
-pushg 2
+inf
+jz fimenq2
+pushg 0
+pushi 1
+add
+pushgp
+swap
+loadn
+pushg 0
+pushi 1
+add
+pushi 1
+add
+pushgp
+swap
+loadn
+sup
+jz fimse2
+pushi 0
+pushg 0
+pushi 1
+add
+pushgp
+swap
+loadn
+storeg 1
+pushg 0
+pushi 1
+add
+pushgp
+swap
+pushg 0
+pushi 1
+add
+pushi 1
+add
+pushgp
+swap
+loadn
+storen
+pushg 0
+pushi 1
+add
+pushi 1
+add
+pushgp
+swap
+pushg 23
+storen
+pushi 1
+storeg 22
+fimse2:
+pushg 0
+pushi 1
+add
+storeg 0
+jump enq2
+fimenq2:
+jump enq1
+fimenq1:
+pushi 0
+storeg 0
+enq3:
+pushg 0
+pushg 21
+inf
+jz fimenq3
+pushg 0
+pushi 1
+add
+pushgp
+swap
+loadn
 writei
 pushs "\n"
 writes
-pushg 1
-pushi 1
-sub
-storeg 1
-jump enq1
-fimenq1:
+jump enq3
+fimenq3:
+fimse1:
 stop

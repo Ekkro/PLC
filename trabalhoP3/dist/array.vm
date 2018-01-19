@@ -1,10 +1,17 @@
 // int a[ 10 ]; a[ 3 ] = 10; print(a[3]);
 
 start
+pushi 1
+pushi 2
+pushi 3
+pushi 4
 alloc 10
+alloc 6
 dup 1
+pushi 3
 pushi 10
-store 3
-load 3
+storen
+dup 1
+load 2
 writei
 stop
