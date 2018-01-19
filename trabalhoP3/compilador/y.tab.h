@@ -47,45 +47,43 @@ extern int yydebug;
   {
     SE = 258,
     SENAO = 259,
-    CASO = 260,
-    ENQ = 261,
-    VAR = 262,
-    TIPO = 263,
-    NUM = 264,
-    FLOAT = 265,
-    EQ = 266,
-    NEQ = 267,
-    LEQ = 268,
-    GEQ = 269,
-    E = 270,
-    OU = 271,
-    STR = 272,
-    COM = 273,
-    RETURN = 274,
-    COS = 275,
-    SIN = 276
+    ENQ = 260,
+    VAR = 261,
+    TIPO = 262,
+    NUM = 263,
+    FLOAT = 264,
+    EQ = 265,
+    NEQ = 266,
+    LEQ = 267,
+    GEQ = 268,
+    E = 269,
+    OU = 270,
+    STR = 271,
+    COM = 272,
+    RETURN = 273,
+    COS = 274,
+    SIN = 275
   };
 #endif
 /* Tokens.  */
 #define SE 258
 #define SENAO 259
-#define CASO 260
-#define ENQ 261
-#define VAR 262
-#define TIPO 263
-#define NUM 264
-#define FLOAT 265
-#define EQ 266
-#define NEQ 267
-#define LEQ 268
-#define GEQ 269
-#define E 270
-#define OU 271
-#define STR 272
-#define COM 273
-#define RETURN 274
-#define COS 275
-#define SIN 276
+#define ENQ 260
+#define VAR 261
+#define TIPO 262
+#define NUM 263
+#define FLOAT 264
+#define EQ 265
+#define NEQ 266
+#define LEQ 267
+#define GEQ 268
+#define E 269
+#define OU 270
+#define STR 271
+#define COM 272
+#define RETURN 273
+#define COS 274
+#define SIN 275
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -99,7 +97,7 @@ union YYSTYPE
     char *s;
     Funcao fun;
 
-#line 103 "y.tab.h" /* yacc.c:1909  */
+#line 101 "y.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;

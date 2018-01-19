@@ -1,8 +1,3 @@
-Terminals unused in grammar
-
-   CASO
-
-
 State 30 conflicts: 1 shift/reduce
 
 
@@ -130,64 +125,63 @@ $end (0) 0
 error (256)
 SE (258) 49
 SENAO (259) 50
-CASO (260)
-ENQ (261) 52
-VAR (262) 4 14 24 30 31 33 34 35 37 39 47 48 65 68
-TIPO (263) 31 33 34 35 37 47 48
-NUM (264) 34 35 55 66
-FLOAT (265) 67
-EQ (266) 56
-NEQ (267) 57
-LEQ (268) 60
-GEQ (269) 61
-E (270) 62
-OU (271) 63
-STR (272) 70
-COM (273) 9 18 28
-RETURN (274) 19
-COS (275) 76
-SIN (276) 77
+ENQ (260) 52
+VAR (261) 4 14 24 30 31 33 34 35 37 39 47 48 65 68
+TIPO (262) 31 33 34 35 37 47 48
+NUM (263) 34 35 55 66
+FLOAT (264) 67
+EQ (265) 56
+NEQ (266) 57
+LEQ (267) 60
+GEQ (268) 61
+E (269) 62
+OU (270) 63
+STR (271) 70
+COM (272) 9 18 28
+RETURN (273) 19
+COS (274) 76
+SIN (275) 77
 
 
 Nonterminals, with rules where they appear
 
-$accept (39)
+$accept (38)
     on left: 0
-ProgG (40)
+ProgG (39)
     on left: 1 2 3 4 5 6 7 8 9 10, on right: 0 1 2 3 4 5 6 7 8 9
-ProgF (41)
+ProgF (40)
     on left: 11 12 13 14 15 16 17 18 19 20, on right: 11 12 13 14 15
     16 17 18 19 32
-Prog (42)
+Prog (41)
     on left: 21 22 23 24 25 26 27 28 29, on right: 21 22 23 24 25 26
     27 28 50 51 54
-Funcao (43)
+Funcao (42)
     on left: 30, on right: 7 16 26 69
-CriaFun (44)
+CriaFun (43)
     on left: 31 32, on right: 6
-Atrib (45)
+Atrib (44)
     on left: 33 34 35 36, on right: 3 13 23
-Igual (46)
+Igual (45)
     on left: 37 38, on right: 36 38
-IgualL (47)
+IgualL (46)
     on left: 39 40, on right: 5 15 25 40
-Lexpr (48)
+Lexpr (47)
     on left: 41 42, on right: 30
-Eexpr (49)
+Eexpr (48)
     on left: 43 44, on right: 42 44
-Ltipo (50)
+Ltipo (49)
     on left: 45 46, on right: 32
-Etipo (51)
+Etipo (50)
     on left: 47 48, on right: 46 48
-Se (52)
+Se (51)
     on left: 49 50 51, on right: 1 11 21 50 51
-Enq (53)
+Enq (52)
     on left: 52 53 54, on right: 2 12 22 53 54
-Cond (54)
+Cond (53)
     on left: 55 56 57 58 59 60 61 62 63 64, on right: 49 53 62 63 64
-Sexpr (55)
+Sexpr (54)
     on left: 65 66 67 68 69 70, on right: 79
-Expr (56)
+Expr (55)
     on left: 71 72 73 74 75 76 77 78 79, on right: 4 14 19 24 38 39
     40 43 44 56 57 58 59 60 61 68 71 72 73 74 75 76 77 78
 
