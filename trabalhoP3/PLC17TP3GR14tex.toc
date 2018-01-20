@@ -13,6 +13,6 @@
 \contentsline {section}{\numberline {3.2}Testes realizados e Resultados}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Exemplos escritos na nossa linguagem}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Resultados}{12}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Conclus\IeC {\~a}o}{17}{chapter.4}
-\contentsline {chapter}{\numberline {A}Imagens}{18}{appendix.A}
-\contentsline {chapter}{\numberline {B}C\IeC {\'o}digo do Programa}{22}{appendix.B}
+\contentsline {chapter}{\numberline {4}Conclus\IeC {\~a}o}{22}{chapter.4}
+\contentsline {chapter}{\numberline {A}Imagens}{23}{appendix.A}
+\contentsline {chapter}{\numberline {B}C\IeC {\'o}digo do Programa}{27}{appendix.B}

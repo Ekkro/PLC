@@ -154,7 +154,7 @@ pushgp
 swap
 loadn
 writei
-pushs "\n"
+pushs " \n"
 writes
 pushg 0
 pushi 1
