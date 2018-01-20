@@ -434,7 +434,7 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0
         | '(' Expr '<' Expr ')'                 { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
                                                     fprintf(out,"inf\n");
                                                   }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
-                                                    fprintf(out,"finf\n");
+                                                    fprintf(out,"finf\nftoi\n");
                                                   }else{
                                                     printf("ERRO: tipos sem sentido na condicao.\n");
                                                   }
@@ -442,7 +442,7 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0
         | '(' Expr '>' Expr ')'                 { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
                                                     fprintf(out,"sup\n");
                                                   }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
-                                                    fprintf(out,"fsup\n");
+                                                    fprintf(out,"fsup\nftoi\n");
                                                   }else{
                                                     printf("ERRO: tipos sem sentido na condicao.\n");
                                                   }
@@ -450,7 +450,7 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0
         | '(' Expr LEQ Expr ')'                 { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
                                                     fprintf(out,"infeq\n");
                                                   }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
-                                                    fprintf(out,"finfeq\n");
+                                                    fprintf(out,"finfeq\nftoi\n");
                                                   }else{
                                                     printf("ERRO: tipos sem sentido na condicao.\n");
                                                   }
@@ -458,7 +458,7 @@ Cond    : NUM                                   { fprintf(out,"pushi %d\n",$1!=0
         | '(' Expr GEQ Expr ')'                 { if(strcmp($2,"int")==0 && strcmp($4,"int")==0){
                                                     fprintf(out,"supeq\n");
                                                   }else if(strcmp($2,"float")==0 && strcmp($4,"float")==0){
-                                                    fprintf(out,"fsupeq\n");
+                                                    fprintf(out,"fsupeq\nftoi\n");
                                                   }else{
                                                     printf("ERRO: tipos sem sentido na condicao.\n");
                                                   }

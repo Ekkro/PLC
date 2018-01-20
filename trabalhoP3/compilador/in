@@ -1,0 +1,5 @@
+se(0.1<0.2){
+    escrevers("OH YEAH!");
+}senao{
+    escrevers("OH NO!");
+}

@@ -15,9 +15,9 @@ se ((0>=N) ou (N>20)){
     }
 
     enq(i > 0){
-        a = v[(i-1)];
+        a = v[(i - 1)];
         escreveri(a);
         escrevers(" \n");
-        i = (i-1);
+        i = (i - 1);
     }
 }

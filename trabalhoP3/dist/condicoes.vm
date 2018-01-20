@@ -1,0 +1,13 @@
+start
+pushf 0.1
+pushf 0.2
+finf
+
+pushf 0.2
+pushf 0.1
+finf
+
+pushf 0.2
+pushf 0.2
+finf
+stop
