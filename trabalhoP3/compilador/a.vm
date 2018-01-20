@@ -62,8 +62,6 @@ storeg 0
 jump enq0
 fimenq0:
 pushi 0
-storeg 0
-pushi 0
 pushi 1
 storeg 22
 pushi 0
@@ -76,6 +74,8 @@ equal
 jz fimenq1
 pushi 0
 storeg 22
+pushi 0
+storeg 0
 enq2:
 pushg 0
 pushg 21

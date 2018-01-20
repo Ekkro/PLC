@@ -14,11 +14,11 @@ se((0>=N) ou (N>20)){
         i = (i+1);
     }
 
-    i = 0;
     int changed = 1;
     int k;
     enq (changed == 1) {
         changed = 0;
+        i = 0;
         enq (i<(N - 1)){
             se(v[i]>v[(i+1)]){
                 k = v[i];
