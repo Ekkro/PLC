@@ -97,7 +97,7 @@ add
 pushgp
 swap
 loadn
-sup
+inf
 jz fimse2
 pushg 0
 pushi 1

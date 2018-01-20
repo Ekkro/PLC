@@ -20,7 +20,7 @@ se((0>=N) ou (N>20)){
         changed = 0;
         i = 0;
         enq (i<(N - 1)){
-            se(v[i]>v[(i+1)]){
+            se(v[i]<v[(i+1)]){
                 k = v[i];
                 v[i] = v[(i+1)];
                 v[(i+1)] = k;
