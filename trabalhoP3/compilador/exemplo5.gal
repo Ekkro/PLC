@@ -33,6 +33,7 @@ se((0>=N) ou (N>20)){
     i = 0;
     enq(i<N){
         escreveri(v[i]);
-        escrevers("\n");
+        escrevers(" \n");
+        i = (i+1);
     }
 }
