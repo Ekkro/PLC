@@ -370,43 +370,48 @@ Tivemos problemas com a implementaçáo de vetores, pois nao conseguimos compree
 	fazer a ordenação do array por trocas diretas.\\
 	
 	\begin{code}
-		int i = 0;
-		int v[20];
-	
-		escrevers("Introduza um numero natural menor que 20\n");
-		int N = leri();
 	
 	
-		se((0>=N) ou (N>20)){
-			escrevers("OOps, parece que tivemos uns problemas, 0<N<=20.\n");
-		}senao{
-			enq(i<N){
-				v[i] = leri();
+	int i = 0;
+	int v[20];
+	
+	escrevers("Introduza um numero natural menor que 20\n");
+	int N = leri();
+	
+	
+	se((0>=N) ou (N>20)){
+		escrevers("OOps, parece que tivemos uns problemas, 0<N<=20.\n");
+	}senao{
+		enq(i<N){
+			v[i] = leri();
+			i = (i+1);
+		}
+		
+		int changed = 1;
+		int k;
+		enq (changed == 1) {
+			changed = 0;
+			i = 0;
+			enq (i<(N - 1)){
+				se(v[i]<v[(i+1)]){
+					k = v[i];
+					v[i] = v[(i+1)];
+					v[(i+1)] = k;
+					changed = 1;
+				}
 				i = (i+1);
 			}
-		
-			i = 0;
-			int changed = 1;
-			int k;
-			enq (changed == 1) {
-				changed = 0;
-				enq (i<(N - 1)){
-					se(v[i]>v[(i+1)]){
-						k = v[i];
-						v[i] = v[(i+1)];
-						v[(i+1)] = k;
-						changed = 1;
-					}
-					i = (i+1);
-				}
-			}
-		
-			i = 0;
-			enq(i<N){
-				escreveri(v[i]);
-				escrevers("\n");
-			}
 		}
+		
+		i = 0;
+		enq(i<N){
+			escreveri(v[i]);
+			escrevers(" \n");
+			i = (i+1);
+		}
+	}
+	
+	
 	\end{code}	
 	
 	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.\\
@@ -733,8 +738,6 @@ Obtivemos o seguinte resultado:
 		jump enq0
 		fimenq0:
 		pushi 0
-		storeg 0
-		pushi 0
 		pushi 1
 		storeg 22
 		pushi 0
@@ -747,6 +750,8 @@ Obtivemos o seguinte resultado:
 		jz fimenq1
 		pushi 0
 		storeg 22
+		pushi 0
+		storeg 0
 		enq2:
 		pushg 0
 		pushg 21
@@ -768,7 +773,7 @@ Obtivemos o seguinte resultado:
 		pushgp
 		swap
 		loadn
-		sup
+		inf
 		jz fimse2
 		pushg 0
 		pushi 1
@@ -825,18 +830,21 @@ Obtivemos o seguinte resultado:
 		swap
 		loadn
 		writei
-		pushs "\n"
+		pushs " \n"
 		writes
+		pushg 0
+		pushi 1
+		add
+		storeg 0
 		jump enq3
 		fimenq3:
 		fimse1:
 		stop
-		
-				
+			
 	\end{code}
 
 	\indent
-	Após introduzir um número natural menor que 20, define-se os elementos do array.
+	Após introduzir um número natural menor que 20, define-se os elementos do array e no final retorna o array ordenado. Por exe,plo inserindo o 4 como tamanho do array e depoi inserir o 2, 6,3 e 8, por esta ondem, obtemos como resultado final 8,6,3 e 2. (figura A.7)
 	
  	\item Ler e armazenar N números num array; imprimir os valores por ordem inversa.\\
  	
@@ -937,7 +945,7 @@ Obtivemos o seguinte resultado:
  	
 	\end{code}
 	\indent
-	Depois de defenirmos o número de elemenots do array, definimos os valores para esse array. No final ele retorna os elementos pela ordem inversa. Por exemplo, se inserirmos 3 e depois usarmos os valores 6, 7 e 8, a máquina vm retorna 8, 7 e 6 (figura A.7)
+	Depois de defenirmos o número de elemenots do array, definimos os valores para esse array. No final ele retorna os elementos pela ordem inversa. Por exemplo, se inserirmos 3 e depois usarmos os valores 6, 7 e 8, a máquina vm retorna 8, 7 e 6 (figura A.8)
 	
 	
 
@@ -998,6 +1006,14 @@ Obtivemos o seguinte resultado:
 	\caption{Mostra quantos impares foram lidos}
 	\label{Exemplo 4.1}
 \end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm,height= 8cm]{Exemplo5-1.png}
+	\caption{Coloca os elemetos do array por ondem ascendente}
+	\label{Exemplo 5.1}
+\end{figure}
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=14cm,height= 8cm]{exemplo6-1.png}
